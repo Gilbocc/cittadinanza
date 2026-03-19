@@ -141,9 +141,9 @@ Word template currently used by the flow:
 The end-to-end flow can be represented as follows:
 
 ```mermaid
-flowchart TD
+flowchart LR
 	A[OneDrive case folder] --> B[Collect all PDFs in folder]
-	B --> C[Extract text or OCR content]
+	B --> C[Feed document content directly to prompts]
 	C --> D[Prompt 1: classify content]
 	D --> E[Prompt 2: build extraction schema]
 	E --> F[Prompt 3: extract structured dossier JSON]
@@ -159,6 +159,7 @@ At a high level:
 2. All PDFs in that folder contribute to the same dossier.
 3. Prompt stages progressively move from unstructured text to a structured and validated case representation.
 4. The final mapped JSON is not the end product by itself; it is the data source for the Word template that produces the draft sentence.
+5. This flow does not rely on a separate OCR preprocessing stage in this repository documentation; document content is fed directly to the prompt stages.
 
 ## Prompt Compilation
 
@@ -261,21 +262,22 @@ Recommended usage inside the flow:
 
 1. Accept a OneDrive folder reference as the flow input.
 2. Enumerate all PDF files in that folder.
-3. Extract text from each PDF and aggregate the case material.
+3. Feed document content directly into prompt invocations for stage 1 and stage 3.
 4. Store and version the source prompts in [prompts](prompts).
 5. Compile them before release or push.
 6. Use the compiled prompt files from [prompts/compiled](prompts/compiled) when configuring prompt nodes in Copilot Studio.
-7. Keep the Python-backed logic embedded via compilation so prompt definitions and business rules remain versioned together.
+7. Use code execution inside prompt invocations where required by the compiled prompts.
+8. Keep the Python-backed logic embedded via compilation so prompt definitions and business rules remain versioned together.
 
 In practice, the flow can be modeled as:
 
 1. OneDrive trigger or manual folder selection.
 2. File listing for all PDFs inside the folder.
-3. OCR or text extraction for each PDF.
+3. Direct document-content handoff to prompt stages.
 4. Prompt node for classification.
-5. Prompt node for schema mapping.
+5. Prompt node for schema mapping with embedded code execution.
 6. Prompt node for extraction.
-7. Prompt or code-execution node for validation.
+7. Prompt node for validation with embedded code execution.
 8. Prompt node for final field mapping.
 9. Word template population.
 10. Draft sentence storage or delivery.
