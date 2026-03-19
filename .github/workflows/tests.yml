@@ -1,4 +1,4 @@
-name: Tests
+name: Tests And Prompts
 
 on:
   push:
@@ -17,6 +17,12 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.x"
+
+      - name: Compile prompts
+        run: python compile_prompts.py
+
+      - name: Verify compiled prompts are committed
+        run: git diff --exit-code -- prompts/compiled
 
       - name: Run tests
         run: python -m unittest discover -v

@@ -1,0 +1,7 @@
+Compila e restituisci il seguente JSON
+
+{{src/mapping.json}}
+
+sulla base dei seguenti dati:
+
+Text input

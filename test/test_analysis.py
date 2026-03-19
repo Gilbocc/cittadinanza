@@ -1,8 +1,13 @@
 import json
+from pathlib import Path
 import sys
 import unittest
 
-from analysis import DocumentValidator
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+from src.analysis import DocumentValidator
 
 TEST_CASE_1 = json.loads("""[
     {"document_type":"Ricorso","schema":{"avvocati":[],"numero_ricorrenti":1,"ricorrenti_maggiorenni":[{"nome":"Alessandro","cognome":"Manzoni","nazionalita":"Brasiliana"}],"ricorrenti_minorenni":[],"ricorrenti_per_matrimonio":[],"linea_discendenza":[{"nome":"Ludovico","cognome":"Ariosto"}],"coerenza_linea_discendenza":"SI","proveniente_dal_brasile":"SI","data_ricorso":"25-06-2024"}}
@@ -386,8 +391,7 @@ class DocumentValidatorTests(unittest.TestCase):
 
 
 if __name__ == "__main__":
-    #if len(sys.argv) >= 3 and sys.argv[1] == "--print":
-    #    print_complete_results(sys.argv[2])
-    #else:
-    #    unittest.main()
-    print_complete_results("test_case_14")
+    if len(sys.argv) >= 3 and sys.argv[1] == "--print":
+        print_complete_results(sys.argv[2])
+    else:
+        unittest.main()

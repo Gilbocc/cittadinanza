@@ -1,0 +1,10 @@
+#!/bin/sh
+set -e
+
+python3 compile_prompts.py >/dev/null
+
+if ! git diff --quiet -- prompts/compiled; then
+    echo "Compiled prompts changed during pre-push. Commit prompts/compiled before pushing."
+    git --no-pager diff -- prompts/compiled
+    exit 1
+fi

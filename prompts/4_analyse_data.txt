@@ -1,0 +1,17 @@
+Execute the following python code with the following input. Only return the script output. 
+
+
+Text input 
+
+```python
+{{src/analysis.py}}
+
+
+# -------------------------------------------------
+# EXECUTION
+# -------------------------------------------------
+if __name__ == "__main__":
+    validator = DocumentValidator(json.loads(input))
+    report = validator.run()
+    print(json.dumps(report, indent=2, ensure_ascii=False))
+```
