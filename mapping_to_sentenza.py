@@ -1,0 +1,29 @@
+{
+    "numero_anno_ruolo" : "copia il campo numero_anno_ruolo se presente",
+    "ricorrenti" : "Indica i ricorrenti maggiorenni (e minorenni se presenti) separati da una virgola (nome cognome).",
+    "avvocati" : "Indica gli avvocati separati da una virgola (nome cognome).",
+    "nominativi_intervenuti" : "Indica gli intervenuti separati da una virgola se presenti (nome cognome).",
+    "intervenuti_avvocati" : "se ci sono intervenuti compila con 'con il patrocinio dell'Avv.', altrimenti lascia vuoto.",
+    "iscrizione_ruolo" : "copia il campo data_iscrizione",
+    "intervenuti" : "se ci sono inervenuti compila con: '1.1.1. In data {{data_interventi}}, {{nominativi_intervenuti}} è intervenuto volontariamente in giudizio, in qualità di discendente dal medesimo avo.['",
+    "avvocatura" : "se il campo comparsa_avvocatura è SI inserisci: 'Il Ministero dell'Interno, tramite l'Avvocatura Distrettuale dello Stato di Brescia, si è costituito in giudizio il {{data_comparsa_avvocatura}}.'. In caso contrario inserisci: 'Nonostante la regolare notificazione del ricorso, il Ministero dell'Interno non si è costituito.'",
+    "data_aperta_pm" : "copia il campo visibilita_pm se presente",
+    "nome_avo" : "nome cognome avo (soggetto del CNN)",
+    "comune_avo" : "comune nascita avo",
+    "data_nascita_avo" : "data nascita avo",
+    "racconto_discendenza" : "racconto_linea_discendenza",
+    "interventi_2" : "se ci sono intervenuti aggiungi '2.1. Il terzo intervenuto ha rivendicato di essere discendente dallo stesso avo.', altrimenti lascia vuoto",
+    "pre_27_03_2025" : "se scrizione_pre_27_03_2025 è OK aggiungi 'Quest'ultima norma non si applica dunque al presente ricorso, iscritto a ruolo prima del 27.3.25.', altrimenti lascia vuoto",
+    "se_minorenni" : "se ci sono ricorrenti minorenni aggiungi '3.6. A margine, con particolare riguardo ai ricorrenti minorenni, merita sottolineare come non sia necessaria la previa autorizzazione del giudice tutelare, poiché l'art. 320 c.c. l'impone soltanto per promuovere azioni relative ad atti eccedenti l'ordinaria amministrazione: tale non può essere considerata la presente, avente ad oggetto la pronuncia dichiarativa di uno status già esistente e peraltro evidentemente vantaggiosa per il minore.', altrimenti vuoto",
+    "avvocatura_2" : "se comparsa_avvocatura è SI scrivi: 'Di contro, il Ministero dell'Interno si è limitato a evocare l'accertamento di eventuali fattispecie estintive del diritto, senza nemmeno allegarle (né aver provato una richiesta di informazioni all'Autorità Consolare).'. Se comparsa_avvocatura è NO, scrivi invece: 'Di contro, il Ministero dell'Interno non si è costituito.'",
+    "interventi_4_1" : "se il campo intervenuti è SI aggiungi: '4.1. La domanda del terzo intervenuto è inammissibile. L'art. 105 co. 1 c.p.c., infatti, consente l'intervento volontario «in un processo tra altre persone per far valere, in confronto di tutte le parti o di alcune di esse, un diritto relativo all'oggetto o dipendente dal titolo dedotto nel processo medesimo». Nel caso concreto, invece, il terzo ha chiesto di accertare un autonomo diritto allo status di cittadino, non connesso oggettivamente né dipendente da quello dei ricorrenti (cui è accomunato soltanto dall'avo).'. Altrimenti alscia vuoto.",
+    "matrimonio_1" : "solo se ci sono ricorrenti per matrimonio: '4.2. La domanda presentata iure matrimonii è improcedibile.'",
+    "matrimonio_2" : "solo se ci sono ricorrenti per matrimonio: 'La giurisprudenza, infatti, ha ammesso la domanda iure sanguinis in ragione delle note liste d'attesa dinanzi ai Consolati italiani, ma nessuna deroga è stata prevista per la cittadinanza acquisita tramite matrimonio (da chiedere prima in via amministrativa, cfr. Direttiva del Ministero dell'Interno n. 12A04741 del 7.3.12). Inoltre, l'art. 4 co. 5 II periodo del D.Lgs. n. 13/17 (sopra riportato) ha disciplinato la competenza territoriale con esclusivo riguardo al Comune di nascita dell'avo, ossia per la cittadinanza ottenuta in virtù della discendenza. Occorre infine considerare che, fino al passaggio in giudicato di questa sentenza, non può dirsi definitivamente acquisito lo status di cittadino del coniuge, presupposto necessario della domanda per matrimonio.'",
+    "interventi_e_matrimonio" : "non compilare se non ci sono ne intervenuti ne ricorrenti per matrimonio: 'Questo vale anche nei confronti delle parti le cui domande sono state dichiarate inammissibili o improcedibili (viste la serialità della questione per l'Avvocatura dello Stato e la natura prettamente formale della sua costituzione).'",
+    "finale_dichiarazione" : "una riga per ogni ricorrente contenente: {{ricorrente}}, nato/a a {{luogo_nascita_ricorrente}} il {{data_nascita_ricorrente}}",
+    "cittadini_finale" : "inserisci la formula 'è/sono cittadino/a/i italiano/a/i' usando la concordanza di verbo essere, sostantivo e aggettivo corretta in base al/ai ricorrente/i",
+    "intervenuti_finale" : "se ci sono intervenuti aggiungi: 'dichiara inammissibile la domanda presentata da {{nominativi_intervenuti}};'",
+    "matrimonio_finale" : "se ci sono ricorrenti per matrimonio aggiungi: 'dichiara improcedibile la domanda presentata da {{nome_cognome_ricorrenti_per_matrimonio}};'"
+}
+
+ 

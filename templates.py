@@ -1,0 +1,136 @@
+import json
+
+def generate_classification_template(input_json):
+    templates = {
+        1: {
+            "document_type": "IndiceProcedimento.html",
+            "schema": {
+                "numero_anno_ruolo": "...",
+                "data_iscrizione": "...",
+                "iscrizione_post_28_02_2023": "OK/KO",
+                "iscrizione_pre_27_03_2025": "OK/KO",
+                "comparsa_avvocatura": "SI/NO",
+                "data_comparsa_avvocatura": "...",
+                "visibilita_pm": "SI/NO",
+                "data_visibilita_pm": "...",
+                "interventi": "SI/NO",
+                "numero_interventi": 0,
+                "intervenuti": [{"nome": "...", "cognome": "...", "data": "..."}]
+            }
+        },
+        2: {
+            "document_type": "Ricorso",
+            "schema": {
+                "avvocati": [{"nome": "...", "cognome": "..."}],
+                "numero_ricorrenti": 0,
+                "ricorrenti_maggiorenni": [{"nome": "...", "cognome": "...", "nazionalita": "..."}],
+                "ricorrenti_minorenni": [{
+                    "nome": "...",
+                    "cognome": "...",
+                    "nazionalita": "...",
+                    "rappresentato_da": [{"nome": "...", "cognome": "..."}]
+                }],
+                "ricorrenti_per_matrimonio": [{"nome": "...", "cognome": "..."}],
+                "linea_discendenza": [{"nome": "...", "cognome": "..."}],
+                "racconto_linea_discendenza": "racconto linea discendenza come da ricorso; non modificare il testo e non riscrivere o tradurre;",
+                "riassunto_linea_discendenza": "...",
+                "coerenza_linea_discendenza": "SI/NO",
+                "proveniente_dal_brasile": "SI/NO",
+                "data_ricorso": "..."
+            }
+        },
+        3: {
+            "document_type": "Procura",
+            "schema": {
+                "soggetto": [{
+                    "nome": "...", 
+                    "cognome": "...",
+                    "minorenne": "SI/NO",
+                    "rappresentanti_legali": [{"nome": "...", "cognome": "..."}],
+                    "firma_presente": "OK/KO"
+                }],
+                "oggetto": "oggetto del ricorso per cui è rilasciata la procura; non modificare il testo e non riscrivere o tradurre;",
+                "avvocati": [{"nome": "...", "cognome": "..."}],
+                "tribunale_brescia_indicato": "OK/KO",
+                "tribunale_indicato": "...",
+                "data_procura": "...",
+                "rilasciata_in_italia" : "OK/NO",
+                "scritta_in_italiano": "OK/NO"
+            }
+        },
+        4: {
+            "document_type": "Atto di morte",
+            "schema": {
+                "soggetto": {"nome": "...", "cognome": "..."},
+                "data_decesso": "..."
+            }
+        },
+        5: {
+            "document_type": "Certificato Negativo di Naturalizzazione",
+            "schema": {
+                "soggetto": {"nome": "...", "cognome": "..."},
+                "pseudonimi": [{"nome": "...", "cognome": "..."}],
+                "formula_negativa_presente": "OK/KO",
+                "data_nascita": "..."
+            }
+        },
+        6: {
+            "document_type": "Atto di nascita",
+            "schema": {
+                "soggetto": {"nome": "...", "cognome": "..."},
+                "tipo": "anagrafico/parrocchiale",
+                "timbro_diocesi": "OK/NO",
+                "comune_nascita": "...",
+                "provincia": "brescia/bergamo/cremona/mantova/altro",
+                "padre": {"nome": "...", "cognome": "..."},
+                "madre": {"nome": "...", "cognome": "..."},
+                "data_nascita": "...",
+                "area_nascita": "A/B/C/D/E",
+                "stato": "..."
+            }
+        },
+        7: {
+            "document_type": "Apostille",
+            "schema": {
+                "oggetto" : {
+                    "document_type": "...",
+                    "documento_originale": "...(opzionale, solo se document_type == Traduzione)",
+                    "soggetto": [{"nome": "...", "cognome": "..."}],
+                }
+            }
+        },
+        8: {
+            "document_type": "Traduzione",
+            "schema": {
+                "oggetto" : {
+                    "document_type": "...",
+                    "soggetto": [{"nome": "...", "cognome": "..."}],
+                },
+                "sede_traduttore": "Italia/Estero"
+            }
+        },
+        9: {
+            "document_type": "Asseverazione",
+            "schema": {
+                "oggetto" : {
+                    "document_type": "...",
+                    "documento_originale": "specify the original document_type of the document being translated",
+                    "soggetto": [{"nome": "...", "cognome": "..."}],
+                }
+            }
+        }
+    }
+    final_output = []
+    
+    # Processa ogni elemento nell'input
+    for entry in input_json.get("output", []):
+        item_id = entry.get("item")
+        if item_id in templates:
+            final_output.append(templates[item_id])
+    
+    return final_output
+
+
+if __name__ == "__main__":   
+    result = generate_classification_template(json.loads(input))
+    print(json.dumps(result, indent=2, ensure_ascii=False))
