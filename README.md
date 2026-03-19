@@ -6,14 +6,14 @@ The flow is built around compiled prompt files in [prompts/compiled](prompts/com
 
 ## What The Flow Does
 
-The pipeline takes as input a OneDrive folder containing all PDFs for a case. Each PDF is parsed independently through classification and extraction, then all extracted JSON outputs are collected into a single aggregated dossier for validation and final mapping. The mapped output is then used to fill a Word template containing a sentence draft.
+The pipeline takes as input a OneDrive folder containing all PDFs for a case. The flow collects the documents in that folder, analyzes them as a single dossier, extracts and validates the relevant information, and finally uses the mapped output to fill a Word template containing a sentence draft.
 
 Operationally, the pipeline runs through five logical stages:
 
 1. Classify the document blocks found in the input.
 2. Build the extraction schema for the document types that were detected.
 3. Extract structured JSON from the source material.
-4. Validate the aggregated extracted dossier against legal and procedural checks.
+4. Validate the extracted dossier against legal and procedural checks.
 5. Map the validated result into a final output structure used to populate the Word sentence template.
 
 The domain is recognition of Italian citizenship claims, with a specific focus on dossiers that may include:
@@ -142,36 +142,46 @@ The end-to-end flow can be represented as follows:
 
 ```mermaid
 flowchart LR
-	subgraph IN[Input]
-		A[OneDrive<br/>case folder]
-		B[List PDFs]
-		C[Per PDF loop]
+	A((OneDrive<br>Folder))
+
+	subgraph AI[For Each File]
+		D[1. Classify<br>content]
+		E[2. Build<br>extraction schema]
+		F[3. Extract JSON]
 	end
 
-	subgraph AI[Prompt Pipeline]
-		D[1. Classify per PDF<br/>property: direct content feed]
-		E[2. Build schema<br/>property: embedded code execution]
-		F[3. Extract JSON per PDF<br/>property: direct content feed]
-		K[Collect extracted JSON<br/>across all PDFs]
-		G[4. Validate aggregated dossier<br/>property: embedded code execution]
-		H[5. Map<br/>draft fields]
-	end
+    L((Full JSON))
+
+    subgraph AN[Analysis]
+        G[4. Validate dossier]
+    end
 
 	subgraph OUT[Draft Output]
-		I[Sentence draft in<br/>Word template]
+        H[5. Map fields]
+		I[Populate<br>Word template]
 	end
 
-	A --> B --> C --> D --> E --> F --> K --> G --> H --> I
+	A --> D --> E --> F  --> L --> H --> I
+    L --> G
+
+    %% styling
+    classDef python fill:#ffe6e6,stroke:#ff0000,stroke-width:2px,color:#ff0000;
+    classDef pdf fill:#e6ffe6,stroke:#00aa00,stroke-width:2px,color:#006600;
+    class E python;
+    class G python;
+    class D pdf;
+    class F pdf;
 ```
+
+Nodes in green injest a pdf file (LLM directly parse the content so OCR is not required), nodes in red contains exacutable Python code to enforce determinism. 
 
 At a high level:
 
 1. The OneDrive folder is the case boundary.
-2. Each PDF is parsed separately during classification and extraction.
-3. Extracted JSON from all PDFs is collected before the validation stage.
-4. Prompt stages progressively move from unstructured text to a structured and validated case representation.
-5. The final mapped JSON is not the end product by itself; it is the data source for the Word template that produces the draft sentence.
-6. This flow does not rely on a separate OCR preprocessing stage in this repository documentation; document content is fed directly to the prompt stages.
+2. All PDFs in that folder contribute to the same dossier.
+3. Prompt stages progressively move from unstructured text to a structured and validated case representation.
+4. The final mapped JSON is not the end product by itself; it is the data source for the Word template that produces the draft sentence.
+5. This flow does not rely on a separate OCR preprocessing stage in this repository documentation; document content is fed directly to the prompt stages.
 
 ## Prompt Compilation
 
@@ -274,7 +284,7 @@ Recommended usage inside the flow:
 
 1. Accept a OneDrive folder reference as the flow input.
 2. Enumerate all PDF files in that folder.
-3. Feed each PDF content directly into prompt invocations for stage 1 and stage 3.
+3. Feed document content directly into prompt invocations for stage 1 and stage 3.
 4. Store and version the source prompts in [prompts](prompts).
 5. Compile them before release or push.
 6. Use the compiled prompt files from [prompts/compiled](prompts/compiled) when configuring prompt nodes in Copilot Studio.
@@ -285,12 +295,12 @@ In practice, the flow can be modeled as:
 
 1. OneDrive trigger or manual folder selection.
 2. File listing for all PDFs inside the folder.
-3. Loop over PDFs: direct content handoff to prompt stage 1.
-4. Loop over PDFs: prompt stage 2 for schema mapping with embedded code execution.
-5. Loop over PDFs: prompt stage 3 for extraction.
-6. Collect all per-PDF extracted JSON into one aggregated dossier.
-7. Prompt stage 4 for validation with embedded code execution over the aggregated dossier.
-8. Prompt stage 5 for final field mapping.
+3. Direct document-content handoff to prompt stages.
+4. Prompt node for classification.
+5. Prompt node for schema mapping with embedded code execution.
+6. Prompt node for extraction.
+7. Prompt node for validation with embedded code execution.
+8. Prompt node for final field mapping.
 9. Word template population.
 10. Draft sentence storage or delivery.
 
