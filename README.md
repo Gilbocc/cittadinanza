@@ -145,29 +145,23 @@ flowchart LR
 	subgraph IN[Input]
 		A[OneDrive<br/>case folder]
 		B[List PDFs]
-		C[Per PDF<br/>parse flow]
-		K[Collect JSON<br/>from all PDFs]
+		C[Per PDF loop]
 	end
 
 	subgraph AI[Prompt Pipeline]
-		D[1. Classify<br/>per PDF]
-		E[2. Build<br/>schema]
-		F[3. Extract JSON<br/>per PDF]
-		G[4. Validate<br/>aggregated dossier]
+		D[1. Classify per PDF<br/>property: direct content feed]
+		E[2. Build schema<br/>property: embedded code execution]
+		F[3. Extract JSON per PDF<br/>property: direct content feed]
+		K[Collect extracted JSON<br/>across all PDFs]
+		G[4. Validate aggregated dossier<br/>property: embedded code execution]
 		H[5. Map<br/>draft fields]
 	end
 
 	subgraph OUT[Draft Output]
-		I[Fill Word<br/>template]
-		J[Sentence<br/>draft]
+		I[Sentence draft in<br/>Word template]
 	end
 
-	A --> B --> C --> D --> E --> F --> K --> G --> H --> I --> J
-
-	N1[Direct feed<br/>to prompts 1 and 3] -.-> D
-	N1 -.-> F
-	N2[Code execution<br/>inside prompts] -.-> E
-	N2 -.-> G
+	A --> B --> C --> D --> E --> F --> K --> G --> H --> I
 ```
 
 At a high level:
