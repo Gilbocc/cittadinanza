@@ -1,0 +1,173 @@
+DEFINIZIONI
+A.       IndiceProcedimento.html. È un file che riporta tutti gli eventi che hanno riguardato il fascicolo, come l’iscrizione a ruolo del ricorso, la costituzione dell’Avvocatura dello Stato, la comunicazione al Pubblico Ministero, la fissazione dell’udienza etc.  Nell'intestazione, dopo "indice storico procedimenti" è riportata l'informazione "numero_anno_ruolo", ossia due numeri separati da un trattino. È strutturato in quattro colonne: (1) “data evento” indica quando si è verificato l’evento; (2) “descrizione” indica quale evento si è verificato (non ci interessano maiuscole e minuscole); (3) “note storico” non ci interessa; (4) “documenti allegati” indica i documenti allegati a quell’evento.
+B.       Ricorso. È l’atto introduttivo del giudizio, in formato .pdf, con cui i ricorrenti chiedono al Tribunale di accertare la propria cittadinanza italiana. Si riconosce in quanto normalmente è l’atto più lungo di tutta la cartella. Inizia con un’intestazione (di solito “Ricorso ai sensi dell’art. 281-decies c.p.c.”), i nomi dei ricorrenti e dell’avvocato che li rappresenta. Segue un corpo centrale con la ricostruzione dell’albero genealogico dall’avo ai ricorrenti. Segue di solito una parte con considerazioni giuridiche. Si conclude con le conclusioni ossia con le richieste fatte dai ricorrenti per il riconoscimento della cittadinanza italiana. In calce ci sono una data e il nome del avvocato.
+C.      Ricorrenti. Sono coloro che chiedono di essere riconosciuti come cittadini italiani. Sono indicati all’inizio del ricorso. Ciascuno di essi deve rilasciare una procura all’avvocato.  Sono anch’essi discendenti in linea retta dall’avo, ma ai presenti fini distinguiamo le categorie di discendente e di ricorrente. Se sono minorenni (cioè fino al giorno del 18° compleanno escluso), vengono rappresentati da uno o entrambi i genitori. I ricorrenti per matrimonio sono coloro che chiedono la cittadinanza in quanto sposati con un familiare in linea retta dell'avo.
+D.      Atto di Intervento di Terze Parti. Atto che è impostato come un ricorso, ma è depositato da terzi soggetti diversi dai ricorrenti in un momento successivo. Di solito sono altri parenti della stessa famiglia allargata che chiedono il riconoscimento anche della propria cittadinanza. Gli intervenuti sono coloro che sono indicati all’inizio dell’intervento, analogamente ai ricorrenti. L’intervento si individua nel file “IndiceProcedimento.html” nella colonna “descrizione” con la dicitura “Depositato atto di intervento volontario” o “[numero parti] costituito, difeso da” o “[nome intervenuto] costituito, difeso da”.
+E.       Avvocato. È il difensore dei ricorrenti. Possono essere uno o più di uno per ciascun ricorrente/ricorso. La procura è rilasciata dal ricorrente a loro favore. Il loro nome è indicato all’inizio e alla fine del ricorso.
+F.       Procura. È l’atto con cui ciascun ricorrente delega uno o più avvocati a rappresentarlo in giudizio. Si riconosce per l’uso di formule come “Il sottoscritto … delega a rappresentarlo e difenderlo nel giudizio … conferendogli tutti i poteri di proporre domande, rinunciare agli atti, presentare impugnazione …”. In calce deve riportare la firma del ricorrente. Se il ricorrente è minorenne, la procura è firmata da uno o entrambi i genitori per lui, ma il rilasciante è comunque il minorenne.
+G.      Avo. È l’inizio dell’albero genealogico, la persona nata in Italia ed emigrata all’estero di solito nell’Ottocento, da cui discendono tutti gli altri.
+H.      Atto di nascita dell’avo. Attesta i genitori e la data di nascita dell’avo. Di solito è un certificato anagrafico, ma in alcuni casi potrebbe essere un certificato parrocchiale.
+I.          Atto di morte dell’avo. Attesta la data di morte dell’avo. In portoghese si chiama di solito “Certidão de Inteiro Teor de Óbito”. Si riconosce per lo stemma del Brasile in alto, un numero di matricola al centro, un testo a centro pagina, delle firme in calce e una cornicetta sui bordi. L'atto di morte si riferisce alla persona indicata al centro nell’intestazione.
+J.         Certificato negativo di naturalizzazione (CNN). È il documento rilasciato dal Ministero della Giustizia brasiliano che attesta che l’avo non ha rinunciato alla cittadinanza italiana. In portoghese si chiama “Certidão Negativa de Naturalização”. Contiene la formula «não consta, até a presente data, registro de naturalização em nome de [avo], filho de [genitore dell’avo] e de [genitore dell’avo] … nascido em [anno di nascita dell’avo]». Spesso riporta anche degli pseudonimi dell’avo, che sono validi e vanno tenuti presenti nell’analisi dei successivi certificati.
+K.       Discendenti. Sono i discendenti di sangue, soltanto in linea retta, dall’avo ai ricorrenti, escludendo sia l’avo sia i ricorrenti.
+L.        Atto di nascita. È il certificato anagrafico brasiliano che attesta la nascita di una persona. In portoghese si chiama di solito “Certidão de Nascimento em Inteiro Teor”. Si riconosce per lo stemma del Brasile in alto, un numero di matricola al centro, un testo a centro pagina, delle firme in calce e una cornicetta sui bordi. L'atto di nascita si riferisce alla persona indicata al centro nell’intestazione. Non confondere la data in cui qualcuno ha reso la dichiarazione che la persona è nata con la data in cui la persona è effettivamente nata.
+M.     Avvocatura dello Stato. Difende il Ministero dell’Interno contro i ricorrenti; è la parte resistente in giudizio. Si costituisce in giudizio con una “Comparsa di risposta” contenente alcune considerazioni giuridiche sul riconoscimento della cittadinanza italiana.
+N.      Apostille. È un certificato di autenticità dei documenti formati all’estero. Si riconosce per la presenza di una cornicetta sul bordo destro, per la scritta “CNJ - Conselho Nacional de Justiça” in alto a sinistra, per la scritta “BRASIL Apostille” in alto a destra, per la presenza di un QR-Code al centro sulla destra, per un numero identificativo in basso a destra. A volte sono presenti ulteriori elementi, come timbri o etichette o firme o caselle di testo, ma non ci interessano.
+O.      Traduzione. Tutti i documenti esteri devono essere tradotti in italiano. La traduzione può essere fatta in Italia o all'estero. La traduzione fatta all’estero si riconosce per l’intestazione del traduttore, che ha sede in Brasile.
+P.       Asseverazione. Se la traduzione di un documento estero è stata fatta in Italia, il traduttore deve prestare l’asseverazione presso un Tribunale o Giudice di Pace italiano, cioè una sorta di giuramento che la traduzione è veritiera, firmato dal traduttore.
+Q.      Firma. Ci interessano solo le firme dei ricorrenti in calce alle procure nella loro versione originale (non nelle relative apostille o traduzioni). Per firma intendiamo un qualsiasi segno tracciato a mano, anche se illeggibile, ma che possa interpretarsi come sottoscrizione personale, perché vicino al nome di una persona.
+
+Nota che apostille, traduzioni e asseverazioni sono presenti nella lista in input come documenti separati dal documento corrispondente.
+
+ISTRUZIONI PER RISPONDERE ALLE DOMANDE
+
+Dopo ogni domanda è indicato il formato delle risposte, cui devi attenerti scrupolosamente:
+
+- La risposta OK indica il positivo superamento del controllo;
+
+- La risposta KO indica il negativo superamento del controllo;
+
+- Le risposte SI/NO indicano alternative entrambe valide per il superamento del controllo;
+
+- La risposta NULL indica che non è necessario rispondere alla domanda e che quindi la risposta non servirà per la sentenza;
+
+- La risposta aperta (data, nome etc.) contiene dati che serviranno per la compilazione della sentenza.
+
+
+Dati i seguenti dati:
+
+Text input 
+
+Rispondi a ciascuna delle seguenti domande:
+
+0. E' presente:
+A) il file IndiceProcedimento.html? [OK/KO]
+B) il ricorso? [OK/KO]
+C) la procura in versione originale di ciascun ricorrente? (Rispondi in base al relativo "document_type") [OK/KO]
+i. Se KO, quale procura in versione originale manca? [Indica nome e cognome/NULL]
+D) l'atto di nascita dell'avo in versione originale? (Rispondi in base al relativo "document_type") [OK/KO]
+E) l'atto di morte dell'avo in versione originale, se necessario ai sensi del blocco 6? (Rispondi in base al relativo "document_type") [OK/KO]
+F) il certificato negativo di naturalizzazione in versione originale? (Rispondi in base al relativo "document_type") [OK/KO]
+G) l'atto di nascita in versione originale di ciascun discendente? (Rispondi in base al relativo "document_type") [OK/KO]
+i. Se KO, quale atto di nascita in versione originale manca? [Indica nome e cognome/NULL]
+H) l'atto di nascita in versione originale di ciascun ricorrente? (Rispondi in base al relativo "document_type") [OK/KO]
+i. Se KO, quale atto di nascita in versione originale manca? [Indica nome e cognome/NULL] 
+
+
+
+
+1. Si tratta di un ricorso proveniente dal Brasile? (Lo puoi desumere dal testo del ricorso) [OK/KO]
+
+
+
+2. Prendi il file INDICEPROCEDIMENTO.HTML:
+A) Quando è stato iscritto il ricorso? (È la “data evento” indicata nella colonna a sinistra, in corrispondenza della “descrizione” “iscritto a ruolo generale”) [GG.MM.AAAA]
+B) Il ricorso è stato iscritto dopo il 28.2.2023 incluso? [OK/KO]
+C) Il ricorso è stato iscritto prima del 27.3.2025 escluso? [OK/KO]
+D) È presente la comparsa di risposta dell’Avvocatura dello Stato? [SI/NO]
+i. Se è presente la comparsa di risposta, quando si è costituita l’Avvocatura dello Stato? [GG.MM.AAAA/NULL]
+E) È stata eseguita l'apertura di visibilità al Pubblico Ministero? [SI/NO]
+i. Se è stata eseguita l’apertura di visibilità al Pubblico Ministero, quando è stata eseguita? [GG.MM.AAAA/NULL]
+F) Vi sono stati interventi di terze parti oltre ai ricorrenti, all’Avvocatura dello Stato e al Pubblico Ministero? [SI/NO]
+i. Se vi sono interventi, quanti sono gli atti di intervento? [Indica il numero in cifre/NULL]
+ii. Se vi sono interventi, chi sono gli intervenuti? [Indica i loro nomi e cognomi/NULL]
+iii. Se vi sono interventi, quando è intervenuto ciascuno? [GG.MM.AAAA]
+
+
+G) Qual è l'anno e il numero di ruolo? [NNNN-AAAA]
+
+3. Individua il RICORSO e rispondi a queste domande:
+A) Chi è/sono l’avvocato/i? [Indica i loro nomi e cognomi]
+B) Quanti sono i ricorrenti, ossia coloro che chiedono la cittadinanza italiana? [Indica il numero in cifre]
+C) Quali sono i ricorrenti? [Indica i loro nomi e cognomi]
+D) Di quale nazionalità è ciascun ricorrente? [Indica il nome e il cognome di ciascun ricorrente, seguito dalla relativa nazionalità]
+E) Qualcuno dei ricorrenti è minorenne alla data in cui il ricorso è stato iscritto? [SI/NO]
+i. Se SI, come si chiama ciascun ricorrente minorenne? [Indica i loro nomi e cognomi/NULL]
+ii. Se SI, come si chiamano il genitore o i genitori che rappresentano ciascun ricorrente minorenne? [Indica il nome e il cognome di ciascun ricorrente minorenne, seguito da “rappresentato da” / NULL]
+
+F) L’albero genealogico indicato nel ricorso è coerente, nel senso che la linea di discendenza esclusivamente retta dall’avo ai ricorrenti, per come descritta nel ricorso, è senza errori/omissioni? [OK/KO; fornisci una breve motivazione alla risposta indicando sinteticamente la linea di discendenza]
+G) Tutti i ricorrenti avanzano la domanda per discendenza in linea retta dall’avo e non per matrimonio con uno dei discendenti/ricorrenti? [OK/KO; fornisci una breve motivazione alla risposta]
+i. Se KO, chi chiede la cittadinanza per matrimonio? [Indica il nome e cognome di ciascuno di questi ricorrenti/NULL]
+
+
+4. Ripeti le risposte di questa sezione n. 4 tante volte quanti sono i ricorrenti, anche se più ricorrenti hanno rilasciato una sola procura e anche se si tratta di ricorrenti minorenni. Chiama le sezioni 4/1, 4/2, 4/3, 4/4 e così via fino all’ultimo ricorrente. Individua la singola "PROCURA di [NOME COGNOME] - versione originale". Per ciascun ricorrente controlla quanto segue:
+A) A quale ricorrente si riferisce la procura? [Indica nome e cognome]
+i. Se il ricorrente è minorenne, chi lo rappresenta? [Indica nome e cognome/NULL]
+
+B) Sull'originale della procura, è presente la firma del ricorrente (o del rappresentante del ricorrente minorenne)? [OK/KO. Fornisci una breve spiegazione di quale firma hai individuato]
+C) La procura è stata conferita allo/agli stesso/i avvocato/i indicati nel ricorso? (È sufficiente l’indicazione anche di un solo avvocato) [OK/KO]
+D) Qual è l’oggetto del giudizio indicato nella procura? [Copia l’oggetto del ricorso come risulta dalla procura nella versione originale; non modificare il testo e non riscrivere o tradurre; basta il passaggio contenente frasi come "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana"]
+E) La procura indica che il giudizio sarà proposto dinanzi al Tribunale di Brescia? [OK/NO]
+i. Se NO, quale Tribunale indica? [Copia il passaggio rilevante della procura nella versione originale; spesso sono presenti formule generiche tipo "Tribunale civile competente"]
+F) Quando è stata rilasciata la procura? (Indica la data riportata sull'originale della procura) [GG.MM.AAAA]
+G) La data della procura è anteriore alla data scritta in calce al ricorso? [OK/KO]
+H) La procura è stata rilasciata in Italia? [OK/NO]
+i. Se la procura è stata rilasciata all’estero, è presente l’apostille dell'originale della procura? [OK/KO/NULL]
+I) La procura è scritta in italiano? [OK/NO]
+i. Se la procura non è scritta in italiano, è presente la traduzione in italiano della procura? [OK/KO/NULL]
+ii. Se è presente la traduzione in italiano della procura, è stata fatta in Italia? [OK/NO/NULL]
+iii. Se la traduzione in italiano della procura è stata fatta all’estero, è presente l’apostille della traduzione della procura? [OK/KO/NULL]
+iv. Se la traduzione in italiano della procura è stata fatta in Italia, è presente l’asseverazione della traduzione della procura? [OK/KO/NULL]
+
+
+5. Individua l’ATTO DI NASCITA DELL’AVO - versione originale e rispondi a queste domande:
+A) È un certificato anagrafico? [OK/NO]
+i. Se è un certificato parrocchiale, è presente il timbro della Diocesi? [OK/KO/NULL]
+C) In quale Comune è nato l’avo? [Indica il Comune]
+D) Il Comune rientra nelle attuali province di Brescia, Bergamo, Cremona e Mantova? [OK/KO]
+E) Come si chiamano i genitori dell’avo? [Indica il loro nome e cognome]
+F) Quando è nato l’avo? [GG.MM.AAAA]
+
+
+6. A) L'avo è nato dopo il 17.3.1861 escluso? [OK/NO]
+i. Se l’avo era nato nelle Province di Mantova parte orientale, Verona, Vicenza, Rovigo, Padova, Venezia, Treviso, Belluno salvo alcuni Comuni, Udine salvo alcuni Comuni, Pordenone, è nato dopo il 19.10.1866 incluso? [OK/NO/NULL]
+ii. Se l’avo era nato nelle Province di Roma, Latina salvo la parte meridionale, Frosinone salvo la parte meridionale, Viterbo, è nato dopo il 20.9.1870 incluso? [OK/NO/NULL]
+iii. Se l’avo era nato nelle Province di Trento, Bolzano, Trieste, Gorizia, alcuni Comuni di Belluno, alcuni Comuni di Udine, è nato dopo il 16.7.1920? [OK/NO/NULL]
+B) Solo hai risposto NO ad almeno una delle quattro domande precedenti, individua l’"ATTO DI MORTE DELL’AVO - versione originale" (non ti confondere con gli atti di morte dei discendenti) e rispondi alle ulteriori domande di questo blocco 6, altrimenti rispondi NULL:
+
+C) Quando è morto l’avo? [GG.MM.AAAA]
+D) L'avo è morto dopo il 17.3.1861 incluso? [OK/KO]
+i. Se l’avo era nato nelle Province di Mantova parte orientale, Verona, Vicenza, Rovigo, Padova, Venezia, Treviso, Belluno salvo alcuni Comuni, Udine salvo alcuni Comuni, Pordenone, è morto dopo il 19.10.1866 incluso? [OK/KO/NULL]
+ii. Se l’avo era nato nelle Province di Roma, Latina salvo la parte meridionale, Frosinone salvo la parte meridionale, Viterbo, è morto dopo il 20.9.1870 incluso? [OK/KO/NULL]
+iii. Se l’avo era nato nelle Province di Trento, Bolzano, Trieste, Gorizia, alcuni Comuni di Belluno, alcuni Comuni di Udine, è morto dopo il 16.7.1920? [OK/KO/NULL]
+E) È presente l’apostille dell'atto di morte dell'avo? [OK/KO]
+F) È presente la traduzione in italiano dell'atto di morte dell'avo? [OK/KO] Se la riposta è KO, rispondi NULL alle due domande successive.
+
+i. Se la traduzione è stata fatta all’estero, è presente l’apostille della traduzione dell'atto di morte dell'avo? [OK/KO/NULL]
+ii. Se la traduzione è stata fatta in Italia, è presente l’asseverazione della traduzione dell'atto di morte dell'avo? [OK/KO/NULL]
+
+
+
+7. Individua il "CERTIFICATO NEGATIVO DI NATURALIZZAZIONE - versione originale" e rispondi a queste domande:
+A) È presente la formula «não consta, até a presente data, registro de naturalização em nome de [avo], filho de [genitore dell’avo] e de [genitore dell’avo] … nascido em [anno di nascita dell’avo]»? [OK/KO]
+B) Quali sono gli pseudonimi dell’avo? [Indica gli pseudonimi]
+C) La data di nascita dell’avo riportata nel Certificato Negativo di Naturalizzazione coincide con quella dell’atto di nascita dell’avo? [OK/KO]
+D) È presente l’apostille del Certificato Negativo di Naturalizzazione? [OK/KO]
+E) È presente la traduzione in italiano del Certificato Negativo di Naturalizzazione? [OK/KO] Se la risposta è KO, rispondi NULL alle due domande successive.
+
+i. Se la traduzione è stata fatta all’estero, è presente l’apostille della traduzione del Certificato Negativo di Naturalizzazione? [OK/KO/NULL]
+ii. Se la traduzione è stata fatta in Italia, è presente l’asseverazione della traduzione del Certificato Negativo di Naturalizzazione? [OK/KO/NULL]
+
+
+8. Ripeti le risposte di questa sezione n. 8 tante volte quanti sono i discendenti e i ricorrenti. Chiama le sezioni 8/1, 8/2, 8/3, 8/4 e così via fino all’ultimo ricorrente. Individua il singolo "ATTO DI NASCITA di [NOME COGNOME] - versione originale". Per ciascun atto di nascita, rispondi a queste domande:
+A) A quale discendente/ricorrente si riferisce? [Indica nome e cognome]
+B) Uno dei due genitori indicati nell'atto di nascita è l’avo o un altro discendente/ricorrente? [OK/KO]
+C) È presente l’apostille dell'originale dell'atto di nascita? [OK/KO]
+D) È presente la traduzione in italiano dell'atto di nascita? [OK/KO] Se la risposta è KO, rispondi NULL alle due domande successive.
+
+i. Se la traduzione è stata fatta all’estero, è presente l’apostille della traduzione dell'atto di nascita? [OK/KO/NULL]
+ii. Se la traduzione è stata fatta in Italia, è presente l’asseverazione della traduzione dell'atto di nascita? [OK/KO/NULL]
+
+
+9. Individua quattro APOSTILLE:
+A) Di una delle procure (se presente, cioè se almeno una procura è stata rilasciata all’estero). Il “tipo de documento” coincide con quello cui è allegata l’apostille? [OK/KO/NULL]
+B) Del Certificato Negativo di Naturalizzazione. Il “tipo de documento” coincide con quello cui è allegata l’apostille? [OK/KO]
+C) Di un atto di nascita di un discendente. Il “tipo de documento” coincide con quello cui è allegata l’apostille? [OK/KO]
+D) Di un atto di nascita di un ricorrente. Il “tipo de documento” coincide con quello cui è allegata l’apostille? [OK/KO]
+
+
+10. Quali domande hanno riportato la risposta KO? [Elenca le domande/NULL]
+
+11. Fornisci una breve spiegazione del perché hai fornito ciascuna risposta KO (non ci interessano le risposte OK, SI, NO, NULL).
+
+OUTPUT in formato JSON (struttura flat domanda : risposta). Non inserire il JSON all'interno di un blocco markdown json.
