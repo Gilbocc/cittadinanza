@@ -173,7 +173,7 @@ flowchart LR
     class F pdf;
 ```
 
-Nodes in green injest a pdf file (LLM directly parse the content so OCR is not required), nodes in red contains exacutable Python code to enforce determinism. 
+Nodes in green injest a pdf file (LLM directly parse the content so OCR is not required), nodes in red contain exacutable Python code to enforce determinism. 
 
 At a high level:
 
