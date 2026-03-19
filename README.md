@@ -143,30 +143,30 @@ The end-to-end flow can be represented as follows:
 ```mermaid
 flowchart LR
 	subgraph IN[Input]
-		A[OneDrive case folder]
-		B[List all PDFs]
-		C[For each PDF: run parsing stages]
-		K[Collect extracted JSON from all PDFs]
+		A[OneDrive<br/>case folder]
+		B[List PDFs]
+		C[Per PDF<br/>parse flow]
+		K[Collect JSON<br/>from all PDFs]
 	end
 
 	subgraph AI[Prompt Pipeline]
-		D[1. Classify content per PDF]
-		E[2. Build extraction schema]
-		F[3. Extract JSON per PDF]
-		G[4. Validate aggregated dossier]
-		H[5. Map draft fields]
+		D[1. Classify<br/>per PDF]
+		E[2. Build<br/>schema]
+		F[3. Extract JSON<br/>per PDF]
+		G[4. Validate<br/>aggregated dossier]
+		H[5. Map<br/>draft fields]
 	end
 
 	subgraph OUT[Draft Output]
-		I[Populate Word template]
-		J[Sentence draft document]
+		I[Fill Word<br/>template]
+		J[Sentence<br/>draft]
 	end
 
 	A --> B --> C --> D --> E --> F --> K --> G --> H --> I --> J
 
-	N1[Direct content feed to prompts 1 and 3] -.-> D
+	N1[Direct feed<br/>to prompts 1 and 3] -.-> D
 	N1 -.-> F
-	N2[Code execution inside prompt invocations] -.-> E
+	N2[Code execution<br/>inside prompts] -.-> E
 	N2 -.-> G
 ```
 
