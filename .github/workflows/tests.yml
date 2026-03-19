@@ -25,4 +25,4 @@ jobs:
         run: git diff --exit-code -- prompts/compiled
 
       - name: Run tests
-        run: python -m unittest discover -v
+        run: python -m unittest discover -s test -v
