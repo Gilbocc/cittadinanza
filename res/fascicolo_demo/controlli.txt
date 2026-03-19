@@ -1,0 +1,115 @@
+{
+  "0": {
+    "A": "KO",
+    "B": "OK",
+    "C": "OK",
+    "Ci": "NULL",
+    "D": "OK",
+    "E": "OK",
+    "F": "OK",
+    "G": "OK",
+    "Gi": "NULL",
+    "H": "OK",
+    "Hi": "NULL"
+  },
+  "1": {
+    "1": "SI"
+  },
+  "2": {
+    "2": "IndiceProcedimento.html non trovato"
+  },
+  "3": {
+    "A": "Giuseppe Verdi",
+    "B": 1,
+    "C": "Alessandro Manzoni",
+    "D": "Alessandro Manzoni (Brasiliana)",
+    "E": "NO",
+    "Ei": "-",
+    "Eii": "-",
+    "F": "SI; Ludovico Ariosto (nato a Brescia il 25-5-1890) → Gian Lorenzo Bernini (nato a San Paolo l’8-4-1945) → Alessandro Manzoni (nato a Rio de Janeiro il 5-5-1980).",
+    "G": "OK; Tutti i ricorrenti avanzano per discendenza",
+    "Gi": "-"
+  },
+  "4": {
+    "4/1": {
+      "A": "Alessandro Manzoni",
+      "Ai": "-",
+      "B": "OK",
+      "C": "OK",
+      "D": "reconhecimento de cidadania italiana",
+      "E": "KO",
+      "Ei": "Null",
+      "F": "15-03-2024",
+      "G": "KO",
+      "H": "NO",
+      "I": "NO",
+      "Hi": "OK",
+      "Ii": "OK",
+      "Hii": "NO",
+      "Hiii": "OK"
+    }
+  },
+  "5": {
+    "A": "OK",
+    "Ai": "NO",
+    "C": "Brescia",
+    "D": "OK",
+    "E": "Padre: DANTE ALIGHIERI, Madre: BEATRICE PORTINARI",
+    "F": "25-05-1890"
+  },
+  "6": {
+    "A": "OK",
+    "Ai": "NULL",
+    "Aii": "NULL",
+    "Aiii": "NULL",
+    "B": "NULL",
+    "C": "NULL",
+    "D": "NULL",
+    "Di": "NULL",
+    "Dii": "NULL",
+    "Diii": "NULL",
+    "E": "NULL",
+    "F": "NULL",
+    "Fi": "NULL",
+    "Fii": "NULL"
+  },
+  "7": {
+    "A": "OK",
+    "B": "",
+    "C": "KO",
+    "D": "KO",
+    "E": "KO"
+  },
+  "8": {
+    "8/1": {
+      "A": "Gian Lorenzo Bernini",
+      "B": "OK",
+      "C": "KO",
+      "D": "KO",
+      "Di": "NULL",
+      "Dii": "NULL"
+    },
+    "8/2": {
+      "A": "Alessandro Manzoni",
+      "B": "OK",
+      "C": "KO",
+      "D": "KO",
+      "Di": "NULL",
+      "Dii": "NULL"
+    }
+  },
+  "10": [
+    "0A",
+    "8/1_C",
+    "8/1D",
+    "8/2_C",
+    "8/2D"
+  ],
+  "11": {
+    "0A": "IndiceProcedimento.html mancante",
+    "8/1_C": "Apostille atto di nascita Gian Lorenzo Bernini mancante",
+    "8/1D": "Traduzione atto di nascita Gian Lorenzo Bernini mancante",
+    "8/2_C": "Apostille atto di nascita Alessandro Manzoni mancante",
+    "8/2D": "Traduzione atto di nascita Alessandro Manzoni mancante"
+  }
+}
