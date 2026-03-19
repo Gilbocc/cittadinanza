@@ -389,5 +389,5 @@ if __name__ == "__main__":
     #if len(sys.argv) >= 3 and sys.argv[1] == "--print":
     #    print_complete_results(sys.argv[2])
     #else:
-    unittest.main()
-    #print_complete_results("test_case_14")
+    #    unittest.main()
+    print_complete_results("test_case_14")

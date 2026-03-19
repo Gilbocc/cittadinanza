@@ -270,6 +270,18 @@ class DocumentValidator:
     # -------------------------------------------------
     # SECTION 0: Basic document presence
     # -------------------------------------------------
+    # 0. E' presente:
+    # A) il file IndiceProcedimento.html? [OK/KO]
+    # B) il ricorso? [OK/KO]
+    # C) la procura in versione originale di ciascun ricorrente? (Rispondi in base al relativo "document_type") [OK/KO]
+    # i. Se KO, quale procura in versione originale manca? [Indica nome e cognome/NULL]
+    # D) l'atto di nascita dell'avo in versione originale? (Rispondi in base al relativo "document_type") [OK/KO]
+    # E) l'atto di morte dell'avo in versione originale, se necessario ai sensi del blocco 6? (Rispondi in base al relativo "document_type") [OK/KO]
+    # F) il certificato negativo di naturalizzazione in versione originale? (Rispondi in base al relativo "document_type") [OK/KO]
+    # G) l'atto di nascita in versione originale di ciascun discendente? (Rispondi in base al relativo "document_type") [OK/KO]
+    # i. Se KO, quale atto di nascita in versione originale manca? [Indica nome e cognome/NULL]
+    # H) l'atto di nascita in versione originale di ciascun ricorrente? (Rispondi in base al relativo "document_type") [OK/KO]
+    # i. Se KO, quale atto di nascita in versione originale manca? [Indica nome e cognome/NULL] 
     def section_0(self):
         results = {}
         discendenti = self.get_descendants()
@@ -318,6 +330,7 @@ class DocumentValidator:
     # -------------------------------------------------
     # SECTION 1: Provenienza ricorso
     # -------------------------------------------------
+    # 1. Si tratta di un ricorso proveniente dal Brasile? (Lo puoi desumere dal testo del ricorso) [OK/KO]
     def section_1(self):
         doc = self.index.get("ricorso")
         if not doc:
@@ -332,6 +345,19 @@ class DocumentValidator:
     # -------------------------------------------------
     # SECTION 2: IndiceProcedimento.html details
     # -------------------------------------------------
+    # 2. Prendi il file INDICEPROCEDIMENTO.HTML:
+    # A) Quando è stato iscritto il ricorso? (È la “data evento” indicata nella colonna a sinistra, in corrispondenza della “descrizione” “iscritto a ruolo generale”) [GG.MM.AAAA]
+    # B) Il ricorso è stato iscritto dopo il 28.2.2023 incluso? [OK/KO]
+    # C) Il ricorso è stato iscritto prima del 27.3.2025 escluso? [OK/KO]
+    # D) È presente la comparsa di risposta dell’Avvocatura dello Stato? [SI/NO]
+    # i. Se è presente la comparsa di risposta, quando si è costituita l’Avvocatura dello Stato? [GG.MM.AAAA/NULL]
+    # E) È stata eseguita l'apertura di visibilità al Pubblico Ministero? [SI/NO]
+    # i. Se è stata eseguita l’apertura di visibilità al Pubblico Ministero, quando è stata eseguita? [GG.MM.AAAA/NULL]
+    # F) Vi sono stati interventi di terze parti oltre ai ricorrenti, all’Avvocatura dello Stato e al Pubblico Ministero? [SI/NO]
+    # i. Se vi sono interventi, quanti sono gli atti di intervento? [Indica il numero in cifre/NULL]
+    # ii. Se vi sono interventi, chi sono gli intervenuti? [Indica i loro nomi e cognomi/NULL]
+    # iii. Se vi sono interventi, quando è intervenuto ciascuno? [GG.MM.AAAA]
+    # G) Qual è l'anno e il numero di ruolo? [NNNN-AAAA]
     def section_2(self):
         indice = self.index.get("indice")
         if not indice:
@@ -386,6 +412,17 @@ class DocumentValidator:
     # -------------------------------------------------
     # SECTION 3: Ricorso details
     # -------------------------------------------------
+    # 3. Individua il RICORSO e rispondi a queste domande:
+    # A) Chi è/sono l’avvocato/i? [Indica i loro nomi e cognomi]
+    # B) Quanti sono i ricorrenti, ossia coloro che chiedono la cittadinanza italiana? [Indica il numero in cifre]
+    # C) Quali sono i ricorrenti? [Indica i loro nomi e cognomi]
+    # D) Di quale nazionalità è ciascun ricorrente? [Indica il nome e il cognome di ciascun ricorrente, seguito dalla relativa nazionalità]
+    # E) Qualcuno dei ricorrenti è minorenne alla data in cui il ricorso è stato iscritto? [SI/NO]
+    # i. Se SI, come si chiama ciascun ricorrente minorenne? [Indica i loro nomi e cognomi/NULL]
+    # ii. Se SI, come si chiamano il genitore o i genitori che rappresentano ciascun ricorrente minorenne? [Indica il nome e il cognome di ciascun ricorrente minorenne, seguito da “rappresentato da” / NULL]
+    # F) L’albero genealogico indicato nel ricorso è coerente, nel senso che la linea di discendenza esclusivamente retta dall’avo ai ricorrenti, per come descritta nel ricorso, è senza errori/omissioni? [OK/KO; fornisci una breve motivazione alla risposta indicando sinteticamente la linea di discendenza]
+    # G) Tutti i ricorrenti avanzano la domanda per discendenza in linea retta dall’avo e non per matrimonio con uno dei discendenti/ricorrenti? [OK/KO; fornisci una breve motivazione alla risposta]
+    # i. Se KO, chi chiede la cittadinanza per matrimonio? [Indica il nome e cognome di ciascuno di questi ricorrenti/NULL]
     def section_3(self):
         doc = self.index.get("ricorso")
         if not doc:
@@ -436,6 +473,23 @@ class DocumentValidator:
     # -------------------------------------------------
     # SECTION 4: Procure details
     # -------------------------------------------------
+    # 4. Ripeti le risposte di questa sezione n. 4 tante volte quanti sono i ricorrenti, anche se più ricorrenti hanno rilasciato una sola procura e anche se si tratta di ricorrenti minorenni. Chiama le sezioni 4/1, 4/2, 4/3, 4/4 e così via fino all’ultimo ricorrente. Individua la singola "PROCURA di [NOME COGNOME] - versione originale". Per ciascun ricorrente controlla quanto segue:
+    # A) A quale ricorrente si riferisce la procura? [Indica nome e cognome]
+    # i. Se il ricorrente è minorenne, chi lo rappresenta? [Indica nome e cognome/NULL]
+    # B) Sull'originale della procura, è presente la firma del ricorrente (o del rappresentante del ricorrente minorenne)? [OK/KO. Fornisci una breve spiegazione di quale firma hai individuato]
+    # C) La procura è stata conferita allo/agli stesso/i avvocato/i indicati nel ricorso? (È sufficiente l’indicazione anche di un solo avvocato) [OK/KO]
+    # D) Qual è l’oggetto del giudizio indicato nella procura? [Copia l’oggetto del ricorso come risulta dalla procura nella versione originale; non modificare il testo e non riscrivere o tradurre; basta il passaggio contenente frasi come "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana"]
+    # E) La procura indica che il giudizio sarà proposto dinanzi al Tribunale di Brescia? [OK/NO]
+    # i. Se NO, quale Tribunale indica? [Copia il passaggio rilevante della procura nella versione originale; spesso sono presenti formule generiche tipo "Tribunale civile competente"]
+    # F) Quando è stata rilasciata la procura? (Indica la data riportata sull'originale della procura) [GG.MM.AAAA]
+    # G) La data della procura è anteriore alla data scritta in calce al ricorso? [OK/KO]
+    # H) La procura è stata rilasciata in Italia? [OK/NO]
+    # i. Se la procura è stata rilasciata all’estero, è presente l’apostille dell'originale della procura? [OK/KO/NULL]
+    # I) La procura è scritta in italiano? [OK/NO]
+    # i. Se la procura non è scritta in italiano, è presente la traduzione in italiano della procura? [OK/KO/NULL]
+    # ii. Se è presente la traduzione in italiano della procura, è stata fatta in Italia? [OK/NO/NULL]
+    # iii. Se la traduzione in italiano della procura è stata fatta all’estero, è presente l’apostille della traduzione della procura? [OK/KO/NULL]
+    # iv. Se la traduzione in italiano della procura è stata fatta in Italia, è presente l’asseverazione della traduzione della procura? [OK/KO/NULL]
     def section_4(self):
         ricorso = self.index.get("ricorso")
         if not ricorso:
@@ -540,6 +594,13 @@ class DocumentValidator:
     # -------------------------------------------------
     # SECTION 5: AVO birth certificate
     # -------------------------------------------------
+    # 5. Individua l’ATTO DI NASCITA DELL’AVO - versione originale e rispondi a queste domande:
+    # A) È un certificato anagrafico? [OK/NO]
+    # i. Se è un certificato parrocchiale, è presente il timbro della Diocesi? [OK/KO/NULL]
+    # C) In quale Comune è nato l’avo? [Indica il Comune]
+    # D) Il Comune rientra nelle attuali province di Brescia, Bergamo, Cremona e Mantova? [OK/KO]
+    # E) Come si chiamano i genitori dell’avo? [Indica il loro nome e cognome]
+    # F) Quando è nato l’avo? [GG.MM.AAAA]
     def section_5(self):
         avo_birth = self.find_avo_birth()
         if not avo_birth:
@@ -570,6 +631,20 @@ class DocumentValidator:
     # -------------------------------------------------
     # SECTION 6: AVO historical birth/death checks
     # -------------------------------------------------
+    # 6. A) L'avo è nato dopo il 17.3.1861 escluso? [OK/NO]
+    # i. Se l’avo era nato nelle Province di Mantova parte orientale, Verona, Vicenza, Rovigo, Padova, Venezia, Treviso, Belluno salvo alcuni Comuni, Udine salvo alcuni Comuni, Pordenone, è nato dopo il 19.10.1866 incluso? [OK/NO/NULL]
+    # ii. Se l’avo era nato nelle Province di Roma, Latina salvo la parte meridionale, Frosinone salvo la parte meridionale, Viterbo, è nato dopo il 20.9.1870 incluso? [OK/NO/NULL]
+    # iii. Se l’avo era nato nelle Province di Trento, Bolzano, Trieste, Gorizia, alcuni Comuni di Belluno, alcuni Comuni di Udine, è nato dopo il 16.7.1920? [OK/NO/NULL]
+    # B) Solo hai risposto NO ad almeno una delle quattro domande precedenti, individua l’"ATTO DI MORTE DELL’AVO - versione originale" (non ti confondere con gli atti di morte dei discendenti) e rispondi alle ulteriori domande di questo blocco 6, altrimenti rispondi NULL:
+    # C) Quando è morto l’avo? [GG.MM.AAAA]
+    # D) L'avo è morto dopo il 17.3.1861 incluso? [OK/KO]
+    # i. Se l’avo era nato nelle Province di Mantova parte orientale, Verona, Vicenza, Rovigo, Padova, Venezia, Treviso, Belluno salvo alcuni Comuni, Udine salvo alcuni Comuni, Pordenone, è morto dopo il 19.10.1866 incluso? [OK/KO/NULL]
+    # ii. Se l’avo era nato nelle Province di Roma, Latina salvo la parte meridionale, Frosinone salvo la parte meridionale, Viterbo, è morto dopo il 20.9.1870 incluso? [OK/KO/NULL]
+    # iii. Se l’avo era nato nelle Province di Trento, Bolzano, Trieste, Gorizia, alcuni Comuni di Belluno, alcuni Comuni di Udine, è morto dopo il 16.7.1920? [OK/KO/NULL]
+    # E) È presente l’apostille dell'atto di morte dell'avo? [OK/KO]
+    # F) È presente la traduzione in italiano dell'atto di morte dell'avo? [OK/KO] Se la riposta è KO, rispondi NULL alle due domande successive.
+    # i. Se la traduzione è stata fatta all’estero, è presente l’apostille della traduzione dell'atto di morte dell'avo? [OK/KO/NULL]
+    # ii. Se la traduzione è stata fatta in Italia, è presente l’asseverazione della traduzione dell'atto di morte dell'avo? [OK/KO/NULL]
     def section_6(self):
         res = {
             "A":"NULL","Ai":"NULL","Aii":"NULL","Aiii":"NULL",
@@ -635,6 +710,14 @@ class DocumentValidator:
     # -------------------------------------------------
     # SECTION 7: Naturalization checks
     # -------------------------------------------------
+    # 7. Individua il "CERTIFICATO NEGATIVO DI NATURALIZZAZIONE - versione originale" e rispondi a queste domande:
+    # A) È presente la formula «não consta, até a presente data, registro de naturalização em nome de [avo], filho de [genitore dell’avo] e de [genitore dell’avo] … nascido em [anno di nascita dell’avo]»? [OK/KO]
+    # B) Quali sono gli pseudonimi dell’avo? [Indica gli pseudonimi]
+    # C) La data di nascita dell’avo riportata nel Certificato Negativo di Naturalizzazione coincide con quella dell’atto di nascita dell’avo? [OK/KO]
+    # D) È presente l’apostille del Certificato Negativo di Naturalizzazione? [OK/KO]
+    # E) È presente la traduzione in italiano del Certificato Negativo di Naturalizzazione? [OK/KO] Se la risposta è KO, rispondi NULL alle due domande successive.
+    # i. Se la traduzione è stata fatta all’estero, è presente l’apostille della traduzione del Certificato Negativo di Naturalizzazione? [OK/KO/NULL]
+    # ii. Se la traduzione è stata fatta in Italia, è presente l’asseverazione della traduzione del Certificato Negativo di Naturalizzazione? [OK/KO/NULL]
     def section_7(self):
         cnn = self.index.get("naturalization")
         if not cnn:
@@ -689,6 +772,13 @@ class DocumentValidator:
     # -------------------------------------------------
     # SECTION 8: Descendants’ birth docs
     # -------------------------------------------------
+    # 8. Ripeti le risposte di questa sezione n. 8 tante volte quanti sono i discendenti e i ricorrenti. Chiama le sezioni 8/1, 8/2, 8/3, 8/4 e così via fino all’ultimo ricorrente. Individua il singolo "ATTO DI NASCITA di [NOME COGNOME] - versione originale". Per ciascun atto di nascita, rispondi a queste domande:
+    # A) A quale discendente/ricorrente si riferisce? [Indica nome e cognome]
+    # B) Uno dei due genitori indicati nell'atto di nascita è l’avo o un altro discendente/ricorrente? [OK/KO]
+    # C) È presente l’apostille dell'originale dell'atto di nascita? [OK/KO]
+    # D) È presente la traduzione in italiano dell'atto di nascita? [OK/KO] Se la risposta è KO, rispondi NULL alle due domande successive.
+    # i. Se la traduzione è stata fatta all’estero, è presente l’apostille della traduzione dell'atto di nascita? [OK/KO/NULL]
+    # ii. Se la traduzione è stata fatta in Italia, è presente l’asseverazione della traduzione dell'atto di nascita? [OK/KO/NULL]
     def section_8(self):
         results = {}
         lineage = self.get_lineage()
@@ -749,18 +839,6 @@ class DocumentValidator:
         return results
 
     # -------------------------------------------------
-    # SECTION 9: Apostille classification
-    # -------------------------------------------------
-    # def section_9(self):
-    #     res = {}
-    #     for i, doc in enumerate(self.docs,1):
-    #         key=f"9/{i}"
-    #         doc_type=doc["document_type"]
-    #         apostille_present = "OK" if self.has_apostille(doc_type, doc["schema"].get("soggetto", {"nome":"","cognome":""})) else "KO"
-    #         res[key] = {"DocumentType": doc_type, "Apostille": apostille_present}
-    #     return res
-
-    # -------------------------------------------------
     # RUN ALL
     # -------------------------------------------------
     def run(self):
@@ -774,7 +852,8 @@ class DocumentValidator:
         report["6"] = self.section_6()
         report["7"] = self.section_7()
         report["8"] = self.section_8()
-        # report["9"] = self.section_9()
+        # 10. Quali domande hanno riportato la risposta KO? [Elenca le domande/NULL]
         report["10"] = self.ko_list if self.ko_list else None
+        # 11. Fornisci una breve spiegazione del perché hai fornito ciascuna risposta KO (non ci interessano le risposte OK, SI, NO, NULL).
         report["11"] = self.ko_reasons if self.ko_reasons else None
         return report
