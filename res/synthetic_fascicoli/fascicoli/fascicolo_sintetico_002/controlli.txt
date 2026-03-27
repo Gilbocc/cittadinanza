@@ -1,0 +1,93 @@
+{
+  "0": {
+    "A": "KO",
+    "B": "OK",
+    "C": "OK",
+    "Ci": "NULL",
+    "D": "OK",
+    "E": "OK",
+    "F": "OK",
+    "G": "OK",
+    "Gi": "NULL",
+    "H": "OK",
+    "Hi": "NULL"
+  },
+  "1": {
+    "1": "SI"
+  },
+  "2": {
+    "2": "IndiceProcedimento.html non trovato"
+  },
+  "3": {
+    "A": "Luca Bianchi",
+    "B": 1,
+    "C": "Davide Luz Lombardi-Silva",
+    "D": "Davide Luz Lombardi-Silva (Null)",
+    "E": "NO",
+    "Ei": "-",
+    "Eii": "-",
+    "F": "Null; Null",
+    "G": "OK; Tutti i ricorrenti avanzano per discendenza",
+    "Gi": "-"
+  },
+  "4": {
+    "4/1": {
+      "A": "Davide Luz Lombardi-Silva",
+      "Ai": "-",
+      "B": "OK",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza",
+      "E": "KO",
+      "Ei": "Tribunale civile competente",
+      "F": "06-08-2024",
+      "G": "OK",
+      "H": "NO",
+      "I": "NO",
+      "Hi": "OK",
+      "Ii": "OK",
+      "Hii": "OK",
+      "Hiv": "KO"
+    }
+  },
+  "5": {
+    "A": "OK",
+    "Ai": "OK",
+    "C": "Mantova",
+    "D": "OK",
+    "E": "Padre: Paolo Neri, Madre: Luca Bianchi",
+    "F": "24-08-1951"
+  },
+  "6": {
+    "A": "OK",
+    "Ai": "OK",
+    "Aii": "NULL",
+    "Aiii": "NULL",
+    "B": "NULL",
+    "C": "NULL",
+    "D": "NULL",
+    "Di": "NULL",
+    "Dii": "NULL",
+    "Diii": "NULL",
+    "E": "NULL",
+    "F": "NULL",
+    "Fi": "NULL",
+    "Fii": "NULL"
+  },
+  "7": {
+    "A": "Null",
+    "B": "",
+    "C": "KO",
+    "D": "OK",
+    "E": "OK",
+    "Eii": "OK"
+  },
+  "8": {},
+  "10": [
+    "0A",
+    "3G"
+  ],
+  "11": {
+    "0A": "IndiceProcedimento.html mancante",
+    "3G": "Problemi nella linea di discendenza"
+  }
+}

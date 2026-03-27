@@ -214,3 +214,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+res/fascicoli_test
+res/fascicoli_test_output

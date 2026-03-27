@@ -1,0 +1,57 @@
+{
+  "case": "fascicolo_sintetico_003",
+  "seed": 42,
+  "pdf_case_dir": "res/synthetic_fascicoli/fascicoli/fascicolo_sintetico_003",
+  "support_case_dir": "res/synthetic_fascicoli/support/fascicolo_sintetico_003",
+  "scenario": {
+    "include_indice": true,
+    "include_avo_death": false,
+    "death_required": false,
+    "include_useless_docs": true,
+    "include_useless_apostilles": true,
+    "include_irrelevant_cert_chains": true,
+    "descendants_with_married_name": true,
+    "all_docs_in_single_pdf": true,
+    "max_docs_per_pdf": 50
+  },
+  "pdf_files": [
+    {
+      "file": "fascicolo_sintetico_003_bundle_01.pdf",
+      "logical_docs": [
+        "Apostille",
+        "Traduzione",
+        "Apostille",
+        "Apostille",
+        "Apostille",
+        "Asseverazione",
+        "Atto di nascita",
+        "Atto di nascita",
+        "Atto di nascita",
+        "Traduzione",
+        "Ricorso",
+        "Traduzione",
+        "Atto di nascita",
+        "Apostille",
+        "Certificato di matrimonio",
+        "Bozza Sentenza",
+        "Atto di nascita",
+        "IndiceProcedimento.html",
+        "Apostille",
+        "Apostille",
+        "Apostille",
+        "Traduzione",
+        "Asseverazione",
+        "Asseverazione",
+        "Traduzione",
+        "Bozza Sentenza",
+        "Procura",
+        "Apostille",
+        "Certificato Negativo di Naturalizzazione",
+        "Traduzione"
+      ],
+      "count": 30
+    }
+  ],
+  "expected_doc_count": 24,
+  "mixed_doc_count": 30
+}

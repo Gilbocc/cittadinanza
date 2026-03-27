@@ -99,10 +99,116 @@ class DocumentValidator:
             return "NULL"
         return f"{person.get('nome', '').strip()} {person.get('cognome', '').strip()}".strip() or "NULL"
 
-    def people_match(self, person_a, person_b):
+    def _levenshtein_distance(self, a, b):
+        """Compute edit distance between strings (for typo tolerance)."""
+        if not a or not b:
+            return max(len(a or ""), len(b or ""))
+        if a == b:
+            return 0
+        m, n = len(a), len(b)
+        dp = [[0] * (n + 1) for _ in range(m + 1)]
+        for i in range(m + 1):
+            dp[i][0] = i
+        for j in range(n + 1):
+            dp[0][j] = j
+        for i in range(1, m + 1):
+            for j in range(1, n + 1):
+                if a[i - 1] == b[j - 1]:
+                    dp[i][j] = dp[i - 1][j - 1]
+                else:
+                    dp[i][j] = 1 + min(dp[i - 1][j], dp[i][j - 1], dp[i - 1][j - 1])
+        return dp[m][n]
+
+    def _is_typo_variant(self, a, b, max_distance=1):
+        """Check if strings are similar enough to be typos (edit distance <= max_distance)."""
+        return self._levenshtein_distance(a, b) <= max_distance
+
+    def _split_name_tokens(self, text):
+        """Split a name field into tokens, normalizing each."""
+        if not text:
+            return set()
+        normalized = self.normalize(str(text))
+        return set(token for token in normalized.split() if token and len(token) > 1)
+
+    def _field_match(self, a, b):
+        """Match two name fields with resilience to multi-word names and misspellings."""
+        a_norm = self.normalize(a or "")
+        b_norm = self.normalize(b or "")
+        
+        if not a_norm or not b_norm:
+            return False
+        
+        # Exact substring match (preferred)
+        if a_norm in b_norm or b_norm in a_norm:
+            return True
+        
+        # Token overlap: check if any single-word tokens match (handles multi-word names spread across fields)
+        a_tokens = self._split_name_tokens(a)
+        b_tokens = self._split_name_tokens(b)
+        
+        if a_tokens and b_tokens:
+            # Exact token overlap
+            if a_tokens.intersection(b_tokens):
+                return True
+            
+            # Typo-tolerant token overlap: any token pair differs by 1 or 2 characters (edit distance <= 1)
+            for a_tok in a_tokens:
+                for b_tok in b_tokens:
+                    if self._is_typo_variant(a_tok, b_tok, max_distance=1):
+                        return True
+        
+        return False
+
+    def _birth_subject_pool(self):
+        return [doc.get("schema", {}).get("soggetto", {}) for doc in self.index.get("birth_docs", [])]
+
+    def _same_name_mentions_in_birth_pool(self, person):
+        target_name = person.get("nome", "") if person else ""
+        return [candidate for candidate in self._birth_subject_pool() if self._field_match(target_name, candidate.get("nome", ""))]
+
+    def _canonical_identity(self, person):
+        if not person:
+            return None
+        return {
+            "nome": person.get("nome", ""),
+            "cognome": person.get("cognome", ""),
+        }
+
+    def _identity_variants(self, person):
+        """Return canonical identity plus any pseudonyms declared on the person."""
+        canonical = self._canonical_identity(person)
+        if not canonical:
+            return []
+
+        variants = [canonical]
+        for pseudo in person.get("pseudonimi", []) if isinstance(person, dict) else []:
+            variants.append(self._canonical_identity(pseudo))
+
+        cleaned = []
+        for variant in variants:
+            if not variant:
+                continue
+            if variant.get("nome") or variant.get("cognome"):
+                cleaned.append(variant)
+        return cleaned
+
+    def _name_surname_match(self, person_a, person_b):
+        """Match two identities requiring both name and surname, typo-tolerant."""
         if not person_a or not person_b:
             return False
-        return self.check_name(person_a.get("nome", ""), person_b.get("nome", "")) and self.check_surname(person_a.get("cognome", ""), person_b.get("cognome", ""))
+        return self._field_match(person_a.get("nome", ""), person_b.get("nome", "")) and self._field_match(
+            person_a.get("cognome", ""), person_b.get("cognome", "")
+        )
+
+    def _identity_or_pseudonym_match(self, person_a, person_b):
+        for left in self._identity_variants(person_a):
+            for right in self._identity_variants(person_b):
+                if self._name_surname_match(left, right):
+                    return True
+        return False
+
+    def people_match(self, person_a, person_b):
+        return self._identity_or_pseudonym_match(person_a, person_b)
 
     def person_in_list(self, person, people):
         return any(self.people_match(person, candidate) for candidate in people)
@@ -207,7 +313,7 @@ class DocumentValidator:
         for doc in self.index["birth_docs"]:
             s = doc["schema"]["soggetto"]
             for n in avo_names:
-                if self.check_name(n["nome"], s["nome"]) and self.check_surname(n["cognome"], s["cognome"]):
+                if self.people_match(n, s):
                     return doc
         return None
 
@@ -216,7 +322,7 @@ class DocumentValidator:
         for doc in self.index["death_docs"]:
             s = doc["schema"]["soggetto"]
             for n in avo_names:
-                if self.check_name(n["nome"], s["nome"]) and self.check_surname(n["cognome"], s["cognome"]):
+                if self.people_match(n, s):
                     return doc
         return None
     
@@ -229,14 +335,6 @@ class DocumentValidator:
         text = "".join(c for c in text if not unicodedata.combining(c))
         return text.strip().lower()
 
-    def check_name(self, a, b):
-        a, b = self.normalize(a), self.normalize(b)
-        return a in b or b in a
-    
-    def check_surname(self, a, b):
-        a, b = self.normalize(a), self.normalize(b)
-        return a in b or b in a
-    
     # -------------------------------------------------
     # APOSTILLE / TRANSLATION / ASSEVERAZIONE HELPERS
     # -------------------------------------------------
@@ -245,7 +343,7 @@ class DocumentValidator:
             obj = t["schema"]["oggetto"]
             if obj["document_type"] == doc_type:
                 for s in obj.get("soggetto", []):
-                    if self.check_name(s["nome"], soggetto["nome"]) and self.check_surname(s["cognome"], soggetto["cognome"]):
+                    if self.people_match(s, soggetto):
                         return t
         return None
 
@@ -254,7 +352,7 @@ class DocumentValidator:
             obj = a["schema"]["oggetto"]
             if obj["document_type"] == doc_type and (source_doc is None or source_doc == obj.get("documento_originale")):
                 for s in obj.get("soggetto", []):
-                    if self.check_name(s["nome"], soggetto["nome"]) and self.check_surname(s["cognome"], soggetto["cognome"]):
+                    if self.people_match(s, soggetto):
                         return True
         return False
 
@@ -263,7 +361,7 @@ class DocumentValidator:
             obj = a["schema"]["oggetto"]
             if obj["document_type"] == doc_type and (source_doc is None or source_doc == obj.get("documento_originale")):
                 for s in obj.get("soggetto", []):
-                    if self.check_name(s["nome"], soggetto["nome"]) and self.check_surname(s["cognome"], soggetto["cognome"]):
+                    if self.people_match(s, soggetto):
                         return True
         return False
 

@@ -245,6 +245,55 @@ Run only the validator tests:
 python test/test_analysis.py
 ```
 
+## Generate Synthetic Fascicoli (With PDFs)
+
+To stress test extraction and analysis, you can generate synthetic dossiers that include:
+
+1. Multiple logical documents packed into a single PDF (or split into bundles).
+2. Relevant and irrelevant documents mixed together.
+3. Multiple apostilles in the same PDF, including apostilles that intentionally refer to unsupported documents.
+4. Full accessory chains on irrelevant documents (e.g. marriage certificate + translation + apostille + apostille of translation).
+5. Descendants with surname changes (e.g. after marriage) to test name-matching resilience.
+
+Install generator dependency:
+
+```bash
+pip3 install -r requirements.txt
+```
+
+Generate synthetic cases:
+
+```bash
+python3 generate_synthetic_fascicoli.py --count 6 --seed 42
+```
+
+Optional output directory:
+
+```bash
+python3 generate_synthetic_fascicoli.py --output-dir res/synthetic_fascicoli_custom --count 10 --seed 99
+```
+
+Generated output is split into two parallel branches under the selected output directory:
+
+1. `fascicoli/`: contains only generated PDFs.
+2. `support/`: contains only support JSON files.
+
+For each case, paths are aligned by case name:
+
+1. `fascicoli/fascicolo_sintetico_XXX/`: one or more mixed-content PDF files (`*_bundle_XX.pdf`).
+2. `support/fascicolo_sintetico_XXX/expected_extraction.json`: expected structured extraction output (ground truth for supported document types only).
+3. `support/fascicolo_sintetico_XXX/mixed_logical_docs.json`: all logical source documents used to compose PDFs, including noise.
+4. `support/fascicolo_sintetico_XXX/manifest.json`: scenario settings and PDF-to-logical-document mapping.
+
+This lets you benchmark extraction quality by comparing your extracted output from PDFs against `expected_extraction.json`, and then pass the extracted output into the validator pipeline.
+
+Note: `expected_extraction.json` intentionally excludes unsupported documents and their accessory chains (for example, marriage-certificate translation/apostille chains), even when those are present in the generated PDFs.
+
+Rendering notes:
+
+1. Every logical document starts on a new PDF page.
+2. Pages are rendered in scan-like style (background noise, scanner streaks, stamps, jitter, and form-like text layouts) to make extraction less trivial than plain JSON text dumps.
+
 ## Automation
 
 The repository includes two safeguards to keep compiled prompts aligned with source files.

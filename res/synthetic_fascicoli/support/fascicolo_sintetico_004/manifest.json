@@ -1,0 +1,95 @@
+{
+  "case": "fascicolo_sintetico_004",
+  "seed": 42,
+  "pdf_case_dir": "res/synthetic_fascicoli/fascicoli/fascicolo_sintetico_004",
+  "support_case_dir": "res/synthetic_fascicoli/support/fascicolo_sintetico_004",
+  "scenario": {
+    "include_indice": true,
+    "include_avo_death": true,
+    "death_required": true,
+    "include_useless_docs": true,
+    "include_useless_apostilles": true,
+    "include_irrelevant_cert_chains": true,
+    "descendants_with_married_name": false,
+    "all_docs_in_single_pdf": false,
+    "max_docs_per_pdf": 5
+  },
+  "pdf_files": [
+    {
+      "file": "fascicolo_sintetico_004_bundle_01.pdf",
+      "logical_docs": [
+        "IndiceProcedimento.html",
+        "Apostille",
+        "Atto di nascita",
+        "Ricorso",
+        "Certificato Negativo di Naturalizzazione"
+      ],
+      "count": 5
+    },
+    {
+      "file": "fascicolo_sintetico_004_bundle_02.pdf",
+      "logical_docs": [
+        "Apostille",
+        "Atto di nascita",
+        "Apostille",
+        "Certificato di matrimonio",
+        "Apostille"
+      ],
+      "count": 5
+    },
+    {
+      "file": "fascicolo_sintetico_004_bundle_03.pdf",
+      "logical_docs": [
+        "Apostille",
+        "Apostille",
+        "Apostille",
+        "Procura",
+        "Apostille"
+      ],
+      "count": 5
+    },
+    {
+      "file": "fascicolo_sintetico_004_bundle_04.pdf",
+      "logical_docs": [
+        "Apostille",
+        "Traduzione",
+        "Traduzione",
+        "Bozza Sentenza",
+        "Traduzione"
+      ],
+      "count": 5
+    },
+    {
+      "file": "fascicolo_sintetico_004_bundle_05.pdf",
+      "logical_docs": [
+        "Traduzione",
+        "Traduzione",
+        "Traduzione",
+        "Apostille",
+        "Bozza Sentenza"
+      ],
+      "count": 5
+    },
+    {
+      "file": "fascicolo_sintetico_004_bundle_06.pdf",
+      "logical_docs": [
+        "Atto di nascita",
+        "Apostille",
+        "Apostille",
+        "Apostille",
+        "Atto di morte"
+      ],
+      "count": 5
+    },
+    {
+      "file": "fascicolo_sintetico_004_bundle_07.pdf",
+      "logical_docs": [
+        "Apostille",
+        "Atto di nascita"
+      ],
+      "count": 2
+    }
+  ],
+  "expected_doc_count": 24,
+  "mixed_doc_count": 32
+}

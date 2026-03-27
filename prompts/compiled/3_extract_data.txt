@@ -1,6 +1,7 @@
 DEFINIZIONI
 A.       IndiceProcedimento.html. È un file che riporta tutti gli eventi che hanno riguardato il fascicolo, come l’iscrizione a ruolo del ricorso, la costituzione dell’Avvocatura dello Stato, la comunicazione al Pubblico Ministero, la fissazione dell’udienza etc.  Nell'intestazione, dopo "indice storico procedimenti" è riportata l'informazione "numero_anno_ruolo", ossia due numeri separati da un trattino. È strutturato in quattro colonne: (1) “data evento” indica quando si è verificato l’evento; (2) “descrizione” indica quale evento si è verificato (non ci interessano maiuscole e minuscole); (3) “note storico” non ci interessa; (4) “documenti allegati” indica i documenti allegati a quell’evento.
 B.       Ricorso. È l’atto introduttivo del giudizio, in formato .pdf, con cui i ricorrenti chiedono al Tribunale di accertare la propria cittadinanza italiana. Si riconosce in quanto normalmente è l’atto più lungo di tutta la cartella. Inizia con un’intestazione (di solito “Ricorso ai sensi dell’art. 281-decies c.p.c.”), i nomi dei ricorrenti e dell’avvocato che li rappresenta. Segue un corpo centrale con la ricostruzione dell’albero genealogico dall’avo ai ricorrenti. Segue di solito una parte con considerazioni giuridiche. Si conclude con le conclusioni ossia con le richieste fatte dai ricorrenti per il riconoscimento della cittadinanza italiana. In calce ci sono una data e il nome del avvocato.
+Nel ricorso possono essere indicati pseudonimi o varianti anagrafiche dei soggetti della linea di discendenza (ad es. cognome da nubile/da coniugata, varianti ortografiche, nomi composti invertiti): estraili nel campo dedicato della linea di discendenza.
 C.      Ricorrenti. Sono coloro che chiedono di essere riconosciuti come cittadini italiani. Sono indicati all’inizio del ricorso. Ciascuno di essi deve rilasciare una procura all’avvocato.  Sono anch’essi discendenti in linea retta dall’avo, ma ai presenti fini distinguiamo le categorie di discendente e di ricorrente. Se sono minorenni (cioè fino al giorno del 18° compleanno escluso), vengono rappresentati da uno o entrambi i genitori. I ricorrenti per matrimonio sono coloro che chiedono la cittadinanza in quanto sposati con un familiare in linea retta dell'avo.
 D.      Atto di Intervento di Terze Parti. Atto che è impostato come un ricorso, ma è depositato da terzi soggetti diversi dai ricorrenti in un momento successivo. Di solito sono altri parenti della stessa famiglia allargata che chiedono il riconoscimento anche della propria cittadinanza. Gli intervenuti sono coloro che sono indicati all’inizio dell’intervento, analogamente ai ricorrenti. L’intervento si individua nel file “IndiceProcedimento.html” nella colonna “descrizione” con la dicitura “Depositato atto di intervento volontario” o “[numero parti] costituito, difeso da” o “[nome intervenuto] costituito, difeso da”.
 E.       Avvocato. È il difensore dei ricorrenti. Possono essere uno o più di uno per ciascun ricorrente/ricorso. La procura è rilasciata dal ricorrente a loro favore. Il loro nome è indicato all’inizio e alla fine del ricorso.
@@ -26,6 +27,7 @@ L'output deve essere una lista JSON valida.
 ### REGOLE GENERALI
 
 - Riempi i campi richiesti utilizzando le informazioni presenti nel documento.
+- Ogni elemento di Target contiene anche `source_pages` (start_page/end_page): usa prioritariamente quell'intervallo pagina per estrarre i dati del documento corrispondente.
 - Le **date** devono essere sempre nel formato **GG-MM-AAAA**.
 - Se un’informazione non è presente o non è chiaramente deducibile, scrivi `"Null"`.
 - Tutte le stringhe devono essere racchiuse tra **doppie virgolette**.
@@ -33,9 +35,7 @@ L'output deve essere una lista JSON valida.
 - Se le istruzioni prevedono controlli (es. “firma: OK/KO”), valuta il documento e assegna il valore corretto.
 - Non spiegare come hai dedotto i dati.
 
-- Le Apostille non riportano tutto il contenuto dell'atto cui si riferiscono. Sotto alla tabella contenuta nell'Apostille, in corrispondenza della dicitura “Tipo de Documento”, è scritto soltanto a quale tipologia di documento si riferisce (ad es. Procuraçao, Certidão, Traduçao etc.). Quindi devi ricavare l'oggetto specifico (ad es. "Apostille dell'Atto di nascita di [NOME COGNOME] - versione originale") dal documento in versione originale cui l'Apostille è allegata nello stesso PDF. Di solito, il PDF contiene in questo ordine: il documento in versione originale, la sua Apostille, la traduzione del documento in versione originale, l'Apostille della traduzione. 
-
-
+- Le Apostille non riportano tutto il contenuto dell'atto cui si riferiscono. Sotto alla tabella contenuta nell'Apostille, in corrispondenza della dicitura “Tipo de Documento”, è scritto soltanto a quale tipologia di documento si riferisce (ad es. Procuraçao, Certidão, Traduçao etc.). Quindi devi ricavare l'oggetto specifico (ad es. "Atto di nascita") dal documento in versione originale cui l'Apostille è allegata nello stesso PDF. Di solito, il PDF contiene in questo ordine: il documento in versione originale, la sua Apostille, la traduzione del documento in versione originale, l'Apostille della traduzione. 
 
 - Le Asseverazioni non riportano tutto il contenuto della traduzione cui si riferiscono ma indicano solo la tipologia di documento. 
 

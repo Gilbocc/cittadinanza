@@ -32,6 +32,11 @@ def generate_classification_template(input_json):
                 }],
                 "ricorrenti_per_matrimonio": [{"nome": "...", "cognome": "..."}],
                 "linea_discendenza": [{"nome": "...", "cognome": "..."}],
+                "linea_discendenza_pseudonimi": [{
+                    "nome": "...",
+                    "cognome": "...",
+                    "pseudonimi": [{"nome": "...", "cognome": "..."}]
+                }],
                 "racconto_linea_discendenza": "racconto linea discendenza come da ricorso; non modificare il testo e non riscrivere o tradurre;",
                 "riassunto_linea_discendenza": "...",
                 "coerenza_linea_discendenza": "SI/NO",
@@ -122,11 +127,30 @@ def generate_classification_template(input_json):
     }
     final_output = []
     
-    # Processa ogni elemento nell'input
-    for entry in input_json.get("output", []):
-        item_id = entry.get("item")
+    # Support both formats:
+    # 1) {"output": [{"item": 2, "start_page": 3, "end_page": 8}, ...]}
+    # 2) {"output": [2, 3, 7]}
+    raw_entries = input_json.get("output", [])
+
+    for entry in raw_entries:
+        if isinstance(entry, int):
+            item_id = entry
+            start_page = "..."
+            end_page = "..."
+        elif isinstance(entry, dict):
+            item_id = entry.get("item")
+            start_page = entry.get("start_page", "...")
+            end_page = entry.get("end_page", "...")
+        else:
+            continue
+
         if item_id in templates:
-            final_output.append(templates[item_id])
+            template = json.loads(json.dumps(templates[item_id], ensure_ascii=False))
+            template["source_pages"] = {
+                "start_page": start_page,
+                "end_page": end_page
+            }
+            final_output.append(template)
     
     return final_output
 

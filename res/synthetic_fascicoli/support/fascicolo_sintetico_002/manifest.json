@@ -1,0 +1,111 @@
+{
+  "case": "fascicolo_sintetico_002",
+  "seed": 42,
+  "pdf_case_dir": "res/synthetic_fascicoli/fascicoli/fascicolo_sintetico_002",
+  "support_case_dir": "res/synthetic_fascicoli/support/fascicolo_sintetico_002",
+  "scenario": {
+    "include_indice": false,
+    "include_avo_death": true,
+    "death_required": false,
+    "include_useless_docs": true,
+    "include_useless_apostilles": false,
+    "include_irrelevant_cert_chains": true,
+    "descendants_with_married_name": true,
+    "all_docs_in_single_pdf": false,
+    "max_docs_per_pdf": 4
+  },
+  "pdf_files": [
+    {
+      "file": "fascicolo_sintetico_002_bundle_01.pdf",
+      "logical_docs": [
+        "Bozza Sentenza",
+        "Traduzione",
+        "Traduzione",
+        "Traduzione"
+      ],
+      "count": 4
+    },
+    {
+      "file": "fascicolo_sintetico_002_bundle_02.pdf",
+      "logical_docs": [
+        "Procura",
+        "Traduzione",
+        "Apostille",
+        "Apostille"
+      ],
+      "count": 4
+    },
+    {
+      "file": "fascicolo_sintetico_002_bundle_03.pdf",
+      "logical_docs": [
+        "Certificato di matrimonio",
+        "Apostille",
+        "Apostille",
+        "Traduzione"
+      ],
+      "count": 4
+    },
+    {
+      "file": "fascicolo_sintetico_002_bundle_04.pdf",
+      "logical_docs": [
+        "Comunicazione PEC",
+        "Apostille",
+        "Traduzione",
+        "Apostille"
+      ],
+      "count": 4
+    },
+    {
+      "file": "fascicolo_sintetico_002_bundle_05.pdf",
+      "logical_docs": [
+        "Atto di nascita",
+        "Apostille",
+        "Apostille",
+        "Atto di morte"
+      ],
+      "count": 4
+    },
+    {
+      "file": "fascicolo_sintetico_002_bundle_06.pdf",
+      "logical_docs": [
+        "Apostille",
+        "Asseverazione",
+        "Apostille",
+        "Certificato Negativo di Naturalizzazione"
+      ],
+      "count": 4
+    },
+    {
+      "file": "fascicolo_sintetico_002_bundle_07.pdf",
+      "logical_docs": [
+        "Traduzione",
+        "Atto di nascita",
+        "Apostille",
+        "Atto di nascita"
+      ],
+      "count": 4
+    },
+    {
+      "file": "fascicolo_sintetico_002_bundle_08.pdf",
+      "logical_docs": [
+        "Atto di nascita",
+        "Apostille",
+        "Traduzione",
+        "Apostille"
+      ],
+      "count": 4
+    },
+    {
+      "file": "fascicolo_sintetico_002_bundle_09.pdf",
+      "logical_docs": [
+        "Ricorso",
+        "Atto di nascita",
+        "Asseverazione",
+        "Asseverazione"
+      ],
+      "count": 4
+    }
+  ],
+  "expected_doc_count": 30,
+  "mixed_doc_count": 36
+}

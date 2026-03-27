@@ -228,6 +228,94 @@ def print_complete_results(scenario, indent=2):
 
 
 class DocumentValidatorTests(unittest.TestCase):
+    def test_field_match_handles_multiword_names_split_across_fields(self):
+        validator = DocumentValidator([])
+        # "Maria Antonietta" in nome, "Rossi" in cognome should match "Maria" in nome, "Antonietta Rossi" in cognome
+        self.assertTrue(validator._field_match("Maria Antonietta", "Maria"))
+        self.assertTrue(validator._field_match("Antonietta", "Antonietta Rossi"))
+
+    def test_field_match_tolerates_single_character_typos(self):
+        validator = DocumentValidator([])
+        # "Maria" vs "Moria" (one char diff)
+        self.assertTrue(validator._field_match("Maria", "Moria"))
+        # "Giovanni" vs "Giovani" (missing 'n')
+        self.assertTrue(validator._field_match("Giovanni", "Giovani"))
+
+    def test_field_match_rejects_large_differences(self):
+        validator = DocumentValidator([])
+        # "Maria" vs "Anna" (too different)
+        self.assertFalse(validator._field_match("Maria", "Anna"))
+        # "Giovanni" vs "Giuseppe" (too different)
+        self.assertFalse(validator._field_match("Giovanni", "Giuseppe"))
+
+    def test_field_match_whitespace_and_accent_normalization(self):
+        validator = DocumentValidator([])
+        # "Francesca" vs "Francesca" (exact)
+        self.assertTrue(validator._field_match("Francesca", "Francesca"))
+        # "Françesca" vs "Francesca" (accents normalized)
+        self.assertTrue(validator._field_match("Françesca", "Francesca"))
+
+    def test_person_in_list_rejects_surname_mismatch_even_when_name_is_unique(self):
+        validator = DocumentValidator([
+            {
+                "document_type": "Atto di nascita",
+                "schema": {
+                    "soggetto": {"nome": "Maria", "cognome": "Bianchi"}
+                }
+            }
+        ])
+        person = {"nome": "Maria", "cognome": "Rossi"}
+        people = [{"nome": "Maria", "cognome": "Bianchi"}]
+
+        self.assertFalse(validator.person_in_list(person, people))
+
+    def test_person_in_list_rejects_surname_mismatch_when_name_is_ambiguous(self):
+        validator = DocumentValidator([
+            {
+                "document_type": "Atto di nascita",
+                "schema": {
+                    "soggetto": {"nome": "Maria", "cognome": "Bianchi"}
+                }
+            },
+            {
+                "document_type": "Atto di nascita",
+                "schema": {
+                    "soggetto": {"nome": "Maria", "cognome": "Verdi"}
+                }
+            }
+        ])
+        person = {"nome": "Maria", "cognome": "Rossi"}
+        people = [
+            {"nome": "Maria", "cognome": "Bianchi"},
+            {"nome": "Maria", "cognome": "Verdi"},
+        ]
+
+        self.assertFalse(validator.person_in_list(person, people))
+
+    def test_people_match_accepts_pseudonym_equivalence(self):
+        validator = DocumentValidator([])
+
+        canonical_with_pseudonym = {
+            "nome": "Enrico",
+            "cognome": "Gallo",
+            "pseudonimi": [{"nome": "Henrique", "cognome": "Gallo"}],
+        }
+        extracted_subject = {"nome": "Henrique", "cognome": "Gallo"}
+
+        self.assertTrue(validator.people_match(canonical_with_pseudonym, extracted_subject))
+
+    def test_people_match_keeps_typo_tolerance_on_pseudonyms(self):
+        validator = DocumentValidator([])
+
+        canonical_with_pseudonym = {
+            "nome": "Giovanni",
+            "cognome": "Rossi",
+            "pseudonimi": [{"nome": "Jovanni", "cognome": "Rossi"}],
+        }
+        extracted_subject = {"nome": "Giovani", "cognome": "Rossi"}
+
+        self.assertTrue(validator.people_match(canonical_with_pseudonym, extracted_subject))
+
     def test_missing_sections_use_checklist_shape(self):
         report = run_validator(TEST_CASE_1)
 

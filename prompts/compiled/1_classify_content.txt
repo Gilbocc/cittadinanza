@@ -14,7 +14,23 @@ Per ogni blocco, determina se appartiene a una delle tipologie riconosciute:
 
 Possono essere presenti ulteriori documenti come Comparsa Avvocatura, Atto di intervento o Note sentenza. Si tratta di atti processuali redatti dalle parti o dalla cancelleria del Tribunale nell'ambito dello svolgimento del giudizio (ad esempio la costituzione dell’Avvocatura dello Stato, l'intervento di un soggetto nel processo o annotazioni relative alla sentenza). Questi documenti non devono essere considerati nell’analisi e devono essere ignorati.
 
-Restituisci un JSON array contente il codice numerico delle tipologie identificate nel documento. L'array può essere vuoto.
+Restituisci un JSON array in cui ogni elemento rappresenta un blocco documento identificato con:
+
+- `item`: codice numerico della tipologia identificata
+- `start_page`: numero della prima pagina del blocco (intero, 1-based)
+- `end_page`: numero dell'ultima pagina del blocco (intero, 1-based)
+
+L'array può essere vuoto.
+
+Esempio formato output:
+
+[
+	{"item": 2, "start_page": 3, "end_page": 18},
+	{"item": 3, "start_page": 19, "end_page": 20},
+	{"item": 7, "start_page": 21, "end_page": 21}
+]
+
+Se lo stesso tipo documentale compare più volte (es. più Procure), includi più elementi distinti con i relativi intervalli pagina.
 Le tipologie 7 (Apostille), 8 (Traduzione) e 9 (Asseverazione) sono documenti accessori. Devono essere incluse nell'array JSON solo se la catena di riferimento porta a uno dei documenti primari (da 3 a 6).
 
 Esempio SI: Includi l'Apostille se riferita a una Traduzione (8) di una Procura (3).

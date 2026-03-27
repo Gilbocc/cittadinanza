@@ -1,0 +1,133 @@
+{
+  "0": {
+    "A": "OK",
+    "B": "OK",
+    "C": "OK",
+    "Ci": "NULL",
+    "D": "OK",
+    "E": "NO",
+    "F": "OK",
+    "G": "KO",
+    "Gi": "Luca Ana Bianchi-Silva",
+    "H": "KO",
+    "Hi": "Luca Ana Bianchi-Silva"
+  },
+  "1": {
+    "1": "SI"
+  },
+  "2": {
+    "A": "27-10-2025",
+    "B": "OK",
+    "C": "OK",
+    "D": "SI",
+    "Di": "04-04-2025",
+    "E": "NO",
+    "Ei": "-",
+    "F": "NO",
+    "Fi": 0,
+    "Fii": "-",
+    "Fiii": "-",
+    "G": "674/2024"
+  },
+  "3": {
+    "A": "Marco Moretti",
+    "B": 2,
+    "C": "Luca Ana Bianchi-Silva, Davide Joao Lombardi",
+    "D": "Luca Ana Bianchi-Silva (Null), Davide Joao Lombardi (Null)",
+    "E": "NO",
+    "Ei": "-",
+    "Eii": "-",
+    "F": "SI; Elena Luigi Rossi -> Davide Joao Lombardi -> Luca Ana Bianchi-Silva",
+    "G": "OK; Tutti i ricorrenti avanzano per discendenza",
+    "Gi": "-"
+  },
+  "4": {
+    "4/1": {
+      "A": "Luca Ana Bianchi-Silva",
+      "Ai": "-",
+      "B": "OK",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza",
+      "E": "KO",
+      "Ei": "Tribunale civile competente",
+      "F": "14-04-2024",
+      "G": "KO",
+      "H": "NO",
+      "I": "OK",
+      "Hi": "OK"
+    },
+    "4/2": {
+      "A": "Davide Joao Lombardi",
+      "Ai": "-",
+      "B": "OK",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza",
+      "E": "KO",
+      "Ei": "Tribunale civile competente",
+      "F": "10-09-2025",
+      "G": "KO",
+      "H": "OK",
+      "I": "OK"
+    }
+  },
+  "5": {
+    "A": "NO",
+    "Ai": "NO",
+    "C": "Sao Paulo",
+    "D": "KO",
+    "E": "Padre: Matteo Ana Gallo, Madre: Matteo Gallo",
+    "F": "07-02-1964"
+  },
+  "6": {
+    "A": "OK",
+    "Ai": "NULL",
+    "Aii": "NULL",
+    "Aiii": "NULL",
+    "B": "NULL",
+    "C": "NULL",
+    "D": "NULL",
+    "Di": "NULL",
+    "Dii": "NULL",
+    "Diii": "NULL",
+    "E": "NULL",
+    "F": "NULL",
+    "Fi": "NULL",
+    "Fii": "NULL"
+  },
+  "7": {
+    "A": "OK",
+    "B": "Elena Rosso",
+    "C": "KO",
+    "D": "OK",
+    "E": "OK",
+    "Eii": "OK"
+  },
+  "8": {
+    "8/1": {
+      "A": "Davide Joao Lombardi",
+      "B": "KO",
+      "C": "OK",
+      "D": "OK",
+      "Di": "KO",
+      "Dii": "NULL"
+    },
+    "8/2": {
+      "A": "Luca Ana Bianchi",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    }
+  },
+  "10": [
+    "0G",
+    "8/1B",
+    "8/1Di"
+  ],
+  "11": {
+    "0G": "Atti di nascita mancanti: Luca Ana Bianchi-Silva",
+    "8/1B": "Genitori non in linea discendenza per Davide Joao Lombardi",
+    "8/1Di": "Apostille atto di nascita Davide Joao Lombardi mancante"
+  }
+}
