@@ -2,9 +2,24 @@ from __future__ import annotations
 
 from pathlib import Path
 import re
+import io
+import tokenize
 
 
 PLACEHOLDER_PATTERN = re.compile(r"\{\{\s*([^{}\s]+)\s*\}\}")
+
+
+def _strip_python_comments(source: str) -> str:
+    """Remove Python comment tokens while preserving executable code."""
+    reader = io.StringIO(source).readline
+    tokens: list[tokenize.TokenInfo] = []
+
+    for tok in tokenize.generate_tokens(reader):
+        if tok.type == tokenize.COMMENT:
+            continue
+        tokens.append(tok)
+
+    return tokenize.untokenize(tokens)
 
 
 def compile_prompt_text(prompt_text: str, project_root: Path) -> str:
@@ -20,7 +35,10 @@ def compile_prompt_text(prompt_text: str, project_root: Path) -> str:
         if not source_path.is_file():
             raise FileNotFoundError(f"Placeholder source not found: {relative_path}")
 
-        return source_path.read_text(encoding="utf-8").rstrip()
+        source_text = source_path.read_text(encoding="utf-8")
+        if source_path.suffix == ".py":
+            source_text = _strip_python_comments(source_text)
+        return source_text.rstrip()
 
     return PLACEHOLDER_PATTERN.sub(replace, prompt_text)
 

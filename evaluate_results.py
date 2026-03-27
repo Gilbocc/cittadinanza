@@ -9,15 +9,20 @@ Usage:
   python3 evaluate_results.py
   python3 evaluate_results.py --base-dir res/synthetic_fascicoli
   python3 evaluate_results.py --case fascicolo_sintetico_000 fascicolo_sintetico_001
+    python3 evaluate_results.py --report-from-info
+    python3 evaluate_results.py --missing-files-report
   python3 evaluate_results.py --json
 """
 
 import argparse
+import collections
 import json
 import re
 import sys
 from pathlib import Path
 from typing import Optional
+
+from src.analysis import DocumentValidator
 
 
 # ---------------------------------------------------------------------------
@@ -440,7 +445,7 @@ def compare_report(expected_report: dict, actual_report: dict) -> dict:
 # Per-case evaluation
 # ---------------------------------------------------------------------------
 
-def evaluate_case(fascicoli_dir: Path, support_dir: Path) -> dict:
+def evaluate_case(fascicoli_dir: Path, support_dir: Path, report_from_info: bool = False) -> dict:
     """Load files and run both comparisons for one case."""
     result: dict = {"extraction": None, "report": None, "errors": []}
 
@@ -448,6 +453,7 @@ def evaluate_case(fascicoli_dir: Path, support_dir: Path) -> dict:
     controlli_path = fascicoli_dir / "controlli.txt"
     expected_ext_path = support_dir / "expected_extraction.json"
     expected_rep_path = support_dir / "expected_report.json"
+    actual_docs = None
 
     # --- Extraction ---
     if not info_path.exists():
@@ -463,13 +469,19 @@ def evaluate_case(fascicoli_dir: Path, support_dir: Path) -> dict:
             result["errors"].append(f"Extraction comparison failed: {exc}")
 
     # --- Report ---
-    if not controlli_path.exists():
-        result["errors"].append(f"controlli.txt not found: {controlli_path}")
     if not expected_rep_path.exists():
         result["errors"].append(f"expected_report.json not found: {expected_rep_path}")
-    if controlli_path.exists() and expected_rep_path.exists():
+    if not report_from_info and not controlli_path.exists():
+        result["errors"].append(f"controlli.txt not found: {controlli_path}")
+
+    if expected_rep_path.exists() and (report_from_info or controlli_path.exists()):
         try:
-            actual_report = json.loads(controlli_path.read_text(encoding="utf-8"))
+            if report_from_info:
+                if actual_docs is None:
+                    actual_docs = json.loads(info_path.read_text(encoding="utf-8"))
+                actual_report = DocumentValidator(actual_docs).run()
+            else:
+                actual_report = json.loads(controlli_path.read_text(encoding="utf-8"))
             expected_report = json.loads(expected_rep_path.read_text(encoding="utf-8"))
             result["report"] = compare_report(expected_report, actual_report)
         except Exception as exc:
@@ -583,6 +595,76 @@ def _print_case(case_name: str, result: dict) -> bool:
     return passed
 
 
+def _build_missing_files_summary(all_results: dict) -> dict:
+    """Aggregate missing/extra extracted documents across all evaluated cases."""
+    missing_by_type = collections.Counter()
+    extra_by_type = collections.Counter()
+    missing_by_case = {}
+
+    for case_name, result in all_results.items():
+        ext = result.get("extraction")
+        if not ext:
+            continue
+
+        missing_docs = ext.get("missing_docs", [])
+        extra_docs = ext.get("extra_docs", [])
+
+        if missing_docs:
+            missing_by_case[case_name] = [
+                {
+                    "document_type": d.get("document_type"),
+                    "key": d.get("key", ""),
+                }
+                for d in missing_docs
+            ]
+
+        for d in missing_docs:
+            missing_by_type[d.get("document_type") or "UNKNOWN"] += 1
+        for d in extra_docs:
+            extra_by_type[d.get("document_type") or "UNKNOWN"] += 1
+
+    return {
+        "missing_by_type": dict(missing_by_type.most_common()),
+        "extra_by_type": dict(extra_by_type.most_common()),
+        "missing_by_case": missing_by_case,
+    }
+
+
+def _print_missing_files_summary(all_results: dict):
+    """Human-readable summary focused on extracted missing files from info.txt."""
+    summary = _build_missing_files_summary(all_results)
+    missing_by_type = summary["missing_by_type"]
+    extra_by_type = summary["extra_by_type"]
+    missing_by_case = summary["missing_by_case"]
+
+    print(f"\n{'═' * 62}")
+    print("  Missing Files Report (from info extraction)")
+    print(f"{'═' * 62}")
+
+    if not missing_by_case:
+        print("  No missing extracted documents detected.")
+    else:
+        print("  Missing by document type:")
+        for doc_type, count in missing_by_type.items():
+            print(f"    - {doc_type}: {count}")
+
+        if extra_by_type:
+            print("\n  Extra by document type:")
+            for doc_type, count in extra_by_type.items():
+                print(f"    - {doc_type}: {count}")
+
+        print("\n  Missing details per case:")
+        for case_name in sorted(missing_by_case):
+            docs = missing_by_case[case_name]
+            print(f"    - {case_name}: {len(docs)} missing")
+            for d in docs:
+                key = d["key"]
+                suffix = f" | {key}" if key else ""
+                print(f"        * {d['document_type']}{suffix}")
+
+    print(f"{'═' * 62}")
+
+
 # ---------------------------------------------------------------------------
 # CLI
 # ---------------------------------------------------------------------------
@@ -615,6 +697,16 @@ def main(argv=None):
         action="store_true",
         help="Output machine-readable JSON instead of human-readable text.",
     )
+    parser.add_argument(
+        "--report-from-info",
+        action="store_true",
+        help="Generate actual report from info.txt using DocumentValidator instead of reading controlli.txt.",
+    )
+    parser.add_argument(
+        "--missing-files-report",
+        action="store_true",
+        help="Print an extraction-focused report of missing/extra document files inferred from info.txt vs expected extraction.",
+    )
     args = parser.parse_args(argv)
 
     base_dir: Path = args.base_dir
@@ -628,10 +720,15 @@ def main(argv=None):
     for case_name in cases:
         fascicoli_dir = base_dir / "fascicoli" / case_name
         support_dir = base_dir / "support" / case_name
-        all_results[case_name] = evaluate_case(fascicoli_dir, support_dir)
+        all_results[case_name] = evaluate_case(
+            fascicoli_dir,
+            support_dir,
+            report_from_info=args.report_from_info,
+        )
 
     if args.json:
         # Produce JSON with full detail
+        missing_summary = _build_missing_files_summary(all_results)
         output = {
             case: {
                 "pass": not r["errors"] and _is_pass(_ext_score(r["extraction"]), _rep_score(r["report"])),
@@ -641,7 +738,7 @@ def main(argv=None):
             }
             for case, r in all_results.items()
         }
-        print(json.dumps(output, indent=2, ensure_ascii=False))
+        print(json.dumps({"cases": output, "missing_files_summary": missing_summary}, indent=2, ensure_ascii=False))
         passed_count = sum(1 for v in output.values() if v["pass"])
         sys.exit(0 if passed_count == len(cases) else 1)
 
@@ -658,6 +755,9 @@ def main(argv=None):
     if failed_cases:
         print(f"  Failed:  {', '.join(failed_cases)}")
     print(f"{'═' * 62}\n")
+
+    if args.missing_files_report:
+        _print_missing_files_summary(all_results)
 
     sys.exit(0 if not failed_cases else 1)
 

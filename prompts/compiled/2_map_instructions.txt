@@ -134,9 +134,9 @@ def generate_classification_template(input_json):
     }
     final_output = []
     
-    # Support both formats:
-    # 1) {"output": [{"item": 2, "start_page": 3, "end_page": 8}, ...]}
-    # 2) {"output": [2, 3, 7]}
+                           
+                                                                       
+                              
     raw_entries = input_json.get("output", [])
 
     for entry in raw_entries:

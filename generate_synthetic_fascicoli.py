@@ -433,17 +433,22 @@ def format_document_content(doc: dict[str, Any]) -> list[str]:
         lawyer_names = ", ".join(
             f"{a.get('nome', '')} {a.get('cognome', '')}" for a in schema.get("avvocati", [])
         ) or "N.D."
+        line = schema.get("riassunto_linea_discendenza", "N.D.")
         return [
-            "TRIBUNALE ORDINARIO - RICORSO EX ART. 702 BIS C.P.C.",
+            "TRIBUNALE ORDINARIO DI BRESCIA",
+            "RICORSO AI SENSI DELL'ART. 281-DECIES C.P.C.",
             f"Ricorrenti: {ric_names}",
-            f"Avvocati: {lawyer_names}",
-            f"Data ricorso: {schema.get('data_ricorso', 'N.D.')}",
+            f"Difensore/i: {lawyer_names}",
+            f"Data in calce al ricorso: {schema.get('data_ricorso', 'N.D.')}",
             f"Provenienza dal Brasile: {schema.get('proveniente_dal_brasile', 'N.D.')}",
             "",
-            "FATTO E DIRITTO",
+            "FATTO",
             schema.get("racconto_linea_discendenza", "N.D."),
+            f"Linea di discendenza allegata: {line}",
             "",
-            "SI CHIEDE IL RICONOSCIMENTO DELLA CITTADINANZA ITALIANA IURE SANGUINIS.",
+            "DIRITTO",
+            "I ricorrenti chiedono il riconoscimento della cittadinanza italiana iure sanguinis.",
+            "P.Q.M. si chiede l'accoglimento del ricorso.",
         ]
 
     if doc_type == "Procura":
@@ -452,36 +457,44 @@ def format_document_content(doc: dict[str, Any]) -> list[str]:
         avvocati = ", ".join(f"{a.get('nome', '')} {a.get('cognome', '')}" for a in schema.get("avvocati", [])) or "N.D."
         return [
             "PROCURA ALLE LITI",
-            f"Conferente/i: {names}",
-            f"Difensore/i: {avvocati}",
-            f"Oggetto: {schema.get('oggetto', 'N.D.')}",
-            f"Tribunale indicato: {schema.get('tribunale_indicato', 'N.D.')}",
-            f"Data procura: {schema.get('data_procura', 'N.D.')}",
+            f"Il sottoscritto/i {names} delega a rappresentarlo e difenderlo nel giudizio.",
+            f"Difensore/i nominati: {avvocati}",
+            f"Oggetto del giudizio: {schema.get('oggetto', 'N.D.')}",
+            f"Tribunale indicato nel testo: {schema.get('tribunale_indicato', 'N.D.')}",
+            f"Tribunale di Brescia indicato: {schema.get('tribunale_brescia_indicato', 'N.D.')}",
+            f"Data rilascio procura: {schema.get('data_procura', 'N.D.')}",
             f"Rilasciata in Italia: {schema.get('rilasciata_in_italia', 'N.D.')}",
             f"Scritta in italiano: {schema.get('scritta_in_italiano', 'N.D.')}",
-            "",
-            "Firma/e apposta/e in calce.",
+            "Conferiti tutti i poteri di legge, compresa rinuncia agli atti e impugnazione.",
+            "Firma/e del/i conferente/i in calce.",
         ]
 
     if doc_type == "Atto di nascita":
         soggetto = schema.get("soggetto", {})
+        padre = schema.get("padre", {})
+        madre = schema.get("madre", {})
+        matricola = f"{random.randint(1000000,9999999)} {random.randint(10,99)} {random.randint(1000,9999)}"
         return [
-            "ESTRATTO PER RIASSUNTO DELL'ATTO DI NASCITA",
+            "CERTIDAO DE NASCIMENTO EM INTEIRO TEOR / ATTO DI NASCITA",
+            f"Matricula: {matricola}",
             f"Nominativo: {soggetto.get('nome', '')} {soggetto.get('cognome', '')}",
-            f"Data nascita: {schema.get('data_nascita', 'N.D.')}",
+            f"Filho(a) de: {padre.get('nome', '')} {padre.get('cognome', '')} e {madre.get('nome', '')} {madre.get('cognome', '')}",
+            f"Data di nascita: {schema.get('data_nascita', 'N.D.')}",
             f"Comune/Stato: {schema.get('comune_nascita', 'N.D.')} / {schema.get('stato', 'N.D.')}",
-            f"Padre: {schema.get('padre', {}).get('nome', '')} {schema.get('padre', {}).get('cognome', '')}",
-            f"Madre: {schema.get('madre', {}).get('nome', '')} {schema.get('madre', {}).get('cognome', '')}",
             f"Tipo certificato: {schema.get('tipo', 'N.D.')}",
             f"Timbro diocesi: {schema.get('timbro_diocesi', 'N.D.')}",
+            "Avvertenza: la data di registrazione puo differire dalla data effettiva di nascita.",
         ]
 
     if doc_type == "Atto di morte":
         soggetto = schema.get("soggetto", {})
+        matricola = f"{random.randint(1000000,9999999)} {random.randint(10,99)} {random.randint(1000,9999)}"
         return [
-            "CERTIDAO DE OBITO / ATTO DI MORTE",
+            "CERTIDAO DE INTEIRO TEOR DE OBITO / ATTO DI MORTE",
+            f"Matricula: {matricola}",
             f"Defunto: {soggetto.get('nome', '')} {soggetto.get('cognome', '')}",
             f"Data decesso: {schema.get('data_decesso', 'N.D.')}",
+            "Consta no assento de obito a data do falecimento.",
             "Documento rilasciato in copia conforme.",
         ]
 
@@ -495,39 +508,62 @@ def format_document_content(doc: dict[str, Any]) -> list[str]:
             f"Data di nascita dichiarata: {schema.get('data_nascita', 'N.D.')}",
             f"Formula negativa presente: {schema.get('formula_negativa_presente', 'N.D.')}",
             f"Pseudonimi/alias: {aliases}",
-            "Nao consta ate a presente data registro de naturalizacao.",
+            "Nao consta, ate a presente data, registro de naturalizacao em nome do requerente.",
+            "Certidao emitida pelo Ministerio da Justica.",
         ]
 
     if doc_type == "Traduzione":
         obj = schema.get("oggetto", {})
         people = ", ".join(f"{p.get('nome', '')} {p.get('cognome', '')}" for p in obj.get("soggetto", [])) or "N.D."
         return [
-            "TRADUZIONE GIURATA",
+            "TRADUZIONE IN LINGUA ITALIANA",
             f"Documento tradotto: {obj.get('document_type', 'N.D.')}",
             f"Soggetti citati: {people}",
             f"Sede traduttore: {schema.get('sede_traduttore', 'N.D.')}",
-            "Si attesta la conformita sostanziale del contenuto tradotto.",
+            "Il sottoscritto traduttore certifica che la presente e traduzione fedele del testo originale.",
         ]
 
     if doc_type == "Apostille":
         obj = schema.get("oggetto", {})
         people = ", ".join(f"{p.get('nome', '')} {p.get('cognome', '')}" for p in obj.get("soggetto", [])) or "N.D."
+        code = f"BR{random.randint(100000,999999)}-{random.randint(1000,9999)}"
         return [
-            "APOSTILLE (Convention de La Haye du 5 octobre 1961)",
-            f"Tipo documento: {obj.get('document_type', 'N.D.')}",
+            "CNJ - Conselho Nacional de Justica",
+            "BRASIL Apostille (Convention de La Haye du 5 octobre 1961)",
+            f"Numero identificativo: {code}",
+            "QR-Code: [presente]",
+            f"Tipo de Documento: {obj.get('document_type', 'N.D.')}",
             f"Documento originale: {obj.get('documento_originale', 'N.D.')}",
             f"Riferimento soggetti: {people}",
-            "Autorita competente: Cartorio / Tribunal local.",
+            "Autoridade competente: Cartorio / Tribunal local.",
         ]
 
     if doc_type == "Asseverazione":
         obj = schema.get("oggetto", {})
         people = ", ".join(f"{p.get('nome', '')} {p.get('cognome', '')}" for p in obj.get("soggetto", [])) or "N.D."
         return [
-            "VERBALE DI ASSEVERAZIONE",
+            "VERBALE DI GIURAMENTO / ASSEVERAZIONE DELLA TRADUZIONE",
             f"Documento asseverato: {obj.get('document_type', 'N.D.')}",
             f"Originale di riferimento: {obj.get('documento_originale', 'N.D.')}",
             f"Soggetti menzionati: {people}",
+            "Il traduttore giura di aver bene e fedelmente tradotto il documento.",
+        ]
+
+    if doc_type == "IndiceProcedimento.html":
+        intervenuti = schema.get("intervenuti", [])
+        row_interventi = " / ".join(
+            f"{p.get('data','N.D.')} - {p.get('nome','')} {p.get('cognome','')}"
+            for p in intervenuti
+        ) or "N.D."
+        return [
+            "indice storico procedimenti",
+            f"numero_anno_ruolo: {schema.get('numero_anno_ruolo', 'N.D.')}",
+            "",
+            "data evento | descrizione | note storico | documenti allegati",
+            f"{schema.get('data_iscrizione','N.D.')} | iscritto a ruolo generale | - | Ricorso",
+            f"{schema.get('data_comparsa_avvocatura','N.D.')} | comparsa avvocatura: {schema.get('comparsa_avvocatura','N.D.')} | - | Comparsa",
+            f"{schema.get('data_visibilita_pm','N.D.')} | visibilita PM: {schema.get('visibilita_pm','N.D.')} | - | Comunicazione",
+            f"interventi: {schema.get('interventi','N.D.')} ({schema.get('numero_interventi','N.D.')}) | {row_interventi}",
         ]
 
     lines = [f"{doc_type}"]
