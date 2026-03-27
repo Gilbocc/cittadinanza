@@ -1,6 +1,6 @@
 {
   "0": {
-    "A": "KO",
+    "A": "OK",
     "B": "OK",
     "C": "OK",
     "Ci": "NULL",
@@ -16,48 +16,48 @@
     "1": "OK"
   },
   "2": {
-    "A": "NULL",
-    "B": "NULL",
-    "C": "NULL",
-    "D": "NULL",
-    "Di": "NULL",
-    "E": "NULL",
+    "A": "04.03.2024",
+    "B": "OK",
+    "C": "OK",
+    "D": "SI",
+    "Di": "21.08.2025",
+    "E": "NO",
     "Ei": "NULL",
-    "F": "NULL",
-    "Fi": "NULL",
-    "Fii": "NULL",
-    "Fiii": "NULL",
-    "G": "NULL"
+    "F": "SI",
+    "Fi": "2",
+    "Fii": "Francesca Leoni, Chiara Costa",
+    "Fiii": "09.07.2025, 01.03.2025",
+    "G": "0311-2025"
   },
   "3": {
-    "A": "Davide Lombardi",
+    "A": "Sara Marini",
     "B": 1,
-    "C": "Paolo Neri-Silva",
-    "D": "Paolo Neri-Silva: Brasiliana",
+    "C": "Paolo Neri",
+    "D": "Paolo Neri: Brasiliana",
     "E": "NO",
     "Ei": "NULL",
     "Eii": "NULL",
-    "F": "OK; Elena Carlo Rossi -> Paolo Joao Neri -> Paolo Neri",
+    "F": "OK; Matteo Maria Gallo -> Francesca Leoni -> Elena Ana Rossi -> Paolo Neri",
     "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
     "Gi": "NULL"
   },
   "4": {
     "4/1": {
-      "A": "Paolo Neri-Silva",
+      "A": "Paolo Neri",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Paolo Neri-Silva",
+      "B": "OK; firma del ricorrente Paolo Neri",
       "C": "OK",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
-      "E": "OK",
-      "Ei": "NULL",
-      "F": "02.02.2024",
-      "G": "OK",
+      "E": "NO",
+      "Ei": "Tribunale civile competente",
+      "F": "21.01.2024",
+      "G": "KO",
       "H": "NO",
       "Hi": "OK",
-      "I": "NO",
-      "Ii": "OK",
-      "Iii": "NO",
-      "Iiii": "OK",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
+      "Iiii": "NULL",
       "Iiv": "NULL"
     }
   },
@@ -66,47 +66,63 @@
     "Ai": "NULL",
     "C": "Bergamo",
     "D": "OK",
-    "E": "Padre: Paolo Neri, Madre: Luca Bianchi",
-    "F": "01.04.1929"
+    "E": "Padre: Paolo Neri, Madre: Davide Lombardi",
+    "F": "20.09.1848"
   },
   "6": {
-    "A": "OK",
+    "A": "NO",
     "Ai": "NULL",
     "Aii": "NULL",
     "Aiii": "NULL",
-    "C": "NULL",
-    "D": "NULL",
+    "C": "08.05.1924",
+    "D": "OK",
     "Di": "NULL",
     "Dii": "NULL",
     "Diii": "NULL",
-    "E": "NULL",
-    "F": "NULL",
-    "Fi": "NULL",
+    "E": "OK",
+    "F": "OK",
+    "Fi": "OK",
     "Fii": "NULL"
   },
   "7": {
     "A": "OK",
-    "B": "Elena Rosso",
+    "B": "NULL",
     "C": "OK",
     "D": "OK",
     "E": "OK",
-    "Ei": "NULL",
-    "Eii": "OK"
+    "Ei": "OK",
+    "Eii": "NULL"
   },
   "8": {
     "8/1": {
-      "A": "Paolo Joao Neri",
+      "A": "Francesca Leoni",
       "B": "OK",
       "C": "OK",
       "D": "OK",
-      "Di": "NULL",
-      "Dii": "OK"
+      "Di": "OK",
+      "Dii": "NULL"
+    },
+    "8/2": {
+      "A": "Elena Ana Rossi",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
+    },
+    "8/3": {
+      "A": "Paolo Neri",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
     }
   },
   "10": [
-    "0A"
+    "4/1G"
   ],
   "11": {
-    "0A": "IndiceProcedimento.html mancante"
+    "4/1G": "La data della procura di Paolo Neri non è anteriore alla data del ricorso"
   }
 }

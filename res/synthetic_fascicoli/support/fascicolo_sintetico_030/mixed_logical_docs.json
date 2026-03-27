@@ -1,0 +1,466 @@
+[
+  {
+    "document_type": "IndiceProcedimento.html",
+    "schema": {
+      "numero_anno_ruolo": "603/2024",
+      "data_iscrizione": "05-03-2025",
+      "iscrizione_post_28_02_2023": "OK",
+      "iscrizione_pre_27_03_2025": "OK",
+      "comparsa_avvocatura": "NO",
+      "data_comparsa_avvocatura": "25-05-2024",
+      "visibilita_pm": "NO",
+      "data_visibilita_pm": "05-04-2024",
+      "interventi": "NO",
+      "numero_interventi": 0,
+      "intervenuti": []
+    }
+  },
+  {
+    "document_type": "Ricorso",
+    "schema": {
+      "avvocati": [
+        {
+          "nome": "Luca",
+          "cognome": "Bianchi"
+        }
+      ],
+      "numero_ricorrenti": 1,
+      "ricorrenti_maggiorenni": [
+        {
+          "nome": "Matteo Luz",
+          "cognome": "Gallo",
+          "nazionalita": "Brasiliana"
+        }
+      ],
+      "ricorrenti_minorenni": [],
+      "ricorrenti_per_matrimonio": [
+        {
+          "nome": "Elena",
+          "cognome": "Rossi",
+          "nazionalita": "Brasiliana"
+        }
+      ],
+      "linea_discendenza": [
+        {
+          "nome": "Francesca Luigi",
+          "cognome": "Leoni"
+        },
+        {
+          "nome": "Paolo",
+          "cognome": "Neri"
+        },
+        {
+          "nome": "Matteo Luz",
+          "cognome": "Gallo"
+        }
+      ],
+      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo.",
+      "riassunto_linea_discendenza": "Francesca Luigi Leoni -> Paolo Neri -> Matteo Luz Gallo",
+      "coerenza_linea_discendenza": "SI",
+      "proveniente_dal_brasile": "SI",
+      "data_ricorso": "16-06-2025"
+    }
+  },
+  {
+    "document_type": "Procura",
+    "schema": {
+      "soggetto": [
+        {
+          "nome": "Matteo Luz",
+          "cognome": "Gallo",
+          "minorenne": "NO",
+          "rappresentanti_legali": [],
+          "firma_presente": "OK"
+        }
+      ],
+      "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "avvocati": [
+        {
+          "nome": "Luca",
+          "cognome": "Bianchi"
+        }
+      ],
+      "tribunale_brescia_indicato": "KO",
+      "tribunale_indicato": "Tribunale civile competente",
+      "data_procura": "30-06-2025",
+      "rilasciata_in_italia": "NO",
+      "scritta_in_italiano": "NO"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Procura",
+        "soggetto": [
+          {
+            "nome": "Matteo Luz",
+            "cognome": "Gallo"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Procura",
+        "soggetto": [
+          {
+            "nome": "Matteo Luz",
+            "cognome": "Gallo"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Matteo Luz",
+            "cognome": "Gallo"
+          }
+        ],
+        "documento_originale": "Procura"
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Francesca Luigi",
+        "cognome": "Leoni"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Brescia",
+      "provincia": "brescia",
+      "padre": {
+        "nome": "Elena",
+        "cognome": "Rossi"
+      },
+      "madre": {
+        "nome": "Sara",
+        "cognome": "Marini"
+      },
+      "data_nascita": "05-03-1881",
+      "area_nascita": "A",
+      "stato": "Italia"
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Matteo Luz",
+        "cognome": "Gallo"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "NO",
+      "comune_nascita": "Curitiba",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Francesca",
+        "cognome": "Leoni"
+      },
+      "madre": {
+        "nome": "Paolo",
+        "cognome": "Neri"
+      },
+      "data_nascita": "15-07-1958",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Matteo Luz",
+            "cognome": "Gallo"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Matteo Luz",
+            "cognome": "Gallo"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Matteo Luz",
+            "cognome": "Gallo"
+          }
+        ],
+        "documento_originale": "Atto di nascita"
+      }
+    }
+  },
+  {
+    "document_type": "Certificato Negativo di Naturalizzazione",
+    "schema": {
+      "soggetto": {
+        "nome": "Francesca Luigi",
+        "cognome": "Leoni"
+      },
+      "pseudonimi": [
+        {
+          "nome": "Francesca",
+          "cognome": "Leono"
+        }
+      ],
+      "formula_negativa_presente": "OK",
+      "data_nascita": "05-03-1881"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato Negativo di Naturalizzazione",
+        "soggetto": [
+          {
+            "nome": "Francesca Luigi",
+            "cognome": "Leoni"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato Negativo di Naturalizzazione",
+        "soggetto": [
+          {
+            "nome": "Francesca Luigi",
+            "cognome": "Leoni"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Certificato Negativo di Naturalizzazione",
+        "soggetto": [
+          {
+            "nome": "Francesca Luigi",
+            "cognome": "Leoni"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Certificato di matrimonio",
+    "schema": {
+      "soggetti": [
+        {
+          "nome": "Francesca",
+          "cognome": "Leoni"
+        },
+        {
+          "nome": "Paolo",
+          "cognome": "Neri"
+        }
+      ],
+      "luogo": "Recife",
+      "data_matrimonio": "14-10-1938",
+      "note": "Documento non richiesto ai fini del riconoscimento richiesto."
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Marco",
+            "cognome": "Moretti"
+          },
+          {
+            "nome": "Elena",
+            "cognome": "Rossi"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Marco",
+            "cognome": "Moretti"
+          },
+          {
+            "nome": "Elena",
+            "cognome": "Rossi"
+          }
+        ],
+        "documento_originale": "Certificato di matrimonio"
+      }
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Documento non supportato",
+        "soggetto": [
+          {
+            "nome": "Elena",
+            "cognome": "Rossi"
+          }
+        ],
+        "documento_originale": "Bozza Sentenza"
+      }
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Francesca",
+            "cognome": "Leoni"
+          },
+          {
+            "nome": "Paolo",
+            "cognome": "Neri"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Marco",
+            "cognome": "Moretti"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Documenti Personali Vari",
+    "schema": {
+      "id": "UD-1660",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "16-03-2024"
+    }
+  },
+  {
+    "document_type": "Bozza Sentenza",
+    "schema": {
+      "id": "UD-6051",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "06-08-2025"
+    }
+  },
+  {
+    "document_type": "Nota Spese",
+    "schema": {
+      "id": "UD-3582",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "15-09-2024"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Francesca",
+            "cognome": "Leoni"
+          },
+          {
+            "nome": "Paolo",
+            "cognome": "Neri"
+          }
+        ],
+        "documento_originale": "Certificato di matrimonio"
+      }
+    }
+  },
+  {
+    "document_type": "Certificato di matrimonio",
+    "schema": {
+      "soggetti": [
+        {
+          "nome": "Marco",
+          "cognome": "Moretti"
+        },
+        {
+          "nome": "Elena",
+          "cognome": "Rossi"
+        }
+      ],
+      "luogo": "Niteroi",
+      "data_matrimonio": "16-07-1974",
+      "note": "Documento non richiesto ai fini del riconoscimento richiesto."
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Francesca",
+            "cognome": "Leoni"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  }
+]

@@ -1,0 +1,144 @@
+{
+  "0": {
+    "A": "OK",
+    "B": "OK",
+    "C": "OK",
+    "Ci": "NULL",
+    "D": "OK",
+    "E": "OK",
+    "F": "OK",
+    "G": "OK",
+    "Gi": "NULL",
+    "H": "OK",
+    "Hi": "NULL"
+  },
+  "1": {
+    "1": "OK"
+  },
+  "2": {
+    "A": "06.01.2025",
+    "B": "OK",
+    "C": "OK",
+    "D": "SI",
+    "Di": "07.07.2024",
+    "E": "NO",
+    "Ei": "NULL",
+    "F": "NO",
+    "Fi": "NULL",
+    "Fii": "NULL",
+    "Fiii": "NULL",
+    "G": "0865-2025"
+  },
+  "3": {
+    "A": "Giulia Conti",
+    "B": 2,
+    "C": "Sara Marini-Silva, Matteo Gallo",
+    "D": "Sara Marini-Silva: Brasiliana, Matteo Gallo: Brasiliana",
+    "E": "NO",
+    "Ei": "NULL",
+    "Eii": "NULL",
+    "F": "OK; Sara Carlo Marini -> Sara Marini",
+    "G": "KO; Ricorrenti per matrimonio presenti",
+    "Gi": "Luca Bianchi"
+  },
+  "4": {
+    "4/1": {
+      "A": "Sara Marini-Silva",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Sara Marini-Silva",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "28.12.2025",
+      "G": "KO",
+      "H": "NO",
+      "Hi": "OK",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
+      "Iiii": "NULL",
+      "Iiv": "NULL"
+    },
+    "4/2": {
+      "A": "Matteo Gallo",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Matteo Gallo",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "29.04.2025",
+      "G": "OK",
+      "H": "OK",
+      "Hi": "NULL",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
+      "Iiii": "NULL",
+      "Iiv": "NULL"
+    }
+  },
+  "5": {
+    "A": "OK",
+    "Ai": "NULL",
+    "C": "Brescia",
+    "D": "OK",
+    "E": "Padre: Luca Bianchi, Madre: Paolo Neri",
+    "F": "09.12.1846"
+  },
+  "6": {
+    "A": "NO",
+    "Ai": "NULL",
+    "Aii": "NULL",
+    "Aiii": "NULL",
+    "C": "18.01.1978",
+    "D": "OK",
+    "Di": "NULL",
+    "Dii": "NULL",
+    "Diii": "NULL",
+    "E": "OK",
+    "F": "OK",
+    "Fi": "OK",
+    "Fii": "NULL"
+  },
+  "7": {
+    "A": "OK",
+    "B": "Sara Marino",
+    "C": "OK",
+    "D": "OK",
+    "E": "OK",
+    "Ei": "OK",
+    "Eii": "NULL"
+  },
+  "8": {
+    "8/1": {
+      "A": "Sara Marini",
+      "B": "KO",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/2": {
+      "A": "Matteo Gallo",
+      "B": "KO",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    }
+  },
+  "10": [
+    "3G",
+    "4/1G",
+    "8/1B",
+    "8/2B"
+  ],
+  "11": {
+    "3G": "Ricorrenti che chiedono la cittadinanza per matrimonio: Luca Bianchi",
+    "4/1G": "La data della procura di Sara Marini-Silva non è anteriore alla data del ricorso",
+    "8/1B": "Genitori non in linea discendenza per Sara Marini",
+    "8/2B": "Genitori non in linea discendenza per Matteo Gallo"
+  }
+}

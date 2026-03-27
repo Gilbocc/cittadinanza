@@ -1,0 +1,120 @@
+{
+  "0": {
+    "A": "OK",
+    "B": "OK",
+    "C": "OK",
+    "Ci": "NULL",
+    "D": "OK",
+    "E": "OK",
+    "F": "OK",
+    "G": "OK",
+    "Gi": "NULL",
+    "H": "OK",
+    "Hi": "NULL"
+  },
+  "1": {
+    "1": "OK"
+  },
+  "2": {
+    "A": "08.04.2024",
+    "B": "OK",
+    "C": "OK",
+    "D": "SI",
+    "Di": "12.05.2024",
+    "E": "SI",
+    "Ei": "02.02.2024",
+    "F": "SI",
+    "Fi": "2",
+    "Fii": "Francesca Leoni, Francesca Leoni",
+    "Fiii": "23.02.2025, 23.04.2024",
+    "G": "0635-2024"
+  },
+  "3": {
+    "A": "Giulia Conti",
+    "B": 1,
+    "C": "Chiara Costa",
+    "D": "Chiara Costa: Brasiliana",
+    "E": "NO",
+    "Ei": "NULL",
+    "Eii": "NULL",
+    "F": "OK; Davide Maria Lombardi -> Giulia Conti -> Chiara Costa",
+    "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
+    "Gi": "NULL"
+  },
+  "4": {
+    "4/1": {
+      "A": "Chiara Costa",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Chiara Costa",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "14.04.2024",
+      "G": "KO",
+      "H": "OK",
+      "Hi": "NULL",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
+      "Iiii": "NULL",
+      "Iiv": "NULL"
+    }
+  },
+  "5": {
+    "A": "OK",
+    "Ai": "NULL",
+    "C": "Cremona",
+    "D": "OK",
+    "E": "Padre: Chiara Costa, Madre: Davide Lombardi",
+    "F": "17.04.1840"
+  },
+  "6": {
+    "A": "NO",
+    "Ai": "NULL",
+    "Aii": "NULL",
+    "Aiii": "NULL",
+    "C": "20.08.1974",
+    "D": "OK",
+    "Di": "NULL",
+    "Dii": "NULL",
+    "Diii": "NULL",
+    "E": "OK",
+    "F": "OK",
+    "Fi": "OK",
+    "Fii": "NULL"
+  },
+  "7": {
+    "A": "OK",
+    "B": "NULL",
+    "C": "OK",
+    "D": "OK",
+    "E": "OK",
+    "Ei": "NULL",
+    "Eii": "OK"
+  },
+  "8": {
+    "8/1": {
+      "A": "Giulia Conti",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/2": {
+      "A": "Chiara Costa",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
+    }
+  },
+  "10": [
+    "4/1G"
+  ],
+  "11": {
+    "4/1G": "La data della procura di Chiara Costa non è anteriore alla data del ricorso"
+  }
+}

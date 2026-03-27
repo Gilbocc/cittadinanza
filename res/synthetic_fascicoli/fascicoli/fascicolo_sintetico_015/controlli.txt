@@ -1,0 +1,140 @@
+{
+  "0": {
+    "A": "OK",
+    "B": "OK",
+    "C": "OK",
+    "Ci": "NULL",
+    "D": "OK",
+    "E": "OK",
+    "F": "OK",
+    "G": "OK",
+    "Gi": "NULL",
+    "H": "OK",
+    "Hi": "NULL"
+  },
+  "1": {
+    "1": "OK"
+  },
+  "2": {
+    "A": "22.09.2025",
+    "B": "OK",
+    "C": "KO",
+    "D": "SI",
+    "Di": "08.08.2024",
+    "E": "NO",
+    "Ei": "NULL",
+    "F": "SI",
+    "Fi": "2",
+    "Fii": "Marco Moretti, Chiara Costa",
+    "Fiii": "23.12.2025, 04.04.2025",
+    "G": "0105-2024"
+  },
+  "3": {
+    "A": "Sara Marini",
+    "B": 2,
+    "C": "Francesca Leoni-Silva, Elena Rossi",
+    "D": "Francesca Leoni-Silva: Brasiliana, Elena Rossi: Brasiliana",
+    "E": "NO",
+    "Ei": "NULL",
+    "Eii": "NULL",
+    "F": "OK; Paolo Luigi Neri -> Francesca Leoni",
+    "G": "KO; Ricorrenti per matrimonio presenti",
+    "Gi": "Sara Marini"
+  },
+  "4": {
+    "4/1": {
+      "A": "Francesca Leoni-Silva",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Francesca Leoni-Silva",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "16.01.2024",
+      "G": "OK",
+      "H": "NO",
+      "Hi": "OK",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
+      "Iiii": "NULL",
+      "Iiv": "NULL"
+    },
+    "4/2": {
+      "A": "Elena Rossi",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Elena Rossi",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "28.02.2024",
+      "G": "OK",
+      "H": "NO",
+      "Hi": "OK",
+      "I": "NO",
+      "Ii": "OK",
+      "Iii": "NO",
+      "Iiii": "OK",
+      "Iiv": "NULL"
+    }
+  },
+  "5": {
+    "A": "OK",
+    "Ai": "NULL",
+    "C": "Brescia",
+    "D": "OK",
+    "E": "Padre: Sara Marini, Madre: Chiara Costa",
+    "F": "15.10.1853"
+  },
+  "6": {
+    "A": "NO",
+    "Ai": "NULL",
+    "Aii": "NULL",
+    "Aiii": "NULL",
+    "C": "22.01.1970",
+    "D": "OK",
+    "Di": "NULL",
+    "Dii": "NULL",
+    "Diii": "NULL",
+    "E": "OK",
+    "F": "OK",
+    "Fi": "OK",
+    "Fii": "NULL"
+  },
+  "7": {
+    "A": "OK",
+    "B": "NULL",
+    "C": "OK",
+    "D": "OK",
+    "E": "OK",
+    "Ei": "OK",
+    "Eii": "NULL"
+  },
+  "8": {
+    "8/1": {
+      "A": "Francesca Leoni",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
+    },
+    "8/2": {
+      "A": "Elena Rossi",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
+    }
+  },
+  "10": [
+    "2C",
+    "3G"
+  ],
+  "11": {
+    "2C": "Il ricorso non risulta iscritto prima del 27.03.2025 escluso",
+    "3G": "Ricorrenti che chiedono la cittadinanza per matrimonio: Sara Marini"
+  }
+}

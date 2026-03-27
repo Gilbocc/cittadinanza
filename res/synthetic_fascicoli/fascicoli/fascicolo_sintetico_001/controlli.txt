@@ -16,41 +16,59 @@
     "1": "OK"
   },
   "2": {
-    "A": "08.03.2025",
+    "A": "26.09.2024",
     "B": "OK",
     "C": "OK",
-    "D": "SI",
-    "Di": "02.09.2025",
-    "E": "NO",
-    "Ei": "NULL",
+    "D": "NO",
+    "Di": "NULL",
+    "E": "SI",
+    "Ei": "21.05.2024",
     "F": "NO",
     "Fi": "NULL",
     "Fii": "NULL",
     "Fiii": "NULL",
-    "G": "0710-2024"
+    "G": "0864-2025"
   },
   "3": {
-    "A": "Matteo Gallo",
-    "B": 1,
-    "C": "Elena Ana Rossi",
-    "D": "Elena Ana Rossi: Brasiliana",
+    "A": "Davide Lombardi",
+    "B": 2,
+    "C": "Chiara Ana Costa, Paolo Neri",
+    "D": "Chiara Ana Costa: Brasiliana, Paolo Neri: Brasiliana",
     "E": "NO",
     "Ei": "NULL",
     "Eii": "NULL",
-    "F": "OK; Davide Maria Lombardi -> Elena Rossi -> Elena Ana Rossi",
+    "F": "OK; Matteo Luigi Gallo, Giulia Conti, Sara Marini, Francesca Joao Leoni, Paolo Neri, Chiara Ana Costa",
     "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
     "Gi": "NULL"
   },
   "4": {
     "4/1": {
-      "A": "Elena Ana Rossi",
+      "A": "Chiara Ana Costa",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Elena Ana Rossi",
+      "B": "OK; firma del ricorrente Chiara Ana Costa",
+      "C": "KO",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "11.01.2024",
+      "G": "OK",
+      "H": "NO",
+      "Hi": "OK",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
+      "Iiii": "NULL",
+      "Iiv": "NULL"
+    },
+    "4/2": {
+      "A": "Paolo Neri",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Paolo Neri",
       "C": "OK",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "E": "OK",
       "Ei": "NULL",
-      "F": "27.04.2024",
+      "F": "25.01.2024",
       "G": "OK",
       "H": "NO",
       "Hi": "OK",
@@ -66,15 +84,15 @@
     "Ai": "NULL",
     "C": "Cremona",
     "D": "OK",
-    "E": "Padre: Davide Lombardi, Madre: Matteo Gallo",
-    "F": "12.03.1856"
+    "E": "Padre: Davide Lombardi, Madre: Chiara Costa",
+    "F": "28.03.1857"
   },
   "6": {
     "A": "NO",
     "Ai": "NULL",
     "Aii": "NULL",
     "Aiii": "NULL",
-    "C": "27.12.1928",
+    "C": "07.03.1955",
     "D": "OK",
     "Di": "NULL",
     "Dii": "NULL",
@@ -86,16 +104,48 @@
   },
   "7": {
     "A": "OK",
-    "B": "Davide Lombardo",
+    "B": "Matteo Gallo",
     "C": "OK",
     "D": "OK",
     "E": "OK",
-    "Ei": "OK",
-    "Eii": "NULL"
+    "Ei": "NULL",
+    "Eii": "OK"
   },
   "8": {
     "8/1": {
-      "A": "Elena Rossi",
+      "A": "Giulia Conti",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
+    },
+    "8/2": {
+      "A": "Sara Marini",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/3": {
+      "A": "Francesca Joao Leoni",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
+    },
+    "8/4": {
+      "A": "Paolo Neri",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/5": {
+      "A": "Chiara Ana Costa",
       "B": "OK",
       "C": "OK",
       "D": "OK",
@@ -103,6 +153,10 @@
       "Dii": "OK"
     }
   },
-  "10": null,
-  "11": null
+  "10": [
+    "4/1C"
+  ],
+  "11": {
+    "4/1C": "Gli avvocati indicati nella procura di Chiara Ana Costa non coincidono con quelli del ricorso"
+  }
 }

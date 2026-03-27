@@ -1,0 +1,116 @@
+{
+  "0": {
+    "A": "OK",
+    "B": "OK",
+    "C": "OK",
+    "Ci": "NULL",
+    "D": "OK",
+    "E": "OK",
+    "F": "OK",
+    "G": "OK",
+    "Gi": "NULL",
+    "H": "OK",
+    "Hi": "NULL"
+  },
+  "1": {
+    "1": "OK"
+  },
+  "2": {
+    "A": "13.06.2025",
+    "B": "OK",
+    "C": "KO",
+    "D": "SI",
+    "Di": "09.05.2024",
+    "E": "NO",
+    "Ei": "NULL",
+    "F": "NO",
+    "Fi": "NULL",
+    "Fii": "NULL",
+    "Fiii": "NULL",
+    "G": "0901-2025"
+  },
+  "3": {
+    "A": "Elena Rossi",
+    "B": 1,
+    "C": "Marco Moretti-Silva",
+    "D": "Marco Moretti-Silva: Brasiliana",
+    "E": "NO",
+    "Ei": "NULL",
+    "Eii": "NULL",
+    "F": "OK; Luca Carlo Bianchi -> Marco Moretti",
+    "G": "KO; Ricorrenti per matrimonio presenti",
+    "Gi": "Luca Bianchi"
+  },
+  "4": {
+    "4/1": {
+      "A": "Marco Moretti-Silva",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Marco Moretti-Silva",
+      "C": "KO",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "14.01.2024",
+      "G": "OK",
+      "H": "OK",
+      "Hi": "NULL",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
+      "Iiii": "NULL",
+      "Iiv": "NULL"
+    }
+  },
+  "5": {
+    "A": "OK",
+    "Ai": "NULL",
+    "C": "Brescia",
+    "D": "OK",
+    "E": "Padre: Matteo Gallo, Madre: Elena Rossi",
+    "F": "10.04.1859"
+  },
+  "6": {
+    "A": "NO",
+    "Ai": "NULL",
+    "Aii": "NULL",
+    "Aiii": "NULL",
+    "C": "18.06.1900",
+    "D": "OK",
+    "Di": "NULL",
+    "Dii": "NULL",
+    "Diii": "NULL",
+    "E": "OK",
+    "F": "OK",
+    "Fi": "OK",
+    "Fii": "NULL"
+  },
+  "7": {
+    "A": "OK",
+    "B": "Luca Biancho",
+    "C": "OK",
+    "D": "OK",
+    "E": "OK",
+    "Ei": "OK",
+    "Eii": "NULL"
+  },
+  "8": {
+    "8/1": {
+      "A": "Marco Moretti",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    }
+  },
+  "10": [
+    "2C",
+    "3G",
+    "4/1C"
+  ],
+  "11": {
+    "2C": "Il ricorso non risulta iscritto prima del 27.03.2025 escluso",
+    "3G": "Ricorrenti che chiedono la cittadinanza per matrimonio: Luca Bianchi",
+    "4/1C": "Gli avvocati indicati nella procura di Marco Moretti-Silva non coincidono con quelli del ricorso"
+  }
+}

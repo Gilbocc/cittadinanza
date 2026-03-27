@@ -1,39 +1,18 @@
 [
   {
-    "document_type": "IndiceProcedimento.html",
-    "schema": {
-      "numero_anno_ruolo": "303/2025",
-      "data_iscrizione": "28-07-2025",
-      "iscrizione_post_28_02_2023": "OK",
-      "iscrizione_pre_27_03_2025": "KO",
-      "comparsa_avvocatura": "SI",
-      "data_comparsa_avvocatura": "26-08-2025",
-      "visibilita_pm": "SI",
-      "data_visibilita_pm": "07-01-2024",
-      "interventi": "NO",
-      "numero_interventi": 0,
-      "intervenuti": []
-    }
-  },
-  {
     "document_type": "Ricorso",
     "schema": {
       "avvocati": [
         {
-          "nome": "Marco",
-          "cognome": "Moretti"
+          "nome": "Davide",
+          "cognome": "Lombardi"
         }
       ],
-      "numero_ricorrenti": 2,
+      "numero_ricorrenti": 1,
       "ricorrenti_maggiorenni": [
         {
-          "nome": "Luca Ana",
+          "nome": "Luca",
           "cognome": "Bianchi-Silva",
-          "nazionalita": "Brasiliana"
-        },
-        {
-          "nome": "Davide Joao",
-          "cognome": "Lombardi",
           "nazionalita": "Brasiliana"
         }
       ],
@@ -41,31 +20,23 @@
       "ricorrenti_per_matrimonio": [],
       "linea_discendenza": [
         {
-          "nome": "Elena Luigi",
-          "cognome": "Rossi"
+          "nome": "Luca Luigi",
+          "cognome": "Bianchi"
         },
         {
-          "nome": "Matteo Ana",
-          "cognome": "Gallo"
+          "nome": "Giulia Luz",
+          "cognome": "Conti"
         },
         {
-          "nome": "Elena",
-          "cognome": "Rossi"
-        },
-        {
-          "nome": "Davide Joao",
-          "cognome": "Lombardi"
-        },
-        {
-          "nome": "Luca Ana",
+          "nome": "Luca",
           "cognome": "Bianchi"
         }
       ],
       "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo.",
-      "riassunto_linea_discendenza": "Elena Luigi Rossi -> Matteo Ana Gallo -> Elena Rossi -> Davide Joao Lombardi -> Luca Ana Bianchi",
+      "riassunto_linea_discendenza": "Luca Luigi Bianchi -> Giulia Luz Conti -> Luca Bianchi",
       "coerenza_linea_discendenza": "SI",
       "proveniente_dal_brasile": "SI",
-      "data_ricorso": "15-12-2025"
+      "data_ricorso": "04-04-2025"
     }
   },
   {
@@ -73,7 +44,7 @@
     "schema": {
       "soggetto": [
         {
-          "nome": "Luca Ana",
+          "nome": "Luca",
           "cognome": "Bianchi-Silva",
           "minorenne": "NO",
           "rappresentanti_legali": [],
@@ -83,15 +54,15 @@
       "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "avvocati": [
         {
-          "nome": "Marco",
-          "cognome": "Moretti"
+          "nome": "Davide",
+          "cognome": "Lombardi"
         }
       ],
-      "tribunale_brescia_indicato": "KO",
+      "tribunale_brescia_indicato": "OK",
       "tribunale_indicato": "Tribunale civile competente",
-      "data_procura": "08-08-2024",
+      "data_procura": "04-01-2024",
       "rilasciata_in_italia": "NO",
-      "scritta_in_italiano": "OK"
+      "scritta_in_italiano": "NO"
     }
   },
   {
@@ -101,7 +72,7 @@
         "document_type": "Procura",
         "soggetto": [
           {
-            "nome": "Luca Ana",
+            "nome": "Luca",
             "cognome": "Bianchi-Silva"
           }
         ]
@@ -109,51 +80,55 @@
     }
   },
   {
-    "document_type": "Procura",
+    "document_type": "Traduzione",
     "schema": {
-      "soggetto": [
-        {
-          "nome": "Davide Joao",
-          "cognome": "Lombardi",
-          "minorenne": "NO",
-          "rappresentanti_legali": [],
-          "firma_presente": "OK"
-        }
-      ],
-      "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
-      "avvocati": [
-        {
-          "nome": "Marco",
-          "cognome": "Moretti"
-        }
-      ],
-      "tribunale_brescia_indicato": "OK",
-      "tribunale_indicato": "Tribunale civile competente",
-      "data_procura": "04-04-2024",
-      "rilasciata_in_italia": "OK",
-      "scritta_in_italiano": "OK"
+      "oggetto": {
+        "document_type": "Procura",
+        "soggetto": [
+          {
+            "nome": "Luca",
+            "cognome": "Bianchi-Silva"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Luca",
+            "cognome": "Bianchi-Silva"
+          }
+        ],
+        "documento_originale": "Procura"
+      }
     }
   },
   {
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Elena Luigi",
-        "cognome": "Rossi"
+        "nome": "Luca Luigi",
+        "cognome": "Bianchi"
       },
       "tipo": "anagrafico",
-      "timbro_diocesi": "OK",
+      "timbro_diocesi": "NO",
       "comune_nascita": "Cremona",
       "provincia": "cremona",
       "padre": {
-        "nome": "Francesca",
-        "cognome": "Leoni"
+        "nome": "Marco",
+        "cognome": "Moretti"
       },
       "madre": {
-        "nome": "Francesca",
-        "cognome": "Leoni"
+        "nome": "Paolo",
+        "cognome": "Neri"
       },
-      "data_nascita": "03-12-1937",
+      "data_nascita": "26-05-1930",
       "area_nascita": "A",
       "stato": "Italia"
     }
@@ -162,22 +137,22 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Matteo Ana",
-        "cognome": "Gallo"
+        "nome": "Giulia Luz",
+        "cognome": "Conti"
       },
       "tipo": "anagrafico",
       "timbro_diocesi": "OK",
-      "comune_nascita": "Campinas",
+      "comune_nascita": "Rio de Janeiro",
       "provincia": "altro",
       "padre": {
         "nome": "Elena",
         "cognome": "Rossi"
       },
       "madre": {
-        "nome": "Elena Luigi",
-        "cognome": "Rossi"
+        "nome": "Luca Luigi",
+        "cognome": "Bianchi"
       },
-      "data_nascita": "09-06-2009",
+      "data_nascita": "09-11-1960",
       "area_nascita": "E",
       "stato": "Brasile"
     }
@@ -189,8 +164,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Matteo Ana",
-            "cognome": "Gallo"
+            "nome": "Giulia Luz",
+            "cognome": "Conti"
           }
         ]
       }
@@ -203,8 +178,130 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Matteo Ana",
-            "cognome": "Gallo"
+            "nome": "Giulia Luz",
+            "cognome": "Conti"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Giulia Luz",
+            "cognome": "Conti"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Luca",
+        "cognome": "Bianchi"
+      },
+      "tipo": "parrocchiale",
+      "timbro_diocesi": "NO",
+      "comune_nascita": "Campinas",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Sara",
+        "cognome": "Marini"
+      },
+      "madre": {
+        "nome": "Giulia Luz",
+        "cognome": "Conti"
+      },
+      "data_nascita": "09-02-1978",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Luca",
+            "cognome": "Bianchi"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Luca",
+            "cognome": "Bianchi"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Luca",
+            "cognome": "Bianchi"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Atto di morte",
+    "schema": {
+      "soggetto": {
+        "nome": "Luca Luigi",
+        "cognome": "Bianchi"
+      },
+      "data_decesso": "26-05-1922"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di morte",
+        "soggetto": [
+          {
+            "nome": "Luca Luigi",
+            "cognome": "Bianchi"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di morte",
+        "soggetto": [
+          {
+            "nome": "Luca Luigi",
+            "cognome": "Bianchi"
           }
         ]
       },
@@ -218,215 +315,11 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Matteo Ana",
-            "cognome": "Gallo"
+            "nome": "Luca Luigi",
+            "cognome": "Bianchi"
           }
         ],
-        "documento_originale": "Atto di nascita"
-      }
-    }
-  },
-  {
-    "document_type": "Atto di nascita",
-    "schema": {
-      "soggetto": {
-        "nome": "Elena",
-        "cognome": "Rossi"
-      },
-      "tipo": "anagrafico",
-      "timbro_diocesi": "OK",
-      "comune_nascita": "Campinas",
-      "provincia": "altro",
-      "padre": {
-        "nome": "Francesca",
-        "cognome": "Leoni"
-      },
-      "madre": {
-        "nome": "Matteo Ana",
-        "cognome": "Gallo"
-      },
-      "data_nascita": "29-04-1989",
-      "area_nascita": "E",
-      "stato": "Brasile"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Elena",
-            "cognome": "Rossi"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Elena",
-            "cognome": "Rossi"
-          }
-        ]
-      },
-      "sede_traduttore": "Italia"
-    }
-  },
-  {
-    "document_type": "Asseverazione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "documento_originale": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Elena",
-            "cognome": "Rossi"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Atto di nascita",
-    "schema": {
-      "soggetto": {
-        "nome": "Davide Joao",
-        "cognome": "Lombardi"
-      },
-      "tipo": "parrocchiale",
-      "timbro_diocesi": "NO",
-      "comune_nascita": "Brasilia",
-      "provincia": "altro",
-      "padre": {
-        "nome": "Giulia",
-        "cognome": "Conti"
-      },
-      "madre": {
-        "nome": "Elena",
-        "cognome": "Rossi"
-      },
-      "data_nascita": "26-09-2007",
-      "area_nascita": "E",
-      "stato": "Brasile"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Davide Joao",
-            "cognome": "Lombardi"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Davide Joao",
-            "cognome": "Lombardi"
-          }
-        ]
-      },
-      "sede_traduttore": "Italia"
-    }
-  },
-  {
-    "document_type": "Asseverazione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "documento_originale": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Davide Joao",
-            "cognome": "Lombardi"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Atto di nascita",
-    "schema": {
-      "soggetto": {
-        "nome": "Luca Ana",
-        "cognome": "Bianchi"
-      },
-      "tipo": "anagrafico",
-      "timbro_diocesi": "OK",
-      "comune_nascita": "Salvador",
-      "provincia": "altro",
-      "padre": {
-        "nome": "Elena",
-        "cognome": "Rossi"
-      },
-      "madre": {
-        "nome": "Davide Joao",
-        "cognome": "Lombardi"
-      },
-      "data_nascita": "24-09-1962",
-      "area_nascita": "E",
-      "stato": "Brasile"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Luca Ana",
-            "cognome": "Bianchi"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Luca Ana",
-            "cognome": "Bianchi"
-          }
-        ]
-      },
-      "sede_traduttore": "Italia"
-    }
-  },
-  {
-    "document_type": "Asseverazione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "documento_originale": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Luca Ana",
-            "cognome": "Bianchi"
-          }
-        ]
+        "documento_originale": "Atto di morte"
       }
     }
   },
@@ -434,17 +327,12 @@
     "document_type": "Certificato Negativo di Naturalizzazione",
     "schema": {
       "soggetto": {
-        "nome": "Elena Luigi",
-        "cognome": "Rossi"
+        "nome": "Luca Luigi",
+        "cognome": "Bianchi"
       },
-      "pseudonimi": [
-        {
-          "nome": "Elena",
-          "cognome": "Rosso"
-        }
-      ],
+      "pseudonimi": [],
       "formula_negativa_presente": "OK",
-      "data_nascita": "03-12-1937"
+      "data_nascita": "26-05-1930"
     }
   },
   {
@@ -454,8 +342,8 @@
         "document_type": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Elena Luigi",
-            "cognome": "Rossi"
+            "nome": "Luca Luigi",
+            "cognome": "Bianchi"
           }
         ]
       }
@@ -468,26 +356,26 @@
         "document_type": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Elena Luigi",
-            "cognome": "Rossi"
+            "nome": "Luca Luigi",
+            "cognome": "Bianchi"
           }
         ]
       },
-      "sede_traduttore": "Estero"
+      "sede_traduttore": "Italia"
     }
   },
   {
-    "document_type": "Apostille",
+    "document_type": "Asseverazione",
     "schema": {
       "oggetto": {
         "document_type": "Traduzione",
+        "documento_originale": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Elena Luigi",
-            "cognome": "Rossi"
+            "nome": "Luca Luigi",
+            "cognome": "Bianchi"
           }
-        ],
-        "documento_originale": "Certificato Negativo di Naturalizzazione"
+        ]
       }
     }
   }

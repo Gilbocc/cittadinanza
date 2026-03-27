@@ -1,0 +1,152 @@
+{
+  "0": {
+    "A": "OK",
+    "B": "OK",
+    "C": "OK",
+    "Ci": "NULL",
+    "D": "OK",
+    "E": "OK",
+    "F": "OK",
+    "G": "KO",
+    "Gi": "Davide Luz Gallo",
+    "H": "OK",
+    "Hi": "NULL"
+  },
+  "1": {
+    "1": "OK"
+  },
+  "2": {
+    "A": "06.06.2024",
+    "B": "OK",
+    "C": "OK",
+    "D": "NO",
+    "Di": "NULL",
+    "E": "SI",
+    "Ei": "30.01.2024",
+    "F": "NO",
+    "Fi": "NULL",
+    "Fii": "NULL",
+    "Fiii": "NULL",
+    "G": "0275-2025"
+  },
+  "3": {
+    "A": "Elena Rossi, Sara Marini",
+    "B": 2,
+    "C": "Elena Rossi-Silva, Matteo Gallo",
+    "D": "Elena Rossi-Silva: Brasiliana, Matteo Gallo: Brasiliana",
+    "E": "NO",
+    "Ei": "NULL",
+    "Eii": "NULL",
+    "F": "OK; Davide Maria Lombardi -> Elena Luz Rossi -> Davide Luz Gallo -> Matteo Gallo -> Elena Rossi",
+    "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
+    "Gi": "NULL"
+  },
+  "4": {
+    "4/1": {
+      "A": "Elena Rossi-Silva",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Elena Rossi-Silva",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "01.08.2024",
+      "G": "OK",
+      "H": "NO",
+      "Hi": "OK",
+      "I": "NO",
+      "Ii": "OK",
+      "Iii": "NO",
+      "Iiii": "OK",
+      "Iiv": "NULL"
+    },
+    "4/2": {
+      "A": "Matteo Gallo",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Matteo Gallo",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "28.05.2024",
+      "G": "OK",
+      "H": "OK",
+      "Hi": "NULL",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
+      "Iiii": "NULL",
+      "Iiv": "NULL"
+    }
+  },
+  "5": {
+    "A": "OK",
+    "Ai": "NULL",
+    "C": "Bergamo",
+    "D": "OK",
+    "E": "Padre: Matteo Gallo, Madre: Chiara Costa",
+    "F": "18.07.1843"
+  },
+  "6": {
+    "A": "NO",
+    "Ai": "NULL",
+    "Aii": "NULL",
+    "Aiii": "NULL",
+    "C": "26.06.1944",
+    "D": "OK",
+    "Di": "NULL",
+    "Dii": "NULL",
+    "Diii": "NULL",
+    "E": "OK",
+    "F": "OK",
+    "Fi": "OK",
+    "Fii": "NULL"
+  },
+  "7": {
+    "A": "OK",
+    "B": "Davide Lombardo",
+    "C": "OK",
+    "D": "OK",
+    "E": "OK",
+    "Ei": "NULL",
+    "Eii": "OK"
+  },
+  "8": {
+    "8/1": {
+      "A": "Elena Luz Rossi",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/2": {
+      "A": "Davide Luz Gallo",
+      "B": "KO",
+      "C": "KO",
+      "D": "KO",
+      "Di": "NULL",
+      "Dii": "NULL"
+    },
+    "8/3": {
+      "A": "Matteo Gallo",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
+    }
+  },
+  "10": [
+    "0G",
+    "8/2B",
+    "8/2C",
+    "8/2D"
+  ],
+  "11": {
+    "0G": "Atti di nascita dei discendenti mancanti: Davide Luz Gallo",
+    "8/2B": "Atto di nascita non trovato per Davide Luz Gallo",
+    "8/2C": "Impossibile verificare l'apostille dell'atto di nascita di Davide Luz Gallo perché l'atto manca",
+    "8/2D": "Impossibile verificare la traduzione dell'atto di nascita di Davide Luz Gallo perché l'atto manca"
+  }
+}

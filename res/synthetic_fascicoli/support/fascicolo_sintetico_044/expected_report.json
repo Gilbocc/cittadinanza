@@ -1,0 +1,148 @@
+{
+  "0": {
+    "A": "OK",
+    "B": "OK",
+    "C": "OK",
+    "Ci": "NULL",
+    "D": "OK",
+    "E": "OK",
+    "F": "OK",
+    "G": "OK",
+    "Gi": "NULL",
+    "H": "OK",
+    "Hi": "NULL"
+  },
+  "1": {
+    "1": "OK"
+  },
+  "2": {
+    "A": "28.01.2025",
+    "B": "OK",
+    "C": "OK",
+    "D": "NO",
+    "Di": "NULL",
+    "E": "SI",
+    "Ei": "28.06.2024",
+    "F": "SI",
+    "Fi": "1",
+    "Fii": "Sara Marini",
+    "Fiii": "08.02.2024",
+    "G": "0510-2025"
+  },
+  "3": {
+    "A": "Chiara Costa",
+    "B": 2,
+    "C": "Sara Marini-Silva, Marco Moretti",
+    "D": "Sara Marini-Silva: Brasiliana, Marco Moretti: Brasiliana",
+    "E": "NO",
+    "Ei": "NULL",
+    "Eii": "NULL",
+    "F": "KO; Davide Carlo Lombardi -> Sara Marini",
+    "G": "KO; Ricorrenti per matrimonio presenti",
+    "Gi": "Davide Lombardi"
+  },
+  "4": {
+    "4/1": {
+      "A": "Sara Marini-Silva",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Sara Marini-Silva",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "12.05.2024",
+      "G": "OK",
+      "H": "NO",
+      "Hi": "OK",
+      "I": "NO",
+      "Ii": "OK",
+      "Iii": "NO",
+      "Iiii": "OK",
+      "Iiv": "NULL"
+    },
+    "4/2": {
+      "A": "Marco Moretti",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Marco Moretti",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "02.06.2024",
+      "G": "OK",
+      "H": "OK",
+      "Hi": "NULL",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
+      "Iiii": "NULL",
+      "Iiv": "NULL"
+    }
+  },
+  "5": {
+    "A": "OK",
+    "Ai": "NULL",
+    "C": "Bergamo",
+    "D": "OK",
+    "E": "Padre: Giulia Conti, Madre: Sara Marini",
+    "F": "12.12.1841"
+  },
+  "6": {
+    "A": "NO",
+    "Ai": "NULL",
+    "Aii": "NULL",
+    "Aiii": "NULL",
+    "C": "27.11.1934",
+    "D": "OK",
+    "Di": "NULL",
+    "Dii": "NULL",
+    "Diii": "NULL",
+    "E": "OK",
+    "F": "OK",
+    "Fi": "OK",
+    "Fii": "NULL"
+  },
+  "7": {
+    "A": "OK",
+    "B": "Davide Lombardo",
+    "C": "OK",
+    "D": "OK",
+    "E": "OK",
+    "Ei": "NULL",
+    "Eii": "OK"
+  },
+  "8": {
+    "8/1": {
+      "A": "Luca Luz Bianchi",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
+    },
+    "8/2": {
+      "A": "Marco Moretti",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/3": {
+      "A": "Sara Marini",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    }
+  },
+  "10": [
+    "3F",
+    "3G"
+  ],
+  "11": {
+    "3F": "La linea di discendenza indicata nel ricorso non risulta coerente",
+    "3G": "Ricorrenti che chiedono la cittadinanza per matrimonio: Davide Lombardi"
+  }
+}

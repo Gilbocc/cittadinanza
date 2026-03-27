@@ -1,6 +1,6 @@
 {
   "0": {
-    "A": "OK",
+    "A": "KO",
     "B": "OK",
     "C": "OK",
     "Ci": "NULL",
@@ -16,66 +16,48 @@
     "1": "OK"
   },
   "2": {
-    "A": "28.07.2025",
-    "B": "OK",
-    "C": "KO",
-    "D": "SI",
-    "Di": "26.08.2025",
-    "E": "SI",
-    "Ei": "07.01.2024",
-    "F": "NO",
+    "A": "NULL",
+    "B": "NULL",
+    "C": "NULL",
+    "D": "NULL",
+    "Di": "NULL",
+    "E": "NULL",
+    "Ei": "NULL",
+    "F": "NULL",
     "Fi": "NULL",
     "Fii": "NULL",
     "Fiii": "NULL",
-    "G": "0303-2025"
+    "G": "NULL"
   },
   "3": {
-    "A": "Marco Moretti",
-    "B": 2,
-    "C": "Luca Ana Bianchi-Silva, Davide Joao Lombardi",
-    "D": "Luca Ana Bianchi-Silva: Brasiliana, Davide Joao Lombardi: Brasiliana",
+    "A": "Davide Lombardi",
+    "B": 1,
+    "C": "Luca Bianchi-Silva",
+    "D": "Luca Bianchi-Silva: Brasiliana",
     "E": "NO",
     "Ei": "NULL",
     "Eii": "NULL",
-    "F": "OK; Elena Luigi Rossi -> Matteo Ana Gallo -> Elena Rossi -> Davide Joao Lombardi -> Luca Ana Bianchi",
+    "F": "OK; Luca Luigi Bianchi -> Giulia Luz Conti -> Luca Bianchi",
     "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
     "Gi": "NULL"
   },
   "4": {
     "4/1": {
-      "A": "Luca Ana Bianchi-Silva",
+      "A": "Luca Bianchi-Silva",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Luca Ana Bianchi-Silva",
-      "C": "OK",
-      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
-      "E": "NO",
-      "Ei": "Tribunale civile competente",
-      "F": "08.08.2024",
-      "G": "OK",
-      "H": "NO",
-      "Hi": "OK",
-      "I": "OK",
-      "Ii": "NULL",
-      "Iii": "NULL",
-      "Iiii": "NULL",
-      "Iiv": "NULL"
-    },
-    "4/2": {
-      "A": "Davide Joao Lombardi",
-      "Ai": "NULL",
-      "B": "OK; firma del ricorrente Davide Joao Lombardi",
+      "B": "OK; firma del ricorrente Luca Bianchi-Silva",
       "C": "OK",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "E": "OK",
       "Ei": "NULL",
-      "F": "04.04.2024",
+      "F": "04.01.2024",
       "G": "OK",
-      "H": "OK",
-      "Hi": "NULL",
-      "I": "OK",
-      "Ii": "NULL",
-      "Iii": "NULL",
-      "Iiii": "NULL",
+      "H": "NO",
+      "Hi": "OK",
+      "I": "NO",
+      "Ii": "OK",
+      "Iii": "NO",
+      "Iiii": "OK",
       "Iiv": "NULL"
     }
   },
@@ -84,8 +66,8 @@
     "Ai": "NULL",
     "C": "Cremona",
     "D": "OK",
-    "E": "Padre: Francesca Leoni, Madre: Francesca Leoni",
-    "F": "03.12.1937"
+    "E": "Padre: Marco Moretti, Madre: Paolo Neri",
+    "F": "26.05.1930"
   },
   "6": {
     "A": "OK",
@@ -104,41 +86,25 @@
   },
   "7": {
     "A": "OK",
-    "B": "Elena Rosso",
+    "B": "NULL",
     "C": "OK",
     "D": "OK",
     "E": "OK",
-    "Ei": "OK",
-    "Eii": "NULL"
+    "Ei": "NULL",
+    "Eii": "OK"
   },
   "8": {
     "8/1": {
-      "A": "Matteo Ana Gallo",
+      "A": "Giulia Luz Conti",
       "B": "OK",
       "C": "OK",
       "D": "OK",
-      "Di": "OK",
-      "Dii": "NULL"
+      "Di": "NULL",
+      "Dii": "OK"
     },
     "8/2": {
-      "A": "Elena Rossi",
+      "A": "Luca Bianchi",
       "B": "KO",
-      "C": "OK",
-      "D": "OK",
-      "Di": "NULL",
-      "Dii": "OK"
-    },
-    "8/3": {
-      "A": "Davide Joao Lombardi",
-      "B": "OK",
-      "C": "OK",
-      "D": "OK",
-      "Di": "NULL",
-      "Dii": "OK"
-    },
-    "8/4": {
-      "A": "Luca Ana Bianchi",
-      "B": "OK",
       "C": "OK",
       "D": "OK",
       "Di": "NULL",
@@ -146,11 +112,11 @@
     }
   },
   "10": [
-    "2C",
+    "0A",
     "8/2B"
   ],
   "11": {
-    "2C": "Il ricorso non risulta iscritto prima del 27.03.2025 escluso",
-    "8/2B": "Genitori non in linea discendenza per Elena Rossi"
+    "0A": "IndiceProcedimento.html mancante",
+    "8/2B": "Genitori non in linea discendenza per Luca Bianchi"
   }
 }

@@ -1,14 +1,14 @@
 {
   "0": {
-    "A": "KO",
+    "A": "OK",
     "B": "OK",
     "C": "OK",
     "Ci": "NULL",
     "D": "OK",
     "E": "OK",
     "F": "OK",
-    "G": "OK",
-    "Gi": "NULL",
+    "G": "KO",
+    "Gi": "Giulia Luz Conti",
     "H": "OK",
     "Hi": "NULL"
   },
@@ -16,44 +16,44 @@
     "1": "OK"
   },
   "2": {
-    "A": "NULL",
-    "B": "NULL",
-    "C": "NULL",
-    "D": "NULL",
-    "Di": "NULL",
-    "E": "NULL",
+    "A": "23.10.2025",
+    "B": "OK",
+    "C": "KO",
+    "D": "SI",
+    "Di": "13.12.2024",
+    "E": "NO",
     "Ei": "NULL",
-    "F": "NULL",
+    "F": "NO",
     "Fi": "NULL",
     "Fii": "NULL",
     "Fiii": "NULL",
-    "G": "NULL"
+    "G": "0200-2024"
   },
   "3": {
-    "A": "Luca Bianchi",
+    "A": "Giulia Conti, Davide Lombardi",
     "B": 1,
-    "C": "Davide Ana Lombardi-Silva",
-    "D": "Davide Ana Lombardi-Silva: Brasiliana",
+    "C": "Paolo Neri",
+    "D": "Paolo Neri: Brasiliana",
     "E": "NO",
     "Ei": "NULL",
     "Eii": "NULL",
-    "F": "OK; Giulia Luigi Conti -> Elena Luz Rossi -> Davide Ana Lombardi",
+    "F": "OK; Chiara Maria Costa -> Giulia Luz Conti -> Paolo Neri -> Paolo Neri",
     "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
     "Gi": "NULL"
   },
   "4": {
     "4/1": {
-      "A": "Davide Ana Lombardi-Silva",
+      "A": "Paolo Neri",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Davide Ana Lombardi-Silva",
+      "B": "OK; firma del ricorrente Paolo Neri",
       "C": "OK",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
-      "E": "NO",
-      "Ei": "Tribunale civile competente",
-      "F": "09.01.2024",
-      "G": "OK",
-      "H": "NO",
-      "Hi": "OK",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "06.04.2025",
+      "G": "KO",
+      "H": "OK",
+      "Hi": "NULL",
       "I": "OK",
       "Ii": "NULL",
       "Iii": "NULL",
@@ -64,10 +64,10 @@
   "5": {
     "A": "OK",
     "Ai": "NULL",
-    "C": "Bergamo",
+    "C": "Mantova",
     "D": "OK",
-    "E": "Padre: Francesca Leoni, Madre: Elena Rossi",
-    "F": "28.09.1893"
+    "E": "Padre: Giulia Conti, Madre: Elena Rossi",
+    "F": "25.08.1872"
   },
   "6": {
     "A": "OK",
@@ -86,35 +86,45 @@
   },
   "7": {
     "A": "OK",
-    "B": "Giulia Conto",
+    "B": "NULL",
     "C": "OK",
     "D": "OK",
     "E": "OK",
-    "Ei": "NULL",
-    "Eii": "OK"
+    "Ei": "OK",
+    "Eii": "NULL"
   },
   "8": {
     "8/1": {
-      "A": "Elena Luz Rossi",
+      "A": "Giulia Luz Conti",
+      "B": "KO",
+      "C": "KO",
+      "D": "KO",
+      "Di": "NULL",
+      "Dii": "NULL"
+    },
+    "8/2": {
+      "A": "Paolo Neri",
       "B": "OK",
       "C": "OK",
       "D": "OK",
       "Di": "NULL",
       "Dii": "OK"
-    },
-    "8/2": {
-      "A": "Davide Ana Lombardi",
-      "B": "OK",
-      "C": "OK",
-      "D": "OK",
-      "Di": "OK",
-      "Dii": "NULL"
     }
   },
   "10": [
-    "0A"
+    "0G",
+    "2C",
+    "4/1G",
+    "8/1B",
+    "8/1C",
+    "8/1D"
   ],
   "11": {
-    "0A": "IndiceProcedimento.html mancante"
+    "0G": "Atti di nascita dei discendenti mancanti: Giulia Luz Conti",
+    "2C": "Il ricorso non risulta iscritto prima del 27.03.2025 escluso",
+    "4/1G": "La data della procura di Paolo Neri non è anteriore alla data del ricorso",
+    "8/1B": "Atto di nascita non trovato per Giulia Luz Conti",
+    "8/1C": "Impossibile verificare l'apostille dell'atto di nascita di Giulia Luz Conti perché l'atto manca",
+    "8/1D": "Impossibile verificare la traduzione dell'atto di nascita di Giulia Luz Conti perché l'atto manca"
   }
 }

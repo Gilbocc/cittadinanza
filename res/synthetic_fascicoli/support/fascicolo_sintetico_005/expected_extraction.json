@@ -1,18 +1,45 @@
 [
   {
+    "document_type": "IndiceProcedimento.html",
+    "schema": {
+      "numero_anno_ruolo": "311/2025",
+      "data_iscrizione": "04-03-2024",
+      "iscrizione_post_28_02_2023": "OK",
+      "iscrizione_pre_27_03_2025": "OK",
+      "comparsa_avvocatura": "SI",
+      "data_comparsa_avvocatura": "21-08-2025",
+      "visibilita_pm": "NO",
+      "data_visibilita_pm": "21-01-2024",
+      "interventi": "SI",
+      "numero_interventi": 2,
+      "intervenuti": [
+        {
+          "nome": "Francesca",
+          "cognome": "Leoni",
+          "data": "09-07-2025"
+        },
+        {
+          "nome": "Chiara",
+          "cognome": "Costa",
+          "data": "01-03-2025"
+        }
+      ]
+    }
+  },
+  {
     "document_type": "Ricorso",
     "schema": {
       "avvocati": [
         {
-          "nome": "Davide",
-          "cognome": "Lombardi"
+          "nome": "Sara",
+          "cognome": "Marini"
         }
       ],
       "numero_ricorrenti": 1,
       "ricorrenti_maggiorenni": [
         {
           "nome": "Paolo",
-          "cognome": "Neri-Silva",
+          "cognome": "Neri",
           "nazionalita": "Brasiliana"
         }
       ],
@@ -20,12 +47,16 @@
       "ricorrenti_per_matrimonio": [],
       "linea_discendenza": [
         {
-          "nome": "Elena Carlo",
-          "cognome": "Rossi"
+          "nome": "Matteo Maria",
+          "cognome": "Gallo"
         },
         {
-          "nome": "Paolo Joao",
-          "cognome": "Neri"
+          "nome": "Francesca",
+          "cognome": "Leoni"
+        },
+        {
+          "nome": "Elena Ana",
+          "cognome": "Rossi"
         },
         {
           "nome": "Paolo",
@@ -33,10 +64,10 @@
         }
       ],
       "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo.",
-      "riassunto_linea_discendenza": "Elena Carlo Rossi -> Paolo Joao Neri -> Paolo Neri",
+      "riassunto_linea_discendenza": "Matteo Maria Gallo -> Francesca Leoni -> Elena Ana Rossi -> Paolo Neri",
       "coerenza_linea_discendenza": "SI",
       "proveniente_dal_brasile": "SI",
-      "data_ricorso": "28-04-2024"
+      "data_ricorso": "07-01-2024"
     }
   },
   {
@@ -45,7 +76,7 @@
       "soggetto": [
         {
           "nome": "Paolo",
-          "cognome": "Neri-Silva",
+          "cognome": "Neri",
           "minorenne": "NO",
           "rappresentanti_legali": [],
           "firma_presente": "OK"
@@ -54,15 +85,15 @@
       "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "avvocati": [
         {
-          "nome": "Davide",
-          "cognome": "Lombardi"
+          "nome": "Sara",
+          "cognome": "Marini"
         }
       ],
-      "tribunale_brescia_indicato": "OK",
+      "tribunale_brescia_indicato": "KO",
       "tribunale_indicato": "Tribunale civile competente",
-      "data_procura": "02-02-2024",
+      "data_procura": "21-01-2024",
       "rilasciata_in_italia": "NO",
-      "scritta_in_italiano": "NO"
+      "scritta_in_italiano": "OK"
     }
   },
   {
@@ -73,7 +104,69 @@
         "soggetto": [
           {
             "nome": "Paolo",
-            "cognome": "Neri-Silva"
+            "cognome": "Neri"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Matteo Maria",
+        "cognome": "Gallo"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Bergamo",
+      "provincia": "bergamo",
+      "padre": {
+        "nome": "Paolo",
+        "cognome": "Neri"
+      },
+      "madre": {
+        "nome": "Davide",
+        "cognome": "Lombardi"
+      },
+      "data_nascita": "20-09-1848",
+      "area_nascita": "A",
+      "stato": "Italia"
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Francesca",
+        "cognome": "Leoni"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Santos",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Francesca",
+        "cognome": "Leoni"
+      },
+      "madre": {
+        "nome": "Matteo Maria",
+        "cognome": "Gallo"
+      },
+      "data_nascita": "22-10-1944",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Francesca",
+            "cognome": "Leoni"
           }
         ]
       }
@@ -83,11 +176,11 @@
     "document_type": "Traduzione",
     "schema": {
       "oggetto": {
-        "document_type": "Procura",
+        "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Paolo",
-            "cognome": "Neri-Silva"
+            "nome": "Francesca",
+            "cognome": "Leoni"
           }
         ]
       },
@@ -101,11 +194,11 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Paolo",
-            "cognome": "Neri-Silva"
+            "nome": "Francesca",
+            "cognome": "Leoni"
           }
         ],
-        "documento_originale": "Procura"
+        "documento_originale": "Atto di nascita"
       }
     }
   },
@@ -113,46 +206,22 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Elena Carlo",
+        "nome": "Elena Ana",
         "cognome": "Rossi"
       },
-      "tipo": "anagrafico",
-      "timbro_diocesi": "NO",
-      "comune_nascita": "Bergamo",
-      "provincia": "bergamo",
-      "padre": {
-        "nome": "Paolo",
-        "cognome": "Neri"
-      },
-      "madre": {
-        "nome": "Luca",
-        "cognome": "Bianchi"
-      },
-      "data_nascita": "01-04-1929",
-      "area_nascita": "A",
-      "stato": "Italia"
-    }
-  },
-  {
-    "document_type": "Atto di nascita",
-    "schema": {
-      "soggetto": {
-        "nome": "Paolo Joao",
-        "cognome": "Neri"
-      },
-      "tipo": "anagrafico",
+      "tipo": "parrocchiale",
       "timbro_diocesi": "OK",
       "comune_nascita": "Brasilia",
       "provincia": "altro",
       "padre": {
-        "nome": "Sara",
-        "cognome": "Marini"
+        "nome": "Chiara",
+        "cognome": "Costa"
       },
       "madre": {
-        "nome": "Elena Carlo",
-        "cognome": "Rossi"
+        "nome": "Francesca",
+        "cognome": "Leoni"
       },
-      "data_nascita": "30-09-2010",
+      "data_nascita": "08-05-1965",
       "area_nascita": "E",
       "stato": "Brasile"
     }
@@ -164,8 +233,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Paolo Joao",
-            "cognome": "Neri"
+            "nome": "Elena Ana",
+            "cognome": "Rossi"
           }
         ]
       }
@@ -178,26 +247,26 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Paolo Joao",
-            "cognome": "Neri"
+            "nome": "Elena Ana",
+            "cognome": "Rossi"
           }
         ]
       },
-      "sede_traduttore": "Italia"
+      "sede_traduttore": "Estero"
     }
   },
   {
-    "document_type": "Asseverazione",
+    "document_type": "Apostille",
     "schema": {
       "oggetto": {
         "document_type": "Traduzione",
-        "documento_originale": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Paolo Joao",
-            "cognome": "Neri"
+            "nome": "Elena Ana",
+            "cognome": "Rossi"
           }
-        ]
+        ],
+        "documento_originale": "Atto di nascita"
       }
     }
   },
@@ -210,17 +279,17 @@
       },
       "tipo": "anagrafico",
       "timbro_diocesi": "OK",
-      "comune_nascita": "Campinas",
+      "comune_nascita": "Fortaleza",
       "provincia": "altro",
       "padre": {
-        "nome": "Matteo",
-        "cognome": "Gallo"
+        "nome": "Sara",
+        "cognome": "Marini"
       },
       "madre": {
-        "nome": "Paolo Joao",
-        "cognome": "Neri"
+        "nome": "Elena Ana",
+        "cognome": "Rossi"
       },
-      "data_nascita": "06-02-1966",
+      "data_nascita": "14-06-1968",
       "area_nascita": "E",
       "stato": "Brasile"
     }
@@ -273,10 +342,10 @@
     "document_type": "Atto di morte",
     "schema": {
       "soggetto": {
-        "nome": "Elena Carlo",
-        "cognome": "Rossi"
+        "nome": "Matteo Maria",
+        "cognome": "Gallo"
       },
-      "data_decesso": "19-01-1953"
+      "data_decesso": "08-05-1924"
     }
   },
   {
@@ -286,8 +355,8 @@
         "document_type": "Atto di morte",
         "soggetto": [
           {
-            "nome": "Elena Carlo",
-            "cognome": "Rossi"
+            "nome": "Matteo Maria",
+            "cognome": "Gallo"
           }
         ]
       }
@@ -300,8 +369,8 @@
         "document_type": "Atto di morte",
         "soggetto": [
           {
-            "nome": "Elena Carlo",
-            "cognome": "Rossi"
+            "nome": "Matteo Maria",
+            "cognome": "Gallo"
           }
         ]
       },
@@ -315,8 +384,8 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Elena Carlo",
-            "cognome": "Rossi"
+            "nome": "Matteo Maria",
+            "cognome": "Gallo"
           }
         ],
         "documento_originale": "Atto di morte"
@@ -327,17 +396,12 @@
     "document_type": "Certificato Negativo di Naturalizzazione",
     "schema": {
       "soggetto": {
-        "nome": "Elena Carlo",
-        "cognome": "Rossi"
+        "nome": "Matteo Maria",
+        "cognome": "Gallo"
       },
-      "pseudonimi": [
-        {
-          "nome": "Elena",
-          "cognome": "Rosso"
-        }
-      ],
+      "pseudonimi": [],
       "formula_negativa_presente": "OK",
-      "data_nascita": "01-04-1929"
+      "data_nascita": "20-09-1848"
     }
   },
   {
@@ -347,8 +411,8 @@
         "document_type": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Elena Carlo",
-            "cognome": "Rossi"
+            "nome": "Matteo Maria",
+            "cognome": "Gallo"
           }
         ]
       }
@@ -361,26 +425,26 @@
         "document_type": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Elena Carlo",
-            "cognome": "Rossi"
+            "nome": "Matteo Maria",
+            "cognome": "Gallo"
           }
         ]
       },
-      "sede_traduttore": "Italia"
+      "sede_traduttore": "Estero"
     }
   },
   {
-    "document_type": "Asseverazione",
+    "document_type": "Apostille",
     "schema": {
       "oggetto": {
         "document_type": "Traduzione",
-        "documento_originale": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Elena Carlo",
-            "cognome": "Rossi"
+            "nome": "Matteo Maria",
+            "cognome": "Gallo"
           }
-        ]
+        ],
+        "documento_originale": "Certificato Negativo di Naturalizzazione"
       }
     }
   }

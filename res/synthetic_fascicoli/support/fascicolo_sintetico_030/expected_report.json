@@ -1,0 +1,130 @@
+{
+  "0": {
+    "A": "OK",
+    "B": "OK",
+    "C": "OK",
+    "Ci": "NULL",
+    "D": "OK",
+    "E": "OK",
+    "F": "OK",
+    "G": "KO",
+    "Gi": "Paolo Neri",
+    "H": "OK",
+    "Hi": "NULL"
+  },
+  "1": {
+    "1": "OK"
+  },
+  "2": {
+    "A": "05.03.2025",
+    "B": "OK",
+    "C": "OK",
+    "D": "NO",
+    "Di": "NULL",
+    "E": "NO",
+    "Ei": "NULL",
+    "F": "NO",
+    "Fi": "NULL",
+    "Fii": "NULL",
+    "Fiii": "NULL",
+    "G": "0603-2024"
+  },
+  "3": {
+    "A": "Luca Bianchi",
+    "B": 1,
+    "C": "Matteo Luz Gallo",
+    "D": "Matteo Luz Gallo: Brasiliana",
+    "E": "NO",
+    "Ei": "NULL",
+    "Eii": "NULL",
+    "F": "OK; Francesca Luigi Leoni -> Paolo Neri -> Matteo Luz Gallo",
+    "G": "KO; Ricorrenti per matrimonio presenti",
+    "Gi": "Elena Rossi"
+  },
+  "4": {
+    "4/1": {
+      "A": "Matteo Luz Gallo",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Matteo Luz Gallo",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "NO",
+      "Ei": "Tribunale civile competente",
+      "F": "30.06.2025",
+      "G": "KO",
+      "H": "NO",
+      "Hi": "OK",
+      "I": "NO",
+      "Ii": "OK",
+      "Iii": "NO",
+      "Iiii": "OK",
+      "Iiv": "NULL"
+    }
+  },
+  "5": {
+    "A": "OK",
+    "Ai": "NULL",
+    "C": "Brescia",
+    "D": "OK",
+    "E": "Padre: Elena Rossi, Madre: Sara Marini",
+    "F": "05.03.1881"
+  },
+  "6": {
+    "A": "OK",
+    "Ai": "NULL",
+    "Aii": "NULL",
+    "Aiii": "NULL",
+    "C": "NULL",
+    "D": "NULL",
+    "Di": "NULL",
+    "Dii": "NULL",
+    "Diii": "NULL",
+    "E": "NULL",
+    "F": "NULL",
+    "Fi": "NULL",
+    "Fii": "NULL"
+  },
+  "7": {
+    "A": "OK",
+    "B": "Francesca Leono",
+    "C": "OK",
+    "D": "OK",
+    "E": "OK",
+    "Ei": "NULL",
+    "Eii": "OK"
+  },
+  "8": {
+    "8/1": {
+      "A": "Paolo Neri",
+      "B": "KO",
+      "C": "KO",
+      "D": "KO",
+      "Di": "NULL",
+      "Dii": "NULL"
+    },
+    "8/2": {
+      "A": "Matteo Luz Gallo",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
+    }
+  },
+  "10": [
+    "0G",
+    "3G",
+    "4/1G",
+    "8/1B",
+    "8/1C",
+    "8/1D"
+  ],
+  "11": {
+    "0G": "Atti di nascita dei discendenti mancanti: Paolo Neri",
+    "3G": "Ricorrenti che chiedono la cittadinanza per matrimonio: Elena Rossi",
+    "4/1G": "La data della procura di Matteo Luz Gallo non è anteriore alla data del ricorso",
+    "8/1B": "Atto di nascita non trovato per Paolo Neri",
+    "8/1C": "Impossibile verificare l'apostille dell'atto di nascita di Paolo Neri perché l'atto manca",
+    "8/1D": "Impossibile verificare la traduzione dell'atto di nascita di Paolo Neri perché l'atto manca"
+  }
+}

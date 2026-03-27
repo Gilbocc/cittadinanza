@@ -1,0 +1,124 @@
+{
+  "0": {
+    "A": "OK",
+    "B": "OK",
+    "C": "OK",
+    "Ci": "NULL",
+    "D": "OK",
+    "E": "OK",
+    "F": "OK",
+    "G": "OK",
+    "Gi": "NULL",
+    "H": "OK",
+    "Hi": "NULL"
+  },
+  "1": {
+    "1": "OK"
+  },
+  "2": {
+    "A": "13.07.2024",
+    "B": "OK",
+    "C": "OK",
+    "D": "NO",
+    "Di": "NULL",
+    "E": "SI",
+    "Ei": "20.02.2024",
+    "F": "NO",
+    "Fi": "NULL",
+    "Fii": "NULL",
+    "Fiii": "NULL",
+    "G": "0519-2025"
+  },
+  "3": {
+    "A": "Paolo Neri",
+    "B": 1,
+    "C": "Paolo Ana Neri",
+    "D": "Paolo Ana Neri: Brasiliana",
+    "E": "NO",
+    "Ei": "NULL",
+    "Eii": "NULL",
+    "F": "OK; Paolo Carlo Neri -> Marco Moretti -> Paolo Ana Neri",
+    "G": "KO; Ricorrenti per matrimonio presenti",
+    "Gi": "Matteo Gallo"
+  },
+  "4": {
+    "4/1": {
+      "A": "Paolo Ana Neri",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Paolo Ana Neri",
+      "C": "KO",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "03.07.2024",
+      "G": "OK",
+      "H": "OK",
+      "Hi": "NULL",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
+      "Iiii": "NULL",
+      "Iiv": "NULL"
+    }
+  },
+  "5": {
+    "A": "OK",
+    "Ai": "NULL",
+    "C": "Mantova",
+    "D": "OK",
+    "E": "Padre: Elena Rossi, Madre: Matteo Gallo",
+    "F": "13.05.1922"
+  },
+  "6": {
+    "A": "OK",
+    "Ai": "NULL",
+    "Aii": "NULL",
+    "Aiii": "NULL",
+    "C": "NULL",
+    "D": "NULL",
+    "Di": "NULL",
+    "Dii": "NULL",
+    "Diii": "NULL",
+    "E": "NULL",
+    "F": "NULL",
+    "Fi": "NULL",
+    "Fii": "NULL"
+  },
+  "7": {
+    "A": "OK",
+    "B": "Paolo Nero",
+    "C": "OK",
+    "D": "OK",
+    "E": "OK",
+    "Ei": "OK",
+    "Eii": "NULL"
+  },
+  "8": {
+    "8/1": {
+      "A": "Marco Moretti",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
+    },
+    "8/2": {
+      "A": "Paolo Ana Neri",
+      "B": "KO",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    }
+  },
+  "10": [
+    "3G",
+    "4/1C",
+    "8/2B"
+  ],
+  "11": {
+    "3G": "Ricorrenti che chiedono la cittadinanza per matrimonio: Matteo Gallo",
+    "4/1C": "Gli avvocati indicati nella procura di Paolo Ana Neri non coincidono con quelli del ricorso",
+    "8/2B": "Genitori non in linea discendenza per Paolo Ana Neri"
+  }
+}

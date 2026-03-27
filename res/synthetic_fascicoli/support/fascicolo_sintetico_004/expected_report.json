@@ -16,86 +16,104 @@
     "1": "OK"
   },
   "2": {
-    "A": "04.04.2024",
+    "A": "28.09.2024",
     "B": "OK",
     "C": "OK",
     "D": "NO",
     "Di": "NULL",
-    "E": "SI",
-    "Ei": "13.05.2024",
-    "F": "SI",
-    "Fi": "2",
-    "Fii": "Davide Lombardi, Matteo Gallo",
-    "Fiii": "15.05.2025, 22.02.2024",
-    "G": "0749-2025"
+    "E": "NO",
+    "Ei": "NULL",
+    "F": "NO",
+    "Fi": "NULL",
+    "Fii": "NULL",
+    "Fiii": "NULL",
+    "G": "0139-2024"
   },
   "3": {
-    "A": "Matteo Gallo",
-    "B": 1,
-    "C": "Sara Joao Marini",
-    "D": "Sara Joao Marini: Brasiliana",
+    "A": "Paolo Neri",
+    "B": 2,
+    "C": "Elena Rossi, Davide Ana Lombardi",
+    "D": "Elena Rossi: Brasiliana, Davide Ana Lombardi: Brasiliana",
     "E": "NO",
     "Ei": "NULL",
     "Eii": "NULL",
-    "F": "OK; Elena Carlo Rossi -> Davide Joao Lombardi -> Sara Joao Marini",
+    "F": "OK; Francesca Maria Leoni -> Elena Rossi -> Matteo Gallo -> Davide Lombardi -> Davide Ana Lombardi -> Elena Rossi",
     "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
     "Gi": "NULL"
   },
   "4": {
     "4/1": {
-      "A": "Sara Joao Marini",
+      "A": "Elena Rossi",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Sara Joao Marini",
+      "B": "OK; firma del ricorrente Elena Rossi",
       "C": "OK",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "E": "OK",
       "Ei": "NULL",
-      "F": "19.04.2024",
+      "F": "15.06.2025",
+      "G": "KO",
+      "H": "OK",
+      "Hi": "NULL",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
+      "Iiii": "NULL",
+      "Iiv": "NULL"
+    },
+    "4/2": {
+      "A": "Davide Ana Lombardi",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Davide Ana Lombardi",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "20.07.2024",
       "G": "OK",
       "H": "NO",
       "Hi": "OK",
-      "I": "NO",
-      "Ii": "OK",
-      "Iii": "OK",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
       "Iiii": "NULL",
-      "Iiv": "OK"
+      "Iiv": "NULL"
     }
   },
   "5": {
-    "A": "NO",
-    "Ai": "OK",
-    "C": "Bergamo",
+    "A": "OK",
+    "Ai": "NULL",
+    "C": "Cremona",
     "D": "OK",
-    "E": "Padre: Elena Rossi, Madre: Elena Rossi",
-    "F": "21.08.1849"
+    "E": "Padre: Elena Rossi, Madre: Francesca Leoni",
+    "F": "01.07.1925"
   },
   "6": {
-    "A": "NO",
+    "A": "OK",
     "Ai": "NULL",
     "Aii": "NULL",
     "Aiii": "NULL",
-    "C": "18.06.1963",
-    "D": "OK",
+    "C": "NULL",
+    "D": "NULL",
     "Di": "NULL",
     "Dii": "NULL",
     "Diii": "NULL",
-    "E": "OK",
-    "F": "OK",
-    "Fi": "OK",
+    "E": "NULL",
+    "F": "NULL",
+    "Fi": "NULL",
     "Fii": "NULL"
   },
   "7": {
     "A": "OK",
-    "B": "NULL",
+    "B": "Francesca Leono",
     "C": "OK",
     "D": "OK",
     "E": "OK",
-    "Ei": "OK",
-    "Eii": "NULL"
+    "Ei": "NULL",
+    "Eii": "OK"
   },
   "8": {
     "8/1": {
-      "A": "Davide Joao Lombardi",
+      "A": "Elena Rossi",
       "B": "OK",
       "C": "OK",
       "D": "OK",
@@ -103,7 +121,15 @@
       "Dii": "NULL"
     },
     "8/2": {
-      "A": "Sara Joao Marini",
+      "A": "Matteo Gallo",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/3": {
+      "A": "Davide Lombardi",
       "B": "OK",
       "C": "OK",
       "D": "OK",
@@ -111,6 +137,10 @@
       "Dii": "OK"
     }
   },
-  "10": null,
-  "11": null
+  "10": [
+    "4/1G"
+  ],
+  "11": {
+    "4/1G": "La data della procura di Elena Rossi non è anteriore alla data del ricorso"
+  }
 }

@@ -1,0 +1,126 @@
+{
+  "0": {
+    "A": "OK",
+    "B": "OK",
+    "C": "OK",
+    "Ci": "NULL",
+    "D": "OK",
+    "E": "OK",
+    "F": "OK",
+    "G": "OK",
+    "Gi": "NULL",
+    "H": "OK",
+    "Hi": "NULL"
+  },
+  "1": {
+    "1": "OK"
+  },
+  "2": {
+    "A": "23.10.2025",
+    "B": "OK",
+    "C": "KO",
+    "D": "NO",
+    "Di": "NULL",
+    "E": "SI",
+    "Ei": "21.01.2025",
+    "F": "NO",
+    "Fi": "NULL",
+    "Fii": "NULL",
+    "Fiii": "NULL",
+    "G": "0530-2025"
+  },
+  "3": {
+    "A": "Paolo Neri, Davide Lombardi",
+    "B": 1,
+    "C": "Marco Moretti-Silva",
+    "D": "Marco Moretti-Silva: Brasiliana",
+    "E": "NO",
+    "Ei": "NULL",
+    "Eii": "NULL",
+    "F": "KO; Chiara Luigi Costa -> Marco Moretti",
+    "G": "KO; Ricorrenti per matrimonio presenti",
+    "Gi": "Sara Marini"
+  },
+  "4": {
+    "4/1": {
+      "A": "Marco Moretti-Silva",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Marco Moretti-Silva",
+      "C": "KO",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "NO",
+      "Ei": "Tribunale civile competente",
+      "F": "15.02.2024",
+      "G": "OK",
+      "H": "NO",
+      "Hi": "OK",
+      "I": "NO",
+      "Ii": "OK",
+      "Iii": "OK",
+      "Iiii": "NULL",
+      "Iiv": "OK"
+    }
+  },
+  "5": {
+    "A": "NO",
+    "Ai": "KO",
+    "C": "Bergamo",
+    "D": "OK",
+    "E": "Padre: Paolo Neri, Madre: Davide Lombardi",
+    "F": "20.05.1850"
+  },
+  "6": {
+    "A": "NO",
+    "Ai": "NULL",
+    "Aii": "NULL",
+    "Aiii": "NULL",
+    "C": "01.04.1920",
+    "D": "OK",
+    "Di": "NULL",
+    "Dii": "NULL",
+    "Diii": "NULL",
+    "E": "OK",
+    "F": "OK",
+    "Fi": "OK",
+    "Fii": "NULL"
+  },
+  "7": {
+    "A": "OK",
+    "B": "Chiara Costo",
+    "C": "OK",
+    "D": "OK",
+    "E": "OK",
+    "Ei": "NULL",
+    "Eii": "OK"
+  },
+  "8": {
+    "8/1": {
+      "A": "Matteo Gallo",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/2": {
+      "A": "Marco Moretti",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    }
+  },
+  "10": [
+    "2C",
+    "3F",
+    "3G",
+    "4/1C"
+  ],
+  "11": {
+    "2C": "Il ricorso non risulta iscritto prima del 27.03.2025 escluso",
+    "3F": "La linea di discendenza indicata nel ricorso non risulta coerente",
+    "3G": "Ricorrenti che chiedono la cittadinanza per matrimonio: Sara Marini",
+    "4/1C": "Gli avvocati indicati nella procura di Marco Moretti-Silva non coincidono con quelli del ricorso"
+  }
+}

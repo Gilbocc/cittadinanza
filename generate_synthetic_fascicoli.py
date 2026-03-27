@@ -73,7 +73,20 @@ ITALIAN_NAMES = [
     ("Sara", "Marini"),
 ]
 
-BRAZIL_CITIES = ["Sao Paulo", "Rio de Janeiro", "Brasilia", "Salvador", "Campinas"]
+BRAZIL_CITIES = [
+    "Sao Paulo",
+    "Rio de Janeiro",
+    "Brasilia",
+    "Salvador",
+    "Campinas",
+    "Belo Horizonte",
+    "Curitiba",
+    "Porto Alegre",
+    "Recife",
+    "Fortaleza",
+    "Santos",
+    "Niteroi",
+]
 AREE = ["A", "B", "C", "D", "E"]
 
 
@@ -88,6 +101,34 @@ class ScenarioConfig:
     descendants_with_married_name: bool
     all_docs_in_single_pdf: bool
     max_docs_per_pdf: int
+    inject_lineage_incoherence: bool = False
+    inject_marriage_claimants: bool = False
+    inject_procura_weakness: bool = False
+    drop_one_descendant_birth: bool = False
+    selection_weight: float = 1.0
+
+
+@dataclass
+class RenderProfile:
+    noise_scale: float
+    artifact_scale: float
+    jitter_scale: float
+    watermark_prob: float
+    punch_hole_prob: float
+    stamp_prob: float
+    seal_prob: float
+
+
+def random_render_profile(rng: random.Random) -> RenderProfile:
+    return RenderProfile(
+        noise_scale=rng.uniform(0.65, 1.55),
+        artifact_scale=rng.uniform(0.60, 1.70),
+        jitter_scale=rng.uniform(0.70, 1.90),
+        watermark_prob=rng.uniform(0.20, 0.92),
+        punch_hole_prob=rng.uniform(0.15, 0.85),
+        stamp_prob=rng.uniform(0.65, 0.98),
+        seal_prob=rng.uniform(0.20, 0.85),
+    )
 
 
 def random_person(rng: random.Random) -> dict[str, str]:
@@ -162,7 +203,11 @@ def make_indice(rng: random.Random) -> dict[str, Any]:
 
 
 def make_ricorso(rng: random.Random, family: dict[str, Any], married_name: bool) -> dict[str, Any]:
-    avvocato = random_person(rng)
+    avvocati = [random_person(rng)]
+    if rng.random() < 0.35:
+        alt = random_person(rng)
+        if alt != avvocati[0]:
+            avvocati.append(alt)
     ricorrenti = []
 
     for r in family["ricorrenti"]:
@@ -176,7 +221,7 @@ def make_ricorso(rng: random.Random, family: dict[str, Any], married_name: bool)
     return {
         "document_type": "Ricorso",
         "schema": {
-            "avvocati": [avvocato],
+            "avvocati": avvocati,
             "numero_ricorrenti": len(ricorrenti),
             "ricorrenti_maggiorenni": ricorrenti,
             "ricorrenti_minorenni": [],
@@ -189,6 +234,178 @@ def make_ricorso(rng: random.Random, family: dict[str, Any], married_name: bool)
             "data_ricorso": random_date(rng, 2024, 2025),
         },
     }
+
+
+def _norm_person_key(person: dict[str, str]) -> tuple[str, str]:
+    return (
+        str(person.get("nome", "")).strip().lower(),
+        str(person.get("cognome", "")).strip().lower(),
+    )
+
+
+def _same_person(a: dict[str, str], b: dict[str, str]) -> bool:
+    return _norm_person_key(a) == _norm_person_key(b)
+
+
+def _extract_subjects(doc: dict[str, Any]) -> list[dict[str, str]]:
+    schema = doc.get("schema", {})
+    if doc.get("document_type") in {"Atto di nascita", "Atto di morte", "Certificato Negativo di Naturalizzazione"}:
+        subj = schema.get("soggetto")
+        return [subj] if isinstance(subj, dict) else []
+    if doc.get("document_type") == "Procura":
+        sogg = schema.get("soggetto", [])
+        return sogg if isinstance(sogg, list) else []
+    obj = schema.get("oggetto", {})
+    sogg = obj.get("soggetto", [])
+    return sogg if isinstance(sogg, list) else []
+
+
+def _remove_procura_chain(docs: list[dict[str, Any]], target: dict[str, str], remove_apostille: bool, remove_translation_chain: bool) -> None:
+    kept: list[dict[str, Any]] = []
+    for doc in docs:
+        dt = doc.get("document_type")
+        remove = False
+
+        if dt == "Apostille":
+            obj = doc.get("schema", {}).get("oggetto", {})
+            obj_type = obj.get("document_type")
+            obj_original = obj.get("documento_originale")
+            subj = (obj.get("soggetto") or [{}])[0]
+            if _same_person(subj, target):
+                if remove_apostille and obj_type == "Procura":
+                    remove = True
+                if remove_translation_chain and obj_type == "Traduzione" and obj_original == "Procura":
+                    remove = True
+
+        elif dt == "Traduzione":
+            obj = doc.get("schema", {}).get("oggetto", {})
+            subj = (obj.get("soggetto") or [{}])[0]
+            if remove_translation_chain and obj.get("document_type") == "Procura" and _same_person(subj, target):
+                remove = True
+
+        elif dt == "Asseverazione":
+            obj = doc.get("schema", {}).get("oggetto", {})
+            subj = (obj.get("soggetto") or [{}])[0]
+            if (
+                remove_translation_chain
+                and obj.get("document_type") == "Traduzione"
+                and obj.get("documento_originale") == "Procura"
+                and _same_person(subj, target)
+            ):
+                remove = True
+
+        if not remove:
+            kept.append(doc)
+
+    docs.clear()
+    docs.extend(kept)
+
+
+def _remove_birth_doc_and_chain(docs: list[dict[str, Any]], target: dict[str, str]) -> None:
+    kept: list[dict[str, Any]] = []
+    for doc in docs:
+        dt = doc.get("document_type")
+        remove = False
+
+        if dt == "Atto di nascita":
+            subj = doc.get("schema", {}).get("soggetto", {})
+            if _same_person(subj, target):
+                remove = True
+        elif dt in {"Apostille", "Traduzione", "Asseverazione"}:
+            obj = doc.get("schema", {}).get("oggetto", {})
+            subj = (obj.get("soggetto") or [{}])[0]
+            if _same_person(subj, target):
+                obj_type = obj.get("document_type")
+                obj_orig = obj.get("documento_originale")
+                if obj_type == "Atto di nascita":
+                    remove = True
+                if obj_type == "Traduzione" and obj_orig == "Atto di nascita":
+                    remove = True
+
+        if not remove:
+            kept.append(doc)
+
+    docs.clear()
+    docs.extend(kept)
+
+
+def apply_challenging_variants(
+    rng: random.Random,
+    scenario: ScenarioConfig,
+    docs: list[dict[str, Any]],
+    family: dict[str, Any],
+    ricorso: dict[str, Any],
+) -> None:
+    if scenario.inject_lineage_incoherence and rng.random() < 0.55:
+        ricorso["schema"]["coerenza_linea_discendenza"] = "KO"
+        lineage = ricorso["schema"].get("linea_discendenza", [])
+        if len(lineage) >= 3:
+            gap_line = [lineage[0], lineage[-1]]
+            ricorso["schema"]["riassunto_linea_discendenza"] = " -> ".join(
+                f"{p.get('nome', '')} {p.get('cognome', '')}" for p in gap_line
+            )
+            ricorso["schema"]["racconto_linea_discendenza"] = (
+                "La ricostruzione presenta una possibile lacuna intermedia da verificare sui certificati allegati."
+            )
+
+    if scenario.inject_marriage_claimants and rng.random() < 0.45:
+        lineage = ricorso["schema"].get("linea_discendenza", [])
+        lineage_keys = {_norm_person_key(p) for p in lineage if isinstance(p, dict)}
+        ricorrenti = ricorso["schema"].get("ricorrenti_maggiorenni", [])
+        ric_keys = {_norm_person_key(p) for p in ricorrenti if isinstance(p, dict)}
+
+        # Richiedenti per matrimonio must be distinct from direct-line descendants.
+        candidate = random_person(rng)
+        tries = 0
+        while (_norm_person_key(candidate) in lineage_keys or _norm_person_key(candidate) in ric_keys) and tries < 15:
+            candidate = random_person(rng)
+            tries += 1
+
+        candidate["nazionalita"] = "Brasiliana"
+        ricorso["schema"]["ricorrenti_per_matrimonio"] = [candidate]
+
+    if scenario.inject_procura_weakness and rng.random() < 0.65:
+        procure = [d for d in docs if d.get("document_type") == "Procura"]
+        if procure:
+            proc = rng.choice(procure)
+            subject = proc.get("schema", {}).get("soggetto", [{}])[0]
+            weakness = rng.choice([
+                "missing_signature",
+                "wrong_lawyer",
+                "late_date",
+                "missing_apostille",
+                "missing_translation_chain",
+            ])
+
+            if weakness == "missing_signature":
+                proc["schema"]["soggetto"][0]["firma_presente"] = "KO"
+            elif weakness == "wrong_lawyer":
+                proc["schema"]["avvocati"] = [random_person(rng)]
+            elif weakness == "late_date":
+                ricorso_dt = ricorso["schema"].get("data_ricorso")
+                try:
+                    d0 = date(*reversed([int(x) for x in ricorso_dt.split("-")]))
+                    proc["schema"]["data_procura"] = (d0 + timedelta(days=rng.randint(1, 20))).strftime("%d-%m-%Y")
+                except Exception:
+                    pass
+            elif weakness == "missing_apostille":
+                proc["schema"]["rilasciata_in_italia"] = "NO"
+                _remove_procura_chain(docs, subject, remove_apostille=True, remove_translation_chain=False)
+            elif weakness == "missing_translation_chain":
+                proc["schema"]["scritta_in_italiano"] = "NO"
+                _remove_procura_chain(docs, subject, remove_apostille=False, remove_translation_chain=True)
+
+    if scenario.drop_one_descendant_birth and rng.random() < 0.50:
+        lineage = family.get("lineage", [])
+        ricorrenti = ricorso["schema"].get("ricorrenti_maggiorenni", [])
+        descendants = []
+        if lineage:
+            for p in lineage[1:]:
+                if not any(_same_person(p, r) for r in ricorrenti):
+                    descendants.append(p)
+        if descendants:
+            target = rng.choice(descendants)
+            _remove_birth_doc_and_chain(docs, target)
 
 
 def make_procura(
@@ -444,15 +661,19 @@ def _flatten_schema_lines(prefix: str, value: Any) -> list[str]:
     return [f"{prefix}: {_stringify(value)}"]
 
 
-def format_document_content(doc: dict[str, Any]) -> list[str]:
+def format_document_content(doc: dict[str, Any], rng: random.Random) -> list[str]:
     doc_type = doc["document_type"]
     schema = doc.get("schema", {})
 
     if doc_type == "Ricorso":
         ric_list = schema.get("ricorrenti_maggiorenni", [])
+        ric_matrimonio = schema.get("ricorrenti_per_matrimonio", [])
         ric_names = ", ".join(
             f"{p.get('nome', '')} {p.get('cognome', '')}" for p in ric_list
         ) or "N.D."
+        ric_matrimonio_names = ", ".join(
+            f"{p.get('nome', '')} {p.get('cognome', '')}" for p in ric_matrimonio
+        ) or "Nessuno"
         ric_with_naz = ", ".join(
             f"{p.get('nome', '')} {p.get('cognome', '')} (nazionalita: {p.get('nazionalita', 'N.D.')})" 
             for p in ric_list
@@ -466,6 +687,7 @@ def format_document_content(doc: dict[str, Any]) -> list[str]:
             "RICORSO AI SENSI DELL'ART. 281-DECIES C.P.C.",
             f"Ricorrenti: {ric_names}",
             f"Ricorrenti con Nazionalita: {ric_with_naz}",
+            f"Ricorrenti per matrimonio: {ric_matrimonio_names}",
             f"Difensore/i: {lawyer_names}",
             f"Data in calce al ricorso: {schema.get('data_ricorso', 'N.D.')}",
             f"Provenienza dal Brasile: {schema.get('proveniente_dal_brasile', 'N.D.')}",
@@ -506,7 +728,7 @@ def format_document_content(doc: dict[str, Any]) -> list[str]:
         soggetto = schema.get("soggetto", {})
         padre = schema.get("padre", {})
         madre = schema.get("madre", {})
-        matricola = f"{random.randint(1000000,9999999)} {random.randint(10,99)} {random.randint(1000,9999)}"
+        matricola = f"{rng.randint(1000000,9999999)} {rng.randint(10,99)} {rng.randint(1000,9999)}"
         return [
             "CERTIDAO DE NASCIMENTO EM INTEIRO TEOR / ATTO DI NASCITA",
             f"Matricula: {matricola}",
@@ -523,7 +745,7 @@ def format_document_content(doc: dict[str, Any]) -> list[str]:
 
     if doc_type == "Atto di morte":
         soggetto = schema.get("soggetto", {})
-        matricola = f"{random.randint(1000000,9999999)} {random.randint(10,99)} {random.randint(1000,9999)}"
+        matricola = f"{rng.randint(1000000,9999999)} {rng.randint(10,99)} {rng.randint(1000,9999)}"
         return [
             "CERTIDAO DE INTEIRO TEOR DE OBITO / ATTO DI MORTE",
             f"Matricula: {matricola}",
@@ -561,7 +783,7 @@ def format_document_content(doc: dict[str, Any]) -> list[str]:
     if doc_type == "Apostille":
         obj = schema.get("oggetto", {})
         people = ", ".join(f"{p.get('nome', '')} {p.get('cognome', '')}" for p in obj.get("soggetto", [])) or "N.D."
-        code = f"BR{random.randint(100000,999999)}-{random.randint(1000,9999)}"
+        code = f"BR{rng.randint(100000,999999)}-{rng.randint(1000,9999)}"
         return [
             "CNJ - Conselho Nacional de Justica",
             "BRASIL Apostille (Convention de La Haye du 5 octobre 1961)",
@@ -606,28 +828,98 @@ def format_document_content(doc: dict[str, Any]) -> list[str]:
     return lines
 
 
-def draw_scan_background(c: canvas.Canvas, width: float, height: float, rng: random.Random) -> None:
-    c.setFillColorRGB(0.95, 0.95, 0.93)
+def draw_scan_background(c: canvas.Canvas, width: float, height: float, rng: random.Random, profile: RenderProfile) -> None:
+    base_tone = rng.uniform(0.92, 0.97)
+    c.setFillColorRGB(base_tone, base_tone, base_tone - 0.01)
     c.rect(0, 0, width, height, fill=1, stroke=0)
 
     # Light horizontal streaks to mimic scanner banding.
-    for _ in range(18):
+    for _ in range(max(8, int(24 * profile.noise_scale))):
         y = rng.uniform(30, height - 30)
         h = rng.uniform(0.6, 2.0)
         g = rng.uniform(0.88, 0.96)
         c.setFillColorRGB(g, g, g)
         c.rect(0, y, width, h, fill=1, stroke=0)
 
+    # Vertical banding is common in low-quality scans.
+    for _ in range(max(2, int(6 * profile.artifact_scale))):
+        x = rng.uniform(20, width - 20)
+        w = rng.uniform(0.8, 2.2)
+        g = rng.uniform(0.90, 0.97)
+        c.setFillColorRGB(g, g, g)
+        c.rect(x, 0, w, height, fill=1, stroke=0)
+
     # Small speckle noise.
     c.setFillColorRGB(0.75, 0.75, 0.75)
-    for _ in range(80):
+    for _ in range(max(35, int(110 * profile.noise_scale))):
         x = rng.uniform(10, width - 10)
         y = rng.uniform(10, height - 10)
         r = rng.uniform(0.2, 0.8)
         c.circle(x, y, r, fill=1, stroke=0)
 
+    # Mild fold/crease artifacts.
+    for _ in range(rng.randint(1, max(1, int(2 * profile.artifact_scale)))):
+        y = rng.uniform(90, height - 90)
+        c.setStrokeColorRGB(0.80, 0.80, 0.78)
+        c.setLineWidth(rng.uniform(0.5, 1.1))
+        c.line(28, y, width - 28, y + rng.uniform(-2.5, 2.5))
 
-def draw_scan_stamp(c: canvas.Canvas, width: float, height: float, doc_type: str, rng: random.Random) -> None:
+    # Edge shading from scanner lid / paper curvature.
+    c.setFillColorRGB(0.86, 0.86, 0.84)
+    c.rect(0, 0, 9, height, fill=1, stroke=0)
+    c.rect(width - 9, 0, 9, height, fill=1, stroke=0)
+    c.setFillColorRGB(0.88, 0.88, 0.86)
+    c.rect(0, height - 8, width, 8, fill=1, stroke=0)
+
+
+def draw_punch_holes(c: canvas.Canvas, width: float, height: float, rng: random.Random, profile: RenderProfile) -> None:
+    if rng.random() > profile.punch_hole_prob:
+        return
+    x = 16
+    for frac in (0.22, 0.50, 0.78):
+        y = height * frac + rng.uniform(-6, 6)
+        c.setFillColorRGB(0.80, 0.80, 0.78)
+        c.circle(x, y, 5.2, fill=1, stroke=0)
+        c.setFillColorRGB(0.90, 0.90, 0.88)
+        c.circle(x + 0.8, y + 0.5, 3.7, fill=1, stroke=0)
+
+
+def draw_barcode(c: canvas.Canvas, x: float, y: float, width: float, height: float, seed: int) -> None:
+    rng = random.Random(seed)
+    c.setFillColorRGB(0.1, 0.1, 0.1)
+    xpos = x
+    while xpos < x + width:
+        bar_w = rng.choice([0.45, 0.7, 1.1, 1.6])
+        gap = rng.choice([0.3, 0.45, 0.7])
+        if rng.random() < 0.78:
+            c.rect(xpos, y, bar_w, height, fill=1, stroke=0)
+        xpos += bar_w + gap
+
+
+def draw_hand_signature(c: canvas.Canvas, x: float, y: float, seed: int) -> None:
+    rng = random.Random(seed)
+    c.saveState()
+    c.setStrokeColorRGB(0.12, 0.14, 0.18)
+    c.setLineWidth(1.2)
+    c.translate(x, y)
+    c.rotate(rng.uniform(-8, 8))
+    path = c.beginPath()
+    path.moveTo(0, 0)
+    cursor_x = 0.0
+    for _ in range(14):
+        cursor_x += rng.uniform(6, 10)
+        path.curveTo(
+            cursor_x - rng.uniform(4, 7), rng.uniform(-5, 7),
+            cursor_x - rng.uniform(1, 3), rng.uniform(-6, 9),
+            cursor_x, rng.uniform(-3, 6),
+        )
+    c.drawPath(path, stroke=1, fill=0)
+    c.restoreState()
+
+
+def draw_scan_stamp(c: canvas.Canvas, width: float, height: float, doc_type: str, rng: random.Random, profile: RenderProfile) -> None:
+    if rng.random() > profile.stamp_prob:
+        return
     c.saveState()
     c.setStrokeColorRGB(0.65, 0.2, 0.2)
     c.setLineWidth(1.2)
@@ -643,12 +935,41 @@ def draw_scan_stamp(c: canvas.Canvas, width: float, height: float, doc_type: str
     c.restoreState()
 
 
-def render_scan_document(c: canvas.Canvas, width: float, height: float, title: str, idx: int, doc: dict[str, Any]) -> None:
+def draw_round_seal(c: canvas.Canvas, width: float, height: float, rng: random.Random, profile: RenderProfile) -> None:
+    if rng.random() > profile.seal_prob:
+        return
+    c.saveState()
+    cx = width - 105 + rng.uniform(-10, 10)
+    cy = 86 + rng.uniform(-8, 8)
+    c.translate(cx, cy)
+    c.rotate(rng.uniform(-18, 18))
+    c.setStrokeColorRGB(0.62, 0.22, 0.22)
+    c.setLineWidth(1.1)
+    c.circle(0, 0, 34, fill=0, stroke=1)
+    c.circle(0, 0, 28, fill=0, stroke=1)
+    c.setFont("Helvetica-Bold", 7)
+    c.setFillColorRGB(0.62, 0.22, 0.22)
+    c.drawCentredString(0, -2, "UFFICIO ATTI")
+    c.restoreState()
+
+
+def render_scan_document(
+    c: canvas.Canvas,
+    width: float,
+    height: float,
+    title: str,
+    idx: int,
+    doc: dict[str, Any],
+    style_seed: int,
+    profile: RenderProfile,
+) -> None:
     seed_material = json.dumps(doc, ensure_ascii=False, sort_keys=True)
-    local_seed = int.from_bytes(seed_material.encode("utf-8", errors="ignore")[:8] or b"0", "little", signed=False)
+    base_seed = int.from_bytes(seed_material.encode("utf-8", errors="ignore")[:8] or b"0", "little", signed=False)
+    local_seed = (base_seed ^ style_seed ^ (idx * 7919)) & 0xFFFFFFFF
     rng = random.Random(local_seed)
 
-    draw_scan_background(c, width, height, rng)
+    draw_scan_background(c, width, height, rng, profile)
+    draw_punch_holes(c, width, height, rng, profile)
 
     left = 42
     right = width - 42
@@ -656,21 +977,41 @@ def render_scan_document(c: canvas.Canvas, width: float, height: float, title: s
     line_height = 14
     y = top
 
+    # Light watermark often visible in scanned office copies.
+    if rng.random() < profile.watermark_prob:
+        c.saveState()
+        w = rng.uniform(0.82, 0.90)
+        c.setFillColorRGB(w, w, w - 0.01)
+        c.setFont("Helvetica-Bold", rng.uniform(28, 38))
+        c.translate(width * rng.uniform(0.45, 0.58), height * rng.uniform(0.46, 0.58))
+        c.rotate(rng.uniform(24, 40))
+        c.drawCentredString(0, 0, "COPIA SCANSITA")
+        c.restoreState()
+
     c.setStrokeColorRGB(0.4, 0.4, 0.4)
     c.setLineWidth(0.6)
     c.rect(28, 28, width - 56, height - 56, fill=0, stroke=1)
 
-    c.setFont("Helvetica-Bold", 12)
+    header_font = rng.choice(["Helvetica-Bold", "Times-Bold", "Courier-Bold"])
+    body_font = rng.choice(["Times-Roman", "Helvetica", "Courier"])
+
+    c.setFont(header_font, 12)
     c.setFillColorRGB(0.12, 0.12, 0.12)
     c.drawString(left, y, f"FASCICOLO: {title}  |  DOC {idx:02d}  |  {doc['document_type'].upper()}")
     y -= 22
 
     c.setFont("Courier", 9)
     c.drawString(left, y, f"Protocollo interno n. {rng.randint(10000, 99999)} / {rng.choice([2023, 2024, 2025])}")
+    c.drawRightString(right, y, f"Pag. {idx:02d}")
     y -= 16
 
-    lines = format_document_content(doc)
-    c.setFont("Times-Roman", 11)
+    c.setStrokeColorRGB(0.52, 0.52, 0.52)
+    c.setLineWidth(0.4)
+    c.line(left, y + 3, right, y + 3)
+    y -= 8
+
+    lines = format_document_content(doc, rng)
+    c.setFont(body_font, 11)
     for line in lines:
         wrapped = textwrap.wrap(line, width=95) or [""]
         for piece in wrapped:
@@ -678,24 +1019,44 @@ def render_scan_document(c: canvas.Canvas, width: float, height: float, title: s
                 c.setFont("Helvetica-Oblique", 8)
                 c.drawString(left, 36, "continua nella pagina successiva")
                 c.showPage()
-                draw_scan_background(c, width, height, rng)
+                draw_scan_background(c, width, height, rng, profile)
+                draw_punch_holes(c, width, height, rng, profile)
                 y = top
-                c.setFont("Times-Roman", 11)
+                c.setFont(body_font, 11)
 
-            jitter_x = rng.uniform(-1.8, 1.8)
-            jitter_y = rng.uniform(-0.8, 0.8)
+            jitter_x = rng.uniform(-1.8, 1.8) * profile.jitter_scale
+            jitter_y = rng.uniform(-0.8, 0.8) * profile.jitter_scale
             c.drawString(left + jitter_x, y + jitter_y, piece)
             y -= line_height
+
+    # Signature line on procura originals when signature is expected.
+    if doc.get("document_type") == "Procura":
+        soggetti = doc.get("schema", {}).get("soggetto", [])
+        if soggetti and soggetti[0].get("firma_presente") == "OK":
+            sign_y = max(72, y - 10)
+            c.setStrokeColorRGB(0.35, 0.35, 0.35)
+            c.setLineWidth(0.5)
+            c.line(left + 240, sign_y, right - 18, sign_y)
+            draw_hand_signature(c, left + 248, sign_y + 7, local_seed + 77)
+
+    draw_round_seal(c, width, height, rng, profile)
 
     c.setFont("Helvetica-Oblique", 8)
     c.setFillColorRGB(0.18, 0.18, 0.18)
     c.drawString(left, 36, f"Pagina scansita - riferimento documento {idx:02d}")
     c.drawRightString(right, 36, f"hash {rng.randint(100000, 999999)}")
+    draw_barcode(c, right - 120, 20, 110, 10, local_seed + 19)
 
-    draw_scan_stamp(c, width, height, doc["document_type"], rng)
+    draw_scan_stamp(c, width, height, doc["document_type"], rng, profile)
 
 
-def render_pdf(output_path: Path, title: str, docs: list[dict[str, Any]]) -> None:
+def render_pdf(
+    output_path: Path,
+    title: str,
+    docs: list[dict[str, Any]],
+    style_seed: int,
+    profile: RenderProfile,
+) -> None:
     c = canvas.Canvas(str(output_path), pagesize=A4)
     width, height = A4
 
@@ -703,13 +1064,16 @@ def render_pdf(output_path: Path, title: str, docs: list[dict[str, Any]]) -> Non
     for i, doc in enumerate(docs, start=1):
         if i > 1:
             c.showPage()
-        render_scan_document(c, width, height, title, i, doc)
+        render_scan_document(c, width, height, title, i, doc, style_seed=style_seed, profile=profile)
 
     c.save()
 
 
 def chunk_documents(docs: list[dict[str, Any]], single_pdf: bool, max_docs_per_pdf: int) -> list[list[dict[str, Any]]]:
-    if single_pdf:
+    # Hard cap requested: each generated PDF must not exceed 50 pages.
+    max_docs_per_pdf = min(max_docs_per_pdf, 50)
+
+    if single_pdf and len(docs) <= max_docs_per_pdf:
         return [docs]
 
     accessory_types = {"Apostille", "Traduzione", "Asseverazione"}
@@ -829,7 +1193,7 @@ def add_supporting_docs(rng: random.Random, docs: list[dict[str, Any]], scenario
 
 
 def build_case_documents(rng: random.Random, scenario: ScenarioConfig) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
-    family = build_family(rng, descendants=rng.randint(2, 4))
+    family = build_family(rng, descendants=rng.randint(2, 5))
 
     docs: list[dict[str, Any]] = []
 
@@ -868,6 +1232,7 @@ def build_case_documents(rng: random.Random, scenario: ScenarioConfig) -> tuple[
     docs.append(make_cnn(rng, avo, avo_birth["schema"]["data_nascita"]))
 
     add_supporting_docs(rng, docs, scenario)
+    apply_challenging_variants(rng, scenario, docs, family, ricorso)
 
     if scenario.include_useless_docs:
         noise_count = rng.randint(2, 5)
@@ -921,6 +1286,11 @@ def default_scenarios() -> list[ScenarioConfig]:
             descendants_with_married_name=True,
             all_docs_in_single_pdf=True,
             max_docs_per_pdf=50,
+            inject_lineage_incoherence=False,
+            inject_marriage_claimants=False,
+            inject_procura_weakness=False,
+            drop_one_descendant_birth=False,
+            selection_weight=1.35,
         ),
         ScenarioConfig(
             include_indice=True,
@@ -932,6 +1302,11 @@ def default_scenarios() -> list[ScenarioConfig]:
             descendants_with_married_name=False,
             all_docs_in_single_pdf=False,
             max_docs_per_pdf=5,
+            inject_lineage_incoherence=False,
+            inject_marriage_claimants=False,
+            inject_procura_weakness=True,
+            drop_one_descendant_birth=False,
+            selection_weight=1.15,
         ),
         ScenarioConfig(
             include_indice=False,
@@ -943,6 +1318,43 @@ def default_scenarios() -> list[ScenarioConfig]:
             descendants_with_married_name=True,
             all_docs_in_single_pdf=False,
             max_docs_per_pdf=4,
+            inject_lineage_incoherence=True,
+            inject_marriage_claimants=False,
+            inject_procura_weakness=False,
+            drop_one_descendant_birth=True,
+            selection_weight=1.00,
+        ),
+        ScenarioConfig(
+            include_indice=True,
+            include_avo_death=True,
+            death_required=True,
+            include_useless_docs=True,
+            include_useless_apostilles=True,
+            include_irrelevant_cert_chains=True,
+            descendants_with_married_name=True,
+            all_docs_in_single_pdf=False,
+            max_docs_per_pdf=6,
+            inject_lineage_incoherence=True,
+            inject_marriage_claimants=True,
+            inject_procura_weakness=True,
+            drop_one_descendant_birth=False,
+            selection_weight=0.85,
+        ),
+        ScenarioConfig(
+            include_indice=True,
+            include_avo_death=False,
+            death_required=False,
+            include_useless_docs=True,
+            include_useless_apostilles=True,
+            include_irrelevant_cert_chains=True,
+            descendants_with_married_name=False,
+            all_docs_in_single_pdf=False,
+            max_docs_per_pdf=7,
+            inject_lineage_incoherence=False,
+            inject_marriage_claimants=True,
+            inject_procura_weakness=True,
+            drop_one_descendant_birth=True,
+            selection_weight=0.80,
         ),
     ]
 
@@ -958,7 +1370,9 @@ def generate_fascicoli(output_dir: Path, count: int, seed: int) -> None:
     support_root.mkdir(parents=True, exist_ok=True)
 
     for i in range(count):
-        scenario = scenarios[i % len(scenarios)]
+        scenario = rng.choices(scenarios, weights=[s.selection_weight for s in scenarios], k=1)[0]
+        render_profile = random_render_profile(rng)
+        style_seed = rng.randint(0, 2**31 - 1)
         case_name = f"fascicolo_sintetico_{i:03d}"
         case_pdf_dir = fascicoli_root / case_name
         case_support_dir = support_root / case_name
@@ -973,7 +1387,7 @@ def generate_fascicoli(output_dir: Path, count: int, seed: int) -> None:
         for j, chunk in enumerate(chunks, start=1):
             pdf_name = f"{case_name}_bundle_{j:02d}.pdf"
             pdf_path = case_pdf_dir / pdf_name
-            render_pdf(pdf_path, title=case_name, docs=chunk)
+            render_pdf(pdf_path, title=case_name, docs=chunk, style_seed=style_seed + j, profile=render_profile)
             pdf_files.append({
                 "file": pdf_name,
                 "logical_docs": [d["document_type"] for d in chunk],
@@ -1004,6 +1418,21 @@ def generate_fascicoli(output_dir: Path, count: int, seed: int) -> None:
                 "descendants_with_married_name": scenario.descendants_with_married_name,
                 "all_docs_in_single_pdf": scenario.all_docs_in_single_pdf,
                 "max_docs_per_pdf": scenario.max_docs_per_pdf,
+                "inject_lineage_incoherence": scenario.inject_lineage_incoherence,
+                "inject_marriage_claimants": scenario.inject_marriage_claimants,
+                "inject_procura_weakness": scenario.inject_procura_weakness,
+                "drop_one_descendant_birth": scenario.drop_one_descendant_birth,
+                "selection_weight": scenario.selection_weight,
+            },
+            "render_profile": {
+                "noise_scale": round(render_profile.noise_scale, 3),
+                "artifact_scale": round(render_profile.artifact_scale, 3),
+                "jitter_scale": round(render_profile.jitter_scale, 3),
+                "watermark_prob": round(render_profile.watermark_prob, 3),
+                "punch_hole_prob": round(render_profile.punch_hole_prob, 3),
+                "stamp_prob": round(render_profile.stamp_prob, 3),
+                "seal_prob": round(render_profile.seal_prob, 3),
+                "style_seed": style_seed,
             },
             "pdf_files": pdf_files,
             "expected_doc_count": len(expected),

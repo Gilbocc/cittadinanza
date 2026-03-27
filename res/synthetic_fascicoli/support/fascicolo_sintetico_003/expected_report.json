@@ -16,58 +16,58 @@
     "1": "OK"
   },
   "2": {
-    "A": "17.06.2024",
+    "A": "17.12.2024",
     "B": "OK",
     "C": "OK",
     "D": "NO",
     "Di": "NULL",
     "E": "NO",
     "Ei": "NULL",
-    "F": "SI",
-    "Fi": "2",
-    "Fii": "Chiara Costa, Paolo Neri",
-    "Fiii": "06.08.2024, 01.03.2024",
-    "G": "0488-2024"
+    "F": "NO",
+    "Fi": "NULL",
+    "Fii": "NULL",
+    "Fiii": "NULL",
+    "G": "0308-2025"
   },
   "3": {
-    "A": "Matteo Gallo",
+    "A": "Elena Rossi",
     "B": 1,
-    "C": "Elena Rossi-Silva",
-    "D": "Elena Rossi-Silva: Brasiliana",
+    "C": "Davide Joao Lombardi-Silva",
+    "D": "Davide Joao Lombardi-Silva: Brasiliana",
     "E": "NO",
     "Ei": "NULL",
     "Eii": "NULL",
-    "F": "OK; Davide Luigi Lombardi -> Luca Bianchi -> Davide Lombardi -> Elena Rossi",
+    "F": "OK; Marco Maria Moretti -> Elena Rossi -> Davide Joao Lombardi",
     "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
     "Gi": "NULL"
   },
   "4": {
     "4/1": {
-      "A": "Elena Rossi-Silva",
+      "A": "Davide Joao Lombardi-Silva",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Elena Rossi-Silva",
+      "B": "OK; firma del ricorrente Davide Joao Lombardi-Silva",
       "C": "OK",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "E": "OK",
       "Ei": "NULL",
-      "F": "05.02.2025",
+      "F": "19.06.2024",
       "G": "OK",
-      "H": "NO",
-      "Hi": "OK",
-      "I": "NO",
-      "Ii": "OK",
-      "Iii": "OK",
+      "H": "OK",
+      "Hi": "NULL",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
       "Iiii": "NULL",
-      "Iiv": "OK"
+      "Iiv": "NULL"
     }
   },
   "5": {
     "A": "OK",
     "Ai": "NULL",
-    "C": "Bergamo",
+    "C": "Mantova",
     "D": "OK",
-    "E": "Padre: Chiara Costa, Madre: Marco Moretti",
-    "F": "08.12.1880"
+    "E": "Padre: Matteo Gallo, Madre: Marco Moretti",
+    "F": "29.09.1896"
   },
   "6": {
     "A": "OK",
@@ -86,32 +86,24 @@
   },
   "7": {
     "A": "OK",
-    "B": "Davide Lombardo",
+    "B": "NULL",
     "C": "OK",
     "D": "OK",
     "E": "OK",
-    "Ei": "OK",
-    "Eii": "NULL"
+    "Ei": "NULL",
+    "Eii": "OK"
   },
   "8": {
     "8/1": {
-      "A": "Luca Bianchi",
+      "A": "Elena Rossi",
       "B": "OK",
       "C": "OK",
       "D": "OK",
-      "Di": "NULL",
-      "Dii": "OK"
+      "Di": "OK",
+      "Dii": "NULL"
     },
     "8/2": {
-      "A": "Davide Lombardi",
-      "B": "KO",
-      "C": "OK",
-      "D": "OK",
-      "Di": "NULL",
-      "Dii": "OK"
-    },
-    "8/3": {
-      "A": "Elena Rossi",
+      "A": "Davide Joao Lombardi",
       "B": "OK",
       "C": "OK",
       "D": "OK",
@@ -119,10 +111,6 @@
       "Dii": "NULL"
     }
   },
-  "10": [
-    "8/2B"
-  ],
-  "11": {
-    "8/2B": "Genitori non in linea discendenza per Davide Lombardi"
-  }
+  "10": null,
+  "11": null
 }

@@ -4,62 +4,125 @@
   "pdf_case_dir": "res/synthetic_fascicoli/fascicoli/fascicolo_sintetico_000",
   "support_case_dir": "res/synthetic_fascicoli/support/fascicolo_sintetico_000",
   "scenario": {
-    "include_indice": true,
-    "include_avo_death": false,
+    "include_indice": false,
+    "include_avo_death": true,
     "death_required": false,
     "include_useless_docs": true,
-    "include_useless_apostilles": true,
+    "include_useless_apostilles": false,
     "include_irrelevant_cert_chains": true,
     "descendants_with_married_name": true,
-    "all_docs_in_single_pdf": true,
-    "max_docs_per_pdf": 50
+    "all_docs_in_single_pdf": false,
+    "max_docs_per_pdf": 4,
+    "inject_lineage_incoherence": true,
+    "inject_marriage_claimants": false,
+    "inject_procura_weakness": false,
+    "drop_one_descendant_birth": true,
+    "selection_weight": 1.0
+  },
+  "render_profile": {
+    "noise_scale": 0.673,
+    "artifact_scale": 0.903,
+    "jitter_scale": 0.968,
+    "watermark_prob": 0.73,
+    "punch_hole_prob": 0.624,
+    "stamp_prob": 0.944,
+    "seal_prob": 0.257,
+    "style_seed": 1812140441
   },
   "pdf_files": [
     {
       "file": "fascicolo_sintetico_000_bundle_01.pdf",
       "logical_docs": [
-        "IndiceProcedimento.html",
-        "Ricorso",
+        "Ricorso"
+      ],
+      "count": 1
+    },
+    {
+      "file": "fascicolo_sintetico_000_bundle_02.pdf",
+      "logical_docs": [
         "Procura",
         "Apostille",
-        "Procura",
-        "Atto di nascita",
+        "Traduzione",
+        "Apostille"
+      ],
+      "count": 4
+    },
+    {
+      "file": "fascicolo_sintetico_000_bundle_03.pdf",
+      "logical_docs": [
+        "Atto di nascita"
+      ],
+      "count": 1
+    },
+    {
+      "file": "fascicolo_sintetico_000_bundle_04.pdf",
+      "logical_docs": [
         "Atto di nascita",
         "Apostille",
         "Traduzione",
-        "Apostille",
+        "Asseverazione"
+      ],
+      "count": 4
+    },
+    {
+      "file": "fascicolo_sintetico_000_bundle_05.pdf",
+      "logical_docs": [
         "Atto di nascita",
         "Apostille",
         "Traduzione",
-        "Asseverazione",
-        "Atto di nascita",
+        "Asseverazione"
+      ],
+      "count": 4
+    },
+    {
+      "file": "fascicolo_sintetico_000_bundle_06.pdf",
+      "logical_docs": [
+        "Atto di morte",
         "Apostille",
         "Traduzione",
-        "Asseverazione",
-        "Atto di nascita",
-        "Apostille",
-        "Traduzione",
-        "Asseverazione",
+        "Apostille"
+      ],
+      "count": 4
+    },
+    {
+      "file": "fascicolo_sintetico_000_bundle_07.pdf",
+      "logical_docs": [
         "Certificato Negativo di Naturalizzazione",
         "Apostille",
         "Traduzione",
-        "Apostille",
-        "Apostille",
-        "Documenti Personali Vari",
-        "Apostille",
-        "Traduzione",
-        "Certificato di matrimonio",
-        "Apostille",
-        "Apostille",
-        "Traduzione",
+        "Asseverazione"
+      ],
+      "count": 4
+    },
+    {
+      "file": "fascicolo_sintetico_000_bundle_08.pdf",
+      "logical_docs": [
         "Nota Spese",
         "Apostille",
-        "Certificato di matrimonio",
-        "Documenti Personali Vari"
+        "Apostille"
       ],
-      "count": 38
+      "count": 3
+    },
+    {
+      "file": "fascicolo_sintetico_000_bundle_09.pdf",
+      "logical_docs": [
+        "Certificato di matrimonio",
+        "Traduzione",
+        "Apostille",
+        "Apostille"
+      ],
+      "count": 4
+    },
+    {
+      "file": "fascicolo_sintetico_000_bundle_10.pdf",
+      "logical_docs": [
+        "Certificato di matrimonio",
+        "Nota Spese",
+        "Traduzione"
+      ],
+      "count": 3
     }
   ],
-  "expected_doc_count": 26,
-  "mixed_doc_count": 38
+  "expected_doc_count": 22,
+  "mixed_doc_count": 32
 }

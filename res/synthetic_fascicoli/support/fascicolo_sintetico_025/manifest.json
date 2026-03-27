@@ -1,0 +1,94 @@
+{
+  "case": "fascicolo_sintetico_025",
+  "seed": 42,
+  "pdf_case_dir": "res/synthetic_fascicoli/fascicoli/fascicolo_sintetico_025",
+  "support_case_dir": "res/synthetic_fascicoli/support/fascicolo_sintetico_025",
+  "scenario": {
+    "include_indice": true,
+    "include_avo_death": false,
+    "death_required": false,
+    "include_useless_docs": true,
+    "include_useless_apostilles": true,
+    "include_irrelevant_cert_chains": true,
+    "descendants_with_married_name": false,
+    "all_docs_in_single_pdf": false,
+    "max_docs_per_pdf": 7,
+    "inject_lineage_incoherence": false,
+    "inject_marriage_claimants": true,
+    "inject_procura_weakness": true,
+    "drop_one_descendant_birth": true,
+    "selection_weight": 0.8
+  },
+  "render_profile": {
+    "noise_scale": 1.354,
+    "artifact_scale": 0.958,
+    "jitter_scale": 1.036,
+    "watermark_prob": 0.766,
+    "punch_hole_prob": 0.406,
+    "stamp_prob": 0.958,
+    "seal_prob": 0.33,
+    "style_seed": 772781491
+  },
+  "pdf_files": [
+    {
+      "file": "fascicolo_sintetico_025_bundle_01.pdf",
+      "logical_docs": [
+        "IndiceProcedimento.html",
+        "Ricorso",
+        "Procura",
+        "Apostille",
+        "Traduzione",
+        "Apostille",
+        "Atto di nascita"
+      ],
+      "count": 7
+    },
+    {
+      "file": "fascicolo_sintetico_025_bundle_02.pdf",
+      "logical_docs": [
+        "Atto di nascita",
+        "Apostille",
+        "Traduzione",
+        "Asseverazione"
+      ],
+      "count": 4
+    },
+    {
+      "file": "fascicolo_sintetico_025_bundle_03.pdf",
+      "logical_docs": [
+        "Certificato Negativo di Naturalizzazione",
+        "Apostille",
+        "Traduzione",
+        "Asseverazione",
+        "Apostille",
+        "Apostille"
+      ],
+      "count": 6
+    },
+    {
+      "file": "fascicolo_sintetico_025_bundle_04.pdf",
+      "logical_docs": [
+        "Nota Spese",
+        "Apostille",
+        "Nota Spese",
+        "Nota Spese",
+        "Apostille",
+        "Traduzione",
+        "Certificato di matrimonio"
+      ],
+      "count": 7
+    },
+    {
+      "file": "fascicolo_sintetico_025_bundle_05.pdf",
+      "logical_docs": [
+        "Bozza Sentenza",
+        "Apostille",
+        "Nota Spese",
+        "Apostille"
+      ],
+      "count": 4
+    }
+  ],
+  "expected_doc_count": 15,
+  "mixed_doc_count": 28
+}

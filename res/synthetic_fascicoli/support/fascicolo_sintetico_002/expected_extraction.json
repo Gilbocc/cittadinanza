@@ -1,18 +1,38 @@
 [
   {
+    "document_type": "IndiceProcedimento.html",
+    "schema": {
+      "numero_anno_ruolo": "200/2024",
+      "data_iscrizione": "23-10-2025",
+      "iscrizione_post_28_02_2023": "OK",
+      "iscrizione_pre_27_03_2025": "KO",
+      "comparsa_avvocatura": "SI",
+      "data_comparsa_avvocatura": "13-12-2024",
+      "visibilita_pm": "NO",
+      "data_visibilita_pm": "21-04-2024",
+      "interventi": "NO",
+      "numero_interventi": 0,
+      "intervenuti": []
+    }
+  },
+  {
     "document_type": "Ricorso",
     "schema": {
       "avvocati": [
         {
-          "nome": "Luca",
-          "cognome": "Bianchi"
+          "nome": "Giulia",
+          "cognome": "Conti"
+        },
+        {
+          "nome": "Davide",
+          "cognome": "Lombardi"
         }
       ],
       "numero_ricorrenti": 1,
       "ricorrenti_maggiorenni": [
         {
-          "nome": "Davide Ana",
-          "cognome": "Lombardi-Silva",
+          "nome": "Paolo",
+          "cognome": "Neri",
           "nazionalita": "Brasiliana"
         }
       ],
@@ -20,23 +40,27 @@
       "ricorrenti_per_matrimonio": [],
       "linea_discendenza": [
         {
-          "nome": "Giulia Luigi",
+          "nome": "Chiara Maria",
+          "cognome": "Costa"
+        },
+        {
+          "nome": "Giulia Luz",
           "cognome": "Conti"
         },
         {
-          "nome": "Elena Luz",
-          "cognome": "Rossi"
+          "nome": "Paolo",
+          "cognome": "Neri"
         },
         {
-          "nome": "Davide Ana",
-          "cognome": "Lombardi"
+          "nome": "Paolo",
+          "cognome": "Neri"
         }
       ],
       "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo.",
-      "riassunto_linea_discendenza": "Giulia Luigi Conti -> Elena Luz Rossi -> Davide Ana Lombardi",
+      "riassunto_linea_discendenza": "Chiara Maria Costa -> Giulia Luz Conti -> Paolo Neri -> Paolo Neri",
       "coerenza_linea_discendenza": "SI",
       "proveniente_dal_brasile": "SI",
-      "data_ricorso": "13-03-2024"
+      "data_ricorso": "04-04-2025"
     }
   },
   {
@@ -44,8 +68,8 @@
     "schema": {
       "soggetto": [
         {
-          "nome": "Davide Ana",
-          "cognome": "Lombardi-Silva",
+          "nome": "Paolo",
+          "cognome": "Neri",
           "minorenne": "NO",
           "rappresentanti_legali": [],
           "firma_presente": "OK"
@@ -54,51 +78,41 @@
       "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "avvocati": [
         {
-          "nome": "Luca",
-          "cognome": "Bianchi"
+          "nome": "Giulia",
+          "cognome": "Conti"
+        },
+        {
+          "nome": "Davide",
+          "cognome": "Lombardi"
         }
       ],
-      "tribunale_brescia_indicato": "KO",
+      "tribunale_brescia_indicato": "OK",
       "tribunale_indicato": "Tribunale civile competente",
-      "data_procura": "09-01-2024",
-      "rilasciata_in_italia": "NO",
+      "data_procura": "06-04-2025",
+      "rilasciata_in_italia": "OK",
       "scritta_in_italiano": "OK"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Procura",
-        "soggetto": [
-          {
-            "nome": "Davide Ana",
-            "cognome": "Lombardi-Silva"
-          }
-        ]
-      }
     }
   },
   {
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Giulia Luigi",
-        "cognome": "Conti"
+        "nome": "Chiara Maria",
+        "cognome": "Costa"
       },
       "tipo": "anagrafico",
-      "timbro_diocesi": "OK",
-      "comune_nascita": "Bergamo",
-      "provincia": "bergamo",
+      "timbro_diocesi": "NO",
+      "comune_nascita": "Mantova",
+      "provincia": "mantova",
       "padre": {
-        "nome": "Francesca",
-        "cognome": "Leoni"
+        "nome": "Giulia",
+        "cognome": "Conti"
       },
       "madre": {
         "nome": "Elena",
         "cognome": "Rossi"
       },
-      "data_nascita": "28-09-1893",
+      "data_nascita": "25-08-1872",
       "area_nascita": "A",
       "stato": "Italia"
     }
@@ -107,22 +121,22 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Elena Luz",
-        "cognome": "Rossi"
+        "nome": "Paolo",
+        "cognome": "Neri"
       },
       "tipo": "anagrafico",
-      "timbro_diocesi": "NO",
-      "comune_nascita": "Campinas",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Sao Paulo",
       "provincia": "altro",
       "padre": {
-        "nome": "Sara",
-        "cognome": "Marini"
+        "nome": "Paolo",
+        "cognome": "Neri"
       },
       "madre": {
-        "nome": "Giulia Luigi",
+        "nome": "Giulia Luz",
         "cognome": "Conti"
       },
-      "data_nascita": "12-06-2002",
+      "data_nascita": "10-01-1965",
       "area_nascita": "E",
       "stato": "Brasile"
     }
@@ -134,8 +148,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Elena Luz",
-            "cognome": "Rossi"
+            "nome": "Paolo",
+            "cognome": "Neri"
           }
         ]
       }
@@ -148,8 +162,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Elena Luz",
-            "cognome": "Rossi"
+            "nome": "Paolo",
+            "cognome": "Neri"
           }
         ]
       },
@@ -164,8 +178,8 @@
         "documento_originale": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Elena Luz",
-            "cognome": "Rossi"
+            "nome": "Paolo",
+            "cognome": "Neri"
           }
         ]
       }
@@ -175,22 +189,22 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Davide Ana",
-        "cognome": "Lombardi"
-      },
-      "tipo": "anagrafico",
-      "timbro_diocesi": "OK",
-      "comune_nascita": "Rio de Janeiro",
-      "provincia": "altro",
-      "padre": {
         "nome": "Paolo",
         "cognome": "Neri"
       },
-      "madre": {
-        "nome": "Elena Luz",
-        "cognome": "Rossi"
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Porto Alegre",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Matteo",
+        "cognome": "Gallo"
       },
-      "data_nascita": "14-10-1961",
+      "madre": {
+        "nome": "Paolo",
+        "cognome": "Neri"
+      },
+      "data_nascita": "16-07-1995",
       "area_nascita": "E",
       "stato": "Brasile"
     }
@@ -202,8 +216,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Davide Ana",
-            "cognome": "Lombardi"
+            "nome": "Paolo",
+            "cognome": "Neri"
           }
         ]
       }
@@ -216,8 +230,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Davide Ana",
-            "cognome": "Lombardi"
+            "nome": "Paolo",
+            "cognome": "Neri"
           }
         ]
       },
@@ -231,8 +245,8 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Davide Ana",
-            "cognome": "Lombardi"
+            "nome": "Paolo",
+            "cognome": "Neri"
           }
         ],
         "documento_originale": "Atto di nascita"
@@ -240,24 +254,26 @@
     }
   },
   {
-    "document_type": "Atto di morte",
+    "document_type": "Certificato Negativo di Naturalizzazione",
     "schema": {
       "soggetto": {
-        "nome": "Giulia Luigi",
-        "cognome": "Conti"
+        "nome": "Chiara Maria",
+        "cognome": "Costa"
       },
-      "data_decesso": "02-01-1976"
+      "pseudonimi": [],
+      "formula_negativa_presente": "OK",
+      "data_nascita": "25-08-1872"
     }
   },
   {
     "document_type": "Apostille",
     "schema": {
       "oggetto": {
-        "document_type": "Atto di morte",
+        "document_type": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Giulia Luigi",
-            "cognome": "Conti"
+            "nome": "Chiara Maria",
+            "cognome": "Costa"
           }
         ]
       }
@@ -267,11 +283,11 @@
     "document_type": "Traduzione",
     "schema": {
       "oggetto": {
-        "document_type": "Atto di morte",
+        "document_type": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Giulia Luigi",
-            "cognome": "Conti"
+            "nome": "Chiara Maria",
+            "cognome": "Costa"
           }
         ]
       },
@@ -285,72 +301,11 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Giulia Luigi",
-            "cognome": "Conti"
+            "nome": "Chiara Maria",
+            "cognome": "Costa"
           }
         ],
-        "documento_originale": "Atto di morte"
-      }
-    }
-  },
-  {
-    "document_type": "Certificato Negativo di Naturalizzazione",
-    "schema": {
-      "soggetto": {
-        "nome": "Giulia Luigi",
-        "cognome": "Conti"
-      },
-      "pseudonimi": [
-        {
-          "nome": "Giulia",
-          "cognome": "Conto"
-        }
-      ],
-      "formula_negativa_presente": "OK",
-      "data_nascita": "28-09-1893"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Certificato Negativo di Naturalizzazione",
-        "soggetto": [
-          {
-            "nome": "Giulia Luigi",
-            "cognome": "Conti"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Certificato Negativo di Naturalizzazione",
-        "soggetto": [
-          {
-            "nome": "Giulia Luigi",
-            "cognome": "Conti"
-          }
-        ]
-      },
-      "sede_traduttore": "Italia"
-    }
-  },
-  {
-    "document_type": "Asseverazione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "documento_originale": "Certificato Negativo di Naturalizzazione",
-        "soggetto": [
-          {
-            "nome": "Giulia Luigi",
-            "cognome": "Conti"
-          }
-        ]
+        "documento_originale": "Certificato Negativo di Naturalizzazione"
       }
     }
   }
