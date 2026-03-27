@@ -3,12 +3,17 @@ from __future__ import annotations
 import argparse
 import json
 import random
+import sys
 import textwrap
 import re
 from dataclasses import dataclass
 from datetime import date, timedelta
 from pathlib import Path
 from typing import Any
+
+# Allow importing DocumentValidator from the src package
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from src.analysis import DocumentValidator
 
 try:
     from reportlab.lib.pagesizes import A4
@@ -179,9 +184,43 @@ def make_ricorso(rng: random.Random, family: dict[str, Any], married_name: bool)
     }
 
 
-def make_procura(rng: random.Random, ricorrente: dict[str, str], avvocati: list[dict[str, str]]) -> dict[str, Any]:
+def make_procura(
+    rng: random.Random,
+    ricorrente: dict[str, str],
+    avvocati: list[dict[str, str]],
+    before_iso: str | None = None,
+) -> dict[str, Any]:
+    """Generate a Procura document.
+
+    ``before_iso`` constrains ``data_procura`` to be strictly before that date
+    (format ``DD-MM-YYYY``), ensuring the procura always pre-dates the ricorso.
+    """
     in_italia = rng.random() < 0.35
     in_italiano = in_italia or rng.random() < 0.3
+
+    if before_iso:
+        try:
+            upper = date(*reversed([int(x) for x in before_iso.split("-")]))
+        except Exception:
+            upper = None
+    else:
+        upper = None
+
+    if upper is not None:
+        # Generate a date in 2024-2025 that is strictly before the ricorso date.
+        # Use the day before the ricorso as the hard upper bound.
+        end = min(upper - timedelta(days=1), date(2025, 12, 31))
+        start = date(2024, 1, 1)
+        span = (end - start).days
+        if span < 1:
+            # Fallback: just use 30 days before
+            end = upper - timedelta(days=1)
+            start = end - timedelta(days=365)
+            span = (end - start).days
+        picked = start + timedelta(days=rng.randint(0, max(1, span)))
+        data_procura = picked.strftime("%d-%m-%Y")
+    else:
+        data_procura = random_date(rng, 2024, 2025)
 
     return {
         "document_type": "Procura",
@@ -192,14 +231,14 @@ def make_procura(rng: random.Random, ricorrente: dict[str, str], avvocati: list[
                     "cognome": ricorrente["cognome"],
                     "minorenne": "NO",
                     "rappresentanti_legali": [],
-                    "firma_presente": "OK" if rng.random() < 0.9 else "KO",
+                    "firma_presente": "OK",
                 }
             ],
             "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
             "avvocati": avvocati,
             "tribunale_brescia_indicato": "SI" if rng.random() < 0.85 else "NO",
             "tribunale_indicato": "Tribunale civile competente",
-            "data_procura": random_date(rng, 2024, 2025),
+            "data_procura": data_procura,
             "rilasciata_in_italia": "OK" if in_italia else "NO",
             "scritta_in_italiano": "OK" if in_italiano else "NO",
         },
@@ -678,9 +717,10 @@ def build_case_documents(rng: random.Random, scenario: ScenarioConfig) -> tuple[
     docs.append(ricorso)
 
     avvocati = ricorso["schema"]["avvocati"]
+    data_ricorso = ricorso["schema"].get("data_ricorso")
 
     for ric in ricorso["schema"]["ricorrenti_maggiorenni"]:
-        docs.append(make_procura(rng, ric, avvocati))
+        docs.append(make_procura(rng, ric, avvocati, before_iso=data_ricorso))
 
     lineage = family["lineage"]
     avo = lineage[0]
@@ -836,6 +876,15 @@ def generate_fascicoli(output_dir: Path, count: int, seed: int) -> None:
 
         (case_support_dir / "manifest.json").write_text(
             json.dumps(manifest, indent=2, ensure_ascii=False),
+            encoding="utf-8",
+        )
+
+        # Derive expected analysis checklist by running DocumentValidator against
+        # the ground-truth expected_extraction and write it to the support folder
+        # so that evaluate_results.py can compare actual pipeline output against it.
+        validator_report = DocumentValidator(expected).run()
+        (case_support_dir / "expected_report.json").write_text(
+            json.dumps(validator_report, indent=2, ensure_ascii=False),
             encoding="utf-8",
         )
 

@@ -1,0 +1,154 @@
+{
+  "0": {
+    "A": "OK",
+    "B": "OK",
+    "C": "OK",
+    "Ci": "NULL",
+    "D": "OK",
+    "E": "OK",
+    "F": "OK",
+    "G": "OK",
+    "Gi": "NULL",
+    "H": "OK",
+    "Hi": "NULL"
+  },
+  "1": {
+    "1": "OK"
+  },
+  "2": {
+    "A": "27.10.2025",
+    "B": "OK",
+    "C": "OK",
+    "D": "SI",
+    "Di": "04.04.2025",
+    "E": "NO",
+    "Ei": "NULL",
+    "F": "NO",
+    "Fi": "NULL",
+    "Fii": "NULL",
+    "Fiii": "NULL",
+    "G": "0674-2024"
+  },
+  "3": {
+    "A": "Marco Moretti",
+    "B": 2,
+    "C": "Luca Ana Bianchi-Silva, Davide Joao Lombardi",
+    "D": "Luca Ana Bianchi-Silva: Brasiliana, Davide Joao Lombardi: Brasiliana",
+    "E": "NO",
+    "Ei": "NULL",
+    "Eii": "NULL",
+    "F": "OK; Elena Luigi Rossi -> Matteo Ana Gallo -> Elena Rossi -> Davide Joao Lombardi -> Luca Ana Bianchi",
+    "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
+    "Gi": "NULL"
+  },
+  "4": {
+    "4/1": {
+      "A": "Luca Ana Bianchi-Silva",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Luca Ana Bianchi-Silva",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "NO",
+      "Ei": "Tribunale civile competente",
+      "F": "08.08.2024",
+      "G": "OK",
+      "H": "NO",
+      "Hi": "OK",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
+      "Iiii": "NULL",
+      "Iiv": "NULL"
+    },
+    "4/2": {
+      "A": "Davide Joao Lombardi",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Davide Joao Lombardi",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "04.04.2024",
+      "G": "OK",
+      "H": "OK",
+      "Hi": "NULL",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
+      "Iiii": "NULL",
+      "Iiv": "NULL"
+    }
+  },
+  "5": {
+    "A": "OK",
+    "Ai": "NULL",
+    "C": "Mantova",
+    "D": "OK",
+    "E": "Padre: Francesca Leoni, Madre: Francesca Leoni",
+    "F": "03.12.1937"
+  },
+  "6": {
+    "A": "OK",
+    "Ai": "NULL",
+    "Aii": "NULL",
+    "Aiii": "NULL",
+    "C": "NULL",
+    "D": "NULL",
+    "Di": "NULL",
+    "Dii": "NULL",
+    "Diii": "NULL",
+    "E": "NULL",
+    "F": "NULL",
+    "Fi": "NULL",
+    "Fii": "NULL"
+  },
+  "7": {
+    "A": "OK",
+    "B": "Elena Rosso",
+    "C": "OK",
+    "D": "OK",
+    "E": "OK",
+    "Ei": "NULL",
+    "Eii": "OK"
+  },
+  "8": {
+    "8/1": {
+      "A": "Matteo Ana Gallo",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
+    },
+    "8/2": {
+      "A": "Elena Rossi",
+      "B": "KO",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
+    },
+    "8/3": {
+      "A": "Davide Joao Lombardi",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
+    },
+    "8/4": {
+      "A": "Luca Ana Bianchi",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    }
+  },
+  "10": [
+    "8/2B"
+  ],
+  "11": {
+    "8/2B": "Genitori non in linea discendenza per Elena Rossi"
+  }
+}

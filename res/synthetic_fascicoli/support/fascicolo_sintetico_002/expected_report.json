@@ -1,0 +1,138 @@
+{
+  "0": {
+    "A": "KO",
+    "B": "OK",
+    "C": "OK",
+    "Ci": "NULL",
+    "D": "OK",
+    "E": "OK",
+    "F": "OK",
+    "G": "OK",
+    "Gi": "NULL",
+    "H": "OK",
+    "Hi": "NULL"
+  },
+  "1": {
+    "1": "OK"
+  },
+  "2": {
+    "A": "NULL",
+    "B": "NULL",
+    "C": "NULL",
+    "D": "NULL",
+    "Di": "NULL",
+    "E": "NULL",
+    "Ei": "NULL",
+    "F": "NULL",
+    "Fi": "NULL",
+    "Fii": "NULL",
+    "Fiii": "NULL",
+    "G": "NULL"
+  },
+  "3": {
+    "A": "Luca Bianchi",
+    "B": 1,
+    "C": "Davide Luz Lombardi-Silva",
+    "D": "Davide Luz Lombardi-Silva: Brasiliana",
+    "E": "NO",
+    "Ei": "NULL",
+    "Eii": "NULL",
+    "F": "OK; Chiara Luigi Costa -> Paolo Joao Neri -> Giulia Conti -> Elena Rossi -> Davide Luz Lombardi",
+    "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
+    "Gi": "NULL"
+  },
+  "4": {
+    "4/1": {
+      "A": "Davide Luz Lombardi-Silva",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Davide Luz Lombardi-Silva",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "22.01.2024",
+      "G": "OK",
+      "H": "NO",
+      "Hi": "OK",
+      "I": "NO",
+      "Ii": "OK",
+      "Iii": "OK",
+      "Iiii": "NULL",
+      "Iiv": "OK"
+    }
+  },
+  "5": {
+    "A": "NO",
+    "Ai": "KO",
+    "C": "Bergamo",
+    "D": "OK",
+    "E": "Padre: Chiara Costa, Madre: Giulia Conti",
+    "F": "22.05.1870"
+  },
+  "6": {
+    "A": "OK",
+    "Ai": "NULL",
+    "Aii": "NULL",
+    "Aiii": "NO",
+    "C": "18.04.1912",
+    "D": "OK",
+    "Di": "NULL",
+    "Dii": "NULL",
+    "Diii": "KO",
+    "E": "OK",
+    "F": "OK",
+    "Fi": "OK",
+    "Fii": "NULL"
+  },
+  "7": {
+    "A": "OK",
+    "B": "Chiara Costo",
+    "C": "OK",
+    "D": "OK",
+    "E": "OK",
+    "Ei": "NULL",
+    "Eii": "OK"
+  },
+  "8": {
+    "8/1": {
+      "A": "Paolo Joao Neri",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
+    },
+    "8/2": {
+      "A": "Giulia Conti",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
+    },
+    "8/3": {
+      "A": "Elena Rossi",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/4": {
+      "A": "Davide Luz Lombardi",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
+    }
+  },
+  "10": [
+    "0A",
+    "6Diii"
+  ],
+  "11": {
+    "0A": "IndiceProcedimento.html mancante",
+    "6Diii": "La data di morte dell'avo non soddisfa il controllo Diii"
+  }
+}

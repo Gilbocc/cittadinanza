@@ -1,0 +1,382 @@
+[
+  {
+    "document_type": "Ricorso",
+    "schema": {
+      "avvocati": [
+        {
+          "nome": "Francesca",
+          "cognome": "Leoni"
+        }
+      ],
+      "numero_ricorrenti": 1,
+      "ricorrenti_maggiorenni": [
+        {
+          "nome": "Paolo Joao",
+          "cognome": "Neri-Silva",
+          "nazionalita": "Brasiliana"
+        }
+      ],
+      "ricorrenti_minorenni": [],
+      "ricorrenti_per_matrimonio": [],
+      "linea_discendenza": [
+        {
+          "nome": "Paolo Luigi",
+          "cognome": "Neri"
+        },
+        {
+          "nome": "Chiara Joao",
+          "cognome": "Costa"
+        },
+        {
+          "nome": "Paolo Joao",
+          "cognome": "Neri"
+        }
+      ],
+      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo.",
+      "riassunto_linea_discendenza": "Paolo Luigi Neri -> Chiara Joao Costa -> Paolo Joao Neri",
+      "coerenza_linea_discendenza": "SI",
+      "proveniente_dal_brasile": "SI",
+      "data_ricorso": "11-12-2024"
+    }
+  },
+  {
+    "document_type": "Procura",
+    "schema": {
+      "soggetto": [
+        {
+          "nome": "Paolo Joao",
+          "cognome": "Neri-Silva",
+          "minorenne": "NO",
+          "rappresentanti_legali": [],
+          "firma_presente": "OK"
+        }
+      ],
+      "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "avvocati": [
+        {
+          "nome": "Francesca",
+          "cognome": "Leoni"
+        }
+      ],
+      "tribunale_brescia_indicato": "SI",
+      "tribunale_indicato": "Tribunale civile competente",
+      "data_procura": "03-08-2024",
+      "rilasciata_in_italia": "NO",
+      "scritta_in_italiano": "NO"
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Paolo Luigi",
+        "cognome": "Neri"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Cremona",
+      "provincia": "bergamo",
+      "padre": {
+        "nome": "Elena",
+        "cognome": "Rossi"
+      },
+      "madre": {
+        "nome": "Chiara",
+        "cognome": "Costa"
+      },
+      "data_nascita": "24-04-1882",
+      "area_nascita": "A",
+      "stato": "Italia"
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Chiara Joao",
+        "cognome": "Costa"
+      },
+      "tipo": "parrocchiale",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Sao Paulo",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Paolo Luigi",
+        "cognome": "Neri"
+      },
+      "madre": {
+        "nome": "Luca",
+        "cognome": "Bianchi"
+      },
+      "data_nascita": "28-09-1985",
+      "area_nascita": "B",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Paolo Joao",
+        "cognome": "Neri"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Campinas",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Chiara Joao",
+        "cognome": "Costa"
+      },
+      "madre": {
+        "nome": "Giulia",
+        "cognome": "Conti"
+      },
+      "data_nascita": "22-07-1949",
+      "area_nascita": "D",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Atto di morte",
+    "schema": {
+      "soggetto": {
+        "nome": "Paolo Luigi",
+        "cognome": "Neri"
+      },
+      "data_decesso": "24-12-1945"
+    }
+  },
+  {
+    "document_type": "Certificato Negativo di Naturalizzazione",
+    "schema": {
+      "soggetto": {
+        "nome": "Paolo Luigi",
+        "cognome": "Neri"
+      },
+      "pseudonimi": [],
+      "formula_negativa_presente": "OK",
+      "data_nascita": "24-04-1882"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Procura",
+        "soggetto": [
+          {
+            "nome": "Paolo Joao",
+            "cognome": "Neri-Silva"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Procura",
+        "soggetto": [
+          {
+            "nome": "Paolo Joao",
+            "cognome": "Neri-Silva"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Paolo Joao",
+            "cognome": "Neri-Silva"
+          }
+        ],
+        "documento_originale": "Procura"
+      }
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Chiara Joao",
+            "cognome": "Costa"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Chiara Joao",
+            "cognome": "Costa"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Chiara Joao",
+            "cognome": "Costa"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Paolo Joao",
+            "cognome": "Neri"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Paolo Joao",
+            "cognome": "Neri"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Paolo Joao",
+            "cognome": "Neri"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di morte",
+        "soggetto": [
+          {
+            "nome": "Paolo Luigi",
+            "cognome": "Neri"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di morte",
+        "soggetto": [
+          {
+            "nome": "Paolo Luigi",
+            "cognome": "Neri"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Paolo Luigi",
+            "cognome": "Neri"
+          }
+        ],
+        "documento_originale": "Atto di morte"
+      }
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato Negativo di Naturalizzazione",
+        "soggetto": [
+          {
+            "nome": "Paolo Luigi",
+            "cognome": "Neri"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato Negativo di Naturalizzazione",
+        "soggetto": [
+          {
+            "nome": "Paolo Luigi",
+            "cognome": "Neri"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Paolo Luigi",
+            "cognome": "Neri"
+          }
+        ],
+        "documento_originale": "Certificato Negativo di Naturalizzazione"
+      }
+    }
+  }
+]

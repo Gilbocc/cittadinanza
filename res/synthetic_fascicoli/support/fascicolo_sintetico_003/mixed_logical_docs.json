@@ -3,43 +3,98 @@
     "document_type": "Apostille",
     "schema": {
       "oggetto": {
-        "document_type": "Atto di nascita",
+        "document_type": "Certificato di matrimonio",
         "soggetto": [
+          {
+            "nome": "Sara",
+            "cognome": "Marini"
+          },
           {
             "nome": "Matteo",
             "cognome": "Gallo"
           }
         ]
       }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Certificato Negativo di Naturalizzazione",
-        "soggetto": [
-          {
-            "nome": "Davide Luigi",
-            "cognome": "Lombardi"
-          }
-        ]
-      },
-      "sede_traduttore": "Estero"
     }
   },
   {
     "document_type": "Apostille",
     "schema": {
       "oggetto": {
-        "document_type": "Atto di nascita",
+        "document_type": "Documento non supportato",
         "soggetto": [
           {
             "nome": "Matteo",
             "cognome": "Gallo"
           }
-        ]
+        ],
+        "documento_originale": "Documenti Personali Vari"
       }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Matteo",
+        "cognome": "Gallo"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "NO",
+      "comune_nascita": "Sao Paulo",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Matteo",
+        "cognome": "Gallo"
+      },
+      "madre": {
+        "nome": "Giulia",
+        "cognome": "Conti"
+      },
+      "data_nascita": "27-04-1964",
+      "area_nascita": "A",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Documento non supportato",
+        "soggetto": [
+          {
+            "nome": "Matteo",
+            "cognome": "Gallo"
+          }
+        ],
+        "documento_originale": "Avviso Udienza"
+      }
+    }
+  },
+  {
+    "document_type": "Procura",
+    "schema": {
+      "soggetto": [
+        {
+          "nome": "Matteo",
+          "cognome": "Gallo-Silva",
+          "minorenne": "NO",
+          "rappresentanti_legali": [],
+          "firma_presente": "OK"
+        }
+      ],
+      "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "avvocati": [
+        {
+          "nome": "Davide",
+          "cognome": "Lombardi"
+        }
+      ],
+      "tribunale_brescia_indicato": "SI",
+      "tribunale_indicato": "Tribunale civile competente",
+      "data_procura": "03-01-2024",
+      "rilasciata_in_italia": "OK",
+      "scritta_in_italiano": "OK"
     }
   },
   {
@@ -49,11 +104,15 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Davide Luigi",
-            "cognome": "Lombardi"
+            "nome": "Sara",
+            "cognome": "Marini"
+          },
+          {
+            "nome": "Matteo",
+            "cognome": "Gallo"
           }
         ],
-        "documento_originale": "Certificato Negativo di Naturalizzazione"
+        "documento_originale": "Certificato di matrimonio"
       }
     }
   },
@@ -61,7 +120,22 @@
     "document_type": "Apostille",
     "schema": {
       "oggetto": {
-        "document_type": "Certificato Negativo di Naturalizzazione",
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Matteo",
+            "cognome": "Gallo"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
             "nome": "Davide Luigi",
@@ -69,6 +143,30 @@
           }
         ]
       }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Matteo Ana",
+        "cognome": "Gallo"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Sao Paulo",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Davide Luigi",
+        "cognome": "Lombardi"
+      },
+      "madre": {
+        "nome": "Francesca",
+        "cognome": "Leoni"
+      },
+      "data_nascita": "24-09-1961",
+      "area_nascita": "E",
+      "stato": "Brasile"
     }
   },
   {
@@ -87,27 +185,25 @@
     }
   },
   {
-    "document_type": "Atto di nascita",
+    "document_type": "Nota Spese",
     "schema": {
-      "soggetto": {
-        "nome": "Matteo",
-        "cognome": "Gallo"
-      },
-      "tipo": "parrocchiale",
-      "timbro_diocesi": "OK",
-      "comune_nascita": "Brasilia",
-      "provincia": "altro",
-      "padre": {
-        "nome": "Matteo",
-        "cognome": "Gallo"
-      },
-      "madre": {
-        "nome": "Marco",
-        "cognome": "Moretti"
-      },
-      "data_nascita": "11-03-2000",
-      "area_nascita": "D",
-      "stato": "Brasile"
+      "id": "UD-5573",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "20-12-2024"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Matteo Ana",
+            "cognome": "Gallo"
+          }
+        ]
+      }
     }
   },
   {
@@ -116,38 +212,14 @@
       "soggetto": {
         "nome": "Francesca Luz",
         "cognome": "Leoni"
-      },
-      "tipo": "anagrafico",
-      "timbro_diocesi": "OK",
-      "comune_nascita": "Brasilia",
-      "provincia": "altro",
-      "padre": {
-        "nome": "Matteo Ana",
-        "cognome": "Gallo"
-      },
-      "madre": {
-        "nome": "Giulia",
-        "cognome": "Conti"
-      },
-      "data_nascita": "27-12-1999",
-      "area_nascita": "E",
-      "stato": "Brasile"
-    }
-  },
-  {
-    "document_type": "Atto di nascita",
-    "schema": {
-      "soggetto": {
-        "nome": "Matteo",
-        "cognome": "Gallo"
       },
       "tipo": "parrocchiale",
       "timbro_diocesi": "NO",
       "comune_nascita": "Rio de Janeiro",
       "provincia": "altro",
       "padre": {
-        "nome": "Francesca Luz",
-        "cognome": "Leoni"
+        "nome": "Matteo Ana",
+        "cognome": "Gallo"
       },
       "madre": {
         "nome": "Paolo",
@@ -165,12 +237,132 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Francesca Luz",
-            "cognome": "Leoni"
+            "nome": "Matteo Ana",
+            "cognome": "Gallo"
           }
         ]
       },
-      "sede_traduttore": "Italia"
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Sara",
+            "cognome": "Marini"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato Negativo di Naturalizzazione",
+        "soggetto": [
+          {
+            "nome": "Davide Luigi",
+            "cognome": "Lombardi"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Matteo Ana",
+            "cognome": "Gallo"
+          }
+        ],
+        "documento_originale": "Atto di nascita"
+      }
+    }
+  },
+  {
+    "document_type": "Avviso Udienza",
+    "schema": {
+      "id": "UD-1387",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "31-01-2024"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Matteo",
+            "cognome": "Gallo"
+          }
+        ],
+        "documento_originale": "Atto di nascita"
+      }
+    }
+  },
+  {
+    "document_type": "Documenti Personali Vari",
+    "schema": {
+      "id": "UD-6425",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "26-02-2023"
+    }
+  },
+  {
+    "document_type": "IndiceProcedimento.html",
+    "schema": {
+      "numero_anno_ruolo": "RG 889/2024",
+      "data_iscrizione": "14-10-2025",
+      "iscrizione_post_28_02_2023": "OK",
+      "iscrizione_pre_27_03_2025": "KO",
+      "comparsa_avvocatura": "SI",
+      "data_comparsa_avvocatura": "28-03-2025",
+      "visibilita_pm": "NO",
+      "data_visibilita_pm": "13-03-2025",
+      "interventi": "SI",
+      "numero_interventi": 2,
+      "intervenuti": [
+        {
+          "nome": "Matteo",
+          "cognome": "Gallo",
+          "data": "15-02-2024"
+        },
+        {
+          "nome": "Luca",
+          "cognome": "Bianchi",
+          "data": "07-12-2024"
+        }
+      ]
+    }
+  },
+  {
+    "document_type": "Certificato di matrimonio",
+    "schema": {
+      "soggetti": [
+        {
+          "nome": "Sara",
+          "cognome": "Marini"
+        },
+        {
+          "nome": "Matteo",
+          "cognome": "Gallo"
+        }
+      ],
+      "luogo": "Sao Paulo",
+      "data_matrimonio": "14-06-1949",
+      "note": "Documento non richiesto ai fini del riconoscimento richiesto."
     }
   },
   {
@@ -222,41 +414,38 @@
     }
   },
   {
-    "document_type": "Traduzione",
+    "document_type": "Certificato Negativo di Naturalizzazione",
     "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Matteo",
-            "cognome": "Gallo"
-          }
-        ]
+      "soggetto": {
+        "nome": "Davide Luigi",
+        "cognome": "Lombardi"
       },
-      "sede_traduttore": "Italia"
+      "pseudonimi": [],
+      "formula_negativa_presente": "OK",
+      "data_nascita": "07-06-1935"
     }
   },
   {
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Matteo Ana",
-        "cognome": "Gallo"
-      },
-      "tipo": "anagrafico",
-      "timbro_diocesi": "NO",
-      "comune_nascita": "Sao Paulo",
-      "provincia": "altro",
-      "padre": {
-        "nome": "Davide Luigi",
-        "cognome": "Lombardi"
-      },
-      "madre": {
         "nome": "Matteo",
         "cognome": "Gallo"
       },
-      "data_nascita": "24-08-2010",
-      "area_nascita": "C",
+      "tipo": "parrocchiale",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Brasilia",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Francesca Luz",
+        "cognome": "Leoni"
+      },
+      "madre": {
+        "nome": "Marco",
+        "cognome": "Moretti"
+      },
+      "data_nascita": "11-03-2000",
+      "area_nascita": "D",
       "stato": "Brasile"
     }
   },
@@ -267,121 +456,10 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Matteo Ana",
-            "cognome": "Gallo"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Certificato di matrimonio",
-    "schema": {
-      "soggetti": [
-        {
-          "nome": "Giulia",
-          "cognome": "Conti"
-        },
-        {
-          "nome": "Luca",
-          "cognome": "Bianchi"
-        }
-      ],
-      "luogo": "Rio de Janeiro",
-      "data_matrimonio": "30-06-2001",
-      "note": "Documento non richiesto ai fini del riconoscimento richiesto."
-    }
-  },
-  {
-    "document_type": "Bozza Sentenza",
-    "schema": {
-      "id": "UD-6728",
-      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
-      "data": "17-09-2024"
-    }
-  },
-  {
-    "document_type": "Atto di nascita",
-    "schema": {
-      "soggetto": {
-        "nome": "Davide Luigi",
-        "cognome": "Lombardi"
-      },
-      "tipo": "parrocchiale",
-      "timbro_diocesi": "OK",
-      "comune_nascita": "Bergamo",
-      "provincia": "mantova",
-      "padre": {
-        "nome": "Davide",
-        "cognome": "Lombardi"
-      },
-      "madre": {
-        "nome": "Luca",
-        "cognome": "Bianchi"
-      },
-      "data_nascita": "13-11-1892",
-      "area_nascita": "A",
-      "stato": "Italia"
-    }
-  },
-  {
-    "document_type": "IndiceProcedimento.html",
-    "schema": {
-      "numero_anno_ruolo": "RG 889/2024",
-      "data_iscrizione": "14-10-2025",
-      "iscrizione_post_28_02_2023": "OK",
-      "iscrizione_pre_27_03_2025": "KO",
-      "comparsa_avvocatura": "SI",
-      "data_comparsa_avvocatura": "28-03-2025",
-      "visibilita_pm": "NO",
-      "data_visibilita_pm": "13-03-2025",
-      "interventi": "SI",
-      "numero_interventi": 2,
-      "intervenuti": [
-        {
-          "nome": "Matteo",
-          "cognome": "Gallo",
-          "data": "15-02-2024"
-        },
-        {
-          "nome": "Luca",
-          "cognome": "Bianchi",
-          "data": "07-12-2024"
-        }
-      ]
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "soggetto": [
-          {
-            "nome": "Giulia",
-            "cognome": "Conti"
-          },
-          {
-            "nome": "Luca",
-            "cognome": "Bianchi"
-          }
-        ],
-        "documento_originale": "Certificato di matrimonio"
-      }
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "soggetto": [
-          {
             "nome": "Matteo",
             "cognome": "Gallo"
           }
-        ],
-        "documento_originale": "Atto di nascita"
+        ]
       }
     }
   },
@@ -400,6 +478,30 @@
     }
   },
   {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Davide Luigi",
+        "cognome": "Lombardi"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Brescia",
+      "provincia": "cremona",
+      "padre": {
+        "nome": "Francesca",
+        "cognome": "Leoni"
+      },
+      "madre": {
+        "nome": "Sara",
+        "cognome": "Marini"
+      },
+      "data_nascita": "07-06-1935",
+      "area_nascita": "A",
+      "stato": "Italia"
+    }
+  },
+  {
     "document_type": "Traduzione",
     "schema": {
       "oggetto": {
@@ -415,44 +517,14 @@
     }
   },
   {
-    "document_type": "Asseverazione",
+    "document_type": "Traduzione",
     "schema": {
       "oggetto": {
-        "document_type": "Traduzione",
-        "documento_originale": "Atto di nascita",
+        "document_type": "Atto di nascita",
         "soggetto": [
           {
             "nome": "Matteo",
             "cognome": "Gallo"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Asseverazione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "documento_originale": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Matteo Ana",
-            "cognome": "Gallo"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Certificato di matrimonio",
-        "soggetto": [
-          {
-            "nome": "Giulia",
-            "cognome": "Conti"
           }
         ]
       },
@@ -460,82 +532,63 @@
     }
   },
   {
-    "document_type": "Bozza Sentenza",
+    "document_type": "Traduzione",
     "schema": {
-      "id": "UD-4644",
-      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
-      "data": "13-02-2024"
-    }
-  },
-  {
-    "document_type": "Procura",
-    "schema": {
-      "soggetto": [
-        {
-          "nome": "Matteo",
-          "cognome": "Gallo-Silva",
-          "minorenne": "NO",
-          "rappresentanti_legali": [],
-          "firma_presente": "KO"
-        }
-      ],
-      "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
-      "avvocati": [
-        {
-          "nome": "Davide",
-          "cognome": "Lombardi"
-        }
-      ],
-      "tribunale_brescia_indicato": "SI",
-      "tribunale_indicato": "Tribunale civile competente",
-      "data_procura": "01-06-2024",
-      "rilasciata_in_italia": "OK",
-      "scritta_in_italiano": "OK"
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Francesca Luz",
+            "cognome": "Leoni"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
     }
   },
   {
     "document_type": "Apostille",
     "schema": {
       "oggetto": {
-        "document_type": "Certificato di matrimonio",
+        "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Giulia",
-            "cognome": "Conti"
-          },
-          {
-            "nome": "Luca",
-            "cognome": "Bianchi"
+            "nome": "Matteo",
+            "cognome": "Gallo"
           }
-        ]
+        ],
+        "documento_originale": "Atto di nascita"
       }
-    }
-  },
-  {
-    "document_type": "Certificato Negativo di Naturalizzazione",
-    "schema": {
-      "soggetto": {
-        "nome": "Davide Luigi",
-        "cognome": "Lombardi"
-      },
-      "pseudonimi": [],
-      "formula_negativa_presente": "OK",
-      "data_nascita": "13-11-1892"
     }
   },
   {
     "document_type": "Traduzione",
     "schema": {
       "oggetto": {
-        "document_type": "Atto di nascita",
+        "document_type": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Matteo Ana",
-            "cognome": "Gallo"
+            "nome": "Davide Luigi",
+            "cognome": "Lombardi"
           }
         ]
       },
       "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Documento non supportato",
+        "soggetto": [
+          {
+            "nome": "Paolo",
+            "cognome": "Neri"
+          }
+        ],
+        "documento_originale": "Nota Spese"
+      }
     }
   }
 ]

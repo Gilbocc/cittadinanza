@@ -96,7 +96,7 @@
       ],
       "tribunale_brescia_indicato": "SI",
       "tribunale_indicato": "Tribunale civile competente",
-      "data_procura": "29-02-2024",
+      "data_procura": "16-04-2024",
       "rilasciata_in_italia": "NO",
       "scritta_in_italiano": "NO"
     }
@@ -109,7 +109,7 @@
         "cognome": "Moretti"
       },
       "tipo": "parrocchiale",
-      "timbro_diocesi": "NO",
+      "timbro_diocesi": "OK",
       "comune_nascita": "Rio de Janeiro",
       "provincia": "altro",
       "padre": {
@@ -117,11 +117,11 @@
         "cognome": "Gallo"
       },
       "madre": {
-        "nome": "Paolo",
-        "cognome": "Neri"
+        "nome": "Davide",
+        "cognome": "Lombardi"
       },
-      "data_nascita": "17-12-1993",
-      "area_nascita": "C",
+      "data_nascita": "20-05-1978",
+      "area_nascita": "B",
       "stato": "Brasile"
     }
   },
@@ -277,11 +277,11 @@
         "document_type": "Documento non supportato",
         "soggetto": [
           {
-            "nome": "Giulia",
-            "cognome": "Conti"
+            "nome": "Davide",
+            "cognome": "Lombardi"
           }
         ],
-        "documento_originale": "Nota Spese"
+        "documento_originale": "Avviso Udienza"
       }
     }
   },
@@ -311,7 +311,7 @@
             "cognome": "Bianchi"
           }
         ],
-        "documento_originale": "Documenti Personali Vari"
+        "documento_originale": "Avviso Udienza"
       }
     }
   },
@@ -365,19 +365,19 @@
         "nome": "Chiara Luigi",
         "cognome": "Costa"
       },
-      "tipo": "parrocchiale",
+      "tipo": "anagrafico",
       "timbro_diocesi": "OK",
-      "comune_nascita": "Mantova",
+      "comune_nascita": "Brescia",
       "provincia": "brescia",
       "padre": {
         "nome": "Giulia",
         "cognome": "Conti"
       },
       "madre": {
-        "nome": "Sara",
-        "cognome": "Marini"
+        "nome": "Luca",
+        "cognome": "Bianchi"
       },
-      "data_nascita": "17-11-1842",
+      "data_nascita": "21-01-1857",
       "area_nascita": "D",
       "stato": "Italia"
     }
@@ -389,7 +389,7 @@
         "nome": "Chiara Luigi",
         "cognome": "Costa"
       },
-      "data_decesso": "05-08-1971"
+      "data_decesso": "07-12-1955"
     }
   },
   {
@@ -412,7 +412,7 @@
     }
   },
   {
-    "document_type": "Documenti Personali Vari",
+    "document_type": "Avviso Udienza",
     "schema": {
       "id": "UD-4608",
       "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
@@ -426,9 +426,14 @@
         "nome": "Chiara Luigi",
         "cognome": "Costa"
       },
-      "pseudonimi": [],
+      "pseudonimi": [
+        {
+          "nome": "Chiara",
+          "cognome": "Costo"
+        }
+      ],
       "formula_negativa_presente": "OK",
-      "data_nascita": "17-11-1842"
+      "data_nascita": "21-01-1857"
     }
   },
   {
@@ -470,11 +475,11 @@
     }
   },
   {
-    "document_type": "Nota Spese",
+    "document_type": "Avviso Udienza",
     "schema": {
-      "id": "UD-6539",
+      "id": "UD-2049",
       "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
-      "data": "13-02-2023"
+      "data": "23-11-2024"
     }
   },
   {
@@ -484,7 +489,7 @@
         "nome": "Matteo",
         "cognome": "Gallo"
       },
-      "tipo": "parrocchiale",
+      "tipo": "anagrafico",
       "timbro_diocesi": "OK",
       "comune_nascita": "Campinas",
       "provincia": "altro",
@@ -493,11 +498,11 @@
         "cognome": "Costa"
       },
       "madre": {
-        "nome": "Chiara",
-        "cognome": "Costa"
+        "nome": "Marco",
+        "cognome": "Moretti"
       },
-      "data_nascita": "08-04-2008",
-      "area_nascita": "E",
+      "data_nascita": "24-10-1944",
+      "area_nascita": "C",
       "stato": "Brasile"
     }
   },

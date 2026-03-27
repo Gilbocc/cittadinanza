@@ -68,7 +68,7 @@
       ],
       "tribunale_brescia_indicato": "SI",
       "tribunale_indicato": "Tribunale civile competente",
-      "data_procura": "06-08-2024",
+      "data_procura": "22-01-2024",
       "rilasciata_in_italia": "NO",
       "scritta_in_italiano": "NO"
     }
@@ -80,20 +80,20 @@
         "nome": "Chiara Luigi",
         "cognome": "Costa"
       },
-      "tipo": "anagrafico",
-      "timbro_diocesi": "OK",
-      "comune_nascita": "Mantova",
-      "provincia": "cremona",
+      "tipo": "parrocchiale",
+      "timbro_diocesi": "NO",
+      "comune_nascita": "Bergamo",
+      "provincia": "mantova",
       "padre": {
-        "nome": "Paolo",
-        "cognome": "Neri"
+        "nome": "Chiara",
+        "cognome": "Costa"
       },
       "madre": {
-        "nome": "Luca",
-        "cognome": "Bianchi"
+        "nome": "Giulia",
+        "cognome": "Conti"
       },
-      "data_nascita": "24-08-1951",
-      "area_nascita": "C",
+      "data_nascita": "22-05-1870",
+      "area_nascita": "D",
       "stato": "Italia"
     }
   },
@@ -104,20 +104,20 @@
         "nome": "Paolo Joao",
         "cognome": "Neri"
       },
-      "tipo": "anagrafico",
+      "tipo": "parrocchiale",
       "timbro_diocesi": "NO",
-      "comune_nascita": "Campinas",
+      "comune_nascita": "Brasilia",
       "provincia": "altro",
       "padre": {
         "nome": "Chiara Luigi",
         "cognome": "Costa"
       },
       "madre": {
-        "nome": "Paolo",
-        "cognome": "Neri"
+        "nome": "Matteo",
+        "cognome": "Gallo"
       },
-      "data_nascita": "19-05-1989",
-      "area_nascita": "D",
+      "data_nascita": "14-12-1967",
+      "area_nascita": "E",
       "stato": "Brasile"
     }
   },
@@ -137,8 +137,8 @@
         "cognome": "Neri"
       },
       "madre": {
-        "nome": "Marco",
-        "cognome": "Moretti"
+        "nome": "Chiara",
+        "cognome": "Costa"
       },
       "data_nascita": "17-12-1981",
       "area_nascita": "E",
@@ -217,7 +217,7 @@
         }
       ],
       "formula_negativa_presente": "OK",
-      "data_nascita": "24-08-1951"
+      "data_nascita": "22-05-1870"
     }
   },
   {

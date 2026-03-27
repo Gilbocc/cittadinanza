@@ -83,7 +83,7 @@
           "cognome": "Gallo-Silva",
           "minorenne": "NO",
           "rappresentanti_legali": [],
-          "firma_presente": "KO"
+          "firma_presente": "OK"
         }
       ],
       "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
@@ -95,7 +95,7 @@
       ],
       "tribunale_brescia_indicato": "SI",
       "tribunale_indicato": "Tribunale civile competente",
-      "data_procura": "01-06-2024",
+      "data_procura": "03-01-2024",
       "rilasciata_in_italia": "OK",
       "scritta_in_italiano": "OK"
     }
@@ -107,19 +107,19 @@
         "nome": "Davide Luigi",
         "cognome": "Lombardi"
       },
-      "tipo": "parrocchiale",
+      "tipo": "anagrafico",
       "timbro_diocesi": "OK",
-      "comune_nascita": "Bergamo",
-      "provincia": "mantova",
+      "comune_nascita": "Brescia",
+      "provincia": "cremona",
       "padre": {
-        "nome": "Davide",
-        "cognome": "Lombardi"
+        "nome": "Francesca",
+        "cognome": "Leoni"
       },
       "madre": {
-        "nome": "Luca",
-        "cognome": "Bianchi"
+        "nome": "Sara",
+        "cognome": "Marini"
       },
-      "data_nascita": "13-11-1892",
+      "data_nascita": "07-06-1935",
       "area_nascita": "A",
       "stato": "Italia"
     }
@@ -132,7 +132,7 @@
         "cognome": "Gallo"
       },
       "tipo": "anagrafico",
-      "timbro_diocesi": "NO",
+      "timbro_diocesi": "OK",
       "comune_nascita": "Sao Paulo",
       "provincia": "altro",
       "padre": {
@@ -140,34 +140,10 @@
         "cognome": "Lombardi"
       },
       "madre": {
-        "nome": "Matteo",
-        "cognome": "Gallo"
-      },
-      "data_nascita": "24-08-2010",
-      "area_nascita": "C",
-      "stato": "Brasile"
-    }
-  },
-  {
-    "document_type": "Atto di nascita",
-    "schema": {
-      "soggetto": {
-        "nome": "Francesca Luz",
+        "nome": "Francesca",
         "cognome": "Leoni"
       },
-      "tipo": "anagrafico",
-      "timbro_diocesi": "OK",
-      "comune_nascita": "Brasilia",
-      "provincia": "altro",
-      "padre": {
-        "nome": "Matteo Ana",
-        "cognome": "Gallo"
-      },
-      "madre": {
-        "nome": "Giulia",
-        "cognome": "Conti"
-      },
-      "data_nascita": "27-12-1999",
+      "data_nascita": "24-09-1961",
       "area_nascita": "E",
       "stato": "Brasile"
     }
@@ -176,16 +152,16 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Matteo",
-        "cognome": "Gallo"
+        "nome": "Francesca Luz",
+        "cognome": "Leoni"
       },
       "tipo": "parrocchiale",
       "timbro_diocesi": "NO",
       "comune_nascita": "Rio de Janeiro",
       "provincia": "altro",
       "padre": {
-        "nome": "Francesca Luz",
-        "cognome": "Leoni"
+        "nome": "Matteo Ana",
+        "cognome": "Gallo"
       },
       "madre": {
         "nome": "Paolo",
@@ -208,8 +184,8 @@
       "comune_nascita": "Brasilia",
       "provincia": "altro",
       "padre": {
-        "nome": "Matteo",
-        "cognome": "Gallo"
+        "nome": "Francesca Luz",
+        "cognome": "Leoni"
       },
       "madre": {
         "nome": "Marco",
@@ -217,6 +193,30 @@
       },
       "data_nascita": "11-03-2000",
       "area_nascita": "D",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Matteo",
+        "cognome": "Gallo"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "NO",
+      "comune_nascita": "Sao Paulo",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Matteo",
+        "cognome": "Gallo"
+      },
+      "madre": {
+        "nome": "Giulia",
+        "cognome": "Conti"
+      },
+      "data_nascita": "27-04-1964",
+      "area_nascita": "A",
       "stato": "Brasile"
     }
   },
@@ -229,7 +229,7 @@
       },
       "pseudonimi": [],
       "formula_negativa_presente": "OK",
-      "data_nascita": "13-11-1892"
+      "data_nascita": "07-06-1935"
     }
   },
   {
@@ -258,21 +258,21 @@
           }
         ]
       },
-      "sede_traduttore": "Italia"
+      "sede_traduttore": "Estero"
     }
   },
   {
-    "document_type": "Asseverazione",
+    "document_type": "Apostille",
     "schema": {
       "oggetto": {
         "document_type": "Traduzione",
-        "documento_originale": "Atto di nascita",
         "soggetto": [
           {
             "nome": "Matteo Ana",
             "cognome": "Gallo"
           }
-        ]
+        ],
+        "documento_originale": "Atto di nascita"
       }
     }
   },
@@ -390,21 +390,21 @@
           }
         ]
       },
-      "sede_traduttore": "Italia"
+      "sede_traduttore": "Estero"
     }
   },
   {
-    "document_type": "Asseverazione",
+    "document_type": "Apostille",
     "schema": {
       "oggetto": {
         "document_type": "Traduzione",
-        "documento_originale": "Atto di nascita",
         "soggetto": [
           {
             "nome": "Matteo",
             "cognome": "Gallo"
           }
-        ]
+        ],
+        "documento_originale": "Atto di nascita"
       }
     }
   },
@@ -434,21 +434,21 @@
           }
         ]
       },
-      "sede_traduttore": "Estero"
+      "sede_traduttore": "Italia"
     }
   },
   {
-    "document_type": "Apostille",
+    "document_type": "Asseverazione",
     "schema": {
       "oggetto": {
         "document_type": "Traduzione",
+        "documento_originale": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
             "nome": "Davide Luigi",
             "cognome": "Lombardi"
           }
-        ],
-        "documento_originale": "Certificato Negativo di Naturalizzazione"
+        ]
       }
     }
   }

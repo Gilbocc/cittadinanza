@@ -18,11 +18,11 @@
     {
       "file": "fascicolo_sintetico_004_bundle_01.pdf",
       "logical_docs": [
-        "IndiceProcedimento.html",
+        "Documenti Personali Vari",
+        "Certificato di matrimonio",
         "Apostille",
-        "Atto di nascita",
-        "Ricorso",
-        "Certificato Negativo di Naturalizzazione"
+        "Traduzione",
+        "Apostille"
       ],
       "count": 5
     },
@@ -30,18 +30,7 @@
       "file": "fascicolo_sintetico_004_bundle_02.pdf",
       "logical_docs": [
         "Apostille",
-        "Atto di nascita",
-        "Apostille",
-        "Certificato di matrimonio",
-        "Apostille"
-      ],
-      "count": 5
-    },
-    {
-      "file": "fascicolo_sintetico_004_bundle_03.pdf",
-      "logical_docs": [
-        "Apostille",
-        "Apostille",
+        "Comunicazione PEC",
         "Apostille",
         "Procura",
         "Apostille"
@@ -49,47 +38,91 @@
       "count": 5
     },
     {
+      "file": "fascicolo_sintetico_004_bundle_03.pdf",
+      "logical_docs": [
+        "Traduzione",
+        "Apostille",
+        "Atto di nascita",
+        "Atto di nascita",
+        "Documenti Personali Vari"
+      ],
+      "count": 5
+    },
+    {
       "file": "fascicolo_sintetico_004_bundle_04.pdf",
       "logical_docs": [
+        "Certificato di matrimonio",
         "Apostille",
+        "Atto di morte",
         "Traduzione",
-        "Traduzione",
-        "Bozza Sentenza",
-        "Traduzione"
+        "Apostille"
       ],
       "count": 5
     },
     {
       "file": "fascicolo_sintetico_004_bundle_05.pdf",
       "logical_docs": [
-        "Traduzione",
-        "Traduzione",
-        "Traduzione",
+        "Atto di nascita",
         "Apostille",
-        "Bozza Sentenza"
+        "Traduzione",
+        "Traduzione",
+        "Traduzione"
       ],
       "count": 5
     },
     {
       "file": "fascicolo_sintetico_004_bundle_06.pdf",
       "logical_docs": [
-        "Atto di nascita",
+        "Apostille",
+        "Bozza Sentenza",
         "Apostille",
         "Apostille",
-        "Apostille",
-        "Atto di morte"
+        "Apostille"
       ],
       "count": 5
     },
     {
       "file": "fascicolo_sintetico_004_bundle_07.pdf",
       "logical_docs": [
+        "Certificato Negativo di Naturalizzazione",
         "Apostille",
+        "IndiceProcedimento.html",
+        "Apostille",
+        "Apostille"
+      ],
+      "count": 5
+    },
+    {
+      "file": "fascicolo_sintetico_004_bundle_08.pdf",
+      "logical_docs": [
+        "Ricorso",
+        "Asseverazione",
+        "Apostille",
+        "Apostille",
+        "Atto di nascita"
+      ],
+      "count": 5
+    },
+    {
+      "file": "fascicolo_sintetico_004_bundle_09.pdf",
+      "logical_docs": [
+        "Apostille",
+        "Traduzione",
+        "Bozza Sentenza",
+        "Asseverazione",
+        "Traduzione"
+      ],
+      "count": 5
+    },
+    {
+      "file": "fascicolo_sintetico_004_bundle_10.pdf",
+      "logical_docs": [
+        "Traduzione",
         "Atto di nascita"
       ],
       "count": 2
     }
   ],
-  "expected_doc_count": 24,
-  "mixed_doc_count": 32
+  "expected_doc_count": 31,
+  "mixed_doc_count": 47
 }

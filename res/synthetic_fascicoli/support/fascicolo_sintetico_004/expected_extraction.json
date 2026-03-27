@@ -2,14 +2,14 @@
   {
     "document_type": "IndiceProcedimento.html",
     "schema": {
-      "numero_anno_ruolo": "RG 779/2024",
-      "data_iscrizione": "03-11-2024",
+      "numero_anno_ruolo": "RG 315/2025",
+      "data_iscrizione": "16-08-2025",
       "iscrizione_post_28_02_2023": "OK",
       "iscrizione_pre_27_03_2025": "OK",
-      "comparsa_avvocatura": "NO",
-      "data_comparsa_avvocatura": "30-11-2024",
+      "comparsa_avvocatura": "SI",
+      "data_comparsa_avvocatura": "28-03-2025",
       "visibilita_pm": "SI",
-      "data_visibilita_pm": "29-10-2024",
+      "data_visibilita_pm": "06-08-2024",
       "interventi": "NO",
       "numero_interventi": 0,
       "intervenuti": []
@@ -27,8 +27,8 @@
       "numero_ricorrenti": 1,
       "ricorrenti_maggiorenni": [
         {
-          "nome": "Elena",
-          "cognome": "Rossi",
+          "nome": "Matteo",
+          "cognome": "Gallo",
           "nazionalita": "Brasiliana"
         }
       ],
@@ -36,27 +36,31 @@
       "ricorrenti_per_matrimonio": [],
       "linea_discendenza": [
         {
-          "nome": "Luca Carlo",
-          "cognome": "Bianchi"
+          "nome": "Marco Luigi",
+          "cognome": "Moretti"
         },
         {
-          "nome": "Paolo Luz",
+          "nome": "Paolo",
           "cognome": "Neri"
         },
         {
-          "nome": "Giulia",
-          "cognome": "Conti"
+          "nome": "Paolo",
+          "cognome": "Neri"
         },
         {
-          "nome": "Elena",
-          "cognome": "Rossi"
+          "nome": "Marco",
+          "cognome": "Moretti"
+        },
+        {
+          "nome": "Matteo",
+          "cognome": "Gallo"
         }
       ],
       "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo.",
-      "riassunto_linea_discendenza": "Luca Carlo Bianchi -> Paolo Luz Neri -> Giulia Conti -> Elena Rossi",
+      "riassunto_linea_discendenza": "Marco Luigi Moretti -> Paolo Neri -> Paolo Neri -> Marco Moretti -> Matteo Gallo",
       "coerenza_linea_discendenza": "SI",
       "proveniente_dal_brasile": "SI",
-      "data_ricorso": "10-05-2024"
+      "data_ricorso": "29-04-2025"
     }
   },
   {
@@ -64,8 +68,8 @@
     "schema": {
       "soggetto": [
         {
-          "nome": "Elena",
-          "cognome": "Rossi",
+          "nome": "Matteo",
+          "cognome": "Gallo",
           "minorenne": "NO",
           "rappresentanti_legali": [],
           "firma_presente": "OK"
@@ -80,32 +84,32 @@
       ],
       "tribunale_brescia_indicato": "SI",
       "tribunale_indicato": "Tribunale civile competente",
-      "data_procura": "27-06-2024",
-      "rilasciata_in_italia": "OK",
-      "scritta_in_italiano": "OK"
+      "data_procura": "11-01-2025",
+      "rilasciata_in_italia": "NO",
+      "scritta_in_italiano": "NO"
     }
   },
   {
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Luca Carlo",
-        "cognome": "Bianchi"
+        "nome": "Marco Luigi",
+        "cognome": "Moretti"
       },
       "tipo": "anagrafico",
       "timbro_diocesi": "OK",
-      "comune_nascita": "Brescia",
-      "provincia": "cremona",
+      "comune_nascita": "Cremona",
+      "provincia": "brescia",
       "padre": {
-        "nome": "Sara",
-        "cognome": "Marini"
+        "nome": "Elena",
+        "cognome": "Rossi"
       },
       "madre": {
-        "nome": "Sara",
-        "cognome": "Marini"
+        "nome": "Matteo",
+        "cognome": "Gallo"
       },
-      "data_nascita": "22-08-1849",
-      "area_nascita": "D",
+      "data_nascita": "14-01-1845",
+      "area_nascita": "B",
       "stato": "Italia"
     }
   },
@@ -113,7 +117,7 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Paolo Luz",
+        "nome": "Paolo",
         "cognome": "Neri"
       },
       "tipo": "anagrafico",
@@ -121,38 +125,14 @@
       "comune_nascita": "Salvador",
       "provincia": "altro",
       "padre": {
-        "nome": "Luca Carlo",
-        "cognome": "Bianchi"
+        "nome": "Marco Luigi",
+        "cognome": "Moretti"
       },
       "madre": {
-        "nome": "Sara",
-        "cognome": "Marini"
+        "nome": "Marco",
+        "cognome": "Moretti"
       },
-      "data_nascita": "12-08-1990",
-      "area_nascita": "B",
-      "stato": "Brasile"
-    }
-  },
-  {
-    "document_type": "Atto di nascita",
-    "schema": {
-      "soggetto": {
-        "nome": "Giulia",
-        "cognome": "Conti"
-      },
-      "tipo": "anagrafico",
-      "timbro_diocesi": "NO",
-      "comune_nascita": "Rio de Janeiro",
-      "provincia": "altro",
-      "padre": {
-        "nome": "Paolo Luz",
-        "cognome": "Neri"
-      },
-      "madre": {
-        "nome": "Davide",
-        "cognome": "Lombardi"
-      },
-      "data_nascita": "09-02-1989",
+      "data_nascita": "03-11-1984",
       "area_nascita": "A",
       "stato": "Brasile"
     }
@@ -161,23 +141,71 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Elena",
-        "cognome": "Rossi"
+        "nome": "Paolo",
+        "cognome": "Neri"
       },
       "tipo": "anagrafico",
       "timbro_diocesi": "OK",
-      "comune_nascita": "Brasilia",
+      "comune_nascita": "Rio de Janeiro",
       "provincia": "altro",
       "padre": {
-        "nome": "Giulia",
-        "cognome": "Conti"
+        "nome": "Paolo",
+        "cognome": "Neri"
       },
       "madre": {
+        "nome": "Chiara",
+        "cognome": "Costa"
+      },
+      "data_nascita": "12-06-1994",
+      "area_nascita": "D",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Marco",
+        "cognome": "Moretti"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Sao Paulo",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Paolo",
+        "cognome": "Neri"
+      },
+      "madre": {
+        "nome": "Chiara",
+        "cognome": "Costa"
+      },
+      "data_nascita": "31-01-2010",
+      "area_nascita": "A",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
         "nome": "Matteo",
         "cognome": "Gallo"
       },
-      "data_nascita": "19-05-1938",
-      "area_nascita": "B",
+      "tipo": "anagrafico",
+      "timbro_diocesi": "NO",
+      "comune_nascita": "Campinas",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Marco",
+        "cognome": "Moretti"
+      },
+      "madre": {
+        "nome": "Paolo",
+        "cognome": "Neri"
+      },
+      "data_nascita": "05-09-1971",
+      "area_nascita": "A",
       "stato": "Brasile"
     }
   },
@@ -185,27 +213,66 @@
     "document_type": "Atto di morte",
     "schema": {
       "soggetto": {
-        "nome": "Luca Carlo",
-        "cognome": "Bianchi"
+        "nome": "Marco Luigi",
+        "cognome": "Moretti"
       },
-      "data_decesso": "13-09-1955"
+      "data_decesso": "18-09-1944"
     }
   },
   {
     "document_type": "Certificato Negativo di Naturalizzazione",
     "schema": {
       "soggetto": {
-        "nome": "Luca Carlo",
-        "cognome": "Bianchi"
+        "nome": "Marco Luigi",
+        "cognome": "Moretti"
       },
-      "pseudonimi": [
-        {
-          "nome": "Luca",
-          "cognome": "Biancho"
-        }
-      ],
+      "pseudonimi": [],
       "formula_negativa_presente": "OK",
-      "data_nascita": "22-08-1849"
+      "data_nascita": "14-01-1845"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Procura",
+        "soggetto": [
+          {
+            "nome": "Matteo",
+            "cognome": "Gallo"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Procura",
+        "soggetto": [
+          {
+            "nome": "Matteo",
+            "cognome": "Gallo"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Matteo",
+            "cognome": "Gallo"
+          }
+        ],
+        "documento_originale": "Procura"
+      }
     }
   },
   {
@@ -215,7 +282,7 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Paolo Luz",
+            "nome": "Paolo",
             "cognome": "Neri"
           }
         ]
@@ -229,7 +296,7 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Paolo Luz",
+            "nome": "Paolo",
             "cognome": "Neri"
           }
         ]
@@ -244,7 +311,7 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Paolo Luz",
+            "nome": "Paolo",
             "cognome": "Neri"
           }
         ],
@@ -259,8 +326,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Giulia",
-            "cognome": "Conti"
+            "nome": "Paolo",
+            "cognome": "Neri"
           }
         ]
       }
@@ -273,8 +340,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Giulia",
-            "cognome": "Conti"
+            "nome": "Paolo",
+            "cognome": "Neri"
           }
         ]
       },
@@ -288,8 +355,8 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Giulia",
-            "cognome": "Conti"
+            "nome": "Paolo",
+            "cognome": "Neri"
           }
         ],
         "documento_originale": "Atto di nascita"
@@ -303,8 +370,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Elena",
-            "cognome": "Rossi"
+            "nome": "Marco",
+            "cognome": "Moretti"
           }
         ]
       }
@@ -317,26 +384,70 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Elena",
-            "cognome": "Rossi"
+            "nome": "Marco",
+            "cognome": "Moretti"
           }
         ]
       },
-      "sede_traduttore": "Estero"
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Marco",
+            "cognome": "Moretti"
+          }
+        ]
+      }
     }
   },
   {
     "document_type": "Apostille",
     "schema": {
       "oggetto": {
-        "document_type": "Traduzione",
+        "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Elena",
-            "cognome": "Rossi"
+            "nome": "Matteo",
+            "cognome": "Gallo"
           }
-        ],
-        "documento_originale": "Atto di nascita"
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Matteo",
+            "cognome": "Gallo"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Matteo",
+            "cognome": "Gallo"
+          }
+        ]
       }
     }
   },
@@ -347,8 +458,8 @@
         "document_type": "Atto di morte",
         "soggetto": [
           {
-            "nome": "Luca Carlo",
-            "cognome": "Bianchi"
+            "nome": "Marco Luigi",
+            "cognome": "Moretti"
           }
         ]
       }
@@ -361,8 +472,8 @@
         "document_type": "Atto di morte",
         "soggetto": [
           {
-            "nome": "Luca Carlo",
-            "cognome": "Bianchi"
+            "nome": "Marco Luigi",
+            "cognome": "Moretti"
           }
         ]
       },
@@ -376,8 +487,8 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Luca Carlo",
-            "cognome": "Bianchi"
+            "nome": "Marco Luigi",
+            "cognome": "Moretti"
           }
         ],
         "documento_originale": "Atto di morte"
@@ -391,8 +502,8 @@
         "document_type": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Luca Carlo",
-            "cognome": "Bianchi"
+            "nome": "Marco Luigi",
+            "cognome": "Moretti"
           }
         ]
       }
@@ -405,8 +516,8 @@
         "document_type": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Luca Carlo",
-            "cognome": "Bianchi"
+            "nome": "Marco Luigi",
+            "cognome": "Moretti"
           }
         ]
       },
@@ -420,8 +531,8 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Luca Carlo",
-            "cognome": "Bianchi"
+            "nome": "Marco Luigi",
+            "cognome": "Moretti"
           }
         ],
         "documento_originale": "Certificato Negativo di Naturalizzazione"

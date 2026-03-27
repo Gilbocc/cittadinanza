@@ -87,7 +87,7 @@
       ],
       "tribunale_brescia_indicato": "SI",
       "tribunale_indicato": "Tribunale civile competente",
-      "data_procura": "29-02-2024",
+      "data_procura": "16-04-2024",
       "rilasciata_in_italia": "NO",
       "scritta_in_italiano": "NO"
     }
@@ -99,19 +99,19 @@
         "nome": "Chiara Luigi",
         "cognome": "Costa"
       },
-      "tipo": "parrocchiale",
+      "tipo": "anagrafico",
       "timbro_diocesi": "OK",
-      "comune_nascita": "Mantova",
+      "comune_nascita": "Brescia",
       "provincia": "brescia",
       "padre": {
         "nome": "Giulia",
         "cognome": "Conti"
       },
       "madre": {
-        "nome": "Sara",
-        "cognome": "Marini"
+        "nome": "Luca",
+        "cognome": "Bianchi"
       },
-      "data_nascita": "17-11-1842",
+      "data_nascita": "21-01-1857",
       "area_nascita": "D",
       "stato": "Italia"
     }
@@ -123,7 +123,7 @@
         "nome": "Matteo",
         "cognome": "Gallo"
       },
-      "tipo": "parrocchiale",
+      "tipo": "anagrafico",
       "timbro_diocesi": "OK",
       "comune_nascita": "Campinas",
       "provincia": "altro",
@@ -132,11 +132,11 @@
         "cognome": "Costa"
       },
       "madre": {
-        "nome": "Chiara",
-        "cognome": "Costa"
+        "nome": "Marco",
+        "cognome": "Moretti"
       },
-      "data_nascita": "08-04-2008",
-      "area_nascita": "E",
+      "data_nascita": "24-10-1944",
+      "area_nascita": "C",
       "stato": "Brasile"
     }
   },
@@ -148,7 +148,7 @@
         "cognome": "Moretti"
       },
       "tipo": "parrocchiale",
-      "timbro_diocesi": "NO",
+      "timbro_diocesi": "OK",
       "comune_nascita": "Rio de Janeiro",
       "provincia": "altro",
       "padre": {
@@ -156,11 +156,11 @@
         "cognome": "Gallo"
       },
       "madre": {
-        "nome": "Paolo",
-        "cognome": "Neri"
+        "nome": "Davide",
+        "cognome": "Lombardi"
       },
-      "data_nascita": "17-12-1993",
-      "area_nascita": "C",
+      "data_nascita": "20-05-1978",
+      "area_nascita": "B",
       "stato": "Brasile"
     }
   },
@@ -171,7 +171,7 @@
         "nome": "Chiara Luigi",
         "cognome": "Costa"
       },
-      "data_decesso": "05-08-1971"
+      "data_decesso": "07-12-1955"
     }
   },
   {
@@ -181,9 +181,14 @@
         "nome": "Chiara Luigi",
         "cognome": "Costa"
       },
-      "pseudonimi": [],
+      "pseudonimi": [
+        {
+          "nome": "Chiara",
+          "cognome": "Costo"
+        }
+      ],
       "formula_negativa_presente": "OK",
-      "data_nascita": "17-11-1842"
+      "data_nascita": "21-01-1857"
     }
   },
   {

@@ -1,171 +1,10 @@
 [
   {
-    "document_type": "IndiceProcedimento.html",
+    "document_type": "Documenti Personali Vari",
     "schema": {
-      "numero_anno_ruolo": "RG 779/2024",
-      "data_iscrizione": "03-11-2024",
-      "iscrizione_post_28_02_2023": "OK",
-      "iscrizione_pre_27_03_2025": "OK",
-      "comparsa_avvocatura": "NO",
-      "data_comparsa_avvocatura": "30-11-2024",
-      "visibilita_pm": "SI",
-      "data_visibilita_pm": "29-10-2024",
-      "interventi": "NO",
-      "numero_interventi": 0,
-      "intervenuti": []
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "soggetto": [
-          {
-            "nome": "Luca Carlo",
-            "cognome": "Bianchi"
-          }
-        ],
-        "documento_originale": "Certificato Negativo di Naturalizzazione"
-      }
-    }
-  },
-  {
-    "document_type": "Atto di nascita",
-    "schema": {
-      "soggetto": {
-        "nome": "Giulia",
-        "cognome": "Conti"
-      },
-      "tipo": "anagrafico",
-      "timbro_diocesi": "NO",
-      "comune_nascita": "Rio de Janeiro",
-      "provincia": "altro",
-      "padre": {
-        "nome": "Paolo Luz",
-        "cognome": "Neri"
-      },
-      "madre": {
-        "nome": "Davide",
-        "cognome": "Lombardi"
-      },
-      "data_nascita": "09-02-1989",
-      "area_nascita": "A",
-      "stato": "Brasile"
-    }
-  },
-  {
-    "document_type": "Ricorso",
-    "schema": {
-      "avvocati": [
-        {
-          "nome": "Davide",
-          "cognome": "Lombardi"
-        }
-      ],
-      "numero_ricorrenti": 1,
-      "ricorrenti_maggiorenni": [
-        {
-          "nome": "Elena",
-          "cognome": "Rossi",
-          "nazionalita": "Brasiliana"
-        }
-      ],
-      "ricorrenti_minorenni": [],
-      "ricorrenti_per_matrimonio": [],
-      "linea_discendenza": [
-        {
-          "nome": "Luca Carlo",
-          "cognome": "Bianchi"
-        },
-        {
-          "nome": "Paolo Luz",
-          "cognome": "Neri"
-        },
-        {
-          "nome": "Giulia",
-          "cognome": "Conti"
-        },
-        {
-          "nome": "Elena",
-          "cognome": "Rossi"
-        }
-      ],
-      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo.",
-      "riassunto_linea_discendenza": "Luca Carlo Bianchi -> Paolo Luz Neri -> Giulia Conti -> Elena Rossi",
-      "coerenza_linea_discendenza": "SI",
-      "proveniente_dal_brasile": "SI",
-      "data_ricorso": "10-05-2024"
-    }
-  },
-  {
-    "document_type": "Certificato Negativo di Naturalizzazione",
-    "schema": {
-      "soggetto": {
-        "nome": "Luca Carlo",
-        "cognome": "Bianchi"
-      },
-      "pseudonimi": [
-        {
-          "nome": "Luca",
-          "cognome": "Biancho"
-        }
-      ],
-      "formula_negativa_presente": "OK",
-      "data_nascita": "22-08-1849"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "soggetto": [
-          {
-            "nome": "Luca Carlo",
-            "cognome": "Bianchi"
-          }
-        ],
-        "documento_originale": "Atto di morte"
-      }
-    }
-  },
-  {
-    "document_type": "Atto di nascita",
-    "schema": {
-      "soggetto": {
-        "nome": "Elena",
-        "cognome": "Rossi"
-      },
-      "tipo": "anagrafico",
-      "timbro_diocesi": "OK",
-      "comune_nascita": "Brasilia",
-      "provincia": "altro",
-      "padre": {
-        "nome": "Giulia",
-        "cognome": "Conti"
-      },
-      "madre": {
-        "nome": "Matteo",
-        "cognome": "Gallo"
-      },
-      "data_nascita": "19-05-1938",
-      "area_nascita": "B",
-      "stato": "Brasile"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Paolo Luz",
-            "cognome": "Neri"
-          }
-        ]
-      }
+      "id": "UD-9270",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "23-05-2025"
     }
   },
   {
@@ -173,16 +12,16 @@
     "schema": {
       "soggetti": [
         {
-          "nome": "Paolo",
-          "cognome": "Neri"
+          "nome": "Davide",
+          "cognome": "Lombardi"
         },
         {
-          "nome": "Giulia",
-          "cognome": "Conti"
+          "nome": "Elena",
+          "cognome": "Rossi"
         }
       ],
       "luogo": "Rio de Janeiro",
-      "data_matrimonio": "09-05-2013",
+      "data_matrimonio": "23-01-1957",
       "note": "Documento non richiesto ai fini del riconoscimento richiesto."
     }
   },
@@ -193,41 +32,38 @@
         "document_type": "Documento non supportato",
         "soggetto": [
           {
-            "nome": "Paolo",
-            "cognome": "Neri"
+            "nome": "Chiara",
+            "cognome": "Costa"
           }
         ],
-        "documento_originale": "Bozza Sentenza"
+        "documento_originale": "Documenti Personali Vari"
       }
     }
   },
   {
-    "document_type": "Apostille",
+    "document_type": "Traduzione",
     "schema": {
       "oggetto": {
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Giulia",
-            "cognome": "Conti"
+            "nome": "Paolo",
+            "cognome": "Neri"
           }
         ]
-      }
+      },
+      "sede_traduttore": "Estero"
     }
   },
   {
     "document_type": "Apostille",
     "schema": {
       "oggetto": {
-        "document_type": "Certificato di matrimonio",
+        "document_type": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Paolo",
-            "cognome": "Neri"
-          },
-          {
-            "nome": "Giulia",
-            "cognome": "Conti"
+            "nome": "Marco Luigi",
+            "cognome": "Moretti"
           }
         ]
       }
@@ -240,7 +76,34 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Paolo Luz",
+            "nome": "Giulia",
+            "cognome": "Conti"
+          },
+          {
+            "nome": "Paolo",
+            "cognome": "Neri"
+          }
+        ],
+        "documento_originale": "Certificato di matrimonio"
+      }
+    }
+  },
+  {
+    "document_type": "Comunicazione PEC",
+    "schema": {
+      "id": "UD-9540",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "19-09-2025"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Paolo",
             "cognome": "Neri"
           }
         ],
@@ -253,8 +116,8 @@
     "schema": {
       "soggetto": [
         {
-          "nome": "Elena",
-          "cognome": "Rossi",
+          "nome": "Matteo",
+          "cognome": "Gallo",
           "minorenne": "NO",
           "rappresentanti_legali": [],
           "firma_presente": "OK"
@@ -269,9 +132,9 @@
       ],
       "tribunale_brescia_indicato": "SI",
       "tribunale_indicato": "Tribunale civile competente",
-      "data_procura": "27-06-2024",
-      "rilasciata_in_italia": "OK",
-      "scritta_in_italiano": "OK"
+      "data_procura": "11-01-2025",
+      "rilasciata_in_italia": "NO",
+      "scritta_in_italiano": "NO"
     }
   },
   {
@@ -281,93 +144,206 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Elena",
-            "cognome": "Rossi"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di morte",
-        "soggetto": [
-          {
-            "nome": "Luca Carlo",
-            "cognome": "Bianchi"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Giulia",
-            "cognome": "Conti"
-          }
-        ]
-      },
-      "sede_traduttore": "Estero"
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Certificato Negativo di Naturalizzazione",
-        "soggetto": [
-          {
-            "nome": "Luca Carlo",
-            "cognome": "Bianchi"
-          }
-        ]
-      },
-      "sede_traduttore": "Estero"
-    }
-  },
-  {
-    "document_type": "Bozza Sentenza",
-    "schema": {
-      "id": "UD-7790",
-      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
-      "data": "03-02-2024"
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Paolo Luz",
+            "nome": "Paolo",
             "cognome": "Neri"
           }
         ]
-      },
-      "sede_traduttore": "Estero"
+      }
     }
   },
   {
     "document_type": "Traduzione",
     "schema": {
       "oggetto": {
-        "document_type": "Atto di morte",
+        "document_type": "Procura",
         "soggetto": [
           {
-            "nome": "Luca Carlo",
-            "cognome": "Bianchi"
+            "nome": "Matteo",
+            "cognome": "Gallo"
           }
         ]
       },
       "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Procura",
+        "soggetto": [
+          {
+            "nome": "Matteo",
+            "cognome": "Gallo"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Paolo",
+        "cognome": "Neri"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Rio de Janeiro",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Paolo",
+        "cognome": "Neri"
+      },
+      "madre": {
+        "nome": "Chiara",
+        "cognome": "Costa"
+      },
+      "data_nascita": "12-06-1994",
+      "area_nascita": "D",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Marco",
+        "cognome": "Moretti"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Sao Paulo",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Paolo",
+        "cognome": "Neri"
+      },
+      "madre": {
+        "nome": "Chiara",
+        "cognome": "Costa"
+      },
+      "data_nascita": "31-01-2010",
+      "area_nascita": "A",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Documenti Personali Vari",
+    "schema": {
+      "id": "UD-8305",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "22-11-2023"
+    }
+  },
+  {
+    "document_type": "Certificato di matrimonio",
+    "schema": {
+      "soggetti": [
+        {
+          "nome": "Giulia",
+          "cognome": "Conti"
+        },
+        {
+          "nome": "Paolo",
+          "cognome": "Neri"
+        }
+      ],
+      "luogo": "Rio de Janeiro",
+      "data_matrimonio": "22-05-1968",
+      "note": "Documento non richiesto ai fini del riconoscimento richiesto."
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di morte",
+        "soggetto": [
+          {
+            "nome": "Marco Luigi",
+            "cognome": "Moretti"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Atto di morte",
+    "schema": {
+      "soggetto": {
+        "nome": "Marco Luigi",
+        "cognome": "Moretti"
+      },
+      "data_decesso": "18-09-1944"
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Marco",
+            "cognome": "Moretti"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Paolo",
+            "cognome": "Neri"
+          }
+        ],
+        "documento_originale": "Atto di nascita"
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Matteo",
+        "cognome": "Gallo"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "NO",
+      "comune_nascita": "Campinas",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Marco",
+        "cognome": "Moretti"
+      },
+      "madre": {
+        "nome": "Paolo",
+        "cognome": "Neri"
+      },
+      "data_nascita": "05-09-1971",
+      "area_nascita": "A",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Marco",
+            "cognome": "Moretti"
+          }
+        ]
+      }
     }
   },
   {
@@ -377,8 +353,8 @@
         "document_type": "Certificato di matrimonio",
         "soggetto": [
           {
-            "nome": "Paolo",
-            "cognome": "Neri"
+            "nome": "Davide",
+            "cognome": "Lombardi"
           }
         ]
       },
@@ -392,8 +368,23 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Elena",
-            "cognome": "Rossi"
+            "nome": "Matteo",
+            "cognome": "Gallo"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Paolo",
+            "cognome": "Neri"
           }
         ]
       },
@@ -404,46 +395,23 @@
     "document_type": "Apostille",
     "schema": {
       "oggetto": {
-        "document_type": "Certificato Negativo di Naturalizzazione",
+        "document_type": "Documento non supportato",
         "soggetto": [
           {
-            "nome": "Luca Carlo",
-            "cognome": "Bianchi"
+            "nome": "Francesca",
+            "cognome": "Leoni"
           }
-        ]
+        ],
+        "documento_originale": "Bozza Sentenza"
       }
     }
   },
   {
     "document_type": "Bozza Sentenza",
     "schema": {
-      "id": "UD-7547",
+      "id": "UD-2269",
       "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
-      "data": "14-05-2024"
-    }
-  },
-  {
-    "document_type": "Atto di nascita",
-    "schema": {
-      "soggetto": {
-        "nome": "Paolo Luz",
-        "cognome": "Neri"
-      },
-      "tipo": "anagrafico",
-      "timbro_diocesi": "OK",
-      "comune_nascita": "Salvador",
-      "provincia": "altro",
-      "padre": {
-        "nome": "Luca Carlo",
-        "cognome": "Bianchi"
-      },
-      "madre": {
-        "nome": "Sara",
-        "cognome": "Marini"
-      },
-      "data_nascita": "12-08-1990",
-      "area_nascita": "B",
-      "stato": "Brasile"
+      "data": "08-08-2024"
     }
   },
   {
@@ -453,11 +421,11 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Giulia",
-            "cognome": "Conti"
+            "nome": "Marco Luigi",
+            "cognome": "Moretti"
           }
         ],
-        "documento_originale": "Atto di nascita"
+        "documento_originale": "Atto di morte"
       }
     }
   },
@@ -468,15 +436,87 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Paolo",
-            "cognome": "Neri"
+            "nome": "Matteo",
+            "cognome": "Gallo"
+          }
+        ],
+        "documento_originale": "Procura"
+      }
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Davide",
+            "cognome": "Lombardi"
           },
           {
-            "nome": "Giulia",
-            "cognome": "Conti"
+            "nome": "Elena",
+            "cognome": "Rossi"
           }
         ],
         "documento_originale": "Certificato di matrimonio"
+      }
+    }
+  },
+  {
+    "document_type": "Certificato Negativo di Naturalizzazione",
+    "schema": {
+      "soggetto": {
+        "nome": "Marco Luigi",
+        "cognome": "Moretti"
+      },
+      "pseudonimi": [],
+      "formula_negativa_presente": "OK",
+      "data_nascita": "14-01-1845"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Matteo",
+            "cognome": "Gallo"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "IndiceProcedimento.html",
+    "schema": {
+      "numero_anno_ruolo": "RG 315/2025",
+      "data_iscrizione": "16-08-2025",
+      "iscrizione_post_28_02_2023": "OK",
+      "iscrizione_pre_27_03_2025": "OK",
+      "comparsa_avvocatura": "SI",
+      "data_comparsa_avvocatura": "28-03-2025",
+      "visibilita_pm": "SI",
+      "data_visibilita_pm": "06-08-2024",
+      "interventi": "NO",
+      "numero_interventi": 0,
+      "intervenuti": []
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Marco Luigi",
+            "cognome": "Moretti"
+          }
+        ],
+        "documento_originale": "Certificato Negativo di Naturalizzazione"
       }
     }
   },
@@ -487,36 +527,106 @@
         "document_type": "Documento non supportato",
         "soggetto": [
           {
-            "nome": "Luca",
-            "cognome": "Bianchi"
+            "nome": "Matteo",
+            "cognome": "Gallo"
           }
         ],
-        "documento_originale": "Bozza Sentenza"
+        "documento_originale": "Comunicazione PEC"
       }
     }
   },
   {
-    "document_type": "Atto di morte",
+    "document_type": "Ricorso",
     "schema": {
-      "soggetto": {
-        "nome": "Luca Carlo",
-        "cognome": "Bianchi"
-      },
-      "data_decesso": "13-09-1955"
+      "avvocati": [
+        {
+          "nome": "Davide",
+          "cognome": "Lombardi"
+        }
+      ],
+      "numero_ricorrenti": 1,
+      "ricorrenti_maggiorenni": [
+        {
+          "nome": "Matteo",
+          "cognome": "Gallo",
+          "nazionalita": "Brasiliana"
+        }
+      ],
+      "ricorrenti_minorenni": [],
+      "ricorrenti_per_matrimonio": [],
+      "linea_discendenza": [
+        {
+          "nome": "Marco Luigi",
+          "cognome": "Moretti"
+        },
+        {
+          "nome": "Paolo",
+          "cognome": "Neri"
+        },
+        {
+          "nome": "Paolo",
+          "cognome": "Neri"
+        },
+        {
+          "nome": "Marco",
+          "cognome": "Moretti"
+        },
+        {
+          "nome": "Matteo",
+          "cognome": "Gallo"
+        }
+      ],
+      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo.",
+      "riassunto_linea_discendenza": "Marco Luigi Moretti -> Paolo Neri -> Paolo Neri -> Marco Moretti -> Matteo Gallo",
+      "coerenza_linea_discendenza": "SI",
+      "proveniente_dal_brasile": "SI",
+      "data_ricorso": "29-04-2025"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Matteo",
+            "cognome": "Gallo"
+          }
+        ]
+      }
     }
   },
   {
     "document_type": "Apostille",
     "schema": {
       "oggetto": {
-        "document_type": "Traduzione",
+        "document_type": "Certificato di matrimonio",
         "soggetto": [
+          {
+            "nome": "Davide",
+            "cognome": "Lombardi"
+          },
           {
             "nome": "Elena",
             "cognome": "Rossi"
           }
-        ],
-        "documento_originale": "Atto di nascita"
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Paolo",
+            "cognome": "Neri"
+          }
+        ]
       }
     }
   },
@@ -524,24 +634,134 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Luca Carlo",
-        "cognome": "Bianchi"
+        "nome": "Marco Luigi",
+        "cognome": "Moretti"
       },
       "tipo": "anagrafico",
       "timbro_diocesi": "OK",
-      "comune_nascita": "Brescia",
-      "provincia": "cremona",
+      "comune_nascita": "Cremona",
+      "provincia": "brescia",
       "padre": {
-        "nome": "Sara",
-        "cognome": "Marini"
+        "nome": "Elena",
+        "cognome": "Rossi"
       },
       "madre": {
-        "nome": "Sara",
-        "cognome": "Marini"
+        "nome": "Matteo",
+        "cognome": "Gallo"
       },
-      "data_nascita": "22-08-1849",
-      "area_nascita": "D",
+      "data_nascita": "14-01-1845",
+      "area_nascita": "B",
       "stato": "Italia"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Giulia",
+            "cognome": "Conti"
+          },
+          {
+            "nome": "Paolo",
+            "cognome": "Neri"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato Negativo di Naturalizzazione",
+        "soggetto": [
+          {
+            "nome": "Marco Luigi",
+            "cognome": "Moretti"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Bozza Sentenza",
+    "schema": {
+      "id": "UD-5246",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "21-05-2024"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Marco",
+            "cognome": "Moretti"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Giulia",
+            "cognome": "Conti"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di morte",
+        "soggetto": [
+          {
+            "nome": "Marco Luigi",
+            "cognome": "Moretti"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Paolo",
+        "cognome": "Neri"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Salvador",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Marco Luigi",
+        "cognome": "Moretti"
+      },
+      "madre": {
+        "nome": "Marco",
+        "cognome": "Moretti"
+      },
+      "data_nascita": "03-11-1984",
+      "area_nascita": "A",
+      "stato": "Brasile"
     }
   }
 ]

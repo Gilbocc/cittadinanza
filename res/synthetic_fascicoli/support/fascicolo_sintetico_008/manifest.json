@@ -1,0 +1,108 @@
+{
+  "case": "fascicolo_sintetico_008",
+  "seed": 42,
+  "pdf_case_dir": "res/synthetic_fascicoli/fascicoli/fascicolo_sintetico_008",
+  "support_case_dir": "res/synthetic_fascicoli/support/fascicolo_sintetico_008",
+  "scenario": {
+    "include_indice": false,
+    "include_avo_death": true,
+    "death_required": false,
+    "include_useless_docs": true,
+    "include_useless_apostilles": false,
+    "include_irrelevant_cert_chains": true,
+    "descendants_with_married_name": true,
+    "all_docs_in_single_pdf": false,
+    "max_docs_per_pdf": 4
+  },
+  "pdf_files": [
+    {
+      "file": "fascicolo_sintetico_008_bundle_01.pdf",
+      "logical_docs": [
+        "Apostille",
+        "Apostille",
+        "Apostille",
+        "Apostille"
+      ],
+      "count": 4
+    },
+    {
+      "file": "fascicolo_sintetico_008_bundle_02.pdf",
+      "logical_docs": [
+        "Atto di nascita",
+        "Asseverazione",
+        "Apostille",
+        "Apostille"
+      ],
+      "count": 4
+    },
+    {
+      "file": "fascicolo_sintetico_008_bundle_03.pdf",
+      "logical_docs": [
+        "Apostille",
+        "Traduzione",
+        "Certificato di matrimonio",
+        "Traduzione"
+      ],
+      "count": 4
+    },
+    {
+      "file": "fascicolo_sintetico_008_bundle_04.pdf",
+      "logical_docs": [
+        "Apostille",
+        "Atto di nascita",
+        "Traduzione",
+        "Apostille"
+      ],
+      "count": 4
+    },
+    {
+      "file": "fascicolo_sintetico_008_bundle_05.pdf",
+      "logical_docs": [
+        "Traduzione",
+        "Comunicazione PEC",
+        "Certificato di matrimonio",
+        "Apostille"
+      ],
+      "count": 4
+    },
+    {
+      "file": "fascicolo_sintetico_008_bundle_06.pdf",
+      "logical_docs": [
+        "Procura",
+        "Ricorso",
+        "Asseverazione",
+        "Apostille"
+      ],
+      "count": 4
+    },
+    {
+      "file": "fascicolo_sintetico_008_bundle_07.pdf",
+      "logical_docs": [
+        "Atto di morte",
+        "Traduzione",
+        "Atto di nascita",
+        "Apostille"
+      ],
+      "count": 4
+    },
+    {
+      "file": "fascicolo_sintetico_008_bundle_08.pdf",
+      "logical_docs": [
+        "Nota Spese",
+        "Traduzione",
+        "Comunicazione PEC",
+        "Certificato Negativo di Naturalizzazione"
+      ],
+      "count": 4
+    },
+    {
+      "file": "fascicolo_sintetico_008_bundle_09.pdf",
+      "logical_docs": [
+        "Traduzione"
+      ],
+      "count": 1
+    }
+  ],
+  "expected_doc_count": 22,
+  "mixed_doc_count": 33
+}

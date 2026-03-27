@@ -1,0 +1,458 @@
+[
+  {
+    "document_type": "IndiceProcedimento.html",
+    "schema": {
+      "numero_anno_ruolo": "RG 916/2025",
+      "data_iscrizione": "14-12-2024",
+      "iscrizione_post_28_02_2023": "OK",
+      "iscrizione_pre_27_03_2025": "OK",
+      "comparsa_avvocatura": "NO",
+      "data_comparsa_avvocatura": "09-10-2024",
+      "visibilita_pm": "NO",
+      "data_visibilita_pm": "13-06-2025",
+      "interventi": "SI",
+      "numero_interventi": 2,
+      "intervenuti": [
+        {
+          "nome": "Marco",
+          "cognome": "Moretti",
+          "data": "14-05-2025"
+        },
+        {
+          "nome": "Giulia",
+          "cognome": "Conti",
+          "data": "29-12-2024"
+        }
+      ]
+    }
+  },
+  {
+    "document_type": "Ricorso",
+    "schema": {
+      "avvocati": [
+        {
+          "nome": "Giulia",
+          "cognome": "Conti"
+        }
+      ],
+      "numero_ricorrenti": 2,
+      "ricorrenti_maggiorenni": [
+        {
+          "nome": "Sara",
+          "cognome": "Marini-Silva",
+          "nazionalita": "Brasiliana"
+        },
+        {
+          "nome": "Giulia",
+          "cognome": "Conti",
+          "nazionalita": "Brasiliana"
+        }
+      ],
+      "ricorrenti_minorenni": [],
+      "ricorrenti_per_matrimonio": [],
+      "linea_discendenza": [
+        {
+          "nome": "Giulia Luigi",
+          "cognome": "Conti"
+        },
+        {
+          "nome": "Matteo",
+          "cognome": "Gallo"
+        },
+        {
+          "nome": "Giulia",
+          "cognome": "Conti"
+        },
+        {
+          "nome": "Sara",
+          "cognome": "Marini"
+        }
+      ],
+      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo.",
+      "riassunto_linea_discendenza": "Giulia Luigi Conti -> Matteo Gallo -> Giulia Conti -> Sara Marini",
+      "coerenza_linea_discendenza": "SI",
+      "proveniente_dal_brasile": "SI",
+      "data_ricorso": "28-03-2024"
+    }
+  },
+  {
+    "document_type": "Procura",
+    "schema": {
+      "soggetto": [
+        {
+          "nome": "Sara",
+          "cognome": "Marini-Silva",
+          "minorenne": "NO",
+          "rappresentanti_legali": [],
+          "firma_presente": "OK"
+        }
+      ],
+      "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "avvocati": [
+        {
+          "nome": "Giulia",
+          "cognome": "Conti"
+        }
+      ],
+      "tribunale_brescia_indicato": "SI",
+      "tribunale_indicato": "Tribunale civile competente",
+      "data_procura": "22-02-2024",
+      "rilasciata_in_italia": "OK",
+      "scritta_in_italiano": "OK"
+    }
+  },
+  {
+    "document_type": "Procura",
+    "schema": {
+      "soggetto": [
+        {
+          "nome": "Giulia",
+          "cognome": "Conti",
+          "minorenne": "NO",
+          "rappresentanti_legali": [],
+          "firma_presente": "OK"
+        }
+      ],
+      "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "avvocati": [
+        {
+          "nome": "Giulia",
+          "cognome": "Conti"
+        }
+      ],
+      "tribunale_brescia_indicato": "SI",
+      "tribunale_indicato": "Tribunale civile competente",
+      "data_procura": "23-03-2024",
+      "rilasciata_in_italia": "NO",
+      "scritta_in_italiano": "NO"
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Giulia Luigi",
+        "cognome": "Conti"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Bergamo",
+      "provincia": "cremona",
+      "padre": {
+        "nome": "Chiara",
+        "cognome": "Costa"
+      },
+      "madre": {
+        "nome": "Luca",
+        "cognome": "Bianchi"
+      },
+      "data_nascita": "20-03-1936",
+      "area_nascita": "D",
+      "stato": "Italia"
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Matteo",
+        "cognome": "Gallo"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Campinas",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Giulia Luigi",
+        "cognome": "Conti"
+      },
+      "madre": {
+        "nome": "Davide",
+        "cognome": "Lombardi"
+      },
+      "data_nascita": "05-09-1959",
+      "area_nascita": "C",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Giulia",
+        "cognome": "Conti"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Sao Paulo",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Matteo",
+        "cognome": "Gallo"
+      },
+      "madre": {
+        "nome": "Chiara",
+        "cognome": "Costa"
+      },
+      "data_nascita": "17-09-1994",
+      "area_nascita": "B",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Sara",
+        "cognome": "Marini"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Rio de Janeiro",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Giulia",
+        "cognome": "Conti"
+      },
+      "madre": {
+        "nome": "Francesca",
+        "cognome": "Leoni"
+      },
+      "data_nascita": "09-03-1947",
+      "area_nascita": "B",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Certificato Negativo di Naturalizzazione",
+    "schema": {
+      "soggetto": {
+        "nome": "Giulia Luigi",
+        "cognome": "Conti"
+      },
+      "pseudonimi": [],
+      "formula_negativa_presente": "OK",
+      "data_nascita": "20-03-1936"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Procura",
+        "soggetto": [
+          {
+            "nome": "Giulia",
+            "cognome": "Conti"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Procura",
+        "soggetto": [
+          {
+            "nome": "Giulia",
+            "cognome": "Conti"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Giulia",
+            "cognome": "Conti"
+          }
+        ],
+        "documento_originale": "Procura"
+      }
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Matteo",
+            "cognome": "Gallo"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Matteo",
+            "cognome": "Gallo"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Matteo",
+            "cognome": "Gallo"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Giulia",
+            "cognome": "Conti"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Giulia",
+            "cognome": "Conti"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Giulia",
+            "cognome": "Conti"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Sara",
+            "cognome": "Marini"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Sara",
+            "cognome": "Marini"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Sara",
+            "cognome": "Marini"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato Negativo di Naturalizzazione",
+        "soggetto": [
+          {
+            "nome": "Giulia Luigi",
+            "cognome": "Conti"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato Negativo di Naturalizzazione",
+        "soggetto": [
+          {
+            "nome": "Giulia Luigi",
+            "cognome": "Conti"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Certificato Negativo di Naturalizzazione",
+        "soggetto": [
+          {
+            "nome": "Giulia Luigi",
+            "cognome": "Conti"
+          }
+        ]
+      }
+    }
+  }
+]

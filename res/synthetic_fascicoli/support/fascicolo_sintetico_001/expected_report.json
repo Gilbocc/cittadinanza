@@ -1,0 +1,120 @@
+{
+  "0": {
+    "A": "OK",
+    "B": "OK",
+    "C": "OK",
+    "Ci": "NULL",
+    "D": "OK",
+    "E": "OK",
+    "F": "OK",
+    "G": "OK",
+    "Gi": "NULL",
+    "H": "OK",
+    "Hi": "NULL"
+  },
+  "1": {
+    "1": "OK"
+  },
+  "2": {
+    "A": "06.07.2025",
+    "B": "OK",
+    "C": "KO",
+    "D": "NO",
+    "Di": "NULL",
+    "E": "NO",
+    "Ei": "NULL",
+    "F": "SI",
+    "Fi": "2",
+    "Fii": "Davide Lombardi, Giulia Conti",
+    "Fiii": "15.09.2025, 05.06.2024",
+    "G": "0482-2024"
+  },
+  "3": {
+    "A": "Luca Bianchi",
+    "B": 1,
+    "C": "Marco Moretti",
+    "D": "Marco Moretti: Brasiliana",
+    "E": "NO",
+    "Ei": "NULL",
+    "Eii": "NULL",
+    "F": "OK; Chiara Luigi Costa -> Matteo Gallo -> Marco Moretti",
+    "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
+    "Gi": "NULL"
+  },
+  "4": {
+    "4/1": {
+      "A": "Marco Moretti",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Marco Moretti",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "16.04.2024",
+      "G": "OK",
+      "H": "NO",
+      "Hi": "OK",
+      "I": "NO",
+      "Ii": "OK",
+      "Iii": "OK",
+      "Iiii": "NULL",
+      "Iiv": "OK"
+    }
+  },
+  "5": {
+    "A": "OK",
+    "Ai": "NULL",
+    "C": "Brescia",
+    "D": "OK",
+    "E": "Padre: Giulia Conti, Madre: Luca Bianchi",
+    "F": "21.01.1857"
+  },
+  "6": {
+    "A": "NO",
+    "Ai": "NULL",
+    "Aii": "NULL",
+    "Aiii": "NO",
+    "C": "07.12.1955",
+    "D": "OK",
+    "Di": "NULL",
+    "Dii": "NULL",
+    "Diii": "OK",
+    "E": "OK",
+    "F": "OK",
+    "Fi": "OK",
+    "Fii": "NULL"
+  },
+  "7": {
+    "A": "OK",
+    "B": "Chiara Costo",
+    "C": "OK",
+    "D": "OK",
+    "E": "OK",
+    "Ei": "OK",
+    "Eii": "NULL"
+  },
+  "8": {
+    "8/1": {
+      "A": "Matteo Gallo",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
+    },
+    "8/2": {
+      "A": "Marco Moretti",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    }
+  },
+  "10": [
+    "2C"
+  ],
+  "11": {
+    "2C": "Il ricorso non risulta iscritto prima del 27.03.2025 escluso"
+  }
+}
