@@ -172,19 +172,49 @@ class DocumentValidator:
         target_name = person.get("nome", "") if person else ""
         return [candidate for candidate in self._birth_subject_pool() if self._field_match(target_name, candidate.get("nome", ""))]
 
-    def people_match(self, person_a, person_b):
+    def _canonical_identity(self, person):
+        if not person:
+            return None
+        return {
+            "nome": person.get("nome", ""),
+            "cognome": person.get("cognome", ""),
+        }
+
+    def _identity_variants(self, person):
+        """Return canonical identity plus any pseudonyms declared on the person."""
+        canonical = self._canonical_identity(person)
+        if not canonical:
+            return []
+
+        variants = [canonical]
+        for pseudo in person.get("pseudonimi", []) if isinstance(person, dict) else []:
+            variants.append(self._canonical_identity(pseudo))
+
+        cleaned = []
+        for variant in variants:
+            if not variant:
+                continue
+            if variant.get("nome") or variant.get("cognome"):
+                cleaned.append(variant)
+        return cleaned
+
+    def _name_surname_match(self, person_a, person_b):
+        """Match two identities requiring both name and surname, typo-tolerant."""
         if not person_a or not person_b:
             return False
-        if not self._field_match(person_a.get("nome", ""), person_b.get("nome", "")):
-            return False
+        return self._field_match(person_a.get("nome", ""), person_b.get("nome", "")) and self._field_match(
+            person_a.get("cognome", ""), person_b.get("cognome", "")
+        )
 
-        # If the name is unique in the birth pool, the person is unambiguously identified
-        # and the surname is not needed (it may have changed, e.g. after marriage).
-        if len(self._same_name_mentions_in_birth_pool(person_a)) == 1:
-            return True
+    def _identity_or_pseudonym_match(self, person_a, person_b):
+        for left in self._identity_variants(person_a):
+            for right in self._identity_variants(person_b):
+                if self._name_surname_match(left, right):
+                    return True
+        return False
 
-        # Multiple people share this name: use surname to disambiguate.
-        return self._field_match(person_a.get("cognome", ""), person_b.get("cognome", ""))
+    def people_match(self, person_a, person_b):
+        return self._identity_or_pseudonym_match(person_a, person_b)
 
     def person_in_list(self, person, people):
         return any(self.people_match(person, candidate) for candidate in people)
@@ -324,15 +354,10 @@ class DocumentValidator:
         return None
 
     def has_apostille(self, doc_type, soggetto, source_doc=None):
-        if source_doc:
-            print(doc_type)
-            print(source_doc)
         for a in self.index["apostilles"]:
             obj = a["schema"]["oggetto"]
             if obj["document_type"] == doc_type and (source_doc is None or source_doc == obj.get("documento_originale")):
                 for s in obj.get("soggetto", []):
-                    print(s)
-                    print(soggetto)
                     if self.people_match(s, soggetto):
                         return True
         return False
