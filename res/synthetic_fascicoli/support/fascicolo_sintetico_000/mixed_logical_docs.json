@@ -1,419 +1,18 @@
 [
   {
-    "document_type": "Comunicazione PEC",
-    "schema": {
-      "id": "UD-1916",
-      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
-      "data": "14-04-2024"
-    }
-  },
-  {
-    "document_type": "Atto di nascita",
-    "schema": {
-      "soggetto": {
-        "nome": "Davide Joao",
-        "cognome": "Lombardi"
-      },
-      "tipo": "anagrafico",
-      "timbro_diocesi": "OK",
-      "comune_nascita": "Brasilia",
-      "provincia": "altro",
-      "padre": {
-        "nome": "Elena",
-        "cognome": "Rossi"
-      },
-      "madre": {
-        "nome": "Elena",
-        "cognome": "Rossi"
-      },
-      "data_nascita": "04-08-1944",
-      "area_nascita": "C",
-      "stato": "Brasile"
-    }
-  },
-  {
-    "document_type": "Certificato Negativo di Naturalizzazione",
-    "schema": {
-      "soggetto": {
-        "nome": "Elena Luigi",
-        "cognome": "Rossi"
-      },
-      "pseudonimi": [
-        {
-          "nome": "Elena",
-          "cognome": "Rosso"
-        }
-      ],
-      "formula_negativa_presente": "OK",
-      "data_nascita": "03-12-1937"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Matteo Ana",
-            "cognome": "Gallo"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Davide Joao",
-            "cognome": "Lombardi"
-          }
-        ]
-      },
-      "sede_traduttore": "Estero"
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Luca Ana",
-            "cognome": "Bianchi"
-          }
-        ]
-      },
-      "sede_traduttore": "Italia"
-    }
-  },
-  {
-    "document_type": "Atto di nascita",
-    "schema": {
-      "soggetto": {
-        "nome": "Elena",
-        "cognome": "Rossi"
-      },
-      "tipo": "anagrafico",
-      "timbro_diocesi": "OK",
-      "comune_nascita": "Brasilia",
-      "provincia": "altro",
-      "padre": {
-        "nome": "Matteo Ana",
-        "cognome": "Gallo"
-      },
-      "madre": {
-        "nome": "Elena",
-        "cognome": "Rossi"
-      },
-      "data_nascita": "27-02-1937",
-      "area_nascita": "B",
-      "stato": "Brasile"
-    }
-  },
-  {
-    "document_type": "Asseverazione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "documento_originale": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Luca Ana",
-            "cognome": "Bianchi"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Comunicazione PEC",
-    "schema": {
-      "id": "UD-4483",
-      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
-      "data": "19-10-2025"
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Certificato di matrimonio",
-        "soggetto": [
-          {
-            "nome": "Matteo",
-            "cognome": "Gallo"
-          }
-        ]
-      },
-      "sede_traduttore": "Estero"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Procura",
-        "soggetto": [
-          {
-            "nome": "Luca Ana",
-            "cognome": "Bianchi-Silva"
-          }
-        ]
-      }
-    }
-  },
-  {
     "document_type": "IndiceProcedimento.html",
     "schema": {
-      "numero_anno_ruolo": "RG 674/2024",
-      "data_iscrizione": "27-10-2025",
+      "numero_anno_ruolo": "303/2025",
+      "data_iscrizione": "28-07-2025",
       "iscrizione_post_28_02_2023": "OK",
-      "iscrizione_pre_27_03_2025": "OK",
+      "iscrizione_pre_27_03_2025": "KO",
       "comparsa_avvocatura": "SI",
-      "data_comparsa_avvocatura": "04-04-2025",
-      "visibilita_pm": "NO",
+      "data_comparsa_avvocatura": "26-08-2025",
+      "visibilita_pm": "SI",
       "data_visibilita_pm": "07-01-2024",
       "interventi": "NO",
       "numero_interventi": 0,
       "intervenuti": []
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Documento non supportato",
-        "soggetto": [
-          {
-            "nome": "Sara",
-            "cognome": "Marini"
-          }
-        ],
-        "documento_originale": "Comunicazione PEC"
-      }
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Certificato di matrimonio",
-        "soggetto": [
-          {
-            "nome": "Matteo",
-            "cognome": "Gallo"
-          },
-          {
-            "nome": "Marco",
-            "cognome": "Moretti"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Atto di nascita",
-    "schema": {
-      "soggetto": {
-        "nome": "Luca Ana",
-        "cognome": "Bianchi"
-      },
-      "tipo": "anagrafico",
-      "timbro_diocesi": "OK",
-      "comune_nascita": "Sao Paulo",
-      "provincia": "altro",
-      "padre": {
-        "nome": "Davide Joao",
-        "cognome": "Lombardi"
-      },
-      "madre": {
-        "nome": "Francesca",
-        "cognome": "Leoni"
-      },
-      "data_nascita": "25-08-1984",
-      "area_nascita": "B",
-      "stato": "Brasile"
-    }
-  },
-  {
-    "document_type": "Certificato di matrimonio",
-    "schema": {
-      "soggetti": [
-        {
-          "nome": "Matteo",
-          "cognome": "Gallo"
-        },
-        {
-          "nome": "Marco",
-          "cognome": "Moretti"
-        }
-      ],
-      "luogo": "Rio de Janeiro",
-      "data_matrimonio": "22-02-1977",
-      "note": "Documento non richiesto ai fini del riconoscimento richiesto."
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Davide Joao",
-            "cognome": "Lombardi"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Matteo Ana",
-            "cognome": "Gallo"
-          }
-        ]
-      },
-      "sede_traduttore": "Estero"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "soggetto": [
-          {
-            "nome": "Matteo",
-            "cognome": "Gallo"
-          },
-          {
-            "nome": "Marco",
-            "cognome": "Moretti"
-          }
-        ],
-        "documento_originale": "Certificato di matrimonio"
-      }
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "soggetto": [
-          {
-            "nome": "Davide Joao",
-            "cognome": "Lombardi"
-          }
-        ],
-        "documento_originale": "Atto di nascita"
-      }
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "soggetto": [
-          {
-            "nome": "Matteo Ana",
-            "cognome": "Gallo"
-          }
-        ],
-        "documento_originale": "Atto di nascita"
-      }
-    }
-  },
-  {
-    "document_type": "Atto di nascita",
-    "schema": {
-      "soggetto": {
-        "nome": "Matteo Ana",
-        "cognome": "Gallo"
-      },
-      "tipo": "anagrafico",
-      "timbro_diocesi": "OK",
-      "comune_nascita": "Brasilia",
-      "provincia": "altro",
-      "padre": {
-        "nome": "Elena Luigi",
-        "cognome": "Rossi"
-      },
-      "madre": {
-        "nome": "Davide",
-        "cognome": "Lombardi"
-      },
-      "data_nascita": "18-10-1981",
-      "area_nascita": "B",
-      "stato": "Brasile"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Luca Ana",
-            "cognome": "Bianchi"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Documento non supportato",
-        "soggetto": [
-          {
-            "nome": "Chiara",
-            "cognome": "Costa"
-          }
-        ],
-        "documento_originale": "Comunicazione PEC"
-      }
-    }
-  },
-  {
-    "document_type": "Procura",
-    "schema": {
-      "soggetto": [
-        {
-          "nome": "Davide Joao",
-          "cognome": "Lombardi",
-          "minorenne": "NO",
-          "rappresentanti_legali": [],
-          "firma_presente": "OK"
-        }
-      ],
-      "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
-      "avvocati": [
-        {
-          "nome": "Marco",
-          "cognome": "Moretti"
-        }
-      ],
-      "tribunale_brescia_indicato": "SI",
-      "tribunale_indicato": "Tribunale civile competente",
-      "data_procura": "04-04-2024",
-      "rilasciata_in_italia": "OK",
-      "scritta_in_italiano": "OK"
     }
   },
   {
@@ -470,21 +69,6 @@
     }
   },
   {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Certificato Negativo di Naturalizzazione",
-        "soggetto": [
-          {
-            "nome": "Elena Luigi",
-            "cognome": "Rossi"
-          }
-        ]
-      },
-      "sede_traduttore": "Italia"
-    }
-  },
-  {
     "document_type": "Procura",
     "schema": {
       "soggetto": [
@@ -503,7 +87,7 @@
           "cognome": "Moretti"
         }
       ],
-      "tribunale_brescia_indicato": "NO",
+      "tribunale_brescia_indicato": "KO",
       "tribunale_indicato": "Tribunale civile competente",
       "data_procura": "08-08-2024",
       "rilasciata_in_italia": "NO",
@@ -511,33 +95,43 @@
     }
   },
   {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Elena",
-            "cognome": "Rossi"
-          }
-        ]
-      },
-      "sede_traduttore": "Estero"
-    }
-  },
-  {
     "document_type": "Apostille",
     "schema": {
       "oggetto": {
-        "document_type": "Traduzione",
+        "document_type": "Procura",
         "soggetto": [
           {
-            "nome": "Elena",
-            "cognome": "Rossi"
+            "nome": "Luca Ana",
+            "cognome": "Bianchi-Silva"
           }
-        ],
-        "documento_originale": "Atto di nascita"
+        ]
       }
+    }
+  },
+  {
+    "document_type": "Procura",
+    "schema": {
+      "soggetto": [
+        {
+          "nome": "Davide Joao",
+          "cognome": "Lombardi",
+          "minorenne": "NO",
+          "rappresentanti_legali": [],
+          "firma_presente": "OK"
+        }
+      ],
+      "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "avvocati": [
+        {
+          "nome": "Marco",
+          "cognome": "Moretti"
+        }
+      ],
+      "tribunale_brescia_indicato": "OK",
+      "tribunale_indicato": "Tribunale civile competente",
+      "data_procura": "04-04-2024",
+      "rilasciata_in_italia": "OK",
+      "scritta_in_italiano": "OK"
     }
   },
   {
@@ -548,9 +142,9 @@
         "cognome": "Rossi"
       },
       "tipo": "anagrafico",
-      "timbro_diocesi": "NO",
-      "comune_nascita": "Mantova",
-      "provincia": "brescia",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Cremona",
+      "provincia": "cremona",
       "padre": {
         "nome": "Francesca",
         "cognome": "Leoni"
@@ -565,6 +159,98 @@
     }
   },
   {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Matteo Ana",
+        "cognome": "Gallo"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Campinas",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Elena",
+        "cognome": "Rossi"
+      },
+      "madre": {
+        "nome": "Elena Luigi",
+        "cognome": "Rossi"
+      },
+      "data_nascita": "09-06-2009",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Matteo Ana",
+            "cognome": "Gallo"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Matteo Ana",
+            "cognome": "Gallo"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Matteo Ana",
+            "cognome": "Gallo"
+          }
+        ],
+        "documento_originale": "Atto di nascita"
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Elena",
+        "cognome": "Rossi"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Campinas",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Francesca",
+        "cognome": "Leoni"
+      },
+      "madre": {
+        "nome": "Matteo Ana",
+        "cognome": "Gallo"
+      },
+      "data_nascita": "29-04-1989",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
     "document_type": "Apostille",
     "schema": {
       "oggetto": {
@@ -576,6 +262,189 @@
           }
         ]
       }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Elena",
+            "cognome": "Rossi"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Elena",
+            "cognome": "Rossi"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Davide Joao",
+        "cognome": "Lombardi"
+      },
+      "tipo": "parrocchiale",
+      "timbro_diocesi": "NO",
+      "comune_nascita": "Brasilia",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Giulia",
+        "cognome": "Conti"
+      },
+      "madre": {
+        "nome": "Elena",
+        "cognome": "Rossi"
+      },
+      "data_nascita": "26-09-2007",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Davide Joao",
+            "cognome": "Lombardi"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Davide Joao",
+            "cognome": "Lombardi"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Davide Joao",
+            "cognome": "Lombardi"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Luca Ana",
+        "cognome": "Bianchi"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Salvador",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Elena",
+        "cognome": "Rossi"
+      },
+      "madre": {
+        "nome": "Davide Joao",
+        "cognome": "Lombardi"
+      },
+      "data_nascita": "24-09-1962",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Luca Ana",
+            "cognome": "Bianchi"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Luca Ana",
+            "cognome": "Bianchi"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Luca Ana",
+            "cognome": "Bianchi"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Certificato Negativo di Naturalizzazione",
+    "schema": {
+      "soggetto": {
+        "nome": "Elena Luigi",
+        "cognome": "Rossi"
+      },
+      "pseudonimi": [
+        {
+          "nome": "Elena",
+          "cognome": "Rosso"
+        }
+      ],
+      "formula_negativa_presente": "OK",
+      "data_nascita": "03-12-1937"
     }
   },
   {
@@ -593,14 +462,140 @@
     }
   },
   {
-    "document_type": "Asseverazione",
+    "document_type": "Traduzione",
     "schema": {
       "oggetto": {
-        "document_type": "Traduzione",
-        "documento_originale": "Certificato Negativo di Naturalizzazione",
+        "document_type": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
             "nome": "Elena Luigi",
+            "cognome": "Rossi"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Elena Luigi",
+            "cognome": "Rossi"
+          }
+        ],
+        "documento_originale": "Certificato Negativo di Naturalizzazione"
+      }
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Giulia",
+            "cognome": "Conti"
+          },
+          {
+            "nome": "Chiara",
+            "cognome": "Costa"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Documenti Personali Vari",
+    "schema": {
+      "id": "UD-5010",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "01-12-2023"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Documento non supportato",
+        "soggetto": [
+          {
+            "nome": "Matteo",
+            "cognome": "Gallo"
+          }
+        ],
+        "documento_originale": "Documenti Personali Vari"
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Matteo",
+            "cognome": "Gallo"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Certificato di matrimonio",
+    "schema": {
+      "soggetti": [
+        {
+          "nome": "Giulia",
+          "cognome": "Conti"
+        },
+        {
+          "nome": "Chiara",
+          "cognome": "Costa"
+        }
+      ],
+      "luogo": "Salvador",
+      "data_matrimonio": "01-05-2012",
+      "note": "Documento non richiesto ai fini del riconoscimento richiesto."
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Matteo",
+            "cognome": "Gallo"
+          },
+          {
+            "nome": "Elena",
+            "cognome": "Rossi"
+          }
+        ],
+        "documento_originale": "Certificato di matrimonio"
+      }
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Matteo",
+            "cognome": "Gallo"
+          },
+          {
+            "nome": "Elena",
             "cognome": "Rossi"
           }
         ]
@@ -608,11 +603,71 @@
     }
   },
   {
-    "document_type": "Comunicazione PEC",
+    "document_type": "Traduzione",
     "schema": {
-      "id": "UD-7572",
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Giulia",
+            "cognome": "Conti"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Nota Spese",
+    "schema": {
+      "id": "UD-4752",
       "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
-      "data": "02-07-2024"
+      "data": "07-03-2023"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Giulia",
+            "cognome": "Conti"
+          },
+          {
+            "nome": "Chiara",
+            "cognome": "Costa"
+          }
+        ],
+        "documento_originale": "Certificato di matrimonio"
+      }
+    }
+  },
+  {
+    "document_type": "Certificato di matrimonio",
+    "schema": {
+      "soggetti": [
+        {
+          "nome": "Matteo",
+          "cognome": "Gallo"
+        },
+        {
+          "nome": "Elena",
+          "cognome": "Rossi"
+        }
+      ],
+      "luogo": "Rio de Janeiro",
+      "data_matrimonio": "18-06-1986",
+      "note": "Documento non richiesto ai fini del riconoscimento richiesto."
+    }
+  },
+  {
+    "document_type": "Documenti Personali Vari",
+    "schema": {
+      "id": "UD-4598",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "26-10-2024"
     }
   }
 ]

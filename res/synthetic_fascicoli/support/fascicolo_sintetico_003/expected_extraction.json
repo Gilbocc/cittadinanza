@@ -2,26 +2,26 @@
   {
     "document_type": "IndiceProcedimento.html",
     "schema": {
-      "numero_anno_ruolo": "RG 889/2024",
-      "data_iscrizione": "14-10-2025",
+      "numero_anno_ruolo": "488/2024",
+      "data_iscrizione": "17-06-2024",
       "iscrizione_post_28_02_2023": "OK",
-      "iscrizione_pre_27_03_2025": "KO",
-      "comparsa_avvocatura": "SI",
-      "data_comparsa_avvocatura": "28-03-2025",
+      "iscrizione_pre_27_03_2025": "OK",
+      "comparsa_avvocatura": "NO",
+      "data_comparsa_avvocatura": "28-09-2024",
       "visibilita_pm": "NO",
-      "data_visibilita_pm": "13-03-2025",
+      "data_visibilita_pm": "10-04-2025",
       "interventi": "SI",
       "numero_interventi": 2,
       "intervenuti": [
         {
-          "nome": "Matteo",
-          "cognome": "Gallo",
-          "data": "15-02-2024"
+          "nome": "Chiara",
+          "cognome": "Costa",
+          "data": "06-08-2024"
         },
         {
-          "nome": "Luca",
-          "cognome": "Bianchi",
-          "data": "07-12-2024"
+          "nome": "Paolo",
+          "cognome": "Neri",
+          "data": "01-03-2024"
         }
       ]
     }
@@ -31,15 +31,15 @@
     "schema": {
       "avvocati": [
         {
-          "nome": "Davide",
-          "cognome": "Lombardi"
+          "nome": "Matteo",
+          "cognome": "Gallo"
         }
       ],
       "numero_ricorrenti": 1,
       "ricorrenti_maggiorenni": [
         {
-          "nome": "Matteo",
-          "cognome": "Gallo-Silva",
+          "nome": "Elena",
+          "cognome": "Rossi-Silva",
           "nazionalita": "Brasiliana"
         }
       ],
@@ -51,27 +51,23 @@
           "cognome": "Lombardi"
         },
         {
-          "nome": "Matteo Ana",
-          "cognome": "Gallo"
+          "nome": "Luca",
+          "cognome": "Bianchi"
         },
         {
-          "nome": "Francesca Luz",
-          "cognome": "Leoni"
+          "nome": "Davide",
+          "cognome": "Lombardi"
         },
         {
-          "nome": "Matteo",
-          "cognome": "Gallo"
-        },
-        {
-          "nome": "Matteo",
-          "cognome": "Gallo"
+          "nome": "Elena",
+          "cognome": "Rossi"
         }
       ],
       "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo.",
-      "riassunto_linea_discendenza": "Davide Luigi Lombardi -> Matteo Ana Gallo -> Francesca Luz Leoni -> Matteo Gallo -> Matteo Gallo",
+      "riassunto_linea_discendenza": "Davide Luigi Lombardi -> Luca Bianchi -> Davide Lombardi -> Elena Rossi",
       "coerenza_linea_discendenza": "SI",
       "proveniente_dal_brasile": "SI",
-      "data_ricorso": "10-01-2024"
+      "data_ricorso": "09-03-2025"
     }
   },
   {
@@ -79,8 +75,8 @@
     "schema": {
       "soggetto": [
         {
-          "nome": "Matteo",
-          "cognome": "Gallo-Silva",
+          "nome": "Elena",
+          "cognome": "Rossi-Silva",
           "minorenne": "NO",
           "rappresentanti_legali": [],
           "firma_presente": "OK"
@@ -89,15 +85,59 @@
       "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "avvocati": [
         {
-          "nome": "Davide",
-          "cognome": "Lombardi"
+          "nome": "Matteo",
+          "cognome": "Gallo"
         }
       ],
-      "tribunale_brescia_indicato": "SI",
+      "tribunale_brescia_indicato": "OK",
       "tribunale_indicato": "Tribunale civile competente",
-      "data_procura": "03-01-2024",
-      "rilasciata_in_italia": "OK",
-      "scritta_in_italiano": "OK"
+      "data_procura": "05-02-2025",
+      "rilasciata_in_italia": "NO",
+      "scritta_in_italiano": "NO"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Procura",
+        "soggetto": [
+          {
+            "nome": "Elena",
+            "cognome": "Rossi-Silva"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Procura",
+        "soggetto": [
+          {
+            "nome": "Elena",
+            "cognome": "Rossi-Silva"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Procura",
+        "soggetto": [
+          {
+            "nome": "Elena",
+            "cognome": "Rossi-Silva"
+          }
+        ]
+      }
     }
   },
   {
@@ -109,17 +149,17 @@
       },
       "tipo": "anagrafico",
       "timbro_diocesi": "OK",
-      "comune_nascita": "Brescia",
-      "provincia": "cremona",
+      "comune_nascita": "Bergamo",
+      "provincia": "bergamo",
       "padre": {
-        "nome": "Francesca",
-        "cognome": "Leoni"
+        "nome": "Chiara",
+        "cognome": "Costa"
       },
       "madre": {
-        "nome": "Sara",
-        "cognome": "Marini"
+        "nome": "Marco",
+        "cognome": "Moretti"
       },
-      "data_nascita": "07-06-1935",
+      "data_nascita": "08-12-1880",
       "area_nascita": "A",
       "stato": "Italia"
     }
@@ -128,119 +168,35 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Matteo Ana",
-        "cognome": "Gallo"
+        "nome": "Luca",
+        "cognome": "Bianchi"
       },
       "tipo": "anagrafico",
       "timbro_diocesi": "OK",
       "comune_nascita": "Sao Paulo",
       "provincia": "altro",
       "padre": {
-        "nome": "Davide Luigi",
-        "cognome": "Lombardi"
-      },
-      "madre": {
         "nome": "Francesca",
         "cognome": "Leoni"
       },
-      "data_nascita": "24-09-1961",
+      "madre": {
+        "nome": "Davide Luigi",
+        "cognome": "Lombardi"
+      },
+      "data_nascita": "02-07-2006",
       "area_nascita": "E",
       "stato": "Brasile"
     }
   },
   {
-    "document_type": "Atto di nascita",
-    "schema": {
-      "soggetto": {
-        "nome": "Francesca Luz",
-        "cognome": "Leoni"
-      },
-      "tipo": "parrocchiale",
-      "timbro_diocesi": "NO",
-      "comune_nascita": "Rio de Janeiro",
-      "provincia": "altro",
-      "padre": {
-        "nome": "Matteo Ana",
-        "cognome": "Gallo"
-      },
-      "madre": {
-        "nome": "Paolo",
-        "cognome": "Neri"
-      },
-      "data_nascita": "27-07-2007",
-      "area_nascita": "B",
-      "stato": "Brasile"
-    }
-  },
-  {
-    "document_type": "Atto di nascita",
-    "schema": {
-      "soggetto": {
-        "nome": "Matteo",
-        "cognome": "Gallo"
-      },
-      "tipo": "parrocchiale",
-      "timbro_diocesi": "OK",
-      "comune_nascita": "Brasilia",
-      "provincia": "altro",
-      "padre": {
-        "nome": "Francesca Luz",
-        "cognome": "Leoni"
-      },
-      "madre": {
-        "nome": "Marco",
-        "cognome": "Moretti"
-      },
-      "data_nascita": "11-03-2000",
-      "area_nascita": "D",
-      "stato": "Brasile"
-    }
-  },
-  {
-    "document_type": "Atto di nascita",
-    "schema": {
-      "soggetto": {
-        "nome": "Matteo",
-        "cognome": "Gallo"
-      },
-      "tipo": "anagrafico",
-      "timbro_diocesi": "NO",
-      "comune_nascita": "Sao Paulo",
-      "provincia": "altro",
-      "padre": {
-        "nome": "Matteo",
-        "cognome": "Gallo"
-      },
-      "madre": {
-        "nome": "Giulia",
-        "cognome": "Conti"
-      },
-      "data_nascita": "27-04-1964",
-      "area_nascita": "A",
-      "stato": "Brasile"
-    }
-  },
-  {
-    "document_type": "Certificato Negativo di Naturalizzazione",
-    "schema": {
-      "soggetto": {
-        "nome": "Davide Luigi",
-        "cognome": "Lombardi"
-      },
-      "pseudonimi": [],
-      "formula_negativa_presente": "OK",
-      "data_nascita": "07-06-1935"
-    }
-  },
-  {
     "document_type": "Apostille",
     "schema": {
       "oggetto": {
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Matteo Ana",
-            "cognome": "Gallo"
+            "nome": "Luca",
+            "cognome": "Bianchi"
           }
         ]
       }
@@ -253,52 +209,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Matteo Ana",
-            "cognome": "Gallo"
-          }
-        ]
-      },
-      "sede_traduttore": "Estero"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "soggetto": [
-          {
-            "nome": "Matteo Ana",
-            "cognome": "Gallo"
-          }
-        ],
-        "documento_originale": "Atto di nascita"
-      }
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Francesca Luz",
-            "cognome": "Leoni"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Francesca Luz",
-            "cognome": "Leoni"
+            "nome": "Luca",
+            "cognome": "Bianchi"
           }
         ]
       },
@@ -313,109 +225,45 @@
         "documento_originale": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Francesca Luz",
-            "cognome": "Leoni"
+            "nome": "Luca",
+            "cognome": "Bianchi"
           }
         ]
       }
     }
   },
   {
-    "document_type": "Apostille",
+    "document_type": "Atto di nascita",
     "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Matteo",
-            "cognome": "Gallo"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Matteo",
-            "cognome": "Gallo"
-          }
-        ]
+      "soggetto": {
+        "nome": "Davide",
+        "cognome": "Lombardi"
       },
-      "sede_traduttore": "Estero"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "soggetto": [
-          {
-            "nome": "Matteo",
-            "cognome": "Gallo"
-          }
-        ],
-        "documento_originale": "Atto di nascita"
-      }
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Matteo",
-            "cognome": "Gallo"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Matteo",
-            "cognome": "Gallo"
-          }
-        ]
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Rio de Janeiro",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Davide",
+        "cognome": "Lombardi"
       },
-      "sede_traduttore": "Estero"
+      "madre": {
+        "nome": "Luca",
+        "cognome": "Bianchi"
+      },
+      "data_nascita": "18-05-2006",
+      "area_nascita": "E",
+      "stato": "Brasile"
     }
   },
   {
     "document_type": "Apostille",
     "schema": {
       "oggetto": {
-        "document_type": "Traduzione",
+        "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Matteo",
-            "cognome": "Gallo"
-          }
-        ],
-        "documento_originale": "Atto di nascita"
-      }
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Certificato Negativo di Naturalizzazione",
-        "soggetto": [
-          {
-            "nome": "Davide Luigi",
+            "nome": "Davide",
             "cognome": "Lombardi"
           }
         ]
@@ -426,10 +274,10 @@
     "document_type": "Traduzione",
     "schema": {
       "oggetto": {
-        "document_type": "Certificato Negativo di Naturalizzazione",
+        "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Davide Luigi",
+            "nome": "Davide",
             "cognome": "Lombardi"
           }
         ]
@@ -442,13 +290,142 @@
     "schema": {
       "oggetto": {
         "document_type": "Traduzione",
-        "documento_originale": "Certificato Negativo di Naturalizzazione",
+        "documento_originale": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Davide",
+            "cognome": "Lombardi"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Elena",
+        "cognome": "Rossi"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Sao Paulo",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Marco",
+        "cognome": "Moretti"
+      },
+      "madre": {
+        "nome": "Davide",
+        "cognome": "Lombardi"
+      },
+      "data_nascita": "07-02-1951",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Elena",
+            "cognome": "Rossi"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Elena",
+            "cognome": "Rossi"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Elena",
+            "cognome": "Rossi"
+          }
+        ],
+        "documento_originale": "Atto di nascita"
+      }
+    }
+  },
+  {
+    "document_type": "Certificato Negativo di Naturalizzazione",
+    "schema": {
+      "soggetto": {
+        "nome": "Davide Luigi",
+        "cognome": "Lombardi"
+      },
+      "pseudonimi": [
+        {
+          "nome": "Davide",
+          "cognome": "Lombardo"
+        }
+      ],
+      "formula_negativa_presente": "OK",
+      "data_nascita": "08-12-1880"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
             "nome": "Davide Luigi",
             "cognome": "Lombardi"
           }
         ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato Negativo di Naturalizzazione",
+        "soggetto": [
+          {
+            "nome": "Davide Luigi",
+            "cognome": "Lombardi"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Davide Luigi",
+            "cognome": "Lombardi"
+          }
+        ],
+        "documento_originale": "Certificato Negativo di Naturalizzazione"
       }
     }
   }

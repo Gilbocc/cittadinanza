@@ -16,58 +16,58 @@
     "1": "OK"
   },
   "2": {
-    "A": "14.10.2025",
+    "A": "17.06.2024",
     "B": "OK",
-    "C": "KO",
-    "D": "SI",
-    "Di": "28.03.2025",
+    "C": "OK",
+    "D": "NO",
+    "Di": "NULL",
     "E": "NO",
     "Ei": "NULL",
     "F": "SI",
     "Fi": "2",
-    "Fii": "Matteo Gallo, Luca Bianchi",
-    "Fiii": "15.02.2024, 07.12.2024",
-    "G": "0889-2024"
+    "Fii": "Chiara Costa, Paolo Neri",
+    "Fiii": "06.08.2024, 01.03.2024",
+    "G": "0488-2024"
   },
   "3": {
-    "A": "Davide Lombardi",
+    "A": "Matteo Gallo",
     "B": 1,
-    "C": "Matteo Gallo-Silva",
-    "D": "Matteo Gallo-Silva: Brasiliana",
+    "C": "Elena Rossi-Silva",
+    "D": "Elena Rossi-Silva: Brasiliana",
     "E": "NO",
     "Ei": "NULL",
     "Eii": "NULL",
-    "F": "OK; Davide Luigi Lombardi -> Matteo Ana Gallo -> Francesca Luz Leoni -> Matteo Gallo -> Matteo Gallo",
+    "F": "OK; Davide Luigi Lombardi -> Luca Bianchi -> Davide Lombardi -> Elena Rossi",
     "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
     "Gi": "NULL"
   },
   "4": {
     "4/1": {
-      "A": "Matteo Gallo-Silva",
+      "A": "Elena Rossi-Silva",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Matteo Gallo-Silva",
+      "B": "OK; firma del ricorrente Elena Rossi-Silva",
       "C": "OK",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "E": "OK",
       "Ei": "NULL",
-      "F": "03.01.2024",
+      "F": "05.02.2025",
       "G": "OK",
-      "H": "OK",
-      "Hi": "NULL",
-      "I": "OK",
-      "Ii": "NULL",
-      "Iii": "NULL",
+      "H": "NO",
+      "Hi": "OK",
+      "I": "NO",
+      "Ii": "OK",
+      "Iii": "OK",
       "Iiii": "NULL",
-      "Iiv": "NULL"
+      "Iiv": "OK"
     }
   },
   "5": {
     "A": "OK",
     "Ai": "NULL",
-    "C": "Brescia",
+    "C": "Bergamo",
     "D": "OK",
-    "E": "Padre: Francesca Leoni, Madre: Sara Marini",
-    "F": "07.06.1935"
+    "E": "Padre: Chiara Costa, Madre: Marco Moretti",
+    "F": "08.12.1880"
   },
   "6": {
     "A": "OK",
@@ -86,35 +86,43 @@
   },
   "7": {
     "A": "OK",
-    "B": "NULL",
+    "B": "Davide Lombardo",
     "C": "OK",
     "D": "OK",
     "E": "OK",
-    "Ei": "NULL",
-    "Eii": "OK"
+    "Ei": "OK",
+    "Eii": "NULL"
   },
   "8": {
     "8/1": {
-      "A": "Matteo Ana Gallo",
-      "B": "OK",
-      "C": "OK",
-      "D": "OK",
-      "Di": "OK",
-      "Dii": "NULL"
-    },
-    "8/2": {
-      "A": "Francesca Luz Leoni",
+      "A": "Luca Bianchi",
       "B": "OK",
       "C": "OK",
       "D": "OK",
       "Di": "NULL",
       "Dii": "OK"
+    },
+    "8/2": {
+      "A": "Davide Lombardi",
+      "B": "KO",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/3": {
+      "A": "Elena Rossi",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
     }
   },
   "10": [
-    "2C"
+    "8/2B"
   ],
   "11": {
-    "2C": "Il ricorso non risulta iscritto prima del 27.03.2025 escluso"
+    "8/2B": "Genitori non in linea discendenza per Davide Lombardi"
   }
 }

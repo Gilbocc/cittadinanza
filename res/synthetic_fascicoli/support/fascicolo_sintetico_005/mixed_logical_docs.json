@@ -1,13 +1,79 @@
 [
   {
+    "document_type": "Ricorso",
+    "schema": {
+      "avvocati": [
+        {
+          "nome": "Davide",
+          "cognome": "Lombardi"
+        }
+      ],
+      "numero_ricorrenti": 1,
+      "ricorrenti_maggiorenni": [
+        {
+          "nome": "Paolo",
+          "cognome": "Neri-Silva",
+          "nazionalita": "Brasiliana"
+        }
+      ],
+      "ricorrenti_minorenni": [],
+      "ricorrenti_per_matrimonio": [],
+      "linea_discendenza": [
+        {
+          "nome": "Elena Carlo",
+          "cognome": "Rossi"
+        },
+        {
+          "nome": "Paolo Joao",
+          "cognome": "Neri"
+        },
+        {
+          "nome": "Paolo",
+          "cognome": "Neri"
+        }
+      ],
+      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo.",
+      "riassunto_linea_discendenza": "Elena Carlo Rossi -> Paolo Joao Neri -> Paolo Neri",
+      "coerenza_linea_discendenza": "SI",
+      "proveniente_dal_brasile": "SI",
+      "data_ricorso": "28-04-2024"
+    }
+  },
+  {
+    "document_type": "Procura",
+    "schema": {
+      "soggetto": [
+        {
+          "nome": "Paolo",
+          "cognome": "Neri-Silva",
+          "minorenne": "NO",
+          "rappresentanti_legali": [],
+          "firma_presente": "OK"
+        }
+      ],
+      "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "avvocati": [
+        {
+          "nome": "Davide",
+          "cognome": "Lombardi"
+        }
+      ],
+      "tribunale_brescia_indicato": "OK",
+      "tribunale_indicato": "Tribunale civile competente",
+      "data_procura": "02-02-2024",
+      "rilasciata_in_italia": "NO",
+      "scritta_in_italiano": "NO"
+    }
+  },
+  {
     "document_type": "Apostille",
     "schema": {
       "oggetto": {
-        "document_type": "Certificato Negativo di Naturalizzazione",
+        "document_type": "Procura",
         "soggetto": [
           {
-            "nome": "Paolo Luigi",
-            "cognome": "Neri"
+            "nome": "Paolo",
+            "cognome": "Neri-Silva"
           }
         ]
       }
@@ -20,61 +86,12 @@
         "document_type": "Procura",
         "soggetto": [
           {
-            "nome": "Paolo Joao",
+            "nome": "Paolo",
             "cognome": "Neri-Silva"
           }
         ]
       },
       "sede_traduttore": "Estero"
-    }
-  },
-  {
-    "document_type": "Procura",
-    "schema": {
-      "soggetto": [
-        {
-          "nome": "Paolo Joao",
-          "cognome": "Neri-Silva",
-          "minorenne": "NO",
-          "rappresentanti_legali": [],
-          "firma_presente": "OK"
-        }
-      ],
-      "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
-      "avvocati": [
-        {
-          "nome": "Francesca",
-          "cognome": "Leoni"
-        }
-      ],
-      "tribunale_brescia_indicato": "SI",
-      "tribunale_indicato": "Tribunale civile competente",
-      "data_procura": "03-08-2024",
-      "rilasciata_in_italia": "NO",
-      "scritta_in_italiano": "NO"
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Paolo Joao",
-            "cognome": "Neri"
-          }
-        ]
-      },
-      "sede_traduttore": "Italia"
-    }
-  },
-  {
-    "document_type": "Comunicazione PEC",
-    "schema": {
-      "id": "UD-2771",
-      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
-      "data": "22-02-2023"
     }
   },
   {
@@ -84,7 +101,7 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Paolo Joao",
+            "nome": "Paolo",
             "cognome": "Neri-Silva"
           }
         ],
@@ -93,18 +110,27 @@
     }
   },
   {
-    "document_type": "Asseverazione",
+    "document_type": "Atto di nascita",
     "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "documento_originale": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Chiara Joao",
-            "cognome": "Costa"
-          }
-        ]
-      }
+      "soggetto": {
+        "nome": "Elena Carlo",
+        "cognome": "Rossi"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "NO",
+      "comune_nascita": "Bergamo",
+      "provincia": "bergamo",
+      "padre": {
+        "nome": "Paolo",
+        "cognome": "Neri"
+      },
+      "madre": {
+        "nome": "Luca",
+        "cognome": "Bianchi"
+      },
+      "data_nascita": "01-04-1929",
+      "area_nascita": "A",
+      "stato": "Italia"
     }
   },
   {
@@ -116,143 +142,48 @@
       },
       "tipo": "anagrafico",
       "timbro_diocesi": "OK",
-      "comune_nascita": "Campinas",
+      "comune_nascita": "Brasilia",
       "provincia": "altro",
       "padre": {
-        "nome": "Chiara Joao",
-        "cognome": "Costa"
+        "nome": "Sara",
+        "cognome": "Marini"
       },
       "madre": {
-        "nome": "Giulia",
-        "cognome": "Conti"
+        "nome": "Elena Carlo",
+        "cognome": "Rossi"
       },
-      "data_nascita": "22-07-1949",
-      "area_nascita": "D",
+      "data_nascita": "30-09-2010",
+      "area_nascita": "E",
       "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Paolo Joao",
+            "cognome": "Neri"
+          }
+        ]
+      }
     }
   },
   {
     "document_type": "Traduzione",
     "schema": {
       "oggetto": {
-        "document_type": "Certificato di matrimonio",
-        "soggetto": [
-          {
-            "nome": "Matteo",
-            "cognome": "Gallo"
-          }
-        ]
-      },
-      "sede_traduttore": "Estero"
-    }
-  },
-  {
-    "document_type": "Certificato Negativo di Naturalizzazione",
-    "schema": {
-      "soggetto": {
-        "nome": "Paolo Luigi",
-        "cognome": "Neri"
-      },
-      "pseudonimi": [],
-      "formula_negativa_presente": "OK",
-      "data_nascita": "24-04-1882"
-    }
-  },
-  {
-    "document_type": "Comunicazione PEC",
-    "schema": {
-      "id": "UD-7149",
-      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
-      "data": "23-03-2025"
-    }
-  },
-  {
-    "document_type": "Avviso Udienza",
-    "schema": {
-      "id": "UD-2245",
-      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
-      "data": "12-05-2024"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Procura",
+        "document_type": "Atto di nascita",
         "soggetto": [
           {
             "nome": "Paolo Joao",
-            "cognome": "Neri-Silva"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Certificato di matrimonio",
-    "schema": {
-      "soggetti": [
-        {
-          "nome": "Matteo",
-          "cognome": "Gallo"
-        },
-        {
-          "nome": "Sara",
-          "cognome": "Marini"
-        }
-      ],
-      "luogo": "Sao Paulo",
-      "data_matrimonio": "15-05-1937",
-      "note": "Documento non richiesto ai fini del riconoscimento richiesto."
-    }
-  },
-  {
-    "document_type": "Atto di morte",
-    "schema": {
-      "soggetto": {
-        "nome": "Paolo Luigi",
-        "cognome": "Neri"
-      },
-      "data_decesso": "24-12-1945"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "soggetto": [
-          {
-            "nome": "Paolo Luigi",
             "cognome": "Neri"
           }
-        ],
-        "documento_originale": "Atto di morte"
-      }
-    }
-  },
-  {
-    "document_type": "Atto di nascita",
-    "schema": {
-      "soggetto": {
-        "nome": "Chiara Joao",
-        "cognome": "Costa"
+        ]
       },
-      "tipo": "parrocchiale",
-      "timbro_diocesi": "OK",
-      "comune_nascita": "Sao Paulo",
-      "provincia": "altro",
-      "padre": {
-        "nome": "Paolo Luigi",
-        "cognome": "Neri"
-      },
-      "madre": {
-        "nome": "Luca",
-        "cognome": "Bianchi"
-      },
-      "data_nascita": "28-09-1985",
-      "area_nascita": "B",
-      "stato": "Brasile"
+      "sede_traduttore": "Italia"
     }
   },
   {
@@ -271,61 +202,27 @@
     }
   },
   {
-    "document_type": "Apostille",
+    "document_type": "Atto di nascita",
     "schema": {
-      "oggetto": {
-        "document_type": "Certificato di matrimonio",
-        "soggetto": [
-          {
-            "nome": "Matteo",
-            "cognome": "Gallo"
-          },
-          {
-            "nome": "Sara",
-            "cognome": "Marini"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Ricorso",
-    "schema": {
-      "avvocati": [
-        {
-          "nome": "Francesca",
-          "cognome": "Leoni"
-        }
-      ],
-      "numero_ricorrenti": 1,
-      "ricorrenti_maggiorenni": [
-        {
-          "nome": "Paolo Joao",
-          "cognome": "Neri-Silva",
-          "nazionalita": "Brasiliana"
-        }
-      ],
-      "ricorrenti_minorenni": [],
-      "ricorrenti_per_matrimonio": [],
-      "linea_discendenza": [
-        {
-          "nome": "Paolo Luigi",
-          "cognome": "Neri"
-        },
-        {
-          "nome": "Chiara Joao",
-          "cognome": "Costa"
-        },
-        {
-          "nome": "Paolo Joao",
-          "cognome": "Neri"
-        }
-      ],
-      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo.",
-      "riassunto_linea_discendenza": "Paolo Luigi Neri -> Chiara Joao Costa -> Paolo Joao Neri",
-      "coerenza_linea_discendenza": "SI",
-      "proveniente_dal_brasile": "SI",
-      "data_ricorso": "11-12-2024"
+      "soggetto": {
+        "nome": "Paolo",
+        "cognome": "Neri"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Campinas",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Matteo",
+        "cognome": "Gallo"
+      },
+      "madre": {
+        "nome": "Paolo Joao",
+        "cognome": "Neri"
+      },
+      "data_nascita": "06-02-1966",
+      "area_nascita": "E",
+      "stato": "Brasile"
     }
   },
   {
@@ -335,8 +232,123 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Chiara Joao",
-            "cognome": "Costa"
+            "nome": "Paolo",
+            "cognome": "Neri"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Paolo",
+            "cognome": "Neri"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Paolo",
+            "cognome": "Neri"
+          }
+        ],
+        "documento_originale": "Atto di nascita"
+      }
+    }
+  },
+  {
+    "document_type": "Atto di morte",
+    "schema": {
+      "soggetto": {
+        "nome": "Elena Carlo",
+        "cognome": "Rossi"
+      },
+      "data_decesso": "19-01-1953"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di morte",
+        "soggetto": [
+          {
+            "nome": "Elena Carlo",
+            "cognome": "Rossi"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di morte",
+        "soggetto": [
+          {
+            "nome": "Elena Carlo",
+            "cognome": "Rossi"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Elena Carlo",
+            "cognome": "Rossi"
+          }
+        ],
+        "documento_originale": "Atto di morte"
+      }
+    }
+  },
+  {
+    "document_type": "Certificato Negativo di Naturalizzazione",
+    "schema": {
+      "soggetto": {
+        "nome": "Elena Carlo",
+        "cognome": "Rossi"
+      },
+      "pseudonimi": [
+        {
+          "nome": "Elena",
+          "cognome": "Rosso"
+        }
+      ],
+      "formula_negativa_presente": "OK",
+      "data_nascita": "01-04-1929"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato Negativo di Naturalizzazione",
+        "soggetto": [
+          {
+            "nome": "Elena Carlo",
+            "cognome": "Rossi"
           }
         ]
       }
@@ -349,8 +361,46 @@
         "document_type": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Paolo Luigi",
-            "cognome": "Neri"
+            "nome": "Elena Carlo",
+            "cognome": "Rossi"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Certificato Negativo di Naturalizzazione",
+        "soggetto": [
+          {
+            "nome": "Elena Carlo",
+            "cognome": "Rossi"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Comunicazione PEC",
+    "schema": {
+      "id": "UD-4443",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "30-05-2025"
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Chiara",
+            "cognome": "Costa"
           }
         ]
       },
@@ -358,41 +408,21 @@
     }
   },
   {
-    "document_type": "Apostille",
+    "document_type": "Certificato di matrimonio",
     "schema": {
-      "oggetto": {
-        "document_type": "Atto di morte",
-        "soggetto": [
-          {
-            "nome": "Paolo Luigi",
-            "cognome": "Neri"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Atto di nascita",
-    "schema": {
-      "soggetto": {
-        "nome": "Paolo Luigi",
-        "cognome": "Neri"
-      },
-      "tipo": "anagrafico",
-      "timbro_diocesi": "OK",
-      "comune_nascita": "Cremona",
-      "provincia": "bergamo",
-      "padre": {
-        "nome": "Elena",
-        "cognome": "Rossi"
-      },
-      "madre": {
-        "nome": "Chiara",
-        "cognome": "Costa"
-      },
-      "data_nascita": "24-04-1882",
-      "area_nascita": "A",
-      "stato": "Italia"
+      "soggetti": [
+        {
+          "nome": "Chiara",
+          "cognome": "Costa"
+        },
+        {
+          "nome": "Giulia",
+          "cognome": "Conti"
+        }
+      ],
+      "luogo": "Campinas",
+      "data_matrimonio": "26-11-2014",
+      "note": "Documento non richiesto ai fini del riconoscimento richiesto."
     }
   },
   {
@@ -402,12 +432,54 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Matteo",
-            "cognome": "Gallo"
+            "nome": "Sara",
+            "cognome": "Marini"
           },
+          {
+            "nome": "Francesca",
+            "cognome": "Leoni"
+          }
+        ],
+        "documento_originale": "Certificato di matrimonio"
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
           {
             "nome": "Sara",
             "cognome": "Marini"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Documenti Personali Vari",
+    "schema": {
+      "id": "UD-5930",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "11-04-2025"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Marco",
+            "cognome": "Moretti"
+          },
+          {
+            "nome": "Elena",
+            "cognome": "Rossi"
           }
         ],
         "documento_originale": "Certificato di matrimonio"
@@ -418,14 +490,53 @@
     "document_type": "Apostille",
     "schema": {
       "oggetto": {
-        "document_type": "Traduzione",
+        "document_type": "Certificato di matrimonio",
         "soggetto": [
           {
-            "nome": "Paolo Luigi",
-            "cognome": "Neri"
+            "nome": "Chiara",
+            "cognome": "Costa"
+          },
+          {
+            "nome": "Giulia",
+            "cognome": "Conti"
           }
-        ],
-        "documento_originale": "Certificato Negativo di Naturalizzazione"
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Certificato di matrimonio",
+    "schema": {
+      "soggetti": [
+        {
+          "nome": "Marco",
+          "cognome": "Moretti"
+        },
+        {
+          "nome": "Elena",
+          "cognome": "Rossi"
+        }
+      ],
+      "luogo": "Brasilia",
+      "data_matrimonio": "21-02-1990",
+      "note": "Documento non richiesto ai fini del riconoscimento richiesto."
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Sara",
+            "cognome": "Marini"
+          },
+          {
+            "nome": "Francesca",
+            "cognome": "Leoni"
+          }
+        ]
       }
     }
   },
@@ -433,11 +544,52 @@
     "document_type": "Apostille",
     "schema": {
       "oggetto": {
-        "document_type": "Atto di nascita",
+        "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Paolo Joao",
-            "cognome": "Neri"
+            "nome": "Chiara",
+            "cognome": "Costa"
+          },
+          {
+            "nome": "Giulia",
+            "cognome": "Conti"
+          }
+        ],
+        "documento_originale": "Certificato di matrimonio"
+      }
+    }
+  },
+  {
+    "document_type": "Certificato di matrimonio",
+    "schema": {
+      "soggetti": [
+        {
+          "nome": "Sara",
+          "cognome": "Marini"
+        },
+        {
+          "nome": "Francesca",
+          "cognome": "Leoni"
+        }
+      ],
+      "luogo": "Salvador",
+      "data_matrimonio": "08-04-2009",
+      "note": "Documento non richiesto ai fini del riconoscimento richiesto."
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Marco",
+            "cognome": "Moretti"
+          },
+          {
+            "nome": "Elena",
+            "cognome": "Rossi"
           }
         ]
       }
@@ -447,11 +599,11 @@
     "document_type": "Traduzione",
     "schema": {
       "oggetto": {
-        "document_type": "Atto di morte",
+        "document_type": "Certificato di matrimonio",
         "soggetto": [
           {
-            "nome": "Paolo Luigi",
-            "cognome": "Neri"
+            "nome": "Marco",
+            "cognome": "Moretti"
           }
         ]
       },
@@ -459,18 +611,11 @@
     }
   },
   {
-    "document_type": "Traduzione",
+    "document_type": "Documenti Personali Vari",
     "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Chiara Joao",
-            "cognome": "Costa"
-          }
-        ]
-      },
-      "sede_traduttore": "Italia"
+      "id": "UD-1006",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "14-09-2024"
     }
   }
 ]

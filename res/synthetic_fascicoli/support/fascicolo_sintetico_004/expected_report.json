@@ -16,67 +16,67 @@
     "1": "OK"
   },
   "2": {
-    "A": "16.08.2025",
+    "A": "04.04.2024",
     "B": "OK",
     "C": "OK",
-    "D": "SI",
-    "Di": "28.03.2025",
+    "D": "NO",
+    "Di": "NULL",
     "E": "SI",
-    "Ei": "06.08.2024",
-    "F": "NO",
-    "Fi": "NULL",
-    "Fii": "NULL",
-    "Fiii": "NULL",
-    "G": "0315-2025"
+    "Ei": "13.05.2024",
+    "F": "SI",
+    "Fi": "2",
+    "Fii": "Davide Lombardi, Matteo Gallo",
+    "Fiii": "15.05.2025, 22.02.2024",
+    "G": "0749-2025"
   },
   "3": {
-    "A": "Davide Lombardi",
+    "A": "Matteo Gallo",
     "B": 1,
-    "C": "Matteo Gallo",
-    "D": "Matteo Gallo: Brasiliana",
+    "C": "Sara Joao Marini",
+    "D": "Sara Joao Marini: Brasiliana",
     "E": "NO",
     "Ei": "NULL",
     "Eii": "NULL",
-    "F": "OK; Marco Luigi Moretti -> Paolo Neri -> Paolo Neri -> Marco Moretti -> Matteo Gallo",
+    "F": "OK; Elena Carlo Rossi -> Davide Joao Lombardi -> Sara Joao Marini",
     "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
     "Gi": "NULL"
   },
   "4": {
     "4/1": {
-      "A": "Matteo Gallo",
+      "A": "Sara Joao Marini",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Matteo Gallo",
+      "B": "OK; firma del ricorrente Sara Joao Marini",
       "C": "OK",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "E": "OK",
       "Ei": "NULL",
-      "F": "11.01.2025",
+      "F": "19.04.2024",
       "G": "OK",
       "H": "NO",
       "Hi": "OK",
       "I": "NO",
       "Ii": "OK",
-      "Iii": "NO",
-      "Iiii": "OK",
-      "Iiv": "NULL"
+      "Iii": "OK",
+      "Iiii": "NULL",
+      "Iiv": "OK"
     }
   },
   "5": {
-    "A": "OK",
-    "Ai": "NULL",
-    "C": "Cremona",
+    "A": "NO",
+    "Ai": "OK",
+    "C": "Bergamo",
     "D": "OK",
-    "E": "Padre: Elena Rossi, Madre: Matteo Gallo",
-    "F": "14.01.1845"
+    "E": "Padre: Elena Rossi, Madre: Elena Rossi",
+    "F": "21.08.1849"
   },
   "6": {
     "A": "NO",
-    "Ai": "NO",
+    "Ai": "NULL",
     "Aii": "NULL",
     "Aiii": "NULL",
-    "C": "18.09.1944",
+    "C": "18.06.1963",
     "D": "OK",
-    "Di": "OK",
+    "Di": "NULL",
     "Dii": "NULL",
     "Diii": "NULL",
     "E": "OK",
@@ -95,7 +95,7 @@
   },
   "8": {
     "8/1": {
-      "A": "Paolo Neri",
+      "A": "Davide Joao Lombardi",
       "B": "OK",
       "C": "OK",
       "D": "OK",
@@ -103,15 +103,7 @@
       "Dii": "NULL"
     },
     "8/2": {
-      "A": "Marco Moretti",
-      "B": "OK",
-      "C": "OK",
-      "D": "OK",
-      "Di": "NULL",
-      "Dii": "OK"
-    },
-    "8/3": {
-      "A": "Matteo Gallo",
+      "A": "Sara Joao Marini",
       "B": "OK",
       "C": "OK",
       "D": "OK",

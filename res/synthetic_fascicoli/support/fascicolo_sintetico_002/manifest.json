@@ -18,37 +18,37 @@
     {
       "file": "fascicolo_sintetico_002_bundle_01.pdf",
       "logical_docs": [
-        "Bozza Sentenza",
-        "Traduzione",
-        "Traduzione",
-        "Traduzione"
+        "Ricorso",
+        "Procura",
+        "Apostille",
+        "Atto di nascita"
       ],
       "count": 4
     },
     {
       "file": "fascicolo_sintetico_002_bundle_02.pdf",
       "logical_docs": [
-        "Procura",
-        "Traduzione",
+        "Atto di nascita",
         "Apostille",
-        "Apostille"
+        "Traduzione",
+        "Asseverazione"
       ],
       "count": 4
     },
     {
       "file": "fascicolo_sintetico_002_bundle_03.pdf",
       "logical_docs": [
-        "Certificato di matrimonio",
+        "Atto di nascita",
         "Apostille",
-        "Apostille",
-        "Traduzione"
+        "Traduzione",
+        "Apostille"
       ],
       "count": 4
     },
     {
       "file": "fascicolo_sintetico_002_bundle_04.pdf",
       "logical_docs": [
-        "Comunicazione PEC",
+        "Atto di morte",
         "Apostille",
         "Traduzione",
         "Apostille"
@@ -58,54 +58,26 @@
     {
       "file": "fascicolo_sintetico_002_bundle_05.pdf",
       "logical_docs": [
-        "Atto di nascita",
+        "Certificato Negativo di Naturalizzazione",
         "Apostille",
+        "Traduzione",
+        "Asseverazione",
         "Apostille",
-        "Atto di morte"
+        "Traduzione"
       ],
-      "count": 4
+      "count": 6
     },
     {
       "file": "fascicolo_sintetico_002_bundle_06.pdf",
       "logical_docs": [
+        "Nota Spese",
         "Apostille",
-        "Asseverazione",
-        "Apostille",
-        "Certificato Negativo di Naturalizzazione"
-      ],
-      "count": 4
-    },
-    {
-      "file": "fascicolo_sintetico_002_bundle_07.pdf",
-      "logical_docs": [
-        "Traduzione",
-        "Atto di nascita",
-        "Apostille",
-        "Atto di nascita"
-      ],
-      "count": 4
-    },
-    {
-      "file": "fascicolo_sintetico_002_bundle_08.pdf",
-      "logical_docs": [
-        "Atto di nascita",
-        "Apostille",
-        "Traduzione",
-        "Apostille"
-      ],
-      "count": 4
-    },
-    {
-      "file": "fascicolo_sintetico_002_bundle_09.pdf",
-      "logical_docs": [
-        "Ricorso",
-        "Atto di nascita",
-        "Asseverazione",
-        "Asseverazione"
+        "Certificato di matrimonio",
+        "Nota Spese"
       ],
       "count": 4
     }
   ],
-  "expected_doc_count": 30,
-  "mixed_doc_count": 36
+  "expected_doc_count": 20,
+  "mixed_doc_count": 26
 }

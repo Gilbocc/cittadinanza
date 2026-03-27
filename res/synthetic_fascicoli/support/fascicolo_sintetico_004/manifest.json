@@ -18,111 +18,95 @@
     {
       "file": "fascicolo_sintetico_004_bundle_01.pdf",
       "logical_docs": [
-        "Documenti Personali Vari",
-        "Certificato di matrimonio",
-        "Apostille",
-        "Traduzione",
-        "Apostille"
+        "IndiceProcedimento.html",
+        "Ricorso"
       ],
-      "count": 5
+      "count": 2
     },
     {
       "file": "fascicolo_sintetico_004_bundle_02.pdf",
       "logical_docs": [
-        "Apostille",
-        "Comunicazione PEC",
-        "Apostille",
         "Procura",
-        "Apostille"
+        "Apostille",
+        "Traduzione",
+        "Asseverazione",
+        "Atto di nascita"
       ],
       "count": 5
     },
     {
       "file": "fascicolo_sintetico_004_bundle_03.pdf",
       "logical_docs": [
-        "Traduzione",
+        "Atto di nascita",
         "Apostille",
-        "Atto di nascita",
-        "Atto di nascita",
-        "Documenti Personali Vari"
+        "Traduzione",
+        "Apostille"
       ],
-      "count": 5
+      "count": 4
     },
     {
       "file": "fascicolo_sintetico_004_bundle_04.pdf",
       "logical_docs": [
-        "Certificato di matrimonio",
+        "Atto di nascita",
         "Apostille",
-        "Atto di morte",
         "Traduzione",
-        "Apostille"
+        "Asseverazione"
       ],
-      "count": 5
+      "count": 4
     },
     {
       "file": "fascicolo_sintetico_004_bundle_05.pdf",
       "logical_docs": [
-        "Atto di nascita",
+        "Atto di morte",
         "Apostille",
         "Traduzione",
-        "Traduzione",
-        "Traduzione"
+        "Apostille"
       ],
-      "count": 5
+      "count": 4
     },
     {
       "file": "fascicolo_sintetico_004_bundle_06.pdf",
       "logical_docs": [
+        "Certificato Negativo di Naturalizzazione",
         "Apostille",
-        "Bozza Sentenza",
+        "Traduzione",
         "Apostille",
         "Apostille",
-        "Apostille"
+        "Apostille",
+        "Apostille",
+        "Traduzione"
       ],
-      "count": 5
+      "count": 8
     },
     {
       "file": "fascicolo_sintetico_004_bundle_07.pdf",
       "logical_docs": [
-        "Certificato Negativo di Naturalizzazione",
+        "Bozza Sentenza",
         "Apostille",
-        "IndiceProcedimento.html",
-        "Apostille",
-        "Apostille"
+        "Avviso Udienza",
+        "Certificato di matrimonio"
       ],
-      "count": 5
+      "count": 4
     },
     {
       "file": "fascicolo_sintetico_004_bundle_08.pdf",
       "logical_docs": [
-        "Ricorso",
-        "Asseverazione",
-        "Apostille",
-        "Apostille",
-        "Atto di nascita"
+        "Certificato di matrimonio",
+        "Traduzione",
+        "Apostille"
       ],
-      "count": 5
+      "count": 3
     },
     {
       "file": "fascicolo_sintetico_004_bundle_09.pdf",
       "logical_docs": [
-        "Apostille",
-        "Traduzione",
         "Bozza Sentenza",
-        "Asseverazione",
-        "Traduzione"
+        "Apostille",
+        "Apostille"
       ],
-      "count": 5
-    },
-    {
-      "file": "fascicolo_sintetico_004_bundle_10.pdf",
-      "logical_docs": [
-        "Traduzione",
-        "Atto di nascita"
-      ],
-      "count": 2
+      "count": 3
     }
   ],
-  "expected_doc_count": 31,
-  "mixed_doc_count": 47
+  "expected_doc_count": 23,
+  "mixed_doc_count": 37
 }

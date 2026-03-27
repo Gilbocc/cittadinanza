@@ -2,13 +2,13 @@
   {
     "document_type": "IndiceProcedimento.html",
     "schema": {
-      "numero_anno_ruolo": "RG 674/2024",
-      "data_iscrizione": "27-10-2025",
+      "numero_anno_ruolo": "303/2025",
+      "data_iscrizione": "28-07-2025",
       "iscrizione_post_28_02_2023": "OK",
-      "iscrizione_pre_27_03_2025": "OK",
+      "iscrizione_pre_27_03_2025": "KO",
       "comparsa_avvocatura": "SI",
-      "data_comparsa_avvocatura": "04-04-2025",
-      "visibilita_pm": "NO",
+      "data_comparsa_avvocatura": "26-08-2025",
+      "visibilita_pm": "SI",
       "data_visibilita_pm": "07-01-2024",
       "interventi": "NO",
       "numero_interventi": 0,
@@ -87,11 +87,25 @@
           "cognome": "Moretti"
         }
       ],
-      "tribunale_brescia_indicato": "NO",
+      "tribunale_brescia_indicato": "KO",
       "tribunale_indicato": "Tribunale civile competente",
       "data_procura": "08-08-2024",
       "rilasciata_in_italia": "NO",
       "scritta_in_italiano": "OK"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Procura",
+        "soggetto": [
+          {
+            "nome": "Luca Ana",
+            "cognome": "Bianchi-Silva"
+          }
+        ]
+      }
     }
   },
   {
@@ -113,7 +127,7 @@
           "cognome": "Moretti"
         }
       ],
-      "tribunale_brescia_indicato": "SI",
+      "tribunale_brescia_indicato": "OK",
       "tribunale_indicato": "Tribunale civile competente",
       "data_procura": "04-04-2024",
       "rilasciata_in_italia": "OK",
@@ -128,9 +142,9 @@
         "cognome": "Rossi"
       },
       "tipo": "anagrafico",
-      "timbro_diocesi": "NO",
-      "comune_nascita": "Mantova",
-      "provincia": "brescia",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Cremona",
+      "provincia": "cremona",
       "padre": {
         "nome": "Francesca",
         "cognome": "Leoni"
@@ -153,19 +167,63 @@
       },
       "tipo": "anagrafico",
       "timbro_diocesi": "OK",
-      "comune_nascita": "Brasilia",
+      "comune_nascita": "Campinas",
       "provincia": "altro",
       "padre": {
-        "nome": "Elena Luigi",
+        "nome": "Elena",
         "cognome": "Rossi"
       },
       "madre": {
-        "nome": "Davide",
-        "cognome": "Lombardi"
+        "nome": "Elena Luigi",
+        "cognome": "Rossi"
       },
-      "data_nascita": "18-10-1981",
-      "area_nascita": "B",
+      "data_nascita": "09-06-2009",
+      "area_nascita": "E",
       "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Matteo Ana",
+            "cognome": "Gallo"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Matteo Ana",
+            "cognome": "Gallo"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Matteo Ana",
+            "cognome": "Gallo"
+          }
+        ],
+        "documento_originale": "Atto di nascita"
+      }
     }
   },
   {
@@ -177,19 +235,63 @@
       },
       "tipo": "anagrafico",
       "timbro_diocesi": "OK",
-      "comune_nascita": "Brasilia",
+      "comune_nascita": "Campinas",
       "provincia": "altro",
       "padre": {
+        "nome": "Francesca",
+        "cognome": "Leoni"
+      },
+      "madre": {
         "nome": "Matteo Ana",
         "cognome": "Gallo"
       },
-      "madre": {
-        "nome": "Elena",
-        "cognome": "Rossi"
-      },
-      "data_nascita": "27-02-1937",
-      "area_nascita": "B",
+      "data_nascita": "29-04-1989",
+      "area_nascita": "E",
       "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Elena",
+            "cognome": "Rossi"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Elena",
+            "cognome": "Rossi"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Elena",
+            "cognome": "Rossi"
+          }
+        ]
+      }
     }
   },
   {
@@ -199,21 +301,65 @@
         "nome": "Davide Joao",
         "cognome": "Lombardi"
       },
-      "tipo": "anagrafico",
-      "timbro_diocesi": "OK",
+      "tipo": "parrocchiale",
+      "timbro_diocesi": "NO",
       "comune_nascita": "Brasilia",
       "provincia": "altro",
       "padre": {
-        "nome": "Elena",
-        "cognome": "Rossi"
+        "nome": "Giulia",
+        "cognome": "Conti"
       },
       "madre": {
         "nome": "Elena",
         "cognome": "Rossi"
       },
-      "data_nascita": "04-08-1944",
-      "area_nascita": "C",
+      "data_nascita": "26-09-2007",
+      "area_nascita": "E",
       "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Davide Joao",
+            "cognome": "Lombardi"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Davide Joao",
+            "cognome": "Lombardi"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Davide Joao",
+            "cognome": "Lombardi"
+          }
+        ]
+      }
     }
   },
   {
@@ -225,182 +371,19 @@
       },
       "tipo": "anagrafico",
       "timbro_diocesi": "OK",
-      "comune_nascita": "Sao Paulo",
+      "comune_nascita": "Salvador",
       "provincia": "altro",
       "padre": {
+        "nome": "Elena",
+        "cognome": "Rossi"
+      },
+      "madre": {
         "nome": "Davide Joao",
         "cognome": "Lombardi"
       },
-      "madre": {
-        "nome": "Francesca",
-        "cognome": "Leoni"
-      },
-      "data_nascita": "25-08-1984",
-      "area_nascita": "B",
+      "data_nascita": "24-09-1962",
+      "area_nascita": "E",
       "stato": "Brasile"
-    }
-  },
-  {
-    "document_type": "Certificato Negativo di Naturalizzazione",
-    "schema": {
-      "soggetto": {
-        "nome": "Elena Luigi",
-        "cognome": "Rossi"
-      },
-      "pseudonimi": [
-        {
-          "nome": "Elena",
-          "cognome": "Rosso"
-        }
-      ],
-      "formula_negativa_presente": "OK",
-      "data_nascita": "03-12-1937"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Procura",
-        "soggetto": [
-          {
-            "nome": "Luca Ana",
-            "cognome": "Bianchi-Silva"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Matteo Ana",
-            "cognome": "Gallo"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Matteo Ana",
-            "cognome": "Gallo"
-          }
-        ]
-      },
-      "sede_traduttore": "Estero"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "soggetto": [
-          {
-            "nome": "Matteo Ana",
-            "cognome": "Gallo"
-          }
-        ],
-        "documento_originale": "Atto di nascita"
-      }
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Elena",
-            "cognome": "Rossi"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Elena",
-            "cognome": "Rossi"
-          }
-        ]
-      },
-      "sede_traduttore": "Estero"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "soggetto": [
-          {
-            "nome": "Elena",
-            "cognome": "Rossi"
-          }
-        ],
-        "documento_originale": "Atto di nascita"
-      }
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Davide Joao",
-            "cognome": "Lombardi"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Davide Joao",
-            "cognome": "Lombardi"
-          }
-        ]
-      },
-      "sede_traduttore": "Estero"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "soggetto": [
-          {
-            "nome": "Davide Joao",
-            "cognome": "Lombardi"
-          }
-        ],
-        "documento_originale": "Atto di nascita"
-      }
     }
   },
   {
@@ -448,6 +431,23 @@
     }
   },
   {
+    "document_type": "Certificato Negativo di Naturalizzazione",
+    "schema": {
+      "soggetto": {
+        "nome": "Elena Luigi",
+        "cognome": "Rossi"
+      },
+      "pseudonimi": [
+        {
+          "nome": "Elena",
+          "cognome": "Rosso"
+        }
+      ],
+      "formula_negativa_presente": "OK",
+      "data_nascita": "03-12-1937"
+    }
+  },
+  {
     "document_type": "Apostille",
     "schema": {
       "oggetto": {
@@ -473,21 +473,21 @@
           }
         ]
       },
-      "sede_traduttore": "Italia"
+      "sede_traduttore": "Estero"
     }
   },
   {
-    "document_type": "Asseverazione",
+    "document_type": "Apostille",
     "schema": {
       "oggetto": {
         "document_type": "Traduzione",
-        "documento_originale": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
             "nome": "Elena Luigi",
             "cognome": "Rossi"
           }
-        ]
+        ],
+        "documento_originale": "Certificato Negativo di Naturalizzazione"
       }
     }
   }

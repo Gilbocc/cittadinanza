@@ -136,13 +136,20 @@ def make_indice(rng: random.Random) -> dict[str, Any]:
             p = random_person(rng)
             intervenuti.append({"nome": p["nome"], "cognome": p["cognome"], "data": random_date(rng, 2024, 2025)})
 
+    data_iscrizione = random_date(rng, 2024, 2025)
+    try:
+        iscrizione_dt = date(*reversed([int(x) for x in data_iscrizione.split("-")]))
+    except Exception:
+        iscrizione_dt = date(2025, 1, 1)
+    iscrizione_pre_cutoff = "OK" if iscrizione_dt <= date(2025, 3, 27) else "KO"
+
     return {
         "document_type": "IndiceProcedimento.html",
         "schema": {
-            "numero_anno_ruolo": f"RG {rng.randint(100, 999)}/{rng.choice([2024, 2025])}",
-            "data_iscrizione": random_date(rng, 2024, 2025),
+            "numero_anno_ruolo": f"{rng.randint(100, 999)}/{rng.choice([2024, 2025])}",
+            "data_iscrizione": data_iscrizione,
             "iscrizione_post_28_02_2023": "OK",
-            "iscrizione_pre_27_03_2025": "OK" if rng.random() < 0.85 else "KO",
+            "iscrizione_pre_27_03_2025": iscrizione_pre_cutoff,
             "comparsa_avvocatura": "SI" if rng.random() < 0.5 else "NO",
             "data_comparsa_avvocatura": random_date(rng, 2024, 2025),
             "visibilita_pm": "SI" if rng.random() < 0.5 else "NO",
@@ -236,7 +243,7 @@ def make_procura(
             ],
             "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
             "avvocati": avvocati,
-            "tribunale_brescia_indicato": "SI" if rng.random() < 0.85 else "NO",
+            "tribunale_brescia_indicato": "OK" if rng.random() < 0.85 else "KO",
             "tribunale_indicato": "Tribunale civile competente",
             "data_procura": data_procura,
             "rilasciata_in_italia": "OK" if in_italia else "NO",
@@ -246,18 +253,33 @@ def make_procura(
 
 
 def make_birth(rng: random.Random, person: dict[str, str], father: dict[str, str], mother: dict[str, str], italy: bool) -> dict[str, Any]:
+    italian_locations = {
+        "Brescia": "brescia",
+        "Bergamo": "bergamo",
+        "Cremona": "cremona",
+        "Mantova": "mantova",
+    }
+    if italy:
+        comune_nascita = rng.choice(list(italian_locations.keys()))
+        # Keep RNG consumption stable vs previous implementation.
+        _ = rng.choice(["brescia", "bergamo", "cremona", "mantova"])
+        provincia = italian_locations[comune_nascita]
+    else:
+        comune_nascita = rng.choice(BRAZIL_CITIES)
+        provincia = "altro"
+
     return {
         "document_type": "Atto di nascita",
         "schema": {
             "soggetto": {"nome": person["nome"], "cognome": person["cognome"]},
             "tipo": "anagrafico" if rng.random() < 0.75 else "parrocchiale",
             "timbro_diocesi": "OK" if rng.random() < 0.7 else "NO",
-            "comune_nascita": rng.choice(["Brescia", "Bergamo", "Cremona", "Mantova"]) if italy else rng.choice(BRAZIL_CITIES),
-            "provincia": rng.choice(["brescia", "bergamo", "cremona", "mantova"]) if italy else "altro",
+            "comune_nascita": comune_nascita,
+            "provincia": provincia,
             "padre": father,
             "madre": mother,
             "data_nascita": random_date(rng, 1870 if italy else 1930, 1965 if italy else 2010),
-            "area_nascita": rng.choice(AREE),
+            "area_nascita": "A" if italy else "E",
             "stato": "Italia" if italy else "Brasile",
         },
     }
@@ -427,8 +449,13 @@ def format_document_content(doc: dict[str, Any]) -> list[str]:
     schema = doc.get("schema", {})
 
     if doc_type == "Ricorso":
+        ric_list = schema.get("ricorrenti_maggiorenni", [])
         ric_names = ", ".join(
-            f"{p.get('nome', '')} {p.get('cognome', '')}" for p in schema.get("ricorrenti_maggiorenni", [])
+            f"{p.get('nome', '')} {p.get('cognome', '')}" for p in ric_list
+        ) or "N.D."
+        ric_with_naz = ", ".join(
+            f"{p.get('nome', '')} {p.get('cognome', '')} (nazionalita: {p.get('nazionalita', 'N.D.')})" 
+            for p in ric_list
         ) or "N.D."
         lawyer_names = ", ".join(
             f"{a.get('nome', '')} {a.get('cognome', '')}" for a in schema.get("avvocati", [])
@@ -438,6 +465,7 @@ def format_document_content(doc: dict[str, Any]) -> list[str]:
             "TRIBUNALE ORDINARIO DI BRESCIA",
             "RICORSO AI SENSI DELL'ART. 281-DECIES C.P.C.",
             f"Ricorrenti: {ric_names}",
+            f"Ricorrenti con Nazionalita: {ric_with_naz}",
             f"Difensore/i: {lawyer_names}",
             f"Data in calce al ricorso: {schema.get('data_ricorso', 'N.D.')}",
             f"Provenienza dal Brasile: {schema.get('proveniente_dal_brasile', 'N.D.')}",
@@ -455,9 +483,14 @@ def format_document_content(doc: dict[str, Any]) -> list[str]:
         soggetti = schema.get("soggetto", [])
         names = ", ".join(f"{p.get('nome', '')} {p.get('cognome', '')}" for p in soggetti) or "N.D."
         avvocati = ", ".join(f"{a.get('nome', '')} {a.get('cognome', '')}" for a in schema.get("avvocati", [])) or "N.D."
+        soggetti_details = "; ".join(
+            f"{p.get('nome', '')} {p.get('cognome', '')} (minorenne: {p.get('minorenne', 'N.D.')}, firma: {p.get('firma_presente', 'N.D.')})"
+            for p in soggetti
+        ) or "N.D."
         return [
             "PROCURA ALLE LITI",
             f"Il sottoscritto/i {names} delega a rappresentarlo e difenderlo nel giudizio.",
+            f"Soggetti: {soggetti_details}",
             f"Difensore/i nominati: {avvocati}",
             f"Oggetto del giudizio: {schema.get('oggetto', 'N.D.')}",
             f"Tribunale indicato nel testo: {schema.get('tribunale_indicato', 'N.D.')}",
@@ -481,6 +514,8 @@ def format_document_content(doc: dict[str, Any]) -> list[str]:
             f"Filho(a) de: {padre.get('nome', '')} {padre.get('cognome', '')} e {madre.get('nome', '')} {madre.get('cognome', '')}",
             f"Data di nascita: {schema.get('data_nascita', 'N.D.')}",
             f"Comune/Stato: {schema.get('comune_nascita', 'N.D.')} / {schema.get('stato', 'N.D.')}",
+            f"Provincia: {schema.get('provincia', 'N.D.')}",
+            f"Area di nascita: {schema.get('area_nascita', 'N.D.')}",
             f"Tipo certificato: {schema.get('tipo', 'N.D.')}",
             f"Timbro diocesi: {schema.get('timbro_diocesi', 'N.D.')}",
             "Avvertenza: la data di registrazione puo differire dalla data effettiva di nascita.",
@@ -677,68 +712,120 @@ def chunk_documents(docs: list[dict[str, Any]], single_pdf: bool, max_docs_per_p
     if single_pdf:
         return [docs]
 
+    accessory_types = {"Apostille", "Traduzione", "Asseverazione"}
+
+    # Build atomic blocks so primary documents and their contiguous accessories
+    # are always kept together when creating PDF bundles.
+    blocks: list[list[dict[str, Any]]] = []
+    current_block: list[dict[str, Any]] = []
+    for doc in docs:
+        dt = doc.get("document_type")
+        if dt in accessory_types:
+            if not current_block:
+                current_block = [doc]
+            else:
+                current_block.append(doc)
+            continue
+
+        if current_block:
+            blocks.append(current_block)
+        current_block = [doc]
+
+    if current_block:
+        blocks.append(current_block)
+
     chunks: list[list[dict[str, Any]]] = []
     current: list[dict[str, Any]] = []
-    for doc in docs:
-        current.append(doc)
+
+    for block in blocks:
+        # If block would overflow current chunk, close current chunk first.
+        # Never split blocks across PDFs.
+        if current and len(current) + len(block) > max_docs_per_pdf:
+            chunks.append(current)
+            current = []
+
+        current.extend(block)
+
+        # If a single block is larger than max_docs_per_pdf, keep it intact
+        # in its own chunk instead of splitting it.
         if len(current) >= max_docs_per_pdf:
             chunks.append(current)
             current = []
+
     if current:
         chunks.append(current)
     return chunks
 
 
 def add_supporting_docs(rng: random.Random, docs: list[dict[str, Any]], scenario: ScenarioConfig) -> None:
-    additional: list[dict[str, Any]] = []
+    """Add supporting documents (Apostille, Traduzione, Asseverazione) as grouped chains.
+    
+    Each primary document stays with its accessory documents in a group,
+    preserving document order while keeping chains together.
+    """
+    # Build a map of which documents get which accessories
+    doc_accessories: dict[int, list[dict[str, Any]]] = {}
 
-    for doc in list(docs):
+    for doc_idx, doc in enumerate(list(docs)):
         dt = doc["document_type"]
+        accessories: list[dict[str, Any]] = []
 
         if dt == "Procura":
             subject = doc["schema"]["soggetto"][0]
             if doc["schema"]["rilasciata_in_italia"] == "NO":
-                additional.append(make_apostille("Procura", subject))
+                accessories.append(make_apostille("Procura", subject))
             if doc["schema"]["scritta_in_italiano"] == "NO":
                 sede = "Estero" if rng.random() < 0.5 else "Italia"
                 tr = make_translation("Procura", subject, sede)
-                additional.append(tr)
+                accessories.append(tr)
                 if sede == "Estero":
-                    additional.append(make_apostille("Traduzione", subject, original_doc="Procura"))
+                    accessories.append(make_apostille("Traduzione", subject, original_doc="Procura"))
                 else:
-                    additional.append(make_asseverazione("Traduzione", subject, original_doc="Procura"))
+                    accessories.append(make_asseverazione("Traduzione", subject, original_doc="Procura"))
 
         if dt == "Atto di nascita":
             subject = doc["schema"]["soggetto"]
             if doc["schema"]["stato"] != "Italia":
-                additional.append(make_apostille("Atto di nascita", subject))
+                accessories.append(make_apostille("Atto di nascita", subject))
                 sede = "Estero" if rng.random() < 0.5 else "Italia"
                 tr = make_translation("Atto di nascita", subject, sede)
-                additional.append(tr)
+                accessories.append(tr)
                 if sede == "Estero":
-                    additional.append(make_apostille("Traduzione", subject, original_doc="Atto di nascita"))
+                    accessories.append(make_apostille("Traduzione", subject, original_doc="Atto di nascita"))
                 else:
-                    additional.append(make_asseverazione("Traduzione", subject, original_doc="Atto di nascita"))
+                    accessories.append(make_asseverazione("Traduzione", subject, original_doc="Atto di nascita"))
 
         if dt == "Atto di morte":
             subject = doc["schema"]["soggetto"]
-            additional.append(make_apostille("Atto di morte", subject))
+            accessories.append(make_apostille("Atto di morte", subject))
             tr = make_translation("Atto di morte", subject, "Estero")
-            additional.append(tr)
-            additional.append(make_apostille("Traduzione", subject, original_doc="Atto di morte"))
+            accessories.append(tr)
+            accessories.append(make_apostille("Traduzione", subject, original_doc="Atto di morte"))
 
         if dt == "Certificato Negativo di Naturalizzazione":
             subject = doc["schema"]["soggetto"]
-            additional.append(make_apostille("Certificato Negativo di Naturalizzazione", subject))
+            accessories.append(make_apostille("Certificato Negativo di Naturalizzazione", subject))
             sede = "Estero" if rng.random() < 0.5 else "Italia"
             tr = make_translation("Certificato Negativo di Naturalizzazione", subject, sede)
-            additional.append(tr)
+            accessories.append(tr)
             if sede == "Estero":
-                additional.append(make_apostille("Traduzione", subject, original_doc="Certificato Negativo di Naturalizzazione"))
+                accessories.append(make_apostille("Traduzione", subject, original_doc="Certificato Negativo di Naturalizzazione"))
             else:
-                additional.append(make_asseverazione("Traduzione", subject, original_doc="Certificato Negativo di Naturalizzazione"))
+                accessories.append(make_asseverazione("Traduzione", subject, original_doc="Certificato Negativo di Naturalizzazione"))
 
-    docs.extend(additional)
+        if accessories:
+            doc_accessories[doc_idx] = accessories
+    
+    # Reconstruct docs with accessories inserted right after their primary documents
+    result = []
+    for doc_idx, doc in enumerate(list(docs)):
+        result.append(doc)
+        if doc_idx in doc_accessories:
+            result.extend(doc_accessories[doc_idx])
+    
+    # Replace docs list in place
+    docs.clear()
+    docs.extend(result)
 
 
 def build_case_documents(rng: random.Random, scenario: ScenarioConfig) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
@@ -766,13 +853,13 @@ def build_case_documents(rng: random.Random, scenario: ScenarioConfig) -> tuple[
     avo_birth = make_birth(rng, avo, avo_father, avo_mother, italy=True)
     if scenario.death_required:
         avo_birth["schema"]["data_nascita"] = random_date(rng, 1840, 1860)
-        avo_birth["schema"]["area_nascita"] = rng.choice(["B", "C", "D"])
+        avo_birth["schema"]["area_nascita"] = "A"
 
     docs.append(avo_birth)
 
     for i, person in enumerate(lineage[1:], start=1):
-        father = lineage[i - 1]
-        mother = random_person(rng)
+        father = random_person(rng)
+        mother = lineage[i - 1]
         docs.append(make_birth(rng, person, father, mother, italy=False))
 
     if scenario.include_avo_death:
@@ -805,8 +892,21 @@ def build_case_documents(rng: random.Random, scenario: ScenarioConfig) -> tuple[
 
     expected_extraction = [d for d in docs if is_expected_supported_document(d)]
 
-    rng.shuffle(docs)
-    return docs, expected_extraction
+    # Shuffle only useless docs at the end; keep chains together
+    # Identify documents that are part of chains and which are standalone
+    document_types_with_chains = {"Procura", "Atto di nascita", "Atto di morte", "Certificato Negativo di Naturalizzazione"}
+    useless_docs = [d for d in docs if d["document_type"] not in document_types_with_chains and 
+                    not is_expected_supported_document(d)]
+    
+    # Shuffle only the useless/noise documents; keep primary+accessory chains in their natural order
+    rng.shuffle(useless_docs)
+    
+    # Reconstruct docs with shuffled useless docs
+    structured_docs = [d for d in docs if d["document_type"] in document_types_with_chains or 
+                       is_expected_supported_document(d)]
+    structured_docs.extend(useless_docs)
+    
+    return structured_docs, expected_extraction
 
 
 def default_scenarios() -> list[ScenarioConfig]:

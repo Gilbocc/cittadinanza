@@ -2,28 +2,17 @@
   {
     "document_type": "IndiceProcedimento.html",
     "schema": {
-      "numero_anno_ruolo": "RG 482/2024",
-      "data_iscrizione": "06-07-2025",
+      "numero_anno_ruolo": "710/2024",
+      "data_iscrizione": "08-03-2025",
       "iscrizione_post_28_02_2023": "OK",
-      "iscrizione_pre_27_03_2025": "KO",
-      "comparsa_avvocatura": "NO",
-      "data_comparsa_avvocatura": "01-01-2024",
+      "iscrizione_pre_27_03_2025": "OK",
+      "comparsa_avvocatura": "SI",
+      "data_comparsa_avvocatura": "02-09-2025",
       "visibilita_pm": "NO",
-      "data_visibilita_pm": "15-05-2025",
-      "interventi": "SI",
-      "numero_interventi": 2,
-      "intervenuti": [
-        {
-          "nome": "Davide",
-          "cognome": "Lombardi",
-          "data": "15-09-2025"
-        },
-        {
-          "nome": "Giulia",
-          "cognome": "Conti",
-          "data": "05-06-2024"
-        }
-      ]
+      "data_visibilita_pm": "25-06-2025",
+      "interventi": "NO",
+      "numero_interventi": 0,
+      "intervenuti": []
     }
   },
   {
@@ -31,15 +20,15 @@
     "schema": {
       "avvocati": [
         {
-          "nome": "Luca",
-          "cognome": "Bianchi"
+          "nome": "Matteo",
+          "cognome": "Gallo"
         }
       ],
       "numero_ricorrenti": 1,
       "ricorrenti_maggiorenni": [
         {
-          "nome": "Marco",
-          "cognome": "Moretti",
+          "nome": "Elena Ana",
+          "cognome": "Rossi",
           "nazionalita": "Brasiliana"
         }
       ],
@@ -47,23 +36,23 @@
       "ricorrenti_per_matrimonio": [],
       "linea_discendenza": [
         {
-          "nome": "Chiara Luigi",
-          "cognome": "Costa"
+          "nome": "Davide Maria",
+          "cognome": "Lombardi"
         },
         {
-          "nome": "Matteo",
-          "cognome": "Gallo"
+          "nome": "Elena",
+          "cognome": "Rossi"
         },
         {
-          "nome": "Marco",
-          "cognome": "Moretti"
+          "nome": "Elena Ana",
+          "cognome": "Rossi"
         }
       ],
       "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo.",
-      "riassunto_linea_discendenza": "Chiara Luigi Costa -> Matteo Gallo -> Marco Moretti",
+      "riassunto_linea_discendenza": "Davide Maria Lombardi -> Elena Rossi -> Elena Ana Rossi",
       "coerenza_linea_discendenza": "SI",
       "proveniente_dal_brasile": "SI",
-      "data_ricorso": "24-04-2024"
+      "data_ricorso": "20-07-2025"
     }
   },
   {
@@ -71,8 +60,8 @@
     "schema": {
       "soggetto": [
         {
-          "nome": "Marco",
-          "cognome": "Moretti",
+          "nome": "Elena Ana",
+          "cognome": "Rossi",
           "minorenne": "NO",
           "rappresentanti_legali": [],
           "firma_presente": "OK"
@@ -81,38 +70,52 @@
       "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "avvocati": [
         {
-          "nome": "Luca",
-          "cognome": "Bianchi"
+          "nome": "Matteo",
+          "cognome": "Gallo"
         }
       ],
-      "tribunale_brescia_indicato": "SI",
+      "tribunale_brescia_indicato": "OK",
       "tribunale_indicato": "Tribunale civile competente",
-      "data_procura": "16-04-2024",
+      "data_procura": "27-04-2024",
       "rilasciata_in_italia": "NO",
-      "scritta_in_italiano": "NO"
+      "scritta_in_italiano": "OK"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Procura",
+        "soggetto": [
+          {
+            "nome": "Elena Ana",
+            "cognome": "Rossi"
+          }
+        ]
+      }
     }
   },
   {
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Chiara Luigi",
-        "cognome": "Costa"
+        "nome": "Davide Maria",
+        "cognome": "Lombardi"
       },
       "tipo": "anagrafico",
       "timbro_diocesi": "OK",
-      "comune_nascita": "Brescia",
-      "provincia": "brescia",
+      "comune_nascita": "Cremona",
+      "provincia": "cremona",
       "padre": {
-        "nome": "Giulia",
-        "cognome": "Conti"
+        "nome": "Davide",
+        "cognome": "Lombardi"
       },
       "madre": {
-        "nome": "Luca",
-        "cognome": "Bianchi"
+        "nome": "Matteo",
+        "cognome": "Gallo"
       },
-      "data_nascita": "21-01-1857",
-      "area_nascita": "D",
+      "data_nascita": "12-03-1856",
+      "area_nascita": "A",
       "stato": "Italia"
     }
   },
@@ -120,130 +123,35 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Matteo",
-        "cognome": "Gallo"
+        "nome": "Elena",
+        "cognome": "Rossi"
       },
-      "tipo": "anagrafico",
+      "tipo": "parrocchiale",
       "timbro_diocesi": "OK",
       "comune_nascita": "Campinas",
       "provincia": "altro",
       "padre": {
-        "nome": "Chiara Luigi",
-        "cognome": "Costa"
-      },
-      "madre": {
-        "nome": "Marco",
-        "cognome": "Moretti"
-      },
-      "data_nascita": "24-10-1944",
-      "area_nascita": "C",
-      "stato": "Brasile"
-    }
-  },
-  {
-    "document_type": "Atto di nascita",
-    "schema": {
-      "soggetto": {
-        "nome": "Marco",
-        "cognome": "Moretti"
-      },
-      "tipo": "parrocchiale",
-      "timbro_diocesi": "OK",
-      "comune_nascita": "Rio de Janeiro",
-      "provincia": "altro",
-      "padre": {
         "nome": "Matteo",
         "cognome": "Gallo"
       },
       "madre": {
-        "nome": "Davide",
+        "nome": "Davide Maria",
         "cognome": "Lombardi"
       },
-      "data_nascita": "20-05-1978",
-      "area_nascita": "B",
+      "data_nascita": "19-07-1939",
+      "area_nascita": "E",
       "stato": "Brasile"
     }
   },
   {
-    "document_type": "Atto di morte",
-    "schema": {
-      "soggetto": {
-        "nome": "Chiara Luigi",
-        "cognome": "Costa"
-      },
-      "data_decesso": "07-12-1955"
-    }
-  },
-  {
-    "document_type": "Certificato Negativo di Naturalizzazione",
-    "schema": {
-      "soggetto": {
-        "nome": "Chiara Luigi",
-        "cognome": "Costa"
-      },
-      "pseudonimi": [
-        {
-          "nome": "Chiara",
-          "cognome": "Costo"
-        }
-      ],
-      "formula_negativa_presente": "OK",
-      "data_nascita": "21-01-1857"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Procura",
-        "soggetto": [
-          {
-            "nome": "Marco",
-            "cognome": "Moretti"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Procura",
-        "soggetto": [
-          {
-            "nome": "Marco",
-            "cognome": "Moretti"
-          }
-        ]
-      },
-      "sede_traduttore": "Italia"
-    }
-  },
-  {
-    "document_type": "Asseverazione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "documento_originale": "Procura",
-        "soggetto": [
-          {
-            "nome": "Marco",
-            "cognome": "Moretti"
-          }
-        ]
-      }
-    }
-  },
-  {
     "document_type": "Apostille",
     "schema": {
       "oggetto": {
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Matteo",
-            "cognome": "Gallo"
+            "nome": "Elena",
+            "cognome": "Rossi"
           }
         ]
       }
@@ -256,52 +164,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Matteo",
-            "cognome": "Gallo"
-          }
-        ]
-      },
-      "sede_traduttore": "Estero"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "soggetto": [
-          {
-            "nome": "Matteo",
-            "cognome": "Gallo"
-          }
-        ],
-        "documento_originale": "Atto di nascita"
-      }
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Marco",
-            "cognome": "Moretti"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Marco",
-            "cognome": "Moretti"
+            "nome": "Elena",
+            "cognome": "Rossi"
           }
         ]
       },
@@ -316,11 +180,89 @@
         "documento_originale": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Marco",
-            "cognome": "Moretti"
+            "nome": "Elena",
+            "cognome": "Rossi"
           }
         ]
       }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Elena Ana",
+        "cognome": "Rossi"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Campinas",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Matteo",
+        "cognome": "Gallo"
+      },
+      "madre": {
+        "nome": "Elena",
+        "cognome": "Rossi"
+      },
+      "data_nascita": "29-05-1998",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Elena Ana",
+            "cognome": "Rossi"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Elena Ana",
+            "cognome": "Rossi"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Elena Ana",
+            "cognome": "Rossi"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Atto di morte",
+    "schema": {
+      "soggetto": {
+        "nome": "Davide Maria",
+        "cognome": "Lombardi"
+      },
+      "data_decesso": "27-12-1928"
     }
   },
   {
@@ -330,8 +272,8 @@
         "document_type": "Atto di morte",
         "soggetto": [
           {
-            "nome": "Chiara Luigi",
-            "cognome": "Costa"
+            "nome": "Davide Maria",
+            "cognome": "Lombardi"
           }
         ]
       }
@@ -344,8 +286,8 @@
         "document_type": "Atto di morte",
         "soggetto": [
           {
-            "nome": "Chiara Luigi",
-            "cognome": "Costa"
+            "nome": "Davide Maria",
+            "cognome": "Lombardi"
           }
         ]
       },
@@ -359,8 +301,8 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Chiara Luigi",
-            "cognome": "Costa"
+            "nome": "Davide Maria",
+            "cognome": "Lombardi"
           }
         ],
         "documento_originale": "Atto di morte"
@@ -368,14 +310,31 @@
     }
   },
   {
+    "document_type": "Certificato Negativo di Naturalizzazione",
+    "schema": {
+      "soggetto": {
+        "nome": "Davide Maria",
+        "cognome": "Lombardi"
+      },
+      "pseudonimi": [
+        {
+          "nome": "Davide",
+          "cognome": "Lombardo"
+        }
+      ],
+      "formula_negativa_presente": "OK",
+      "data_nascita": "12-03-1856"
+    }
+  },
+  {
     "document_type": "Apostille",
     "schema": {
       "oggetto": {
         "document_type": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Chiara Luigi",
-            "cognome": "Costa"
+            "nome": "Davide Maria",
+            "cognome": "Lombardi"
           }
         ]
       }
@@ -388,8 +347,8 @@
         "document_type": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Chiara Luigi",
-            "cognome": "Costa"
+            "nome": "Davide Maria",
+            "cognome": "Lombardi"
           }
         ]
       },
@@ -403,8 +362,8 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Chiara Luigi",
-            "cognome": "Costa"
+            "nome": "Davide Maria",
+            "cognome": "Lombardi"
           }
         ],
         "documento_originale": "Certificato Negativo di Naturalizzazione"

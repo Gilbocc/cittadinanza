@@ -9,6 +9,7 @@ Usage:
   python3 evaluate_results.py
   python3 evaluate_results.py --base-dir res/synthetic_fascicoli
   python3 evaluate_results.py --case fascicolo_sintetico_000 fascicolo_sintetico_001
+    python3 evaluate_results.py --report-only
     python3 evaluate_results.py --report-from-info
     python3 evaluate_results.py --missing-files-report
   python3 evaluate_results.py --json
@@ -441,11 +442,49 @@ def compare_report(expected_report: dict, actual_report: dict) -> dict:
     }
 
 
+def compare_report_warnings_only(expected_report: dict, actual_report: dict) -> dict:
+    """Compare only section 11 warnings (keys + messages)."""
+    e_warn = expected_report.get("11") or {}
+    a_warn = actual_report.get("11") or {}
+
+    if not isinstance(e_warn, dict):
+        e_warn = {}
+    if not isinstance(a_warn, dict):
+        a_warn = {}
+
+    mismatches = []
+    all_keys = sorted(set(e_warn.keys()) | set(a_warn.keys()))
+    for key in all_keys:
+        ev = e_warn.get(key)
+        av = a_warn.get(key)
+        if _norm(ev) != _norm(av):
+            mismatches.append((f"11.{key}", str(ev) if ev is not None else "NULL", str(av) if av is not None else "NULL"))
+
+    section_mismatches = []
+    if mismatches:
+        section_mismatches.append({
+            "section": "11",
+            "mismatches": mismatches,
+        })
+
+    return {
+        "section_mismatches": section_mismatches,
+        "missing_sections": [],
+        "missing_ko_keys": [],
+        "extra_ko_keys": [],
+    }
+
+
 # ---------------------------------------------------------------------------
 # Per-case evaluation
 # ---------------------------------------------------------------------------
 
-def evaluate_case(fascicoli_dir: Path, support_dir: Path, report_from_info: bool = False) -> dict:
+def evaluate_case(
+    fascicoli_dir: Path,
+    support_dir: Path,
+    report_from_info: bool = False,
+    report_only: bool = False,
+) -> dict:
     """Load files and run both comparisons for one case."""
     result: dict = {"extraction": None, "report": None, "errors": []}
 
@@ -456,17 +495,18 @@ def evaluate_case(fascicoli_dir: Path, support_dir: Path, report_from_info: bool
     actual_docs = None
 
     # --- Extraction ---
-    if not info_path.exists():
-        result["errors"].append(f"info.txt not found: {info_path}")
-    if not expected_ext_path.exists():
-        result["errors"].append(f"expected_extraction.json not found: {expected_ext_path}")
-    if info_path.exists() and expected_ext_path.exists():
-        try:
-            actual_docs = json.loads(info_path.read_text(encoding="utf-8"))
-            expected_docs = json.loads(expected_ext_path.read_text(encoding="utf-8"))
-            result["extraction"] = compare_extraction(expected_docs, actual_docs)
-        except Exception as exc:
-            result["errors"].append(f"Extraction comparison failed: {exc}")
+    if not report_only:
+        if not info_path.exists():
+            result["errors"].append(f"info.txt not found: {info_path}")
+        if not expected_ext_path.exists():
+            result["errors"].append(f"expected_extraction.json not found: {expected_ext_path}")
+        if info_path.exists() and expected_ext_path.exists():
+            try:
+                actual_docs = json.loads(info_path.read_text(encoding="utf-8"))
+                expected_docs = json.loads(expected_ext_path.read_text(encoding="utf-8"))
+                result["extraction"] = compare_extraction(expected_docs, actual_docs)
+            except Exception as exc:
+                result["errors"].append(f"Extraction comparison failed: {exc}")
 
     # --- Report ---
     if not expected_rep_path.exists():
@@ -483,7 +523,10 @@ def evaluate_case(fascicoli_dir: Path, support_dir: Path, report_from_info: bool
             else:
                 actual_report = json.loads(controlli_path.read_text(encoding="utf-8"))
             expected_report = json.loads(expected_rep_path.read_text(encoding="utf-8"))
-            result["report"] = compare_report(expected_report, actual_report)
+            if report_only:
+                result["report"] = compare_report_warnings_only(expected_report, actual_report)
+            else:
+                result["report"] = compare_report(expected_report, actual_report)
         except Exception as exc:
             result["errors"].append(f"Report comparison failed: {exc}")
 
@@ -530,17 +573,28 @@ def _is_pass(ext_sc: Optional[dict], rep_sc: Optional[dict]) -> bool:
     )
 
 
+def _is_pass_report_only(rep_sc: Optional[dict]) -> bool:
+    if rep_sc is None:
+        return False
+    return (
+        rep_sc["section_mismatches"] == 0
+        and rep_sc["missing_sections"] == 0
+        and rep_sc["missing_ko_keys"] == 0
+        and rep_sc["extra_ko_keys"] == 0
+    )
+
+
 # ---------------------------------------------------------------------------
 # Human-readable output
 # ---------------------------------------------------------------------------
 
-def _print_case(case_name: str, result: dict) -> bool:
+def _print_case(case_name: str, result: dict, report_only: bool = False) -> bool:
     ext = result["extraction"]
     rep = result["report"]
     errors = result["errors"]
     es = _ext_score(ext)
     rs = _rep_score(rep)
-    passed = not errors and _is_pass(es, rs)
+    passed = not errors and (_is_pass_report_only(rs) if report_only else _is_pass(es, rs))
     status = "PASS" if passed else "FAIL"
 
     print(f"\n{'─' * 62}")
@@ -552,7 +606,7 @@ def _print_case(case_name: str, result: dict) -> bool:
         for e in errors:
             print(f"    • {e}")
 
-    if es is not None:
+    if es is not None and not report_only:
         ext_ok = es["field_mismatches"] == 0 and es["missing_docs"] == 0 and es["extra_docs"] == 0
         print(f"\n  Extraction [{' OK ' if ext_ok else 'FAIL'}]  "
               f"(matched={es['matched_docs']}, missing={es['missing_docs']}, "
@@ -703,6 +757,11 @@ def main(argv=None):
         help="Generate actual report from info.txt using DocumentValidator instead of reading controlli.txt.",
     )
     parser.add_argument(
+        "--report-only",
+        action="store_true",
+        help="Only compare expected_report.json against actual report (skip extraction/info.txt comparison).",
+    )
+    parser.add_argument(
         "--missing-files-report",
         action="store_true",
         help="Print an extraction-focused report of missing/extra document files inferred from info.txt vs expected extraction.",
@@ -724,6 +783,7 @@ def main(argv=None):
             fascicoli_dir,
             support_dir,
             report_from_info=args.report_from_info,
+            report_only=args.report_only,
         )
 
     if args.json:
@@ -731,7 +791,14 @@ def main(argv=None):
         missing_summary = _build_missing_files_summary(all_results)
         output = {
             case: {
-                "pass": not r["errors"] and _is_pass(_ext_score(r["extraction"]), _rep_score(r["report"])),
+                "pass": (
+                    not r["errors"]
+                    and (
+                        _is_pass_report_only(_rep_score(r["report"]))
+                        if args.report_only
+                        else _is_pass(_ext_score(r["extraction"]), _rep_score(r["report"]))
+                    )
+                ),
                 "errors": r["errors"],
                 "extraction": r["extraction"],
                 "report": r["report"],
@@ -746,7 +813,7 @@ def main(argv=None):
     passed_cases = []
     failed_cases = []
     for case_name, result in all_results.items():
-        ok = _print_case(case_name, result)
+        ok = _print_case(case_name, result, report_only=args.report_only)
         (passed_cases if ok else failed_cases).append(case_name)
 
     total = len(cases)
