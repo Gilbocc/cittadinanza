@@ -4,15 +4,15 @@
     "schema": {
       "avvocati": [
         {
-          "nome": "Davide",
-          "cognome": "Lombardi"
+          "nome": "Joao",
+          "cognome": "Cardoso"
         }
       ],
       "numero_ricorrenti": 1,
       "ricorrenti_maggiorenni": [
         {
-          "nome": "Luca",
-          "cognome": "Bianchi-Silva",
+          "nome": "Juliana",
+          "cognome": "Almeida-Souza",
           "nazionalita": "Brasiliana"
         }
       ],
@@ -20,23 +20,23 @@
       "ricorrenti_per_matrimonio": [],
       "linea_discendenza": [
         {
-          "nome": "Luca Luigi",
-          "cognome": "Bianchi"
+          "nome": "Jose Carlos",
+          "cognome": "Souza"
         },
         {
-          "nome": "Giulia Luz",
-          "cognome": "Conti"
+          "nome": "Rafael",
+          "cognome": "Souza"
         },
         {
-          "nome": "Luca",
-          "cognome": "Bianchi"
+          "nome": "Juliana",
+          "cognome": "Almeida"
         }
       ],
-      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo.",
-      "riassunto_linea_discendenza": "Luca Luigi Bianchi -> Giulia Luz Conti -> Luca Bianchi",
+      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo. Nel ricorso risultano varianti anagrafiche/pseudonimi: Rafael Souza (alias: Rafael Souz); Juliana Almeida (alias: Juliana Almeid).",
+      "riassunto_linea_discendenza": "Jose Carlos Souza -> Rafael Souza -> Juliana Almeida",
       "coerenza_linea_discendenza": "SI",
       "proveniente_dal_brasile": "SI",
-      "data_ricorso": "04-04-2025"
+      "data_ricorso": "11-10-2024"
     }
   },
   {
@@ -44,8 +44,8 @@
     "schema": {
       "soggetto": [
         {
-          "nome": "Luca",
-          "cognome": "Bianchi-Silva",
+          "nome": "Juliana",
+          "cognome": "Almeida-Souza",
           "minorenne": "NO",
           "rappresentanti_legali": [],
           "firma_presente": "OK"
@@ -54,81 +54,37 @@
       "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "avvocati": [
         {
-          "nome": "Davide",
-          "cognome": "Lombardi"
+          "nome": "Joao",
+          "cognome": "Cardoso"
         }
       ],
       "tribunale_brescia_indicato": "OK",
       "tribunale_indicato": "Tribunale civile competente",
-      "data_procura": "04-01-2024",
-      "rilasciata_in_italia": "NO",
-      "scritta_in_italiano": "NO"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Procura",
-        "soggetto": [
-          {
-            "nome": "Luca",
-            "cognome": "Bianchi-Silva"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Procura",
-        "soggetto": [
-          {
-            "nome": "Luca",
-            "cognome": "Bianchi-Silva"
-          }
-        ]
-      },
-      "sede_traduttore": "Estero"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "soggetto": [
-          {
-            "nome": "Luca",
-            "cognome": "Bianchi-Silva"
-          }
-        ],
-        "documento_originale": "Procura"
-      }
+      "data_procura": "21-06-2024",
+      "rilasciata_in_italia": "OK",
+      "scritta_in_italiano": "OK"
     }
   },
   {
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Luca Luigi",
-        "cognome": "Bianchi"
+        "nome": "Jose Carlos",
+        "cognome": "Souza"
       },
-      "tipo": "anagrafico",
+      "tipo": "parrocchiale",
       "timbro_diocesi": "NO",
       "comune_nascita": "Cremona",
       "provincia": "cremona",
       "padre": {
-        "nome": "Marco",
-        "cognome": "Moretti"
+        "nome": "Marcos",
+        "cognome": "Santos"
       },
       "madre": {
-        "nome": "Paolo",
-        "cognome": "Neri"
+        "nome": "Camila",
+        "cognome": "Mendes"
       },
-      "data_nascita": "26-05-1930",
+      "data_nascita": "25-05-1892",
       "area_nascita": "A",
       "stato": "Italia"
     }
@@ -137,22 +93,22 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Giulia Luz",
-        "cognome": "Conti"
+        "nome": "Rafael",
+        "cognome": "Souza"
       },
       "tipo": "anagrafico",
       "timbro_diocesi": "OK",
-      "comune_nascita": "Rio de Janeiro",
+      "comune_nascita": "Recife",
       "provincia": "altro",
       "padre": {
-        "nome": "Elena",
-        "cognome": "Rossi"
+        "nome": "Jose Carlos",
+        "cognome": "Souza"
       },
       "madre": {
-        "nome": "Luca Luigi",
-        "cognome": "Bianchi"
+        "nome": "Larissa",
+        "cognome": "Santos"
       },
-      "data_nascita": "09-11-1960",
+      "data_nascita": "09-06-2009",
       "area_nascita": "E",
       "stato": "Brasile"
     }
@@ -164,8 +120,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Giulia Luz",
-            "cognome": "Conti"
+            "nome": "Rafael",
+            "cognome": "Souza"
           }
         ]
       }
@@ -178,8 +134,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Giulia Luz",
-            "cognome": "Conti"
+            "nome": "Rafael",
+            "cognome": "Souza"
           }
         ]
       },
@@ -194,76 +150,8 @@
         "documento_originale": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Giulia Luz",
-            "cognome": "Conti"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Atto di nascita",
-    "schema": {
-      "soggetto": {
-        "nome": "Luca",
-        "cognome": "Bianchi"
-      },
-      "tipo": "parrocchiale",
-      "timbro_diocesi": "NO",
-      "comune_nascita": "Campinas",
-      "provincia": "altro",
-      "padre": {
-        "nome": "Sara",
-        "cognome": "Marini"
-      },
-      "madre": {
-        "nome": "Giulia Luz",
-        "cognome": "Conti"
-      },
-      "data_nascita": "09-02-1978",
-      "area_nascita": "E",
-      "stato": "Brasile"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Luca",
-            "cognome": "Bianchi"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Luca",
-            "cognome": "Bianchi"
-          }
-        ]
-      },
-      "sede_traduttore": "Italia"
-    }
-  },
-  {
-    "document_type": "Asseverazione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "documento_originale": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Luca",
-            "cognome": "Bianchi"
+            "nome": "Rafael",
+            "cognome": "Souza"
           }
         ]
       }
@@ -273,10 +161,10 @@
     "document_type": "Atto di morte",
     "schema": {
       "soggetto": {
-        "nome": "Luca Luigi",
-        "cognome": "Bianchi"
+        "nome": "Jose Carlos",
+        "cognome": "Souza"
       },
-      "data_decesso": "26-05-1922"
+      "data_decesso": "05-12-1951"
     }
   },
   {
@@ -286,8 +174,8 @@
         "document_type": "Atto di morte",
         "soggetto": [
           {
-            "nome": "Luca Luigi",
-            "cognome": "Bianchi"
+            "nome": "Jose Carlos",
+            "cognome": "Souza"
           }
         ]
       }
@@ -300,8 +188,8 @@
         "document_type": "Atto di morte",
         "soggetto": [
           {
-            "nome": "Luca Luigi",
-            "cognome": "Bianchi"
+            "nome": "Jose Carlos",
+            "cognome": "Souza"
           }
         ]
       },
@@ -315,8 +203,8 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Luca Luigi",
-            "cognome": "Bianchi"
+            "nome": "Jose Carlos",
+            "cognome": "Souza"
           }
         ],
         "documento_originale": "Atto di morte"
@@ -327,12 +215,12 @@
     "document_type": "Certificato Negativo di Naturalizzazione",
     "schema": {
       "soggetto": {
-        "nome": "Luca Luigi",
-        "cognome": "Bianchi"
+        "nome": "Jose Carlos",
+        "cognome": "Souza"
       },
       "pseudonimi": [],
       "formula_negativa_presente": "OK",
-      "data_nascita": "26-05-1930"
+      "data_nascita": "25-05-1892"
     }
   },
   {
@@ -342,8 +230,8 @@
         "document_type": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Luca Luigi",
-            "cognome": "Bianchi"
+            "nome": "Jose Carlos",
+            "cognome": "Souza"
           }
         ]
       }
@@ -356,100 +244,8 @@
         "document_type": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Luca Luigi",
-            "cognome": "Bianchi"
-          }
-        ]
-      },
-      "sede_traduttore": "Italia"
-    }
-  },
-  {
-    "document_type": "Asseverazione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "documento_originale": "Certificato Negativo di Naturalizzazione",
-        "soggetto": [
-          {
-            "nome": "Luca Luigi",
-            "cognome": "Bianchi"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Nota Spese",
-    "schema": {
-      "id": "UD-4733",
-      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
-      "data": "15-08-2024"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Certificato di matrimonio",
-        "soggetto": [
-          {
-            "nome": "Marco",
-            "cognome": "Moretti"
-          },
-          {
-            "nome": "Francesca",
-            "cognome": "Leoni"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Certificato di matrimonio",
-        "soggetto": [
-          {
-            "nome": "Matteo",
-            "cognome": "Gallo"
-          },
-          {
-            "nome": "Chiara",
-            "cognome": "Costa"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Certificato di matrimonio",
-    "schema": {
-      "soggetti": [
-        {
-          "nome": "Marco",
-          "cognome": "Moretti"
-        },
-        {
-          "nome": "Francesca",
-          "cognome": "Leoni"
-        }
-      ],
-      "luogo": "Belo Horizonte",
-      "data_matrimonio": "05-08-1967",
-      "note": "Documento non richiesto ai fini del riconoscimento richiesto."
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Certificato di matrimonio",
-        "soggetto": [
-          {
-            "nome": "Marco",
-            "cognome": "Moretti"
+            "nome": "Jose Carlos",
+            "cognome": "Souza"
           }
         ]
       },
@@ -463,12 +259,50 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Matteo",
-            "cognome": "Gallo"
+            "nome": "Jose Carlos",
+            "cognome": "Souza"
+          }
+        ],
+        "documento_originale": "Certificato Negativo di Naturalizzazione"
+      }
+    }
+  },
+  {
+    "document_type": "Comunicazione PEC",
+    "schema": {
+      "id": "UD-2169",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "17-12-2023"
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Beatriz",
+            "cognome": "Souza"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Marcos",
+            "cognome": "Ribeiro"
           },
           {
-            "nome": "Chiara",
-            "cognome": "Costa"
+            "nome": "Carolina",
+            "cognome": "Ribeiro"
           }
         ],
         "documento_originale": "Certificato di matrimonio"
@@ -479,15 +313,133 @@
     "document_type": "Apostille",
     "schema": {
       "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Jose",
+            "cognome": "Cardoso"
+          },
+          {
+            "nome": "Maria",
+            "cognome": "Rodrigues"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Jose",
+            "cognome": "Cardoso"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Certificato di matrimonio",
+    "schema": {
+      "soggetti": [
+        {
+          "nome": "Marcos",
+          "cognome": "Ribeiro"
+        },
+        {
+          "nome": "Carolina",
+          "cognome": "Ribeiro"
+        }
+      ],
+      "luogo": "Niteroi",
+      "data_matrimonio": "18-06-1986",
+      "note": "Documento non richiesto ai fini del riconoscimento richiesto."
+    }
+  },
+  {
+    "document_type": "Documenti Personali Vari",
+    "schema": {
+      "id": "UD-5010",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "01-12-2023"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Beatriz",
+            "cognome": "Souza"
+          },
+          {
+            "nome": "Maria",
+            "cognome": "Mendes"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Bozza Sentenza",
+    "schema": {
+      "id": "UD-7216",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "06-07-2024"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Marcos",
+            "cognome": "Ribeiro"
+          },
+          {
+            "nome": "Carolina",
+            "cognome": "Ribeiro"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Marcos",
+            "cognome": "Ribeiro"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Marco",
-            "cognome": "Moretti"
+            "nome": "Beatriz",
+            "cognome": "Souza"
           },
           {
-            "nome": "Francesca",
-            "cognome": "Leoni"
+            "nome": "Maria",
+            "cognome": "Mendes"
           }
         ],
         "documento_originale": "Certificato di matrimonio"
@@ -499,40 +451,54 @@
     "schema": {
       "soggetti": [
         {
-          "nome": "Matteo",
-          "cognome": "Gallo"
+          "nome": "Jose",
+          "cognome": "Cardoso"
         },
         {
-          "nome": "Chiara",
-          "cognome": "Costa"
+          "nome": "Maria",
+          "cognome": "Rodrigues"
         }
       ],
-      "luogo": "Santos",
-      "data_matrimonio": "18-06-1995",
+      "luogo": "Campinas",
+      "data_matrimonio": "16-11-1941",
       "note": "Documento non richiesto ai fini del riconoscimento richiesto."
     }
   },
   {
-    "document_type": "Nota Spese",
+    "document_type": "Apostille",
     "schema": {
-      "id": "UD-4814",
-      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
-      "data": "26-07-2023"
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Jose",
+            "cognome": "Cardoso"
+          },
+          {
+            "nome": "Maria",
+            "cognome": "Rodrigues"
+          }
+        ],
+        "documento_originale": "Certificato di matrimonio"
+      }
     }
   },
   {
-    "document_type": "Traduzione",
+    "document_type": "Certificato di matrimonio",
     "schema": {
-      "oggetto": {
-        "document_type": "Certificato di matrimonio",
-        "soggetto": [
-          {
-            "nome": "Matteo",
-            "cognome": "Gallo"
-          }
-        ]
-      },
-      "sede_traduttore": "Estero"
+      "soggetti": [
+        {
+          "nome": "Beatriz",
+          "cognome": "Souza"
+        },
+        {
+          "nome": "Maria",
+          "cognome": "Mendes"
+        }
+      ],
+      "luogo": "Sao Paulo",
+      "data_matrimonio": "05-02-1971",
+      "note": "Documento non richiesto ai fini del riconoscimento richiesto."
     }
   }
 ]

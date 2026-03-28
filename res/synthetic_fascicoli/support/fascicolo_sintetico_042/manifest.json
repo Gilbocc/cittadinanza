@@ -20,14 +20,14 @@
     "selection_weight": 1.35
   },
   "render_profile": {
-    "noise_scale": 1.196,
-    "artifact_scale": 1.526,
-    "jitter_scale": 1.73,
-    "watermark_prob": 0.301,
-    "punch_hole_prob": 0.527,
-    "stamp_prob": 0.737,
-    "seal_prob": 0.776,
-    "style_seed": 328403409
+    "noise_scale": 1.19,
+    "artifact_scale": 0.869,
+    "jitter_scale": 1.357,
+    "watermark_prob": 0.646,
+    "punch_hole_prob": 0.54,
+    "stamp_prob": 0.922,
+    "seal_prob": 0.232,
+    "style_seed": 636755414
   },
   "pdf_files": [
     {
@@ -49,27 +49,25 @@
         "Certificato Negativo di Naturalizzazione",
         "Apostille",
         "Traduzione",
-        "Apostille",
+        "Asseverazione",
         "Traduzione",
-        "Certificato di matrimonio",
-        "Traduzione",
-        "Certificato di matrimonio",
-        "Apostille",
-        "Apostille",
-        "Apostille",
-        "Nota Spese",
         "Avviso Udienza",
         "Apostille",
         "Apostille",
         "Apostille",
-        "Traduzione",
+        "Bozza Sentenza",
+        "Avviso Udienza",
+        "Nota Spese",
+        "Apostille",
+        "Certificato di matrimonio",
         "Apostille",
         "Apostille",
-        "Certificato di matrimonio"
+        "Nota Spese",
+        "Apostille"
       ],
-      "count": 33
+      "count": 31
     }
   ],
   "expected_doc_count": 17,
-  "mixed_doc_count": 33
+  "mixed_doc_count": 31
 }

@@ -2,14 +2,14 @@
   {
     "document_type": "IndiceProcedimento.html",
     "schema": {
-      "numero_anno_ruolo": "180/2025",
-      "data_iscrizione": "20-06-2025",
+      "numero_anno_ruolo": "515/2025",
+      "data_iscrizione": "02-12-2025",
       "iscrizione_post_28_02_2023": "OK",
       "iscrizione_pre_27_03_2025": "KO",
-      "comparsa_avvocatura": "NO",
-      "data_comparsa_avvocatura": "13-12-2024",
+      "comparsa_avvocatura": "SI",
+      "data_comparsa_avvocatura": "06-12-2025",
       "visibilita_pm": "SI",
-      "data_visibilita_pm": "21-06-2024",
+      "data_visibilita_pm": "26-03-2025",
       "interventi": "NO",
       "numero_interventi": 0,
       "intervenuti": []
@@ -20,20 +20,15 @@
     "schema": {
       "avvocati": [
         {
-          "nome": "Elena",
-          "cognome": "Rossi"
+          "nome": "Juliana",
+          "cognome": "Almeida"
         }
       ],
-      "numero_ricorrenti": 2,
+      "numero_ricorrenti": 1,
       "ricorrenti_maggiorenni": [
         {
-          "nome": "Francesca Ana",
-          "cognome": "Leoni-Silva",
-          "nazionalita": "Brasiliana"
-        },
-        {
-          "nome": "Sara",
-          "cognome": "Marini",
+          "nome": "Mateus",
+          "cognome": "Ribeiro-Cardoso",
           "nazionalita": "Brasiliana"
         }
       ],
@@ -41,31 +36,31 @@
       "ricorrenti_per_matrimonio": [],
       "linea_discendenza": [
         {
-          "nome": "Elena Maria",
-          "cognome": "Rossi"
+          "nome": "Paulo Paulo",
+          "cognome": "Lima"
         },
         {
-          "nome": "Luca",
-          "cognome": "Bianchi"
+          "nome": "Rafael Luis",
+          "cognome": "Araujo-Lima"
         },
         {
-          "nome": "Marco",
-          "cognome": "Moretti"
+          "nome": "Renata",
+          "cognome": "Silva Araujo-Lima"
         },
         {
-          "nome": "Sara",
-          "cognome": "Marini"
+          "nome": "Juliana",
+          "cognome": "Cardoso"
         },
         {
-          "nome": "Francesca Ana",
-          "cognome": "Leoni"
+          "nome": "Mateus",
+          "cognome": "Ribeiro-Cardoso"
         }
       ],
-      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo.",
-      "riassunto_linea_discendenza": "Elena Maria Rossi -> Luca Bianchi -> Marco Moretti -> Sara Marini -> Francesca Ana Leoni",
+      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo. Nel ricorso risultano varianti anagrafiche/pseudonimi: Mateus Ribeiro-Cardoso (alias: Mateus Ribeir).",
+      "riassunto_linea_discendenza": "Paulo Paulo Lima -> Rafael Luis Araujo-Lima -> Renata Silva Araujo-Lima -> Juliana Cardoso -> Mateus Ribeiro-Cardoso",
       "coerenza_linea_discendenza": "SI",
       "proveniente_dal_brasile": "SI",
-      "data_ricorso": "26-04-2024"
+      "data_ricorso": "27-05-2024"
     }
   },
   {
@@ -73,8 +68,8 @@
     "schema": {
       "soggetto": [
         {
-          "nome": "Francesca Ana",
-          "cognome": "Leoni-Silva",
+          "nome": "Mateus",
+          "cognome": "Ribeiro-Cardoso",
           "minorenne": "NO",
           "rappresentanti_legali": [],
           "firma_presente": "OK"
@@ -83,121 +78,37 @@
       "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "avvocati": [
         {
-          "nome": "Elena",
-          "cognome": "Rossi"
+          "nome": "Juliana",
+          "cognome": "Almeida"
         }
       ],
       "tribunale_brescia_indicato": "OK",
       "tribunale_indicato": "Tribunale civile competente",
-      "data_procura": "09-04-2024",
-      "rilasciata_in_italia": "NO",
+      "data_procura": "14-06-2024",
+      "rilasciata_in_italia": "OK",
       "scritta_in_italiano": "OK"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Procura",
-        "soggetto": [
-          {
-            "nome": "Francesca Ana",
-            "cognome": "Leoni-Silva"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Procura",
-    "schema": {
-      "soggetto": [
-        {
-          "nome": "Sara",
-          "cognome": "Marini",
-          "minorenne": "NO",
-          "rappresentanti_legali": [],
-          "firma_presente": "OK"
-        }
-      ],
-      "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
-      "avvocati": [
-        {
-          "nome": "Elena",
-          "cognome": "Rossi"
-        }
-      ],
-      "tribunale_brescia_indicato": "OK",
-      "tribunale_indicato": "Tribunale civile competente",
-      "data_procura": "14-04-2024",
-      "rilasciata_in_italia": "NO",
-      "scritta_in_italiano": "NO"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Procura",
-        "soggetto": [
-          {
-            "nome": "Sara",
-            "cognome": "Marini"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Procura",
-        "soggetto": [
-          {
-            "nome": "Sara",
-            "cognome": "Marini"
-          }
-        ]
-      },
-      "sede_traduttore": "Estero"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "soggetto": [
-          {
-            "nome": "Sara",
-            "cognome": "Marini"
-          }
-        ],
-        "documento_originale": "Procura"
-      }
     }
   },
   {
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Elena Maria",
-        "cognome": "Rossi"
+        "nome": "Paulo Paulo",
+        "cognome": "Lima"
       },
       "tipo": "anagrafico",
       "timbro_diocesi": "OK",
       "comune_nascita": "Cremona",
       "provincia": "cremona",
       "padre": {
-        "nome": "Elena",
-        "cognome": "Rossi"
+        "nome": "Pedro",
+        "cognome": "Rodrigues"
       },
       "madre": {
-        "nome": "Marco",
-        "cognome": "Moretti"
+        "nome": "Fernanda",
+        "cognome": "Cardoso"
       },
-      "data_nascita": "10-07-1883",
+      "data_nascita": "31-01-1850",
       "area_nascita": "A",
       "stato": "Italia"
     }
@@ -206,22 +117,22 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Luca",
-        "cognome": "Bianchi"
+        "nome": "Rafael Luis",
+        "cognome": "Araujo-Lima"
       },
       "tipo": "anagrafico",
       "timbro_diocesi": "NO",
-      "comune_nascita": "Santos",
+      "comune_nascita": "Rio de Janeiro",
       "provincia": "altro",
       "padre": {
-        "nome": "Marco",
-        "cognome": "Moretti"
+        "nome": "Paulo Paulo",
+        "cognome": "Lima"
       },
       "madre": {
-        "nome": "Elena Maria",
-        "cognome": "Rossi"
+        "nome": "Juliana",
+        "cognome": "Oliveira"
       },
-      "data_nascita": "04-03-1998",
+      "data_nascita": "12-07-2007",
       "area_nascita": "E",
       "stato": "Brasile"
     }
@@ -233,8 +144,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Luca",
-            "cognome": "Bianchi"
+            "nome": "Rafael Luis",
+            "cognome": "Araujo-Lima"
           }
         ]
       }
@@ -247,8 +158,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Luca",
-            "cognome": "Bianchi"
+            "nome": "Rafael Luis",
+            "cognome": "Araujo-Lima"
           }
         ]
       },
@@ -263,8 +174,8 @@
         "documento_originale": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Luca",
-            "cognome": "Bianchi"
+            "nome": "Rafael Luis",
+            "cognome": "Araujo-Lima"
           }
         ]
       }
@@ -274,90 +185,22 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Marco",
-        "cognome": "Moretti"
-      },
-      "tipo": "anagrafico",
-      "timbro_diocesi": "NO",
-      "comune_nascita": "Porto Alegre",
-      "provincia": "altro",
-      "padre": {
-        "nome": "Sara",
-        "cognome": "Marini"
-      },
-      "madre": {
-        "nome": "Luca",
-        "cognome": "Bianchi"
-      },
-      "data_nascita": "08-09-1987",
-      "area_nascita": "E",
-      "stato": "Brasile"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Marco",
-            "cognome": "Moretti"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Marco",
-            "cognome": "Moretti"
-          }
-        ]
-      },
-      "sede_traduttore": "Estero"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "soggetto": [
-          {
-            "nome": "Marco",
-            "cognome": "Moretti"
-          }
-        ],
-        "documento_originale": "Atto di nascita"
-      }
-    }
-  },
-  {
-    "document_type": "Atto di nascita",
-    "schema": {
-      "soggetto": {
-        "nome": "Sara",
-        "cognome": "Marini"
+        "nome": "Renata",
+        "cognome": "Silva Araujo-Lima"
       },
       "tipo": "parrocchiale",
-      "timbro_diocesi": "OK",
-      "comune_nascita": "Belo Horizonte",
+      "timbro_diocesi": "NO",
+      "comune_nascita": "Salvador",
       "provincia": "altro",
       "padre": {
-        "nome": "Sara",
-        "cognome": "Marini"
+        "nome": "Rafael Luis",
+        "cognome": "Araujo-Lima"
       },
       "madre": {
-        "nome": "Marco",
-        "cognome": "Moretti"
+        "nome": "Renata",
+        "cognome": "Rodrigues"
       },
-      "data_nascita": "18-07-1943",
+      "data_nascita": "25-12-2002",
       "area_nascita": "E",
       "stato": "Brasile"
     }
@@ -369,8 +212,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Sara",
-            "cognome": "Marini"
+            "nome": "Renata",
+            "cognome": "Silva Araujo-Lima"
           }
         ]
       }
@@ -383,137 +226,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Sara",
-            "cognome": "Marini"
-          }
-        ]
-      },
-      "sede_traduttore": "Estero"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "soggetto": [
-          {
-            "nome": "Sara",
-            "cognome": "Marini"
-          }
-        ],
-        "documento_originale": "Atto di nascita"
-      }
-    }
-  },
-  {
-    "document_type": "Atto di nascita",
-    "schema": {
-      "soggetto": {
-        "nome": "Francesca Ana",
-        "cognome": "Leoni"
-      },
-      "tipo": "anagrafico",
-      "timbro_diocesi": "OK",
-      "comune_nascita": "Rio de Janeiro",
-      "provincia": "altro",
-      "padre": {
-        "nome": "Chiara",
-        "cognome": "Costa"
-      },
-      "madre": {
-        "nome": "Sara",
-        "cognome": "Marini"
-      },
-      "data_nascita": "11-06-2001",
-      "area_nascita": "E",
-      "stato": "Brasile"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Francesca Ana",
-            "cognome": "Leoni"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Francesca Ana",
-            "cognome": "Leoni"
-          }
-        ]
-      },
-      "sede_traduttore": "Estero"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "soggetto": [
-          {
-            "nome": "Francesca Ana",
-            "cognome": "Leoni"
-          }
-        ],
-        "documento_originale": "Atto di nascita"
-      }
-    }
-  },
-  {
-    "document_type": "Certificato Negativo di Naturalizzazione",
-    "schema": {
-      "soggetto": {
-        "nome": "Elena Maria",
-        "cognome": "Rossi"
-      },
-      "pseudonimi": [
-        {
-          "nome": "Elena",
-          "cognome": "Rosso"
-        }
-      ],
-      "formula_negativa_presente": "OK",
-      "data_nascita": "10-07-1883"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Certificato Negativo di Naturalizzazione",
-        "soggetto": [
-          {
-            "nome": "Elena Maria",
-            "cognome": "Rossi"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Certificato Negativo di Naturalizzazione",
-        "soggetto": [
-          {
-            "nome": "Elena Maria",
-            "cognome": "Rossi"
+            "nome": "Renata",
+            "cognome": "Silva Araujo-Lima"
           }
         ]
       },
@@ -525,13 +239,259 @@
     "schema": {
       "oggetto": {
         "document_type": "Traduzione",
-        "documento_originale": "Certificato Negativo di Naturalizzazione",
+        "documento_originale": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Elena Maria",
-            "cognome": "Rossi"
+            "nome": "Renata",
+            "cognome": "Silva Araujo-Lima"
           }
         ]
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Juliana",
+        "cognome": "Cardoso"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Fortaleza",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Pedro",
+        "cognome": "Ribeiro"
+      },
+      "madre": {
+        "nome": "Renata",
+        "cognome": "Silva Araujo-Lima"
+      },
+      "data_nascita": "18-04-1944",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Juliana",
+            "cognome": "Cardoso"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Juliana",
+            "cognome": "Cardoso"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Juliana",
+            "cognome": "Cardoso"
+          }
+        ],
+        "documento_originale": "Atto di nascita"
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Mateus",
+        "cognome": "Ribeiro-Cardoso"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Porto Alegre",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Mateus",
+        "cognome": "Nunes"
+      },
+      "madre": {
+        "nome": "Juliana",
+        "cognome": "Cardoso"
+      },
+      "data_nascita": "30-01-1932",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Mateus",
+            "cognome": "Ribeiro-Cardoso"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Mateus",
+            "cognome": "Ribeiro-Cardoso"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Mateus",
+            "cognome": "Ribeiro-Cardoso"
+          }
+        ],
+        "documento_originale": "Atto di nascita"
+      }
+    }
+  },
+  {
+    "document_type": "Atto di morte",
+    "schema": {
+      "soggetto": {
+        "nome": "Paulo Paulo",
+        "cognome": "Lima"
+      },
+      "data_decesso": "28-02-1916"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di morte",
+        "soggetto": [
+          {
+            "nome": "Paulo Paulo",
+            "cognome": "Lima"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di morte",
+        "soggetto": [
+          {
+            "nome": "Paulo Paulo",
+            "cognome": "Lima"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Paulo Paulo",
+            "cognome": "Lima"
+          }
+        ],
+        "documento_originale": "Atto di morte"
+      }
+    }
+  },
+  {
+    "document_type": "Certificato Negativo di Naturalizzazione",
+    "schema": {
+      "soggetto": {
+        "nome": "Paulo Paulo",
+        "cognome": "Lima"
+      },
+      "pseudonimi": [],
+      "formula_negativa_presente": "OK",
+      "data_nascita": "31-01-1850"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato Negativo di Naturalizzazione",
+        "soggetto": [
+          {
+            "nome": "Paulo Paulo",
+            "cognome": "Lima"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato Negativo di Naturalizzazione",
+        "soggetto": [
+          {
+            "nome": "Paulo Paulo",
+            "cognome": "Lima"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Paulo Paulo",
+            "cognome": "Lima"
+          }
+        ],
+        "documento_originale": "Certificato Negativo di Naturalizzazione"
       }
     }
   }

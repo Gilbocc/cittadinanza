@@ -2,14 +2,14 @@
   {
     "document_type": "IndiceProcedimento.html",
     "schema": {
-      "numero_anno_ruolo": "901/2025",
-      "data_iscrizione": "13-06-2025",
+      "numero_anno_ruolo": "971/2025",
+      "data_iscrizione": "07-12-2025",
       "iscrizione_post_28_02_2023": "OK",
       "iscrizione_pre_27_03_2025": "KO",
-      "comparsa_avvocatura": "SI",
-      "data_comparsa_avvocatura": "09-05-2024",
+      "comparsa_avvocatura": "NO",
+      "data_comparsa_avvocatura": "26-10-2025",
       "visibilita_pm": "NO",
-      "data_visibilita_pm": "02-10-2024",
+      "data_visibilita_pm": "19-06-2024",
       "interventi": "NO",
       "numero_interventi": 0,
       "intervenuti": []
@@ -20,45 +20,45 @@
     "schema": {
       "avvocati": [
         {
-          "nome": "Elena",
-          "cognome": "Rossi"
+          "nome": "Antonio",
+          "cognome": "Oliveira"
         }
       ],
       "numero_ricorrenti": 1,
       "ricorrenti_maggiorenni": [
         {
-          "nome": "Marco",
-          "cognome": "Moretti-Silva",
+          "nome": "Jose",
+          "cognome": "Rodrigues-Souza",
           "nazionalita": "Brasiliana"
         }
       ],
       "ricorrenti_minorenni": [],
       "ricorrenti_per_matrimonio": [
         {
-          "nome": "Luca",
-          "cognome": "Bianchi",
+          "nome": "Mateus",
+          "cognome": "Almeida",
           "nazionalita": "Brasiliana"
         }
       ],
       "linea_discendenza": [
         {
-          "nome": "Luca Carlo",
-          "cognome": "Bianchi"
+          "nome": "Carlos Miguel",
+          "cognome": "Pereira"
         },
         {
-          "nome": "Marco",
-          "cognome": "Moretti"
+          "nome": "Renata",
+          "cognome": "Costa-Pereira"
         },
         {
-          "nome": "Marco",
-          "cognome": "Moretti"
+          "nome": "Jose",
+          "cognome": "Rodrigues"
         }
       ],
-      "racconto_linea_discendenza": "La ricostruzione presenta una possibile lacuna intermedia da verificare sui certificati allegati.",
-      "riassunto_linea_discendenza": "Luca Carlo Bianchi -> Marco Moretti",
-      "coerenza_linea_discendenza": "KO",
+      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo.",
+      "riassunto_linea_discendenza": "Carlos Miguel Pereira -> Renata Costa-Pereira -> Jose Rodrigues",
+      "coerenza_linea_discendenza": "SI",
       "proveniente_dal_brasile": "SI",
-      "data_ricorso": "31-01-2024"
+      "data_ricorso": "12-06-2024"
     }
   },
   {
@@ -66,8 +66,8 @@
     "schema": {
       "soggetto": [
         {
-          "nome": "Marco",
-          "cognome": "Moretti-Silva",
+          "nome": "Jose",
+          "cognome": "Rodrigues-Souza",
           "minorenne": "NO",
           "rappresentanti_legali": [],
           "firma_presente": "OK"
@@ -76,13 +76,13 @@
       "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "avvocati": [
         {
-          "nome": "Francesca",
-          "cognome": "Leoni"
+          "nome": "Beatriz",
+          "cognome": "Ribeiro"
         }
       ],
       "tribunale_brescia_indicato": "OK",
       "tribunale_indicato": "Tribunale civile competente",
-      "data_procura": "14-01-2024",
+      "data_procura": "31-05-2024",
       "rilasciata_in_italia": "OK",
       "scritta_in_italiano": "OK"
     }
@@ -91,22 +91,22 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Luca Carlo",
-        "cognome": "Bianchi"
+        "nome": "Carlos Miguel",
+        "cognome": "Pereira"
       },
       "tipo": "anagrafico",
-      "timbro_diocesi": "OK",
-      "comune_nascita": "Brescia",
-      "provincia": "brescia",
+      "timbro_diocesi": "NO",
+      "comune_nascita": "Mantova",
+      "provincia": "mantova",
       "padre": {
-        "nome": "Elena",
-        "cognome": "Rossi"
+        "nome": "Diego",
+        "cognome": "Araujo"
       },
       "madre": {
-        "nome": "Matteo",
-        "cognome": "Gallo"
+        "nome": "Beatriz",
+        "cognome": "Oliveira"
       },
-      "data_nascita": "10-04-1859",
+      "data_nascita": "01-11-1850",
       "area_nascita": "A",
       "stato": "Italia"
     }
@@ -115,22 +115,22 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Marco",
-        "cognome": "Moretti"
+        "nome": "Renata",
+        "cognome": "Costa-Pereira"
       },
       "tipo": "anagrafico",
       "timbro_diocesi": "OK",
-      "comune_nascita": "Brasilia",
+      "comune_nascita": "Curitiba",
       "provincia": "altro",
       "padre": {
-        "nome": "Sara",
-        "cognome": "Marini"
+        "nome": "Carlos Miguel",
+        "cognome": "Pereira"
       },
       "madre": {
-        "nome": "Luca Carlo",
-        "cognome": "Bianchi"
+        "nome": "Beatriz",
+        "cognome": "Santos"
       },
-      "data_nascita": "26-03-1939",
+      "data_nascita": "05-10-1988",
       "area_nascita": "E",
       "stato": "Brasile"
     }
@@ -142,8 +142,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Marco",
-            "cognome": "Moretti"
+            "nome": "Renata",
+            "cognome": "Costa-Pereira"
           }
         ]
       }
@@ -156,8 +156,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Marco",
-            "cognome": "Moretti"
+            "nome": "Renata",
+            "cognome": "Costa-Pereira"
           }
         ]
       },
@@ -172,8 +172,8 @@
         "documento_originale": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Marco",
-            "cognome": "Moretti"
+            "nome": "Renata",
+            "cognome": "Costa-Pereira"
           }
         ]
       }
@@ -183,22 +183,22 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Marco",
-        "cognome": "Moretti"
+        "nome": "Jose",
+        "cognome": "Rodrigues"
       },
-      "tipo": "anagrafico",
+      "tipo": "parrocchiale",
       "timbro_diocesi": "OK",
-      "comune_nascita": "Santos",
+      "comune_nascita": "Niteroi",
       "provincia": "altro",
       "padre": {
-        "nome": "Sara",
-        "cognome": "Marini"
+        "nome": "Pedro",
+        "cognome": "Silva"
       },
       "madre": {
-        "nome": "Marco",
-        "cognome": "Moretti"
+        "nome": "Renata",
+        "cognome": "Costa-Pereira"
       },
-      "data_nascita": "26-08-1975",
+      "data_nascita": "18-09-1996",
       "area_nascita": "E",
       "stato": "Brasile"
     }
@@ -210,8 +210,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Marco",
-            "cognome": "Moretti"
+            "nome": "Jose",
+            "cognome": "Rodrigues"
           }
         ]
       }
@@ -224,8 +224,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Marco",
-            "cognome": "Moretti"
+            "nome": "Jose",
+            "cognome": "Rodrigues"
           }
         ]
       },
@@ -239,8 +239,8 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Marco",
-            "cognome": "Moretti"
+            "nome": "Jose",
+            "cognome": "Rodrigues"
           }
         ],
         "documento_originale": "Atto di nascita"
@@ -251,10 +251,10 @@
     "document_type": "Atto di morte",
     "schema": {
       "soggetto": {
-        "nome": "Luca Carlo",
-        "cognome": "Bianchi"
+        "nome": "Carlos Miguel",
+        "cognome": "Pereira"
       },
-      "data_decesso": "18-06-1900"
+      "data_decesso": "11-03-1940"
     }
   },
   {
@@ -264,8 +264,8 @@
         "document_type": "Atto di morte",
         "soggetto": [
           {
-            "nome": "Luca Carlo",
-            "cognome": "Bianchi"
+            "nome": "Carlos Miguel",
+            "cognome": "Pereira"
           }
         ]
       }
@@ -278,8 +278,8 @@
         "document_type": "Atto di morte",
         "soggetto": [
           {
-            "nome": "Luca Carlo",
-            "cognome": "Bianchi"
+            "nome": "Carlos Miguel",
+            "cognome": "Pereira"
           }
         ]
       },
@@ -293,8 +293,8 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Luca Carlo",
-            "cognome": "Bianchi"
+            "nome": "Carlos Miguel",
+            "cognome": "Pereira"
           }
         ],
         "documento_originale": "Atto di morte"
@@ -305,17 +305,12 @@
     "document_type": "Certificato Negativo di Naturalizzazione",
     "schema": {
       "soggetto": {
-        "nome": "Luca Carlo",
-        "cognome": "Bianchi"
+        "nome": "Carlos Miguel",
+        "cognome": "Pereira"
       },
-      "pseudonimi": [
-        {
-          "nome": "Luca",
-          "cognome": "Biancho"
-        }
-      ],
+      "pseudonimi": [],
       "formula_negativa_presente": "OK",
-      "data_nascita": "10-04-1859"
+      "data_nascita": "01-11-1850"
     }
   },
   {
@@ -325,8 +320,8 @@
         "document_type": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Luca Carlo",
-            "cognome": "Bianchi"
+            "nome": "Carlos Miguel",
+            "cognome": "Pereira"
           }
         ]
       }
@@ -339,8 +334,74 @@
         "document_type": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Luca Carlo",
-            "cognome": "Bianchi"
+            "nome": "Carlos Miguel",
+            "cognome": "Pereira"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Certificato Negativo di Naturalizzazione",
+        "soggetto": [
+          {
+            "nome": "Carlos Miguel",
+            "cognome": "Pereira"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Fernanda",
+            "cognome": "Mendes"
+          },
+          {
+            "nome": "Mateus",
+            "cognome": "Santos"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Rafael",
+            "cognome": "Silva"
+          },
+          {
+            "nome": "Larissa",
+            "cognome": "Souza"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Rafael",
+            "cognome": "Silva"
           }
         ]
       },
@@ -354,31 +415,24 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Luca Carlo",
-            "cognome": "Bianchi"
-          }
-        ],
-        "documento_originale": "Certificato Negativo di Naturalizzazione"
-      }
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "soggetto": [
-          {
-            "nome": "Francesca",
-            "cognome": "Leoni"
+            "nome": "Rafael",
+            "cognome": "Silva"
           },
           {
-            "nome": "Elena",
-            "cognome": "Rossi"
+            "nome": "Larissa",
+            "cognome": "Souza"
           }
         ],
         "documento_originale": "Certificato di matrimonio"
       }
+    }
+  },
+  {
+    "document_type": "Nota Spese",
+    "schema": {
+      "id": "UD-3571",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "01-11-2025"
     }
   },
   {
@@ -388,53 +442,30 @@
         "document_type": "Documento non supportato",
         "soggetto": [
           {
-            "nome": "Luca",
-            "cognome": "Bianchi"
+            "nome": "Maria",
+            "cognome": "Souza"
           }
         ],
-        "documento_originale": "Documenti Personali Vari"
+        "documento_originale": "Bozza Sentenza"
       }
     }
   },
   {
-    "document_type": "Traduzione",
+    "document_type": "Certificato di matrimonio",
     "schema": {
-      "oggetto": {
-        "document_type": "Certificato di matrimonio",
-        "soggetto": [
-          {
-            "nome": "Elena",
-            "cognome": "Rossi"
-          }
-        ]
-      },
-      "sede_traduttore": "Estero"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Certificato di matrimonio",
-        "soggetto": [
-          {
-            "nome": "Francesca",
-            "cognome": "Leoni"
-          },
-          {
-            "nome": "Elena",
-            "cognome": "Rossi"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Documenti Personali Vari",
-    "schema": {
-      "id": "UD-7108",
-      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
-      "data": "02-09-2023"
+      "soggetti": [
+        {
+          "nome": "Rafael",
+          "cognome": "Silva"
+        },
+        {
+          "nome": "Larissa",
+          "cognome": "Souza"
+        }
+      ],
+      "luogo": "Recife",
+      "data_matrimonio": "09-12-1997",
+      "note": "Documento non richiesto ai fini del riconoscimento richiesto."
     }
   },
   {
@@ -444,16 +475,42 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Elena",
-            "cognome": "Rossi"
+            "nome": "Fernanda",
+            "cognome": "Mendes"
           },
           {
-            "nome": "Chiara",
-            "cognome": "Costa"
+            "nome": "Mateus",
+            "cognome": "Santos"
           }
         ],
         "documento_originale": "Certificato di matrimonio"
       }
+    }
+  },
+  {
+    "document_type": "Bozza Sentenza",
+    "schema": {
+      "id": "UD-3709",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "03-06-2023"
+    }
+  },
+  {
+    "document_type": "Certificato di matrimonio",
+    "schema": {
+      "soggetti": [
+        {
+          "nome": "Fernanda",
+          "cognome": "Mendes"
+        },
+        {
+          "nome": "Mateus",
+          "cognome": "Santos"
+        }
+      ],
+      "luogo": "Porto Alegre",
+      "data_matrimonio": "13-09-2009",
+      "note": "Documento non richiesto ai fini del riconoscimento richiesto."
     }
   },
   {
@@ -463,82 +520,12 @@
         "document_type": "Certificato di matrimonio",
         "soggetto": [
           {
-            "nome": "Francesca",
-            "cognome": "Leoni"
+            "nome": "Fernanda",
+            "cognome": "Mendes"
           }
         ]
       },
       "sede_traduttore": "Estero"
-    }
-  },
-  {
-    "document_type": "Certificato di matrimonio",
-    "schema": {
-      "soggetti": [
-        {
-          "nome": "Francesca",
-          "cognome": "Leoni"
-        },
-        {
-          "nome": "Elena",
-          "cognome": "Rossi"
-        }
-      ],
-      "luogo": "Recife",
-      "data_matrimonio": "15-12-2011",
-      "note": "Documento non richiesto ai fini del riconoscimento richiesto."
-    }
-  },
-  {
-    "document_type": "Certificato di matrimonio",
-    "schema": {
-      "soggetti": [
-        {
-          "nome": "Elena",
-          "cognome": "Rossi"
-        },
-        {
-          "nome": "Chiara",
-          "cognome": "Costa"
-        }
-      ],
-      "luogo": "Campinas",
-      "data_matrimonio": "30-09-1985",
-      "note": "Documento non richiesto ai fini del riconoscimento richiesto."
-    }
-  },
-  {
-    "document_type": "Avviso Udienza",
-    "schema": {
-      "id": "UD-4656",
-      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
-      "data": "22-11-2025"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Certificato di matrimonio",
-        "soggetto": [
-          {
-            "nome": "Elena",
-            "cognome": "Rossi"
-          },
-          {
-            "nome": "Chiara",
-            "cognome": "Costa"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Bozza Sentenza",
-    "schema": {
-      "id": "UD-6241",
-      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
-      "data": "09-07-2024"
     }
   }
 ]

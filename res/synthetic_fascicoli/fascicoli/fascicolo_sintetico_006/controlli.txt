@@ -1,6 +1,6 @@
 {
   "0": {
-    "A": "KO",
+    "A": "OK",
     "B": "OK",
     "C": "OK",
     "Ci": "NULL",
@@ -16,41 +16,41 @@
     "1": "OK"
   },
   "2": {
-    "A": "NULL",
-    "B": "NULL",
-    "C": "NULL",
-    "D": "NULL",
+    "A": "22.02.2024",
+    "B": "OK",
+    "C": "OK",
+    "D": "NO",
     "Di": "NULL",
-    "E": "NULL",
-    "Ei": "NULL",
-    "F": "NULL",
+    "E": "SI",
+    "Ei": "16.12.2025",
+    "F": "NO",
     "Fi": "NULL",
     "Fii": "NULL",
     "Fiii": "NULL",
-    "G": "NULL"
+    "G": "0308-2025"
   },
   "3": {
-    "A": "Sara Marini, Giulia Conti",
+    "A": "Camila Santos, Renata Cardoso",
     "B": 1,
-    "C": "Davide Lombardi-Silva",
-    "D": "Davide Lombardi-Silva: Brasiliana",
+    "C": "Rafael Almeida Costa-Souza",
+    "D": "Rafael Almeida Costa-Souza: Brasiliana",
     "E": "NO",
     "Ei": "NULL",
     "Eii": "NULL",
-    "F": "OK; Paolo Luigi Neri -> Davide Lombardi",
+    "F": "OK; Patricia Aparecida Oliveira -> Beatriz Santos -> Ana Luz Mendes -> Larissa Mendes -> Pedro Carlos Costa -> Rafael Almeida Costa",
     "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
     "Gi": "NULL"
   },
   "4": {
     "4/1": {
-      "A": "Davide Lombardi-Silva",
+      "A": "Rafael Almeida Costa-Souza",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Davide Lombardi-Silva",
+      "B": "OK; firma del ricorrente Rafael Almeida Costa-Souza",
       "C": "OK",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "E": "OK",
       "Ei": "NULL",
-      "F": "27.02.2024",
+      "F": "18.07.2025",
       "G": "OK",
       "H": "OK",
       "Hi": "NULL",
@@ -62,12 +62,12 @@
     }
   },
   "5": {
-    "A": "OK",
-    "Ai": "NULL",
-    "C": "Mantova",
+    "A": "NO",
+    "Ai": "OK",
+    "C": "Brescia",
     "D": "OK",
-    "E": "Padre: Sara Marini, Madre: Chiara Costa",
-    "F": "19.08.1902"
+    "E": "Padre: Marcos Santos, Madre: Juliana Mendes",
+    "F": "17.08.1897"
   },
   "6": {
     "A": "OK",
@@ -86,7 +86,7 @@
   },
   "7": {
     "A": "OK",
-    "B": "NULL",
+    "B": "Patricia Oliveiro",
     "C": "OK",
     "D": "OK",
     "E": "OK",
@@ -95,18 +95,46 @@
   },
   "8": {
     "8/1": {
-      "A": "Davide Lombardi",
+      "A": "Beatriz Santos",
       "B": "OK",
       "C": "OK",
       "D": "OK",
       "Di": "NULL",
       "Dii": "OK"
+    },
+    "8/2": {
+      "A": "Ana Luz Mendes",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
+    },
+    "8/3": {
+      "A": "Larissa Mendes",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/4": {
+      "A": "Pedro Carlos Costa",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/5": {
+      "A": "Rafael Almeida Costa",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
     }
   },
-  "10": [
-    "0A"
-  ],
-  "11": {
-    "0A": "IndiceProcedimento.html mancante"
-  }
+  "10": null,
+  "11": null
 }

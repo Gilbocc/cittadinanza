@@ -61,14 +61,23 @@ class DocumentValidator:
     def format_date(self, value):
         if value in (None, "", "-", "NULL"):
             return "NULL"
+        parsed = self.parse_flexible_date(value)
+        if parsed is not None:
+            return parsed.strftime("%d.%m.%Y")
+        return str(value).replace("-", ".")
+
+    def parse_flexible_date(self, value):
+        if value in (None, "", "-", "NULL"):
+            return None
         if isinstance(value, datetime):
-            return value.strftime("%d.%m.%Y")
+            return value
+        raw_s = str(value).strip()
         for fmt in ("%d-%m-%Y", "%d.%m.%Y", "%Y-%m-%d"):
             try:
-                return datetime.strptime(value, fmt).strftime("%d.%m.%Y")
+                return datetime.strptime(raw_s, fmt)
             except Exception:
                 continue
-        return str(value).replace("-", ".")
+        return None
 
     def answer_ok_ko(self, value):
         normalized = self.normalize(str(value)) if value is not None else ""
@@ -128,34 +137,56 @@ class DocumentValidator:
         if not text:
             return set()
         normalized = self.normalize(str(text))
-        return set(token for token in normalized.split() if token and len(token) > 1)
+        return set(token for token in re.split(r"[^a-z0-9]+", normalized) if token and len(token) > 1)
 
     def _field_match(self, a, b):
         """Match two name fields with resilience to multi-word names and misspellings."""
         a_norm = self.normalize(a or "")
         b_norm = self.normalize(b or "")
+        a_compact = " ".join(re.split(r"[^a-z0-9]+", a_norm)).strip()
+        b_compact = " ".join(re.split(r"[^a-z0-9]+", b_norm)).strip()
         
         if not a_norm or not b_norm:
             return False
-        
-        # Exact substring match (preferred)
-        if a_norm in b_norm or b_norm in a_norm:
+
+        if a_norm == b_norm or a_compact == b_compact:
             return True
+        
+        # Exact substring match (preferred), but avoid collapsing short single-
+        # token names such as "Ana" into "Ana Ana".
+        compact_pairs = ((a_compact, b_compact), (b_compact, a_compact))
+        for shorter, longer in compact_pairs:
+            if shorter and shorter in longer:
+                if " " in shorter or len(shorter) >= 4:
+                    return True
         
         # Token overlap: check if any single-word tokens match (handles multi-word names spread across fields)
         a_tokens = self._split_name_tokens(a)
         b_tokens = self._split_name_tokens(b)
         
         if a_tokens and b_tokens:
-            # Exact token overlap
-            if a_tokens.intersection(b_tokens):
+            # Exact token overlap. Require stronger evidence than a single short
+            # token so we do not collapse identities like "Ana" and "Ana Ana".
+            shared_tokens = a_tokens.intersection(b_tokens)
+            if len(shared_tokens) >= 2:
                 return True
+            if len(shared_tokens) == 1:
+                shared = next(iter(shared_tokens))
+                if min(len(a_tokens), len(b_tokens)) == 1 and len(shared) >= 4:
+                    return True
             
-            # Typo-tolerant token overlap: any token pair differs by 1 or 2 characters (edit distance <= 1)
+            # Typo-tolerant token overlap with the same guardrails.
+            similar_pairs = 0
             for a_tok in a_tokens:
                 for b_tok in b_tokens:
                     if self._is_typo_variant(a_tok, b_tok, max_distance=1):
-                        return True
+                        similar_pairs += 1
+            if similar_pairs >= 2:
+                return True
+            if similar_pairs == 1 and min(len(a_tokens), len(b_tokens)) == 1:
+                longest = max(max((len(t) for t in a_tokens), default=0), max((len(t) for t in b_tokens), default=0))
+                if longest >= 4:
+                    return True
         
         return False
 
@@ -476,9 +507,21 @@ class DocumentValidator:
         
         instr = indice.get("schema", {})
 
-        data_iscrizione = self.format_date(instr.get("data_iscrizione", "NULL"))
-        check_post_2023 = self.answer_ok_ko(instr.get("iscrizione_post_28_02_2023", "NULL"))
-        check_pre_2025 = self.answer_ok_ko(instr.get("iscrizione_pre_27_03_2025", "NULL"))
+        raw_data_iscrizione = instr.get("data_iscrizione", "NULL")
+        iscrizione_dt = self.parse_flexible_date(raw_data_iscrizione)
+        data_iscrizione = self.format_date(raw_data_iscrizione)
+
+        if iscrizione_dt is None:
+            # If an indice exists but the registration date is missing/unparseable,
+            # the temporal checks cannot be satisfied and must fail.
+            check_post_2023 = "KO"
+            check_pre_2025 = "KO"
+        else:
+            # 2B: dopo il 28.02.2023 incluso
+            check_post_2023 = "OK" if iscrizione_dt >= datetime(2023, 2, 28) else "KO"
+            # 2C: prima del 27.03.2025 escluso
+            check_pre_2025 = "OK" if iscrizione_dt < datetime(2025, 3, 27) else "KO"
+
         comparsa_avv = self.answer_yes_no(instr.get("comparsa_avvocatura", "NULL"))
         data_comparsa_avv = self.format_date(instr.get("data_comparsa_avvocatura", "NULL")) if comparsa_avv == "SI" else "NULL"
         visibilita_pm = self.answer_yes_no(instr.get("visibilita_pm", "NULL"))

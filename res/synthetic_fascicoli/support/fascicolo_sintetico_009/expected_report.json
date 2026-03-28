@@ -16,49 +16,49 @@
     "1": "OK"
   },
   "2": {
-    "A": "04.06.2024",
+    "A": "23.07.2025",
     "B": "OK",
-    "C": "OK",
-    "D": "SI",
-    "Di": "27.08.2025",
+    "C": "KO",
+    "D": "NO",
+    "Di": "NULL",
     "E": "SI",
-    "Ei": "12.04.2024",
+    "Ei": "15.03.2025",
     "F": "NO",
     "Fi": "NULL",
     "Fii": "NULL",
     "Fiii": "NULL",
-    "G": "0607-2024"
+    "G": "0476-2024"
   },
   "3": {
-    "A": "Chiara Costa",
+    "A": "Beatriz Cardoso",
     "B": 1,
-    "C": "Paolo Neri-Silva",
-    "D": "Paolo Neri-Silva: Brasiliana",
+    "C": "Carlos Araujo-Souza",
+    "D": "Carlos Araujo-Souza: Brasiliana",
     "E": "NO",
     "Ei": "NULL",
     "Eii": "NULL",
-    "F": "KO; Francesca Luigi Leoni -> Paolo Neri",
+    "F": "OK; Camila Aparecida Mendes -> Maria Costa-Mendes -> Carlos Araujo",
     "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
     "Gi": "NULL"
   },
   "4": {
     "4/1": {
-      "A": "Paolo Neri-Silva",
+      "A": "Carlos Araujo-Souza",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Paolo Neri-Silva",
+      "B": "OK; firma del ricorrente Carlos Araujo-Souza",
       "C": "OK",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
-      "E": "NO",
-      "Ei": "Tribunale civile competente",
-      "F": "31.01.2024",
-      "G": "KO",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "30.09.2024",
+      "G": "OK",
       "H": "NO",
       "Hi": "OK",
       "I": "NO",
       "Ii": "OK",
-      "Iii": "OK",
-      "Iiii": "NULL",
-      "Iiv": "OK"
+      "Iii": "NO",
+      "Iiii": "OK",
+      "Iiv": "NULL"
     }
   },
   "5": {
@@ -66,27 +66,27 @@
     "Ai": "NULL",
     "C": "Cremona",
     "D": "OK",
-    "E": "Padre: Elena Rossi, Madre: Chiara Costa",
-    "F": "07.02.1859"
+    "E": "Padre: Paulo Barbosa, Madre: Patricia Ribeiro",
+    "F": "30.11.1941"
   },
   "6": {
-    "A": "NO",
+    "A": "OK",
     "Ai": "NULL",
     "Aii": "NULL",
     "Aiii": "NULL",
-    "C": "12.04.1977",
-    "D": "OK",
+    "C": "NULL",
+    "D": "NULL",
     "Di": "NULL",
     "Dii": "NULL",
     "Diii": "NULL",
-    "E": "OK",
-    "F": "OK",
-    "Fi": "OK",
+    "E": "NULL",
+    "F": "NULL",
+    "Fi": "NULL",
     "Fii": "NULL"
   },
   "7": {
     "A": "OK",
-    "B": "Francesca Leono",
+    "B": "Camila Mendeo",
     "C": "OK",
     "D": "OK",
     "E": "OK",
@@ -95,7 +95,7 @@
   },
   "8": {
     "8/1": {
-      "A": "Giulia Conti",
+      "A": "Maria Costa-Mendes",
       "B": "OK",
       "C": "OK",
       "D": "OK",
@@ -103,28 +103,18 @@
       "Dii": "OK"
     },
     "8/2": {
-      "A": "Paolo Luz Neri",
+      "A": "Carlos Araujo",
       "B": "OK",
       "C": "OK",
       "D": "OK",
-      "Di": "OK",
-      "Dii": "NULL"
-    },
-    "8/3": {
-      "A": "Chiara Costa",
-      "B": "OK",
-      "C": "OK",
-      "D": "OK",
-      "Di": "OK",
-      "Dii": "NULL"
+      "Di": "NULL",
+      "Dii": "OK"
     }
   },
   "10": [
-    "3F",
-    "4/1G"
+    "2C"
   ],
   "11": {
-    "3F": "La linea di discendenza indicata nel ricorso non risulta coerente",
-    "4/1G": "La data della procura di Paolo Neri-Silva non è anteriore alla data del ricorso"
+    "2C": "Il ricorso non risulta iscritto prima del 27.03.2025 escluso"
   }
 }

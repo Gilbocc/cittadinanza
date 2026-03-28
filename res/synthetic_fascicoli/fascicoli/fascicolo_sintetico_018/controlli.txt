@@ -16,65 +16,65 @@
     "1": "OK"
   },
   "2": {
-    "A": "27.05.2024",
+    "A": "29.01.2025",
     "B": "OK",
     "C": "OK",
-    "D": "NO",
-    "Di": "NULL",
-    "E": "SI",
-    "Ei": "31.12.2025",
+    "D": "SI",
+    "Di": "27.03.2024",
+    "E": "NO",
+    "Ei": "NULL",
     "F": "NO",
     "Fi": "NULL",
     "Fii": "NULL",
     "Fiii": "NULL",
-    "G": "0303-2025"
+    "G": "0112-2025"
   },
   "3": {
-    "A": "Francesca Leoni",
+    "A": "Mateus Lima",
     "B": 1,
-    "C": "Francesca Leoni-Silva",
-    "D": "Francesca Leoni-Silva: Brasiliana",
+    "C": "Ana Maria Silva-Oliveira-Souza",
+    "D": "Ana Maria Silva-Oliveira-Souza: Brasiliana",
     "E": "NO",
     "Ei": "NULL",
     "Eii": "NULL",
-    "F": "OK; Marco Luigi Moretti -> Francesca Leoni",
-    "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
-    "Gi": "NULL"
+    "F": "OK; Paulo Miguel Almeida -> Ana Luz Oliveira -> Ana Maria Silva-Oliveira",
+    "G": "KO; Ricorrenti per matrimonio presenti",
+    "Gi": "Renata Barbosa"
   },
   "4": {
     "4/1": {
-      "A": "Francesca Leoni-Silva",
+      "A": "Ana Maria Silva-Oliveira-Souza",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Francesca Leoni-Silva",
-      "C": "OK",
+      "B": "OK; firma del ricorrente Ana Maria Silva-Oliveira-Souza",
+      "C": "KO",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "E": "OK",
       "Ei": "NULL",
-      "F": "11.06.2025",
+      "F": "09.03.2024",
       "G": "OK",
-      "H": "NO",
-      "Hi": "OK",
-      "I": "NO",
-      "Ii": "OK",
-      "Iii": "OK",
+      "H": "OK",
+      "Hi": "NULL",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
       "Iiii": "NULL",
-      "Iiv": "OK"
+      "Iiv": "NULL"
     }
   },
   "5": {
-    "A": "NO",
-    "Ai": "KO",
-    "C": "Bergamo",
+    "A": "OK",
+    "Ai": "NULL",
+    "C": "Mantova",
     "D": "OK",
-    "E": "Padre: Francesca Leoni, Madre: Sara Marini",
-    "F": "25.04.1853"
+    "E": "Padre: Jose Oliveira, Madre: Larissa Costa",
+    "F": "13.07.1845"
   },
   "6": {
     "A": "NO",
     "Ai": "NULL",
     "Aii": "NULL",
     "Aiii": "NULL",
-    "C": "02.09.1919",
+    "C": "17.02.1959",
     "D": "OK",
     "Di": "NULL",
     "Dii": "NULL",
@@ -86,7 +86,7 @@
   },
   "7": {
     "A": "OK",
-    "B": "NULL",
+    "B": "Paulo Almeida",
     "C": "OK",
     "D": "OK",
     "E": "OK",
@@ -95,18 +95,20 @@
   },
   "8": {
     "8/1": {
-      "A": "Francesca Leoni",
-      "B": "KO",
+      "A": "Ana Luz Oliveira",
+      "B": "OK",
       "C": "OK",
       "D": "OK",
-      "Di": "NULL",
-      "Dii": "OK"
+      "Di": "OK",
+      "Dii": "NULL"
     }
   },
   "10": [
-    "8/1B"
+    "3G",
+    "4/1C"
   ],
   "11": {
-    "8/1B": "Genitori non in linea discendenza per Francesca Leoni"
+    "3G": "Ricorrenti che chiedono la cittadinanza per matrimonio: Renata Barbosa",
+    "4/1C": "Gli avvocati indicati nella procura di Ana Maria Silva-Oliveira-Souza non coincidono con quelli del ricorso"
   }
 }

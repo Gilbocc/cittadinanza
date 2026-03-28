@@ -16,76 +16,76 @@
     "1": "OK"
   },
   "2": {
-    "A": "28.09.2024",
+    "A": "05.03.2025",
     "B": "OK",
     "C": "OK",
-    "D": "NO",
-    "Di": "NULL",
-    "E": "NO",
-    "Ei": "NULL",
+    "D": "SI",
+    "Di": "06.10.2024",
+    "E": "SI",
+    "Ei": "30.01.2024",
     "F": "NO",
     "Fi": "NULL",
     "Fii": "NULL",
     "Fiii": "NULL",
-    "G": "0139-2024"
+    "G": "0651-2024"
   },
   "3": {
-    "A": "Paolo Neri",
+    "A": "Fernanda Pereira",
     "B": 2,
-    "C": "Elena Rossi, Davide Ana Lombardi",
-    "D": "Elena Rossi: Brasiliana, Davide Ana Lombardi: Brasiliana",
+    "C": "Diego Rodrigues, Larissa Luz Silva-Barbosa",
+    "D": "Diego Rodrigues: Brasiliana, Larissa Luz Silva-Barbosa: Brasiliana",
     "E": "NO",
     "Ei": "NULL",
     "Eii": "NULL",
-    "F": "OK; Francesca Maria Leoni -> Elena Rossi -> Matteo Gallo -> Davide Lombardi -> Davide Ana Lombardi -> Elena Rossi",
+    "F": "OK; Ana Luz Barbosa -> Paulo Luis Pereira Barbosa -> Fernanda Luz Barbosa -> Larissa Luz Silva-Barbosa -> Diego Rodrigues",
     "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
     "Gi": "NULL"
   },
   "4": {
     "4/1": {
-      "A": "Elena Rossi",
+      "A": "Diego Rodrigues",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Elena Rossi",
+      "B": "OK; firma del ricorrente Diego Rodrigues",
       "C": "OK",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "E": "OK",
       "Ei": "NULL",
-      "F": "15.06.2025",
+      "F": "27.04.2025",
       "G": "KO",
-      "H": "OK",
-      "Hi": "NULL",
-      "I": "OK",
-      "Ii": "NULL",
-      "Iii": "NULL",
+      "H": "NO",
+      "Hi": "OK",
+      "I": "NO",
+      "Ii": "OK",
+      "Iii": "OK",
       "Iiii": "NULL",
-      "Iiv": "NULL"
+      "Iiv": "OK"
     },
     "4/2": {
-      "A": "Davide Ana Lombardi",
+      "A": "Larissa Luz Silva-Barbosa",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Davide Ana Lombardi",
+      "B": "OK; firma del ricorrente Larissa Luz Silva-Barbosa",
       "C": "OK",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "E": "OK",
       "Ei": "NULL",
-      "F": "20.07.2024",
+      "F": "14.01.2024",
       "G": "OK",
       "H": "NO",
       "Hi": "OK",
-      "I": "OK",
-      "Ii": "NULL",
-      "Iii": "NULL",
+      "I": "NO",
+      "Ii": "OK",
+      "Iii": "OK",
       "Iiii": "NULL",
-      "Iiv": "NULL"
+      "Iiv": "OK"
     }
   },
   "5": {
     "A": "OK",
     "Ai": "NULL",
-    "C": "Cremona",
+    "C": "Brescia",
     "D": "OK",
-    "E": "Padre: Elena Rossi, Madre: Francesca Leoni",
-    "F": "01.07.1925"
+    "E": "Padre: Marcos Oliveira, Madre: Beatriz Oliveira",
+    "F": "25.08.1928"
   },
   "6": {
     "A": "OK",
@@ -104,7 +104,7 @@
   },
   "7": {
     "A": "OK",
-    "B": "Francesca Leono",
+    "B": "Ana Barboso",
     "C": "OK",
     "D": "OK",
     "E": "OK",
@@ -113,7 +113,7 @@
   },
   "8": {
     "8/1": {
-      "A": "Elena Rossi",
+      "A": "Paulo Luis Pereira Barbosa",
       "B": "OK",
       "C": "OK",
       "D": "OK",
@@ -121,26 +121,28 @@
       "Dii": "NULL"
     },
     "8/2": {
-      "A": "Matteo Gallo",
-      "B": "OK",
+      "A": "Fernanda Luz Barbosa",
+      "B": "KO",
       "C": "OK",
       "D": "OK",
       "Di": "NULL",
       "Dii": "OK"
     },
     "8/3": {
-      "A": "Davide Lombardi",
+      "A": "Diego Rodrigues",
       "B": "OK",
       "C": "OK",
       "D": "OK",
-      "Di": "NULL",
-      "Dii": "OK"
+      "Di": "OK",
+      "Dii": "NULL"
     }
   },
   "10": [
-    "4/1G"
+    "4/1G",
+    "8/2B"
   ],
   "11": {
-    "4/1G": "La data della procura di Elena Rossi non è anteriore alla data del ricorso"
+    "4/1G": "La data della procura di Diego Rodrigues non è anteriore alla data del ricorso",
+    "8/2B": "Genitori non in linea discendenza per Fernanda Luz Barbosa"
   }
 }

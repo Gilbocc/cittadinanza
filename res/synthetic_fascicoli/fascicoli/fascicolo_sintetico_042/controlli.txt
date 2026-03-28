@@ -16,41 +16,41 @@
     "1": "OK"
   },
   "2": {
-    "A": "07.02.2024",
+    "A": "29.07.2025",
     "B": "OK",
-    "C": "OK",
-    "D": "NO",
-    "Di": "NULL",
-    "E": "SI",
-    "Ei": "01.06.2024",
+    "C": "KO",
+    "D": "SI",
+    "Di": "03.01.2025",
+    "E": "NO",
+    "Ei": "NULL",
     "F": "NO",
     "Fi": "NULL",
     "Fii": "NULL",
     "Fiii": "NULL",
-    "G": "0664-2025"
+    "G": "0281-2025"
   },
   "3": {
-    "A": "Francesca Leoni",
+    "A": "Diego Pereira",
     "B": 1,
-    "C": "Sara Marini-Silva",
-    "D": "Sara Marini-Silva: italiana",
+    "C": "Carlos Luis Araujo-Souza",
+    "D": "Carlos Luis Araujo-Souza: Brasiliana",
     "E": "NO",
     "Ei": "NULL",
     "Eii": "NULL",
-    "F": "OK; Luca Carlo Bianchi -> Luca Bianchi -> Sara Marini",
+    "F": "OK; Maria Maria Oliveira -> Camila Ana Ribeiro -> Carlos Luis Araujo",
     "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
     "Gi": "NULL"
   },
   "4": {
     "4/1": {
-      "A": "Sara Marini-Silva",
+      "A": "Carlos Luis Araujo-Souza",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Sara Marini-Silva",
+      "B": "OK; firma del ricorrente Carlos Luis Araujo-Souza",
       "C": "OK",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "E": "OK",
       "Ei": "NULL",
-      "F": "20.04.2025",
+      "F": "29.08.2024",
       "G": "OK",
       "H": "NO",
       "Hi": "OK",
@@ -64,10 +64,10 @@
   "5": {
     "A": "OK",
     "Ai": "NULL",
-    "C": "Cremona",
+    "C": "Bergamo",
     "D": "OK",
-    "E": "Padre: Paolo Neri, Madre: Elena Rossi",
-    "F": "04.10.1899"
+    "E": "Padre: Paulo Pereira, Madre: Carolina Rodrigues",
+    "F": "29.11.1964"
   },
   "6": {
     "A": "OK",
@@ -86,24 +86,24 @@
   },
   "7": {
     "A": "OK",
-    "B": "Luca Biancho",
+    "B": "NULL",
     "C": "OK",
     "D": "OK",
     "E": "OK",
-    "Ei": "OK",
-    "Eii": "NULL"
+    "Ei": "NULL",
+    "Eii": "OK"
   },
   "8": {
     "8/1": {
-      "A": "Luca Bianchi",
-      "B": "KO",
+      "A": "Camila Ana Ribeiro",
+      "B": "OK",
       "C": "OK",
       "D": "OK",
       "Di": "OK",
       "Dii": "NULL"
     },
     "8/2": {
-      "A": "Sara Marini",
+      "A": "Carlos Luis Araujo",
       "B": "OK",
       "C": "OK",
       "D": "OK",
@@ -112,9 +112,9 @@
     }
   },
   "10": [
-    "8/1B"
+    "2C"
   ],
   "11": {
-    "8/1B": "Genitori non in linea discendenza per Luca Bianchi"
+    "2C": "Il ricorso non risulta iscritto prima del 27.03.2025 escluso"
   }
 }

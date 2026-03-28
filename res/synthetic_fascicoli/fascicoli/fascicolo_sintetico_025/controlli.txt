@@ -7,8 +7,8 @@
     "D": "OK",
     "E": "OK",
     "F": "OK",
-    "G": "KO",
-    "Gi": "Giulia Conti",
+    "G": "OK",
+    "Gi": "NULL",
     "H": "OK",
     "Hi": "NULL"
   },
@@ -16,94 +16,128 @@
     "1": "OK"
   },
   "2": {
-    "A": "15.09.2024",
+    "A": "06.09.2025",
     "B": "OK",
-    "C": "OK",
-    "D": "NO",
-    "Di": "NULL",
+    "C": "KO",
+    "D": "SI",
+    "Di": "30.07.2024",
     "E": "SI",
-    "Ei": "04.09.2025",
-    "F": "SI",
-    "Fi": "2",
-    "Fii": "Chiara Costa, Matteo Gallo",
-    "Fiii": "22.05.2024, 04.09.2024",
-    "G": "0774-2024"
+    "Ei": "25.10.2024",
+    "F": "NO",
+    "Fi": "NULL",
+    "Fii": "NULL",
+    "Fiii": "NULL",
+    "G": "0591-2024"
   },
   "3": {
-    "A": "Chiara Costa",
-    "B": 1,
-    "C": "Matteo Gallo",
-    "D": "Matteo Gallo: Brasiliana",
+    "A": "Carlos Almeida",
+    "B": 2,
+    "C": "Fernanda Silva, Patricia Ana Costa Barbosa",
+    "D": "Fernanda Silva: Brasiliana, Patricia Ana Costa Barbosa: Brasiliana",
     "E": "NO",
     "Ei": "NULL",
     "Eii": "NULL",
-    "F": "OK; Chiara Carlo Costa -> Giulia Conti -> Matteo Gallo",
-    "G": "KO; Ricorrenti per matrimonio presenti",
-    "Gi": "Francesca Leoni"
+    "F": "OK; Maria Aparecida Rodrigues -> Diego Ribeiro Rodrigues -> Marcos Barbosa -> Patricia Ana Costa Barbosa -> Fernanda Silva",
+    "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
+    "Gi": "NULL"
   },
   "4": {
     "4/1": {
-      "A": "Matteo Gallo",
+      "A": "Fernanda Silva",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Matteo Gallo",
+      "B": "OK; firma del ricorrente Fernanda Silva",
       "C": "OK",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "E": "OK",
       "Ei": "NULL",
-      "F": "02.07.2025",
-      "G": "KO",
+      "F": "16.02.2024",
+      "G": "OK",
       "H": "NO",
       "Hi": "OK",
       "I": "NO",
       "Ii": "OK",
-      "Iii": "NO",
-      "Iiii": "OK",
-      "Iiv": "NULL"
+      "Iii": "OK",
+      "Iiii": "NULL",
+      "Iiv": "OK"
+    },
+    "4/2": {
+      "A": "Patricia Ana Costa Barbosa",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Patricia Ana Costa Barbosa",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "14.07.2024",
+      "G": "OK",
+      "H": "NO",
+      "Hi": "OK",
+      "I": "NO",
+      "Ii": "OK",
+      "Iii": "OK",
+      "Iiii": "NULL",
+      "Iiv": "OK"
     }
   },
   "5": {
-    "A": "NO",
-    "Ai": "OK",
-    "C": "Brescia",
+    "A": "OK",
+    "Ai": "NULL",
+    "C": "Mantova",
     "D": "OK",
-    "E": "Padre: Davide Lombardi, Madre: Francesca Leoni",
-    "F": "13.09.1933"
+    "E": "Padre: Mateus Silva, Madre: Patricia Almeida",
+    "F": "23.05.1843"
   },
   "6": {
-    "A": "OK",
+    "A": "NO",
     "Ai": "NULL",
     "Aii": "NULL",
     "Aiii": "NULL",
-    "C": "NULL",
-    "D": "NULL",
+    "C": "26.03.1906",
+    "D": "OK",
     "Di": "NULL",
     "Dii": "NULL",
     "Diii": "NULL",
-    "E": "NULL",
-    "F": "NULL",
-    "Fi": "NULL",
+    "E": "OK",
+    "F": "OK",
+    "Fi": "OK",
     "Fii": "NULL"
   },
   "7": {
     "A": "OK",
-    "B": "Chiara Costo",
+    "B": "Maria Rodrigueo",
     "C": "OK",
     "D": "OK",
     "E": "OK",
-    "Ei": "NULL",
-    "Eii": "OK"
+    "Ei": "OK",
+    "Eii": "NULL"
   },
   "8": {
     "8/1": {
-      "A": "Giulia Conti",
-      "B": "KO",
-      "C": "KO",
-      "D": "KO",
+      "A": "Diego Ribeiro Rodrigues",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
       "Di": "NULL",
-      "Dii": "NULL"
+      "Dii": "OK"
     },
     "8/2": {
-      "A": "Matteo Gallo",
+      "A": "Marcos Barbosa",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/3": {
+      "A": "Patricia Ana Costa Barbosa",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
+    },
+    "8/4": {
+      "A": "Fernanda Silva",
       "B": "OK",
       "C": "OK",
       "D": "OK",
@@ -112,19 +146,9 @@
     }
   },
   "10": [
-    "0G",
-    "3G",
-    "4/1G",
-    "8/1B",
-    "8/1C",
-    "8/1D"
+    "2C"
   ],
   "11": {
-    "0G": "Atti di nascita dei discendenti mancanti: Giulia Conti",
-    "3G": "Ricorrenti che chiedono la cittadinanza per matrimonio: Francesca Leoni",
-    "4/1G": "La data della procura di Matteo Gallo non è anteriore alla data del ricorso",
-    "8/1B": "Atto di nascita non trovato per Giulia Conti",
-    "8/1C": "Impossibile verificare l'apostille dell'atto di nascita di Giulia Conti perché l'atto manca",
-    "8/1D": "Impossibile verificare la traduzione dell'atto di nascita di Giulia Conti perché l'atto manca"
+    "2C": "Il ricorso non risulta iscritto prima del 27.03.2025 escluso"
   }
 }

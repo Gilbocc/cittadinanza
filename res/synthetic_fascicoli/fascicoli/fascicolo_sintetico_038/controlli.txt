@@ -7,8 +7,8 @@
     "D": "OK",
     "E": "OK",
     "F": "OK",
-    "G": "OK",
-    "Gi": "NULL",
+    "G": "KO",
+    "Gi": "Mateus Luis Souza",
     "H": "OK",
     "Hi": "NULL"
   },
@@ -16,86 +16,104 @@
     "1": "OK"
   },
   "2": {
-    "A": "19.03.2025",
+    "A": "22.03.2024",
     "B": "OK",
     "C": "OK",
     "D": "SI",
-    "Di": "10.11.2025",
+    "Di": "01.03.2025",
     "E": "NO",
     "Ei": "NULL",
     "F": "NO",
     "Fi": "NULL",
     "Fii": "NULL",
     "Fiii": "NULL",
-    "G": "0777-2024"
+    "G": "0579-2024"
   },
   "3": {
-    "A": "Marco Moretti",
-    "B": 1,
-    "C": "Francesca Leoni",
-    "D": "Francesca Leoni: Brasiliana",
+    "A": "Jose Mendes",
+    "B": 2,
+    "C": "Pedro Souza-Nunes-Souza, Beatriz Nunes",
+    "D": "Pedro Souza-Nunes-Souza: Brasiliana, Beatriz Nunes: Brasiliana",
     "E": "NO",
     "Ei": "NULL",
     "Eii": "NULL",
-    "F": "OK; Francesca Luigi Leoni > Davide Lombardi > Sara Marini > Giulia Conti > Francesca Leoni",
-    "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
-    "Gi": "NULL"
+    "F": "OK; Rafael Miguel Araujo -> Diego Luis Costa Araujo -> Joao Mendes Costa -> Mateus Luis Souza -> Beatriz Nunes -> Pedro Souza-Nunes",
+    "G": "KO; Ricorrenti per matrimonio presenti",
+    "Gi": "Mateus Souza"
   },
   "4": {
     "4/1": {
-      "A": "Francesca Leoni",
+      "A": "Pedro Souza-Nunes-Souza",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Francesca Leoni",
+      "B": "OK; firma del ricorrente Pedro Souza-Nunes-Souza",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "NO",
+      "Ei": "Tribunale civile competente",
+      "F": "20.04.2024",
+      "G": "OK",
+      "H": "OK",
+      "Hi": "NULL",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
+      "Iiii": "NULL",
+      "Iiv": "NULL"
+    },
+    "4/2": {
+      "A": "Beatriz Nunes",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Beatriz Nunes",
       "C": "OK",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "E": "OK",
       "Ei": "NULL",
-      "F": "12.01.2024",
+      "F": "28.04.2024",
       "G": "OK",
-      "H": "NO",
-      "Hi": "KO",
-      "I": "NO",
-      "Ii": "OK",
-      "Iii": "NO",
-      "Iiii": "OK",
+      "H": "OK",
+      "Hi": "NULL",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
+      "Iiii": "NULL",
       "Iiv": "NULL"
     }
   },
   "5": {
-    "A": "NO",
-    "Ai": "OK",
-    "C": "Mantova",
+    "A": "OK",
+    "Ai": "NULL",
+    "C": "Bergamo",
     "D": "OK",
-    "E": "Padre: Marco Moretti, Madre: Davide Lombardi",
-    "F": "21.03.1958"
+    "E": "Padre: Antonio Souza, Madre: Carolina Araujo",
+    "F": "09.03.1857"
   },
   "6": {
-    "A": "OK",
+    "A": "NO",
     "Ai": "NULL",
     "Aii": "NULL",
     "Aiii": "NULL",
-    "C": "NULL",
-    "D": "NULL",
+    "C": "04.08.1945",
+    "D": "OK",
     "Di": "NULL",
     "Dii": "NULL",
     "Diii": "NULL",
-    "E": "NULL",
-    "F": "NULL",
-    "Fi": "NULL",
+    "E": "OK",
+    "F": "OK",
+    "Fi": "OK",
     "Fii": "NULL"
   },
   "7": {
     "A": "OK",
-    "B": "NULL",
+    "B": "Rafael Araujo",
     "C": "OK",
     "D": "OK",
     "E": "OK",
-    "Ei": "NULL",
-    "Eii": "OK"
+    "Ei": "OK",
+    "Eii": "NULL"
   },
   "8": {
     "8/1": {
-      "A": "Davide Lombardi",
+      "A": "Diego Luis Costa Araujo",
       "B": "OK",
       "C": "OK",
       "D": "OK",
@@ -103,7 +121,7 @@
       "Dii": "NULL"
     },
     "8/2": {
-      "A": "Sara Marini",
+      "A": "Joao Mendes Costa",
       "B": "OK",
       "C": "OK",
       "D": "OK",
@@ -111,15 +129,23 @@
       "Dii": "OK"
     },
     "8/3": {
-      "A": "Giulia Conti",
+      "A": "Mateus Luis Souza",
+      "B": "KO",
+      "C": "KO",
+      "D": "KO",
+      "Di": "NULL",
+      "Dii": "NULL"
+    },
+    "8/4": {
+      "A": "Beatriz Nunes",
       "B": "OK",
       "C": "OK",
       "D": "OK",
       "Di": "OK",
       "Dii": "NULL"
     },
-    "8/4": {
-      "A": "Francesca Leoni",
+    "8/5": {
+      "A": "Pedro Souza-Nunes",
       "B": "OK",
       "C": "OK",
       "D": "OK",
@@ -128,9 +154,17 @@
     }
   },
   "10": [
-    "4/1Hi"
+    "0G",
+    "3G",
+    "8/3B",
+    "8/3C",
+    "8/3D"
   ],
   "11": {
-    "4/1Hi": "Apostille mancante per la procura estera di Francesca Leoni"
+    "0G": "Atti di nascita dei discendenti mancanti: Mateus Luis Souza",
+    "3G": "Ricorrenti che chiedono la cittadinanza per matrimonio: Mateus Souza",
+    "8/3B": "Atto di nascita non trovato per Mateus Luis Souza",
+    "8/3C": "Impossibile verificare l'apostille dell'atto di nascita di Mateus Luis Souza perché l'atto manca",
+    "8/3D": "Impossibile verificare la traduzione dell'atto di nascita di Mateus Luis Souza perché l'atto manca"
   }
 }

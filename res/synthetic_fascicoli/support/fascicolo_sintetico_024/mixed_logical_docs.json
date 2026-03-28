@@ -2,14 +2,14 @@
   {
     "document_type": "IndiceProcedimento.html",
     "schema": {
-      "numero_anno_ruolo": "193/2024",
-      "data_iscrizione": "19-04-2024",
+      "numero_anno_ruolo": "882/2024",
+      "data_iscrizione": "27-02-2024",
       "iscrizione_post_28_02_2023": "OK",
       "iscrizione_pre_27_03_2025": "OK",
       "comparsa_avvocatura": "NO",
-      "data_comparsa_avvocatura": "31-03-2025",
+      "data_comparsa_avvocatura": "01-02-2025",
       "visibilita_pm": "SI",
-      "data_visibilita_pm": "03-10-2024",
+      "data_visibilita_pm": "26-06-2024",
       "interventi": "NO",
       "numero_interventi": 0,
       "intervenuti": []
@@ -20,19 +20,20 @@
     "schema": {
       "avvocati": [
         {
-          "nome": "Elena",
-          "cognome": "Rossi"
-        },
-        {
-          "nome": "Marco",
-          "cognome": "Moretti"
+          "nome": "Pedro",
+          "cognome": "Souza"
         }
       ],
-      "numero_ricorrenti": 1,
+      "numero_ricorrenti": 2,
       "ricorrenti_maggiorenni": [
         {
-          "nome": "Marco",
-          "cognome": "Moretti",
+          "nome": "Renata",
+          "cognome": "Souza-Silva",
+          "nazionalita": "Brasiliana"
+        },
+        {
+          "nome": "Paulo",
+          "cognome": "Silva",
           "nazionalita": "Brasiliana"
         }
       ],
@@ -40,23 +41,35 @@
       "ricorrenti_per_matrimonio": [],
       "linea_discendenza": [
         {
-          "nome": "Matteo Luigi",
-          "cognome": "Gallo"
+          "nome": "Marcos Paulo",
+          "cognome": "Souza"
         },
         {
-          "nome": "Paolo",
-          "cognome": "Neri"
+          "nome": "Rafael Carlos",
+          "cognome": "Cardoso"
         },
         {
-          "nome": "Marco",
-          "cognome": "Moretti"
+          "nome": "Beatriz",
+          "cognome": "Nunes-Cardoso"
+        },
+        {
+          "nome": "Larissa Luz",
+          "cognome": "Costa"
+        },
+        {
+          "nome": "Paulo",
+          "cognome": "Silva"
+        },
+        {
+          "nome": "Renata",
+          "cognome": "Souza-Silva"
         }
       ],
-      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo.",
-      "riassunto_linea_discendenza": "Matteo Luigi Gallo -> Paolo Neri -> Marco Moretti",
+      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo. Nel ricorso risultano varianti anagrafiche/pseudonimi: Renata Souza-Silva (alias: Renata Souz); Beatriz Nunes-Cardoso (alias: Beatriz Nune).",
+      "riassunto_linea_discendenza": "Marcos Paulo Souza -> Rafael Carlos Cardoso -> Beatriz Nunes-Cardoso -> Larissa Luz Costa -> Paulo Silva -> Renata Souza-Silva",
       "coerenza_linea_discendenza": "SI",
       "proveniente_dal_brasile": "SI",
-      "data_ricorso": "17-03-2025"
+      "data_ricorso": "28-08-2025"
     }
   },
   {
@@ -64,8 +77,8 @@
     "schema": {
       "soggetto": [
         {
-          "nome": "Marco",
-          "cognome": "Moretti",
+          "nome": "Renata",
+          "cognome": "Souza-Silva",
           "minorenne": "NO",
           "rappresentanti_legali": [],
           "firma_presente": "OK"
@@ -74,17 +87,39 @@
       "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "avvocati": [
         {
-          "nome": "Elena",
-          "cognome": "Rossi"
-        },
+          "nome": "Pedro",
+          "cognome": "Souza"
+        }
+      ],
+      "tribunale_brescia_indicato": "KO",
+      "tribunale_indicato": "Tribunale civile competente",
+      "data_procura": "26-12-2024",
+      "rilasciata_in_italia": "NO",
+      "scritta_in_italiano": "OK"
+    }
+  },
+  {
+    "document_type": "Procura",
+    "schema": {
+      "soggetto": [
         {
-          "nome": "Marco",
-          "cognome": "Moretti"
+          "nome": "Paulo",
+          "cognome": "Silva",
+          "minorenne": "NO",
+          "rappresentanti_legali": [],
+          "firma_presente": "OK"
+        }
+      ],
+      "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "avvocati": [
+        {
+          "nome": "Pedro",
+          "cognome": "Souza"
         }
       ],
       "tribunale_brescia_indicato": "OK",
       "tribunale_indicato": "Tribunale civile competente",
-      "data_procura": "26-03-2025",
+      "data_procura": "11-07-2024",
       "rilasciata_in_italia": "NO",
       "scritta_in_italiano": "NO"
     }
@@ -96,8 +131,8 @@
         "document_type": "Procura",
         "soggetto": [
           {
-            "nome": "Marco",
-            "cognome": "Moretti"
+            "nome": "Paulo",
+            "cognome": "Silva"
           }
         ]
       }
@@ -110,8 +145,8 @@
         "document_type": "Procura",
         "soggetto": [
           {
-            "nome": "Marco",
-            "cognome": "Moretti"
+            "nome": "Paulo",
+            "cognome": "Silva"
           }
         ]
       },
@@ -125,8 +160,8 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Marco",
-            "cognome": "Moretti"
+            "nome": "Paulo",
+            "cognome": "Silva"
           }
         ],
         "documento_originale": "Procura"
@@ -137,22 +172,22 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Matteo Luigi",
-        "cognome": "Gallo"
+        "nome": "Marcos Paulo",
+        "cognome": "Souza"
       },
-      "tipo": "parrocchiale",
+      "tipo": "anagrafico",
       "timbro_diocesi": "OK",
-      "comune_nascita": "Brescia",
-      "provincia": "brescia",
+      "comune_nascita": "Mantova",
+      "provincia": "mantova",
       "padre": {
-        "nome": "Elena",
-        "cognome": "Rossi"
+        "nome": "Mateus",
+        "cognome": "Nunes"
       },
       "madre": {
-        "nome": "Francesca",
-        "cognome": "Leoni"
+        "nome": "Patricia",
+        "cognome": "Oliveira"
       },
-      "data_nascita": "11-09-1848",
+      "data_nascita": "06-04-1909",
       "area_nascita": "A",
       "stato": "Italia"
     }
@@ -161,22 +196,22 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Paolo",
-        "cognome": "Neri"
+        "nome": "Rafael Carlos",
+        "cognome": "Cardoso"
       },
-      "tipo": "parrocchiale",
+      "tipo": "anagrafico",
       "timbro_diocesi": "NO",
-      "comune_nascita": "Niteroi",
+      "comune_nascita": "Porto Alegre",
       "provincia": "altro",
       "padre": {
-        "nome": "Elena",
-        "cognome": "Rossi"
+        "nome": "Marcos Paulo",
+        "cognome": "Souza"
       },
       "madre": {
-        "nome": "Matteo Luigi",
-        "cognome": "Gallo"
+        "nome": "Maria",
+        "cognome": "Nunes"
       },
-      "data_nascita": "12-10-1951",
+      "data_nascita": "28-01-1948",
       "area_nascita": "E",
       "stato": "Brasile"
     }
@@ -188,8 +223,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Paolo",
-            "cognome": "Neri"
+            "nome": "Rafael Carlos",
+            "cognome": "Cardoso"
           }
         ]
       }
@@ -202,8 +237,76 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Paolo",
-            "cognome": "Neri"
+            "nome": "Rafael Carlos",
+            "cognome": "Cardoso"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Rafael Carlos",
+            "cognome": "Cardoso"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Beatriz",
+        "cognome": "Nunes-Cardoso"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "NO",
+      "comune_nascita": "Niteroi",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Rafael Carlos",
+        "cognome": "Cardoso"
+      },
+      "madre": {
+        "nome": "Fernanda",
+        "cognome": "Pereira"
+      },
+      "data_nascita": "22-11-2007",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Beatriz",
+            "cognome": "Nunes-Cardoso"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Beatriz",
+            "cognome": "Nunes-Cardoso"
           }
         ]
       },
@@ -217,8 +320,8 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Paolo",
-            "cognome": "Neri"
+            "nome": "Beatriz",
+            "cognome": "Nunes-Cardoso"
           }
         ],
         "documento_originale": "Atto di nascita"
@@ -229,22 +332,22 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Marco",
-        "cognome": "Moretti"
+        "nome": "Paulo",
+        "cognome": "Silva"
       },
-      "tipo": "anagrafico",
-      "timbro_diocesi": "OK",
+      "tipo": "parrocchiale",
+      "timbro_diocesi": "NO",
       "comune_nascita": "Recife",
       "provincia": "altro",
       "padre": {
-        "nome": "Sara",
-        "cognome": "Marini"
+        "nome": "Jose",
+        "cognome": "Mendes"
       },
       "madre": {
-        "nome": "Paolo",
-        "cognome": "Neri"
+        "nome": "Larissa Luz",
+        "cognome": "Costa"
       },
-      "data_nascita": "16-06-1942",
+      "data_nascita": "08-07-1963",
       "area_nascita": "E",
       "stato": "Brasile"
     }
@@ -256,8 +359,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Marco",
-            "cognome": "Moretti"
+            "nome": "Paulo",
+            "cognome": "Silva"
           }
         ]
       }
@@ -270,48 +373,62 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Marco",
-            "cognome": "Moretti"
+            "nome": "Paulo",
+            "cognome": "Silva"
           }
         ]
       },
-      "sede_traduttore": "Estero"
+      "sede_traduttore": "Italia"
     }
   },
   {
-    "document_type": "Apostille",
+    "document_type": "Asseverazione",
     "schema": {
       "oggetto": {
         "document_type": "Traduzione",
+        "documento_originale": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Marco",
-            "cognome": "Moretti"
+            "nome": "Paulo",
+            "cognome": "Silva"
           }
-        ],
-        "documento_originale": "Atto di nascita"
+        ]
       }
     }
   },
   {
-    "document_type": "Atto di morte",
+    "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Matteo Luigi",
-        "cognome": "Gallo"
+        "nome": "Renata",
+        "cognome": "Souza-Silva"
       },
-      "data_decesso": "02-04-1948"
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Rio de Janeiro",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Paulo",
+        "cognome": "Silva"
+      },
+      "madre": {
+        "nome": "Larissa",
+        "cognome": "Lima"
+      },
+      "data_nascita": "18-02-1944",
+      "area_nascita": "E",
+      "stato": "Brasile"
     }
   },
   {
     "document_type": "Apostille",
     "schema": {
       "oggetto": {
-        "document_type": "Atto di morte",
+        "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Matteo Luigi",
-            "cognome": "Gallo"
+            "nome": "Renata",
+            "cognome": "Souza-Silva"
           }
         ]
       }
@@ -321,29 +438,29 @@
     "document_type": "Traduzione",
     "schema": {
       "oggetto": {
-        "document_type": "Atto di morte",
+        "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Matteo Luigi",
-            "cognome": "Gallo"
+            "nome": "Renata",
+            "cognome": "Souza-Silva"
           }
         ]
       },
-      "sede_traduttore": "Estero"
+      "sede_traduttore": "Italia"
     }
   },
   {
-    "document_type": "Apostille",
+    "document_type": "Asseverazione",
     "schema": {
       "oggetto": {
         "document_type": "Traduzione",
+        "documento_originale": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Matteo Luigi",
-            "cognome": "Gallo"
+            "nome": "Renata",
+            "cognome": "Souza-Silva"
           }
-        ],
-        "documento_originale": "Atto di morte"
+        ]
       }
     }
   },
@@ -351,17 +468,12 @@
     "document_type": "Certificato Negativo di Naturalizzazione",
     "schema": {
       "soggetto": {
-        "nome": "Matteo Luigi",
-        "cognome": "Gallo"
+        "nome": "Marcos Paulo",
+        "cognome": "Souza"
       },
-      "pseudonimi": [
-        {
-          "nome": "Matteo",
-          "cognome": "Gallo"
-        }
-      ],
+      "pseudonimi": [],
       "formula_negativa_presente": "OK",
-      "data_nascita": "11-09-1848"
+      "data_nascita": "06-04-1909"
     }
   },
   {
@@ -371,8 +483,8 @@
         "document_type": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Matteo Luigi",
-            "cognome": "Gallo"
+            "nome": "Marcos Paulo",
+            "cognome": "Souza"
           }
         ]
       }
@@ -385,8 +497,53 @@
         "document_type": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Matteo Luigi",
-            "cognome": "Gallo"
+            "nome": "Marcos Paulo",
+            "cognome": "Souza"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Certificato Negativo di Naturalizzazione",
+        "soggetto": [
+          {
+            "nome": "Marcos Paulo",
+            "cognome": "Souza"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Documento non supportato",
+        "soggetto": [
+          {
+            "nome": "Maria",
+            "cognome": "Ribeiro"
+          }
+        ],
+        "documento_originale": "Documenti Personali Vari"
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Marcos",
+            "cognome": "Souza"
           }
         ]
       },
@@ -394,26 +551,37 @@
     }
   },
   {
-    "document_type": "Apostille",
+    "document_type": "Certificato di matrimonio",
     "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "soggetto": [
-          {
-            "nome": "Matteo Luigi",
-            "cognome": "Gallo"
-          }
-        ],
-        "documento_originale": "Certificato Negativo di Naturalizzazione"
-      }
+      "soggetti": [
+        {
+          "nome": "Marcos",
+          "cognome": "Souza"
+        },
+        {
+          "nome": "Carlos",
+          "cognome": "Pereira"
+        }
+      ],
+      "luogo": "Campinas",
+      "data_matrimonio": "21-05-1949",
+      "note": "Documento non richiesto ai fini del riconoscimento richiesto."
     }
   },
   {
-    "document_type": "Bozza Sentenza",
+    "document_type": "Avviso Udienza",
     "schema": {
-      "id": "UD-4203",
+      "id": "UD-6425",
       "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
-      "data": "26-07-2025"
+      "data": "09-06-2023"
+    }
+  },
+  {
+    "document_type": "Avviso Udienza",
+    "schema": {
+      "id": "UD-3911",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "04-01-2023"
     }
   },
   {
@@ -423,12 +591,12 @@
         "document_type": "Certificato di matrimonio",
         "soggetto": [
           {
-            "nome": "Matteo",
-            "cognome": "Gallo"
+            "nome": "Marcos",
+            "cognome": "Souza"
           },
           {
-            "nome": "Francesca",
-            "cognome": "Leoni"
+            "nome": "Carlos",
+            "cognome": "Pereira"
           }
         ]
       }
@@ -441,12 +609,168 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Matteo",
-            "cognome": "Gallo"
+            "nome": "Carlos",
+            "cognome": "Mendes"
           },
           {
-            "nome": "Francesca",
-            "cognome": "Leoni"
+            "nome": "Maria",
+            "cognome": "Almeida"
+          }
+        ],
+        "documento_originale": "Certificato di matrimonio"
+      }
+    }
+  },
+  {
+    "document_type": "Documenti Personali Vari",
+    "schema": {
+      "id": "UD-4619",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "02-08-2023"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Carlos",
+            "cognome": "Mendes"
+          },
+          {
+            "nome": "Maria",
+            "cognome": "Almeida"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Documenti Personali Vari",
+    "schema": {
+      "id": "UD-7415",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "08-03-2023"
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Joao",
+            "cognome": "Silva"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Carlos",
+            "cognome": "Mendes"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Joao",
+            "cognome": "Silva"
+          },
+          {
+            "nome": "Fernanda",
+            "cognome": "Almeida"
+          }
+        ],
+        "documento_originale": "Certificato di matrimonio"
+      }
+    }
+  },
+  {
+    "document_type": "Certificato di matrimonio",
+    "schema": {
+      "soggetti": [
+        {
+          "nome": "Carlos",
+          "cognome": "Mendes"
+        },
+        {
+          "nome": "Maria",
+          "cognome": "Almeida"
+        }
+      ],
+      "luogo": "Sao Paulo",
+      "data_matrimonio": "02-08-1977",
+      "note": "Documento non richiesto ai fini del riconoscimento richiesto."
+    }
+  },
+  {
+    "document_type": "Certificato di matrimonio",
+    "schema": {
+      "soggetti": [
+        {
+          "nome": "Joao",
+          "cognome": "Silva"
+        },
+        {
+          "nome": "Fernanda",
+          "cognome": "Almeida"
+        }
+      ],
+      "luogo": "Niteroi",
+      "data_matrimonio": "19-04-2005",
+      "note": "Documento non richiesto ai fini del riconoscimento richiesto."
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Joao",
+            "cognome": "Silva"
+          },
+          {
+            "nome": "Fernanda",
+            "cognome": "Almeida"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Marcos",
+            "cognome": "Souza"
+          },
+          {
+            "nome": "Carlos",
+            "cognome": "Pereira"
           }
         ],
         "documento_originale": "Certificato di matrimonio"
@@ -460,76 +784,12 @@
         "document_type": "Documento non supportato",
         "soggetto": [
           {
-            "nome": "Sara",
-            "cognome": "Marini"
+            "nome": "Maria",
+            "cognome": "Oliveira"
           }
         ],
-        "documento_originale": "Bozza Sentenza"
+        "documento_originale": "Avviso Udienza"
       }
-    }
-  },
-  {
-    "document_type": "Nota Spese",
-    "schema": {
-      "id": "UD-7483",
-      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
-      "data": "11-11-2024"
-    }
-  },
-  {
-    "document_type": "Bozza Sentenza",
-    "schema": {
-      "id": "UD-6399",
-      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
-      "data": "20-06-2025"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Documento non supportato",
-        "soggetto": [
-          {
-            "nome": "Matteo",
-            "cognome": "Gallo"
-          }
-        ],
-        "documento_originale": "Bozza Sentenza"
-      }
-    }
-  },
-  {
-    "document_type": "Certificato di matrimonio",
-    "schema": {
-      "soggetti": [
-        {
-          "nome": "Matteo",
-          "cognome": "Gallo"
-        },
-        {
-          "nome": "Francesca",
-          "cognome": "Leoni"
-        }
-      ],
-      "luogo": "Fortaleza",
-      "data_matrimonio": "15-01-1966",
-      "note": "Documento non richiesto ai fini del riconoscimento richiesto."
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Certificato di matrimonio",
-        "soggetto": [
-          {
-            "nome": "Matteo",
-            "cognome": "Gallo"
-          }
-        ]
-      },
-      "sede_traduttore": "Estero"
     }
   }
 ]

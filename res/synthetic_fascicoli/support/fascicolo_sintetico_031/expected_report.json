@@ -7,8 +7,8 @@
     "D": "OK",
     "E": "OK",
     "F": "OK",
-    "G": "OK",
-    "Gi": "NULL",
+    "G": "KO",
+    "Gi": "Joao Oliveira",
     "H": "OK",
     "Hi": "NULL"
   },
@@ -16,62 +16,62 @@
     "1": "OK"
   },
   "2": {
-    "A": "19.03.2025",
+    "A": "04.01.2025",
     "B": "OK",
     "C": "OK",
-    "D": "SI",
-    "Di": "26.01.2025",
+    "D": "NO",
+    "Di": "NULL",
     "E": "NO",
     "Ei": "NULL",
     "F": "NO",
     "Fi": "NULL",
     "Fii": "NULL",
     "Fiii": "NULL",
-    "G": "0941-2025"
+    "G": "0400-2024"
   },
   "3": {
-    "A": "Francesca Leoni, Marco Moretti",
+    "A": "Joao Santos",
     "B": 2,
-    "C": "Francesca Joao Leoni-Silva, Elena Rossi",
-    "D": "Francesca Joao Leoni-Silva: Brasiliana, Elena Rossi: Brasiliana",
+    "C": "Marcos Nunes Souza, Carolina Souza",
+    "D": "Marcos Nunes Souza: Brasiliana, Carolina Souza: Brasiliana",
     "E": "NO",
     "Ei": "NULL",
     "Eii": "NULL",
-    "F": "OK; Elena Luigi Rossi -> Elena Luz Rossi -> Chiara Costa -> Elena Rossi -> Francesca Joao Leoni",
+    "F": "OK; Pedro Paulo Almeida -> Joao Oliveira -> Beatriz Cardoso-Oliveira -> Carolina Souza -> Marcos Nunes Souza",
     "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
     "Gi": "NULL"
   },
   "4": {
     "4/1": {
-      "A": "Francesca Joao Leoni-Silva",
+      "A": "Marcos Nunes Souza",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Francesca Joao Leoni-Silva",
+      "B": "OK; firma del ricorrente Marcos Nunes Souza",
       "C": "OK",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "E": "OK",
       "Ei": "NULL",
-      "F": "17.03.2024",
-      "G": "OK",
-      "H": "OK",
-      "Hi": "NULL",
-      "I": "OK",
-      "Ii": "NULL",
-      "Iii": "NULL",
-      "Iiii": "NULL",
-      "Iiv": "NULL"
-    },
-    "4/2": {
-      "A": "Elena Rossi",
-      "Ai": "NULL",
-      "B": "OK; firma del ricorrente Elena Rossi",
-      "C": "OK",
-      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
-      "E": "OK",
-      "Ei": "NULL",
-      "F": "31.05.2024",
+      "F": "10.02.2024",
       "G": "OK",
       "H": "NO",
       "Hi": "OK",
+      "I": "NO",
+      "Ii": "OK",
+      "Iii": "NO",
+      "Iiii": "OK",
+      "Iiv": "NULL"
+    },
+    "4/2": {
+      "A": "Carolina Souza",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Carolina Souza",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "26.04.2024",
+      "G": "OK",
+      "H": "NO",
+      "Hi": "KO",
       "I": "OK",
       "Ii": "NULL",
       "Iii": "NULL",
@@ -82,10 +82,10 @@
   "5": {
     "A": "OK",
     "Ai": "NULL",
-    "C": "Brescia",
+    "C": "Cremona",
     "D": "OK",
-    "E": "Padre: Davide Lombardi, Madre: Chiara Costa",
-    "F": "16.10.1905"
+    "E": "Padre: Rafael Barbosa, Madre: Patricia Silva",
+    "F": "18.07.1904"
   },
   "6": {
     "A": "OK",
@@ -113,15 +113,15 @@
   },
   "8": {
     "8/1": {
-      "A": "Elena Luz Rossi",
-      "B": "OK",
-      "C": "OK",
-      "D": "OK",
+      "A": "Joao Oliveira",
+      "B": "KO",
+      "C": "KO",
+      "D": "KO",
       "Di": "NULL",
-      "Dii": "OK"
+      "Dii": "NULL"
     },
     "8/2": {
-      "A": "Chiara Costa",
+      "A": "Beatriz Cardoso-Oliveira",
       "B": "OK",
       "C": "OK",
       "D": "OK",
@@ -129,14 +129,34 @@
       "Dii": "NULL"
     },
     "8/3": {
-      "A": "Francesca Joao Leoni",
+      "A": "Carolina Souza",
       "B": "OK",
       "C": "OK",
       "D": "OK",
-      "Di": "NULL",
-      "Dii": "OK"
+      "Di": "OK",
+      "Dii": "NULL"
+    },
+    "8/4": {
+      "A": "Marcos Nunes Souza",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
     }
   },
-  "10": null,
-  "11": null
+  "10": [
+    "0G",
+    "4/2Hi",
+    "8/1B",
+    "8/1C",
+    "8/1D"
+  ],
+  "11": {
+    "0G": "Atti di nascita dei discendenti mancanti: Joao Oliveira",
+    "4/2Hi": "Apostille mancante per la procura estera di Carolina Souza",
+    "8/1B": "Atto di nascita non trovato per Joao Oliveira",
+    "8/1C": "Impossibile verificare l'apostille dell'atto di nascita di Joao Oliveira perché l'atto manca",
+    "8/1D": "Impossibile verificare la traduzione dell'atto di nascita di Joao Oliveira perché l'atto manca"
+  }
 }

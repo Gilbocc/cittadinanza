@@ -2,17 +2,28 @@
   {
     "document_type": "IndiceProcedimento.html",
     "schema": {
-      "numero_anno_ruolo": "306/2025",
-      "data_iscrizione": "19-06-2025",
+      "numero_anno_ruolo": "948/2024",
+      "data_iscrizione": "25-01-2025",
       "iscrizione_post_28_02_2023": "OK",
-      "iscrizione_pre_27_03_2025": "KO",
-      "comparsa_avvocatura": "NO",
-      "data_comparsa_avvocatura": "29-10-2024",
+      "iscrizione_pre_27_03_2025": "OK",
+      "comparsa_avvocatura": "SI",
+      "data_comparsa_avvocatura": "11-09-2024",
       "visibilita_pm": "SI",
-      "data_visibilita_pm": "15-07-2025",
-      "interventi": "NO",
-      "numero_interventi": 0,
-      "intervenuti": []
+      "data_visibilita_pm": "29-03-2025",
+      "interventi": "SI",
+      "numero_interventi": 2,
+      "intervenuti": [
+        {
+          "nome": "Carlos",
+          "cognome": "Nunes",
+          "data": "26-04-2025"
+        },
+        {
+          "nome": "Pedro",
+          "cognome": "Souza",
+          "data": "13-09-2024"
+        }
+      ]
     }
   },
   {
@@ -20,15 +31,15 @@
     "schema": {
       "avvocati": [
         {
-          "nome": "Chiara",
-          "cognome": "Costa"
+          "nome": "Mateus",
+          "cognome": "Barbosa"
         }
       ],
       "numero_ricorrenti": 1,
       "ricorrenti_maggiorenni": [
         {
-          "nome": "Elena",
-          "cognome": "Rossi",
+          "nome": "Beatriz",
+          "cognome": "Barbosa-Costa",
           "nazionalita": "Brasiliana"
         }
       ],
@@ -36,31 +47,31 @@
       "ricorrenti_per_matrimonio": [],
       "linea_discendenza": [
         {
-          "nome": "Sara Carlo",
-          "cognome": "Marini"
+          "nome": "Juliana Maria",
+          "cognome": "Pereira"
         },
         {
-          "nome": "Marco",
-          "cognome": "Moretti"
+          "nome": "Joao Joao",
+          "cognome": "Nunes Pereira"
         },
         {
-          "nome": "Elena",
-          "cognome": "Rossi"
+          "nome": "Maria Ana",
+          "cognome": "Souza"
         },
         {
-          "nome": "Sara Ana",
-          "cognome": "Marini"
+          "nome": "Larissa",
+          "cognome": "Costa"
         },
         {
-          "nome": "Elena",
-          "cognome": "Rossi"
+          "nome": "Beatriz",
+          "cognome": "Barbosa-Costa"
         }
       ],
-      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo.",
-      "riassunto_linea_discendenza": "Sara Carlo Marini -> Marco Moretti -> Elena Rossi -> Sara Ana Marini -> Elena Rossi",
+      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo. Nel ricorso sono dichiarati i seguenti alias/pseudonimi: Juliana Pereiro.",
+      "riassunto_linea_discendenza": "Juliana Maria Pereira -> Joao Joao Nunes Pereira -> Maria Ana Souza -> Larissa Costa -> Beatriz Barbosa-Costa",
       "coerenza_linea_discendenza": "SI",
       "proveniente_dal_brasile": "SI",
-      "data_ricorso": "05-12-2025"
+      "data_ricorso": "16-04-2025"
     }
   },
   {
@@ -68,8 +79,8 @@
     "schema": {
       "soggetto": [
         {
-          "nome": "Elena",
-          "cognome": "Rossi",
+          "nome": "Beatriz",
+          "cognome": "Barbosa-Costa",
           "minorenne": "NO",
           "rappresentanti_legali": [],
           "firma_presente": "OK"
@@ -78,15 +89,15 @@
       "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "avvocati": [
         {
-          "nome": "Chiara",
-          "cognome": "Costa"
+          "nome": "Beatriz",
+          "cognome": "Cardoso"
         }
       ],
-      "tribunale_brescia_indicato": "OK",
+      "tribunale_brescia_indicato": "KO",
       "tribunale_indicato": "Tribunale civile competente",
-      "data_procura": "03-01-2024",
+      "data_procura": "06-12-2024",
       "rilasciata_in_italia": "NO",
-      "scritta_in_italiano": "NO"
+      "scritta_in_italiano": "OK"
     }
   },
   {
@@ -96,40 +107,10 @@
         "document_type": "Procura",
         "soggetto": [
           {
-            "nome": "Elena",
-            "cognome": "Rossi"
+            "nome": "Beatriz",
+            "cognome": "Barbosa-Costa"
           }
         ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Procura",
-        "soggetto": [
-          {
-            "nome": "Elena",
-            "cognome": "Rossi"
-          }
-        ]
-      },
-      "sede_traduttore": "Estero"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "soggetto": [
-          {
-            "nome": "Elena",
-            "cognome": "Rossi"
-          }
-        ],
-        "documento_originale": "Procura"
       }
     }
   },
@@ -137,22 +118,22 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Sara Carlo",
-        "cognome": "Marini"
+        "nome": "Juliana Maria",
+        "cognome": "Pereira"
       },
-      "tipo": "parrocchiale",
-      "timbro_diocesi": "NO",
-      "comune_nascita": "Mantova",
-      "provincia": "mantova",
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Cremona",
+      "provincia": "cremona",
       "padre": {
-        "nome": "Elena",
-        "cognome": "Rossi"
+        "nome": "Mateus",
+        "cognome": "Rodrigues"
       },
       "madre": {
-        "nome": "Elena",
-        "cognome": "Rossi"
+        "nome": "Patricia",
+        "cognome": "Ribeiro"
       },
-      "data_nascita": "24-03-1856",
+      "data_nascita": "27-09-1842",
       "area_nascita": "A",
       "stato": "Italia"
     }
@@ -161,22 +142,22 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Marco",
-        "cognome": "Moretti"
+        "nome": "Joao Joao",
+        "cognome": "Nunes Pereira"
       },
       "tipo": "anagrafico",
       "timbro_diocesi": "OK",
-      "comune_nascita": "Campinas",
+      "comune_nascita": "Santos",
       "provincia": "altro",
       "padre": {
-        "nome": "Elena",
-        "cognome": "Rossi"
+        "nome": "Paulo",
+        "cognome": "Almeida"
       },
       "madre": {
-        "nome": "Sara Carlo",
-        "cognome": "Marini"
+        "nome": "Juliana Maria",
+        "cognome": "Pereira"
       },
-      "data_nascita": "23-07-1956",
+      "data_nascita": "03-09-1934",
       "area_nascita": "E",
       "stato": "Brasile"
     }
@@ -188,8 +169,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Marco",
-            "cognome": "Moretti"
+            "nome": "Joao Joao",
+            "cognome": "Nunes Pereira"
           }
         ]
       }
@@ -202,8 +183,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Marco",
-            "cognome": "Moretti"
+            "nome": "Joao Joao",
+            "cognome": "Nunes Pereira"
           }
         ]
       },
@@ -217,8 +198,8 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Marco",
-            "cognome": "Moretti"
+            "nome": "Joao Joao",
+            "cognome": "Nunes Pereira"
           }
         ],
         "documento_originale": "Atto di nascita"
@@ -229,90 +210,22 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Elena",
-        "cognome": "Rossi"
-      },
-      "tipo": "anagrafico",
-      "timbro_diocesi": "NO",
-      "comune_nascita": "Porto Alegre",
-      "provincia": "altro",
-      "padre": {
-        "nome": "Matteo",
-        "cognome": "Gallo"
-      },
-      "madre": {
-        "nome": "Marco",
-        "cognome": "Moretti"
-      },
-      "data_nascita": "03-06-2008",
-      "area_nascita": "E",
-      "stato": "Brasile"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Elena",
-            "cognome": "Rossi"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Elena",
-            "cognome": "Rossi"
-          }
-        ]
-      },
-      "sede_traduttore": "Estero"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "soggetto": [
-          {
-            "nome": "Elena",
-            "cognome": "Rossi"
-          }
-        ],
-        "documento_originale": "Atto di nascita"
-      }
-    }
-  },
-  {
-    "document_type": "Atto di nascita",
-    "schema": {
-      "soggetto": {
-        "nome": "Sara Ana",
-        "cognome": "Marini"
+        "nome": "Maria Ana",
+        "cognome": "Souza"
       },
       "tipo": "anagrafico",
       "timbro_diocesi": "OK",
-      "comune_nascita": "Campinas",
+      "comune_nascita": "Salvador",
       "provincia": "altro",
       "padre": {
-        "nome": "Luca",
-        "cognome": "Bianchi"
+        "nome": "Joao Joao",
+        "cognome": "Nunes Pereira"
       },
       "madre": {
-        "nome": "Elena",
-        "cognome": "Rossi"
+        "nome": "Juliana",
+        "cognome": "Santos"
       },
-      "data_nascita": "21-03-1968",
+      "data_nascita": "06-01-1945",
       "area_nascita": "E",
       "stato": "Brasile"
     }
@@ -324,8 +237,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Sara Ana",
-            "cognome": "Marini"
+            "nome": "Maria Ana",
+            "cognome": "Souza"
           }
         ]
       }
@@ -338,8 +251,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Sara Ana",
-            "cognome": "Marini"
+            "nome": "Maria Ana",
+            "cognome": "Souza"
           }
         ]
       },
@@ -354,8 +267,8 @@
         "documento_originale": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Sara Ana",
-            "cognome": "Marini"
+            "nome": "Maria Ana",
+            "cognome": "Souza"
           }
         ]
       }
@@ -365,22 +278,22 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Elena",
-        "cognome": "Rossi"
+        "nome": "Larissa",
+        "cognome": "Costa"
       },
-      "tipo": "parrocchiale",
-      "timbro_diocesi": "NO",
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
       "comune_nascita": "Rio de Janeiro",
       "provincia": "altro",
       "padre": {
-        "nome": "Elena",
-        "cognome": "Rossi"
+        "nome": "Paulo",
+        "cognome": "Lima"
       },
       "madre": {
-        "nome": "Sara Ana",
-        "cognome": "Marini"
+        "nome": "Maria Ana",
+        "cognome": "Souza"
       },
-      "data_nascita": "13-11-1930",
+      "data_nascita": "08-10-1933",
       "area_nascita": "E",
       "stato": "Brasile"
     }
@@ -392,8 +305,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Elena",
-            "cognome": "Rossi"
+            "nome": "Larissa",
+            "cognome": "Costa"
           }
         ]
       }
@@ -406,8 +319,76 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Elena",
-            "cognome": "Rossi"
+            "nome": "Larissa",
+            "cognome": "Costa"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Larissa",
+            "cognome": "Costa"
+          }
+        ],
+        "documento_originale": "Atto di nascita"
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Beatriz",
+        "cognome": "Barbosa-Costa"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Niteroi",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Diego",
+        "cognome": "Cardoso"
+      },
+      "madre": {
+        "nome": "Larissa",
+        "cognome": "Costa"
+      },
+      "data_nascita": "27-04-1963",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Beatriz",
+            "cognome": "Barbosa-Costa"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Beatriz",
+            "cognome": "Barbosa-Costa"
           }
         ]
       },
@@ -422,8 +403,8 @@
         "documento_originale": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Elena",
-            "cognome": "Rossi"
+            "nome": "Beatriz",
+            "cognome": "Barbosa-Costa"
           }
         ]
       }
@@ -433,10 +414,10 @@
     "document_type": "Atto di morte",
     "schema": {
       "soggetto": {
-        "nome": "Sara Carlo",
-        "cognome": "Marini"
+        "nome": "Juliana Maria",
+        "cognome": "Pereira"
       },
-      "data_decesso": "31-10-1924"
+      "data_decesso": "22-01-1916"
     }
   },
   {
@@ -446,8 +427,8 @@
         "document_type": "Atto di morte",
         "soggetto": [
           {
-            "nome": "Sara Carlo",
-            "cognome": "Marini"
+            "nome": "Juliana Maria",
+            "cognome": "Pereira"
           }
         ]
       }
@@ -460,8 +441,8 @@
         "document_type": "Atto di morte",
         "soggetto": [
           {
-            "nome": "Sara Carlo",
-            "cognome": "Marini"
+            "nome": "Juliana Maria",
+            "cognome": "Pereira"
           }
         ]
       },
@@ -475,8 +456,8 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Sara Carlo",
-            "cognome": "Marini"
+            "nome": "Juliana Maria",
+            "cognome": "Pereira"
           }
         ],
         "documento_originale": "Atto di morte"
@@ -487,12 +468,17 @@
     "document_type": "Certificato Negativo di Naturalizzazione",
     "schema": {
       "soggetto": {
-        "nome": "Sara Carlo",
-        "cognome": "Marini"
+        "nome": "Juliana Maria",
+        "cognome": "Pereira"
       },
-      "pseudonimi": [],
+      "pseudonimi": [
+        {
+          "nome": "Juliana",
+          "cognome": "Pereiro"
+        }
+      ],
       "formula_negativa_presente": "OK",
-      "data_nascita": "24-03-1856"
+      "data_nascita": "27-09-1842"
     }
   },
   {
@@ -502,8 +488,8 @@
         "document_type": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Sara Carlo",
-            "cognome": "Marini"
+            "nome": "Juliana Maria",
+            "cognome": "Pereira"
           }
         ]
       }
@@ -516,26 +502,26 @@
         "document_type": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Sara Carlo",
-            "cognome": "Marini"
+            "nome": "Juliana Maria",
+            "cognome": "Pereira"
           }
         ]
       },
-      "sede_traduttore": "Estero"
+      "sede_traduttore": "Italia"
     }
   },
   {
-    "document_type": "Apostille",
+    "document_type": "Asseverazione",
     "schema": {
       "oggetto": {
         "document_type": "Traduzione",
+        "documento_originale": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Sara Carlo",
-            "cognome": "Marini"
+            "nome": "Juliana Maria",
+            "cognome": "Pereira"
           }
-        ],
-        "documento_originale": "Certificato Negativo di Naturalizzazione"
+        ]
       }
     }
   }

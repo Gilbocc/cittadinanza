@@ -16,66 +16,48 @@
     "1": "OK"
   },
   "2": {
-    "A": "20.06.2025",
+    "A": "02.12.2025",
     "B": "OK",
     "C": "KO",
-    "D": "NO",
-    "Di": "NULL",
+    "D": "SI",
+    "Di": "06.12.2025",
     "E": "SI",
-    "Ei": "21.06.2024",
+    "Ei": "26.03.2025",
     "F": "NO",
     "Fi": "NULL",
     "Fii": "NULL",
     "Fiii": "NULL",
-    "G": "0180-2025"
+    "G": "0515-2025"
   },
   "3": {
-    "A": "Elena Rossi",
-    "B": 2,
-    "C": "Francesca Ana Leoni-Silva, Sara Marini",
-    "D": "Francesca Ana Leoni-Silva: Brasiliana, Sara Marini: Brasiliana",
+    "A": "Juliana Almeida",
+    "B": 1,
+    "C": "Mateus Ribeiro-Cardoso",
+    "D": "Mateus Ribeiro-Cardoso: brasiliana",
     "E": "NO",
     "Ei": "NULL",
     "Eii": "NULL",
-    "F": "OK; Elena Maria Rossi > Luca Bianchi > Marco Moretti > Sara Marini > Francesca Ana Leoni",
+    "F": "OK; Paulo Paulo Lima -> Rafael Luis Araujo-Lima -> Renata Silva Araujo-Lima -> Juliana Cardoso -> Mateus Ribeiro-Cardoso",
     "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
     "Gi": "NULL"
   },
   "4": {
     "4/1": {
-      "A": "Francesca Ana Leoni-Silva",
+      "A": "Mateus Ribeiro-Cardoso",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Francesca Ana Leoni-Silva",
+      "B": "OK; firma del ricorrente Mateus Ribeiro-Cardoso",
       "C": "OK",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "E": "OK",
       "Ei": "NULL",
-      "F": "09.04.2024",
-      "G": "OK",
-      "H": "NO",
-      "Hi": "OK",
+      "F": "14.06.2024",
+      "G": "KO",
+      "H": "OK",
+      "Hi": "NULL",
       "I": "OK",
       "Ii": "NULL",
       "Iii": "NULL",
       "Iiii": "NULL",
-      "Iiv": "NULL"
-    },
-    "4/2": {
-      "A": "Sara Marini",
-      "Ai": "NULL",
-      "B": "OK; firma del ricorrente Sara Marini",
-      "C": "OK",
-      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
-      "E": "OK",
-      "Ei": "NULL",
-      "F": "14.04.2024",
-      "G": "OK",
-      "H": "NO",
-      "Hi": "OK",
-      "I": "NO",
-      "Ii": "OK",
-      "Iii": "NO",
-      "Iiii": "OK",
       "Iiv": "NULL"
     }
   },
@@ -84,36 +66,36 @@
     "Ai": "NULL",
     "C": "Cremona",
     "D": "OK",
-    "E": "Padre: Marco Moretti, Madre: Elena Rossi",
-    "F": "10.07.1883"
+    "E": "Padre: Pedro Rodrigues, Madre: Fernanda Cardoso",
+    "F": "31.01.1850"
   },
   "6": {
-    "A": "OK",
+    "A": "NO",
     "Ai": "NULL",
     "Aii": "NULL",
     "Aiii": "NULL",
-    "C": "NULL",
-    "D": "NULL",
+    "C": "28.02.1916",
+    "D": "OK",
     "Di": "NULL",
     "Dii": "NULL",
     "Diii": "NULL",
-    "E": "NULL",
-    "F": "NULL",
-    "Fi": "NULL",
+    "E": "OK",
+    "F": "OK",
+    "Fi": "OK",
     "Fii": "NULL"
   },
   "7": {
     "A": "OK",
-    "B": "Elena Rosso",
+    "B": "NULL",
     "C": "OK",
     "D": "OK",
     "E": "OK",
-    "Ei": "NULL",
-    "Eii": "OK"
+    "Ei": "OK",
+    "Eii": "NULL"
   },
   "8": {
     "8/1": {
-      "A": "Luca Bianchi",
+      "A": "Rafael Luis Araujo-Lima",
       "B": "OK",
       "C": "OK",
       "D": "OK",
@@ -121,15 +103,15 @@
       "Dii": "OK"
     },
     "8/2": {
-      "A": "Marco Moretti",
+      "A": "Renata Silva Araujo-Lima",
       "B": "OK",
       "C": "OK",
       "D": "OK",
-      "Di": "OK",
-      "Dii": "NULL"
+      "Di": "NULL",
+      "Dii": "OK"
     },
     "8/3": {
-      "A": "Sara Marini",
+      "A": "Juliana Cardoso",
       "B": "OK",
       "C": "OK",
       "D": "OK",
@@ -137,7 +119,7 @@
       "Dii": "NULL"
     },
     "8/4": {
-      "A": "Francesca Ana Leoni",
+      "A": "Mateus Ribeiro-Cardoso",
       "B": "OK",
       "C": "OK",
       "D": "OK",
@@ -146,9 +128,11 @@
     }
   },
   "10": [
-    "2C"
+    "2C",
+    "4/1G"
   ],
   "11": {
-    "2C": "Il ricorso non risulta iscritto prima del 27.03.2025 escluso"
+    "2C": "Il ricorso non risulta iscritto prima del 27.03.2025 escluso",
+    "4/1G": "La data della procura di Mateus Ribeiro-Cardoso non è anteriore alla data del ricorso"
   }
 }

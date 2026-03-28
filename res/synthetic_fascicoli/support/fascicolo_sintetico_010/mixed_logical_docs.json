@@ -2,14 +2,14 @@
   {
     "document_type": "IndiceProcedimento.html",
     "schema": {
-      "numero_anno_ruolo": "841/2025",
-      "data_iscrizione": "23-11-2025",
+      "numero_anno_ruolo": "934/2024",
+      "data_iscrizione": "22-10-2025",
       "iscrizione_post_28_02_2023": "OK",
       "iscrizione_pre_27_03_2025": "KO",
-      "comparsa_avvocatura": "NO",
-      "data_comparsa_avvocatura": "24-07-2025",
+      "comparsa_avvocatura": "SI",
+      "data_comparsa_avvocatura": "29-05-2024",
       "visibilita_pm": "SI",
-      "data_visibilita_pm": "08-02-2025",
+      "data_visibilita_pm": "26-06-2024",
       "interventi": "NO",
       "numero_interventi": 0,
       "intervenuti": []
@@ -20,24 +20,20 @@
     "schema": {
       "avvocati": [
         {
-          "nome": "Luca",
-          "cognome": "Bianchi"
-        },
-        {
-          "nome": "Elena",
-          "cognome": "Rossi"
+          "nome": "Renata",
+          "cognome": "Oliveira"
         }
       ],
       "numero_ricorrenti": 2,
       "ricorrenti_maggiorenni": [
         {
-          "nome": "Chiara",
-          "cognome": "Costa-Silva",
+          "nome": "Rafael Luis",
+          "cognome": "Araujo-Barbosa",
           "nazionalita": "Brasiliana"
         },
         {
-          "nome": "Francesca",
-          "cognome": "Leoni",
+          "nome": "Patricia Luz",
+          "cognome": "Barbosa",
           "nazionalita": "Brasiliana"
         }
       ],
@@ -45,27 +41,27 @@
       "ricorrenti_per_matrimonio": [],
       "linea_discendenza": [
         {
-          "nome": "Matteo Maria",
-          "cognome": "Gallo"
+          "nome": "Camila Luz",
+          "cognome": "Santos"
         },
         {
-          "nome": "Matteo",
-          "cognome": "Gallo"
+          "nome": "Antonio",
+          "cognome": "Rodrigues"
         },
         {
-          "nome": "Francesca",
-          "cognome": "Leoni"
+          "nome": "Patricia Luz",
+          "cognome": "Barbosa"
         },
         {
-          "nome": "Chiara",
-          "cognome": "Costa"
+          "nome": "Rafael Luis",
+          "cognome": "Araujo-Barbosa"
         }
       ],
-      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo.",
-      "riassunto_linea_discendenza": "Matteo Maria Gallo -> Matteo Gallo -> Francesca Leoni -> Chiara Costa",
+      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo. Nel ricorso risultano varianti anagrafiche/pseudonimi: Camila Luz Santos (alias: Camila Santo); Rafael Luis Araujo-Barbosa (alias: Rafael Arauj).",
+      "riassunto_linea_discendenza": "Camila Luz Santos -> Antonio Rodrigues -> Patricia Luz Barbosa -> Rafael Luis Araujo-Barbosa",
       "coerenza_linea_discendenza": "SI",
       "proveniente_dal_brasile": "SI",
-      "data_ricorso": "10-04-2025"
+      "data_ricorso": "05-10-2025"
     }
   },
   {
@@ -73,8 +69,8 @@
     "schema": {
       "soggetto": [
         {
-          "nome": "Chiara",
-          "cognome": "Costa-Silva",
+          "nome": "Rafael Luis",
+          "cognome": "Araujo-Barbosa",
           "minorenne": "NO",
           "rappresentanti_legali": [],
           "firma_presente": "OK"
@@ -83,17 +79,13 @@
       "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "avvocati": [
         {
-          "nome": "Luca",
-          "cognome": "Bianchi"
-        },
-        {
-          "nome": "Elena",
-          "cognome": "Rossi"
+          "nome": "Renata",
+          "cognome": "Oliveira"
         }
       ],
       "tribunale_brescia_indicato": "OK",
       "tribunale_indicato": "Tribunale civile competente",
-      "data_procura": "14-05-2024",
+      "data_procura": "16-08-2025",
       "rilasciata_in_italia": "NO",
       "scritta_in_italiano": "NO"
     }
@@ -105,8 +97,8 @@
         "document_type": "Procura",
         "soggetto": [
           {
-            "nome": "Chiara",
-            "cognome": "Costa-Silva"
+            "nome": "Rafael Luis",
+            "cognome": "Araujo-Barbosa"
           }
         ]
       }
@@ -119,8 +111,8 @@
         "document_type": "Procura",
         "soggetto": [
           {
-            "nome": "Chiara",
-            "cognome": "Costa-Silva"
+            "nome": "Rafael Luis",
+            "cognome": "Araujo-Barbosa"
           }
         ]
       },
@@ -135,8 +127,8 @@
         "documento_originale": "Procura",
         "soggetto": [
           {
-            "nome": "Chiara",
-            "cognome": "Costa-Silva"
+            "nome": "Rafael Luis",
+            "cognome": "Araujo-Barbosa"
           }
         ]
       }
@@ -147,8 +139,8 @@
     "schema": {
       "soggetto": [
         {
-          "nome": "Francesca",
-          "cognome": "Leoni",
+          "nome": "Patricia Luz",
+          "cognome": "Barbosa",
           "minorenne": "NO",
           "rappresentanti_legali": [],
           "firma_presente": "OK"
@@ -157,17 +149,13 @@
       "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "avvocati": [
         {
-          "nome": "Luca",
-          "cognome": "Bianchi"
-        },
-        {
-          "nome": "Elena",
-          "cognome": "Rossi"
+          "nome": "Renata",
+          "cognome": "Oliveira"
         }
       ],
       "tribunale_brescia_indicato": "OK",
       "tribunale_indicato": "Tribunale civile competente",
-      "data_procura": "25-02-2024",
+      "data_procura": "01-10-2025",
       "rilasciata_in_italia": "NO",
       "scritta_in_italiano": "NO"
     }
@@ -179,8 +167,8 @@
         "document_type": "Procura",
         "soggetto": [
           {
-            "nome": "Francesca",
-            "cognome": "Leoni"
+            "nome": "Patricia Luz",
+            "cognome": "Barbosa"
           }
         ]
       }
@@ -193,26 +181,26 @@
         "document_type": "Procura",
         "soggetto": [
           {
-            "nome": "Francesca",
-            "cognome": "Leoni"
+            "nome": "Patricia Luz",
+            "cognome": "Barbosa"
           }
         ]
       },
-      "sede_traduttore": "Italia"
+      "sede_traduttore": "Estero"
     }
   },
   {
-    "document_type": "Asseverazione",
+    "document_type": "Apostille",
     "schema": {
       "oggetto": {
         "document_type": "Traduzione",
-        "documento_originale": "Procura",
         "soggetto": [
           {
-            "nome": "Francesca",
-            "cognome": "Leoni"
+            "nome": "Patricia Luz",
+            "cognome": "Barbosa"
           }
-        ]
+        ],
+        "documento_originale": "Procura"
       }
     }
   },
@@ -220,22 +208,22 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Matteo Maria",
-        "cognome": "Gallo"
+        "nome": "Camila Luz",
+        "cognome": "Santos"
       },
       "tipo": "anagrafico",
-      "timbro_diocesi": "OK",
-      "comune_nascita": "Cremona",
-      "provincia": "cremona",
+      "timbro_diocesi": "NO",
+      "comune_nascita": "Mantova",
+      "provincia": "mantova",
       "padre": {
-        "nome": "Chiara",
-        "cognome": "Costa"
+        "nome": "Pedro",
+        "cognome": "Oliveira"
       },
       "madre": {
-        "nome": "Luca",
-        "cognome": "Bianchi"
+        "nome": "Beatriz",
+        "cognome": "Santos"
       },
-      "data_nascita": "22-04-1953",
+      "data_nascita": "30-01-1880",
       "area_nascita": "A",
       "stato": "Italia"
     }
@@ -244,22 +232,22 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Matteo",
-        "cognome": "Gallo"
+        "nome": "Patricia Luz",
+        "cognome": "Barbosa"
       },
       "tipo": "anagrafico",
-      "timbro_diocesi": "OK",
-      "comune_nascita": "Santos",
+      "timbro_diocesi": "NO",
+      "comune_nascita": "Campinas",
       "provincia": "altro",
       "padre": {
-        "nome": "Matteo",
-        "cognome": "Gallo"
+        "nome": "Antonio",
+        "cognome": "Rodrigues"
       },
       "madre": {
-        "nome": "Matteo Maria",
-        "cognome": "Gallo"
+        "nome": "Camila",
+        "cognome": "Mendes"
       },
-      "data_nascita": "04-05-1933",
+      "data_nascita": "25-09-2006",
       "area_nascita": "E",
       "stato": "Brasile"
     }
@@ -271,8 +259,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Matteo",
-            "cognome": "Gallo"
+            "nome": "Patricia Luz",
+            "cognome": "Barbosa"
           }
         ]
       }
@@ -285,8 +273,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Matteo",
-            "cognome": "Gallo"
+            "nome": "Patricia Luz",
+            "cognome": "Barbosa"
           }
         ]
       },
@@ -301,8 +289,8 @@
         "documento_originale": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Matteo",
-            "cognome": "Gallo"
+            "nome": "Patricia Luz",
+            "cognome": "Barbosa"
           }
         ]
       }
@@ -312,22 +300,22 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Francesca",
-        "cognome": "Leoni"
+        "nome": "Rafael Luis",
+        "cognome": "Araujo-Barbosa"
       },
       "tipo": "anagrafico",
       "timbro_diocesi": "OK",
-      "comune_nascita": "Porto Alegre",
+      "comune_nascita": "Fortaleza",
       "provincia": "altro",
       "padre": {
-        "nome": "Matteo",
-        "cognome": "Gallo"
+        "nome": "Jose",
+        "cognome": "Lima"
       },
       "madre": {
-        "nome": "Matteo",
-        "cognome": "Gallo"
+        "nome": "Patricia Luz",
+        "cognome": "Barbosa"
       },
-      "data_nascita": "24-03-1978",
+      "data_nascita": "24-09-1979",
       "area_nascita": "E",
       "stato": "Brasile"
     }
@@ -339,8 +327,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Francesca",
-            "cognome": "Leoni"
+            "nome": "Rafael Luis",
+            "cognome": "Araujo-Barbosa"
           }
         ]
       }
@@ -353,94 +341,26 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Francesca",
-            "cognome": "Leoni"
+            "nome": "Rafael Luis",
+            "cognome": "Araujo-Barbosa"
           }
         ]
       },
-      "sede_traduttore": "Italia"
-    }
-  },
-  {
-    "document_type": "Asseverazione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "documento_originale": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Francesca",
-            "cognome": "Leoni"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Atto di nascita",
-    "schema": {
-      "soggetto": {
-        "nome": "Chiara",
-        "cognome": "Costa"
-      },
-      "tipo": "anagrafico",
-      "timbro_diocesi": "OK",
-      "comune_nascita": "Curitiba",
-      "provincia": "altro",
-      "padre": {
-        "nome": "Marco",
-        "cognome": "Moretti"
-      },
-      "madre": {
-        "nome": "Francesca",
-        "cognome": "Leoni"
-      },
-      "data_nascita": "02-09-1996",
-      "area_nascita": "E",
-      "stato": "Brasile"
+      "sede_traduttore": "Estero"
     }
   },
   {
     "document_type": "Apostille",
     "schema": {
       "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Chiara",
-            "cognome": "Costa"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Chiara",
-            "cognome": "Costa"
-          }
-        ]
-      },
-      "sede_traduttore": "Italia"
-    }
-  },
-  {
-    "document_type": "Asseverazione",
-    "schema": {
-      "oggetto": {
         "document_type": "Traduzione",
-        "documento_originale": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Chiara",
-            "cognome": "Costa"
+            "nome": "Rafael Luis",
+            "cognome": "Araujo-Barbosa"
           }
-        ]
+        ],
+        "documento_originale": "Atto di nascita"
       }
     }
   },
@@ -448,12 +368,12 @@
     "document_type": "Certificato Negativo di Naturalizzazione",
     "schema": {
       "soggetto": {
-        "nome": "Matteo Maria",
-        "cognome": "Gallo"
+        "nome": "Camila Luz",
+        "cognome": "Santos"
       },
       "pseudonimi": [],
       "formula_negativa_presente": "OK",
-      "data_nascita": "22-04-1953"
+      "data_nascita": "30-01-1880"
     }
   },
   {
@@ -463,8 +383,8 @@
         "document_type": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Matteo Maria",
-            "cognome": "Gallo"
+            "nome": "Camila Luz",
+            "cognome": "Santos"
           }
         ]
       }
@@ -477,8 +397,8 @@
         "document_type": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Matteo Maria",
-            "cognome": "Gallo"
+            "nome": "Camila Luz",
+            "cognome": "Santos"
           }
         ]
       },
@@ -493,52 +413,26 @@
         "documento_originale": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Matteo Maria",
-            "cognome": "Gallo"
+            "nome": "Camila Luz",
+            "cognome": "Santos"
           }
         ]
       }
     }
   },
   {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Documento non supportato",
-        "soggetto": [
-          {
-            "nome": "Matteo",
-            "cognome": "Gallo"
-          }
-        ],
-        "documento_originale": "Comunicazione PEC"
-      }
-    }
-  },
-  {
-    "document_type": "Apostille",
+    "document_type": "Traduzione",
     "schema": {
       "oggetto": {
         "document_type": "Certificato di matrimonio",
         "soggetto": [
           {
-            "nome": "Sara",
-            "cognome": "Marini"
-          },
-          {
-            "nome": "Giulia",
-            "cognome": "Conti"
+            "nome": "Maria",
+            "cognome": "Araujo"
           }
         ]
-      }
-    }
-  },
-  {
-    "document_type": "Documenti Personali Vari",
-    "schema": {
-      "id": "UD-1349",
-      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
-      "data": "14-04-2023"
+      },
+      "sede_traduttore": "Estero"
     }
   },
   {
@@ -548,11 +442,11 @@
         "document_type": "Documento non supportato",
         "soggetto": [
           {
-            "nome": "Giulia",
-            "cognome": "Conti"
+            "nome": "Diego",
+            "cognome": "Rodrigues"
           }
         ],
-        "documento_originale": "Avviso Udienza"
+        "documento_originale": "Documenti Personali Vari"
       }
     }
   },
@@ -563,12 +457,12 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Sara",
-            "cognome": "Marini"
+            "nome": "Maria",
+            "cognome": "Araujo"
           },
           {
-            "nome": "Giulia",
-            "cognome": "Conti"
+            "nome": "Renata",
+            "cognome": "Silva"
           }
         ],
         "documento_originale": "Certificato di matrimonio"
@@ -576,18 +470,21 @@
     }
   },
   {
-    "document_type": "Apostille",
+    "document_type": "Certificato di matrimonio",
     "schema": {
-      "oggetto": {
-        "document_type": "Documento non supportato",
-        "soggetto": [
-          {
-            "nome": "Chiara",
-            "cognome": "Costa"
-          }
-        ],
-        "documento_originale": "Comunicazione PEC"
-      }
+      "soggetti": [
+        {
+          "nome": "Carlos",
+          "cognome": "Pereira"
+        },
+        {
+          "nome": "Antonio",
+          "cognome": "Nunes"
+        }
+      ],
+      "luogo": "Santos",
+      "data_matrimonio": "12-05-1999",
+      "note": "Documento non richiesto ai fini del riconoscimento richiesto."
     }
   },
   {
@@ -597,36 +494,12 @@
         "document_type": "Documento non supportato",
         "soggetto": [
           {
-            "nome": "Giulia",
-            "cognome": "Conti"
+            "nome": "Patricia",
+            "cognome": "Almeida"
           }
         ],
         "documento_originale": "Documenti Personali Vari"
       }
-    }
-  },
-  {
-    "document_type": "Comunicazione PEC",
-    "schema": {
-      "id": "UD-1536",
-      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
-      "data": "28-01-2025"
-    }
-  },
-  {
-    "document_type": "Avviso Udienza",
-    "schema": {
-      "id": "UD-6942",
-      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
-      "data": "23-07-2023"
-    }
-  },
-  {
-    "document_type": "Avviso Udienza",
-    "schema": {
-      "id": "UD-3001",
-      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
-      "data": "20-07-2025"
     }
   },
   {
@@ -636,8 +509,8 @@
         "document_type": "Certificato di matrimonio",
         "soggetto": [
           {
-            "nome": "Sara",
-            "cognome": "Marini"
+            "nome": "Carlos",
+            "cognome": "Pereira"
           }
         ]
       },
@@ -645,11 +518,74 @@
     }
   },
   {
-    "document_type": "Comunicazione PEC",
+    "document_type": "Documenti Personali Vari",
     "schema": {
-      "id": "UD-9920",
+      "id": "UD-3827",
       "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
-      "data": "04-01-2025"
+      "data": "22-03-2023"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Maria",
+            "cognome": "Araujo"
+          },
+          {
+            "nome": "Renata",
+            "cognome": "Silva"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Documenti Personali Vari",
+    "schema": {
+      "id": "UD-9564",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "22-11-2023"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Carlos",
+            "cognome": "Pereira"
+          },
+          {
+            "nome": "Antonio",
+            "cognome": "Nunes"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Carlos",
+            "cognome": "Pereira"
+          },
+          {
+            "nome": "Antonio",
+            "cognome": "Nunes"
+          }
+        ],
+        "documento_originale": "Certificato di matrimonio"
+      }
     }
   },
   {
@@ -657,16 +593,16 @@
     "schema": {
       "soggetti": [
         {
-          "nome": "Sara",
-          "cognome": "Marini"
+          "nome": "Maria",
+          "cognome": "Araujo"
         },
         {
-          "nome": "Giulia",
-          "cognome": "Conti"
+          "nome": "Renata",
+          "cognome": "Silva"
         }
       ],
-      "luogo": "Rio de Janeiro",
-      "data_matrimonio": "04-03-1967",
+      "luogo": "Santos",
+      "data_matrimonio": "17-01-1990",
       "note": "Documento non richiesto ai fini del riconoscimento richiesto."
     }
   }

@@ -9,69 +9,51 @@
     "F": "OK",
     "G": "OK",
     "Gi": "NULL",
-    "H": "OK",
-    "Hi": "NULL"
+    "H": "KO",
+    "Hi": "Marcos Joao Silva-Mendes-Souza"
   },
   "1": {
     "1": "OK"
   },
   "2": {
-    "A": "06.09.2025",
+    "A": "15.12.2025",
     "B": "OK",
     "C": "KO",
-    "D": "NO",
-    "Di": "NULL",
-    "E": "SI",
-    "Ei": "15.09.2025",
+    "D": "SI",
+    "Di": "06.02.2025",
+    "E": "NO",
+    "Ei": "NULL",
     "F": "NO",
     "Fi": "NULL",
     "Fii": "NULL",
     "Fiii": "NULL",
-    "G": "0720-2025"
+    "G": "0326-2024"
   },
   "3": {
-    "A": "Giulia Conti, Francesca Leoni",
-    "B": 2,
-    "C": "Marco Moretti-Silva, Marco Moretti",
-    "D": "Marco Moretti-Silva: Brasiliana, Marco Moretti: Brasiliana",
+    "A": "Carolina Nunes, Juliana Costa",
+    "B": 1,
+    "C": "Marcos Joao Silva-Mendes-Souza",
+    "D": "Marcos Joao Silva-Mendes-Souza: Brasiliana",
     "E": "NO",
     "Ei": "NULL",
     "Eii": "NULL",
-    "F": "OK; Luca Carlo Bianchi -> Luca Bianchi -> Paolo Neri -> Chiara Costa -> Marco Moretti -> Marco Moretti",
-    "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
-    "Gi": "NULL"
+    "F": "OK; Camila Luz Ribeiro -> Ana Mendes -> Marcos Joao Silva-Mendes",
+    "G": "KO; Ricorrenti per matrimonio presenti",
+    "Gi": "Ana Souza"
   },
   "4": {
     "4/1": {
-      "A": "Marco Moretti-Silva",
+      "A": "Marcos Joao Silva-Mendes-Souza",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Marco Moretti-Silva",
+      "B": "OK; firma del ricorrente Marcos Joao Silva-Mendes-Souza",
       "C": "OK",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "E": "OK",
       "Ei": "NULL",
-      "F": "30.07.2024",
-      "G": "OK",
-      "H": "NO",
-      "Hi": "OK",
-      "I": "OK",
-      "Ii": "NULL",
-      "Iii": "NULL",
-      "Iiii": "NULL",
-      "Iiv": "NULL"
-    },
-    "4/2": {
-      "A": "Marco Moretti",
-      "Ai": "NULL",
-      "B": "OK; firma del ricorrente Marco Moretti",
-      "C": "OK",
-      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
-      "E": "OK",
-      "Ei": "NULL",
-      "F": "30.07.2024",
-      "G": "OK",
-      "H": "NO",
-      "Hi": "OK",
+      "F": "21.05.2024",
+      "G": "KO",
+      "H": "OK",
+      "Hi": "NULL",
       "I": "OK",
       "Ii": "NULL",
       "Iii": "NULL",
@@ -82,75 +64,69 @@
   "5": {
     "A": "OK",
     "Ai": "NULL",
-    "C": "Bergamo",
+    "C": "Brescia",
     "D": "OK",
-    "E": "Padre: Davide Lombardi, Madre: Giulia Conti",
-    "F": "17.12.1931"
+    "E": "Padre: Joao Nunes, Madre: Larissa Costa",
+    "F": "02.02.1857"
   },
   "6": {
-    "A": "OK",
+    "A": "NO",
     "Ai": "NULL",
     "Aii": "NULL",
     "Aiii": "NULL",
-    "C": "NULL",
-    "D": "NULL",
+    "C": "09.11.1912",
+    "D": "OK",
     "Di": "NULL",
     "Dii": "NULL",
     "Diii": "NULL",
-    "E": "NULL",
-    "F": "NULL",
-    "Fi": "NULL",
+    "E": "OK",
+    "F": "OK",
+    "Fi": "OK",
     "Fii": "NULL"
   },
   "7": {
     "A": "OK",
-    "B": "Luca Biancho",
+    "B": "Camila Ribeiro",
     "C": "OK",
     "D": "OK",
     "E": "OK",
-    "Ei": "OK",
-    "Eii": "NULL"
+    "Ei": "NULL",
+    "Eii": "OK"
   },
   "8": {
     "8/1": {
-      "A": "Luca Bianchi",
-      "B": "KO",
+      "A": "Ana Mendes",
+      "B": "OK",
       "C": "OK",
       "D": "OK",
       "Di": "OK",
       "Dii": "NULL"
     },
     "8/2": {
-      "A": "Paolo Neri",
-      "B": "OK",
-      "C": "OK",
-      "D": "OK",
+      "A": "Marcos Joao Silva-Mendes",
+      "B": "KO",
+      "C": "KO",
+      "D": "KO",
       "Di": "NULL",
-      "Dii": "OK"
-    },
-    "8/3": {
-      "A": "Chiara Costa",
-      "B": "OK",
-      "C": "OK",
-      "D": "OK",
-      "Di": "NULL",
-      "Dii": "OK"
-    },
-    "8/4": {
-      "A": "Marco Moretti",
-      "B": "OK",
-      "C": "OK",
-      "D": "OK",
-      "Di": "NULL",
-      "Dii": "OK"
+      "Dii": "NULL"
     }
   },
   "10": [
+    "0H",
     "2C",
-    "8/1B"
+    "3G",
+    "4/1G",
+    "8/2B",
+    "8/2C",
+    "8/2D"
   ],
   "11": {
+    "0H": "Atti di nascita dei ricorrenti mancanti: Marcos Joao Silva-Mendes-Souza",
     "2C": "Il ricorso non risulta iscritto prima del 27.03.2025 escluso",
-    "8/1B": "Genitori non in linea discendenza per Luca Bianchi"
+    "3G": "Ricorrenti che chiedono la cittadinanza per matrimonio: Ana Souza",
+    "4/1G": "La data della procura di Marcos Joao Silva-Mendes-Souza non è anteriore alla data del ricorso",
+    "8/2B": "Atto di nascita non trovato per Marcos Joao Silva-Mendes",
+    "8/2C": "Impossibile verificare l'apostille dell'atto di nascita di Marcos Joao Silva-Mendes perché l'atto manca",
+    "8/2D": "Impossibile verificare la traduzione dell'atto di nascita di Marcos Joao Silva-Mendes perché l'atto manca"
   }
 }

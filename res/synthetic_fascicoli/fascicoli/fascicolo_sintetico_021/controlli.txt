@@ -16,101 +16,101 @@
     "1": "OK"
   },
   "2": {
-    "A": "23.10.2025",
+    "A": "22.08.2024",
     "B": "OK",
-    "C": "KO",
+    "C": "OK",
     "D": "NO",
     "Di": "NULL",
     "E": "SI",
-    "Ei": "21.01.2025",
+    "Ei": "11.01.2025",
     "F": "NO",
     "Fi": "NULL",
     "Fii": "NULL",
     "Fiii": "NULL",
-    "G": "0530-2025"
+    "G": "0492-2024"
   },
   "3": {
-    "A": "Paolo Neri, Davide Lombardi",
+    "A": "Diego Oliveira",
     "B": 1,
-    "C": "Marco Moretti-Silva",
-    "D": "Marco Moretti-Silva: Brasiliana",
+    "C": "Pedro Carlos Mendes-Souza",
+    "D": "Pedro Carlos Mendes-Souza: Brasiliana",
     "E": "NO",
     "Ei": "NULL",
     "Eii": "NULL",
-    "F": "OK; Chiara Luigi Costa -> Marco Moretti",
-    "G": "KO; Ricorrenti per matrimonio presenti",
-    "Gi": "Sara Marini"
+    "F": "OK; Antonio Carlos Almeida -> Diego Souza -> Pedro Carlos Mendes",
+    "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
+    "Gi": "NULL"
   },
   "4": {
     "4/1": {
-      "A": "Marco Moretti-Silva",
+      "A": "Pedro Carlos Mendes-Souza",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Marco Moretti-Silva",
-      "C": "KO",
-      "D": "delego a rappresentarmi nel giudizio per il riconoscimento cittadinanza italiana",
-      "E": "NO",
-      "Ei": "Tribunale civile competente",
-      "F": "15.02.2024",
+      "B": "OK; firma del ricorrente Pedro Carlos Mendes-Souza",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "27.06.2025",
       "G": "OK",
       "H": "NO",
       "Hi": "OK",
-      "I": "NO",
-      "Ii": "OK",
-      "Iii": "OK",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
       "Iiii": "NULL",
-      "Iiv": "OK"
+      "Iiv": "NULL"
     }
   },
   "5": {
-    "A": "NO",
-    "Ai": "KO",
-    "C": "Bergamo",
+    "A": "OK",
+    "Ai": "NULL",
+    "C": "Cremona",
     "D": "OK",
-    "E": "Padre: Paolo Neri, Madre: Davide Lombardi",
-    "F": "20.05.1850"
+    "E": "Padre: Diego Araujo, Madre: Fernanda Almeida",
+    "F": "16.11.1943"
   },
   "6": {
-    "A": "NO",
+    "A": "OK",
     "Ai": "NULL",
     "Aii": "NULL",
     "Aiii": "NULL",
-    "C": "01.04.1920",
-    "D": "OK",
+    "C": "NULL",
+    "D": "NULL",
     "Di": "NULL",
     "Dii": "NULL",
     "Diii": "NULL",
-    "E": "OK",
-    "F": "OK",
-    "Fi": "OK",
+    "E": "NULL",
+    "F": "NULL",
+    "Fi": "NULL",
     "Fii": "NULL"
   },
   "7": {
     "A": "OK",
-    "B": "Chiara Costo",
+    "B": "Antonio Almeido",
     "C": "OK",
     "D": "OK",
     "E": "OK",
-    "Ei": "NULL",
-    "Eii": "OK"
+    "Ei": "OK",
+    "Eii": "NULL"
   },
   "8": {
     "8/1": {
-      "A": "Marco Moretti",
+      "A": "Diego Souza",
       "B": "OK",
       "C": "OK",
       "D": "OK",
-      "Di": "NULL",
-      "Dii": "OK"
+      "Di": "OK",
+      "Dii": "NULL"
+    },
+    "8/2": {
+      "A": "Pedro Carlos Mendes",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
     }
   },
-  "10": [
-    "2C",
-    "3G",
-    "4/1C"
-  ],
-  "11": {
-    "2C": "Il ricorso non risulta iscritto prima del 27.03.2025 escluso",
-    "3G": "Ricorrenti che chiedono la cittadinanza per matrimonio: Sara Marini",
-    "4/1C": "Gli avvocati indicati nella procura di Marco Moretti-Silva non coincidono con quelli del ricorso"
-  }
+  "10": null,
+  "11": null
 }

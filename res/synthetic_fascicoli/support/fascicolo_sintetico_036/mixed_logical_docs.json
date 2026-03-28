@@ -2,14 +2,14 @@
   {
     "document_type": "IndiceProcedimento.html",
     "schema": {
-      "numero_anno_ruolo": "583/2024",
-      "data_iscrizione": "13-03-2024",
+      "numero_anno_ruolo": "633/2025",
+      "data_iscrizione": "24-08-2025",
       "iscrizione_post_28_02_2023": "OK",
-      "iscrizione_pre_27_03_2025": "OK",
-      "comparsa_avvocatura": "NO",
-      "data_comparsa_avvocatura": "28-11-2025",
-      "visibilita_pm": "SI",
-      "data_visibilita_pm": "01-11-2024",
+      "iscrizione_pre_27_03_2025": "KO",
+      "comparsa_avvocatura": "SI",
+      "data_comparsa_avvocatura": "07-07-2024",
+      "visibilita_pm": "NO",
+      "data_visibilita_pm": "08-05-2024",
       "interventi": "NO",
       "numero_interventi": 0,
       "intervenuti": []
@@ -20,19 +20,19 @@
     "schema": {
       "avvocati": [
         {
-          "nome": "Paolo",
-          "cognome": "Neri"
+          "nome": "Mateus",
+          "cognome": "Araujo"
         },
         {
-          "nome": "Marco",
-          "cognome": "Moretti"
+          "nome": "Carlos",
+          "cognome": "Souza"
         }
       ],
       "numero_ricorrenti": 1,
       "ricorrenti_maggiorenni": [
         {
-          "nome": "Chiara Luz",
-          "cognome": "Costa",
+          "nome": "Renata",
+          "cognome": "Araujo",
           "nazionalita": "Brasiliana"
         }
       ],
@@ -40,31 +40,31 @@
       "ricorrenti_per_matrimonio": [],
       "linea_discendenza": [
         {
-          "nome": "Giulia Carlo",
-          "cognome": "Conti"
+          "nome": "Carolina Aparecida",
+          "cognome": "Almeida"
         },
         {
-          "nome": "Matteo",
-          "cognome": "Gallo"
+          "nome": "Ana",
+          "cognome": "Rodrigues"
         },
         {
-          "nome": "Francesca",
-          "cognome": "Leoni"
+          "nome": "Carlos",
+          "cognome": "Araujo-Rodrigues"
         },
         {
-          "nome": "Sara Ana",
-          "cognome": "Marini"
+          "nome": "Ana Ana",
+          "cognome": "Santos-Araujo-Rodrigues"
         },
         {
-          "nome": "Chiara Luz",
-          "cognome": "Costa"
+          "nome": "Renata",
+          "cognome": "Araujo"
         }
       ],
-      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo.",
-      "riassunto_linea_discendenza": "Giulia Carlo Conti -> Matteo Gallo -> Francesca Leoni -> Sara Ana Marini -> Chiara Luz Costa",
+      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo. Nel ricorso sono dichiarati i seguenti alias/pseudonimi: Carolina Almeido.",
+      "riassunto_linea_discendenza": "Carolina Aparecida Almeida -> Ana Rodrigues -> Carlos Araujo-Rodrigues -> Ana Ana Santos-Araujo-Rodrigues -> Renata Araujo",
       "coerenza_linea_discendenza": "SI",
       "proveniente_dal_brasile": "SI",
-      "data_ricorso": "20-05-2024"
+      "data_ricorso": "10-02-2025"
     }
   },
   {
@@ -72,8 +72,8 @@
     "schema": {
       "soggetto": [
         {
-          "nome": "Chiara Luz",
-          "cognome": "Costa",
+          "nome": "Renata",
+          "cognome": "Araujo",
           "minorenne": "NO",
           "rappresentanti_legali": [],
           "firma_presente": "OK"
@@ -82,85 +82,41 @@
       "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "avvocati": [
         {
-          "nome": "Paolo",
-          "cognome": "Neri"
+          "nome": "Mateus",
+          "cognome": "Araujo"
         },
         {
-          "nome": "Marco",
-          "cognome": "Moretti"
+          "nome": "Carlos",
+          "cognome": "Souza"
         }
       ],
-      "tribunale_brescia_indicato": "OK",
+      "tribunale_brescia_indicato": "KO",
       "tribunale_indicato": "Tribunale civile competente",
-      "data_procura": "27-04-2024",
+      "data_procura": "02-02-2024",
       "rilasciata_in_italia": "NO",
-      "scritta_in_italiano": "NO"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Procura",
-        "soggetto": [
-          {
-            "nome": "Chiara Luz",
-            "cognome": "Costa"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Procura",
-        "soggetto": [
-          {
-            "nome": "Chiara Luz",
-            "cognome": "Costa"
-          }
-        ]
-      },
-      "sede_traduttore": "Italia"
-    }
-  },
-  {
-    "document_type": "Asseverazione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "documento_originale": "Procura",
-        "soggetto": [
-          {
-            "nome": "Chiara Luz",
-            "cognome": "Costa"
-          }
-        ]
-      }
+      "scritta_in_italiano": "OK"
     }
   },
   {
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Giulia Carlo",
-        "cognome": "Conti"
+        "nome": "Carolina Aparecida",
+        "cognome": "Almeida"
       },
       "tipo": "anagrafico",
       "timbro_diocesi": "OK",
       "comune_nascita": "Mantova",
       "provincia": "mantova",
       "padre": {
-        "nome": "Marco",
-        "cognome": "Moretti"
+        "nome": "Mateus",
+        "cognome": "Nunes"
       },
       "madre": {
-        "nome": "Elena",
-        "cognome": "Rossi"
+        "nome": "Maria",
+        "cognome": "Silva"
       },
-      "data_nascita": "08-02-1840",
+      "data_nascita": "08-09-1854",
       "area_nascita": "A",
       "stato": "Italia"
     }
@@ -169,22 +125,226 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Matteo",
-        "cognome": "Gallo"
+        "nome": "Ana",
+        "cognome": "Rodrigues"
       },
       "tipo": "anagrafico",
-      "timbro_diocesi": "NO",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Salvador",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Marcos",
+        "cognome": "Costa"
+      },
+      "madre": {
+        "nome": "Carolina Aparecida",
+        "cognome": "Almeida"
+      },
+      "data_nascita": "16-03-1986",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Ana",
+            "cognome": "Rodrigues"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Ana",
+            "cognome": "Rodrigues"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Ana",
+            "cognome": "Rodrigues"
+          }
+        ],
+        "documento_originale": "Atto di nascita"
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Carlos",
+        "cognome": "Araujo-Rodrigues"
+      },
+      "tipo": "parrocchiale",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Recife",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Carlos",
+        "cognome": "Oliveira"
+      },
+      "madre": {
+        "nome": "Ana",
+        "cognome": "Rodrigues"
+      },
+      "data_nascita": "13-07-1989",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Carlos",
+            "cognome": "Araujo-Rodrigues"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Carlos",
+            "cognome": "Araujo-Rodrigues"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Carlos",
+            "cognome": "Araujo-Rodrigues"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Ana Ana",
+        "cognome": "Santos-Araujo-Rodrigues"
+      },
+      "tipo": "parrocchiale",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Belo Horizonte",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Carlos",
+        "cognome": "Araujo-Rodrigues"
+      },
+      "madre": {
+        "nome": "Camila",
+        "cognome": "Mendes"
+      },
+      "data_nascita": "18-02-2008",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Ana Ana",
+            "cognome": "Santos-Araujo-Rodrigues"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Ana Ana",
+            "cognome": "Santos-Araujo-Rodrigues"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Ana Ana",
+            "cognome": "Santos-Araujo-Rodrigues"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Renata",
+        "cognome": "Araujo"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
       "comune_nascita": "Campinas",
       "provincia": "altro",
       "padre": {
-        "nome": "Chiara",
-        "cognome": "Costa"
+        "nome": "Rafael",
+        "cognome": "Ribeiro"
       },
       "madre": {
-        "nome": "Giulia Carlo",
-        "cognome": "Conti"
+        "nome": "Ana Ana",
+        "cognome": "Santos-Araujo-Rodrigues"
       },
-      "data_nascita": "13-09-1981",
+      "data_nascita": "02-08-1992",
       "area_nascita": "E",
       "stato": "Brasile"
     }
@@ -196,8 +356,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Matteo",
-            "cognome": "Gallo"
+            "nome": "Renata",
+            "cognome": "Araujo"
           }
         ]
       }
@@ -210,76 +370,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Matteo",
-            "cognome": "Gallo"
-          }
-        ]
-      },
-      "sede_traduttore": "Italia"
-    }
-  },
-  {
-    "document_type": "Asseverazione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "documento_originale": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Matteo",
-            "cognome": "Gallo"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Atto di nascita",
-    "schema": {
-      "soggetto": {
-        "nome": "Francesca",
-        "cognome": "Leoni"
-      },
-      "tipo": "parrocchiale",
-      "timbro_diocesi": "NO",
-      "comune_nascita": "Porto Alegre",
-      "provincia": "altro",
-      "padre": {
-        "nome": "Marco",
-        "cognome": "Moretti"
-      },
-      "madre": {
-        "nome": "Matteo",
-        "cognome": "Gallo"
-      },
-      "data_nascita": "11-08-1941",
-      "area_nascita": "E",
-      "stato": "Brasile"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Francesca",
-            "cognome": "Leoni"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Francesca",
-            "cognome": "Leoni"
+            "nome": "Renata",
+            "cognome": "Araujo"
           }
         ]
       },
@@ -293,147 +385,11 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Francesca",
-            "cognome": "Leoni"
+            "nome": "Renata",
+            "cognome": "Araujo"
           }
         ],
         "documento_originale": "Atto di nascita"
-      }
-    }
-  },
-  {
-    "document_type": "Atto di nascita",
-    "schema": {
-      "soggetto": {
-        "nome": "Sara Ana",
-        "cognome": "Marini"
-      },
-      "tipo": "anagrafico",
-      "timbro_diocesi": "OK",
-      "comune_nascita": "Curitiba",
-      "provincia": "altro",
-      "padre": {
-        "nome": "Sara",
-        "cognome": "Marini"
-      },
-      "madre": {
-        "nome": "Francesca",
-        "cognome": "Leoni"
-      },
-      "data_nascita": "30-10-1972",
-      "area_nascita": "E",
-      "stato": "Brasile"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Sara Ana",
-            "cognome": "Marini"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Sara Ana",
-            "cognome": "Marini"
-          }
-        ]
-      },
-      "sede_traduttore": "Estero"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "soggetto": [
-          {
-            "nome": "Sara Ana",
-            "cognome": "Marini"
-          }
-        ],
-        "documento_originale": "Atto di nascita"
-      }
-    }
-  },
-  {
-    "document_type": "Atto di nascita",
-    "schema": {
-      "soggetto": {
-        "nome": "Chiara Luz",
-        "cognome": "Costa"
-      },
-      "tipo": "anagrafico",
-      "timbro_diocesi": "OK",
-      "comune_nascita": "Sao Paulo",
-      "provincia": "altro",
-      "padre": {
-        "nome": "Paolo",
-        "cognome": "Neri"
-      },
-      "madre": {
-        "nome": "Sara Ana",
-        "cognome": "Marini"
-      },
-      "data_nascita": "22-06-1963",
-      "area_nascita": "E",
-      "stato": "Brasile"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Chiara Luz",
-            "cognome": "Costa"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Chiara Luz",
-            "cognome": "Costa"
-          }
-        ]
-      },
-      "sede_traduttore": "Italia"
-    }
-  },
-  {
-    "document_type": "Asseverazione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "documento_originale": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Chiara Luz",
-            "cognome": "Costa"
-          }
-        ]
       }
     }
   },
@@ -441,10 +397,10 @@
     "document_type": "Atto di morte",
     "schema": {
       "soggetto": {
-        "nome": "Giulia Carlo",
-        "cognome": "Conti"
+        "nome": "Carolina Aparecida",
+        "cognome": "Almeida"
       },
-      "data_decesso": "12-07-1902"
+      "data_decesso": "08-10-1931"
     }
   },
   {
@@ -454,8 +410,8 @@
         "document_type": "Atto di morte",
         "soggetto": [
           {
-            "nome": "Giulia Carlo",
-            "cognome": "Conti"
+            "nome": "Carolina Aparecida",
+            "cognome": "Almeida"
           }
         ]
       }
@@ -468,8 +424,8 @@
         "document_type": "Atto di morte",
         "soggetto": [
           {
-            "nome": "Giulia Carlo",
-            "cognome": "Conti"
+            "nome": "Carolina Aparecida",
+            "cognome": "Almeida"
           }
         ]
       },
@@ -483,8 +439,8 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Giulia Carlo",
-            "cognome": "Conti"
+            "nome": "Carolina Aparecida",
+            "cognome": "Almeida"
           }
         ],
         "documento_originale": "Atto di morte"
@@ -495,12 +451,17 @@
     "document_type": "Certificato Negativo di Naturalizzazione",
     "schema": {
       "soggetto": {
-        "nome": "Giulia Carlo",
-        "cognome": "Conti"
+        "nome": "Carolina Aparecida",
+        "cognome": "Almeida"
       },
-      "pseudonimi": [],
+      "pseudonimi": [
+        {
+          "nome": "Carolina",
+          "cognome": "Almeido"
+        }
+      ],
       "formula_negativa_presente": "OK",
-      "data_nascita": "08-02-1840"
+      "data_nascita": "08-09-1854"
     }
   },
   {
@@ -510,8 +471,8 @@
         "document_type": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Giulia Carlo",
-            "cognome": "Conti"
+            "nome": "Carolina Aparecida",
+            "cognome": "Almeida"
           }
         ]
       }
@@ -524,8 +485,135 @@
         "document_type": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Giulia Carlo",
-            "cognome": "Conti"
+            "nome": "Carolina Aparecida",
+            "cognome": "Almeida"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Certificato Negativo di Naturalizzazione",
+        "soggetto": [
+          {
+            "nome": "Carolina Aparecida",
+            "cognome": "Almeida"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Documento non supportato",
+        "soggetto": [
+          {
+            "nome": "Camila",
+            "cognome": "Cardoso"
+          }
+        ],
+        "documento_originale": "Comunicazione PEC"
+      }
+    }
+  },
+  {
+    "document_type": "Comunicazione PEC",
+    "schema": {
+      "id": "UD-8687",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "31-12-2025"
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Diego",
+            "cognome": "Silva"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Documento non supportato",
+        "soggetto": [
+          {
+            "nome": "Rafael",
+            "cognome": "Oliveira"
+          }
+        ],
+        "documento_originale": "Nota Spese"
+      }
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Diego",
+            "cognome": "Silva"
+          },
+          {
+            "nome": "Juliana",
+            "cognome": "Cardoso"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Nota Spese",
+    "schema": {
+      "id": "UD-8239",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "22-09-2024"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Joao",
+            "cognome": "Nunes"
+          },
+          {
+            "nome": "Ana",
+            "cognome": "Souza"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Joao",
+            "cognome": "Nunes"
           }
         ]
       },
@@ -539,35 +627,61 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Giulia Carlo",
-            "cognome": "Conti"
+            "nome": "Diego",
+            "cognome": "Silva"
+          },
+          {
+            "nome": "Juliana",
+            "cognome": "Cardoso"
           }
         ],
-        "documento_originale": "Certificato Negativo di Naturalizzazione"
+        "documento_originale": "Certificato di matrimonio"
       }
     }
   },
   {
-    "document_type": "Traduzione",
+    "document_type": "Apostille",
     "schema": {
       "oggetto": {
-        "document_type": "Certificato di matrimonio",
+        "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Giulia",
-            "cognome": "Conti"
+            "nome": "Joao",
+            "cognome": "Nunes"
+          },
+          {
+            "nome": "Ana",
+            "cognome": "Souza"
           }
-        ]
-      },
-      "sede_traduttore": "Estero"
+        ],
+        "documento_originale": "Certificato di matrimonio"
+      }
     }
   },
   {
-    "document_type": "Avviso Udienza",
+    "document_type": "Certificato di matrimonio",
     "schema": {
-      "id": "UD-2069",
+      "soggetti": [
+        {
+          "nome": "Joao",
+          "cognome": "Nunes"
+        },
+        {
+          "nome": "Ana",
+          "cognome": "Souza"
+        }
+      ],
+      "luogo": "Curitiba",
+      "data_matrimonio": "06-06-2008",
+      "note": "Documento non richiesto ai fini del riconoscimento richiesto."
+    }
+  },
+  {
+    "document_type": "Comunicazione PEC",
+    "schema": {
+      "id": "UD-1172",
       "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
-      "data": "04-04-2023"
+      "data": "01-01-2023"
     }
   },
   {
@@ -577,59 +691,8 @@
         "document_type": "Documento non supportato",
         "soggetto": [
           {
-            "nome": "Matteo",
-            "cognome": "Gallo"
-          }
-        ],
-        "documento_originale": "Avviso Udienza"
-      }
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Certificato di matrimonio",
-        "soggetto": [
-          {
-            "nome": "Luca",
-            "cognome": "Bianchi"
-          },
-          {
-            "nome": "Giulia",
-            "cognome": "Conti"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Certificato di matrimonio",
-        "soggetto": [
-          {
-            "nome": "Giulia",
-            "cognome": "Conti"
-          },
-          {
-            "nome": "Luca",
-            "cognome": "Bianchi"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Documento non supportato",
-        "soggetto": [
-          {
-            "nome": "Marco",
-            "cognome": "Moretti"
+            "nome": "Paulo",
+            "cognome": "Pereira"
           }
         ],
         "documento_originale": "Comunicazione PEC"
@@ -641,142 +704,17 @@
     "schema": {
       "soggetti": [
         {
-          "nome": "Luca",
-          "cognome": "Bianchi"
+          "nome": "Diego",
+          "cognome": "Silva"
         },
         {
-          "nome": "Giulia",
-          "cognome": "Conti"
+          "nome": "Juliana",
+          "cognome": "Cardoso"
         }
       ],
-      "luogo": "Salvador",
-      "data_matrimonio": "17-07-1953",
+      "luogo": "Campinas",
+      "data_matrimonio": "27-06-1971",
       "note": "Documento non richiesto ai fini del riconoscimento richiesto."
-    }
-  },
-  {
-    "document_type": "Certificato di matrimonio",
-    "schema": {
-      "soggetti": [
-        {
-          "nome": "Giulia",
-          "cognome": "Conti"
-        },
-        {
-          "nome": "Luca",
-          "cognome": "Bianchi"
-        }
-      ],
-      "luogo": "Fortaleza",
-      "data_matrimonio": "18-07-2020",
-      "note": "Documento non richiesto ai fini del riconoscimento richiesto."
-    }
-  },
-  {
-    "document_type": "Bozza Sentenza",
-    "schema": {
-      "id": "UD-9524",
-      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
-      "data": "09-12-2025"
-    }
-  },
-  {
-    "document_type": "Comunicazione PEC",
-    "schema": {
-      "id": "UD-9031",
-      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
-      "data": "05-01-2025"
-    }
-  },
-  {
-    "document_type": "Avviso Udienza",
-    "schema": {
-      "id": "UD-2682",
-      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
-      "data": "24-02-2025"
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Certificato di matrimonio",
-        "soggetto": [
-          {
-            "nome": "Luca",
-            "cognome": "Bianchi"
-          }
-        ]
-      },
-      "sede_traduttore": "Estero"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "soggetto": [
-          {
-            "nome": "Luca",
-            "cognome": "Bianchi"
-          },
-          {
-            "nome": "Giulia",
-            "cognome": "Conti"
-          }
-        ],
-        "documento_originale": "Certificato di matrimonio"
-      }
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "soggetto": [
-          {
-            "nome": "Giulia",
-            "cognome": "Conti"
-          },
-          {
-            "nome": "Luca",
-            "cognome": "Bianchi"
-          }
-        ],
-        "documento_originale": "Certificato di matrimonio"
-      }
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Documento non supportato",
-        "soggetto": [
-          {
-            "nome": "Matteo",
-            "cognome": "Gallo"
-          }
-        ],
-        "documento_originale": "Avviso Udienza"
-      }
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Documento non supportato",
-        "soggetto": [
-          {
-            "nome": "Marco",
-            "cognome": "Moretti"
-          }
-        ],
-        "documento_originale": "Bozza Sentenza"
-      }
     }
   }
 ]

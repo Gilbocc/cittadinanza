@@ -2,28 +2,17 @@
   {
     "document_type": "IndiceProcedimento.html",
     "schema": {
-      "numero_anno_ruolo": "774/2024",
-      "data_iscrizione": "15-09-2024",
+      "numero_anno_ruolo": "591/2024",
+      "data_iscrizione": "06-09-2025",
       "iscrizione_post_28_02_2023": "OK",
-      "iscrizione_pre_27_03_2025": "OK",
-      "comparsa_avvocatura": "NO",
-      "data_comparsa_avvocatura": "21-01-2025",
+      "iscrizione_pre_27_03_2025": "KO",
+      "comparsa_avvocatura": "SI",
+      "data_comparsa_avvocatura": "30-07-2024",
       "visibilita_pm": "SI",
-      "data_visibilita_pm": "04-09-2025",
-      "interventi": "SI",
-      "numero_interventi": 2,
-      "intervenuti": [
-        {
-          "nome": "Chiara",
-          "cognome": "Costa",
-          "data": "22-05-2024"
-        },
-        {
-          "nome": "Matteo",
-          "cognome": "Gallo",
-          "data": "04-09-2024"
-        }
-      ]
+      "data_visibilita_pm": "25-10-2024",
+      "interventi": "NO",
+      "numero_interventi": 0,
+      "intervenuti": []
     }
   },
   {
@@ -31,45 +20,52 @@
     "schema": {
       "avvocati": [
         {
-          "nome": "Chiara",
-          "cognome": "Costa"
+          "nome": "Carlos",
+          "cognome": "Almeida"
         }
       ],
-      "numero_ricorrenti": 1,
+      "numero_ricorrenti": 2,
       "ricorrenti_maggiorenni": [
         {
-          "nome": "Matteo",
-          "cognome": "Gallo",
+          "nome": "Fernanda",
+          "cognome": "Silva",
+          "nazionalita": "Brasiliana"
+        },
+        {
+          "nome": "Patricia Ana",
+          "cognome": "Costa Barbosa",
           "nazionalita": "Brasiliana"
         }
       ],
       "ricorrenti_minorenni": [],
-      "ricorrenti_per_matrimonio": [
-        {
-          "nome": "Francesca",
-          "cognome": "Leoni",
-          "nazionalita": "Brasiliana"
-        }
-      ],
+      "ricorrenti_per_matrimonio": [],
       "linea_discendenza": [
         {
-          "nome": "Chiara Carlo",
-          "cognome": "Costa"
+          "nome": "Maria Aparecida",
+          "cognome": "Rodrigues"
         },
         {
-          "nome": "Giulia",
-          "cognome": "Conti"
+          "nome": "Diego",
+          "cognome": "Ribeiro Rodrigues"
         },
         {
-          "nome": "Matteo",
-          "cognome": "Gallo"
+          "nome": "Marcos",
+          "cognome": "Barbosa"
+        },
+        {
+          "nome": "Patricia Ana",
+          "cognome": "Costa Barbosa"
+        },
+        {
+          "nome": "Fernanda",
+          "cognome": "Silva"
         }
       ],
-      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo.",
-      "riassunto_linea_discendenza": "Chiara Carlo Costa -> Giulia Conti -> Matteo Gallo",
+      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo. Nel ricorso risultano varianti anagrafiche/pseudonimi: Patricia Ana Costa Barbosa (alias: Patricia Cost). Nel ricorso sono dichiarati i seguenti alias/pseudonimi: Maria Rodrigueo.",
+      "riassunto_linea_discendenza": "Maria Aparecida Rodrigues -> Diego Ribeiro Rodrigues -> Marcos Barbosa -> Patricia Ana Costa Barbosa -> Fernanda Silva",
       "coerenza_linea_discendenza": "SI",
       "proveniente_dal_brasile": "SI",
-      "data_ricorso": "01-07-2025"
+      "data_ricorso": "27-04-2025"
     }
   },
   {
@@ -77,8 +73,8 @@
     "schema": {
       "soggetto": [
         {
-          "nome": "Matteo",
-          "cognome": "Gallo",
+          "nome": "Fernanda",
+          "cognome": "Silva",
           "minorenne": "NO",
           "rappresentanti_legali": [],
           "firma_presente": "OK"
@@ -87,13 +83,13 @@
       "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "avvocati": [
         {
-          "nome": "Chiara",
-          "cognome": "Costa"
+          "nome": "Carlos",
+          "cognome": "Almeida"
         }
       ],
       "tribunale_brescia_indicato": "OK",
       "tribunale_indicato": "Tribunale civile competente",
-      "data_procura": "02-07-2025",
+      "data_procura": "16-02-2024",
       "rilasciata_in_italia": "NO",
       "scritta_in_italiano": "NO"
     }
@@ -105,8 +101,8 @@
         "document_type": "Procura",
         "soggetto": [
           {
-            "nome": "Matteo",
-            "cognome": "Gallo"
+            "nome": "Fernanda",
+            "cognome": "Silva"
           }
         ]
       }
@@ -119,26 +115,96 @@
         "document_type": "Procura",
         "soggetto": [
           {
-            "nome": "Matteo",
-            "cognome": "Gallo"
+            "nome": "Fernanda",
+            "cognome": "Silva"
           }
         ]
       },
-      "sede_traduttore": "Estero"
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Procura",
+        "soggetto": [
+          {
+            "nome": "Fernanda",
+            "cognome": "Silva"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Procura",
+    "schema": {
+      "soggetto": [
+        {
+          "nome": "Patricia Ana",
+          "cognome": "Costa Barbosa",
+          "minorenne": "NO",
+          "rappresentanti_legali": [],
+          "firma_presente": "OK"
+        }
+      ],
+      "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "avvocati": [
+        {
+          "nome": "Carlos",
+          "cognome": "Almeida"
+        }
+      ],
+      "tribunale_brescia_indicato": "OK",
+      "tribunale_indicato": "Tribunale civile competente",
+      "data_procura": "14-07-2024",
+      "rilasciata_in_italia": "NO",
+      "scritta_in_italiano": "NO"
     }
   },
   {
     "document_type": "Apostille",
     "schema": {
       "oggetto": {
-        "document_type": "Traduzione",
+        "document_type": "Procura",
         "soggetto": [
           {
-            "nome": "Matteo",
-            "cognome": "Gallo"
+            "nome": "Patricia Ana",
+            "cognome": "Costa Barbosa"
           }
-        ],
-        "documento_originale": "Procura"
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Procura",
+        "soggetto": [
+          {
+            "nome": "Patricia Ana",
+            "cognome": "Costa Barbosa"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Procura",
+        "soggetto": [
+          {
+            "nome": "Patricia Ana",
+            "cognome": "Costa Barbosa"
+          }
+        ]
       }
     }
   },
@@ -146,22 +212,22 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Chiara Carlo",
-        "cognome": "Costa"
+        "nome": "Maria Aparecida",
+        "cognome": "Rodrigues"
       },
-      "tipo": "parrocchiale",
+      "tipo": "anagrafico",
       "timbro_diocesi": "OK",
-      "comune_nascita": "Brescia",
-      "provincia": "brescia",
+      "comune_nascita": "Mantova",
+      "provincia": "mantova",
       "padre": {
-        "nome": "Francesca",
-        "cognome": "Leoni"
+        "nome": "Mateus",
+        "cognome": "Silva"
       },
       "madre": {
-        "nome": "Davide",
-        "cognome": "Lombardi"
+        "nome": "Patricia",
+        "cognome": "Almeida"
       },
-      "data_nascita": "13-09-1933",
+      "data_nascita": "23-05-1843",
       "area_nascita": "A",
       "stato": "Italia"
     }
@@ -170,22 +236,22 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Matteo",
-        "cognome": "Gallo"
+        "nome": "Diego",
+        "cognome": "Ribeiro Rodrigues"
       },
-      "tipo": "parrocchiale",
+      "tipo": "anagrafico",
       "timbro_diocesi": "OK",
-      "comune_nascita": "Belo Horizonte",
+      "comune_nascita": "Santos",
       "provincia": "altro",
       "padre": {
-        "nome": "Paolo",
-        "cognome": "Neri"
+        "nome": "Jose",
+        "cognome": "Santos"
       },
       "madre": {
-        "nome": "Giulia",
-        "cognome": "Conti"
+        "nome": "Maria Aparecida",
+        "cognome": "Rodrigues"
       },
-      "data_nascita": "12-12-1930",
+      "data_nascita": "12-11-1997",
       "area_nascita": "E",
       "stato": "Brasile"
     }
@@ -197,8 +263,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Matteo",
-            "cognome": "Gallo"
+            "nome": "Diego",
+            "cognome": "Ribeiro Rodrigues"
           }
         ]
       }
@@ -211,8 +277,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Matteo",
-            "cognome": "Gallo"
+            "nome": "Diego",
+            "cognome": "Ribeiro Rodrigues"
           }
         ]
       },
@@ -227,10 +293,268 @@
         "documento_originale": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Matteo",
-            "cognome": "Gallo"
+            "nome": "Diego",
+            "cognome": "Ribeiro Rodrigues"
           }
         ]
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Marcos",
+        "cognome": "Barbosa"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Recife",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Diego",
+        "cognome": "Ribeiro Rodrigues"
+      },
+      "madre": {
+        "nome": "Renata",
+        "cognome": "Souza"
+      },
+      "data_nascita": "18-11-1976",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Marcos",
+            "cognome": "Barbosa"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Marcos",
+            "cognome": "Barbosa"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Marcos",
+            "cognome": "Barbosa"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Patricia Ana",
+        "cognome": "Costa Barbosa"
+      },
+      "tipo": "parrocchiale",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Santos",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Marcos",
+        "cognome": "Barbosa"
+      },
+      "madre": {
+        "nome": "Larissa",
+        "cognome": "Nunes"
+      },
+      "data_nascita": "05-02-2009",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Patricia Ana",
+            "cognome": "Costa Barbosa"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Patricia Ana",
+            "cognome": "Costa Barbosa"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Patricia Ana",
+            "cognome": "Costa Barbosa"
+          }
+        ],
+        "documento_originale": "Atto di nascita"
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Fernanda",
+        "cognome": "Silva"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "NO",
+      "comune_nascita": "Campinas",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Antonio",
+        "cognome": "Almeida"
+      },
+      "madre": {
+        "nome": "Patricia Ana",
+        "cognome": "Costa Barbosa"
+      },
+      "data_nascita": "31-01-1994",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Fernanda",
+            "cognome": "Silva"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Fernanda",
+            "cognome": "Silva"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Fernanda",
+            "cognome": "Silva"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Atto di morte",
+    "schema": {
+      "soggetto": {
+        "nome": "Maria Aparecida",
+        "cognome": "Rodrigues"
+      },
+      "data_decesso": "26-03-1906"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di morte",
+        "soggetto": [
+          {
+            "nome": "Maria Aparecida",
+            "cognome": "Rodrigues"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di morte",
+        "soggetto": [
+          {
+            "nome": "Maria Aparecida",
+            "cognome": "Rodrigues"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Maria Aparecida",
+            "cognome": "Rodrigues"
+          }
+        ],
+        "documento_originale": "Atto di morte"
       }
     }
   },
@@ -238,17 +562,17 @@
     "document_type": "Certificato Negativo di Naturalizzazione",
     "schema": {
       "soggetto": {
-        "nome": "Chiara Carlo",
-        "cognome": "Costa"
+        "nome": "Maria Aparecida",
+        "cognome": "Rodrigues"
       },
       "pseudonimi": [
         {
-          "nome": "Chiara",
-          "cognome": "Costo"
+          "nome": "Maria",
+          "cognome": "Rodrigueo"
         }
       ],
       "formula_negativa_presente": "OK",
-      "data_nascita": "13-09-1933"
+      "data_nascita": "23-05-1843"
     }
   },
   {
@@ -258,8 +582,8 @@
         "document_type": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Chiara Carlo",
-            "cognome": "Costa"
+            "nome": "Maria Aparecida",
+            "cognome": "Rodrigues"
           }
         ]
       }
@@ -272,26 +596,26 @@
         "document_type": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Chiara Carlo",
-            "cognome": "Costa"
+            "nome": "Maria Aparecida",
+            "cognome": "Rodrigues"
           }
         ]
       },
-      "sede_traduttore": "Italia"
+      "sede_traduttore": "Estero"
     }
   },
   {
-    "document_type": "Asseverazione",
+    "document_type": "Apostille",
     "schema": {
       "oggetto": {
         "document_type": "Traduzione",
-        "documento_originale": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Chiara Carlo",
-            "cognome": "Costa"
+            "nome": "Maria Aparecida",
+            "cognome": "Rodrigues"
           }
-        ]
+        ],
+        "documento_originale": "Certificato Negativo di Naturalizzazione"
       }
     }
   }

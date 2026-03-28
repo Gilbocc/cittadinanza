@@ -1,6 +1,6 @@
 {
   "0": {
-    "A": "OK",
+    "A": "KO",
     "B": "OK",
     "C": "OK",
     "Ci": "NULL",
@@ -16,49 +16,49 @@
     "1": "OK"
   },
   "2": {
-    "A": "20.07.2025",
-    "B": "OK",
-    "C": "KO",
-    "D": "SI",
-    "Di": "16.04.2025",
-    "E": "SI",
-    "Ei": "21.05.2024",
-    "F": "NO",
+    "A": "NULL",
+    "B": "NULL",
+    "C": "NULL",
+    "D": "NULL",
+    "Di": "NULL",
+    "E": "NULL",
+    "Ei": "NULL",
+    "F": "NULL",
     "Fi": "NULL",
     "Fii": "NULL",
     "Fiii": "NULL",
-    "G": "0623-2024"
+    "G": "NULL"
   },
   "3": {
-    "A": "Matteo Gallo",
+    "A": "Mateus Cardoso, Mateus Santos",
     "B": 1,
-    "C": "Luca Bianchi-Silva",
-    "D": "Luca Bianchi-Silva: Brasiliana",
+    "C": "Larissa Souza-Souza",
+    "D": "Larissa Souza-Souza: Brasiliana",
     "E": "NO",
     "Ei": "NULL",
     "Eii": "NULL",
-    "F": "OK; Paolo Luigi Neri -> Luca Bianchi -> Sara Ana Marini -> Matteo Ana Gallo -> Giulia Conti -> Luca Bianchi",
+    "F": "OK; Rafael Carlos Oliveira -> Mateus Joao Nunes -> Larissa Souza",
     "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
     "Gi": "NULL"
   },
   "4": {
     "4/1": {
-      "A": "Luca Bianchi-Silva",
+      "A": "Larissa Souza-Souza",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Luca Bianchi-Silva",
+      "B": "OK; firma del ricorrente Larissa Souza-Souza",
       "C": "OK",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "E": "OK",
       "Ei": "NULL",
-      "F": "19.09.2024",
+      "F": "22.04.2024",
       "G": "OK",
-      "H": "OK",
-      "Hi": "NULL",
-      "I": "OK",
-      "Ii": "NULL",
-      "Iii": "NULL",
+      "H": "NO",
+      "Hi": "OK",
+      "I": "NO",
+      "Ii": "OK",
+      "Iii": "OK",
       "Iiii": "NULL",
-      "Iiv": "NULL"
+      "Iiv": "OK"
     }
   },
   "5": {
@@ -66,27 +66,27 @@
     "Ai": "NULL",
     "C": "Mantova",
     "D": "OK",
-    "E": "Padre: Elena Rossi, Madre: Sara Marini",
-    "F": "17.11.1843"
+    "E": "Padre: Diego Almeida, Madre: Maria Ribeiro",
+    "F": "14.12.1901"
   },
   "6": {
-    "A": "NO",
+    "A": "OK",
     "Ai": "NULL",
     "Aii": "NULL",
     "Aiii": "NULL",
-    "C": "18.08.1968",
-    "D": "OK",
+    "C": "NULL",
+    "D": "NULL",
     "Di": "NULL",
     "Dii": "NULL",
     "Diii": "NULL",
-    "E": "OK",
-    "F": "OK",
-    "Fi": "OK",
+    "E": "NULL",
+    "F": "NULL",
+    "Fi": "NULL",
     "Fii": "NULL"
   },
   "7": {
     "A": "OK",
-    "B": "Paolo Nero",
+    "B": "Rafael Oliveiro",
     "C": "OK",
     "D": "OK",
     "E": "OK",
@@ -95,31 +95,15 @@
   },
   "8": {
     "8/1": {
-      "A": "Luca Bianchi",
-      "B": "OK",
-      "C": "OK",
-      "D": "OK",
-      "Di": "NULL",
-      "Dii": "OK"
-    },
-    "8/2": {
-      "A": "Sara Ana Marini",
+      "A": "Mateus Joao Nunes",
       "B": "OK",
       "C": "OK",
       "D": "OK",
       "Di": "OK",
       "Dii": "NULL"
     },
-    "8/3": {
-      "A": "Matteo Ana Gallo",
-      "B": "OK",
-      "C": "OK",
-      "D": "OK",
-      "Di": "NULL",
-      "Dii": "OK"
-    },
-    "8/4": {
-      "A": "Giulia Conti",
+    "8/2": {
+      "A": "Larissa Souza",
       "B": "OK",
       "C": "OK",
       "D": "OK",
@@ -128,9 +112,9 @@
     }
   },
   "10": [
-    "2C"
+    "0A"
   ],
   "11": {
-    "2C": "Il ricorso non risulta iscritto prima del 27.03.2025 escluso"
+    "0A": "IndiceProcedimento.html mancante"
   }
 }

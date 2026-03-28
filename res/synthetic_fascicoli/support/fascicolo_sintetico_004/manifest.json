@@ -20,14 +20,14 @@
     "selection_weight": 0.8
   },
   "render_profile": {
-    "noise_scale": 0.85,
-    "artifact_scale": 1.498,
-    "jitter_scale": 1.252,
-    "watermark_prob": 0.42,
-    "punch_hole_prob": 0.707,
-    "stamp_prob": 0.725,
-    "seal_prob": 0.215,
-    "style_seed": 829486135
+    "noise_scale": 1.319,
+    "artifact_scale": 1.122,
+    "jitter_scale": 1.011,
+    "watermark_prob": 0.378,
+    "punch_hole_prob": 0.596,
+    "stamp_prob": 0.903,
+    "seal_prob": 0.539,
+    "style_seed": 1027553177
   },
   "pdf_files": [
     {
@@ -36,21 +36,22 @@
         "IndiceProcedimento.html",
         "Ricorso",
         "Procura",
-        "Procura",
         "Apostille",
-        "Atto di nascita"
+        "Traduzione",
+        "Asseverazione"
       ],
       "count": 6
     },
     {
       "file": "fascicolo_sintetico_004_bundle_02.pdf",
       "logical_docs": [
-        "Atto di nascita",
+        "Procura",
         "Apostille",
         "Traduzione",
-        "Apostille"
+        "Asseverazione",
+        "Atto di nascita"
       ],
-      "count": 4
+      "count": 5
     },
     {
       "file": "fascicolo_sintetico_004_bundle_03.pdf",
@@ -58,7 +59,7 @@
         "Atto di nascita",
         "Apostille",
         "Traduzione",
-        "Asseverazione"
+        "Apostille"
       ],
       "count": 4
     },
@@ -78,7 +79,7 @@
         "Atto di nascita",
         "Apostille",
         "Traduzione",
-        "Apostille"
+        "Asseverazione"
       ],
       "count": 4
     },
@@ -98,40 +99,44 @@
         "Certificato Negativo di Naturalizzazione",
         "Apostille",
         "Traduzione",
-        "Asseverazione",
-        "Nota Spese",
-        "Traduzione",
-        "Apostille"
+        "Asseverazione"
       ],
-      "count": 7
+      "count": 4
     },
     {
       "file": "fascicolo_sintetico_004_bundle_08.pdf",
       "logical_docs": [
         "Documenti Personali Vari",
-        "Avviso Udienza",
-        "Apostille",
         "Traduzione",
         "Apostille",
         "Apostille",
-        "Traduzione"
+        "Documenti Personali Vari",
+        "Avviso Udienza",
+        "Apostille"
       ],
       "count": 7
     },
     {
       "file": "fascicolo_sintetico_004_bundle_09.pdf",
       "logical_docs": [
-        "Certificato di matrimonio",
-        "Certificato di matrimonio",
-        "Certificato di matrimonio",
+        "Comunicazione PEC",
         "Apostille",
         "Apostille",
-        "Apostille",
-        "Apostille"
+        "Certificato di matrimonio"
       ],
-      "count": 7
+      "count": 4
+    },
+    {
+      "file": "fascicolo_sintetico_004_bundle_10.pdf",
+      "logical_docs": [
+        "Certificato di matrimonio",
+        "Apostille",
+        "Apostille",
+        "Traduzione"
+      ],
+      "count": 4
     }
   ],
-  "expected_doc_count": 30,
-  "mixed_doc_count": 47
+  "expected_doc_count": 31,
+  "mixed_doc_count": 46
 }

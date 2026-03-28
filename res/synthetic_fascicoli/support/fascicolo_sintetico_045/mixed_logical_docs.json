@@ -2,17 +2,28 @@
   {
     "document_type": "IndiceProcedimento.html",
     "schema": {
-      "numero_anno_ruolo": "981/2024",
-      "data_iscrizione": "07-02-2025",
+      "numero_anno_ruolo": "828/2025",
+      "data_iscrizione": "21-11-2024",
       "iscrizione_post_28_02_2023": "OK",
       "iscrizione_pre_27_03_2025": "OK",
       "comparsa_avvocatura": "SI",
-      "data_comparsa_avvocatura": "03-05-2024",
+      "data_comparsa_avvocatura": "21-03-2025",
       "visibilita_pm": "NO",
-      "data_visibilita_pm": "16-04-2025",
-      "interventi": "NO",
-      "numero_interventi": 0,
-      "intervenuti": []
+      "data_visibilita_pm": "09-11-2025",
+      "interventi": "SI",
+      "numero_interventi": 2,
+      "intervenuti": [
+        {
+          "nome": "Joao",
+          "cognome": "Souza",
+          "data": "18-03-2025"
+        },
+        {
+          "nome": "Carolina",
+          "cognome": "Rodrigues",
+          "data": "02-10-2025"
+        }
+      ]
     }
   },
   {
@@ -20,47 +31,49 @@
     "schema": {
       "avvocati": [
         {
-          "nome": "Francesca",
-          "cognome": "Leoni"
+          "nome": "Pedro",
+          "cognome": "Almeida"
+        },
+        {
+          "nome": "Beatriz",
+          "cognome": "Rodrigues"
         }
       ],
       "numero_ricorrenti": 1,
       "ricorrenti_maggiorenni": [
         {
-          "nome": "Paolo",
-          "cognome": "Neri-Silva",
+          "nome": "Joao",
+          "cognome": "Barbosa-Souza",
           "nazionalita": "Brasiliana"
         }
       ],
       "ricorrenti_minorenni": [],
-      "ricorrenti_per_matrimonio": [],
-      "linea_discendenza": [
+      "ricorrenti_per_matrimonio": [
         {
-          "nome": "Chiara Carlo",
-          "cognome": "Costa"
-        },
-        {
-          "nome": "Matteo",
-          "cognome": "Gallo"
-        },
-        {
-          "nome": "Davide Ana",
-          "cognome": "Lombardi"
-        },
-        {
-          "nome": "Sara Luz",
-          "cognome": "Marini"
-        },
-        {
-          "nome": "Paolo",
-          "cognome": "Neri"
+          "nome": "Larissa",
+          "cognome": "Costa",
+          "nazionalita": "Brasiliana"
         }
       ],
-      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo.",
-      "riassunto_linea_discendenza": "Chiara Carlo Costa -> Matteo Gallo -> Davide Ana Lombardi -> Sara Luz Marini -> Paolo Neri",
+      "linea_discendenza": [
+        {
+          "nome": "Diego Miguel",
+          "cognome": "Nunes"
+        },
+        {
+          "nome": "Paulo",
+          "cognome": "Silva"
+        },
+        {
+          "nome": "Joao",
+          "cognome": "Barbosa"
+        }
+      ],
+      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo. Nel ricorso risultano varianti anagrafiche/pseudonimi: Paulo Silva (alias: Paulo Silv). Nel ricorso sono dichiarati i seguenti alias/pseudonimi: Diego Nuneo.",
+      "riassunto_linea_discendenza": "Diego Miguel Nunes -> Paulo Silva -> Joao Barbosa",
       "coerenza_linea_discendenza": "SI",
       "proveniente_dal_brasile": "SI",
-      "data_ricorso": "13-01-2024"
+      "data_ricorso": "06-06-2024"
     }
   },
   {
@@ -68,91 +81,51 @@
     "schema": {
       "soggetto": [
         {
-          "nome": "Paolo",
-          "cognome": "Neri-Silva",
+          "nome": "Joao",
+          "cognome": "Barbosa-Souza",
           "minorenne": "NO",
           "rappresentanti_legali": [],
-          "firma_presente": "OK"
+          "firma_presente": "KO"
         }
       ],
       "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "avvocati": [
         {
-          "nome": "Francesca",
-          "cognome": "Leoni"
+          "nome": "Pedro",
+          "cognome": "Almeida"
+        },
+        {
+          "nome": "Beatriz",
+          "cognome": "Rodrigues"
         }
       ],
       "tribunale_brescia_indicato": "OK",
       "tribunale_indicato": "Tribunale civile competente",
-      "data_procura": "02-01-2024",
-      "rilasciata_in_italia": "NO",
-      "scritta_in_italiano": "NO"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Procura",
-        "soggetto": [
-          {
-            "nome": "Paolo",
-            "cognome": "Neri-Silva"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Procura",
-        "soggetto": [
-          {
-            "nome": "Paolo",
-            "cognome": "Neri-Silva"
-          }
-        ]
-      },
-      "sede_traduttore": "Estero"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "soggetto": [
-          {
-            "nome": "Paolo",
-            "cognome": "Neri-Silva"
-          }
-        ],
-        "documento_originale": "Procura"
-      }
+      "data_procura": "02-02-2024",
+      "rilasciata_in_italia": "OK",
+      "scritta_in_italiano": "OK"
     }
   },
   {
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Chiara Carlo",
-        "cognome": "Costa"
+        "nome": "Diego Miguel",
+        "cognome": "Nunes"
       },
-      "tipo": "anagrafico",
+      "tipo": "parrocchiale",
       "timbro_diocesi": "OK",
-      "comune_nascita": "Bergamo",
-      "provincia": "bergamo",
+      "comune_nascita": "Mantova",
+      "provincia": "mantova",
       "padre": {
-        "nome": "Sara",
-        "cognome": "Marini"
+        "nome": "Jose",
+        "cognome": "Araujo"
       },
       "madre": {
-        "nome": "Matteo",
-        "cognome": "Gallo"
+        "nome": "Maria",
+        "cognome": "Oliveira"
       },
-      "data_nascita": "26-07-1931",
+      "data_nascita": "28-05-1854",
       "area_nascita": "A",
       "stato": "Italia"
     }
@@ -161,22 +134,22 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Matteo",
-        "cognome": "Gallo"
+        "nome": "Paulo",
+        "cognome": "Silva"
       },
-      "tipo": "anagrafico",
+      "tipo": "parrocchiale",
       "timbro_diocesi": "OK",
-      "comune_nascita": "Brasilia",
+      "comune_nascita": "Porto Alegre",
       "provincia": "altro",
       "padre": {
-        "nome": "Francesca",
-        "cognome": "Leoni"
+        "nome": "Diego Miguel",
+        "cognome": "Nunes"
       },
       "madre": {
-        "nome": "Chiara Carlo",
-        "cognome": "Costa"
+        "nome": "Larissa",
+        "cognome": "Mendes"
       },
-      "data_nascita": "11-11-1992",
+      "data_nascita": "11-03-1968",
       "area_nascita": "E",
       "stato": "Brasile"
     }
@@ -188,8 +161,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Matteo",
-            "cognome": "Gallo"
+            "nome": "Paulo",
+            "cognome": "Silva"
           }
         ]
       }
@@ -202,8 +175,76 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Matteo",
-            "cognome": "Gallo"
+            "nome": "Paulo",
+            "cognome": "Silva"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Paulo",
+            "cognome": "Silva"
+          }
+        ],
+        "documento_originale": "Atto di nascita"
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Joao",
+        "cognome": "Barbosa"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Porto Alegre",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Paulo",
+        "cognome": "Silva"
+      },
+      "madre": {
+        "nome": "Renata",
+        "cognome": "Oliveira"
+      },
+      "data_nascita": "18-05-1970",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Joao",
+            "cognome": "Barbosa"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Joao",
+            "cognome": "Barbosa"
           }
         ]
       },
@@ -218,46 +259,32 @@
         "documento_originale": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Matteo",
-            "cognome": "Gallo"
+            "nome": "Joao",
+            "cognome": "Barbosa"
           }
         ]
       }
     }
   },
   {
-    "document_type": "Atto di nascita",
+    "document_type": "Atto di morte",
     "schema": {
       "soggetto": {
-        "nome": "Davide Ana",
-        "cognome": "Lombardi"
+        "nome": "Diego Miguel",
+        "cognome": "Nunes"
       },
-      "tipo": "parrocchiale",
-      "timbro_diocesi": "OK",
-      "comune_nascita": "Belo Horizonte",
-      "provincia": "altro",
-      "padre": {
-        "nome": "Francesca",
-        "cognome": "Leoni"
-      },
-      "madre": {
-        "nome": "Matteo",
-        "cognome": "Gallo"
-      },
-      "data_nascita": "20-02-1946",
-      "area_nascita": "E",
-      "stato": "Brasile"
+      "data_decesso": "11-01-1969"
     }
   },
   {
     "document_type": "Apostille",
     "schema": {
       "oggetto": {
-        "document_type": "Atto di nascita",
+        "document_type": "Atto di morte",
         "soggetto": [
           {
-            "nome": "Davide Ana",
-            "cognome": "Lombardi"
+            "nome": "Diego Miguel",
+            "cognome": "Nunes"
           }
         ]
       }
@@ -267,79 +294,11 @@
     "document_type": "Traduzione",
     "schema": {
       "oggetto": {
-        "document_type": "Atto di nascita",
+        "document_type": "Atto di morte",
         "soggetto": [
           {
-            "nome": "Davide Ana",
-            "cognome": "Lombardi"
-          }
-        ]
-      },
-      "sede_traduttore": "Italia"
-    }
-  },
-  {
-    "document_type": "Asseverazione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "documento_originale": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Davide Ana",
-            "cognome": "Lombardi"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Atto di nascita",
-    "schema": {
-      "soggetto": {
-        "nome": "Sara Luz",
-        "cognome": "Marini"
-      },
-      "tipo": "parrocchiale",
-      "timbro_diocesi": "OK",
-      "comune_nascita": "Brasilia",
-      "provincia": "altro",
-      "padre": {
-        "nome": "Sara",
-        "cognome": "Marini"
-      },
-      "madre": {
-        "nome": "Davide Ana",
-        "cognome": "Lombardi"
-      },
-      "data_nascita": "17-01-2003",
-      "area_nascita": "E",
-      "stato": "Brasile"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Sara Luz",
-            "cognome": "Marini"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Sara Luz",
-            "cognome": "Marini"
+            "nome": "Diego Miguel",
+            "cognome": "Nunes"
           }
         ]
       },
@@ -353,79 +312,11 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Sara Luz",
-            "cognome": "Marini"
+            "nome": "Diego Miguel",
+            "cognome": "Nunes"
           }
         ],
-        "documento_originale": "Atto di nascita"
-      }
-    }
-  },
-  {
-    "document_type": "Atto di nascita",
-    "schema": {
-      "soggetto": {
-        "nome": "Paolo",
-        "cognome": "Neri"
-      },
-      "tipo": "anagrafico",
-      "timbro_diocesi": "OK",
-      "comune_nascita": "Niteroi",
-      "provincia": "altro",
-      "padre": {
-        "nome": "Elena",
-        "cognome": "Rossi"
-      },
-      "madre": {
-        "nome": "Sara Luz",
-        "cognome": "Marini"
-      },
-      "data_nascita": "10-10-1968",
-      "area_nascita": "E",
-      "stato": "Brasile"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Paolo",
-            "cognome": "Neri"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Paolo",
-            "cognome": "Neri"
-          }
-        ]
-      },
-      "sede_traduttore": "Estero"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "soggetto": [
-          {
-            "nome": "Paolo",
-            "cognome": "Neri"
-          }
-        ],
-        "documento_originale": "Atto di nascita"
+        "documento_originale": "Atto di morte"
       }
     }
   },
@@ -433,12 +324,17 @@
     "document_type": "Certificato Negativo di Naturalizzazione",
     "schema": {
       "soggetto": {
-        "nome": "Chiara Carlo",
-        "cognome": "Costa"
+        "nome": "Diego Miguel",
+        "cognome": "Nunes"
       },
-      "pseudonimi": [],
+      "pseudonimi": [
+        {
+          "nome": "Diego",
+          "cognome": "Nuneo"
+        }
+      ],
       "formula_negativa_presente": "OK",
-      "data_nascita": "26-07-1931"
+      "data_nascita": "28-05-1854"
     }
   },
   {
@@ -448,8 +344,8 @@
         "document_type": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Chiara Carlo",
-            "cognome": "Costa"
+            "nome": "Diego Miguel",
+            "cognome": "Nunes"
           }
         ]
       }
@@ -462,87 +358,27 @@
         "document_type": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Chiara Carlo",
-            "cognome": "Costa"
+            "nome": "Diego Miguel",
+            "cognome": "Nunes"
           }
         ]
       },
-      "sede_traduttore": "Estero"
+      "sede_traduttore": "Italia"
     }
   },
   {
-    "document_type": "Apostille",
+    "document_type": "Asseverazione",
     "schema": {
       "oggetto": {
         "document_type": "Traduzione",
+        "documento_originale": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Chiara Carlo",
-            "cognome": "Costa"
-          }
-        ],
-        "documento_originale": "Certificato Negativo di Naturalizzazione"
-      }
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "soggetto": [
-          {
-            "nome": "Davide",
-            "cognome": "Lombardi"
-          },
-          {
-            "nome": "Davide",
-            "cognome": "Lombardi"
-          }
-        ],
-        "documento_originale": "Certificato di matrimonio"
-      }
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Certificato di matrimonio",
-        "soggetto": [
-          {
-            "nome": "Davide",
-            "cognome": "Lombardi"
-          },
-          {
-            "nome": "Davide",
-            "cognome": "Lombardi"
+            "nome": "Diego Miguel",
+            "cognome": "Nunes"
           }
         ]
       }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Certificato di matrimonio",
-        "soggetto": [
-          {
-            "nome": "Francesca",
-            "cognome": "Leoni"
-          }
-        ]
-      },
-      "sede_traduttore": "Estero"
-    }
-  },
-  {
-    "document_type": "Nota Spese",
-    "schema": {
-      "id": "UD-4530",
-      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
-      "data": "04-06-2024"
     }
   },
   {
@@ -550,16 +386,16 @@
     "schema": {
       "soggetti": [
         {
-          "nome": "Davide",
-          "cognome": "Lombardi"
+          "nome": "Mateus",
+          "cognome": "Almeida"
         },
         {
-          "nome": "Davide",
-          "cognome": "Lombardi"
+          "nome": "Carlos",
+          "cognome": "Araujo"
         }
       ],
-      "luogo": "Campinas",
-      "data_matrimonio": "01-10-1991",
+      "luogo": "Santos",
+      "data_matrimonio": "26-01-1986",
       "note": "Documento non richiesto ai fini del riconoscimento richiesto."
     }
   },
@@ -567,101 +403,11 @@
     "document_type": "Apostille",
     "schema": {
       "oggetto": {
-        "document_type": "Certificato di matrimonio",
-        "soggetto": [
-          {
-            "nome": "Francesca",
-            "cognome": "Leoni"
-          },
-          {
-            "nome": "Matteo",
-            "cognome": "Gallo"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Certificato di matrimonio",
-        "soggetto": [
-          {
-            "nome": "Davide",
-            "cognome": "Lombardi"
-          }
-        ]
-      },
-      "sede_traduttore": "Estero"
-    }
-  },
-  {
-    "document_type": "Comunicazione PEC",
-    "schema": {
-      "id": "UD-1781",
-      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
-      "data": "26-03-2025"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
         "document_type": "Documento non supportato",
         "soggetto": [
           {
-            "nome": "Marco",
-            "cognome": "Moretti"
-          }
-        ],
-        "documento_originale": "Comunicazione PEC"
-      }
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "soggetto": [
-          {
-            "nome": "Francesca",
-            "cognome": "Leoni"
-          },
-          {
-            "nome": "Matteo",
-            "cognome": "Gallo"
-          }
-        ],
-        "documento_originale": "Certificato di matrimonio"
-      }
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Documento non supportato",
-        "soggetto": [
-          {
-            "nome": "Elena",
-            "cognome": "Rossi"
-          }
-        ],
-        "documento_originale": "Nota Spese"
-      }
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Documento non supportato",
-        "soggetto": [
-          {
-            "nome": "Matteo",
-            "cognome": "Gallo"
+            "nome": "Camila",
+            "cognome": "Barbosa"
           }
         ],
         "documento_originale": "Documenti Personali Vari"
@@ -669,29 +415,141 @@
     }
   },
   {
+    "document_type": "Nota Spese",
+    "schema": {
+      "id": "UD-3327",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "14-12-2025"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Mateus",
+            "cognome": "Almeida"
+          },
+          {
+            "nome": "Carlos",
+            "cognome": "Araujo"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Patricia",
+            "cognome": "Nunes"
+          },
+          {
+            "nome": "Carlos",
+            "cognome": "Nunes"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Patricia",
+            "cognome": "Nunes"
+          },
+          {
+            "nome": "Carlos",
+            "cognome": "Nunes"
+          }
+        ],
+        "documento_originale": "Certificato di matrimonio"
+      }
+    }
+  },
+  {
     "document_type": "Certificato di matrimonio",
     "schema": {
       "soggetti": [
         {
-          "nome": "Francesca",
-          "cognome": "Leoni"
+          "nome": "Patricia",
+          "cognome": "Nunes"
         },
         {
-          "nome": "Matteo",
-          "cognome": "Gallo"
+          "nome": "Carlos",
+          "cognome": "Nunes"
         }
       ],
-      "luogo": "Belo Horizonte",
-      "data_matrimonio": "26-08-1994",
+      "luogo": "Fortaleza",
+      "data_matrimonio": "14-11-1945",
       "note": "Documento non richiesto ai fini del riconoscimento richiesto."
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Mateus",
+            "cognome": "Almeida"
+          },
+          {
+            "nome": "Carlos",
+            "cognome": "Araujo"
+          }
+        ],
+        "documento_originale": "Certificato di matrimonio"
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Patricia",
+            "cognome": "Nunes"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
     }
   },
   {
     "document_type": "Documenti Personali Vari",
     "schema": {
-      "id": "UD-9748",
+      "id": "UD-8917",
       "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
-      "data": "08-10-2024"
+      "data": "24-01-2025"
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Mateus",
+            "cognome": "Almeida"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
     }
   }
 ]

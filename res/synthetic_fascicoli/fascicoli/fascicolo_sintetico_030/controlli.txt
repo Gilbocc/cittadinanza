@@ -7,8 +7,8 @@
     "D": "OK",
     "E": "OK",
     "F": "OK",
-    "G": "KO",
-    "Gi": "Paolo Neri",
+    "G": "OK",
+    "Gi": "NULL",
     "H": "OK",
     "Hi": "NULL"
   },
@@ -16,42 +16,60 @@
     "1": "OK"
   },
   "2": {
-    "A": "05.03.2025",
+    "A": "11.07.2024",
     "B": "OK",
     "C": "OK",
-    "D": "NO",
-    "Di": "NULL",
+    "D": "SI",
+    "Di": "14.07.2024",
     "E": "NO",
     "Ei": "NULL",
     "F": "NO",
     "Fi": "NULL",
     "Fii": "NULL",
     "Fiii": "NULL",
-    "G": "0603-2024"
+    "G": "0223-2025"
   },
   "3": {
-    "A": "Luca Bianchi",
-    "B": 1,
-    "C": "Matteo Luz Gallo",
-    "D": "Matteo Luz Gallo: Brasiliana",
+    "A": "Juliana Silva",
+    "B": 2,
+    "C": "Fernanda Mendes-Souza, Carolina Nunes-Pereira",
+    "D": "Fernanda Mendes-Souza: Brasiliana, Carolina Nunes-Pereira: Brasiliana",
     "E": "NO",
     "Ei": "NULL",
     "Eii": "NULL",
-    "F": "OK; Francesca Luigi Leoni -> Paolo Neri -> Matteo Luz Gallo",
-    "G": "KO; Ricorrenti per matrimonio presenti",
-    "Gi": "Elena Rossi"
+    "F": "OK; Camila Maria Mendes > Mateus Pereira > Camila Barbosa-Pereira > Pedro Pereira > Carolina Nunes-Pereira > Fernanda Mendes",
+    "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
+    "Gi": "NULL"
   },
   "4": {
     "4/1": {
-      "A": "Matteo Luz Gallo",
+      "A": "Fernanda Mendes-Souza",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Matteo Luz Gallo",
+      "B": "OK; firma del ricorrente Fernanda Mendes-Souza",
       "C": "OK",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
-      "E": "NO",
-      "Ei": "Tribunale civile competente",
-      "F": "30.06.2025",
-      "G": "KO",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "15.09.2024",
+      "G": "OK",
+      "H": "NO",
+      "Hi": "OK",
+      "I": "NO",
+      "Ii": "OK",
+      "Iii": "OK",
+      "Iiii": "NULL",
+      "Iiv": "OK"
+    },
+    "4/2": {
+      "A": "Carolina Nunes-Pereira",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Carolina Nunes-Pereira",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "25.01.2024",
+      "G": "OK",
       "H": "NO",
       "Hi": "OK",
       "I": "NO",
@@ -64,10 +82,10 @@
   "5": {
     "A": "OK",
     "Ai": "NULL",
-    "C": "Brescia",
+    "C": "Bergamo",
     "D": "OK",
-    "E": "Padre: Elena Rossi, Madre: Sara Marini",
-    "F": "05.03.1881"
+    "E": "Padre: Marcos Mendes, Madre: Renata Almeida",
+    "F": "08.07.1939"
   },
   "6": {
     "A": "OK",
@@ -86,7 +104,7 @@
   },
   "7": {
     "A": "OK",
-    "B": "Francesca Leono",
+    "B": "NULL",
     "C": "OK",
     "D": "OK",
     "E": "OK",
@@ -95,36 +113,46 @@
   },
   "8": {
     "8/1": {
-      "A": "Paolo Neri",
-      "B": "KO",
-      "C": "KO",
-      "D": "KO",
+      "A": "Mateus Pereira",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
       "Di": "NULL",
-      "Dii": "NULL"
+      "Dii": "OK"
     },
     "8/2": {
-      "A": "Matteo Luz Gallo",
+      "A": "Camila Barbosa-Pereira",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/3": {
+      "A": "Pedro Pereira",
       "B": "OK",
       "C": "OK",
       "D": "OK",
       "Di": "OK",
       "Dii": "NULL"
+    },
+    "8/4": {
+      "A": "Carolina Nunes-Pereira",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/5": {
+      "A": "Fernanda Mendes",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
     }
   },
-  "10": [
-    "0G",
-    "3G",
-    "4/1G",
-    "8/1B",
-    "8/1C",
-    "8/1D"
-  ],
-  "11": {
-    "0G": "Atti di nascita dei discendenti mancanti: Paolo Neri",
-    "3G": "Ricorrenti che chiedono la cittadinanza per matrimonio: Elena Rossi",
-    "4/1G": "La data della procura di Matteo Luz Gallo non è anteriore alla data del ricorso",
-    "8/1B": "Atto di nascita non trovato per Paolo Neri",
-    "8/1C": "Impossibile verificare l'apostille dell'atto di nascita di Paolo Neri perché l'atto manca",
-    "8/1D": "Impossibile verificare la traduzione dell'atto di nascita di Paolo Neri perché l'atto manca"
-  }
+  "10": null,
+  "11": null
 }

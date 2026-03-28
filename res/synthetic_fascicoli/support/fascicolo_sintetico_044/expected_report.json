@@ -16,62 +16,44 @@
     "1": "OK"
   },
   "2": {
-    "A": "28.01.2025",
+    "A": "21.04.2025",
     "B": "OK",
-    "C": "OK",
-    "D": "NO",
-    "Di": "NULL",
+    "C": "KO",
+    "D": "SI",
+    "Di": "16.12.2025",
     "E": "SI",
-    "Ei": "28.06.2024",
-    "F": "SI",
-    "Fi": "1",
-    "Fii": "Sara Marini",
-    "Fiii": "08.02.2024",
-    "G": "0510-2025"
+    "Ei": "11.04.2025",
+    "F": "NO",
+    "Fi": "NULL",
+    "Fii": "NULL",
+    "Fiii": "NULL",
+    "G": "0681-2024"
   },
   "3": {
-    "A": "Chiara Costa",
-    "B": 2,
-    "C": "Sara Marini-Silva, Marco Moretti",
-    "D": "Sara Marini-Silva: Brasiliana, Marco Moretti: Brasiliana",
+    "A": "Diego Araujo",
+    "B": 1,
+    "C": "Renata Ana Pereira-Souza",
+    "D": "Renata Ana Pereira-Souza: Brasiliana",
     "E": "NO",
     "Ei": "NULL",
     "Eii": "NULL",
-    "F": "KO; Davide Carlo Lombardi -> Sara Marini",
-    "G": "KO; Ricorrenti per matrimonio presenti",
-    "Gi": "Davide Lombardi"
+    "F": "OK; Jose Paulo Costa -> Carolina Ana Almeida -> Jose Carlos Rodrigues-Almeida -> Renata Ana Pereira",
+    "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
+    "Gi": "NULL"
   },
   "4": {
     "4/1": {
-      "A": "Sara Marini-Silva",
+      "A": "Renata Ana Pereira-Souza",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Sara Marini-Silva",
+      "B": "OK; firma del ricorrente Renata Ana Pereira-Souza",
       "C": "OK",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "E": "OK",
       "Ei": "NULL",
-      "F": "12.05.2024",
+      "F": "17.08.2024",
       "G": "OK",
       "H": "NO",
       "Hi": "OK",
-      "I": "NO",
-      "Ii": "OK",
-      "Iii": "NO",
-      "Iiii": "OK",
-      "Iiv": "NULL"
-    },
-    "4/2": {
-      "A": "Marco Moretti",
-      "Ai": "NULL",
-      "B": "OK; firma del ricorrente Marco Moretti",
-      "C": "OK",
-      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
-      "E": "OK",
-      "Ei": "NULL",
-      "F": "02.06.2024",
-      "G": "OK",
-      "H": "OK",
-      "Hi": "NULL",
       "I": "OK",
       "Ii": "NULL",
       "Iii": "NULL",
@@ -82,67 +64,65 @@
   "5": {
     "A": "OK",
     "Ai": "NULL",
-    "C": "Bergamo",
+    "C": "Cremona",
     "D": "OK",
-    "E": "Padre: Giulia Conti, Madre: Sara Marini",
-    "F": "12.12.1841"
+    "E": "Padre: Pedro Rodrigues, Madre: Fernanda Barbosa",
+    "F": "17.04.1955"
   },
   "6": {
-    "A": "NO",
+    "A": "OK",
     "Ai": "NULL",
     "Aii": "NULL",
     "Aiii": "NULL",
-    "C": "27.11.1934",
-    "D": "OK",
+    "C": "NULL",
+    "D": "NULL",
     "Di": "NULL",
     "Dii": "NULL",
     "Diii": "NULL",
-    "E": "OK",
-    "F": "OK",
-    "Fi": "OK",
+    "E": "NULL",
+    "F": "NULL",
+    "Fi": "NULL",
     "Fii": "NULL"
   },
   "7": {
     "A": "OK",
-    "B": "Davide Lombardo",
+    "B": "Jose Costo",
     "C": "OK",
     "D": "OK",
     "E": "OK",
-    "Ei": "NULL",
-    "Eii": "OK"
+    "Ei": "OK",
+    "Eii": "NULL"
   },
   "8": {
     "8/1": {
-      "A": "Luca Luz Bianchi",
+      "A": "Carolina Ana Almeida",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/2": {
+      "A": "Jose Carlos Rodrigues-Almeida",
       "B": "OK",
       "C": "OK",
       "D": "OK",
       "Di": "OK",
       "Dii": "NULL"
     },
-    "8/2": {
-      "A": "Marco Moretti",
-      "B": "OK",
-      "C": "OK",
-      "D": "OK",
-      "Di": "NULL",
-      "Dii": "OK"
-    },
     "8/3": {
-      "A": "Sara Marini",
+      "A": "Renata Ana Pereira",
       "B": "OK",
       "C": "OK",
       "D": "OK",
-      "Di": "NULL",
-      "Dii": "OK"
+      "Di": "OK",
+      "Dii": "NULL"
     }
   },
   "10": [
-    "3F",
-    "3G"
+    "2C"
   ],
   "11": {
-    "3F": "La linea di discendenza indicata nel ricorso non risulta coerente",
-    "3G": "Ricorrenti che chiedono la cittadinanza per matrimonio: Davide Lombardi"
+    "2C": "Il ricorso non risulta iscritto prima del 27.03.2025 escluso"
   }
 }

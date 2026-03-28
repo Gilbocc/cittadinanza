@@ -7,8 +7,8 @@
     "D": "OK",
     "E": "OK",
     "F": "OK",
-    "G": "OK",
-    "Gi": "NULL",
+    "G": "KO",
+    "Gi": "Antonio Rodrigues",
     "H": "OK",
     "Hi": "NULL"
   },
@@ -16,41 +16,41 @@
     "1": "OK"
   },
   "2": {
-    "A": "23.11.2025",
+    "A": "22.10.2025",
     "B": "OK",
     "C": "KO",
-    "D": "NO",
-    "Di": "NULL",
+    "D": "SI",
+    "Di": "29.05.2024",
     "E": "SI",
-    "Ei": "08.02.2025",
+    "Ei": "26.06.2024",
     "F": "NO",
     "Fi": "NULL",
     "Fii": "NULL",
     "Fiii": "NULL",
-    "G": "0841-2025"
+    "G": "0934-2024"
   },
   "3": {
-    "A": "Luca Bianchi, Elena Rossi",
+    "A": "Renata Oliveira",
     "B": 2,
-    "C": "Chiara Costa-Silva, Francesca Leoni",
-    "D": "Chiara Costa-Silva: Brasiliana, Francesca Leoni: Brasiliana",
+    "C": "Rafael Luis Araujo-Barbosa, Patricia Luz Barbosa",
+    "D": "Rafael Luis Araujo-Barbosa: Brasiliana, Patricia Luz Barbosa: Brasiliana",
     "E": "NO",
     "Ei": "NULL",
     "Eii": "NULL",
-    "F": "OK; Matteo Maria Gallo -> Matteo Gallo -> Francesca Leoni -> Chiara Costa",
+    "F": "OK; Camila Luz Santos -> Antonio Rodrigues -> Patricia Luz Barbosa -> Rafael Luis Araujo-Barbosa",
     "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
     "Gi": "NULL"
   },
   "4": {
     "4/1": {
-      "A": "Chiara Costa-Silva",
+      "A": "Rafael Luis Araujo-Barbosa",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Chiara Costa-Silva",
+      "B": "OK; firma del ricorrente Rafael Luis Araujo-Barbosa",
       "C": "OK",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "E": "OK",
       "Ei": "NULL",
-      "F": "14.05.2024",
+      "F": "16.08.2025",
       "G": "OK",
       "H": "NO",
       "Hi": "OK",
@@ -61,31 +61,31 @@
       "Iiv": "OK"
     },
     "4/2": {
-      "A": "Francesca Leoni",
+      "A": "Patricia Luz Barbosa",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Francesca Leoni",
+      "B": "OK; firma del ricorrente Patricia Luz Barbosa",
       "C": "OK",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "E": "OK",
       "Ei": "NULL",
-      "F": "25.02.2024",
+      "F": "01.10.2025",
       "G": "OK",
       "H": "NO",
       "Hi": "OK",
       "I": "NO",
       "Ii": "OK",
-      "Iii": "OK",
-      "Iiii": "NULL",
-      "Iiv": "OK"
+      "Iii": "NO",
+      "Iiii": "OK",
+      "Iiv": "NULL"
     }
   },
   "5": {
     "A": "OK",
     "Ai": "NULL",
-    "C": "Cremona",
+    "C": "Mantova",
     "D": "OK",
-    "E": "Padre: Chiara Costa, Madre: Luca Bianchi",
-    "F": "22.04.1953"
+    "E": "Padre: Pedro Oliveira, Madre: Beatriz Santos",
+    "F": "30.01.1880"
   },
   "6": {
     "A": "OK",
@@ -113,15 +113,15 @@
   },
   "8": {
     "8/1": {
-      "A": "Matteo Gallo",
-      "B": "OK",
-      "C": "OK",
-      "D": "OK",
+      "A": "Antonio Rodrigues",
+      "B": "KO",
+      "C": "KO",
+      "D": "KO",
       "Di": "NULL",
-      "Dii": "OK"
+      "Dii": "NULL"
     },
     "8/2": {
-      "A": "Francesca Leoni",
+      "A": "Patricia Luz Barbosa",
       "B": "OK",
       "C": "OK",
       "D": "OK",
@@ -129,18 +129,26 @@
       "Dii": "OK"
     },
     "8/3": {
-      "A": "Chiara Costa",
+      "A": "Rafael Luis Araujo-Barbosa",
       "B": "OK",
       "C": "OK",
       "D": "OK",
-      "Di": "NULL",
-      "Dii": "OK"
+      "Di": "OK",
+      "Dii": "NULL"
     }
   },
   "10": [
-    "2C"
+    "0G",
+    "2C",
+    "8/1B",
+    "8/1C",
+    "8/1D"
   ],
   "11": {
-    "2C": "Il ricorso non risulta iscritto prima del 27.03.2025 escluso"
+    "0G": "Atti di nascita dei discendenti mancanti: Antonio Rodrigues",
+    "2C": "Il ricorso non risulta iscritto prima del 27.03.2025 escluso",
+    "8/1B": "Atto di nascita non trovato per Antonio Rodrigues",
+    "8/1C": "Impossibile verificare l'apostille dell'atto di nascita di Antonio Rodrigues perché l'atto manca",
+    "8/1D": "Impossibile verificare la traduzione dell'atto di nascita di Antonio Rodrigues perché l'atto manca"
   }
 }

@@ -26,6 +26,9 @@ from typing import Optional
 from src.analysis import DocumentValidator
 
 
+_DOC_MATCH_VALIDATOR = DocumentValidator([])
+
+
 # ---------------------------------------------------------------------------
 # Levenshtein distance (used for fuzzy name matching in document/section keys)
 # ---------------------------------------------------------------------------
@@ -127,6 +130,56 @@ def _key_str(key: tuple) -> str:
     return " | ".join(str(x) for x in key[1:] if x)
 
 
+def _people_match(person_a: dict | None, person_b: dict | None) -> bool:
+    if not isinstance(person_a, dict) or not isinstance(person_b, dict):
+        return False
+    return _DOC_MATCH_VALIDATOR.people_match(person_a, person_b)
+
+
+def _doc_primary_person(doc: dict) -> dict:
+    schema = doc.get("schema", {})
+    soggetto = schema.get("soggetto")
+    if isinstance(soggetto, dict):
+        return soggetto
+    if isinstance(soggetto, list) and soggetto:
+        first = soggetto[0]
+        return first if isinstance(first, dict) else {}
+
+    oggetto = schema.get("oggetto")
+    if isinstance(oggetto, dict):
+        obj_sogg = oggetto.get("soggetto") or []
+        if obj_sogg and isinstance(obj_sogg[0], dict):
+            return obj_sogg[0]
+    return {}
+
+
+def _docs_semantically_match(expected_doc: dict, actual_doc: dict) -> bool:
+    edt = expected_doc.get("document_type", "")
+    adt = actual_doc.get("document_type", "")
+    if edt != adt:
+        return False
+
+    if edt in ("IndiceProcedimento.html", "Ricorso"):
+        return True
+
+    eschema = expected_doc.get("schema", {})
+    aschema = actual_doc.get("schema", {})
+
+    if edt in {"Atto di nascita", "Atto di morte", "Certificato Negativo di Naturalizzazione", "Procura"}:
+        return _people_match(_doc_primary_person(expected_doc), _doc_primary_person(actual_doc))
+
+    if edt in {"Apostille", "Traduzione", "Asseverazione"}:
+        eobj = eschema.get("oggetto", {}) if isinstance(eschema.get("oggetto", {}), dict) else {}
+        aobj = aschema.get("oggetto", {}) if isinstance(aschema.get("oggetto", {}), dict) else {}
+        if eobj.get("document_type") != aobj.get("document_type"):
+            return False
+        if eobj.get("documento_originale") != aobj.get("documento_originale"):
+            return False
+        return _people_match(_doc_primary_person(expected_doc), _doc_primary_person(actual_doc))
+
+    return False
+
+
 def match_documents(expected_docs: list, actual_docs: list):
     """
     Greedily match expected docs to actual docs by primary key with fuzzy fallback.
@@ -150,6 +203,17 @@ def match_documents(expected_docs: list, actual_docs: list):
         candidates = [d for d in actual_by_key.get(ek, []) if id(d) not in used_ids]
         if candidates:
             adoc = candidates[0]
+            used_ids.add(id(adoc))
+            matched.append((edoc, adoc))
+            continue
+
+        # Semantic fallback aligned with DocumentValidator identity matching.
+        semantic_candidates = [
+            d for d in actual_docs
+            if id(d) not in used_ids and _docs_semantically_match(edoc, d)
+        ]
+        if semantic_candidates:
+            adoc = semantic_candidates[0]
             used_ids.add(id(adoc))
             matched.append((edoc, adoc))
             continue

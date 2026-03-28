@@ -16,48 +16,48 @@
     "1": "OK"
   },
   "2": {
-    "A": "26.05.2024",
+    "A": "19.11.2025",
     "B": "OK",
-    "C": "OK",
+    "C": "KO",
     "D": "SI",
-    "Di": "09.03.2024",
-    "E": "SI",
-    "Ei": "22.10.2025",
-    "F": "SI",
-    "Fi": "2",
-    "Fii": "Francesca Leoni, Marco Moretti",
-    "Fiii": "09.06.2025, 01.02.2024",
-    "G": "0969-2025"
+    "Di": "26.05.2024",
+    "E": "NO",
+    "Ei": "NULL",
+    "F": "NO",
+    "Fi": "NULL",
+    "Fii": "NULL",
+    "Fiii": "NULL",
+    "G": "0938-2025"
   },
   "3": {
-    "A": "Francesca Leoni",
+    "A": "Mateus Rodrigues, Jose Nunes",
     "B": 1,
-    "C": "Matteo Gallo-Silva",
-    "D": "Matteo Gallo-Silva: Brasiliana",
+    "C": "Carlos Nunes-Rodrigues-Souza",
+    "D": "Carlos Nunes-Rodrigues-Souza: Brasiliana",
     "E": "NO",
     "Ei": "NULL",
     "Eii": "NULL",
-    "F": "OK; Chiara Maria Costa -> Chiara Joao Costa -> Sara Marini -> Matteo Gallo",
+    "F": "OK; Jose Paulo Santos -> Mateus Lima -> Joao Rodrigues -> Carlos Nunes-Rodrigues",
     "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
     "Gi": "NULL"
   },
   "4": {
     "4/1": {
-      "A": "Matteo Gallo-Silva",
+      "A": "Carlos Nunes-Rodrigues-Souza",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Matteo Gallo-Silva",
+      "B": "OK; firma del ricorrente Carlos Nunes-Rodrigues-Souza",
       "C": "OK",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
-      "E": "OK",
-      "Ei": "NULL",
-      "F": "06.06.2024",
+      "E": "NO",
+      "Ei": "Tribunale civile competente",
+      "F": "18.12.2024",
       "G": "OK",
-      "H": "OK",
-      "Hi": "NULL",
-      "I": "OK",
-      "Ii": "NULL",
-      "Iii": "NULL",
-      "Iiii": "NULL",
+      "H": "NO",
+      "Hi": "OK",
+      "I": "NO",
+      "Ii": "OK",
+      "Iii": "NO",
+      "Iiii": "OK",
       "Iiv": "NULL"
     }
   },
@@ -66,8 +66,8 @@
     "Ai": "NULL",
     "C": "Mantova",
     "D": "OK",
-    "E": "Padre: Francesca Leoni, Madre: Francesca Leoni",
-    "F": "03.06.1941"
+    "E": "Padre: Marcos Cardoso, Madre: Carolina Pereira",
+    "F": "19.12.1954"
   },
   "6": {
     "A": "OK",
@@ -86,43 +86,43 @@
   },
   "7": {
     "A": "OK",
-    "B": "Chiara Costo",
+    "B": "Jose Santoo",
     "C": "OK",
     "D": "OK",
     "E": "OK",
-    "Ei": "NULL",
-    "Eii": "OK"
+    "Ei": "OK",
+    "Eii": "NULL"
   },
   "8": {
     "8/1": {
-      "A": "Chiara Joao Costa",
-      "B": "KO",
+      "A": "Mateus Lima",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
+    },
+    "8/2": {
+      "A": "Joao Rodrigues",
+      "B": "OK",
       "C": "OK",
       "D": "OK",
       "Di": "NULL",
       "Dii": "OK"
     },
-    "8/2": {
-      "A": "Sara Marini",
-      "B": "OK",
-      "C": "OK",
-      "D": "OK",
-      "Di": "OK",
-      "Dii": "NULL"
-    },
     "8/3": {
-      "A": "Matteo Gallo",
+      "A": "Carlos Nunes-Rodrigues",
       "B": "OK",
       "C": "OK",
       "D": "OK",
-      "Di": "OK",
-      "Dii": "NULL"
+      "Di": "NULL",
+      "Dii": "OK"
     }
   },
   "10": [
-    "8/1B"
+    "2C"
   ],
   "11": {
-    "8/1B": "Genitori non in linea discendenza per Chiara Joao Costa"
+    "2C": "Il ricorso non risulta iscritto prima del 27.03.2025 escluso"
   }
 }

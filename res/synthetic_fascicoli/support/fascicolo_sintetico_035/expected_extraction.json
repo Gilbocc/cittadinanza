@@ -2,17 +2,23 @@
   {
     "document_type": "IndiceProcedimento.html",
     "schema": {
-      "numero_anno_ruolo": "977/2024",
-      "data_iscrizione": "07-08-2024",
+      "numero_anno_ruolo": "653/2024",
+      "data_iscrizione": "04-05-2025",
       "iscrizione_post_28_02_2023": "OK",
-      "iscrizione_pre_27_03_2025": "OK",
+      "iscrizione_pre_27_03_2025": "KO",
       "comparsa_avvocatura": "NO",
-      "data_comparsa_avvocatura": "24-11-2025",
-      "visibilita_pm": "SI",
-      "data_visibilita_pm": "29-10-2025",
-      "interventi": "NO",
-      "numero_interventi": 0,
-      "intervenuti": []
+      "data_comparsa_avvocatura": "07-02-2025",
+      "visibilita_pm": "NO",
+      "data_visibilita_pm": "27-06-2024",
+      "interventi": "SI",
+      "numero_interventi": 1,
+      "intervenuti": [
+        {
+          "nome": "Jose",
+          "cognome": "Nunes",
+          "data": "09-03-2025"
+        }
+      ]
     }
   },
   {
@@ -20,20 +26,20 @@
     "schema": {
       "avvocati": [
         {
-          "nome": "Paolo",
-          "cognome": "Neri"
+          "nome": "Patricia",
+          "cognome": "Santos"
         }
       ],
       "numero_ricorrenti": 2,
       "ricorrenti_maggiorenni": [
         {
-          "nome": "Elena Joao",
-          "cognome": "Rossi-Silva",
+          "nome": "Beatriz",
+          "cognome": "Oliveira-Souza",
           "nazionalita": "Brasiliana"
         },
         {
-          "nome": "Francesca Joao",
-          "cognome": "Leoni",
+          "nome": "Rafael",
+          "cognome": "Silva Ribeiro",
           "nazionalita": "Brasiliana"
         }
       ],
@@ -41,31 +47,27 @@
       "ricorrenti_per_matrimonio": [],
       "linea_discendenza": [
         {
-          "nome": "Chiara Carlo",
-          "cognome": "Costa"
+          "nome": "Diego Carlos",
+          "cognome": "Pereira"
         },
         {
-          "nome": "Chiara Joao",
-          "cognome": "Costa"
+          "nome": "Jose Luis",
+          "cognome": "Ribeiro"
         },
         {
-          "nome": "Sara",
-          "cognome": "Marini"
+          "nome": "Rafael",
+          "cognome": "Silva Ribeiro"
         },
         {
-          "nome": "Francesca Joao",
-          "cognome": "Leoni"
-        },
-        {
-          "nome": "Elena Joao",
-          "cognome": "Rossi"
+          "nome": "Beatriz",
+          "cognome": "Oliveira"
         }
       ],
-      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo.",
-      "riassunto_linea_discendenza": "Chiara Carlo Costa -> Chiara Joao Costa -> Sara Marini -> Francesca Joao Leoni -> Elena Joao Rossi",
+      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo. Nel ricorso risultano varianti anagrafiche/pseudonimi: Rafael Silva Ribeiro (alias: Rafael Silv). Nel ricorso sono dichiarati i seguenti alias/pseudonimi: Diego Pereiro.",
+      "riassunto_linea_discendenza": "Diego Carlos Pereira -> Jose Luis Ribeiro -> Rafael Silva Ribeiro -> Beatriz Oliveira",
       "coerenza_linea_discendenza": "SI",
       "proveniente_dal_brasile": "SI",
-      "data_ricorso": "29-11-2025"
+      "data_ricorso": "06-12-2025"
     }
   },
   {
@@ -73,8 +75,8 @@
     "schema": {
       "soggetto": [
         {
-          "nome": "Elena Joao",
-          "cognome": "Rossi-Silva",
+          "nome": "Beatriz",
+          "cognome": "Oliveira-Souza",
           "minorenne": "NO",
           "rappresentanti_legali": [],
           "firma_presente": "OK"
@@ -83,13 +85,13 @@
       "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "avvocati": [
         {
-          "nome": "Paolo",
-          "cognome": "Neri"
+          "nome": "Patricia",
+          "cognome": "Santos"
         }
       ],
       "tribunale_brescia_indicato": "OK",
       "tribunale_indicato": "Tribunale civile competente",
-      "data_procura": "15-05-2024",
+      "data_procura": "21-11-2025",
       "rilasciata_in_italia": "OK",
       "scritta_in_italiano": "OK"
     }
@@ -99,8 +101,8 @@
     "schema": {
       "soggetto": [
         {
-          "nome": "Francesca Joao",
-          "cognome": "Leoni",
+          "nome": "Rafael",
+          "cognome": "Silva Ribeiro",
           "minorenne": "NO",
           "rappresentanti_legali": [],
           "firma_presente": "OK"
@@ -109,15 +111,15 @@
       "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "avvocati": [
         {
-          "nome": "Paolo",
-          "cognome": "Neri"
+          "nome": "Patricia",
+          "cognome": "Santos"
         }
       ],
-      "tribunale_brescia_indicato": "OK",
+      "tribunale_brescia_indicato": "KO",
       "tribunale_indicato": "Tribunale civile competente",
-      "data_procura": "15-09-2024",
+      "data_procura": "19-09-2025",
       "rilasciata_in_italia": "NO",
-      "scritta_in_italiano": "OK"
+      "scritta_in_italiano": "NO"
     }
   },
   {
@@ -127,70 +129,8 @@
         "document_type": "Procura",
         "soggetto": [
           {
-            "nome": "Francesca Joao",
-            "cognome": "Leoni"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Atto di nascita",
-    "schema": {
-      "soggetto": {
-        "nome": "Chiara Carlo",
-        "cognome": "Costa"
-      },
-      "tipo": "parrocchiale",
-      "timbro_diocesi": "OK",
-      "comune_nascita": "Mantova",
-      "provincia": "mantova",
-      "padre": {
-        "nome": "Matteo",
-        "cognome": "Gallo"
-      },
-      "madre": {
-        "nome": "Matteo",
-        "cognome": "Gallo"
-      },
-      "data_nascita": "26-02-1909",
-      "area_nascita": "A",
-      "stato": "Italia"
-    }
-  },
-  {
-    "document_type": "Atto di nascita",
-    "schema": {
-      "soggetto": {
-        "nome": "Chiara Joao",
-        "cognome": "Costa"
-      },
-      "tipo": "anagrafico",
-      "timbro_diocesi": "NO",
-      "comune_nascita": "Campinas",
-      "provincia": "altro",
-      "padre": {
-        "nome": "Chiara",
-        "cognome": "Costa"
-      },
-      "madre": {
-        "nome": "Chiara Carlo",
-        "cognome": "Costa"
-      },
-      "data_nascita": "18-08-1965",
-      "area_nascita": "E",
-      "stato": "Brasile"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Chiara Joao",
-            "cognome": "Costa"
+            "nome": "Rafael",
+            "cognome": "Silva Ribeiro"
           }
         ]
       }
@@ -200,11 +140,11 @@
     "document_type": "Traduzione",
     "schema": {
       "oggetto": {
-        "document_type": "Atto di nascita",
+        "document_type": "Procura",
         "soggetto": [
           {
-            "nome": "Chiara Joao",
-            "cognome": "Costa"
+            "nome": "Rafael",
+            "cognome": "Silva Ribeiro"
           }
         ]
       },
@@ -218,8 +158,100 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Chiara Joao",
-            "cognome": "Costa"
+            "nome": "Rafael",
+            "cognome": "Silva Ribeiro"
+          }
+        ],
+        "documento_originale": "Procura"
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Diego Carlos",
+        "cognome": "Pereira"
+      },
+      "tipo": "parrocchiale",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Cremona",
+      "provincia": "cremona",
+      "padre": {
+        "nome": "Carlos",
+        "cognome": "Nunes"
+      },
+      "madre": {
+        "nome": "Patricia",
+        "cognome": "Souza"
+      },
+      "data_nascita": "01-01-1903",
+      "area_nascita": "A",
+      "stato": "Italia"
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Jose Luis",
+        "cognome": "Ribeiro"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "NO",
+      "comune_nascita": "Salvador",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Diego Carlos",
+        "cognome": "Pereira"
+      },
+      "madre": {
+        "nome": "Beatriz",
+        "cognome": "Rodrigues"
+      },
+      "data_nascita": "02-10-1962",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Jose Luis",
+            "cognome": "Ribeiro"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Jose Luis",
+            "cognome": "Ribeiro"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Jose Luis",
+            "cognome": "Ribeiro"
           }
         ],
         "documento_originale": "Atto di nascita"
@@ -230,22 +262,90 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Sara",
-        "cognome": "Marini"
+        "nome": "Rafael",
+        "cognome": "Silva Ribeiro"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Porto Alegre",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Jose Luis",
+        "cognome": "Ribeiro"
+      },
+      "madre": {
+        "nome": "Larissa",
+        "cognome": "Costa"
+      },
+      "data_nascita": "31-08-1981",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Rafael",
+            "cognome": "Silva Ribeiro"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Rafael",
+            "cognome": "Silva Ribeiro"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Rafael",
+            "cognome": "Silva Ribeiro"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Beatriz",
+        "cognome": "Oliveira"
       },
       "tipo": "anagrafico",
       "timbro_diocesi": "NO",
       "comune_nascita": "Rio de Janeiro",
       "provincia": "altro",
       "padre": {
-        "nome": "Sara",
-        "cognome": "Marini"
+        "nome": "Rafael",
+        "cognome": "Silva Ribeiro"
       },
       "madre": {
-        "nome": "Chiara Joao",
-        "cognome": "Costa"
+        "nome": "Juliana",
+        "cognome": "Mendes"
       },
-      "data_nascita": "27-08-2005",
+      "data_nascita": "28-10-1979",
       "area_nascita": "E",
       "stato": "Brasile"
     }
@@ -257,8 +357,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Sara",
-            "cognome": "Marini"
+            "nome": "Beatriz",
+            "cognome": "Oliveira"
           }
         ]
       }
@@ -271,205 +371,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Sara",
-            "cognome": "Marini"
-          }
-        ]
-      },
-      "sede_traduttore": "Italia"
-    }
-  },
-  {
-    "document_type": "Asseverazione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "documento_originale": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Sara",
-            "cognome": "Marini"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Atto di nascita",
-    "schema": {
-      "soggetto": {
-        "nome": "Francesca Joao",
-        "cognome": "Leoni"
-      },
-      "tipo": "anagrafico",
-      "timbro_diocesi": "OK",
-      "comune_nascita": "Recife",
-      "provincia": "altro",
-      "padre": {
-        "nome": "Francesca",
-        "cognome": "Leoni"
-      },
-      "madre": {
-        "nome": "Sara",
-        "cognome": "Marini"
-      },
-      "data_nascita": "11-10-1956",
-      "area_nascita": "E",
-      "stato": "Brasile"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Francesca Joao",
-            "cognome": "Leoni"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Francesca Joao",
-            "cognome": "Leoni"
-          }
-        ]
-      },
-      "sede_traduttore": "Italia"
-    }
-  },
-  {
-    "document_type": "Asseverazione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "documento_originale": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Francesca Joao",
-            "cognome": "Leoni"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Atto di nascita",
-    "schema": {
-      "soggetto": {
-        "nome": "Elena Joao",
-        "cognome": "Rossi"
-      },
-      "tipo": "anagrafico",
-      "timbro_diocesi": "NO",
-      "comune_nascita": "Porto Alegre",
-      "provincia": "altro",
-      "padre": {
-        "nome": "Elena",
-        "cognome": "Rossi"
-      },
-      "madre": {
-        "nome": "Francesca Joao",
-        "cognome": "Leoni"
-      },
-      "data_nascita": "22-06-1987",
-      "area_nascita": "E",
-      "stato": "Brasile"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Elena Joao",
-            "cognome": "Rossi"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Elena Joao",
-            "cognome": "Rossi"
-          }
-        ]
-      },
-      "sede_traduttore": "Italia"
-    }
-  },
-  {
-    "document_type": "Asseverazione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "documento_originale": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Elena Joao",
-            "cognome": "Rossi"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Certificato Negativo di Naturalizzazione",
-    "schema": {
-      "soggetto": {
-        "nome": "Chiara Carlo",
-        "cognome": "Costa"
-      },
-      "pseudonimi": [
-        {
-          "nome": "Chiara",
-          "cognome": "Costo"
-        }
-      ],
-      "formula_negativa_presente": "OK",
-      "data_nascita": "26-02-1909"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Certificato Negativo di Naturalizzazione",
-        "soggetto": [
-          {
-            "nome": "Chiara Carlo",
-            "cognome": "Costa"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Certificato Negativo di Naturalizzazione",
-        "soggetto": [
-          {
-            "nome": "Chiara Carlo",
-            "cognome": "Costa"
+            "nome": "Beatriz",
+            "cognome": "Oliveira"
           }
         ]
       },
@@ -483,11 +386,72 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Chiara Carlo",
-            "cognome": "Costa"
+            "nome": "Beatriz",
+            "cognome": "Oliveira"
           }
         ],
-        "documento_originale": "Certificato Negativo di Naturalizzazione"
+        "documento_originale": "Atto di nascita"
+      }
+    }
+  },
+  {
+    "document_type": "Certificato Negativo di Naturalizzazione",
+    "schema": {
+      "soggetto": {
+        "nome": "Diego Carlos",
+        "cognome": "Pereira"
+      },
+      "pseudonimi": [
+        {
+          "nome": "Diego",
+          "cognome": "Pereiro"
+        }
+      ],
+      "formula_negativa_presente": "OK",
+      "data_nascita": "01-01-1903"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato Negativo di Naturalizzazione",
+        "soggetto": [
+          {
+            "nome": "Diego Carlos",
+            "cognome": "Pereira"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato Negativo di Naturalizzazione",
+        "soggetto": [
+          {
+            "nome": "Diego Carlos",
+            "cognome": "Pereira"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Certificato Negativo di Naturalizzazione",
+        "soggetto": [
+          {
+            "nome": "Diego Carlos",
+            "cognome": "Pereira"
+          }
+        ]
       }
     }
   }

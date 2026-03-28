@@ -1,14 +1,14 @@
 {
   "0": {
-    "A": "OK",
+    "A": "KO",
     "B": "OK",
     "C": "OK",
     "Ci": "NULL",
     "D": "OK",
     "E": "OK",
     "F": "OK",
-    "G": "OK",
-    "Gi": "NULL",
+    "G": "KO",
+    "Gi": "Juliana Luz Oliveira",
     "H": "OK",
     "Hi": "NULL"
   },
@@ -16,37 +16,55 @@
     "1": "OK"
   },
   "2": {
-    "A": "13.07.2024",
-    "B": "OK",
-    "C": "OK",
-    "D": "NO",
+    "A": "NULL",
+    "B": "NULL",
+    "C": "NULL",
+    "D": "NULL",
     "Di": "NULL",
-    "E": "SI",
-    "Ei": "20.02.2024",
-    "F": "NO",
+    "E": "NULL",
+    "Ei": "NULL",
+    "F": "NULL",
     "Fi": "NULL",
     "Fii": "NULL",
     "Fiii": "NULL",
-    "G": "0519-2025"
+    "G": "NULL"
   },
   "3": {
-    "A": "Paolo Neri",
-    "B": 1,
-    "C": "Paolo Ana Neri",
-    "D": "Paolo Ana Neri: Brasiliana",
+    "A": "Mateus Silva, Carolina Oliveira",
+    "B": 2,
+    "C": "Beatriz Ana Almeida-Souza, Antonio Rodrigues",
+    "D": "Beatriz Ana Almeida-Souza: Brasiliana, Antonio Rodrigues: Brasiliana",
     "E": "NO",
     "Ei": "NULL",
     "Eii": "NULL",
-    "F": "OK; Paolo Carlo Neri -> Marco Moretti -> Paolo Ana Neri",
-    "G": "KO; Ricorrenti per matrimonio presenti",
-    "Gi": "Matteo Gallo"
+    "F": "OK; Fernanda Maria Souza -> Juliana Luz Oliveira -> Antonio Rodrigues -> Beatriz Ana Almeida",
+    "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
+    "Gi": "NULL"
   },
   "4": {
     "4/1": {
-      "A": "Paolo Ana Neri",
+      "A": "Beatriz Ana Almeida-Souza",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Paolo Ana Neri",
-      "C": "KO",
+      "B": "OK; firma del ricorrente Beatriz Ana Almeida-Souza",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "30.05.2024",
+      "G": "OK",
+      "H": "NO",
+      "Hi": "OK",
+      "I": "NO",
+      "Ii": "OK",
+      "Iii": "NO",
+      "Iiii": "OK",
+      "Iiv": "NULL"
+    },
+    "4/2": {
+      "A": "Antonio Rodrigues",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Antonio Rodrigues",
+      "C": "OK",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "E": "OK",
       "Ei": "NULL",
@@ -62,12 +80,12 @@
     }
   },
   "5": {
-    "A": "OK",
-    "Ai": "NULL",
-    "C": "Mantova",
+    "A": "NO",
+    "Ai": "OK",
+    "C": "Brescia",
     "D": "OK",
-    "E": "Padre: Elena Rossi, Madre: Matteo Gallo",
-    "F": "13.05.1922"
+    "E": "Padre: Marcos Lima, Madre: Renata Araujo",
+    "F": "03.08.1954"
   },
   "6": {
     "A": "OK",
@@ -86,25 +104,33 @@
   },
   "7": {
     "A": "OK",
-    "B": "Paolo Nero",
+    "B": "Fernanda Souzo",
     "C": "OK",
     "D": "OK",
     "E": "OK",
-    "Ei": "OK",
-    "Eii": "NULL"
+    "Ei": "NULL",
+    "Eii": "OK"
   },
   "8": {
     "8/1": {
-      "A": "Marco Moretti",
-      "B": "OK",
-      "C": "OK",
-      "D": "OK",
-      "Di": "OK",
+      "A": "Juliana Luz Oliveira",
+      "B": "KO",
+      "C": "KO",
+      "D": "KO",
+      "Di": "NULL",
       "Dii": "NULL"
     },
     "8/2": {
-      "A": "Paolo Ana Neri",
-      "B": "KO",
+      "A": "Antonio Rodrigues",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/3": {
+      "A": "Beatriz Ana Almeida",
+      "B": "OK",
       "C": "OK",
       "D": "OK",
       "Di": "NULL",
@@ -112,13 +138,17 @@
     }
   },
   "10": [
-    "3G",
-    "4/1C",
-    "8/2B"
+    "0A",
+    "0G",
+    "8/1B",
+    "8/1C",
+    "8/1D"
   ],
   "11": {
-    "3G": "Ricorrenti che chiedono la cittadinanza per matrimonio: Matteo Gallo",
-    "4/1C": "Gli avvocati indicati nella procura di Paolo Ana Neri non coincidono con quelli del ricorso",
-    "8/2B": "Genitori non in linea discendenza per Paolo Ana Neri"
+    "0A": "IndiceProcedimento.html mancante",
+    "0G": "Atti di nascita dei discendenti mancanti: Juliana Luz Oliveira",
+    "8/1B": "Atto di nascita non trovato per Juliana Luz Oliveira",
+    "8/1C": "Impossibile verificare l'apostille dell'atto di nascita di Juliana Luz Oliveira perché l'atto manca",
+    "8/1D": "Impossibile verificare la traduzione dell'atto di nascita di Juliana Luz Oliveira perché l'atto manca"
   }
 }

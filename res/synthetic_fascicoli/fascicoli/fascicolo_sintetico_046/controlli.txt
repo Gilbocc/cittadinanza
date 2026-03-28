@@ -16,83 +16,65 @@
     "1": "OK"
   },
   "2": {
-    "A": "06.01.2025",
+    "A": "03.06.2024",
     "B": "OK",
     "C": "OK",
     "D": "SI",
-    "Di": "07.07.2024",
-    "E": "NO",
-    "Ei": "NULL",
-    "F": "NO",
-    "Fi": "NULL",
-    "Fii": "NULL",
-    "Fiii": "NULL",
-    "G": "0865-2025"
+    "Di": "28.06.2024",
+    "E": "SI",
+    "Ei": "18.12.2025",
+    "F": "SI",
+    "Fi": "2",
+    "Fii": "Joao Barbosa, Renata Oliveira",
+    "Fiii": "24.04.2024, 28.08.2025",
+    "G": "0774-2025"
   },
   "3": {
-    "A": "Giulia Conti",
-    "B": 2,
-    "C": "Sara Marini-Silva, Matteo Gallo",
-    "D": "Sara Marini-Silva: Brasiliana, Matteo Gallo: Brasiliana",
+    "A": "Mateus Almeida, Larissa Mendes",
+    "B": 1,
+    "C": "Rafael Santos Cardoso",
+    "D": "Rafael Santos Cardoso: Brasiliana",
     "E": "NO",
     "Ei": "NULL",
     "Eii": "NULL",
-    "F": "OK; Sara Carlo Marini -> Sara Marini",
-    "G": "KO; Ricorrenti per matrimonio presenti",
-    "Gi": "Luca Bianchi"
+    "F": "OK; Renata Aparecida Oliveira -> Paulo Cardoso Oliveira -> Rafael Santos Cardoso",
+    "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
+    "Gi": "NULL"
   },
   "4": {
     "4/1": {
-      "A": "Sara Marini-Silva",
+      "A": "Rafael Santos Cardoso",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Sara Marini-Silva",
+      "B": "OK; firma del ricorrente Rafael Santos Cardoso",
       "C": "OK",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
-      "E": "OK",
-      "Ei": "NULL",
-      "F": "28.12.2025",
-      "G": "KO",
-      "H": "NO",
-      "Hi": "OK",
-      "I": "OK",
-      "Ii": "NULL",
-      "Iii": "NULL",
-      "Iiii": "NULL",
-      "Iiv": "NULL"
-    },
-    "4/2": {
-      "A": "Matteo Gallo",
-      "Ai": "NULL",
-      "B": "OK; firma del ricorrente Matteo Gallo",
-      "C": "OK",
-      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
-      "E": "OK",
-      "Ei": "NULL",
-      "F": "29.04.2025",
+      "E": "NO",
+      "Ei": "Tribunale civile competente",
+      "F": "31.10.2024",
       "G": "OK",
-      "H": "OK",
-      "Hi": "NULL",
-      "I": "OK",
-      "Ii": "NULL",
-      "Iii": "NULL",
+      "H": "NO",
+      "Hi": "KO",
+      "I": "NO",
+      "Ii": "OK",
+      "Iii": "OK",
       "Iiii": "NULL",
-      "Iiv": "NULL"
+      "Iiv": "OK"
     }
   },
   "5": {
     "A": "OK",
     "Ai": "NULL",
-    "C": "Brescia",
+    "C": "Mantova",
     "D": "OK",
-    "E": "Padre: Luca Bianchi, Madre: Paolo Neri",
-    "F": "09.12.1846"
+    "E": "Padre: Carlos Mendes, Madre: Beatriz Cardoso",
+    "F": "23.09.1844"
   },
   "6": {
     "A": "NO",
     "Ai": "NULL",
     "Aii": "NULL",
     "Aiii": "NULL",
-    "C": "18.01.1978",
+    "C": "21.07.1995",
     "D": "OK",
     "Di": "NULL",
     "Dii": "NULL",
@@ -104,41 +86,35 @@
   },
   "7": {
     "A": "OK",
-    "B": "Sara Marino",
+    "B": "Renata Oliveiro",
     "C": "OK",
     "D": "OK",
     "E": "OK",
-    "Ei": "OK",
-    "Eii": "NULL"
+    "Ei": "NULL",
+    "Eii": "OK"
   },
   "8": {
     "8/1": {
-      "A": "Sara Marini",
-      "B": "KO",
+      "A": "Paulo Cardoso Oliveira",
+      "B": "OK",
       "C": "OK",
       "D": "OK",
-      "Di": "NULL",
-      "Dii": "OK"
+      "Di": "OK",
+      "Dii": "NULL"
     },
     "8/2": {
-      "A": "Matteo Gallo",
-      "B": "KO",
+      "A": "Rafael Santos Cardoso",
+      "B": "OK",
       "C": "OK",
       "D": "OK",
-      "Di": "NULL",
-      "Dii": "OK"
+      "Di": "OK",
+      "Dii": "NULL"
     }
   },
   "10": [
-    "3G",
-    "4/1G",
-    "8/1B",
-    "8/2B"
+    "4/1Hi"
   ],
   "11": {
-    "3G": "Ricorrenti che chiedono la cittadinanza per matrimonio: Luca Bianchi",
-    "4/1G": "La data della procura di Sara Marini-Silva non è anteriore alla data del ricorso",
-    "8/1B": "Genitori non in linea discendenza per Sara Marini",
-    "8/2B": "Genitori non in linea discendenza per Matteo Gallo"
+    "4/1Hi": "Apostille mancante per la procura estera di Rafael Santos Cardoso"
   }
 }

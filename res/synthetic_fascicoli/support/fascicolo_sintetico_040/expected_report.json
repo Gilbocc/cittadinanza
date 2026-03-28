@@ -16,58 +16,58 @@
     "1": "OK"
   },
   "2": {
-    "A": "10.11.2025",
+    "A": "09.10.2024",
     "B": "OK",
-    "C": "KO",
-    "D": "SI",
-    "Di": "11.08.2024",
+    "C": "OK",
+    "D": "NO",
+    "Di": "NULL",
     "E": "NO",
     "Ei": "NULL",
-    "F": "SI",
-    "Fi": "2",
-    "Fii": "Elena Rossi, Giulia Conti",
-    "Fiii": "23.12.2024, 06.08.2024",
-    "G": "0439-2025"
+    "F": "NO",
+    "Fi": "NULL",
+    "Fii": "NULL",
+    "Fiii": "NULL",
+    "G": "0931-2024"
   },
   "3": {
-    "A": "Davide Lombardi",
+    "A": "Beatriz Costa, Maria Ribeiro",
     "B": 1,
-    "C": "Davide Luz Lombardi-Silva",
-    "D": "Davide Luz Lombardi-Silva: Brasiliana",
+    "C": "Joao Pereira Souza-Souza",
+    "D": "Joao Pereira Souza-Souza: Brasiliana",
     "E": "NO",
     "Ei": "NULL",
     "Eii": "NULL",
-    "F": "OK; Francesca Carlo Leoni -> Giulia Conti -> Davide Luz Lombardi",
+    "F": "OK; Juliana Aparecida Rodrigues -> Pedro Almeida -> Antonio Nunes -> Joao Souza Nunes -> Joao Pereira Souza",
     "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
     "Gi": "NULL"
   },
   "4": {
     "4/1": {
-      "A": "Davide Luz Lombardi-Silva",
+      "A": "Joao Pereira Souza-Souza",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Davide Luz Lombardi-Silva",
+      "B": "OK; firma del ricorrente Joao Pereira Souza-Souza",
       "C": "OK",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "E": "OK",
       "Ei": "NULL",
-      "F": "10.01.2024",
+      "F": "27.03.2024",
       "G": "OK",
       "H": "NO",
       "Hi": "OK",
       "I": "NO",
       "Ii": "OK",
-      "Iii": "NO",
-      "Iiii": "OK",
-      "Iiv": "NULL"
+      "Iii": "OK",
+      "Iiii": "NULL",
+      "Iiv": "OK"
     }
   },
   "5": {
     "A": "NO",
-    "Ai": "OK",
+    "Ai": "KO",
     "C": "Bergamo",
     "D": "OK",
-    "E": "Padre: Francesca Leoni, Madre: Chiara Costa",
-    "F": "03.08.1927"
+    "E": "Padre: Antonio Rodrigues, Madre: Juliana Lima",
+    "F": "01.02.1929"
   },
   "6": {
     "A": "OK",
@@ -86,7 +86,7 @@
   },
   "7": {
     "A": "OK",
-    "B": "Francesca Leono",
+    "B": "Juliana Rodrigueo",
     "C": "OK",
     "D": "OK",
     "E": "OK",
@@ -95,26 +95,38 @@
   },
   "8": {
     "8/1": {
-      "A": "Giulia Conti",
-      "B": "OK",
-      "C": "OK",
-      "D": "OK",
-      "Di": "OK",
-      "Dii": "NULL"
-    },
-    "8/2": {
-      "A": "Davide Luz Lombardi",
+      "A": "Pedro Almeida",
       "B": "OK",
       "C": "OK",
       "D": "OK",
       "Di": "NULL",
       "Dii": "OK"
+    },
+    "8/2": {
+      "A": "Antonio Nunes",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/3": {
+      "A": "Joao Souza Nunes",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/4": {
+      "A": "Joao Pereira Souza",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
     }
   },
-  "10": [
-    "2C"
-  ],
-  "11": {
-    "2C": "Il ricorso non risulta iscritto prima del 27.03.2025 escluso"
-  }
+  "10": null,
+  "11": null
 }

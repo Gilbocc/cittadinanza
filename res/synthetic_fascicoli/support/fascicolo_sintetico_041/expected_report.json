@@ -1,6 +1,6 @@
 {
   "0": {
-    "A": "OK",
+    "A": "KO",
     "B": "OK",
     "C": "OK",
     "Ci": "NULL",
@@ -9,48 +9,48 @@
     "F": "OK",
     "G": "OK",
     "Gi": "NULL",
-    "H": "OK",
-    "Hi": "NULL"
+    "H": "KO",
+    "Hi": "Carolina Cardoso Nunes-Souza"
   },
   "1": {
     "1": "OK"
   },
   "2": {
-    "A": "04.11.2024",
-    "B": "OK",
-    "C": "OK",
-    "D": "SI",
-    "Di": "24.03.2025",
-    "E": "SI",
-    "Ei": "07.11.2025",
-    "F": "NO",
+    "A": "NULL",
+    "B": "NULL",
+    "C": "NULL",
+    "D": "NULL",
+    "Di": "NULL",
+    "E": "NULL",
+    "Ei": "NULL",
+    "F": "NULL",
     "Fi": "NULL",
     "Fii": "NULL",
     "Fiii": "NULL",
-    "G": "0721-2024"
+    "G": "NULL"
   },
   "3": {
-    "A": "Luca Bianchi",
-    "B": 2,
-    "C": "Francesca Leoni-Silva, Sara Ana Marini",
-    "D": "Francesca Leoni-Silva: Brasiliana, Sara Ana Marini: Brasiliana",
+    "A": "Fernanda Ribeiro, Diego Almeida",
+    "B": 1,
+    "C": "Carolina Cardoso Nunes-Souza",
+    "D": "Carolina Cardoso Nunes-Souza: Brasiliana",
     "E": "NO",
     "Ei": "NULL",
     "Eii": "NULL",
-    "F": "OK; Paolo Maria Neri -> Luca Bianchi -> Elena Rossi -> Sara Luz Marini -> Sara Ana Marini -> Francesca Leoni",
+    "F": "OK; Beatriz Maria Mendes -> Rafael Nunes -> Carolina Cardoso Nunes",
     "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
     "Gi": "NULL"
   },
   "4": {
     "4/1": {
-      "A": "Francesca Leoni-Silva",
+      "A": "Carolina Cardoso Nunes-Souza",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Francesca Leoni-Silva",
+      "B": "OK; firma del ricorrente Carolina Cardoso Nunes-Souza",
       "C": "OK",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "E": "OK",
       "Ei": "NULL",
-      "F": "04.02.2025",
+      "F": "28.01.2024",
       "G": "OK",
       "H": "OK",
       "Hi": "NULL",
@@ -59,33 +59,15 @@
       "Iii": "NULL",
       "Iiii": "NULL",
       "Iiv": "NULL"
-    },
-    "4/2": {
-      "A": "Sara Ana Marini",
-      "Ai": "NULL",
-      "B": "OK; firma del ricorrente Sara Ana Marini",
-      "C": "OK",
-      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
-      "E": "OK",
-      "Ei": "NULL",
-      "F": "27.05.2024",
-      "G": "OK",
-      "H": "NO",
-      "Hi": "OK",
-      "I": "OK",
-      "Ii": "NULL",
-      "Iii": "NULL",
-      "Iiii": "NULL",
-      "Iiv": "NULL"
     }
   },
   "5": {
-    "A": "OK",
-    "Ai": "NULL",
-    "C": "Bergamo",
+    "A": "NO",
+    "Ai": "KO",
+    "C": "Brescia",
     "D": "OK",
-    "E": "Padre: Francesca Leoni, Madre: Luca Bianchi",
-    "F": "17.09.1940"
+    "E": "Padre: Carlos Almeida, Madre: Beatriz Santos",
+    "F": "12.04.1894"
   },
   "6": {
     "A": "OK",
@@ -108,12 +90,12 @@
     "C": "OK",
     "D": "OK",
     "E": "OK",
-    "Ei": "NULL",
-    "Eii": "OK"
+    "Ei": "OK",
+    "Eii": "NULL"
   },
   "8": {
     "8/1": {
-      "A": "Luca Bianchi",
+      "A": "Rafael Nunes",
       "B": "OK",
       "C": "OK",
       "D": "OK",
@@ -121,30 +103,26 @@
       "Dii": "NULL"
     },
     "8/2": {
-      "A": "Elena Rossi",
-      "B": "OK",
-      "C": "OK",
-      "D": "OK",
-      "Di": "OK",
-      "Dii": "NULL"
-    },
-    "8/3": {
-      "A": "Sara Luz Marini",
-      "B": "OK",
-      "C": "OK",
-      "D": "OK",
+      "A": "Carolina Cardoso Nunes",
+      "B": "KO",
+      "C": "KO",
+      "D": "KO",
       "Di": "NULL",
-      "Dii": "OK"
-    },
-    "8/4": {
-      "A": "Francesca Leoni",
-      "B": "OK",
-      "C": "OK",
-      "D": "OK",
-      "Di": "OK",
       "Dii": "NULL"
     }
   },
-  "10": null,
-  "11": null
+  "10": [
+    "0A",
+    "0H",
+    "8/2B",
+    "8/2C",
+    "8/2D"
+  ],
+  "11": {
+    "0A": "IndiceProcedimento.html mancante",
+    "0H": "Atti di nascita dei ricorrenti mancanti: Carolina Cardoso Nunes-Souza",
+    "8/2B": "Atto di nascita non trovato per Carolina Cardoso Nunes",
+    "8/2C": "Impossibile verificare l'apostille dell'atto di nascita di Carolina Cardoso Nunes perché l'atto manca",
+    "8/2D": "Impossibile verificare la traduzione dell'atto di nascita di Carolina Cardoso Nunes perché l'atto manca"
+  }
 }

@@ -16,65 +16,65 @@
     "1": "OK"
   },
   "2": {
-    "A": "19.06.2025",
+    "A": "25.01.2025",
     "B": "OK",
-    "C": "KO",
-    "D": "NO",
-    "Di": "NULL",
+    "C": "OK",
+    "D": "SI",
+    "Di": "11.09.2024",
     "E": "SI",
-    "Ei": "15.07.2025",
-    "F": "NO",
-    "Fi": "NULL",
-    "Fii": "NULL",
-    "Fiii": "NULL",
-    "G": "0306-2025"
+    "Ei": "29.03.2025",
+    "F": "SI",
+    "Fi": "2",
+    "Fii": "Carlos Nunes, Pedro Souza",
+    "Fiii": "26.04.2025, 13.09.2024",
+    "G": "0948-2024"
   },
   "3": {
-    "A": "Chiara Costa",
+    "A": "Mateus Barbosa",
     "B": 1,
-    "C": "Elena Rossi",
-    "D": "Elena Rossi: Brasiliana",
+    "C": "Beatriz Barbosa-Costa",
+    "D": "Beatriz Barbosa-Costa: Brasiliana",
     "E": "NO",
     "Ei": "NULL",
     "Eii": "NULL",
-    "F": "OK; Sara Carlo Marini -> Marco Moretti -> Elena Rossi -> Sara Ana Marini -> Elena Rossi",
+    "F": "OK; Juliana Maria Pereira -> Joao Joao Nunes Pereira -> Maria Ana Souza -> Larissa Costa -> Beatriz Barbosa-Costa",
     "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
     "Gi": "NULL"
   },
   "4": {
     "4/1": {
-      "A": "Elena Rossi",
+      "A": "Beatriz Barbosa-Costa",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Elena Rossi",
-      "C": "OK",
+      "B": "OK; firma del ricorrente Beatriz Barbosa-Costa",
+      "C": "KO",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
-      "E": "OK",
-      "Ei": "NULL",
-      "F": "03.01.2024",
+      "E": "NO",
+      "Ei": "Tribunale civile competente",
+      "F": "06.12.2024",
       "G": "OK",
       "H": "NO",
       "Hi": "OK",
-      "I": "NO",
-      "Ii": "OK",
-      "Iii": "NO",
-      "Iiii": "OK",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
+      "Iiii": "NULL",
       "Iiv": "NULL"
     }
   },
   "5": {
-    "A": "NO",
-    "Ai": "KO",
-    "C": "Mantova",
+    "A": "OK",
+    "Ai": "NULL",
+    "C": "Cremona",
     "D": "OK",
-    "E": "Padre: Elena Rossi, Madre: Elena Rossi",
-    "F": "24.03.1856"
+    "E": "Padre: Mateus Rodrigues, Madre: Patricia Ribeiro",
+    "F": "27.09.1842"
   },
   "6": {
     "A": "NO",
     "Ai": "NULL",
     "Aii": "NULL",
     "Aiii": "NULL",
-    "C": "31.10.1924",
+    "C": "22.01.1916",
     "D": "OK",
     "Di": "NULL",
     "Dii": "NULL",
@@ -86,16 +86,16 @@
   },
   "7": {
     "A": "OK",
-    "B": "NULL",
+    "B": "Juliana Pereiro",
     "C": "OK",
     "D": "OK",
     "E": "OK",
-    "Ei": "OK",
-    "Eii": "NULL"
+    "Ei": "NULL",
+    "Eii": "OK"
   },
   "8": {
     "8/1": {
-      "A": "Marco Moretti",
+      "A": "Joao Joao Nunes Pereira",
       "B": "OK",
       "C": "OK",
       "D": "OK",
@@ -103,15 +103,23 @@
       "Dii": "NULL"
     },
     "8/2": {
-      "A": "Elena Rossi",
+      "A": "Maria Ana Souza",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/3": {
+      "A": "Larissa Costa",
       "B": "OK",
       "C": "OK",
       "D": "OK",
       "Di": "OK",
       "Dii": "NULL"
     },
-    "8/3": {
-      "A": "Sara Ana Marini",
+    "8/4": {
+      "A": "Beatriz Barbosa-Costa",
       "B": "OK",
       "C": "OK",
       "D": "OK",
@@ -120,9 +128,9 @@
     }
   },
   "10": [
-    "2C"
+    "4/1C"
   ],
   "11": {
-    "2C": "Il ricorso non risulta iscritto prima del 27.03.2025 escluso"
+    "4/1C": "Gli avvocati indicati nella procura di Beatriz Barbosa-Costa non coincidono con quelli del ricorso"
   }
 }

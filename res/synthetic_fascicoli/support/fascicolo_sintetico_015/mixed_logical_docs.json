@@ -2,28 +2,17 @@
   {
     "document_type": "IndiceProcedimento.html",
     "schema": {
-      "numero_anno_ruolo": "105/2024",
-      "data_iscrizione": "22-09-2025",
+      "numero_anno_ruolo": "840/2024",
+      "data_iscrizione": "19-08-2025",
       "iscrizione_post_28_02_2023": "OK",
       "iscrizione_pre_27_03_2025": "KO",
       "comparsa_avvocatura": "SI",
-      "data_comparsa_avvocatura": "08-08-2024",
+      "data_comparsa_avvocatura": "03-01-2025",
       "visibilita_pm": "NO",
-      "data_visibilita_pm": "15-07-2025",
-      "interventi": "SI",
-      "numero_interventi": 2,
-      "intervenuti": [
-        {
-          "nome": "Marco",
-          "cognome": "Moretti",
-          "data": "23-12-2025"
-        },
-        {
-          "nome": "Chiara",
-          "cognome": "Costa",
-          "data": "04-04-2025"
-        }
-      ]
+      "data_visibilita_pm": "04-03-2024",
+      "interventi": "NO",
+      "numero_interventi": 0,
+      "intervenuti": []
     }
   },
   {
@@ -31,54 +20,66 @@
     "schema": {
       "avvocati": [
         {
-          "nome": "Sara",
-          "cognome": "Marini"
+          "nome": "Antonio",
+          "cognome": "Almeida"
+        },
+        {
+          "nome": "Fernanda",
+          "cognome": "Araujo"
         }
       ],
       "numero_ricorrenti": 2,
       "ricorrenti_maggiorenni": [
         {
-          "nome": "Francesca",
-          "cognome": "Leoni-Silva",
+          "nome": "Camila Luz",
+          "cognome": "Ribeiro Pereira-Lima",
           "nazionalita": "Brasiliana"
         },
         {
-          "nome": "Elena",
-          "cognome": "Rossi",
+          "nome": "Carolina Maria",
+          "cognome": "Pereira-Lima",
           "nazionalita": "Brasiliana"
         }
       ],
       "ricorrenti_minorenni": [],
       "ricorrenti_per_matrimonio": [
         {
-          "nome": "Sara",
-          "cognome": "Marini",
+          "nome": "Joao",
+          "cognome": "Barbosa",
           "nazionalita": "Brasiliana"
         }
       ],
       "linea_discendenza": [
         {
-          "nome": "Paolo Luigi",
-          "cognome": "Neri"
+          "nome": "Fernanda Aparecida",
+          "cognome": "Mendes"
         },
         {
-          "nome": "Francesca Joao",
-          "cognome": "Leoni"
+          "nome": "Patricia",
+          "cognome": "Souza-Mendes"
         },
         {
-          "nome": "Elena",
-          "cognome": "Rossi"
+          "nome": "Fernanda",
+          "cognome": "Silva"
         },
         {
-          "nome": "Francesca",
-          "cognome": "Leoni"
+          "nome": "Carlos",
+          "cognome": "Lima"
+        },
+        {
+          "nome": "Carolina Maria",
+          "cognome": "Pereira-Lima"
+        },
+        {
+          "nome": "Camila Luz",
+          "cognome": "Ribeiro Pereira-Lima"
         }
       ],
-      "racconto_linea_discendenza": "La ricostruzione presenta una possibile lacuna intermedia da verificare sui certificati allegati.",
-      "riassunto_linea_discendenza": "Paolo Luigi Neri -> Francesca Leoni",
-      "coerenza_linea_discendenza": "KO",
+      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo. Nel ricorso risultano varianti anagrafiche/pseudonimi: Camila Luz Ribeiro Pereira-Lima (alias: Camila Ribeir); Fernanda Silva (alias: Fernanda Silv). Nel ricorso sono dichiarati i seguenti alias/pseudonimi: Fernanda Mendeo.",
+      "riassunto_linea_discendenza": "Fernanda Aparecida Mendes -> Patricia Souza-Mendes -> Fernanda Silva -> Carlos Lima -> Carolina Maria Pereira-Lima -> Camila Luz Ribeiro Pereira-Lima",
+      "coerenza_linea_discendenza": "SI",
       "proveniente_dal_brasile": "SI",
-      "data_ricorso": "23-04-2024"
+      "data_ricorso": "07-12-2025"
     }
   },
   {
@@ -86,48 +87,38 @@
     "schema": {
       "soggetto": [
         {
-          "nome": "Francesca",
-          "cognome": "Leoni-Silva",
+          "nome": "Camila Luz",
+          "cognome": "Ribeiro Pereira-Lima",
           "minorenne": "NO",
           "rappresentanti_legali": [],
-          "firma_presente": "OK"
+          "firma_presente": "KO"
         }
       ],
       "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "avvocati": [
         {
-          "nome": "Sara",
-          "cognome": "Marini"
+          "nome": "Antonio",
+          "cognome": "Almeida"
+        },
+        {
+          "nome": "Fernanda",
+          "cognome": "Araujo"
         }
       ],
       "tribunale_brescia_indicato": "OK",
       "tribunale_indicato": "Tribunale civile competente",
-      "data_procura": "16-01-2024",
-      "rilasciata_in_italia": "NO",
+      "data_procura": "29-10-2024",
+      "rilasciata_in_italia": "OK",
       "scritta_in_italiano": "OK"
     }
   },
   {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Procura",
-        "soggetto": [
-          {
-            "nome": "Francesca",
-            "cognome": "Leoni-Silva"
-          }
-        ]
-      }
-    }
-  },
-  {
     "document_type": "Procura",
     "schema": {
       "soggetto": [
         {
-          "nome": "Elena",
-          "cognome": "Rossi",
+          "nome": "Carolina Maria",
+          "cognome": "Pereira-Lima",
           "minorenne": "NO",
           "rappresentanti_legali": [],
           "firma_presente": "OK"
@@ -136,81 +127,41 @@
       "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "avvocati": [
         {
-          "nome": "Sara",
-          "cognome": "Marini"
+          "nome": "Antonio",
+          "cognome": "Almeida"
+        },
+        {
+          "nome": "Fernanda",
+          "cognome": "Araujo"
         }
       ],
       "tribunale_brescia_indicato": "OK",
       "tribunale_indicato": "Tribunale civile competente",
-      "data_procura": "28-02-2024",
-      "rilasciata_in_italia": "NO",
-      "scritta_in_italiano": "NO"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Procura",
-        "soggetto": [
-          {
-            "nome": "Elena",
-            "cognome": "Rossi"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Procura",
-        "soggetto": [
-          {
-            "nome": "Elena",
-            "cognome": "Rossi"
-          }
-        ]
-      },
-      "sede_traduttore": "Estero"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "soggetto": [
-          {
-            "nome": "Elena",
-            "cognome": "Rossi"
-          }
-        ],
-        "documento_originale": "Procura"
-      }
+      "data_procura": "16-05-2024",
+      "rilasciata_in_italia": "OK",
+      "scritta_in_italiano": "OK"
     }
   },
   {
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Paolo Luigi",
-        "cognome": "Neri"
+        "nome": "Fernanda Aparecida",
+        "cognome": "Mendes"
       },
-      "tipo": "anagrafico",
-      "timbro_diocesi": "OK",
-      "comune_nascita": "Brescia",
-      "provincia": "brescia",
+      "tipo": "parrocchiale",
+      "timbro_diocesi": "NO",
+      "comune_nascita": "Mantova",
+      "provincia": "mantova",
       "padre": {
-        "nome": "Chiara",
-        "cognome": "Costa"
+        "nome": "Mateus",
+        "cognome": "Barbosa"
       },
       "madre": {
-        "nome": "Sara",
-        "cognome": "Marini"
+        "nome": "Renata",
+        "cognome": "Pereira"
       },
-      "data_nascita": "15-10-1853",
+      "data_nascita": "11-03-1909",
       "area_nascita": "A",
       "stato": "Italia"
     }
@@ -219,90 +170,22 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Francesca Joao",
-        "cognome": "Leoni"
-      },
-      "tipo": "anagrafico",
-      "timbro_diocesi": "OK",
-      "comune_nascita": "Salvador",
-      "provincia": "altro",
-      "padre": {
-        "nome": "Francesca",
-        "cognome": "Leoni"
-      },
-      "madre": {
-        "nome": "Paolo Luigi",
-        "cognome": "Neri"
-      },
-      "data_nascita": "13-12-1989",
-      "area_nascita": "E",
-      "stato": "Brasile"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Francesca Joao",
-            "cognome": "Leoni"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Francesca Joao",
-            "cognome": "Leoni"
-          }
-        ]
-      },
-      "sede_traduttore": "Estero"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "soggetto": [
-          {
-            "nome": "Francesca Joao",
-            "cognome": "Leoni"
-          }
-        ],
-        "documento_originale": "Atto di nascita"
-      }
-    }
-  },
-  {
-    "document_type": "Atto di nascita",
-    "schema": {
-      "soggetto": {
-        "nome": "Elena",
-        "cognome": "Rossi"
+        "nome": "Patricia",
+        "cognome": "Souza-Mendes"
       },
       "tipo": "parrocchiale",
       "timbro_diocesi": "OK",
-      "comune_nascita": "Recife",
+      "comune_nascita": "Fortaleza",
       "provincia": "altro",
       "padre": {
-        "nome": "Elena",
-        "cognome": "Rossi"
+        "nome": "Antonio",
+        "cognome": "Araujo"
       },
       "madre": {
-        "nome": "Francesca Joao",
-        "cognome": "Leoni"
+        "nome": "Fernanda Aparecida",
+        "cognome": "Mendes"
       },
-      "data_nascita": "12-03-1977",
+      "data_nascita": "30-01-1970",
       "area_nascita": "E",
       "stato": "Brasile"
     }
@@ -314,8 +197,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Elena",
-            "cognome": "Rossi"
+            "nome": "Patricia",
+            "cognome": "Souza-Mendes"
           }
         ]
       }
@@ -328,76 +211,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Elena",
-            "cognome": "Rossi"
-          }
-        ]
-      },
-      "sede_traduttore": "Estero"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "soggetto": [
-          {
-            "nome": "Elena",
-            "cognome": "Rossi"
-          }
-        ],
-        "documento_originale": "Atto di nascita"
-      }
-    }
-  },
-  {
-    "document_type": "Atto di nascita",
-    "schema": {
-      "soggetto": {
-        "nome": "Francesca",
-        "cognome": "Leoni"
-      },
-      "tipo": "parrocchiale",
-      "timbro_diocesi": "OK",
-      "comune_nascita": "Recife",
-      "provincia": "altro",
-      "padre": {
-        "nome": "Davide",
-        "cognome": "Lombardi"
-      },
-      "madre": {
-        "nome": "Elena",
-        "cognome": "Rossi"
-      },
-      "data_nascita": "29-10-1931",
-      "area_nascita": "E",
-      "stato": "Brasile"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Francesca",
-            "cognome": "Leoni"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Francesca",
-            "cognome": "Leoni"
+            "nome": "Patricia",
+            "cognome": "Souza-Mendes"
           }
         ]
       },
@@ -412,32 +227,46 @@
         "documento_originale": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Francesca",
-            "cognome": "Leoni"
+            "nome": "Patricia",
+            "cognome": "Souza-Mendes"
           }
         ]
       }
     }
   },
   {
-    "document_type": "Atto di morte",
+    "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Paolo Luigi",
-        "cognome": "Neri"
+        "nome": "Fernanda",
+        "cognome": "Silva"
       },
-      "data_decesso": "22-01-1970"
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Belo Horizonte",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Rafael",
+        "cognome": "Barbosa"
+      },
+      "madre": {
+        "nome": "Patricia",
+        "cognome": "Souza-Mendes"
+      },
+      "data_nascita": "17-07-1935",
+      "area_nascita": "E",
+      "stato": "Brasile"
     }
   },
   {
     "document_type": "Apostille",
     "schema": {
       "oggetto": {
-        "document_type": "Atto di morte",
+        "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Paolo Luigi",
-            "cognome": "Neri"
+            "nome": "Fernanda",
+            "cognome": "Silva"
           }
         ]
       }
@@ -447,11 +276,11 @@
     "document_type": "Traduzione",
     "schema": {
       "oggetto": {
-        "document_type": "Atto di morte",
+        "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Paolo Luigi",
-            "cognome": "Neri"
+            "nome": "Fernanda",
+            "cognome": "Silva"
           }
         ]
       },
@@ -465,11 +294,147 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Paolo Luigi",
-            "cognome": "Neri"
+            "nome": "Fernanda",
+            "cognome": "Silva"
           }
         ],
-        "documento_originale": "Atto di morte"
+        "documento_originale": "Atto di nascita"
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Carolina Maria",
+        "cognome": "Pereira-Lima"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Recife",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Carlos",
+        "cognome": "Lima"
+      },
+      "madre": {
+        "nome": "Camila",
+        "cognome": "Mendes"
+      },
+      "data_nascita": "26-04-1994",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Carolina Maria",
+            "cognome": "Pereira-Lima"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Carolina Maria",
+            "cognome": "Pereira-Lima"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Carolina Maria",
+            "cognome": "Pereira-Lima"
+          }
+        ],
+        "documento_originale": "Atto di nascita"
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Camila Luz",
+        "cognome": "Ribeiro Pereira-Lima"
+      },
+      "tipo": "parrocchiale",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Rio de Janeiro",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Diego",
+        "cognome": "Almeida"
+      },
+      "madre": {
+        "nome": "Carolina Maria",
+        "cognome": "Pereira-Lima"
+      },
+      "data_nascita": "29-12-1934",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Camila Luz",
+            "cognome": "Ribeiro Pereira-Lima"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Camila Luz",
+            "cognome": "Ribeiro Pereira-Lima"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Camila Luz",
+            "cognome": "Ribeiro Pereira-Lima"
+          }
+        ]
       }
     }
   },
@@ -477,12 +442,17 @@
     "document_type": "Certificato Negativo di Naturalizzazione",
     "schema": {
       "soggetto": {
-        "nome": "Paolo Luigi",
-        "cognome": "Neri"
+        "nome": "Fernanda Aparecida",
+        "cognome": "Mendes"
       },
-      "pseudonimi": [],
+      "pseudonimi": [
+        {
+          "nome": "Fernanda",
+          "cognome": "Mendeo"
+        }
+      ],
       "formula_negativa_presente": "OK",
-      "data_nascita": "15-10-1853"
+      "data_nascita": "11-03-1909"
     }
   },
   {
@@ -492,8 +462,8 @@
         "document_type": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Paolo Luigi",
-            "cognome": "Neri"
+            "nome": "Fernanda Aparecida",
+            "cognome": "Mendes"
           }
         ]
       }
@@ -506,12 +476,27 @@
         "document_type": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Paolo Luigi",
-            "cognome": "Neri"
+            "nome": "Fernanda Aparecida",
+            "cognome": "Mendes"
           }
         ]
       },
-      "sede_traduttore": "Estero"
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Certificato Negativo di Naturalizzazione",
+        "soggetto": [
+          {
+            "nome": "Fernanda Aparecida",
+            "cognome": "Mendes"
+          }
+        ]
+      }
     }
   },
   {
@@ -521,142 +506,12 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Paolo Luigi",
-            "cognome": "Neri"
-          }
-        ],
-        "documento_originale": "Certificato Negativo di Naturalizzazione"
-      }
-    }
-  },
-  {
-    "document_type": "Nota Spese",
-    "schema": {
-      "id": "UD-8498",
-      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
-      "data": "17-03-2023"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Documento non supportato",
-        "soggetto": [
-          {
-            "nome": "Marco",
-            "cognome": "Moretti"
-          }
-        ],
-        "documento_originale": "Avviso Udienza"
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Certificato di matrimonio",
-        "soggetto": [
-          {
-            "nome": "Paolo",
-            "cognome": "Neri"
-          }
-        ]
-      },
-      "sede_traduttore": "Estero"
-    }
-  },
-  {
-    "document_type": "Avviso Udienza",
-    "schema": {
-      "id": "UD-1726",
-      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
-      "data": "22-12-2024"
-    }
-  },
-  {
-    "document_type": "Certificato di matrimonio",
-    "schema": {
-      "soggetti": [
-        {
-          "nome": "Luca",
-          "cognome": "Bianchi"
-        },
-        {
-          "nome": "Giulia",
-          "cognome": "Conti"
-        }
-      ],
-      "luogo": "Campinas",
-      "data_matrimonio": "19-01-1994",
-      "note": "Documento non richiesto ai fini del riconoscimento richiesto."
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Documento non supportato",
-        "soggetto": [
-          {
-            "nome": "Luca",
-            "cognome": "Bianchi"
-          }
-        ],
-        "documento_originale": "Nota Spese"
-      }
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Certificato di matrimonio",
-        "soggetto": [
-          {
-            "nome": "Luca",
-            "cognome": "Bianchi"
+            "nome": "Antonio",
+            "cognome": "Oliveira"
           },
           {
-            "nome": "Francesca",
-            "cognome": "Leoni"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Certificato di matrimonio",
-    "schema": {
-      "soggetti": [
-        {
-          "nome": "Luca",
-          "cognome": "Bianchi"
-        },
-        {
-          "nome": "Francesca",
-          "cognome": "Leoni"
-        }
-      ],
-      "luogo": "Campinas",
-      "data_matrimonio": "02-05-1952",
-      "note": "Documento non richiesto ai fini del riconoscimento richiesto."
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "soggetto": [
-          {
-            "nome": "Paolo",
-            "cognome": "Neri"
-          },
-          {
-            "nome": "Davide",
-            "cognome": "Lombardi"
+            "nome": "Beatriz",
+            "cognome": "Rodrigues"
           }
         ],
         "documento_originale": "Certificato di matrimonio"
@@ -664,14 +519,44 @@
     }
   },
   {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Documento non supportato",
+        "soggetto": [
+          {
+            "nome": "Paulo",
+            "cognome": "Cardoso"
+          }
+        ],
+        "documento_originale": "Bozza Sentenza"
+      }
+    }
+  },
+  {
     "document_type": "Traduzione",
     "schema": {
       "oggetto": {
         "document_type": "Certificato di matrimonio",
         "soggetto": [
           {
-            "nome": "Luca",
-            "cognome": "Bianchi"
+            "nome": "Juliana",
+            "cognome": "Pereira"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Carlos",
+            "cognome": "Araujo"
           }
         ]
       },
@@ -681,72 +566,9 @@
   {
     "document_type": "Bozza Sentenza",
     "schema": {
-      "id": "UD-8840",
+      "id": "UD-1519",
       "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
-      "data": "09-01-2024"
-    }
-  },
-  {
-    "document_type": "Avviso Udienza",
-    "schema": {
-      "id": "UD-1686",
-      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
-      "data": "08-10-2024"
-    }
-  },
-  {
-    "document_type": "Certificato di matrimonio",
-    "schema": {
-      "soggetti": [
-        {
-          "nome": "Paolo",
-          "cognome": "Neri"
-        },
-        {
-          "nome": "Davide",
-          "cognome": "Lombardi"
-        }
-      ],
-      "luogo": "Porto Alegre",
-      "data_matrimonio": "15-06-1975",
-      "note": "Documento non richiesto ai fini del riconoscimento richiesto."
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Certificato di matrimonio",
-        "soggetto": [
-          {
-            "nome": "Paolo",
-            "cognome": "Neri"
-          },
-          {
-            "nome": "Davide",
-            "cognome": "Lombardi"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "soggetto": [
-          {
-            "nome": "Luca",
-            "cognome": "Bianchi"
-          },
-          {
-            "nome": "Francesca",
-            "cognome": "Leoni"
-          }
-        ],
-        "documento_originale": "Certificato di matrimonio"
-      }
+      "data": "10-08-2024"
     }
   },
   {
@@ -756,8 +578,8 @@
         "document_type": "Certificato di matrimonio",
         "soggetto": [
           {
-            "nome": "Luca",
-            "cognome": "Bianchi"
+            "nome": "Antonio",
+            "cognome": "Oliveira"
           }
         ]
       },
@@ -771,12 +593,31 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Luca",
-            "cognome": "Bianchi"
+            "nome": "Carlos",
+            "cognome": "Araujo"
           },
           {
-            "nome": "Giulia",
-            "cognome": "Conti"
+            "nome": "Beatriz",
+            "cognome": "Oliveira"
+          }
+        ],
+        "documento_originale": "Certificato di matrimonio"
+      }
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Juliana",
+            "cognome": "Pereira"
+          },
+          {
+            "nome": "Fernanda",
+            "cognome": "Almeida"
           }
         ],
         "documento_originale": "Certificato di matrimonio"
@@ -790,15 +631,113 @@
         "document_type": "Certificato di matrimonio",
         "soggetto": [
           {
-            "nome": "Luca",
-            "cognome": "Bianchi"
+            "nome": "Carlos",
+            "cognome": "Araujo"
           },
           {
-            "nome": "Giulia",
-            "cognome": "Conti"
+            "nome": "Beatriz",
+            "cognome": "Oliveira"
           }
         ]
       }
+    }
+  },
+  {
+    "document_type": "Certificato di matrimonio",
+    "schema": {
+      "soggetti": [
+        {
+          "nome": "Carlos",
+          "cognome": "Araujo"
+        },
+        {
+          "nome": "Beatriz",
+          "cognome": "Oliveira"
+        }
+      ],
+      "luogo": "Santos",
+      "data_matrimonio": "26-05-1992",
+      "note": "Documento non richiesto ai fini del riconoscimento richiesto."
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Juliana",
+            "cognome": "Pereira"
+          },
+          {
+            "nome": "Fernanda",
+            "cognome": "Almeida"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Antonio",
+            "cognome": "Oliveira"
+          },
+          {
+            "nome": "Beatriz",
+            "cognome": "Rodrigues"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Documenti Personali Vari",
+    "schema": {
+      "id": "UD-1987",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "22-05-2023"
+    }
+  },
+  {
+    "document_type": "Certificato di matrimonio",
+    "schema": {
+      "soggetti": [
+        {
+          "nome": "Juliana",
+          "cognome": "Pereira"
+        },
+        {
+          "nome": "Fernanda",
+          "cognome": "Almeida"
+        }
+      ],
+      "luogo": "Curitiba",
+      "data_matrimonio": "27-05-1997",
+      "note": "Documento non richiesto ai fini del riconoscimento richiesto."
+    }
+  },
+  {
+    "document_type": "Certificato di matrimonio",
+    "schema": {
+      "soggetti": [
+        {
+          "nome": "Antonio",
+          "cognome": "Oliveira"
+        },
+        {
+          "nome": "Beatriz",
+          "cognome": "Rodrigues"
+        }
+      ],
+      "luogo": "Recife",
+      "data_matrimonio": "06-11-1952",
+      "note": "Documento non richiesto ai fini del riconoscimento richiesto."
     }
   }
 ]

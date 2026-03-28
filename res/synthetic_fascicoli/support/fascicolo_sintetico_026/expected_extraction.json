@@ -2,14 +2,14 @@
   {
     "document_type": "IndiceProcedimento.html",
     "schema": {
-      "numero_anno_ruolo": "732/2024",
-      "data_iscrizione": "13-04-2025",
+      "numero_anno_ruolo": "846/2025",
+      "data_iscrizione": "02-10-2024",
       "iscrizione_post_28_02_2023": "OK",
-      "iscrizione_pre_27_03_2025": "KO",
+      "iscrizione_pre_27_03_2025": "OK",
       "comparsa_avvocatura": "NO",
-      "data_comparsa_avvocatura": "23-12-2025",
-      "visibilita_pm": "NO",
-      "data_visibilita_pm": "21-09-2025",
+      "data_comparsa_avvocatura": "01-04-2024",
+      "visibilita_pm": "SI",
+      "data_visibilita_pm": "04-08-2024",
       "interventi": "NO",
       "numero_interventi": 0,
       "intervenuti": []
@@ -20,24 +20,15 @@
     "schema": {
       "avvocati": [
         {
-          "nome": "Sara",
-          "cognome": "Marini"
-        },
-        {
-          "nome": "Marco",
-          "cognome": "Moretti"
+          "nome": "Juliana",
+          "cognome": "Barbosa"
         }
       ],
-      "numero_ricorrenti": 2,
+      "numero_ricorrenti": 1,
       "ricorrenti_maggiorenni": [
         {
-          "nome": "Sara",
-          "cognome": "Marini",
-          "nazionalita": "Brasiliana"
-        },
-        {
-          "nome": "Francesca",
-          "cognome": "Leoni",
+          "nome": "Antonio Luis",
+          "cognome": "Oliveira-Souza",
           "nazionalita": "Brasiliana"
         }
       ],
@@ -45,31 +36,23 @@
       "ricorrenti_per_matrimonio": [],
       "linea_discendenza": [
         {
-          "nome": "Francesca Luigi",
-          "cognome": "Leoni"
+          "nome": "Patricia Luz",
+          "cognome": "Ribeiro"
         },
         {
-          "nome": "Chiara Luz",
-          "cognome": "Costa"
+          "nome": "Pedro",
+          "cognome": "Mendes-Ribeiro"
         },
         {
-          "nome": "Chiara",
-          "cognome": "Costa"
-        },
-        {
-          "nome": "Francesca",
-          "cognome": "Leoni"
-        },
-        {
-          "nome": "Sara",
-          "cognome": "Marini"
+          "nome": "Antonio Luis",
+          "cognome": "Oliveira"
         }
       ],
-      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo.",
-      "riassunto_linea_discendenza": "Francesca Luigi Leoni -> Chiara Luz Costa -> Chiara Costa -> Francesca Leoni -> Sara Marini",
+      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo. Nel ricorso risultano varianti anagrafiche/pseudonimi: Pedro Mendes-Ribeiro (alias: Pedro Mende); Patricia Luz Ribeiro (alias: Patricia Ribeir).",
+      "riassunto_linea_discendenza": "Patricia Luz Ribeiro -> Pedro Mendes-Ribeiro -> Antonio Luis Oliveira",
       "coerenza_linea_discendenza": "SI",
       "proveniente_dal_brasile": "SI",
-      "data_ricorso": "16-11-2024"
+      "data_ricorso": "11-06-2025"
     }
   },
   {
@@ -77,8 +60,8 @@
     "schema": {
       "soggetto": [
         {
-          "nome": "Sara",
-          "cognome": "Marini",
+          "nome": "Antonio Luis",
+          "cognome": "Oliveira-Souza",
           "minorenne": "NO",
           "rappresentanti_legali": [],
           "firma_presente": "OK"
@@ -87,47 +70,13 @@
       "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "avvocati": [
         {
-          "nome": "Sara",
-          "cognome": "Marini"
-        },
-        {
-          "nome": "Marco",
-          "cognome": "Moretti"
+          "nome": "Juliana",
+          "cognome": "Barbosa"
         }
       ],
       "tribunale_brescia_indicato": "OK",
       "tribunale_indicato": "Tribunale civile competente",
-      "data_procura": "05-06-2024",
-      "rilasciata_in_italia": "NO",
-      "scritta_in_italiano": "OK"
-    }
-  },
-  {
-    "document_type": "Procura",
-    "schema": {
-      "soggetto": [
-        {
-          "nome": "Francesca",
-          "cognome": "Leoni",
-          "minorenne": "NO",
-          "rappresentanti_legali": [],
-          "firma_presente": "OK"
-        }
-      ],
-      "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
-      "avvocati": [
-        {
-          "nome": "Sara",
-          "cognome": "Marini"
-        },
-        {
-          "nome": "Marco",
-          "cognome": "Moretti"
-        }
-      ],
-      "tribunale_brescia_indicato": "OK",
-      "tribunale_indicato": "Tribunale civile competente",
-      "data_procura": "17-07-2024",
+      "data_procura": "02-06-2025",
       "rilasciata_in_italia": "NO",
       "scritta_in_italiano": "OK"
     }
@@ -139,8 +88,8 @@
         "document_type": "Procura",
         "soggetto": [
           {
-            "nome": "Francesca",
-            "cognome": "Leoni"
+            "nome": "Antonio Luis",
+            "cognome": "Oliveira-Souza"
           }
         ]
       }
@@ -150,22 +99,22 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Francesca Luigi",
-        "cognome": "Leoni"
+        "nome": "Patricia Luz",
+        "cognome": "Ribeiro"
       },
-      "tipo": "anagrafico",
+      "tipo": "parrocchiale",
       "timbro_diocesi": "OK",
-      "comune_nascita": "Mantova",
-      "provincia": "mantova",
+      "comune_nascita": "Bergamo",
+      "provincia": "bergamo",
       "padre": {
-        "nome": "Marco",
-        "cognome": "Moretti"
+        "nome": "Rafael",
+        "cognome": "Ribeiro"
       },
       "madre": {
-        "nome": "Sara",
-        "cognome": "Marini"
+        "nome": "Renata",
+        "cognome": "Silva"
       },
-      "data_nascita": "11-06-1852",
+      "data_nascita": "04-05-1880",
       "area_nascita": "A",
       "stato": "Italia"
     }
@@ -174,22 +123,22 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Chiara Luz",
-        "cognome": "Costa"
+        "nome": "Pedro",
+        "cognome": "Mendes-Ribeiro"
       },
       "tipo": "anagrafico",
       "timbro_diocesi": "OK",
       "comune_nascita": "Porto Alegre",
       "provincia": "altro",
       "padre": {
-        "nome": "Marco",
-        "cognome": "Moretti"
+        "nome": "Antonio",
+        "cognome": "Silva"
       },
       "madre": {
-        "nome": "Francesca Luigi",
-        "cognome": "Leoni"
+        "nome": "Patricia Luz",
+        "cognome": "Ribeiro"
       },
-      "data_nascita": "16-07-2005",
+      "data_nascita": "12-11-1947",
       "area_nascita": "E",
       "stato": "Brasile"
     }
@@ -201,8 +150,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Chiara Luz",
-            "cognome": "Costa"
+            "nome": "Pedro",
+            "cognome": "Mendes-Ribeiro"
           }
         ]
       }
@@ -215,8 +164,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Chiara Luz",
-            "cognome": "Costa"
+            "nome": "Pedro",
+            "cognome": "Mendes-Ribeiro"
           }
         ]
       },
@@ -230,8 +179,8 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Chiara Luz",
-            "cognome": "Costa"
+            "nome": "Pedro",
+            "cognome": "Mendes-Ribeiro"
           }
         ],
         "documento_originale": "Atto di nascita"
@@ -242,22 +191,22 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Chiara",
-        "cognome": "Costa"
+        "nome": "Antonio Luis",
+        "cognome": "Oliveira"
       },
       "tipo": "anagrafico",
       "timbro_diocesi": "OK",
-      "comune_nascita": "Fortaleza",
+      "comune_nascita": "Porto Alegre",
       "provincia": "altro",
       "padre": {
-        "nome": "Chiara",
-        "cognome": "Costa"
+        "nome": "Pedro",
+        "cognome": "Mendes-Ribeiro"
       },
       "madre": {
-        "nome": "Chiara Luz",
-        "cognome": "Costa"
+        "nome": "Patricia",
+        "cognome": "Pereira"
       },
-      "data_nascita": "11-11-1930",
+      "data_nascita": "11-02-1941",
       "area_nascita": "E",
       "stato": "Brasile"
     }
@@ -269,8 +218,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Chiara",
-            "cognome": "Costa"
+            "nome": "Antonio Luis",
+            "cognome": "Oliveira"
           }
         ]
       }
@@ -283,8 +232,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Chiara",
-            "cognome": "Costa"
+            "nome": "Antonio Luis",
+            "cognome": "Oliveira"
           }
         ]
       },
@@ -298,201 +247,11 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Chiara",
-            "cognome": "Costa"
+            "nome": "Antonio Luis",
+            "cognome": "Oliveira"
           }
         ],
         "documento_originale": "Atto di nascita"
-      }
-    }
-  },
-  {
-    "document_type": "Atto di nascita",
-    "schema": {
-      "soggetto": {
-        "nome": "Francesca",
-        "cognome": "Leoni"
-      },
-      "tipo": "anagrafico",
-      "timbro_diocesi": "OK",
-      "comune_nascita": "Brasilia",
-      "provincia": "altro",
-      "padre": {
-        "nome": "Chiara",
-        "cognome": "Costa"
-      },
-      "madre": {
-        "nome": "Chiara",
-        "cognome": "Costa"
-      },
-      "data_nascita": "19-05-1980",
-      "area_nascita": "E",
-      "stato": "Brasile"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Francesca",
-            "cognome": "Leoni"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Francesca",
-            "cognome": "Leoni"
-          }
-        ]
-      },
-      "sede_traduttore": "Italia"
-    }
-  },
-  {
-    "document_type": "Asseverazione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "documento_originale": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Francesca",
-            "cognome": "Leoni"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Atto di nascita",
-    "schema": {
-      "soggetto": {
-        "nome": "Sara",
-        "cognome": "Marini"
-      },
-      "tipo": "anagrafico",
-      "timbro_diocesi": "OK",
-      "comune_nascita": "Santos",
-      "provincia": "altro",
-      "padre": {
-        "nome": "Davide",
-        "cognome": "Lombardi"
-      },
-      "madre": {
-        "nome": "Francesca",
-        "cognome": "Leoni"
-      },
-      "data_nascita": "16-04-1967",
-      "area_nascita": "E",
-      "stato": "Brasile"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Sara",
-            "cognome": "Marini"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Sara",
-            "cognome": "Marini"
-          }
-        ]
-      },
-      "sede_traduttore": "Estero"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "soggetto": [
-          {
-            "nome": "Sara",
-            "cognome": "Marini"
-          }
-        ],
-        "documento_originale": "Atto di nascita"
-      }
-    }
-  },
-  {
-    "document_type": "Atto di morte",
-    "schema": {
-      "soggetto": {
-        "nome": "Francesca Luigi",
-        "cognome": "Leoni"
-      },
-      "data_decesso": "23-08-1979"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di morte",
-        "soggetto": [
-          {
-            "nome": "Francesca Luigi",
-            "cognome": "Leoni"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di morte",
-        "soggetto": [
-          {
-            "nome": "Francesca Luigi",
-            "cognome": "Leoni"
-          }
-        ]
-      },
-      "sede_traduttore": "Estero"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "soggetto": [
-          {
-            "nome": "Francesca Luigi",
-            "cognome": "Leoni"
-          }
-        ],
-        "documento_originale": "Atto di morte"
       }
     }
   },
@@ -500,17 +259,12 @@
     "document_type": "Certificato Negativo di Naturalizzazione",
     "schema": {
       "soggetto": {
-        "nome": "Francesca Luigi",
-        "cognome": "Leoni"
+        "nome": "Patricia Luz",
+        "cognome": "Ribeiro"
       },
-      "pseudonimi": [
-        {
-          "nome": "Francesca",
-          "cognome": "Leono"
-        }
-      ],
+      "pseudonimi": [],
       "formula_negativa_presente": "OK",
-      "data_nascita": "11-06-1852"
+      "data_nascita": "04-05-1880"
     }
   },
   {
@@ -520,8 +274,8 @@
         "document_type": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Francesca Luigi",
-            "cognome": "Leoni"
+            "nome": "Patricia Luz",
+            "cognome": "Ribeiro"
           }
         ]
       }
@@ -534,8 +288,8 @@
         "document_type": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Francesca Luigi",
-            "cognome": "Leoni"
+            "nome": "Patricia Luz",
+            "cognome": "Ribeiro"
           }
         ]
       },
@@ -549,8 +303,8 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Francesca Luigi",
-            "cognome": "Leoni"
+            "nome": "Patricia Luz",
+            "cognome": "Ribeiro"
           }
         ],
         "documento_originale": "Certificato Negativo di Naturalizzazione"

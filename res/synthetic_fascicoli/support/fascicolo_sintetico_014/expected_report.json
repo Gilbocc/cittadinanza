@@ -16,44 +16,62 @@
     "1": "OK"
   },
   "2": {
-    "A": "05.02.2025",
+    "A": "28.11.2024",
     "B": "OK",
     "C": "OK",
-    "D": "SI",
-    "Di": "20.01.2025",
+    "D": "NO",
+    "Di": "NULL",
     "E": "NO",
     "Ei": "NULL",
-    "F": "NO",
-    "Fi": "NULL",
-    "Fii": "NULL",
-    "Fiii": "NULL",
-    "G": "0232-2024"
+    "F": "SI",
+    "Fi": "2",
+    "Fii": "Jose Barbosa, Larissa Souza",
+    "Fiii": "21.05.2024, 28.07.2025",
+    "G": "0778-2025"
   },
   "3": {
-    "A": "Marco Moretti",
-    "B": 1,
-    "C": "Matteo Gallo-Silva",
-    "D": "Matteo Gallo-Silva: Brasiliana",
+    "A": "Beatriz Pereira",
+    "B": 2,
+    "C": "Antonio Silva-Souza, Fernanda Mendes-Lima",
+    "D": "Antonio Silva-Souza: Brasiliana, Fernanda Mendes-Lima: Brasiliana",
     "E": "NO",
     "Ei": "NULL",
     "Eii": "NULL",
-    "F": "OK; Sara Carlo Marini -> Marco Moretti -> Matteo Gallo",
+    "F": "OK; Beatriz Maria Mendes -> Camila Luz Araujo -> Diego Luis Almeida -> Joao Lima -> Fernanda Mendes-Lima -> Antonio Silva",
     "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
     "Gi": "NULL"
   },
   "4": {
     "4/1": {
-      "A": "Matteo Gallo-Silva",
+      "A": "Antonio Silva-Souza",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Matteo Gallo-Silva",
+      "B": "OK; firma del ricorrente Antonio Silva-Souza",
       "C": "OK",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "E": "OK",
       "Ei": "NULL",
-      "F": "17.11.2025",
+      "F": "12.10.2024",
       "G": "OK",
       "H": "NO",
       "Hi": "OK",
+      "I": "NO",
+      "Ii": "OK",
+      "Iii": "OK",
+      "Iiii": "NULL",
+      "Iiv": "OK"
+    },
+    "4/2": {
+      "A": "Fernanda Mendes-Lima",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Fernanda Mendes-Lima",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "31.10.2024",
+      "G": "OK",
+      "H": "OK",
+      "Hi": "NULL",
       "I": "OK",
       "Ii": "NULL",
       "Iii": "NULL",
@@ -64,10 +82,10 @@
   "5": {
     "A": "OK",
     "Ai": "NULL",
-    "C": "Cremona",
+    "C": "Mantova",
     "D": "OK",
-    "E": "Padre: Francesca Leoni, Madre: Luca Bianchi",
-    "F": "03.04.1957"
+    "E": "Padre: Antonio Barbosa, Madre: Beatriz Pereira",
+    "F": "26.01.1919"
   },
   "6": {
     "A": "OK",
@@ -86,7 +104,7 @@
   },
   "7": {
     "A": "OK",
-    "B": "Sara Marino",
+    "B": "NULL",
     "C": "OK",
     "D": "OK",
     "E": "OK",
@@ -95,7 +113,7 @@
   },
   "8": {
     "8/1": {
-      "A": "Marco Moretti",
+      "A": "Camila Luz Araujo",
       "B": "OK",
       "C": "OK",
       "D": "OK",
@@ -103,12 +121,36 @@
       "Dii": "OK"
     },
     "8/2": {
-      "A": "Matteo Gallo",
+      "A": "Diego Luis Almeida",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
+    },
+    "8/3": {
+      "A": "Joao Lima",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
+    },
+    "8/4": {
+      "A": "Fernanda Mendes-Lima",
       "B": "OK",
       "C": "OK",
       "D": "OK",
       "Di": "NULL",
       "Dii": "OK"
+    },
+    "8/5": {
+      "A": "Antonio Silva",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
     }
   },
   "10": null,

@@ -4,7 +4,6 @@ import argparse
 import json
 import random
 import sys
-import textwrap
 import re
 from dataclasses import dataclass
 from datetime import date, timedelta
@@ -17,6 +16,7 @@ from src.analysis import DocumentValidator
 
 try:
     from reportlab.lib.pagesizes import A4
+    from reportlab.lib.utils import simpleSplit
     from reportlab.pdfgen import canvas
 except ImportError as exc:  # pragma: no cover - runtime dependency check
     raise SystemExit(
@@ -60,18 +60,9 @@ USELESS_DOC_TYPES = [
     "Documenti Personali Vari",
 ]
 
-ITALIAN_NAMES = [
-    ("Luca", "Bianchi"),
-    ("Elena", "Rossi"),
-    ("Marco", "Moretti"),
-    ("Giulia", "Conti"),
-    ("Matteo", "Gallo"),
-    ("Francesca", "Leoni"),
-    ("Paolo", "Neri"),
-    ("Chiara", "Costa"),
-    ("Davide", "Lombardi"),
-    ("Sara", "Marini"),
-]
+BRAZILIAN_MALE_NAMES = ["Joao", "Jose", "Carlos", "Antonio", "Paulo", "Pedro", "Marcos", "Mateus", "Rafael", "Diego"]
+BRAZILIAN_FEMALE_NAMES = ["Maria", "Ana", "Fernanda", "Juliana", "Patricia", "Camila", "Larissa", "Beatriz", "Carolina", "Renata"]
+BRAZILIAN_SURNAMES = ["Silva", "Santos", "Oliveira", "Souza", "Costa", "Pereira", "Rodrigues", "Almeida", "Nunes", "Lima", "Araujo", "Barbosa", "Cardoso", "Mendes", "Ribeiro"]
 
 BRAZIL_CITIES = [
     "Sao Paulo",
@@ -131,9 +122,18 @@ def random_render_profile(rng: random.Random) -> RenderProfile:
     )
 
 
-def random_person(rng: random.Random) -> dict[str, str]:
-    nome, cognome = rng.choice(ITALIAN_NAMES)
-    return {"nome": nome, "cognome": cognome}
+def random_person(rng: random.Random, gender: str | None = None) -> dict[str, str]:
+    if gender == "M":
+        nome = rng.choice(BRAZILIAN_MALE_NAMES)
+    elif gender == "F":
+        nome = rng.choice(BRAZILIAN_FEMALE_NAMES)
+    else:
+        nome = rng.choice(BRAZILIAN_MALE_NAMES + BRAZILIAN_FEMALE_NAMES)
+    cognome = rng.choice(BRAZILIAN_SURNAMES)
+    person = {"nome": nome, "cognome": cognome}
+    if gender in {"M", "F"}:
+        person["gender"] = gender
+    return person
 
 
 def random_date(rng: random.Random, start_year: int, end_year: int) -> str:
@@ -145,16 +145,28 @@ def random_date(rng: random.Random, start_year: int, end_year: int) -> str:
 
 
 def build_family(rng: random.Random, descendants: int) -> dict[str, Any]:
-    avo = random_person(rng)
-    avo["nome"] = f"{avo['nome']} {rng.choice(['Luigi', 'Maria', 'Carlo'])}"
+    avo_gender = rng.choice(["M", "F"])
+    avo = random_person(rng, gender=avo_gender)
+    middle = rng.choice(["Carlos", "Miguel", "Paulo"]) if avo_gender == "M" else rng.choice(["Maria", "Luz", "Aparecida"])
+    avo["nome"] = f"{avo['nome']} {middle}"
 
     lineage = [avo]
     parent = avo
 
     for _ in range(descendants):
-        child = random_person(rng)
+        child_gender = rng.choice(["M", "F"])
+        child = random_person(rng, gender=child_gender)
         if rng.random() < 0.35:
-            child["nome"] = f"{child['nome']} {rng.choice(['Ana', 'Joao', 'Luz'])}"
+            child["nome"] = f"{child['nome']} {rng.choice(['Joao', 'Carlos', 'Luis'])}" if child_gender == "M" else f"{child['nome']} {rng.choice(['Ana', 'Luz', 'Maria'])}"
+
+        # Simulate realistic surname evolution (double surname, marriage-style changes).
+        if rng.random() < 0.40 and parent.get("cognome"):
+            parent_surname = str(parent["cognome"]).split()[0]
+            if parent_surname and parent_surname not in child["cognome"]:
+                if rng.random() < 0.55:
+                    child["cognome"] = f"{child['cognome']} {parent_surname}"
+                else:
+                    child["cognome"] = f"{child['cognome']}-{parent_surname}"
         lineage.append(child)
         parent = child
 
@@ -213,10 +225,29 @@ def make_ricorso(rng: random.Random, family: dict[str, Any], married_name: bool)
     for r in family["ricorrenti"]:
         r_copy = {"nome": r["nome"], "cognome": r["cognome"], "nazionalita": "Brasiliana"}
         if married_name and r is family["ricorrenti"][0]:
-            r_copy["cognome"] = f"{r_copy['cognome']}-Silva"
+            r_copy["cognome"] = f"{r_copy['cognome']}-Souza"
         ricorrenti.append(r_copy)
 
     lineage = [{"nome": p["nome"], "cognome": p["cognome"]} for p in family["lineage"]]
+
+    pseudo_notes = []
+    for person in rng.sample(lineage, k=min(len(lineage), rng.randint(0, 2))):
+        base_nome = person["nome"].split()[0]
+        base_cognome = person["cognome"].split("-")[0].split()[0]
+        if len(base_cognome) > 4:
+            variant_surname = base_cognome[:-1]
+        else:
+            variant_surname = f"{base_cognome}s"
+        pseudo_notes.append(f"{person['nome']} {person['cognome']} (alias: {base_nome} {variant_surname})")
+
+    line_summary = " -> ".join(f"{p['nome']} {p['cognome']}" for p in lineage)
+    if pseudo_notes:
+        narrative = (
+            "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo. "
+            f"Nel ricorso risultano varianti anagrafiche/pseudonimi: {'; '.join(pseudo_notes)}."
+        )
+    else:
+        narrative = "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo."
 
     return {
         "document_type": "Ricorso",
@@ -227,8 +258,8 @@ def make_ricorso(rng: random.Random, family: dict[str, Any], married_name: bool)
             "ricorrenti_minorenni": [],
             "ricorrenti_per_matrimonio": [],
             "linea_discendenza": lineage,
-            "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo.",
-            "riassunto_linea_discendenza": " -> ".join(f"{p['nome']} {p['cognome']}" for p in lineage),
+            "racconto_linea_discendenza": narrative,
+            "riassunto_linea_discendenza": line_summary,
             "coerenza_linea_discendenza": "SI",
             "proveniente_dal_brasile": "SI",
             "data_ricorso": random_date(rng, 2024, 2025),
@@ -337,16 +368,17 @@ def apply_challenging_variants(
     ricorso: dict[str, Any],
 ) -> None:
     if scenario.inject_lineage_incoherence and rng.random() < 0.55:
-        ricorso["schema"]["coerenza_linea_discendenza"] = "KO"
-        lineage = ricorso["schema"].get("linea_discendenza", [])
-        if len(lineage) >= 3:
-            gap_line = [lineage[0], lineage[-1]]
-            ricorso["schema"]["riassunto_linea_discendenza"] = " -> ".join(
-                f"{p.get('nome', '')} {p.get('cognome', '')}" for p in gap_line
-            )
-            ricorso["schema"]["racconto_linea_discendenza"] = (
-                "La ricostruzione presenta una possibile lacuna intermedia da verificare sui certificati allegati."
-            )
+        # Keep Ricorso lineage coherent; create mismatch only in documentary chain.
+        lineage = family.get("lineage", [])
+        ricorrenti = ricorso["schema"].get("ricorrenti_maggiorenni", [])
+        descendants = []
+        if lineage:
+            for p in lineage[1:]:
+                if not any(_same_person(p, r) for r in ricorrenti):
+                    descendants.append(p)
+        if descendants:
+            target = rng.choice(descendants)
+            _remove_birth_doc_and_chain(docs, target)
 
     if scenario.inject_marriage_claimants and rng.random() < 0.45:
         lineage = ricorso["schema"].get("linea_discendenza", [])
@@ -485,6 +517,10 @@ def make_birth(rng: random.Random, person: dict[str, str], father: dict[str, str
         comune_nascita = rng.choice(BRAZIL_CITIES)
         provincia = "altro"
 
+    # Keep only schema-level identity fields in generated birth documents.
+    father_doc = {"nome": father.get("nome", ""), "cognome": father.get("cognome", "")}
+    mother_doc = {"nome": mother.get("nome", ""), "cognome": mother.get("cognome", "")}
+
     return {
         "document_type": "Atto di nascita",
         "schema": {
@@ -493,8 +529,8 @@ def make_birth(rng: random.Random, person: dict[str, str], father: dict[str, str
             "timbro_diocesi": "OK" if rng.random() < 0.7 else "NO",
             "comune_nascita": comune_nascita,
             "provincia": provincia,
-            "padre": father,
-            "madre": mother,
+            "padre": father_doc,
+            "madre": mother_doc,
             "data_nascita": random_date(rng, 1870 if italy else 1930, 1965 if italy else 2010),
             "area_nascita": "A" if italy else "E",
             "stato": "Italia" if italy else "Brasile",
@@ -526,6 +562,26 @@ def make_cnn(rng: random.Random, avo: dict[str, str], avo_birth_date: str) -> di
             "data_nascita": avo_birth_date,
         },
     }
+
+
+def _append_declared_aliases_to_ricorso(ricorso: dict[str, Any], alias_people: list[dict[str, str]]) -> None:
+    if not alias_people:
+        return
+
+    notes = []
+    for p in alias_people:
+        nome = str(p.get("nome", "")).strip()
+        cognome = str(p.get("cognome", "")).strip()
+        if nome or cognome:
+            notes.append(f"{nome} {cognome}".strip())
+
+    if not notes:
+        return
+
+    schema = ricorso.get("schema", {})
+    base = str(schema.get("racconto_linea_discendenza", "")).strip()
+    decl = f"Nel ricorso sono dichiarati i seguenti alias/pseudonimi: {'; '.join(notes)}."
+    schema["racconto_linea_discendenza"] = f"{base} {decl}".strip() if base else decl
 
 
 def make_apostille(doc_type: str, soggetto: dict[str, str] | list[dict[str, str]], original_doc: str | None = None) -> dict[str, Any]:
@@ -971,8 +1027,8 @@ def render_scan_document(
     draw_scan_background(c, width, height, rng, profile)
     draw_punch_holes(c, width, height, rng, profile)
 
-    left = 42
-    right = width - 42
+    left = 46
+    right = width - 46
     top = height - 42
     line_height = 14
     y = top
@@ -1011,9 +1067,11 @@ def render_scan_document(
     y -= 8
 
     lines = format_document_content(doc, rng)
-    c.setFont(body_font, 11)
+    body_font_size = 10.5
+    text_width = right - left - 6
+    c.setFont(body_font, body_font_size)
     for line in lines:
-        wrapped = textwrap.wrap(line, width=95) or [""]
+        wrapped = simpleSplit(line, body_font, body_font_size, text_width) or [""]
         for piece in wrapped:
             if y < 54:
                 c.setFont("Helvetica-Oblique", 8)
@@ -1022,7 +1080,7 @@ def render_scan_document(
                 draw_scan_background(c, width, height, rng, profile)
                 draw_punch_holes(c, width, height, rng, profile)
                 y = top
-                c.setFont(body_font, 11)
+                c.setFont(body_font, body_font_size)
 
             jitter_x = rng.uniform(-1.8, 1.8) * profile.jitter_scale
             jitter_y = rng.uniform(-0.8, 0.8) * profile.jitter_scale
@@ -1070,8 +1128,8 @@ def render_pdf(
 
 
 def chunk_documents(docs: list[dict[str, Any]], single_pdf: bool, max_docs_per_pdf: int) -> list[list[dict[str, Any]]]:
-    # Hard cap requested: each generated PDF must not exceed 50 pages.
-    max_docs_per_pdf = min(max_docs_per_pdf, 50)
+    # Hard cap requested: each generated PDF must not exceed 45 pages.
+    max_docs_per_pdf = min(max_docs_per_pdf, 45)
 
     if single_pdf and len(docs) <= max_docs_per_pdf:
         return [docs]
@@ -1212,8 +1270,8 @@ def build_case_documents(rng: random.Random, scenario: ScenarioConfig) -> tuple[
     lineage = family["lineage"]
     avo = lineage[0]
 
-    avo_father = random_person(rng)
-    avo_mother = random_person(rng)
+    avo_father = random_person(rng, gender="M")
+    avo_mother = random_person(rng, gender="F")
     avo_birth = make_birth(rng, avo, avo_father, avo_mother, italy=True)
     if scenario.death_required:
         avo_birth["schema"]["data_nascita"] = random_date(rng, 1840, 1860)
@@ -1222,14 +1280,22 @@ def build_case_documents(rng: random.Random, scenario: ScenarioConfig) -> tuple[
     docs.append(avo_birth)
 
     for i, person in enumerate(lineage[1:], start=1):
-        father = random_person(rng)
-        mother = lineage[i - 1]
+        prev = lineage[i - 1]
+        prev_gender = prev.get("gender")
+        if prev_gender == "M":
+            father = {"nome": prev.get("nome", ""), "cognome": prev.get("cognome", "")}
+            mother = random_person(rng, gender="F")
+        else:
+            father = random_person(rng, gender="M")
+            mother = {"nome": prev.get("nome", ""), "cognome": prev.get("cognome", "")}
         docs.append(make_birth(rng, person, father, mother, italy=False))
 
     if scenario.include_avo_death:
         docs.append(make_avo_death(rng, avo))
 
-    docs.append(make_cnn(rng, avo, avo_birth["schema"]["data_nascita"]))
+    cnn = make_cnn(rng, avo, avo_birth["schema"]["data_nascita"])
+    docs.append(cnn)
+    _append_declared_aliases_to_ricorso(ricorso, cnn.get("schema", {}).get("pseudonimi", []))
 
     add_supporting_docs(rng, docs, scenario)
     apply_challenging_variants(rng, scenario, docs, family, ricorso)
@@ -1378,6 +1444,11 @@ def generate_fascicoli(output_dir: Path, count: int, seed: int) -> None:
         case_support_dir = support_root / case_name
         case_pdf_dir.mkdir(parents=True, exist_ok=True)
         case_support_dir.mkdir(parents=True, exist_ok=True)
+
+        # Remove stale generated bundles from previous runs so extraction does
+        # not mix old and new scenarios within the same case folder.
+        for stale_pdf in case_pdf_dir.glob(f"{case_name}_bundle_*.pdf"):
+            stale_pdf.unlink()
 
         mixed_docs, expected = build_case_documents(rng, scenario)
 

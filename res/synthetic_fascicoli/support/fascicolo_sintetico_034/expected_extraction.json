@@ -1,34 +1,27 @@
 [
   {
-    "document_type": "IndiceProcedimento.html",
-    "schema": {
-      "numero_anno_ruolo": "905/2025",
-      "data_iscrizione": "13-01-2024",
-      "iscrizione_post_28_02_2023": "OK",
-      "iscrizione_pre_27_03_2025": "OK",
-      "comparsa_avvocatura": "SI",
-      "data_comparsa_avvocatura": "02-06-2024",
-      "visibilita_pm": "SI",
-      "data_visibilita_pm": "25-08-2025",
-      "interventi": "NO",
-      "numero_interventi": 0,
-      "intervenuti": []
-    }
-  },
-  {
     "document_type": "Ricorso",
     "schema": {
       "avvocati": [
         {
-          "nome": "Sara",
-          "cognome": "Marini"
+          "nome": "Renata",
+          "cognome": "Rodrigues"
+        },
+        {
+          "nome": "Rafael",
+          "cognome": "Souza"
         }
       ],
-      "numero_ricorrenti": 1,
+      "numero_ricorrenti": 2,
       "ricorrenti_maggiorenni": [
         {
-          "nome": "Matteo",
-          "cognome": "Gallo",
+          "nome": "Carlos",
+          "cognome": "Rodrigues Souza-Souza",
+          "nazionalita": "Brasiliana"
+        },
+        {
+          "nome": "Jose",
+          "cognome": "Souza",
           "nazionalita": "Brasiliana"
         }
       ],
@@ -36,23 +29,35 @@
       "ricorrenti_per_matrimonio": [],
       "linea_discendenza": [
         {
-          "nome": "Paolo Carlo",
-          "cognome": "Neri"
+          "nome": "Renata Aparecida",
+          "cognome": "Costa"
         },
         {
-          "nome": "Paolo",
-          "cognome": "Neri"
+          "nome": "Juliana",
+          "cognome": "Rodrigues"
         },
         {
-          "nome": "Matteo",
-          "cognome": "Gallo"
+          "nome": "Pedro",
+          "cognome": "Nunes Rodrigues"
+        },
+        {
+          "nome": "Larissa Maria",
+          "cognome": "Barbosa Nunes"
+        },
+        {
+          "nome": "Jose",
+          "cognome": "Souza"
+        },
+        {
+          "nome": "Carlos",
+          "cognome": "Rodrigues Souza"
         }
       ],
-      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo.",
-      "riassunto_linea_discendenza": "Paolo Carlo Neri -> Paolo Neri -> Matteo Gallo",
+      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo. Nel ricorso risultano varianti anagrafiche/pseudonimi: Renata Aparecida Costa (alias: Renata Cost). Nel ricorso sono dichiarati i seguenti alias/pseudonimi: Renata Costo.",
+      "riassunto_linea_discendenza": "Renata Aparecida Costa -> Juliana Rodrigues -> Pedro Nunes Rodrigues -> Larissa Maria Barbosa Nunes -> Jose Souza -> Carlos Rodrigues Souza",
       "coerenza_linea_discendenza": "SI",
       "proveniente_dal_brasile": "SI",
-      "data_ricorso": "12-04-2024"
+      "data_ricorso": "15-09-2025"
     }
   },
   {
@@ -60,8 +65,8 @@
     "schema": {
       "soggetto": [
         {
-          "nome": "Matteo",
-          "cognome": "Gallo",
+          "nome": "Carlos",
+          "cognome": "Rodrigues Souza-Souza",
           "minorenne": "NO",
           "rappresentanti_legali": [],
           "firma_presente": "OK"
@@ -70,15 +75,63 @@
       "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "avvocati": [
         {
-          "nome": "Sara",
-          "cognome": "Marini"
+          "nome": "Renata",
+          "cognome": "Rodrigues"
+        },
+        {
+          "nome": "Rafael",
+          "cognome": "Souza"
+        }
+      ],
+      "tribunale_brescia_indicato": "KO",
+      "tribunale_indicato": "Tribunale civile competente",
+      "data_procura": "28-01-2025",
+      "rilasciata_in_italia": "OK",
+      "scritta_in_italiano": "OK"
+    }
+  },
+  {
+    "document_type": "Procura",
+    "schema": {
+      "soggetto": [
+        {
+          "nome": "Jose",
+          "cognome": "Souza",
+          "minorenne": "NO",
+          "rappresentanti_legali": [],
+          "firma_presente": "OK"
+        }
+      ],
+      "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "avvocati": [
+        {
+          "nome": "Renata",
+          "cognome": "Rodrigues"
+        },
+        {
+          "nome": "Rafael",
+          "cognome": "Souza"
         }
       ],
       "tribunale_brescia_indicato": "OK",
       "tribunale_indicato": "Tribunale civile competente",
-      "data_procura": "13-01-2024",
+      "data_procura": "20-10-2024",
       "rilasciata_in_italia": "NO",
       "scritta_in_italiano": "NO"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Procura",
+        "soggetto": [
+          {
+            "nome": "Jose",
+            "cognome": "Souza"
+          }
+        ]
+      }
     }
   },
   {
@@ -88,8 +141,8 @@
         "document_type": "Procura",
         "soggetto": [
           {
-            "nome": "Matteo",
-            "cognome": "Gallo"
+            "nome": "Jose",
+            "cognome": "Souza"
           }
         ]
       },
@@ -104,8 +157,8 @@
         "documento_originale": "Procura",
         "soggetto": [
           {
-            "nome": "Matteo",
-            "cognome": "Gallo"
+            "nome": "Jose",
+            "cognome": "Souza"
           }
         ]
       }
@@ -115,22 +168,22 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Paolo Carlo",
-        "cognome": "Neri"
+        "nome": "Renata Aparecida",
+        "cognome": "Costa"
       },
       "tipo": "anagrafico",
-      "timbro_diocesi": "OK",
+      "timbro_diocesi": "NO",
       "comune_nascita": "Mantova",
       "provincia": "mantova",
       "padre": {
-        "nome": "Davide",
-        "cognome": "Lombardi"
+        "nome": "Diego",
+        "cognome": "Silva"
       },
       "madre": {
-        "nome": "Francesca",
-        "cognome": "Leoni"
+        "nome": "Fernanda",
+        "cognome": "Araujo"
       },
-      "data_nascita": "18-11-1954",
+      "data_nascita": "22-12-1962",
       "area_nascita": "A",
       "stato": "Italia"
     }
@@ -139,22 +192,22 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Paolo",
-        "cognome": "Neri"
+        "nome": "Pedro",
+        "cognome": "Nunes Rodrigues"
       },
       "tipo": "anagrafico",
       "timbro_diocesi": "OK",
       "comune_nascita": "Brasilia",
       "provincia": "altro",
       "padre": {
-        "nome": "Luca",
-        "cognome": "Bianchi"
+        "nome": "Antonio",
+        "cognome": "Lima"
       },
       "madre": {
-        "nome": "Paolo Carlo",
-        "cognome": "Neri"
+        "nome": "Juliana",
+        "cognome": "Rodrigues"
       },
-      "data_nascita": "09-08-1984",
+      "data_nascita": "06-10-1988",
       "area_nascita": "E",
       "stato": "Brasile"
     }
@@ -166,8 +219,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Paolo",
-            "cognome": "Neri"
+            "nome": "Pedro",
+            "cognome": "Nunes Rodrigues"
           }
         ]
       }
@@ -180,8 +233,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Paolo",
-            "cognome": "Neri"
+            "nome": "Pedro",
+            "cognome": "Nunes Rodrigues"
           }
         ]
       },
@@ -196,8 +249,8 @@
         "documento_originale": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Paolo",
-            "cognome": "Neri"
+            "nome": "Pedro",
+            "cognome": "Nunes Rodrigues"
           }
         ]
       }
@@ -207,22 +260,22 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Matteo",
-        "cognome": "Gallo"
+        "nome": "Larissa Maria",
+        "cognome": "Barbosa Nunes"
       },
-      "tipo": "anagrafico",
+      "tipo": "parrocchiale",
       "timbro_diocesi": "NO",
-      "comune_nascita": "Sao Paulo",
+      "comune_nascita": "Rio de Janeiro",
       "provincia": "altro",
       "padre": {
-        "nome": "Paolo",
-        "cognome": "Neri"
+        "nome": "Pedro",
+        "cognome": "Nunes Rodrigues"
       },
       "madre": {
-        "nome": "Paolo",
-        "cognome": "Neri"
+        "nome": "Maria",
+        "cognome": "Oliveira"
       },
-      "data_nascita": "13-12-1991",
+      "data_nascita": "06-09-1961",
       "area_nascita": "E",
       "stato": "Brasile"
     }
@@ -234,8 +287,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Matteo",
-            "cognome": "Gallo"
+            "nome": "Larissa Maria",
+            "cognome": "Barbosa Nunes"
           }
         ]
       }
@@ -248,69 +301,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Matteo",
-            "cognome": "Gallo"
-          }
-        ]
-      },
-      "sede_traduttore": "Italia"
-    }
-  },
-  {
-    "document_type": "Asseverazione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "documento_originale": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Matteo",
-            "cognome": "Gallo"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Certificato Negativo di Naturalizzazione",
-    "schema": {
-      "soggetto": {
-        "nome": "Paolo Carlo",
-        "cognome": "Neri"
-      },
-      "pseudonimi": [
-        {
-          "nome": "Paolo",
-          "cognome": "Nero"
-        }
-      ],
-      "formula_negativa_presente": "OK",
-      "data_nascita": "18-11-1954"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Certificato Negativo di Naturalizzazione",
-        "soggetto": [
-          {
-            "nome": "Paolo Carlo",
-            "cognome": "Neri"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Certificato Negativo di Naturalizzazione",
-        "soggetto": [
-          {
-            "nome": "Paolo Carlo",
-            "cognome": "Neri"
+            "nome": "Larissa Maria",
+            "cognome": "Barbosa Nunes"
           }
         ]
       },
@@ -324,8 +316,259 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Paolo Carlo",
-            "cognome": "Neri"
+            "nome": "Larissa Maria",
+            "cognome": "Barbosa Nunes"
+          }
+        ],
+        "documento_originale": "Atto di nascita"
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Jose",
+        "cognome": "Souza"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Fortaleza",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Marcos",
+        "cognome": "Rodrigues"
+      },
+      "madre": {
+        "nome": "Larissa Maria",
+        "cognome": "Barbosa Nunes"
+      },
+      "data_nascita": "15-02-1993",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Jose",
+            "cognome": "Souza"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Jose",
+            "cognome": "Souza"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Jose",
+            "cognome": "Souza"
+          }
+        ],
+        "documento_originale": "Atto di nascita"
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Carlos",
+        "cognome": "Rodrigues Souza"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "NO",
+      "comune_nascita": "Rio de Janeiro",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Jose",
+        "cognome": "Souza"
+      },
+      "madre": {
+        "nome": "Ana",
+        "cognome": "Ribeiro"
+      },
+      "data_nascita": "29-02-1980",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Carlos",
+            "cognome": "Rodrigues Souza"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Carlos",
+            "cognome": "Rodrigues Souza"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Carlos",
+            "cognome": "Rodrigues Souza"
+          }
+        ],
+        "documento_originale": "Atto di nascita"
+      }
+    }
+  },
+  {
+    "document_type": "Atto di morte",
+    "schema": {
+      "soggetto": {
+        "nome": "Renata Aparecida",
+        "cognome": "Costa"
+      },
+      "data_decesso": "17-06-1962"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di morte",
+        "soggetto": [
+          {
+            "nome": "Renata Aparecida",
+            "cognome": "Costa"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di morte",
+        "soggetto": [
+          {
+            "nome": "Renata Aparecida",
+            "cognome": "Costa"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Renata Aparecida",
+            "cognome": "Costa"
+          }
+        ],
+        "documento_originale": "Atto di morte"
+      }
+    }
+  },
+  {
+    "document_type": "Certificato Negativo di Naturalizzazione",
+    "schema": {
+      "soggetto": {
+        "nome": "Renata Aparecida",
+        "cognome": "Costa"
+      },
+      "pseudonimi": [
+        {
+          "nome": "Renata",
+          "cognome": "Costo"
+        }
+      ],
+      "formula_negativa_presente": "OK",
+      "data_nascita": "22-12-1962"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato Negativo di Naturalizzazione",
+        "soggetto": [
+          {
+            "nome": "Renata Aparecida",
+            "cognome": "Costa"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato Negativo di Naturalizzazione",
+        "soggetto": [
+          {
+            "nome": "Renata Aparecida",
+            "cognome": "Costa"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Renata Aparecida",
+            "cognome": "Costa"
           }
         ],
         "documento_originale": "Certificato Negativo di Naturalizzazione"

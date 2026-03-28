@@ -7,8 +7,8 @@
     "D": "OK",
     "E": "OK",
     "F": "OK",
-    "G": "KO",
-    "Gi": "Giulia Luz Conti",
+    "G": "OK",
+    "Gi": "NULL",
     "H": "OK",
     "Hi": "NULL"
   },
@@ -16,58 +16,58 @@
     "1": "OK"
   },
   "2": {
-    "A": "23.10.2025",
+    "A": "01.08.2025",
     "B": "OK",
     "C": "KO",
-    "D": "SI",
-    "Di": "13.12.2024",
+    "D": "NO",
+    "Di": "NULL",
     "E": "NO",
     "Ei": "NULL",
-    "F": "NO",
-    "Fi": "NULL",
-    "Fii": "NULL",
-    "Fiii": "NULL",
-    "G": "0200-2024"
+    "F": "SI",
+    "Fi": "1",
+    "Fii": "Juliana Araujo",
+    "Fiii": "20.08.2025",
+    "G": "0635-2025"
   },
   "3": {
-    "A": "Giulia Conti, Davide Lombardi",
+    "A": "Mateus Costa",
     "B": 1,
-    "C": "Paolo Neri",
-    "D": "Paolo Neri: Brasiliana",
+    "C": "Marcos Santos",
+    "D": "Marcos Santos: Brasiliana",
     "E": "NO",
     "Ei": "NULL",
     "Eii": "NULL",
-    "F": "OK; Chiara Maria Costa -> Giulia Luz Conti -> Paolo Neri -> Paolo Neri",
-    "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
-    "Gi": "NULL"
+    "F": "OK; Paulo Carlos Souza -> Pedro Carlos Silva -> Joao Joao Nunes Silva -> Marcos Santos",
+    "G": "KO; Ricorrenti per matrimonio presenti",
+    "Gi": "Rafael Nunes"
   },
   "4": {
     "4/1": {
-      "A": "Paolo Neri",
+      "A": "Marcos Santos",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Paolo Neri",
+      "B": "KO; firma non individuata per Marcos Santos",
       "C": "OK",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "E": "OK",
       "Ei": "NULL",
-      "F": "06.04.2025",
-      "G": "KO",
-      "H": "OK",
-      "Hi": "NULL",
-      "I": "OK",
-      "Ii": "NULL",
-      "Iii": "NULL",
-      "Iiii": "NULL",
+      "F": "05.01.2024",
+      "G": "OK",
+      "H": "NO",
+      "Hi": "OK",
+      "I": "NO",
+      "Ii": "OK",
+      "Iii": "NO",
+      "Iiii": "OK",
       "Iiv": "NULL"
     }
   },
   "5": {
     "A": "OK",
     "Ai": "NULL",
-    "C": "Mantova",
+    "C": "Bergamo",
     "D": "OK",
-    "E": "Padre: Giulia Conti, Madre: Elena Rossi",
-    "F": "25.08.1872"
+    "E": "Padre: Diego Santos, Madre: Ana Nunes",
+    "F": "06.05.1882"
   },
   "6": {
     "A": "OK",
@@ -86,24 +86,32 @@
   },
   "7": {
     "A": "OK",
-    "B": "NULL",
+    "B": "Paulo Souzo",
     "C": "OK",
     "D": "OK",
     "E": "OK",
-    "Ei": "OK",
-    "Eii": "NULL"
+    "Ei": "NULL",
+    "Eii": "OK"
   },
   "8": {
     "8/1": {
-      "A": "Giulia Luz Conti",
-      "B": "KO",
-      "C": "KO",
-      "D": "KO",
+      "A": "Pedro Carlos Silva",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
       "Di": "NULL",
-      "Dii": "NULL"
+      "Dii": "OK"
     },
     "8/2": {
-      "A": "Paolo Neri",
+      "A": "Joao Joao Nunes Silva",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
+    },
+    "8/3": {
+      "A": "Marcos Santos",
       "B": "OK",
       "C": "OK",
       "D": "OK",
@@ -112,19 +120,13 @@
     }
   },
   "10": [
-    "0G",
     "2C",
-    "4/1G",
-    "8/1B",
-    "8/1C",
-    "8/1D"
+    "3G",
+    "4/1B"
   ],
   "11": {
-    "0G": "Atti di nascita dei discendenti mancanti: Giulia Luz Conti",
     "2C": "Il ricorso non risulta iscritto prima del 27.03.2025 escluso",
-    "4/1G": "La data della procura di Paolo Neri non è anteriore alla data del ricorso",
-    "8/1B": "Atto di nascita non trovato per Giulia Luz Conti",
-    "8/1C": "Impossibile verificare l'apostille dell'atto di nascita di Giulia Luz Conti perché l'atto manca",
-    "8/1D": "Impossibile verificare la traduzione dell'atto di nascita di Giulia Luz Conti perché l'atto manca"
+    "3G": "Ricorrenti che chiedono la cittadinanza per matrimonio: Rafael Nunes",
+    "4/1B": "Firma mancante nella procura di Marcos Santos"
   }
 }

@@ -7,8 +7,8 @@
     "D": "OK",
     "E": "OK",
     "F": "OK",
-    "G": "OK",
-    "Gi": "NULL",
+    "G": "KO",
+    "Gi": "Ana Ana Oliveira Araujo",
     "H": "OK",
     "Hi": "NULL"
   },
@@ -16,59 +16,41 @@
     "1": "OK"
   },
   "2": {
-    "A": "05.09.2025",
+    "A": "11.11.2024",
     "B": "OK",
-    "C": "KO",
+    "C": "OK",
     "D": "NO",
     "Di": "NULL",
-    "E": "NO",
-    "Ei": "NULL",
-    "F": "SI",
-    "Fi": "1",
-    "Fii": "Davide Lombardi",
-    "Fiii": "19.02.2025",
-    "G": "0677-2024"
+    "E": "SI",
+    "Ei": "23.05.2025",
+    "F": "NO",
+    "Fi": "NULL",
+    "Fii": "NULL",
+    "Fiii": "NULL",
+    "G": "0822-2025"
   },
   "3": {
-    "A": "Giulia Conti",
-    "B": 2,
-    "C": "Luca Bianchi-Silva, Marco Moretti",
-    "D": "Luca Bianchi-Silva: Brasiliana, Marco Moretti: Brasiliana",
+    "A": "Mateus Pereira",
+    "B": 1,
+    "C": "Diego Lima",
+    "D": "Diego Lima: Brasiliana",
     "E": "NO",
     "Ei": "NULL",
     "Eii": "NULL",
-    "F": "OK; Chiara Luigi Costa -> Sara Joao Marini -> Luca Ana Bianchi -> Sara Marini -> Marco Moretti -> Luca Bianchi",
-    "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
-    "Gi": "NULL"
+    "F": "OK; Diego Miguel Araujo -> Ana Ana Oliveira Araujo -> Diego Lima",
+    "G": "KO; Ricorrenti per matrimonio presenti",
+    "Gi": "Fernanda Barbosa"
   },
   "4": {
     "4/1": {
-      "A": "Luca Bianchi-Silva",
+      "A": "Diego Lima",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Luca Bianchi-Silva",
+      "B": "OK; firma del ricorrente Diego Lima",
       "C": "OK",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "E": "OK",
       "Ei": "NULL",
-      "F": "01.03.2025",
-      "G": "OK",
-      "H": "NO",
-      "Hi": "OK",
-      "I": "OK",
-      "Ii": "NULL",
-      "Iii": "NULL",
-      "Iiii": "NULL",
-      "Iiv": "NULL"
-    },
-    "4/2": {
-      "A": "Marco Moretti",
-      "Ai": "NULL",
-      "B": "OK; firma del ricorrente Marco Moretti",
-      "C": "OK",
-      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
-      "E": "OK",
-      "Ei": "NULL",
-      "F": "25.10.2024",
+      "F": "24.04.2024",
       "G": "OK",
       "H": "OK",
       "Hi": "NULL",
@@ -82,10 +64,10 @@
   "5": {
     "A": "OK",
     "Ai": "NULL",
-    "C": "Cremona",
+    "C": "Brescia",
     "D": "OK",
-    "E": "Padre: Marco Moretti, Madre: Sara Marini",
-    "F": "15.05.1951"
+    "E": "Padre: Joao Cardoso, Madre: Juliana Ribeiro",
+    "F": "23.09.1959"
   },
   "6": {
     "A": "OK",
@@ -104,43 +86,43 @@
   },
   "7": {
     "A": "OK",
-    "B": "Chiara Costo",
+    "B": "NULL",
     "C": "OK",
     "D": "OK",
     "E": "OK",
-    "Ei": "NULL",
-    "Eii": "OK"
+    "Ei": "OK",
+    "Eii": "NULL"
   },
   "8": {
     "8/1": {
-      "A": "Sara Joao Marini",
-      "B": "OK",
-      "C": "OK",
-      "D": "OK",
-      "Di": "OK",
+      "A": "Ana Ana Oliveira Araujo",
+      "B": "KO",
+      "C": "KO",
+      "D": "KO",
+      "Di": "NULL",
       "Dii": "NULL"
     },
     "8/2": {
-      "A": "Luca Ana Bianchi",
+      "A": "Diego Lima",
       "B": "OK",
       "C": "OK",
       "D": "OK",
       "Di": "NULL",
       "Dii": "OK"
-    },
-    "8/3": {
-      "A": "Marco Moretti",
-      "B": "OK",
-      "C": "OK",
-      "D": "OK",
-      "Di": "OK",
-      "Dii": "NULL"
     }
   },
   "10": [
-    "2C"
+    "0G",
+    "3G",
+    "8/1B",
+    "8/1C",
+    "8/1D"
   ],
   "11": {
-    "2C": "Il ricorso non risulta iscritto prima del 27.03.2025 escluso"
+    "0G": "Atti di nascita dei discendenti mancanti: Ana Ana Oliveira Araujo",
+    "3G": "Ricorrenti che chiedono la cittadinanza per matrimonio: Fernanda Barbosa",
+    "8/1B": "Atto di nascita non trovato per Ana Ana Oliveira Araujo",
+    "8/1C": "Impossibile verificare l'apostille dell'atto di nascita di Ana Ana Oliveira Araujo perché l'atto manca",
+    "8/1D": "Impossibile verificare la traduzione dell'atto di nascita di Ana Ana Oliveira Araujo perché l'atto manca"
   }
 }

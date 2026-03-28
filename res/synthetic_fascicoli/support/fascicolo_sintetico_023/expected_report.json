@@ -1,74 +1,56 @@
 {
   "0": {
-    "A": "KO",
+    "A": "OK",
     "B": "OK",
     "C": "OK",
     "Ci": "NULL",
     "D": "OK",
     "E": "OK",
     "F": "OK",
-    "G": "OK",
-    "Gi": "NULL",
-    "H": "KO",
-    "Hi": "Francesca Joao Leoni-Silva"
+    "G": "KO",
+    "Gi": "Carlos Silva Almeida",
+    "H": "OK",
+    "Hi": "NULL"
   },
   "1": {
     "1": "OK"
   },
   "2": {
-    "A": "NULL",
-    "B": "NULL",
-    "C": "NULL",
-    "D": "NULL",
-    "Di": "NULL",
-    "E": "NULL",
+    "A": "29.12.2025",
+    "B": "OK",
+    "C": "KO",
+    "D": "SI",
+    "Di": "25.08.2024",
+    "E": "NO",
     "Ei": "NULL",
-    "F": "NULL",
+    "F": "NO",
     "Fi": "NULL",
     "Fii": "NULL",
     "Fiii": "NULL",
-    "G": "NULL"
+    "G": "0386-2024"
   },
   "3": {
-    "A": "Paolo Neri",
+    "A": "Juliana Barbosa",
     "B": 2,
-    "C": "Francesca Joao Leoni-Silva, Sara Marini",
-    "D": "Francesca Joao Leoni-Silva: Brasiliana, Sara Marini: Brasiliana",
+    "C": "Ana Souza Silva, Pedro Silva",
+    "D": "Ana Souza Silva: Brasiliana, Pedro Silva: Brasiliana",
     "E": "NO",
     "Ei": "NULL",
     "Eii": "NULL",
-    "F": "OK; Elena Luigi Rossi -> Davide Ana Lombardi -> Sara Marini -> Francesca Joao Leoni",
-    "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
-    "Gi": "NULL"
+    "F": "OK; Renata Luz Souza -> Renata Almeida -> Carlos Silva Almeida -> Pedro Silva -> Ana Souza Silva",
+    "G": "KO; Ricorrenti per matrimonio presenti",
+    "Gi": "Ana Rodrigues"
   },
   "4": {
     "4/1": {
-      "A": "Francesca Joao Leoni-Silva",
+      "A": "Ana Souza Silva",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Francesca Joao Leoni-Silva",
+      "B": "OK; firma del ricorrente Ana Souza Silva",
       "C": "OK",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "E": "OK",
       "Ei": "NULL",
-      "F": "24.06.2024",
-      "G": "OK",
-      "H": "NO",
-      "Hi": "OK",
-      "I": "OK",
-      "Ii": "NULL",
-      "Iii": "NULL",
-      "Iiii": "NULL",
-      "Iiv": "NULL"
-    },
-    "4/2": {
-      "A": "Sara Marini",
-      "Ai": "NULL",
-      "B": "OK; firma del ricorrente Sara Marini",
-      "C": "OK",
-      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
-      "E": "OK",
-      "Ei": "NULL",
-      "F": "07.08.2024",
+      "F": "16.05.2024",
       "G": "OK",
       "H": "OK",
       "Hi": "NULL",
@@ -77,15 +59,33 @@
       "Iii": "NULL",
       "Iiii": "NULL",
       "Iiv": "NULL"
+    },
+    "4/2": {
+      "A": "Pedro Silva",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Pedro Silva",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "23.08.2025",
+      "G": "KO",
+      "H": "NO",
+      "Hi": "OK",
+      "I": "NO",
+      "Ii": "OK",
+      "Iii": "OK",
+      "Iiii": "NULL",
+      "Iiv": "OK"
     }
   },
   "5": {
     "A": "OK",
     "Ai": "NULL",
-    "C": "Mantova",
+    "C": "Cremona",
     "D": "OK",
-    "E": "Padre: Luca Bianchi, Madre: Elena Rossi",
-    "F": "12.09.1871"
+    "E": "Padre: Carlos Souza, Madre: Patricia Costa",
+    "F": "27.01.1927"
   },
   "6": {
     "A": "OK",
@@ -104,16 +104,16 @@
   },
   "7": {
     "A": "OK",
-    "B": "Elena Rosso",
+    "B": "NULL",
     "C": "OK",
     "D": "OK",
     "E": "OK",
-    "Ei": "NULL",
-    "Eii": "OK"
+    "Ei": "OK",
+    "Eii": "NULL"
   },
   "8": {
     "8/1": {
-      "A": "Davide Ana Lombardi",
+      "A": "Renata Almeida",
       "B": "OK",
       "C": "OK",
       "D": "OK",
@@ -121,34 +121,46 @@
       "Dii": "OK"
     },
     "8/2": {
-      "A": "Sara Marini",
+      "A": "Carlos Silva Almeida",
+      "B": "KO",
+      "C": "KO",
+      "D": "KO",
+      "Di": "NULL",
+      "Dii": "NULL"
+    },
+    "8/3": {
+      "A": "Pedro Silva",
       "B": "OK",
       "C": "OK",
       "D": "OK",
       "Di": "NULL",
       "Dii": "OK"
     },
-    "8/3": {
-      "A": "Francesca Joao Leoni",
-      "B": "KO",
-      "C": "KO",
-      "D": "KO",
-      "Di": "NULL",
+    "8/4": {
+      "A": "Ana Souza Silva",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
       "Dii": "NULL"
     }
   },
   "10": [
-    "0A",
-    "0H",
-    "8/3B",
-    "8/3C",
-    "8/3D"
+    "0G",
+    "2C",
+    "3G",
+    "4/2G",
+    "8/2B",
+    "8/2C",
+    "8/2D"
   ],
   "11": {
-    "0A": "IndiceProcedimento.html mancante",
-    "0H": "Atti di nascita dei ricorrenti mancanti: Francesca Joao Leoni-Silva",
-    "8/3B": "Atto di nascita non trovato per Francesca Joao Leoni",
-    "8/3C": "Impossibile verificare l'apostille dell'atto di nascita di Francesca Joao Leoni perché l'atto manca",
-    "8/3D": "Impossibile verificare la traduzione dell'atto di nascita di Francesca Joao Leoni perché l'atto manca"
+    "0G": "Atti di nascita dei discendenti mancanti: Carlos Silva Almeida",
+    "2C": "Il ricorso non risulta iscritto prima del 27.03.2025 escluso",
+    "3G": "Ricorrenti che chiedono la cittadinanza per matrimonio: Ana Rodrigues",
+    "4/2G": "La data della procura di Pedro Silva non è anteriore alla data del ricorso",
+    "8/2B": "Atto di nascita non trovato per Carlos Silva Almeida",
+    "8/2C": "Impossibile verificare l'apostille dell'atto di nascita di Carlos Silva Almeida perché l'atto manca",
+    "8/2D": "Impossibile verificare la traduzione dell'atto di nascita di Carlos Silva Almeida perché l'atto manca"
   }
 }

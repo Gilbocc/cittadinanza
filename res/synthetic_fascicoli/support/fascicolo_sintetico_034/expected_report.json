@@ -1,14 +1,14 @@
 {
   "0": {
-    "A": "OK",
+    "A": "KO",
     "B": "OK",
     "C": "OK",
     "Ci": "NULL",
     "D": "OK",
     "E": "OK",
     "F": "OK",
-    "G": "OK",
-    "Gi": "NULL",
+    "G": "KO",
+    "Gi": "Juliana Rodrigues",
     "H": "OK",
     "Hi": "NULL"
   },
@@ -16,44 +16,62 @@
     "1": "OK"
   },
   "2": {
-    "A": "13.01.2024",
-    "B": "OK",
-    "C": "OK",
-    "D": "SI",
-    "Di": "02.06.2024",
-    "E": "SI",
-    "Ei": "25.08.2025",
-    "F": "NO",
+    "A": "NULL",
+    "B": "NULL",
+    "C": "NULL",
+    "D": "NULL",
+    "Di": "NULL",
+    "E": "NULL",
+    "Ei": "NULL",
+    "F": "NULL",
     "Fi": "NULL",
     "Fii": "NULL",
     "Fiii": "NULL",
-    "G": "0905-2025"
+    "G": "NULL"
   },
   "3": {
-    "A": "Sara Marini",
-    "B": 1,
-    "C": "Matteo Gallo",
-    "D": "Matteo Gallo: Brasiliana",
+    "A": "Renata Rodrigues, Rafael Souza",
+    "B": 2,
+    "C": "Carlos Rodrigues Souza-Souza, Jose Souza",
+    "D": "Carlos Rodrigues Souza-Souza: Brasiliana, Jose Souza: Brasiliana",
     "E": "NO",
     "Ei": "NULL",
     "Eii": "NULL",
-    "F": "OK; Paolo Carlo Neri -> Paolo Neri -> Matteo Gallo",
+    "F": "OK; Renata Aparecida Costa -> Juliana Rodrigues -> Pedro Nunes Rodrigues -> Larissa Maria Barbosa Nunes -> Jose Souza -> Carlos Rodrigues Souza",
     "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
     "Gi": "NULL"
   },
   "4": {
     "4/1": {
-      "A": "Matteo Gallo",
+      "A": "Carlos Rodrigues Souza-Souza",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Matteo Gallo",
+      "B": "OK; firma del ricorrente Carlos Rodrigues Souza-Souza",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "NO",
+      "Ei": "Tribunale civile competente",
+      "F": "28.01.2025",
+      "G": "OK",
+      "H": "OK",
+      "Hi": "NULL",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
+      "Iiii": "NULL",
+      "Iiv": "NULL"
+    },
+    "4/2": {
+      "A": "Jose Souza",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Jose Souza",
       "C": "OK",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "E": "OK",
       "Ei": "NULL",
-      "F": "13.01.2024",
+      "F": "20.10.2024",
       "G": "OK",
       "H": "NO",
-      "Hi": "KO",
+      "Hi": "OK",
       "I": "NO",
       "Ii": "OK",
       "Iii": "OK",
@@ -66,8 +84,8 @@
     "Ai": "NULL",
     "C": "Mantova",
     "D": "OK",
-    "E": "Padre: Davide Lombardi, Madre: Francesca Leoni",
-    "F": "18.11.1954"
+    "E": "Padre: Diego Silva, Madre: Fernanda Araujo",
+    "F": "22.12.1962"
   },
   "6": {
     "A": "OK",
@@ -86,7 +104,7 @@
   },
   "7": {
     "A": "OK",
-    "B": "Paolo Nero",
+    "B": "Renata Costo",
     "C": "OK",
     "D": "OK",
     "E": "OK",
@@ -95,28 +113,58 @@
   },
   "8": {
     "8/1": {
-      "A": "Paolo Neri",
+      "A": "Juliana Rodrigues",
       "B": "KO",
-      "C": "OK",
-      "D": "OK",
+      "C": "KO",
+      "D": "KO",
       "Di": "NULL",
-      "Dii": "OK"
+      "Dii": "NULL"
     },
     "8/2": {
-      "A": "Matteo Gallo",
+      "A": "Pedro Nunes Rodrigues",
       "B": "OK",
       "C": "OK",
       "D": "OK",
       "Di": "NULL",
       "Dii": "OK"
+    },
+    "8/3": {
+      "A": "Larissa Maria Barbosa Nunes",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
+    },
+    "8/4": {
+      "A": "Jose Souza",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
+    },
+    "8/5": {
+      "A": "Carlos Rodrigues Souza",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
     }
   },
   "10": [
-    "4/1Hi",
-    "8/1B"
+    "0A",
+    "0G",
+    "8/1B",
+    "8/1C",
+    "8/1D"
   ],
   "11": {
-    "4/1Hi": "Apostille mancante per la procura estera di Matteo Gallo",
-    "8/1B": "Genitori non in linea discendenza per Paolo Neri"
+    "0A": "IndiceProcedimento.html mancante",
+    "0G": "Atti di nascita dei discendenti mancanti: Juliana Rodrigues",
+    "8/1B": "Atto di nascita non trovato per Juliana Rodrigues",
+    "8/1C": "Impossibile verificare l'apostille dell'atto di nascita di Juliana Rodrigues perché l'atto manca",
+    "8/1D": "Impossibile verificare la traduzione dell'atto di nascita di Juliana Rodrigues perché l'atto manca"
   }
 }

@@ -1,6 +1,6 @@
 {
   "0": {
-    "A": "OK",
+    "A": "KO",
     "B": "OK",
     "C": "OK",
     "Ci": "NULL",
@@ -8,7 +8,7 @@
     "E": "OK",
     "F": "OK",
     "G": "KO",
-    "Gi": "Davide Luz Gallo",
+    "Gi": "Rafael Silva-Ribeiro",
     "H": "OK",
     "Hi": "NULL"
   },
@@ -16,59 +16,59 @@
     "1": "OK"
   },
   "2": {
-    "A": "06.06.2024",
-    "B": "OK",
-    "C": "OK",
-    "D": "NO",
+    "A": "NULL",
+    "B": "NULL",
+    "C": "NULL",
+    "D": "NULL",
     "Di": "NULL",
-    "E": "SI",
-    "Ei": "30.01.2024",
-    "F": "NO",
+    "E": "NULL",
+    "Ei": "NULL",
+    "F": "NULL",
     "Fi": "NULL",
     "Fii": "NULL",
     "Fiii": "NULL",
-    "G": "0275-2025"
+    "G": "NULL"
   },
   "3": {
-    "A": "Elena Rossi, Sara Marini",
+    "A": "Rafael Nunes",
     "B": 2,
-    "C": "Elena Rossi-Silva, Matteo Gallo",
-    "D": "Elena Rossi-Silva: Brasiliana, Matteo Gallo: Brasiliana",
+    "C": "Beatriz Maria Silva-Souza, Antonio Nunes-Rodrigues-Silva-Ribeiro",
+    "D": "Beatriz Maria Silva-Souza: Brasiliana, Antonio Nunes-Rodrigues-Silva-Ribeiro: Brasiliana",
     "E": "NO",
     "Ei": "NULL",
     "Eii": "NULL",
-    "F": "OK; Davide Maria Lombardi -> Elena Luz Rossi -> Davide Luz Gallo -> Matteo Gallo -> Elena Rossi",
+    "F": "OK; Pedro Carlos Oliveira -> Fernanda Ribeiro -> Rafael Silva-Ribeiro -> Joao Luis Rodrigues-Silva-Ribeiro -> Antonio Nunes-Rodrigues-Silva-Ribeiro -> Beatriz Maria Silva",
     "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
     "Gi": "NULL"
   },
   "4": {
     "4/1": {
-      "A": "Elena Rossi-Silva",
+      "A": "Beatriz Maria Silva-Souza",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Elena Rossi-Silva",
+      "B": "OK; firma del ricorrente Beatriz Maria Silva-Souza",
       "C": "OK",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "E": "OK",
       "Ei": "NULL",
-      "F": "01.08.2024",
+      "F": "02.07.2024",
       "G": "OK",
       "H": "NO",
       "Hi": "OK",
       "I": "NO",
       "Ii": "OK",
-      "Iii": "NO",
-      "Iiii": "OK",
-      "Iiv": "NULL"
+      "Iii": "OK",
+      "Iiii": "NULL",
+      "Iiv": "OK"
     },
     "4/2": {
-      "A": "Matteo Gallo",
+      "A": "Antonio Nunes-Rodrigues-Silva-Ribeiro",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Matteo Gallo",
+      "B": "OK; firma del ricorrente Antonio Nunes-Rodrigues-Silva-Ribeiro",
       "C": "OK",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "E": "OK",
       "Ei": "NULL",
-      "F": "28.05.2024",
+      "F": "01.06.2024",
       "G": "OK",
       "H": "OK",
       "Hi": "NULL",
@@ -80,31 +80,31 @@
     }
   },
   "5": {
-    "A": "OK",
-    "Ai": "NULL",
-    "C": "Bergamo",
+    "A": "NO",
+    "Ai": "OK",
+    "C": "Cremona",
     "D": "OK",
-    "E": "Padre: Matteo Gallo, Madre: Chiara Costa",
-    "F": "18.07.1843"
+    "E": "Padre: Diego Nunes, Madre: Patricia Mendes",
+    "F": "09.11.1942"
   },
   "6": {
-    "A": "NO",
+    "A": "OK",
     "Ai": "NULL",
     "Aii": "NULL",
     "Aiii": "NULL",
-    "C": "26.06.1944",
-    "D": "OK",
+    "C": "NULL",
+    "D": "NULL",
     "Di": "NULL",
     "Dii": "NULL",
     "Diii": "NULL",
-    "E": "OK",
-    "F": "OK",
-    "Fi": "OK",
+    "E": "NULL",
+    "F": "NULL",
+    "Fi": "NULL",
     "Fii": "NULL"
   },
   "7": {
     "A": "OK",
-    "B": "Davide Lombardo",
+    "B": "Pedro Oliveiro",
     "C": "OK",
     "D": "OK",
     "E": "OK",
@@ -113,7 +113,7 @@
   },
   "8": {
     "8/1": {
-      "A": "Elena Luz Rossi",
+      "A": "Fernanda Ribeiro",
       "B": "OK",
       "C": "OK",
       "D": "OK",
@@ -121,7 +121,7 @@
       "Dii": "OK"
     },
     "8/2": {
-      "A": "Davide Luz Gallo",
+      "A": "Rafael Silva-Ribeiro",
       "B": "KO",
       "C": "KO",
       "D": "KO",
@@ -129,7 +129,23 @@
       "Dii": "NULL"
     },
     "8/3": {
-      "A": "Matteo Gallo",
+      "A": "Joao Luis Rodrigues-Silva-Ribeiro",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/4": {
+      "A": "Antonio Nunes-Rodrigues-Silva-Ribeiro",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/5": {
+      "A": "Beatriz Maria Silva",
       "B": "OK",
       "C": "OK",
       "D": "OK",
@@ -138,15 +154,17 @@
     }
   },
   "10": [
+    "0A",
     "0G",
     "8/2B",
     "8/2C",
     "8/2D"
   ],
   "11": {
-    "0G": "Atti di nascita dei discendenti mancanti: Davide Luz Gallo",
-    "8/2B": "Atto di nascita non trovato per Davide Luz Gallo",
-    "8/2C": "Impossibile verificare l'apostille dell'atto di nascita di Davide Luz Gallo perché l'atto manca",
-    "8/2D": "Impossibile verificare la traduzione dell'atto di nascita di Davide Luz Gallo perché l'atto manca"
+    "0A": "IndiceProcedimento.html mancante",
+    "0G": "Atti di nascita dei discendenti mancanti: Rafael Silva-Ribeiro",
+    "8/2B": "Atto di nascita non trovato per Rafael Silva-Ribeiro",
+    "8/2C": "Impossibile verificare l'apostille dell'atto di nascita di Rafael Silva-Ribeiro perché l'atto manca",
+    "8/2D": "Impossibile verificare la traduzione dell'atto di nascita di Rafael Silva-Ribeiro perché l'atto manca"
   }
 }

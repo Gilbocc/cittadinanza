@@ -2,28 +2,17 @@
   {
     "document_type": "IndiceProcedimento.html",
     "schema": {
-      "numero_anno_ruolo": "635/2024",
-      "data_iscrizione": "08-04-2024",
+      "numero_anno_ruolo": "325/2024",
+      "data_iscrizione": "22-09-2025",
       "iscrizione_post_28_02_2023": "OK",
-      "iscrizione_pre_27_03_2025": "OK",
-      "comparsa_avvocatura": "SI",
-      "data_comparsa_avvocatura": "12-05-2024",
+      "iscrizione_pre_27_03_2025": "KO",
+      "comparsa_avvocatura": "NO",
+      "data_comparsa_avvocatura": "12-03-2025",
       "visibilita_pm": "SI",
-      "data_visibilita_pm": "02-02-2024",
-      "interventi": "SI",
-      "numero_interventi": 2,
-      "intervenuti": [
-        {
-          "nome": "Francesca",
-          "cognome": "Leoni",
-          "data": "23-02-2025"
-        },
-        {
-          "nome": "Francesca",
-          "cognome": "Leoni",
-          "data": "23-04-2024"
-        }
-      ]
+      "data_visibilita_pm": "25-11-2025",
+      "interventi": "NO",
+      "numero_interventi": 0,
+      "intervenuti": []
     }
   },
   {
@@ -31,15 +20,24 @@
     "schema": {
       "avvocati": [
         {
-          "nome": "Giulia",
-          "cognome": "Conti"
+          "nome": "Fernanda",
+          "cognome": "Pereira"
+        },
+        {
+          "nome": "Carolina",
+          "cognome": "Nunes"
         }
       ],
-      "numero_ricorrenti": 1,
+      "numero_ricorrenti": 2,
       "ricorrenti_maggiorenni": [
         {
-          "nome": "Chiara",
-          "cognome": "Costa",
+          "nome": "Mateus Luis",
+          "cognome": "Lima-Oliveira-Souza",
+          "nazionalita": "Brasiliana"
+        },
+        {
+          "nome": "Joao",
+          "cognome": "Oliveira",
           "nazionalita": "Brasiliana"
         }
       ],
@@ -47,23 +45,31 @@
       "ricorrenti_per_matrimonio": [],
       "linea_discendenza": [
         {
-          "nome": "Davide Maria",
-          "cognome": "Lombardi"
+          "nome": "Marcos Carlos",
+          "cognome": "Santos"
         },
         {
-          "nome": "Giulia",
-          "cognome": "Conti"
+          "nome": "Carolina",
+          "cognome": "Oliveira Santos"
         },
         {
-          "nome": "Chiara",
-          "cognome": "Costa"
+          "nome": "Mateus Luis",
+          "cognome": "Araujo-Oliveira"
+        },
+        {
+          "nome": "Joao",
+          "cognome": "Oliveira"
+        },
+        {
+          "nome": "Mateus Luis",
+          "cognome": "Lima-Oliveira"
         }
       ],
-      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo.",
-      "riassunto_linea_discendenza": "Davide Maria Lombardi -> Giulia Conti -> Chiara Costa",
+      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo. Nel ricorso sono dichiarati i seguenti alias/pseudonimi: Marcos Santoo.",
+      "riassunto_linea_discendenza": "Marcos Carlos Santos -> Carolina Oliveira Santos -> Mateus Luis Araujo-Oliveira -> Joao Oliveira -> Mateus Luis Lima-Oliveira",
       "coerenza_linea_discendenza": "SI",
       "proveniente_dal_brasile": "SI",
-      "data_ricorso": "11-04-2024"
+      "data_ricorso": "25-11-2024"
     }
   },
   {
@@ -71,8 +77,8 @@
     "schema": {
       "soggetto": [
         {
-          "nome": "Chiara",
-          "cognome": "Costa",
+          "nome": "Mateus Luis",
+          "cognome": "Lima-Oliveira-Souza",
           "minorenne": "NO",
           "rappresentanti_legali": [],
           "firma_presente": "OK"
@@ -81,13 +87,91 @@
       "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "avvocati": [
         {
-          "nome": "Giulia",
-          "cognome": "Conti"
+          "nome": "Fernanda",
+          "cognome": "Pereira"
+        },
+        {
+          "nome": "Carolina",
+          "cognome": "Nunes"
         }
       ],
       "tribunale_brescia_indicato": "OK",
       "tribunale_indicato": "Tribunale civile competente",
-      "data_procura": "14-04-2024",
+      "data_procura": "24-01-2024",
+      "rilasciata_in_italia": "NO",
+      "scritta_in_italiano": "NO"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Procura",
+        "soggetto": [
+          {
+            "nome": "Mateus Luis",
+            "cognome": "Lima-Oliveira-Souza"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Procura",
+        "soggetto": [
+          {
+            "nome": "Mateus Luis",
+            "cognome": "Lima-Oliveira-Souza"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Mateus Luis",
+            "cognome": "Lima-Oliveira-Souza"
+          }
+        ],
+        "documento_originale": "Procura"
+      }
+    }
+  },
+  {
+    "document_type": "Procura",
+    "schema": {
+      "soggetto": [
+        {
+          "nome": "Joao",
+          "cognome": "Oliveira",
+          "minorenne": "NO",
+          "rappresentanti_legali": [],
+          "firma_presente": "OK"
+        }
+      ],
+      "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "avvocati": [
+        {
+          "nome": "Fernanda",
+          "cognome": "Pereira"
+        },
+        {
+          "nome": "Carolina",
+          "cognome": "Nunes"
+        }
+      ],
+      "tribunale_brescia_indicato": "OK",
+      "tribunale_indicato": "Tribunale civile competente",
+      "data_procura": "02-03-2024",
       "rilasciata_in_italia": "OK",
       "scritta_in_italiano": "OK"
     }
@@ -96,22 +180,22 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Davide Maria",
-        "cognome": "Lombardi"
+        "nome": "Marcos Carlos",
+        "cognome": "Santos"
       },
       "tipo": "anagrafico",
       "timbro_diocesi": "OK",
-      "comune_nascita": "Cremona",
-      "provincia": "cremona",
+      "comune_nascita": "Bergamo",
+      "provincia": "bergamo",
       "padre": {
-        "nome": "Chiara",
-        "cognome": "Costa"
+        "nome": "Marcos",
+        "cognome": "Oliveira"
       },
       "madre": {
-        "nome": "Davide",
-        "cognome": "Lombardi"
+        "nome": "Camila",
+        "cognome": "Nunes"
       },
-      "data_nascita": "17-04-1840",
+      "data_nascita": "06-12-1893",
       "area_nascita": "A",
       "stato": "Italia"
     }
@@ -120,22 +204,22 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Giulia",
-        "cognome": "Conti"
+        "nome": "Carolina",
+        "cognome": "Oliveira Santos"
       },
       "tipo": "anagrafico",
       "timbro_diocesi": "NO",
       "comune_nascita": "Santos",
       "provincia": "altro",
       "padre": {
-        "nome": "Giulia",
-        "cognome": "Conti"
+        "nome": "Marcos Carlos",
+        "cognome": "Santos"
       },
       "madre": {
-        "nome": "Davide Maria",
-        "cognome": "Lombardi"
+        "nome": "Ana",
+        "cognome": "Cardoso"
       },
-      "data_nascita": "05-03-1937",
+      "data_nascita": "28-05-1931",
       "area_nascita": "E",
       "stato": "Brasile"
     }
@@ -147,8 +231,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Giulia",
-            "cognome": "Conti"
+            "nome": "Carolina",
+            "cognome": "Oliveira Santos"
           }
         ]
       }
@@ -161,8 +245,76 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Giulia",
-            "cognome": "Conti"
+            "nome": "Carolina",
+            "cognome": "Oliveira Santos"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Carolina",
+            "cognome": "Oliveira Santos"
+          }
+        ],
+        "documento_originale": "Atto di nascita"
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Mateus Luis",
+        "cognome": "Araujo-Oliveira"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "NO",
+      "comune_nascita": "Sao Paulo",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Mateus",
+        "cognome": "Santos"
+      },
+      "madre": {
+        "nome": "Carolina",
+        "cognome": "Oliveira Santos"
+      },
+      "data_nascita": "28-05-1993",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Mateus Luis",
+            "cognome": "Araujo-Oliveira"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Mateus Luis",
+            "cognome": "Araujo-Oliveira"
           }
         ]
       },
@@ -177,8 +329,8 @@
         "documento_originale": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Giulia",
-            "cognome": "Conti"
+            "nome": "Mateus Luis",
+            "cognome": "Araujo-Oliveira"
           }
         ]
       }
@@ -188,22 +340,22 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Chiara",
-        "cognome": "Costa"
+        "nome": "Joao",
+        "cognome": "Oliveira"
       },
       "tipo": "anagrafico",
-      "timbro_diocesi": "OK",
-      "comune_nascita": "Santos",
+      "timbro_diocesi": "NO",
+      "comune_nascita": "Campinas",
       "provincia": "altro",
       "padre": {
-        "nome": "Chiara",
-        "cognome": "Costa"
+        "nome": "Mateus Luis",
+        "cognome": "Araujo-Oliveira"
       },
       "madre": {
-        "nome": "Giulia",
-        "cognome": "Conti"
+        "nome": "Renata",
+        "cognome": "Ribeiro"
       },
-      "data_nascita": "19-11-2009",
+      "data_nascita": "24-04-1999",
       "area_nascita": "E",
       "stato": "Brasile"
     }
@@ -215,8 +367,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Chiara",
-            "cognome": "Costa"
+            "nome": "Joao",
+            "cognome": "Oliveira"
           }
         ]
       }
@@ -229,48 +381,62 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Chiara",
-            "cognome": "Costa"
+            "nome": "Joao",
+            "cognome": "Oliveira"
           }
         ]
       },
-      "sede_traduttore": "Estero"
+      "sede_traduttore": "Italia"
     }
   },
   {
-    "document_type": "Apostille",
+    "document_type": "Asseverazione",
     "schema": {
       "oggetto": {
         "document_type": "Traduzione",
+        "documento_originale": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Chiara",
-            "cognome": "Costa"
+            "nome": "Joao",
+            "cognome": "Oliveira"
           }
-        ],
-        "documento_originale": "Atto di nascita"
+        ]
       }
     }
   },
   {
-    "document_type": "Atto di morte",
+    "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Davide Maria",
-        "cognome": "Lombardi"
+        "nome": "Mateus Luis",
+        "cognome": "Lima-Oliveira"
       },
-      "data_decesso": "20-08-1974"
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Brasilia",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Joao",
+        "cognome": "Oliveira"
+      },
+      "madre": {
+        "nome": "Beatriz",
+        "cognome": "Barbosa"
+      },
+      "data_nascita": "05-12-1976",
+      "area_nascita": "E",
+      "stato": "Brasile"
     }
   },
   {
     "document_type": "Apostille",
     "schema": {
       "oggetto": {
-        "document_type": "Atto di morte",
+        "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Davide Maria",
-            "cognome": "Lombardi"
+            "nome": "Mateus Luis",
+            "cognome": "Lima-Oliveira"
           }
         ]
       }
@@ -280,29 +446,29 @@
     "document_type": "Traduzione",
     "schema": {
       "oggetto": {
-        "document_type": "Atto di morte",
+        "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Davide Maria",
-            "cognome": "Lombardi"
+            "nome": "Mateus Luis",
+            "cognome": "Lima-Oliveira"
           }
         ]
       },
-      "sede_traduttore": "Estero"
+      "sede_traduttore": "Italia"
     }
   },
   {
-    "document_type": "Apostille",
+    "document_type": "Asseverazione",
     "schema": {
       "oggetto": {
         "document_type": "Traduzione",
+        "documento_originale": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Davide Maria",
-            "cognome": "Lombardi"
+            "nome": "Mateus Luis",
+            "cognome": "Lima-Oliveira"
           }
-        ],
-        "documento_originale": "Atto di morte"
+        ]
       }
     }
   },
@@ -310,12 +476,17 @@
     "document_type": "Certificato Negativo di Naturalizzazione",
     "schema": {
       "soggetto": {
-        "nome": "Davide Maria",
-        "cognome": "Lombardi"
+        "nome": "Marcos Carlos",
+        "cognome": "Santos"
       },
-      "pseudonimi": [],
+      "pseudonimi": [
+        {
+          "nome": "Marcos",
+          "cognome": "Santoo"
+        }
+      ],
       "formula_negativa_presente": "OK",
-      "data_nascita": "17-04-1840"
+      "data_nascita": "06-12-1893"
     }
   },
   {
@@ -325,8 +496,8 @@
         "document_type": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Davide Maria",
-            "cognome": "Lombardi"
+            "nome": "Marcos Carlos",
+            "cognome": "Santos"
           }
         ]
       }
@@ -339,8 +510,8 @@
         "document_type": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Davide Maria",
-            "cognome": "Lombardi"
+            "nome": "Marcos Carlos",
+            "cognome": "Santos"
           }
         ]
       },
@@ -355,64 +526,45 @@
         "documento_originale": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Davide Maria",
-            "cognome": "Lombardi"
+            "nome": "Marcos Carlos",
+            "cognome": "Santos"
           }
         ]
       }
     }
   },
   {
-    "document_type": "Documenti Personali Vari",
-    "schema": {
-      "id": "UD-2591",
-      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
-      "data": "27-07-2023"
-    }
-  },
-  {
     "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Documento non supportato",
-        "soggetto": [
-          {
-            "nome": "Giulia",
-            "cognome": "Conti"
-          }
-        ],
-        "documento_originale": "Bozza Sentenza"
-      }
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Documento non supportato",
-        "soggetto": [
-          {
-            "nome": "Davide",
-            "cognome": "Lombardi"
-          }
-        ],
-        "documento_originale": "Documenti Personali Vari"
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
     "schema": {
       "oggetto": {
         "document_type": "Certificato di matrimonio",
         "soggetto": [
           {
-            "nome": "Marco",
-            "cognome": "Moretti"
+            "nome": "Patricia",
+            "cognome": "Cardoso"
+          },
+          {
+            "nome": "Marcos",
+            "cognome": "Costa"
           }
         ]
-      },
-      "sede_traduttore": "Estero"
+      }
+    }
+  },
+  {
+    "document_type": "Nota Spese",
+    "schema": {
+      "id": "UD-9686",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "15-07-2023"
+    }
+  },
+  {
+    "document_type": "Comunicazione PEC",
+    "schema": {
+      "id": "UD-6699",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "07-05-2025"
     }
   },
   {
@@ -420,79 +572,31 @@
     "schema": {
       "soggetti": [
         {
-          "nome": "Chiara",
+          "nome": "Patricia",
+          "cognome": "Cardoso"
+        },
+        {
+          "nome": "Marcos",
           "cognome": "Costa"
-        },
-        {
-          "nome": "Paolo",
-          "cognome": "Neri"
         }
       ],
-      "luogo": "Rio de Janeiro",
-      "data_matrimonio": "07-12-1959",
+      "luogo": "Sao Paulo",
+      "data_matrimonio": "04-10-1964",
       "note": "Documento non richiesto ai fini del riconoscimento richiesto."
     }
   },
   {
-    "document_type": "Documenti Personali Vari",
-    "schema": {
-      "id": "UD-3931",
-      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
-      "data": "30-04-2025"
-    }
-  },
-  {
     "document_type": "Apostille",
     "schema": {
       "oggetto": {
-        "document_type": "Certificato di matrimonio",
+        "document_type": "Documento non supportato",
         "soggetto": [
           {
-            "nome": "Marco",
-            "cognome": "Moretti"
-          },
-          {
-            "nome": "Davide",
-            "cognome": "Lombardi"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "soggetto": [
-          {
-            "nome": "Marco",
-            "cognome": "Moretti"
-          },
-          {
-            "nome": "Davide",
-            "cognome": "Lombardi"
+            "nome": "Beatriz",
+            "cognome": "Nunes"
           }
         ],
-        "documento_originale": "Certificato di matrimonio"
-      }
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Certificato di matrimonio",
-        "soggetto": [
-          {
-            "nome": "Chiara",
-            "cognome": "Costa"
-          },
-          {
-            "nome": "Paolo",
-            "cognome": "Neri"
-          }
-        ]
+        "documento_originale": "Nota Spese"
       }
     }
   },
@@ -503,12 +607,12 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Chiara",
-            "cognome": "Costa"
+            "nome": "Patricia",
+            "cognome": "Cardoso"
           },
           {
-            "nome": "Paolo",
-            "cognome": "Neri"
+            "nome": "Marcos",
+            "cognome": "Costa"
           }
         ],
         "documento_originale": "Certificato di matrimonio"
@@ -522,38 +626,12 @@
         "document_type": "Certificato di matrimonio",
         "soggetto": [
           {
-            "nome": "Chiara",
-            "cognome": "Costa"
+            "nome": "Patricia",
+            "cognome": "Cardoso"
           }
         ]
       },
       "sede_traduttore": "Estero"
-    }
-  },
-  {
-    "document_type": "Bozza Sentenza",
-    "schema": {
-      "id": "UD-4104",
-      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
-      "data": "31-01-2024"
-    }
-  },
-  {
-    "document_type": "Certificato di matrimonio",
-    "schema": {
-      "soggetti": [
-        {
-          "nome": "Marco",
-          "cognome": "Moretti"
-        },
-        {
-          "nome": "Davide",
-          "cognome": "Lombardi"
-        }
-      ],
-      "luogo": "Curitiba",
-      "data_matrimonio": "22-07-2020",
-      "note": "Documento non richiesto ai fini del riconoscimento richiesto."
     }
   },
   {
@@ -563,11 +641,11 @@
         "document_type": "Documento non supportato",
         "soggetto": [
           {
-            "nome": "Sara",
-            "cognome": "Marini"
+            "nome": "Mateus",
+            "cognome": "Souza"
           }
         ],
-        "documento_originale": "Documenti Personali Vari"
+        "documento_originale": "Comunicazione PEC"
       }
     }
   }

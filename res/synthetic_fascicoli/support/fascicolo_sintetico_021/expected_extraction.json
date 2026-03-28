@@ -2,14 +2,14 @@
   {
     "document_type": "IndiceProcedimento.html",
     "schema": {
-      "numero_anno_ruolo": "530/2025",
-      "data_iscrizione": "23-10-2025",
+      "numero_anno_ruolo": "492/2024",
+      "data_iscrizione": "22-08-2024",
       "iscrizione_post_28_02_2023": "OK",
-      "iscrizione_pre_27_03_2025": "KO",
+      "iscrizione_pre_27_03_2025": "OK",
       "comparsa_avvocatura": "NO",
-      "data_comparsa_avvocatura": "26-01-2025",
+      "data_comparsa_avvocatura": "14-04-2024",
       "visibilita_pm": "SI",
-      "data_visibilita_pm": "21-01-2025",
+      "data_visibilita_pm": "11-01-2025",
       "interventi": "NO",
       "numero_interventi": 0,
       "intervenuti": []
@@ -20,49 +20,39 @@
     "schema": {
       "avvocati": [
         {
-          "nome": "Paolo",
-          "cognome": "Neri"
-        },
-        {
-          "nome": "Davide",
-          "cognome": "Lombardi"
+          "nome": "Diego",
+          "cognome": "Oliveira"
         }
       ],
       "numero_ricorrenti": 1,
       "ricorrenti_maggiorenni": [
         {
-          "nome": "Marco",
-          "cognome": "Moretti-Silva",
+          "nome": "Pedro Carlos",
+          "cognome": "Mendes-Souza",
           "nazionalita": "Brasiliana"
         }
       ],
       "ricorrenti_minorenni": [],
-      "ricorrenti_per_matrimonio": [
-        {
-          "nome": "Sara",
-          "cognome": "Marini",
-          "nazionalita": "Brasiliana"
-        }
-      ],
+      "ricorrenti_per_matrimonio": [],
       "linea_discendenza": [
         {
-          "nome": "Chiara Luigi",
-          "cognome": "Costa"
+          "nome": "Antonio Carlos",
+          "cognome": "Almeida"
         },
         {
-          "nome": "Matteo",
-          "cognome": "Gallo"
+          "nome": "Diego",
+          "cognome": "Souza"
         },
         {
-          "nome": "Marco",
-          "cognome": "Moretti"
+          "nome": "Pedro Carlos",
+          "cognome": "Mendes"
         }
       ],
-      "racconto_linea_discendenza": "La ricostruzione presenta una possibile lacuna intermedia da verificare sui certificati allegati.",
-      "riassunto_linea_discendenza": "Chiara Luigi Costa -> Marco Moretti",
-      "coerenza_linea_discendenza": "KO",
+      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo. Nel ricorso sono dichiarati i seguenti alias/pseudonimi: Antonio Almeido.",
+      "riassunto_linea_discendenza": "Antonio Carlos Almeida -> Diego Souza -> Pedro Carlos Mendes",
+      "coerenza_linea_discendenza": "SI",
       "proveniente_dal_brasile": "SI",
-      "data_ricorso": "16-05-2024"
+      "data_ricorso": "18-10-2025"
     }
   },
   {
@@ -70,8 +60,8 @@
     "schema": {
       "soggetto": [
         {
-          "nome": "Marco",
-          "cognome": "Moretti-Silva",
+          "nome": "Pedro Carlos",
+          "cognome": "Mendes-Souza",
           "minorenne": "NO",
           "rappresentanti_legali": [],
           "firma_presente": "OK"
@@ -80,15 +70,15 @@
       "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "avvocati": [
         {
-          "nome": "Luca",
-          "cognome": "Bianchi"
+          "nome": "Diego",
+          "cognome": "Oliveira"
         }
       ],
-      "tribunale_brescia_indicato": "KO",
+      "tribunale_brescia_indicato": "OK",
       "tribunale_indicato": "Tribunale civile competente",
-      "data_procura": "15-02-2024",
+      "data_procura": "27-06-2025",
       "rilasciata_in_italia": "NO",
-      "scritta_in_italiano": "NO"
+      "scritta_in_italiano": "OK"
     }
   },
   {
@@ -98,38 +88,8 @@
         "document_type": "Procura",
         "soggetto": [
           {
-            "nome": "Marco",
-            "cognome": "Moretti-Silva"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Procura",
-        "soggetto": [
-          {
-            "nome": "Marco",
-            "cognome": "Moretti-Silva"
-          }
-        ]
-      },
-      "sede_traduttore": "Italia"
-    }
-  },
-  {
-    "document_type": "Asseverazione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "documento_originale": "Procura",
-        "soggetto": [
-          {
-            "nome": "Marco",
-            "cognome": "Moretti-Silva"
+            "nome": "Pedro Carlos",
+            "cognome": "Mendes-Souza"
           }
         ]
       }
@@ -139,22 +99,22 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Chiara Luigi",
-        "cognome": "Costa"
+        "nome": "Antonio Carlos",
+        "cognome": "Almeida"
       },
-      "tipo": "parrocchiale",
-      "timbro_diocesi": "NO",
-      "comune_nascita": "Bergamo",
-      "provincia": "bergamo",
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Cremona",
+      "provincia": "cremona",
       "padre": {
-        "nome": "Paolo",
-        "cognome": "Neri"
+        "nome": "Diego",
+        "cognome": "Araujo"
       },
       "madre": {
-        "nome": "Davide",
-        "cognome": "Lombardi"
+        "nome": "Fernanda",
+        "cognome": "Almeida"
       },
-      "data_nascita": "20-05-1850",
+      "data_nascita": "16-11-1943",
       "area_nascita": "A",
       "stato": "Italia"
     }
@@ -163,90 +123,22 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Matteo",
-        "cognome": "Gallo"
+        "nome": "Diego",
+        "cognome": "Souza"
       },
-      "tipo": "anagrafico",
-      "timbro_diocesi": "NO",
-      "comune_nascita": "Curitiba",
-      "provincia": "altro",
-      "padre": {
-        "nome": "Davide",
-        "cognome": "Lombardi"
-      },
-      "madre": {
-        "nome": "Chiara Luigi",
-        "cognome": "Costa"
-      },
-      "data_nascita": "16-03-1952",
-      "area_nascita": "E",
-      "stato": "Brasile"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Matteo",
-            "cognome": "Gallo"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Matteo",
-            "cognome": "Gallo"
-          }
-        ]
-      },
-      "sede_traduttore": "Italia"
-    }
-  },
-  {
-    "document_type": "Asseverazione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "documento_originale": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Matteo",
-            "cognome": "Gallo"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Atto di nascita",
-    "schema": {
-      "soggetto": {
-        "nome": "Marco",
-        "cognome": "Moretti"
-      },
-      "tipo": "anagrafico",
+      "tipo": "parrocchiale",
       "timbro_diocesi": "OK",
-      "comune_nascita": "Belo Horizonte",
+      "comune_nascita": "Porto Alegre",
       "provincia": "altro",
       "padre": {
-        "nome": "Chiara",
-        "cognome": "Costa"
+        "nome": "Antonio Carlos",
+        "cognome": "Almeida"
       },
       "madre": {
-        "nome": "Matteo",
-        "cognome": "Gallo"
+        "nome": "Renata",
+        "cognome": "Araujo"
       },
-      "data_nascita": "08-07-2008",
+      "data_nascita": "06-01-1939",
       "area_nascita": "E",
       "stato": "Brasile"
     }
@@ -258,8 +150,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Marco",
-            "cognome": "Moretti"
+            "nome": "Diego",
+            "cognome": "Souza"
           }
         ]
       }
@@ -272,62 +164,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Marco",
-            "cognome": "Moretti"
-          }
-        ]
-      },
-      "sede_traduttore": "Italia"
-    }
-  },
-  {
-    "document_type": "Asseverazione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "documento_originale": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Marco",
-            "cognome": "Moretti"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Atto di morte",
-    "schema": {
-      "soggetto": {
-        "nome": "Chiara Luigi",
-        "cognome": "Costa"
-      },
-      "data_decesso": "01-04-1920"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di morte",
-        "soggetto": [
-          {
-            "nome": "Chiara Luigi",
-            "cognome": "Costa"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di morte",
-        "soggetto": [
-          {
-            "nome": "Chiara Luigi",
-            "cognome": "Costa"
+            "nome": "Diego",
+            "cognome": "Souza"
           }
         ]
       },
@@ -341,11 +179,79 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Chiara Luigi",
-            "cognome": "Costa"
+            "nome": "Diego",
+            "cognome": "Souza"
           }
         ],
-        "documento_originale": "Atto di morte"
+        "documento_originale": "Atto di nascita"
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Pedro Carlos",
+        "cognome": "Mendes"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Rio de Janeiro",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Diego",
+        "cognome": "Souza"
+      },
+      "madre": {
+        "nome": "Fernanda",
+        "cognome": "Cardoso"
+      },
+      "data_nascita": "10-07-1968",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Pedro Carlos",
+            "cognome": "Mendes"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Pedro Carlos",
+            "cognome": "Mendes"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Pedro Carlos",
+            "cognome": "Mendes"
+          }
+        ],
+        "documento_originale": "Atto di nascita"
       }
     }
   },
@@ -353,17 +259,17 @@
     "document_type": "Certificato Negativo di Naturalizzazione",
     "schema": {
       "soggetto": {
-        "nome": "Chiara Luigi",
-        "cognome": "Costa"
+        "nome": "Antonio Carlos",
+        "cognome": "Almeida"
       },
       "pseudonimi": [
         {
-          "nome": "Chiara",
-          "cognome": "Costo"
+          "nome": "Antonio",
+          "cognome": "Almeido"
         }
       ],
       "formula_negativa_presente": "OK",
-      "data_nascita": "20-05-1850"
+      "data_nascita": "16-11-1943"
     }
   },
   {
@@ -373,8 +279,8 @@
         "document_type": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Chiara Luigi",
-            "cognome": "Costa"
+            "nome": "Antonio Carlos",
+            "cognome": "Almeida"
           }
         ]
       }
@@ -387,26 +293,26 @@
         "document_type": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Chiara Luigi",
-            "cognome": "Costa"
+            "nome": "Antonio Carlos",
+            "cognome": "Almeida"
           }
         ]
       },
-      "sede_traduttore": "Italia"
+      "sede_traduttore": "Estero"
     }
   },
   {
-    "document_type": "Asseverazione",
+    "document_type": "Apostille",
     "schema": {
       "oggetto": {
         "document_type": "Traduzione",
-        "documento_originale": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Chiara Luigi",
-            "cognome": "Costa"
+            "nome": "Antonio Carlos",
+            "cognome": "Almeida"
           }
-        ]
+        ],
+        "documento_originale": "Certificato Negativo di Naturalizzazione"
       }
     }
   }

@@ -20,14 +20,14 @@
     "selection_weight": 0.85
   },
   "render_profile": {
-    "noise_scale": 0.979,
-    "artifact_scale": 1.041,
-    "jitter_scale": 1.384,
-    "watermark_prob": 0.34,
-    "punch_hole_prob": 0.537,
-    "stamp_prob": 0.674,
-    "seal_prob": 0.528,
-    "style_seed": 1201391159
+    "noise_scale": 1.292,
+    "artifact_scale": 0.69,
+    "jitter_scale": 0.885,
+    "watermark_prob": 0.712,
+    "punch_hole_prob": 0.594,
+    "stamp_prob": 0.894,
+    "seal_prob": 0.406,
+    "style_seed": 457632732
   },
   "pdf_files": [
     {
@@ -36,22 +36,19 @@
         "IndiceProcedimento.html",
         "Ricorso",
         "Procura",
-        "Apostille",
-        "Traduzione",
-        "Asseverazione"
+        "Atto di nascita"
       ],
-      "count": 6
+      "count": 4
     },
     {
       "file": "fascicolo_sintetico_018_bundle_02.pdf",
       "logical_docs": [
         "Atto di nascita",
-        "Atto di nascita",
         "Apostille",
         "Traduzione",
-        "Asseverazione"
+        "Apostille"
       ],
-      "count": 5
+      "count": 4
     },
     {
       "file": "fascicolo_sintetico_018_bundle_03.pdf",
@@ -79,43 +76,49 @@
         "Certificato Negativo di Naturalizzazione",
         "Apostille",
         "Traduzione",
-        "Asseverazione"
+        "Asseverazione",
+        "Apostille",
+        "Traduzione"
       ],
-      "count": 4
+      "count": 6
     },
     {
       "file": "fascicolo_sintetico_018_bundle_06.pdf",
       "logical_docs": [
+        "Bozza Sentenza",
+        "Traduzione",
         "Nota Spese",
-        "Apostille",
-        "Apostille",
-        "Bozza Sentenza"
+        "Certificato di matrimonio"
       ],
       "count": 4
     },
     {
       "file": "fascicolo_sintetico_018_bundle_07.pdf",
       "logical_docs": [
-        "Avviso Udienza",
+        "Bozza Sentenza",
         "Apostille",
         "Apostille",
-        "Traduzione"
+        "Certificato di matrimonio",
+        "Bozza Sentenza"
       ],
-      "count": 4
+      "count": 5
     },
     {
       "file": "fascicolo_sintetico_018_bundle_08.pdf",
       "logical_docs": [
         "Certificato di matrimonio",
         "Apostille",
+        "Traduzione",
         "Apostille",
-        "Certificato di matrimonio",
         "Apostille",
-        "Traduzione"
+        "Apostille",
+        "Apostille",
+        "Apostille",
+        "Apostille"
       ],
-      "count": 6
+      "count": 9
     }
   ],
-  "expected_doc_count": 23,
-  "mixed_doc_count": 37
+  "expected_doc_count": 20,
+  "mixed_doc_count": 40
 }

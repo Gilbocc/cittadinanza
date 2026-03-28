@@ -7,8 +7,8 @@
     "D": "OK",
     "E": "OK",
     "F": "OK",
-    "G": "OK",
-    "Gi": "NULL",
+    "G": "KO",
+    "Gi": "Mateus Araujo",
     "H": "OK",
     "Hi": "NULL"
   },
@@ -16,41 +16,41 @@
     "1": "OK"
   },
   "2": {
-    "A": "04.03.2024",
+    "A": "20.12.2025",
     "B": "OK",
-    "C": "OK",
+    "C": "KO",
     "D": "SI",
-    "Di": "21.08.2025",
-    "E": "NO",
-    "Ei": "NULL",
-    "F": "SI",
-    "Fi": "2",
-    "Fii": "Francesca Leoni, Chiara Costa",
-    "Fiii": "09.07.2025, 01.03.2025",
-    "G": "0311-2025"
+    "Di": "24.08.2024",
+    "E": "SI",
+    "Ei": "16.07.2024",
+    "F": "NO",
+    "Fi": "NULL",
+    "Fii": "NULL",
+    "Fiii": "NULL",
+    "G": "0564-2025"
   },
   "3": {
-    "A": "Sara Marini",
+    "A": "Maria Santos",
     "B": 1,
-    "C": "Paolo Neri",
-    "D": "Paolo Neri: Brasiliana",
+    "C": "Beatriz Nunes-Souza",
+    "D": "Beatriz Nunes-Souza: Brasiliana",
     "E": "NO",
     "Ei": "NULL",
     "Eii": "NULL",
-    "F": "OK; Matteo Maria Gallo -> Francesca Leoni -> Elena Ana Rossi -> Paolo Neri",
+    "F": "OK; Renata Luz Barbosa -> Rafael Luis Souza -> Mateus Araujo -> Jose Luis Costa-Araujo -> Beatriz Nunes",
     "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
     "Gi": "NULL"
   },
   "4": {
     "4/1": {
-      "A": "Paolo Neri",
+      "A": "Beatriz Nunes-Souza",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Paolo Neri",
+      "B": "OK; firma del ricorrente Beatriz Nunes-Souza",
       "C": "OK",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "E": "NO",
       "Ei": "Tribunale civile competente",
-      "F": "21.01.2024",
+      "F": "28.08.2024",
       "G": "KO",
       "H": "NO",
       "Hi": "OK",
@@ -66,15 +66,15 @@
     "Ai": "NULL",
     "C": "Bergamo",
     "D": "OK",
-    "E": "Padre: Paolo Neri, Madre: Davide Lombardi",
-    "F": "20.09.1848"
+    "E": "Padre: Rafael Lima, Madre: Patricia Santos",
+    "F": "18.11.1855"
   },
   "6": {
     "A": "NO",
     "Ai": "NULL",
     "Aii": "NULL",
     "Aiii": "NULL",
-    "C": "08.05.1924",
+    "C": "15.08.1909",
     "D": "OK",
     "Di": "NULL",
     "Dii": "NULL",
@@ -86,32 +86,40 @@
   },
   "7": {
     "A": "OK",
-    "B": "NULL",
+    "B": "Renata Barboso",
     "C": "OK",
     "D": "OK",
     "E": "OK",
-    "Ei": "OK",
-    "Eii": "NULL"
+    "Ei": "NULL",
+    "Eii": "OK"
   },
   "8": {
     "8/1": {
-      "A": "Francesca Leoni",
+      "A": "Rafael Luis Souza",
       "B": "OK",
       "C": "OK",
       "D": "OK",
-      "Di": "OK",
-      "Dii": "NULL"
+      "Di": "NULL",
+      "Dii": "OK"
     },
     "8/2": {
-      "A": "Elena Ana Rossi",
-      "B": "OK",
-      "C": "OK",
-      "D": "OK",
-      "Di": "OK",
+      "A": "Mateus Araujo",
+      "B": "KO",
+      "C": "KO",
+      "D": "KO",
+      "Di": "NULL",
       "Dii": "NULL"
     },
     "8/3": {
-      "A": "Paolo Neri",
+      "A": "Jose Luis Costa-Araujo",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
+    },
+    "8/4": {
+      "A": "Beatriz Nunes",
       "B": "OK",
       "C": "OK",
       "D": "OK",
@@ -120,9 +128,19 @@
     }
   },
   "10": [
-    "4/1G"
+    "0G",
+    "2C",
+    "4/1G",
+    "8/2B",
+    "8/2C",
+    "8/2D"
   ],
   "11": {
-    "4/1G": "La data della procura di Paolo Neri non è anteriore alla data del ricorso"
+    "0G": "Atti di nascita dei discendenti mancanti: Mateus Araujo",
+    "2C": "Il ricorso non risulta iscritto prima del 27.03.2025 escluso",
+    "4/1G": "La data della procura di Beatriz Nunes-Souza non è anteriore alla data del ricorso",
+    "8/2B": "Atto di nascita non trovato per Mateus Araujo",
+    "8/2C": "Impossibile verificare l'apostille dell'atto di nascita di Mateus Araujo perché l'atto manca",
+    "8/2D": "Impossibile verificare la traduzione dell'atto di nascita di Mateus Araujo perché l'atto manca"
   }
 }

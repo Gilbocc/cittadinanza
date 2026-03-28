@@ -16,41 +16,41 @@
     "1": "OK"
   },
   "2": {
-    "A": "13.06.2025",
+    "A": "07.12.2025",
     "B": "OK",
     "C": "KO",
-    "D": "SI",
-    "Di": "09.05.2024",
+    "D": "NO",
+    "Di": "NULL",
     "E": "NO",
     "Ei": "NULL",
     "F": "NO",
     "Fi": "NULL",
     "Fii": "NULL",
     "Fiii": "NULL",
-    "G": "0901-2025"
+    "G": "0971-2025"
   },
   "3": {
-    "A": "Elena Rossi",
+    "A": "Antonio Oliveira",
     "B": 1,
-    "C": "Marco Moretti-Silva",
-    "D": "Marco Moretti-Silva: Brasiliana",
+    "C": "Jose Rodrigues-Souza",
+    "D": "Jose Rodrigues-Souza: Brasiliana",
     "E": "NO",
     "Ei": "NULL",
     "Eii": "NULL",
-    "F": "KO; Luca Carlo Bianchi -> Marco Moretti",
+    "F": "OK; Carlos Miguel Pereira -> Renata Costa-Pereira -> Jose Rodrigues",
     "G": "KO; Ricorrenti per matrimonio presenti",
-    "Gi": "Luca Bianchi"
+    "Gi": "Mateus Almeida"
   },
   "4": {
     "4/1": {
-      "A": "Marco Moretti-Silva",
+      "A": "Jose Rodrigues-Souza",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Marco Moretti-Silva",
+      "B": "OK; firma del ricorrente Jose Rodrigues-Souza",
       "C": "KO",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "E": "OK",
       "Ei": "NULL",
-      "F": "14.01.2024",
+      "F": "31.05.2024",
       "G": "OK",
       "H": "OK",
       "Hi": "NULL",
@@ -64,17 +64,17 @@
   "5": {
     "A": "OK",
     "Ai": "NULL",
-    "C": "Brescia",
+    "C": "Mantova",
     "D": "OK",
-    "E": "Padre: Elena Rossi, Madre: Matteo Gallo",
-    "F": "10.04.1859"
+    "E": "Padre: Diego Araujo, Madre: Beatriz Oliveira",
+    "F": "01.11.1850"
   },
   "6": {
     "A": "NO",
     "Ai": "NULL",
     "Aii": "NULL",
     "Aiii": "NULL",
-    "C": "18.06.1900",
+    "C": "11.03.1940",
     "D": "OK",
     "Di": "NULL",
     "Dii": "NULL",
@@ -86,33 +86,39 @@
   },
   "7": {
     "A": "OK",
-    "B": "Luca Biancho",
+    "B": "NULL",
     "C": "OK",
     "D": "OK",
     "E": "OK",
-    "Ei": "OK",
-    "Eii": "NULL"
+    "Ei": "NULL",
+    "Eii": "OK"
   },
   "8": {
     "8/1": {
-      "A": "Marco Moretti",
+      "A": "Renata Costa-Pereira",
       "B": "OK",
       "C": "OK",
       "D": "OK",
       "Di": "NULL",
       "Dii": "OK"
+    },
+    "8/2": {
+      "A": "Jose Rodrigues",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
     }
   },
   "10": [
     "2C",
-    "3F",
     "3G",
     "4/1C"
   ],
   "11": {
     "2C": "Il ricorso non risulta iscritto prima del 27.03.2025 escluso",
-    "3F": "La linea di discendenza indicata nel ricorso non risulta coerente",
-    "3G": "Ricorrenti che chiedono la cittadinanza per matrimonio: Luca Bianchi",
-    "4/1C": "Gli avvocati indicati nella procura di Marco Moretti-Silva non coincidono con quelli del ricorso"
+    "3G": "Ricorrenti che chiedono la cittadinanza per matrimonio: Mateus Almeida",
+    "4/1C": "Gli avvocati indicati nella procura di Jose Rodrigues-Souza non coincidono con quelli del ricorso"
   }
 }

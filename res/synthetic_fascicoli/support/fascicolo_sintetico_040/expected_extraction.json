@@ -2,28 +2,17 @@
   {
     "document_type": "IndiceProcedimento.html",
     "schema": {
-      "numero_anno_ruolo": "439/2025",
-      "data_iscrizione": "10-11-2025",
+      "numero_anno_ruolo": "931/2024",
+      "data_iscrizione": "09-10-2024",
       "iscrizione_post_28_02_2023": "OK",
-      "iscrizione_pre_27_03_2025": "KO",
-      "comparsa_avvocatura": "SI",
-      "data_comparsa_avvocatura": "11-08-2024",
+      "iscrizione_pre_27_03_2025": "OK",
+      "comparsa_avvocatura": "NO",
+      "data_comparsa_avvocatura": "31-01-2025",
       "visibilita_pm": "NO",
-      "data_visibilita_pm": "25-09-2025",
-      "interventi": "SI",
-      "numero_interventi": 2,
-      "intervenuti": [
-        {
-          "nome": "Elena",
-          "cognome": "Rossi",
-          "data": "23-12-2024"
-        },
-        {
-          "nome": "Giulia",
-          "cognome": "Conti",
-          "data": "06-08-2024"
-        }
-      ]
+      "data_visibilita_pm": "31-01-2024",
+      "interventi": "NO",
+      "numero_interventi": 0,
+      "intervenuti": []
     }
   },
   {
@@ -31,15 +20,19 @@
     "schema": {
       "avvocati": [
         {
-          "nome": "Davide",
-          "cognome": "Lombardi"
+          "nome": "Beatriz",
+          "cognome": "Costa"
+        },
+        {
+          "nome": "Maria",
+          "cognome": "Ribeiro"
         }
       ],
       "numero_ricorrenti": 1,
       "ricorrenti_maggiorenni": [
         {
-          "nome": "Davide Luz",
-          "cognome": "Lombardi-Silva",
+          "nome": "Joao",
+          "cognome": "Pereira Souza-Souza",
           "nazionalita": "Brasiliana"
         }
       ],
@@ -47,23 +40,31 @@
       "ricorrenti_per_matrimonio": [],
       "linea_discendenza": [
         {
-          "nome": "Francesca Carlo",
-          "cognome": "Leoni"
+          "nome": "Juliana Aparecida",
+          "cognome": "Rodrigues"
         },
         {
-          "nome": "Giulia",
-          "cognome": "Conti"
+          "nome": "Pedro",
+          "cognome": "Almeida"
         },
         {
-          "nome": "Davide Luz",
-          "cognome": "Lombardi"
+          "nome": "Antonio",
+          "cognome": "Nunes"
+        },
+        {
+          "nome": "Joao",
+          "cognome": "Souza Nunes"
+        },
+        {
+          "nome": "Joao",
+          "cognome": "Pereira Souza"
         }
       ],
-      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo.",
-      "riassunto_linea_discendenza": "Francesca Carlo Leoni -> Giulia Conti -> Davide Luz Lombardi",
+      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo. Nel ricorso risultano varianti anagrafiche/pseudonimi: Pedro Almeida (alias: Pedro Almeid). Nel ricorso sono dichiarati i seguenti alias/pseudonimi: Juliana Rodrigueo.",
+      "riassunto_linea_discendenza": "Juliana Aparecida Rodrigues -> Pedro Almeida -> Antonio Nunes -> Joao Souza Nunes -> Joao Pereira Souza",
       "coerenza_linea_discendenza": "SI",
       "proveniente_dal_brasile": "SI",
-      "data_ricorso": "28-07-2025"
+      "data_ricorso": "30-03-2024"
     }
   },
   {
@@ -71,8 +72,8 @@
     "schema": {
       "soggetto": [
         {
-          "nome": "Davide Luz",
-          "cognome": "Lombardi-Silva",
+          "nome": "Joao",
+          "cognome": "Pereira Souza-Souza",
           "minorenne": "NO",
           "rappresentanti_legali": [],
           "firma_presente": "OK"
@@ -81,13 +82,17 @@
       "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "avvocati": [
         {
-          "nome": "Davide",
-          "cognome": "Lombardi"
+          "nome": "Beatriz",
+          "cognome": "Costa"
+        },
+        {
+          "nome": "Maria",
+          "cognome": "Ribeiro"
         }
       ],
       "tribunale_brescia_indicato": "OK",
       "tribunale_indicato": "Tribunale civile competente",
-      "data_procura": "10-01-2024",
+      "data_procura": "27-03-2024",
       "rilasciata_in_italia": "NO",
       "scritta_in_italiano": "NO"
     }
@@ -99,8 +104,8 @@
         "document_type": "Procura",
         "soggetto": [
           {
-            "nome": "Davide Luz",
-            "cognome": "Lombardi-Silva"
+            "nome": "Joao",
+            "cognome": "Pereira Souza-Souza"
           }
         ]
       }
@@ -113,26 +118,26 @@
         "document_type": "Procura",
         "soggetto": [
           {
-            "nome": "Davide Luz",
-            "cognome": "Lombardi-Silva"
+            "nome": "Joao",
+            "cognome": "Pereira Souza-Souza"
           }
         ]
       },
-      "sede_traduttore": "Estero"
+      "sede_traduttore": "Italia"
     }
   },
   {
-    "document_type": "Apostille",
+    "document_type": "Asseverazione",
     "schema": {
       "oggetto": {
         "document_type": "Traduzione",
+        "documento_originale": "Procura",
         "soggetto": [
           {
-            "nome": "Davide Luz",
-            "cognome": "Lombardi-Silva"
+            "nome": "Joao",
+            "cognome": "Pereira Souza-Souza"
           }
-        ],
-        "documento_originale": "Procura"
+        ]
       }
     }
   },
@@ -140,22 +145,22 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Francesca Carlo",
-        "cognome": "Leoni"
+        "nome": "Juliana Aparecida",
+        "cognome": "Rodrigues"
       },
       "tipo": "parrocchiale",
-      "timbro_diocesi": "OK",
+      "timbro_diocesi": "NO",
       "comune_nascita": "Bergamo",
       "provincia": "bergamo",
       "padre": {
-        "nome": "Francesca",
-        "cognome": "Leoni"
+        "nome": "Antonio",
+        "cognome": "Rodrigues"
       },
       "madre": {
-        "nome": "Chiara",
-        "cognome": "Costa"
+        "nome": "Juliana",
+        "cognome": "Lima"
       },
-      "data_nascita": "03-08-1927",
+      "data_nascita": "01-02-1929",
       "area_nascita": "A",
       "stato": "Italia"
     }
@@ -164,22 +169,22 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Giulia",
-        "cognome": "Conti"
+        "nome": "Pedro",
+        "cognome": "Almeida"
       },
       "tipo": "anagrafico",
       "timbro_diocesi": "OK",
-      "comune_nascita": "Rio de Janeiro",
+      "comune_nascita": "Brasilia",
       "provincia": "altro",
       "padre": {
-        "nome": "Paolo",
-        "cognome": "Neri"
+        "nome": "Mateus",
+        "cognome": "Nunes"
       },
       "madre": {
-        "nome": "Francesca Carlo",
-        "cognome": "Leoni"
+        "nome": "Juliana Aparecida",
+        "cognome": "Rodrigues"
       },
-      "data_nascita": "17-05-1955",
+      "data_nascita": "27-07-1978",
       "area_nascita": "E",
       "stato": "Brasile"
     }
@@ -191,8 +196,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Giulia",
-            "cognome": "Conti"
+            "nome": "Pedro",
+            "cognome": "Almeida"
           }
         ]
       }
@@ -205,76 +210,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Giulia",
-            "cognome": "Conti"
-          }
-        ]
-      },
-      "sede_traduttore": "Estero"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Traduzione",
-        "soggetto": [
-          {
-            "nome": "Giulia",
-            "cognome": "Conti"
-          }
-        ],
-        "documento_originale": "Atto di nascita"
-      }
-    }
-  },
-  {
-    "document_type": "Atto di nascita",
-    "schema": {
-      "soggetto": {
-        "nome": "Davide Luz",
-        "cognome": "Lombardi"
-      },
-      "tipo": "parrocchiale",
-      "timbro_diocesi": "OK",
-      "comune_nascita": "Recife",
-      "provincia": "altro",
-      "padre": {
-        "nome": "Luca",
-        "cognome": "Bianchi"
-      },
-      "madre": {
-        "nome": "Giulia",
-        "cognome": "Conti"
-      },
-      "data_nascita": "09-01-2002",
-      "area_nascita": "E",
-      "stato": "Brasile"
-    }
-  },
-  {
-    "document_type": "Apostille",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Davide Luz",
-            "cognome": "Lombardi"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
-        "document_type": "Atto di nascita",
-        "soggetto": [
-          {
-            "nome": "Davide Luz",
-            "cognome": "Lombardi"
+            "nome": "Pedro",
+            "cognome": "Almeida"
           }
         ]
       },
@@ -289,39 +226,46 @@
         "documento_originale": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Davide Luz",
-            "cognome": "Lombardi"
+            "nome": "Pedro",
+            "cognome": "Almeida"
           }
         ]
       }
     }
   },
   {
-    "document_type": "Certificato Negativo di Naturalizzazione",
+    "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Francesca Carlo",
-        "cognome": "Leoni"
+        "nome": "Antonio",
+        "cognome": "Nunes"
       },
-      "pseudonimi": [
-        {
-          "nome": "Francesca",
-          "cognome": "Leono"
-        }
-      ],
-      "formula_negativa_presente": "OK",
-      "data_nascita": "03-08-1927"
+      "tipo": "anagrafico",
+      "timbro_diocesi": "NO",
+      "comune_nascita": "Brasilia",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Pedro",
+        "cognome": "Almeida"
+      },
+      "madre": {
+        "nome": "Juliana",
+        "cognome": "Mendes"
+      },
+      "data_nascita": "29-12-1976",
+      "area_nascita": "E",
+      "stato": "Brasile"
     }
   },
   {
     "document_type": "Apostille",
     "schema": {
       "oggetto": {
-        "document_type": "Certificato Negativo di Naturalizzazione",
+        "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Francesca Carlo",
-            "cognome": "Leoni"
+            "nome": "Antonio",
+            "cognome": "Nunes"
           }
         ]
       }
@@ -331,11 +275,147 @@
     "document_type": "Traduzione",
     "schema": {
       "oggetto": {
-        "document_type": "Certificato Negativo di Naturalizzazione",
+        "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Francesca Carlo",
-            "cognome": "Leoni"
+            "nome": "Antonio",
+            "cognome": "Nunes"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Antonio",
+            "cognome": "Nunes"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Joao",
+        "cognome": "Souza Nunes"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Brasilia",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Antonio",
+        "cognome": "Nunes"
+      },
+      "madre": {
+        "nome": "Fernanda",
+        "cognome": "Rodrigues"
+      },
+      "data_nascita": "06-03-1944",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Joao",
+            "cognome": "Souza Nunes"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Joao",
+            "cognome": "Souza Nunes"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Joao",
+            "cognome": "Souza Nunes"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Joao",
+        "cognome": "Pereira Souza"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "NO",
+      "comune_nascita": "Recife",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Joao",
+        "cognome": "Souza Nunes"
+      },
+      "madre": {
+        "nome": "Camila",
+        "cognome": "Santos"
+      },
+      "data_nascita": "09-07-1946",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Joao",
+            "cognome": "Pereira Souza"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Joao",
+            "cognome": "Pereira Souza"
           }
         ]
       },
@@ -349,8 +429,69 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Francesca Carlo",
-            "cognome": "Leoni"
+            "nome": "Joao",
+            "cognome": "Pereira Souza"
+          }
+        ],
+        "documento_originale": "Atto di nascita"
+      }
+    }
+  },
+  {
+    "document_type": "Certificato Negativo di Naturalizzazione",
+    "schema": {
+      "soggetto": {
+        "nome": "Juliana Aparecida",
+        "cognome": "Rodrigues"
+      },
+      "pseudonimi": [
+        {
+          "nome": "Juliana",
+          "cognome": "Rodrigueo"
+        }
+      ],
+      "formula_negativa_presente": "OK",
+      "data_nascita": "01-02-1929"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato Negativo di Naturalizzazione",
+        "soggetto": [
+          {
+            "nome": "Juliana Aparecida",
+            "cognome": "Rodrigues"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato Negativo di Naturalizzazione",
+        "soggetto": [
+          {
+            "nome": "Juliana Aparecida",
+            "cognome": "Rodrigues"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Juliana Aparecida",
+            "cognome": "Rodrigues"
           }
         ],
         "documento_originale": "Certificato Negativo di Naturalizzazione"

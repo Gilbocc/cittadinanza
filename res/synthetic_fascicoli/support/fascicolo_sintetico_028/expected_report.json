@@ -16,83 +16,65 @@
     "1": "OK"
   },
   "2": {
-    "A": "04.12.2025",
+    "A": "20.06.2025",
     "B": "OK",
     "C": "KO",
-    "D": "SI",
-    "Di": "12.04.2024",
+    "D": "NO",
+    "Di": "NULL",
     "E": "SI",
-    "Ei": "06.05.2024",
+    "Ei": "16.05.2025",
     "F": "NO",
     "Fi": "NULL",
     "Fii": "NULL",
     "Fiii": "NULL",
-    "G": "0553-2024"
+    "G": "0445-2025"
   },
   "3": {
-    "A": "Sara Marini",
-    "B": 2,
-    "C": "Giulia Conti, Marco Moretti",
-    "D": "Giulia Conti: Brasiliana, Marco Moretti: Brasiliana",
+    "A": "Ana Cardoso, Fernanda Silva",
+    "B": 1,
+    "C": "Jose Carlos Mendes",
+    "D": "Jose Carlos Mendes: Brasiliana",
     "E": "NO",
     "Ei": "NULL",
     "Eii": "NULL",
-    "F": "OK; Elena Carlo Rossi -> Sara Luz Marini -> Marco Moretti -> Giulia Conti",
+    "F": "OK; Antonio Paulo Souza -> Patricia Maria Oliveira -> Jose Carlos Mendes",
     "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
     "Gi": "NULL"
   },
   "4": {
     "4/1": {
-      "A": "Giulia Conti",
+      "A": "Jose Carlos Mendes",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Giulia Conti",
+      "B": "OK; firma del ricorrente Jose Carlos Mendes",
       "C": "OK",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "E": "OK",
       "Ei": "NULL",
-      "F": "12.03.2024",
+      "F": "06.07.2024",
       "G": "OK",
       "H": "NO",
       "Hi": "OK",
       "I": "NO",
-      "Ii": "OK",
-      "Iii": "OK",
-      "Iiii": "NULL",
-      "Iiv": "OK"
-    },
-    "4/2": {
-      "A": "Marco Moretti",
-      "Ai": "NULL",
-      "B": "OK; firma del ricorrente Marco Moretti",
-      "C": "OK",
-      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
-      "E": "OK",
-      "Ei": "NULL",
-      "F": "03.11.2024",
-      "G": "OK",
-      "H": "NO",
-      "Hi": "OK",
-      "I": "OK",
-      "Ii": "NULL",
+      "Ii": "KO",
       "Iii": "NULL",
       "Iiii": "NULL",
       "Iiv": "NULL"
     }
   },
   "5": {
-    "A": "OK",
-    "Ai": "NULL",
+    "A": "NO",
+    "Ai": "OK",
     "C": "Brescia",
     "D": "OK",
-    "E": "Padre: Sara Marini, Madre: Matteo Gallo",
-    "F": "09.10.1856"
+    "E": "Padre: Rafael Oliveira, Madre: Ana Pereira",
+    "F": "22.12.1853"
   },
   "6": {
     "A": "NO",
     "Ai": "NULL",
     "Aii": "NULL",
     "Aiii": "NULL",
-    "C": "14.10.1956",
+    "C": "08.05.1945",
     "D": "OK",
     "Di": "NULL",
     "Dii": "NULL",
@@ -104,7 +86,7 @@
   },
   "7": {
     "A": "OK",
-    "B": "Elena Rosso",
+    "B": "Antonio Souzo",
     "C": "OK",
     "D": "OK",
     "E": "OK",
@@ -113,23 +95,15 @@
   },
   "8": {
     "8/1": {
-      "A": "Sara Luz Marini",
-      "B": "OK",
-      "C": "OK",
-      "D": "OK",
-      "Di": "NULL",
-      "Dii": "OK"
-    },
-    "8/2": {
-      "A": "Marco Moretti",
+      "A": "Patricia Maria Oliveira",
       "B": "OK",
       "C": "OK",
       "D": "OK",
       "Di": "OK",
       "Dii": "NULL"
     },
-    "8/3": {
-      "A": "Giulia Conti",
+    "8/2": {
+      "A": "Jose Carlos Mendes",
       "B": "OK",
       "C": "OK",
       "D": "OK",
@@ -138,9 +112,11 @@
     }
   },
   "10": [
-    "2C"
+    "2C",
+    "4/1Ii"
   ],
   "11": {
-    "2C": "Il ricorso non risulta iscritto prima del 27.03.2025 escluso"
+    "2C": "Il ricorso non risulta iscritto prima del 27.03.2025 escluso",
+    "4/1Ii": "Traduzione italiana mancante per la procura di Jose Carlos Mendes"
   }
 }

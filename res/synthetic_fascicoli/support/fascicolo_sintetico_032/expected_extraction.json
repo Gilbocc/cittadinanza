@@ -2,14 +2,14 @@
   {
     "document_type": "IndiceProcedimento.html",
     "schema": {
-      "numero_anno_ruolo": "910/2025",
-      "data_iscrizione": "23-03-2025",
+      "numero_anno_ruolo": "436/2025",
+      "data_iscrizione": "06-04-2025",
       "iscrizione_post_28_02_2023": "OK",
-      "iscrizione_pre_27_03_2025": "OK",
+      "iscrizione_pre_27_03_2025": "KO",
       "comparsa_avvocatura": "NO",
-      "data_comparsa_avvocatura": "27-06-2024",
+      "data_comparsa_avvocatura": "05-06-2024",
       "visibilita_pm": "NO",
-      "data_visibilita_pm": "29-07-2025",
+      "data_visibilita_pm": "08-01-2025",
       "interventi": "NO",
       "numero_interventi": 0,
       "intervenuti": []
@@ -20,15 +20,19 @@
     "schema": {
       "avvocati": [
         {
-          "nome": "Sara",
-          "cognome": "Marini"
+          "nome": "Maria",
+          "cognome": "Rodrigues"
+        },
+        {
+          "nome": "Maria",
+          "cognome": "Souza"
         }
       ],
       "numero_ricorrenti": 1,
       "ricorrenti_maggiorenni": [
         {
-          "nome": "Francesca Ana",
-          "cognome": "Leoni",
+          "nome": "Jose",
+          "cognome": "Costa-Souza",
           "nazionalita": "Brasiliana"
         }
       ],
@@ -36,23 +40,23 @@
       "ricorrenti_per_matrimonio": [],
       "linea_discendenza": [
         {
-          "nome": "Francesca Carlo",
-          "cognome": "Leoni"
+          "nome": "Ana Maria",
+          "cognome": "Costa"
         },
         {
-          "nome": "Paolo",
-          "cognome": "Neri"
+          "nome": "Diego",
+          "cognome": "Almeida-Costa"
         },
         {
-          "nome": "Francesca Ana",
-          "cognome": "Leoni"
+          "nome": "Jose",
+          "cognome": "Costa"
         }
       ],
-      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo.",
-      "riassunto_linea_discendenza": "Francesca Carlo Leoni -> Paolo Neri -> Francesca Ana Leoni",
+      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo. Nel ricorso sono dichiarati i seguenti alias/pseudonimi: Ana Costo.",
+      "riassunto_linea_discendenza": "Ana Maria Costa -> Diego Almeida-Costa -> Jose Costa",
       "coerenza_linea_discendenza": "SI",
       "proveniente_dal_brasile": "SI",
-      "data_ricorso": "16-08-2024"
+      "data_ricorso": "30-12-2025"
     }
   },
   {
@@ -60,8 +64,8 @@
     "schema": {
       "soggetto": [
         {
-          "nome": "Francesca Ana",
-          "cognome": "Leoni",
+          "nome": "Jose",
+          "cognome": "Costa-Souza",
           "minorenne": "NO",
           "rappresentanti_legali": [],
           "firma_presente": "OK"
@@ -70,15 +74,33 @@
       "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "avvocati": [
         {
-          "nome": "Sara",
-          "cognome": "Marini"
+          "nome": "Maria",
+          "cognome": "Rodrigues"
+        },
+        {
+          "nome": "Maria",
+          "cognome": "Souza"
         }
       ],
       "tribunale_brescia_indicato": "OK",
       "tribunale_indicato": "Tribunale civile competente",
-      "data_procura": "06-04-2024",
+      "data_procura": "03-01-2025",
       "rilasciata_in_italia": "NO",
       "scritta_in_italiano": "NO"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Procura",
+        "soggetto": [
+          {
+            "nome": "Jose",
+            "cognome": "Costa-Souza"
+          }
+        ]
+      }
     }
   },
   {
@@ -88,26 +110,26 @@
         "document_type": "Procura",
         "soggetto": [
           {
-            "nome": "Francesca Ana",
-            "cognome": "Leoni"
+            "nome": "Jose",
+            "cognome": "Costa-Souza"
           }
         ]
       },
-      "sede_traduttore": "Italia"
+      "sede_traduttore": "Estero"
     }
   },
   {
-    "document_type": "Asseverazione",
+    "document_type": "Apostille",
     "schema": {
       "oggetto": {
         "document_type": "Traduzione",
-        "documento_originale": "Procura",
         "soggetto": [
           {
-            "nome": "Francesca Ana",
-            "cognome": "Leoni"
+            "nome": "Jose",
+            "cognome": "Costa-Souza"
           }
-        ]
+        ],
+        "documento_originale": "Procura"
       }
     }
   },
@@ -115,22 +137,22 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Francesca Carlo",
-        "cognome": "Leoni"
+        "nome": "Ana Maria",
+        "cognome": "Costa"
       },
       "tipo": "parrocchiale",
-      "timbro_diocesi": "NO",
-      "comune_nascita": "Bergamo",
-      "provincia": "bergamo",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Mantova",
+      "provincia": "mantova",
       "padre": {
-        "nome": "Matteo",
-        "cognome": "Gallo"
+        "nome": "Pedro",
+        "cognome": "Ribeiro"
       },
       "madre": {
-        "nome": "Marco",
-        "cognome": "Moretti"
+        "nome": "Beatriz",
+        "cognome": "Almeida"
       },
-      "data_nascita": "07-04-1940",
+      "data_nascita": "12-07-1889",
       "area_nascita": "A",
       "stato": "Italia"
     }
@@ -139,22 +161,22 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Francesca Ana",
-        "cognome": "Leoni"
+        "nome": "Diego",
+        "cognome": "Almeida-Costa"
       },
       "tipo": "anagrafico",
       "timbro_diocesi": "OK",
-      "comune_nascita": "Salvador",
+      "comune_nascita": "Fortaleza",
       "provincia": "altro",
       "padre": {
-        "nome": "Sara",
-        "cognome": "Marini"
+        "nome": "Carlos",
+        "cognome": "Araujo"
       },
       "madre": {
-        "nome": "Paolo",
-        "cognome": "Neri"
+        "nome": "Ana Maria",
+        "cognome": "Costa"
       },
-      "data_nascita": "07-07-1974",
+      "data_nascita": "22-02-2004",
       "area_nascita": "E",
       "stato": "Brasile"
     }
@@ -166,8 +188,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Francesca Ana",
-            "cognome": "Leoni"
+            "nome": "Diego",
+            "cognome": "Almeida-Costa"
           }
         ]
       }
@@ -180,8 +202,76 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Francesca Ana",
-            "cognome": "Leoni"
+            "nome": "Diego",
+            "cognome": "Almeida-Costa"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Diego",
+            "cognome": "Almeida-Costa"
+          }
+        ],
+        "documento_originale": "Atto di nascita"
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Jose",
+        "cognome": "Costa"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "NO",
+      "comune_nascita": "Recife",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Diego",
+        "cognome": "Almeida-Costa"
+      },
+      "madre": {
+        "nome": "Fernanda",
+        "cognome": "Ribeiro"
+      },
+      "data_nascita": "21-03-1986",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Jose",
+            "cognome": "Costa"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Jose",
+            "cognome": "Costa"
           }
         ]
       },
@@ -196,8 +286,8 @@
         "documento_originale": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Francesca Ana",
-            "cognome": "Leoni"
+            "nome": "Jose",
+            "cognome": "Costa"
           }
         ]
       }
@@ -207,17 +297,17 @@
     "document_type": "Certificato Negativo di Naturalizzazione",
     "schema": {
       "soggetto": {
-        "nome": "Francesca Carlo",
-        "cognome": "Leoni"
+        "nome": "Ana Maria",
+        "cognome": "Costa"
       },
       "pseudonimi": [
         {
-          "nome": "Francesca",
-          "cognome": "Leono"
+          "nome": "Ana",
+          "cognome": "Costo"
         }
       ],
       "formula_negativa_presente": "OK",
-      "data_nascita": "07-04-1940"
+      "data_nascita": "12-07-1889"
     }
   },
   {
@@ -227,8 +317,8 @@
         "document_type": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Francesca Carlo",
-            "cognome": "Leoni"
+            "nome": "Ana Maria",
+            "cognome": "Costa"
           }
         ]
       }
@@ -241,8 +331,8 @@
         "document_type": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Francesca Carlo",
-            "cognome": "Leoni"
+            "nome": "Ana Maria",
+            "cognome": "Costa"
           }
         ]
       },
@@ -256,8 +346,8 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Francesca Carlo",
-            "cognome": "Leoni"
+            "nome": "Ana Maria",
+            "cognome": "Costa"
           }
         ],
         "documento_originale": "Certificato Negativo di Naturalizzazione"

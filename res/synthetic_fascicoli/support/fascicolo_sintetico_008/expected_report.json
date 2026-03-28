@@ -16,41 +16,41 @@
     "1": "OK"
   },
   "2": {
-    "A": "04.07.2024",
+    "A": "18.05.2024",
     "B": "OK",
     "C": "OK",
-    "D": "NO",
-    "Di": "NULL",
+    "D": "SI",
+    "Di": "14.12.2025",
     "E": "NO",
     "Ei": "NULL",
     "F": "NO",
     "Fi": "NULL",
     "Fii": "NULL",
     "Fiii": "NULL",
-    "G": "0699-2025"
+    "G": "0497-2025"
   },
   "3": {
-    "A": "Francesca Leoni",
-    "B": 1,
-    "C": "Marco Moretti",
-    "D": "Marco Moretti: Brasiliana",
+    "A": "Carolina Barbosa",
+    "B": 2,
+    "C": "Carlos Silva Ribeiro, Mateus Ribeiro",
+    "D": "Carlos Silva Ribeiro: Brasiliana, Mateus Ribeiro: Brasiliana",
     "E": "NO",
     "Ei": "NULL",
     "Eii": "NULL",
-    "F": "OK; Sara Carlo Marini -> Luca Bianchi -> Matteo Gallo -> Marco Moretti",
-    "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
-    "Gi": "NULL"
+    "F": "OK; Ana Luz Cardoso -> Paulo Carlos Nunes -> Renata Rodrigues -> Antonio Luis Almeida-Rodrigues -> Mateus Ribeiro -> Carlos Silva Ribeiro",
+    "G": "KO; Ricorrenti per matrimonio presenti",
+    "Gi": "Carlos Almeida"
   },
   "4": {
     "4/1": {
-      "A": "Marco Moretti",
+      "A": "Carlos Silva Ribeiro",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Marco Moretti",
+      "B": "OK; firma del ricorrente Carlos Silva Ribeiro",
       "C": "OK",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "E": "OK",
       "Ei": "NULL",
-      "F": "17.06.2024",
+      "F": "05.02.2024",
       "G": "OK",
       "H": "NO",
       "Hi": "OK",
@@ -59,15 +59,33 @@
       "Iii": "NO",
       "Iiii": "OK",
       "Iiv": "NULL"
+    },
+    "4/2": {
+      "A": "Mateus Ribeiro",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Mateus Ribeiro",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "NO",
+      "Ei": "Tribunale civile competente",
+      "F": "31.01.2024",
+      "G": "OK",
+      "H": "NO",
+      "Hi": "OK",
+      "I": "NO",
+      "Ii": "KO",
+      "Iii": "NULL",
+      "Iiii": "NULL",
+      "Iiv": "NULL"
     }
   },
   "5": {
     "A": "OK",
     "Ai": "NULL",
-    "C": "Mantova",
+    "C": "Cremona",
     "D": "OK",
-    "E": "Padre: Chiara Costa, Madre: Matteo Gallo",
-    "F": "04.01.1928"
+    "E": "Padre: Jose Araujo, Madre: Camila Nunes",
+    "F": "02.12.1891"
   },
   "6": {
     "A": "OK",
@@ -86,7 +104,7 @@
   },
   "7": {
     "A": "OK",
-    "B": "Sara Marino",
+    "B": "NULL",
     "C": "OK",
     "D": "OK",
     "E": "OK",
@@ -95,15 +113,15 @@
   },
   "8": {
     "8/1": {
-      "A": "Luca Bianchi",
+      "A": "Paulo Carlos Nunes",
       "B": "OK",
       "C": "OK",
       "D": "OK",
-      "Di": "OK",
-      "Dii": "NULL"
+      "Di": "NULL",
+      "Dii": "OK"
     },
     "8/2": {
-      "A": "Matteo Gallo",
+      "A": "Renata Rodrigues",
       "B": "OK",
       "C": "OK",
       "D": "OK",
@@ -111,7 +129,23 @@
       "Dii": "OK"
     },
     "8/3": {
-      "A": "Marco Moretti",
+      "A": "Antonio Luis Almeida-Rodrigues",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
+    },
+    "8/4": {
+      "A": "Mateus Ribeiro",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
+    },
+    "8/5": {
+      "A": "Carlos Silva Ribeiro",
       "B": "OK",
       "C": "OK",
       "D": "OK",
@@ -119,6 +153,12 @@
       "Dii": "NULL"
     }
   },
-  "10": null,
-  "11": null
+  "10": [
+    "3G",
+    "4/2Ii"
+  ],
+  "11": {
+    "3G": "Ricorrenti che chiedono la cittadinanza per matrimonio: Carlos Almeida",
+    "4/2Ii": "Traduzione italiana mancante per la procura di Mateus Ribeiro"
+  }
 }

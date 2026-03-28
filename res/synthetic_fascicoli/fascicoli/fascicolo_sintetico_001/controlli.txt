@@ -16,112 +16,94 @@
     "1": "OK"
   },
   "2": {
-    "A": "26.09.2024",
+    "A": "27.06.2025",
     "B": "OK",
-    "C": "OK",
-    "D": "NO",
-    "Di": "NULL",
-    "E": "SI",
-    "Ei": "21.05.2024",
+    "C": "KO",
+    "D": "SI",
+    "Di": "24.04.2024",
+    "E": "NO",
+    "Ei": "NULL",
     "F": "NO",
     "Fi": "NULL",
     "Fii": "NULL",
     "Fiii": "NULL",
-    "G": "0864-2025"
+    "G": "0100-2025"
   },
   "3": {
-    "A": "Davide Lombardi",
-    "B": 2,
-    "C": "Chiara Ana Costa, Paolo Neri",
-    "D": "Chiara Ana Costa: Brasiliana, Paolo Neri: Brasiliana",
+    "A": "Mateus Silva, Carolina Santos",
+    "B": 1,
+    "C": "Carolina Luz Lima",
+    "D": "Carolina Luz Lima: Carolina Luz Lima",
     "E": "NO",
     "Ei": "NULL",
     "Eii": "NULL",
-    "F": "OK; Matteo Luigi Gallo, Giulia Conti, Sara Marini, Francesca Joao Leoni, Paolo Neri, Chiara Ana Costa",
+    "F": "OK; Marcos Paulo Rodrigues -> Carolina Costa -> Jose Araujo -> Ana Costa -> Carolina Ana Cardoso -> Carolina Luz Lima",
     "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
     "Gi": "NULL"
   },
   "4": {
     "4/1": {
-      "A": "Chiara Ana Costa",
+      "A": "Carolina Luz Lima",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Chiara Ana Costa",
-      "C": "KO",
-      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
-      "E": "OK",
-      "Ei": "NULL",
-      "F": "11.01.2024",
-      "G": "OK",
-      "H": "NO",
-      "Hi": "OK",
-      "I": "OK",
-      "Ii": "NULL",
-      "Iii": "NULL",
-      "Iiii": "NULL",
-      "Iiv": "NULL"
-    },
-    "4/2": {
-      "A": "Paolo Neri",
-      "Ai": "NULL",
-      "B": "OK; firma del ricorrente Paolo Neri",
+      "B": "OK; firma del ricorrente Carolina Luz Lima",
       "C": "OK",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "E": "OK",
       "Ei": "NULL",
-      "F": "25.01.2024",
+      "F": "29.09.2024",
       "G": "OK",
       "H": "NO",
-      "Hi": "OK",
-      "I": "OK",
-      "Ii": "NULL",
-      "Iii": "NULL",
+      "Hi": "KO",
+      "I": "NO",
+      "Ii": "OK",
+      "Iii": "OK",
       "Iiii": "NULL",
-      "Iiv": "NULL"
+      "Iiv": "OK"
     }
   },
   "5": {
     "A": "OK",
     "Ai": "NULL",
-    "C": "Cremona",
+    "C": "Bergamo",
     "D": "OK",
-    "E": "Padre: Davide Lombardi, Madre: Chiara Costa",
-    "F": "28.03.1857"
+    "E": "Padre: Carlos Araujo, Madre: Beatriz Nunes",
+    "F": "03.01.1908"
   },
   "6": {
-    "A": "NO",
+    "A": "OK",
     "Ai": "NULL",
     "Aii": "NULL",
     "Aiii": "NULL",
-    "C": "07.03.1955",
-    "D": "OK",
+    "C": "NULL",
+    "D": "NULL",
     "Di": "NULL",
     "Dii": "NULL",
     "Diii": "NULL",
-    "E": "OK",
-    "F": "OK",
-    "Fi": "OK",
+    "E": "NULL",
+    "F": "NULL",
+    "Fi": "NULL",
     "Fii": "NULL"
   },
   "7": {
     "A": "OK",
-    "B": "Matteo Gallo",
+    "B": "Marcos Rodriguo",
     "C": "OK",
     "D": "OK",
     "E": "OK",
-    "Ei": "NULL",
-    "Eii": "OK"
+    "Ei": "OK",
+    "Eii": "NULL"
   },
   "8": {
     "8/1": {
-      "A": "Giulia Conti",
+      "A": "Carolina Costa",
       "B": "OK",
       "C": "OK",
       "D": "OK",
-      "Di": "OK",
-      "Dii": "NULL"
+      "Di": "NULL",
+      "Dii": "OK"
     },
     "8/2": {
-      "A": "Sara Marini",
+      "A": "Jose Araujo",
       "B": "OK",
       "C": "OK",
       "D": "OK",
@@ -129,7 +111,7 @@
       "Dii": "OK"
     },
     "8/3": {
-      "A": "Francesca Joao Leoni",
+      "A": "Ana Costa",
       "B": "OK",
       "C": "OK",
       "D": "OK",
@@ -137,26 +119,28 @@
       "Dii": "NULL"
     },
     "8/4": {
-      "A": "Paolo Neri",
+      "A": "Carolina Ana Cardoso",
       "B": "OK",
       "C": "OK",
       "D": "OK",
-      "Di": "NULL",
-      "Dii": "OK"
+      "Di": "OK",
+      "Dii": "NULL"
     },
     "8/5": {
-      "A": "Chiara Ana Costa",
+      "A": "Carolina Luz Lima",
       "B": "OK",
       "C": "OK",
       "D": "OK",
-      "Di": "NULL",
-      "Dii": "OK"
+      "Di": "OK",
+      "Dii": "NULL"
     }
   },
   "10": [
-    "4/1C"
+    "2C",
+    "4/1Hi"
   ],
   "11": {
-    "4/1C": "Gli avvocati indicati nella procura di Chiara Ana Costa non coincidono con quelli del ricorso"
+    "2C": "Il ricorso non risulta iscritto prima del 27.03.2025 escluso",
+    "4/1Hi": "Apostille mancante per la procura estera di Carolina Luz Lima"
   }
 }

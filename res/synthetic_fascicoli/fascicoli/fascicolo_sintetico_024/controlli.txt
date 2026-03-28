@@ -7,8 +7,8 @@
     "D": "OK",
     "E": "OK",
     "F": "OK",
-    "G": "OK",
-    "Gi": "NULL",
+    "G": "KO",
+    "Gi": "Larissa Luz Costa",
     "H": "OK",
     "Hi": "NULL"
   },
@@ -16,42 +16,60 @@
     "1": "OK"
   },
   "2": {
-    "A": "19.04.2024",
+    "A": "27.02.2024",
     "B": "OK",
     "C": "OK",
     "D": "NO",
     "Di": "NULL",
     "E": "SI",
-    "Ei": "03.10.2024",
+    "Ei": "26.06.2024",
     "F": "NO",
     "Fi": "NULL",
     "Fii": "NULL",
     "Fiii": "NULL",
-    "G": "0193-2024"
+    "G": "0882-2024"
   },
   "3": {
-    "A": "Elena Rossi, Marco Moretti",
-    "B": 1,
-    "C": "Marco Moretti",
-    "D": "Marco Moretti: Brasiliana",
+    "A": "Pedro Souza",
+    "B": 2,
+    "C": "Renata Souza-Silva, Paulo Silva",
+    "D": "Renata Souza-Silva: Brasiliana, Paulo Silva: Brasiliana",
     "E": "NO",
     "Ei": "NULL",
     "Eii": "NULL",
-    "F": "OK; Matteo Luigi Gallo -> Paolo Neri -> Marco Moretti",
+    "F": "OK; Marcos Paulo Souza -> Rafael Carlos Cardoso -> Beatriz Nunes-Cardoso -> Larissa Luz Costa -> Paulo Silva -> Renata Souza-Silva",
     "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
     "Gi": "NULL"
   },
   "4": {
     "4/1": {
-      "A": "Marco Moretti",
+      "A": "Renata Souza-Silva",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Marco Moretti",
+      "B": "OK; firma del ricorrente Renata Souza-Silva",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "NO",
+      "Ei": "Tribunale civile competente",
+      "F": "26.12.2024",
+      "G": "OK",
+      "H": "NO",
+      "Hi": "KO",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
+      "Iiii": "NULL",
+      "Iiv": "NULL"
+    },
+    "4/2": {
+      "A": "Paulo Silva",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Paulo Silva",
       "C": "OK",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "E": "OK",
       "Ei": "NULL",
-      "F": "26.03.2025",
-      "G": "KO",
+      "F": "11.07.2024",
+      "G": "OK",
       "H": "NO",
       "Hi": "OK",
       "I": "NO",
@@ -62,59 +80,91 @@
     }
   },
   "5": {
-    "A": "NO",
-    "Ai": "OK",
-    "C": "Brescia",
+    "A": "OK",
+    "Ai": "NULL",
+    "C": "Mantova",
     "D": "OK",
-    "E": "Padre: Elena Rossi, Madre: Francesca Leoni",
-    "F": "11.09.1848"
+    "E": "Padre: Mateus Nunes, Madre: Patricia Oliveira",
+    "F": "06.04.1909"
   },
   "6": {
-    "A": "NO",
+    "A": "OK",
     "Ai": "NULL",
     "Aii": "NULL",
     "Aiii": "NULL",
-    "C": "02.04.1948",
-    "D": "OK",
+    "C": "NULL",
+    "D": "NULL",
     "Di": "NULL",
     "Dii": "NULL",
     "Diii": "NULL",
-    "E": "OK",
-    "F": "OK",
-    "Fi": "OK",
+    "E": "NULL",
+    "F": "NULL",
+    "Fi": "NULL",
     "Fii": "NULL"
   },
   "7": {
     "A": "OK",
-    "B": "Matteo Gallo",
+    "B": "NULL",
     "C": "OK",
     "D": "OK",
     "E": "OK",
-    "Ei": "OK",
-    "Eii": "NULL"
+    "Ei": "NULL",
+    "Eii": "OK"
   },
   "8": {
     "8/1": {
-      "A": "Paolo Neri",
+      "A": "Rafael Carlos Cardoso",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/2": {
+      "A": "Beatriz Nunes-Cardoso",
       "B": "OK",
       "C": "OK",
       "D": "OK",
       "Di": "OK",
       "Dii": "NULL"
     },
-    "8/2": {
-      "A": "Marco Moretti",
+    "8/3": {
+      "A": "Larissa Luz Costa",
+      "B": "KO",
+      "C": "KO",
+      "D": "KO",
+      "Di": "NULL",
+      "Dii": "NULL"
+    },
+    "8/4": {
+      "A": "Paulo Silva",
       "B": "OK",
       "C": "OK",
       "D": "OK",
-      "Di": "OK",
-      "Dii": "NULL"
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/5": {
+      "A": "Renata Souza-Silva",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
     }
   },
   "10": [
-    "4/1G"
+    "0G",
+    "4/1Hi",
+    "8/3B",
+    "8/3C",
+    "8/3D"
   ],
   "11": {
-    "4/1G": "La data della procura di Marco Moretti non è anteriore alla data del ricorso"
+    "0G": "Atti di nascita dei discendenti mancanti: Larissa Luz Costa",
+    "4/1Hi": "Apostille mancante per la procura estera di Renata Souza-Silva",
+    "8/3B": "Atto di nascita non trovato per Larissa Luz Costa",
+    "8/3C": "Impossibile verificare l'apostille dell'atto di nascita di Larissa Luz Costa perché l'atto manca",
+    "8/3D": "Impossibile verificare la traduzione dell'atto di nascita di Larissa Luz Costa perché l'atto manca"
   }
 }

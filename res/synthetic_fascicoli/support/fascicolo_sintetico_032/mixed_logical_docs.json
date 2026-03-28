@@ -2,14 +2,14 @@
   {
     "document_type": "IndiceProcedimento.html",
     "schema": {
-      "numero_anno_ruolo": "910/2025",
-      "data_iscrizione": "23-03-2025",
+      "numero_anno_ruolo": "436/2025",
+      "data_iscrizione": "06-04-2025",
       "iscrizione_post_28_02_2023": "OK",
-      "iscrizione_pre_27_03_2025": "OK",
+      "iscrizione_pre_27_03_2025": "KO",
       "comparsa_avvocatura": "NO",
-      "data_comparsa_avvocatura": "27-06-2024",
+      "data_comparsa_avvocatura": "05-06-2024",
       "visibilita_pm": "NO",
-      "data_visibilita_pm": "29-07-2025",
+      "data_visibilita_pm": "08-01-2025",
       "interventi": "NO",
       "numero_interventi": 0,
       "intervenuti": []
@@ -20,15 +20,19 @@
     "schema": {
       "avvocati": [
         {
-          "nome": "Sara",
-          "cognome": "Marini"
+          "nome": "Maria",
+          "cognome": "Rodrigues"
+        },
+        {
+          "nome": "Maria",
+          "cognome": "Souza"
         }
       ],
       "numero_ricorrenti": 1,
       "ricorrenti_maggiorenni": [
         {
-          "nome": "Francesca Ana",
-          "cognome": "Leoni",
+          "nome": "Jose",
+          "cognome": "Costa-Souza",
           "nazionalita": "Brasiliana"
         }
       ],
@@ -36,23 +40,23 @@
       "ricorrenti_per_matrimonio": [],
       "linea_discendenza": [
         {
-          "nome": "Francesca Carlo",
-          "cognome": "Leoni"
+          "nome": "Ana Maria",
+          "cognome": "Costa"
         },
         {
-          "nome": "Paolo",
-          "cognome": "Neri"
+          "nome": "Diego",
+          "cognome": "Almeida-Costa"
         },
         {
-          "nome": "Francesca Ana",
-          "cognome": "Leoni"
+          "nome": "Jose",
+          "cognome": "Costa"
         }
       ],
-      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo.",
-      "riassunto_linea_discendenza": "Francesca Carlo Leoni -> Paolo Neri -> Francesca Ana Leoni",
+      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo. Nel ricorso sono dichiarati i seguenti alias/pseudonimi: Ana Costo.",
+      "riassunto_linea_discendenza": "Ana Maria Costa -> Diego Almeida-Costa -> Jose Costa",
       "coerenza_linea_discendenza": "SI",
       "proveniente_dal_brasile": "SI",
-      "data_ricorso": "16-08-2024"
+      "data_ricorso": "30-12-2025"
     }
   },
   {
@@ -60,8 +64,8 @@
     "schema": {
       "soggetto": [
         {
-          "nome": "Francesca Ana",
-          "cognome": "Leoni",
+          "nome": "Jose",
+          "cognome": "Costa-Souza",
           "minorenne": "NO",
           "rappresentanti_legali": [],
           "firma_presente": "OK"
@@ -70,15 +74,33 @@
       "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "avvocati": [
         {
-          "nome": "Sara",
-          "cognome": "Marini"
+          "nome": "Maria",
+          "cognome": "Rodrigues"
+        },
+        {
+          "nome": "Maria",
+          "cognome": "Souza"
         }
       ],
       "tribunale_brescia_indicato": "OK",
       "tribunale_indicato": "Tribunale civile competente",
-      "data_procura": "06-04-2024",
+      "data_procura": "03-01-2025",
       "rilasciata_in_italia": "NO",
       "scritta_in_italiano": "NO"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Procura",
+        "soggetto": [
+          {
+            "nome": "Jose",
+            "cognome": "Costa-Souza"
+          }
+        ]
+      }
     }
   },
   {
@@ -88,26 +110,26 @@
         "document_type": "Procura",
         "soggetto": [
           {
-            "nome": "Francesca Ana",
-            "cognome": "Leoni"
+            "nome": "Jose",
+            "cognome": "Costa-Souza"
           }
         ]
       },
-      "sede_traduttore": "Italia"
+      "sede_traduttore": "Estero"
     }
   },
   {
-    "document_type": "Asseverazione",
+    "document_type": "Apostille",
     "schema": {
       "oggetto": {
         "document_type": "Traduzione",
-        "documento_originale": "Procura",
         "soggetto": [
           {
-            "nome": "Francesca Ana",
-            "cognome": "Leoni"
+            "nome": "Jose",
+            "cognome": "Costa-Souza"
           }
-        ]
+        ],
+        "documento_originale": "Procura"
       }
     }
   },
@@ -115,22 +137,22 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Francesca Carlo",
-        "cognome": "Leoni"
+        "nome": "Ana Maria",
+        "cognome": "Costa"
       },
       "tipo": "parrocchiale",
-      "timbro_diocesi": "NO",
-      "comune_nascita": "Bergamo",
-      "provincia": "bergamo",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Mantova",
+      "provincia": "mantova",
       "padre": {
-        "nome": "Matteo",
-        "cognome": "Gallo"
+        "nome": "Pedro",
+        "cognome": "Ribeiro"
       },
       "madre": {
-        "nome": "Marco",
-        "cognome": "Moretti"
+        "nome": "Beatriz",
+        "cognome": "Almeida"
       },
-      "data_nascita": "07-04-1940",
+      "data_nascita": "12-07-1889",
       "area_nascita": "A",
       "stato": "Italia"
     }
@@ -139,22 +161,22 @@
     "document_type": "Atto di nascita",
     "schema": {
       "soggetto": {
-        "nome": "Francesca Ana",
-        "cognome": "Leoni"
+        "nome": "Diego",
+        "cognome": "Almeida-Costa"
       },
       "tipo": "anagrafico",
       "timbro_diocesi": "OK",
-      "comune_nascita": "Salvador",
+      "comune_nascita": "Fortaleza",
       "provincia": "altro",
       "padre": {
-        "nome": "Sara",
-        "cognome": "Marini"
+        "nome": "Carlos",
+        "cognome": "Araujo"
       },
       "madre": {
-        "nome": "Paolo",
-        "cognome": "Neri"
+        "nome": "Ana Maria",
+        "cognome": "Costa"
       },
-      "data_nascita": "07-07-1974",
+      "data_nascita": "22-02-2004",
       "area_nascita": "E",
       "stato": "Brasile"
     }
@@ -166,8 +188,8 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Francesca Ana",
-            "cognome": "Leoni"
+            "nome": "Diego",
+            "cognome": "Almeida-Costa"
           }
         ]
       }
@@ -180,8 +202,76 @@
         "document_type": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Francesca Ana",
-            "cognome": "Leoni"
+            "nome": "Diego",
+            "cognome": "Almeida-Costa"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Diego",
+            "cognome": "Almeida-Costa"
+          }
+        ],
+        "documento_originale": "Atto di nascita"
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Jose",
+        "cognome": "Costa"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "NO",
+      "comune_nascita": "Recife",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Diego",
+        "cognome": "Almeida-Costa"
+      },
+      "madre": {
+        "nome": "Fernanda",
+        "cognome": "Ribeiro"
+      },
+      "data_nascita": "21-03-1986",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Jose",
+            "cognome": "Costa"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Jose",
+            "cognome": "Costa"
           }
         ]
       },
@@ -196,8 +286,8 @@
         "documento_originale": "Atto di nascita",
         "soggetto": [
           {
-            "nome": "Francesca Ana",
-            "cognome": "Leoni"
+            "nome": "Jose",
+            "cognome": "Costa"
           }
         ]
       }
@@ -207,17 +297,17 @@
     "document_type": "Certificato Negativo di Naturalizzazione",
     "schema": {
       "soggetto": {
-        "nome": "Francesca Carlo",
-        "cognome": "Leoni"
+        "nome": "Ana Maria",
+        "cognome": "Costa"
       },
       "pseudonimi": [
         {
-          "nome": "Francesca",
-          "cognome": "Leono"
+          "nome": "Ana",
+          "cognome": "Costo"
         }
       ],
       "formula_negativa_presente": "OK",
-      "data_nascita": "07-04-1940"
+      "data_nascita": "12-07-1889"
     }
   },
   {
@@ -227,8 +317,8 @@
         "document_type": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Francesca Carlo",
-            "cognome": "Leoni"
+            "nome": "Ana Maria",
+            "cognome": "Costa"
           }
         ]
       }
@@ -241,8 +331,8 @@
         "document_type": "Certificato Negativo di Naturalizzazione",
         "soggetto": [
           {
-            "nome": "Francesca Carlo",
-            "cognome": "Leoni"
+            "nome": "Ana Maria",
+            "cognome": "Costa"
           }
         ]
       },
@@ -256,8 +346,8 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Francesca Carlo",
-            "cognome": "Leoni"
+            "nome": "Ana Maria",
+            "cognome": "Costa"
           }
         ],
         "documento_originale": "Certificato Negativo di Naturalizzazione"
@@ -268,53 +358,26 @@
     "document_type": "Apostille",
     "schema": {
       "oggetto": {
-        "document_type": "Documento non supportato",
-        "soggetto": [
-          {
-            "nome": "Marco",
-            "cognome": "Moretti"
-          }
-        ],
-        "documento_originale": "Nota Spese"
-      }
-    }
-  },
-  {
-    "document_type": "Bozza Sentenza",
-    "schema": {
-      "id": "UD-9078",
-      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
-      "data": "14-02-2025"
-    }
-  },
-  {
-    "document_type": "Traduzione",
-    "schema": {
-      "oggetto": {
         "document_type": "Certificato di matrimonio",
         "soggetto": [
           {
-            "nome": "Chiara",
+            "nome": "Carlos",
             "cognome": "Costa"
+          },
+          {
+            "nome": "Ana",
+            "cognome": "Souza"
           }
         ]
-      },
-      "sede_traduttore": "Estero"
+      }
     }
   },
   {
-    "document_type": "Apostille",
+    "document_type": "Documenti Personali Vari",
     "schema": {
-      "oggetto": {
-        "document_type": "Documento non supportato",
-        "soggetto": [
-          {
-            "nome": "Paolo",
-            "cognome": "Neri"
-          }
-        ],
-        "documento_originale": "Bozza Sentenza"
-      }
+      "id": "UD-4485",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "17-03-2023"
     }
   },
   {
@@ -324,12 +387,12 @@
         "document_type": "Traduzione",
         "soggetto": [
           {
-            "nome": "Chiara",
-            "cognome": "Costa"
+            "nome": "Ana",
+            "cognome": "Silva"
           },
           {
-            "nome": "Sara",
-            "cognome": "Marini"
+            "nome": "Mateus",
+            "cognome": "Cardoso"
           }
         ],
         "documento_originale": "Certificato di matrimonio"
@@ -337,11 +400,114 @@
     }
   },
   {
-    "document_type": "Nota Spese",
+    "document_type": "Apostille",
     "schema": {
-      "id": "UD-6742",
+      "oggetto": {
+        "document_type": "Documento non supportato",
+        "soggetto": [
+          {
+            "nome": "Mateus",
+            "cognome": "Mendes"
+          }
+        ],
+        "documento_originale": "Bozza Sentenza"
+      }
+    }
+  },
+  {
+    "document_type": "Bozza Sentenza",
+    "schema": {
+      "id": "UD-6961",
       "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
-      "data": "09-06-2024"
+      "data": "25-10-2025"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Carolina",
+            "cognome": "Araujo"
+          },
+          {
+            "nome": "Paulo",
+            "cognome": "Barbosa"
+          }
+        ],
+        "documento_originale": "Certificato di matrimonio"
+      }
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Documento non supportato",
+        "soggetto": [
+          {
+            "nome": "Mateus",
+            "cognome": "Ribeiro"
+          }
+        ],
+        "documento_originale": "Documenti Personali Vari"
+      }
+    }
+  },
+  {
+    "document_type": "Documenti Personali Vari",
+    "schema": {
+      "id": "UD-8734",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "01-11-2023"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Documento non supportato",
+        "soggetto": [
+          {
+            "nome": "Pedro",
+            "cognome": "Oliveira"
+          }
+        ],
+        "documento_originale": "Documenti Personali Vari"
+      }
+    }
+  },
+  {
+    "document_type": "Documenti Personali Vari",
+    "schema": {
+      "id": "UD-5767",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "02-10-2023"
+    }
+  },
+  {
+    "document_type": "Documenti Personali Vari",
+    "schema": {
+      "id": "UD-3717",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "18-11-2025"
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Carlos",
+            "cognome": "Costa"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
     }
   },
   {
@@ -349,16 +515,16 @@
     "schema": {
       "soggetti": [
         {
-          "nome": "Chiara",
+          "nome": "Carlos",
           "cognome": "Costa"
         },
         {
-          "nome": "Sara",
-          "cognome": "Marini"
+          "nome": "Ana",
+          "cognome": "Souza"
         }
       ],
-      "luogo": "Santos",
-      "data_matrimonio": "23-06-1970",
+      "luogo": "Sao Paulo",
+      "data_matrimonio": "07-02-1967",
       "note": "Documento non richiesto ai fini del riconoscimento richiesto."
     }
   },
@@ -369,12 +535,82 @@
         "document_type": "Documento non supportato",
         "soggetto": [
           {
-            "nome": "Luca",
-            "cognome": "Bianchi"
+            "nome": "Larissa",
+            "cognome": "Santos"
           }
         ],
-        "documento_originale": "Nota Spese"
+        "documento_originale": "Documenti Personali Vari"
       }
+    }
+  },
+  {
+    "document_type": "Certificato di matrimonio",
+    "schema": {
+      "soggetti": [
+        {
+          "nome": "Carolina",
+          "cognome": "Araujo"
+        },
+        {
+          "nome": "Paulo",
+          "cognome": "Barbosa"
+        }
+      ],
+      "luogo": "Niteroi",
+      "data_matrimonio": "02-10-2016",
+      "note": "Documento non richiesto ai fini del riconoscimento richiesto."
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Carlos",
+            "cognome": "Costa"
+          },
+          {
+            "nome": "Ana",
+            "cognome": "Souza"
+          }
+        ],
+        "documento_originale": "Certificato di matrimonio"
+      }
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Documento non supportato",
+        "soggetto": [
+          {
+            "nome": "Beatriz",
+            "cognome": "Ribeiro"
+          }
+        ],
+        "documento_originale": "Documenti Personali Vari"
+      }
+    }
+  },
+  {
+    "document_type": "Certificato di matrimonio",
+    "schema": {
+      "soggetti": [
+        {
+          "nome": "Ana",
+          "cognome": "Silva"
+        },
+        {
+          "nome": "Mateus",
+          "cognome": "Cardoso"
+        }
+      ],
+      "luogo": "Porto Alegre",
+      "data_matrimonio": "01-08-1971",
+      "note": "Documento non richiesto ai fini del riconoscimento richiesto."
     }
   },
   {
@@ -384,23 +620,63 @@
         "document_type": "Certificato di matrimonio",
         "soggetto": [
           {
-            "nome": "Chiara",
-            "cognome": "Costa"
+            "nome": "Ana",
+            "cognome": "Silva"
           },
           {
-            "nome": "Sara",
-            "cognome": "Marini"
+            "nome": "Mateus",
+            "cognome": "Cardoso"
           }
         ]
       }
     }
   },
   {
-    "document_type": "Nota Spese",
+    "document_type": "Traduzione",
     "schema": {
-      "id": "UD-7323",
-      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
-      "data": "16-06-2025"
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Carolina",
+            "cognome": "Araujo"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Carolina",
+            "cognome": "Araujo"
+          },
+          {
+            "nome": "Paulo",
+            "cognome": "Barbosa"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Ana",
+            "cognome": "Silva"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
     }
   }
 ]

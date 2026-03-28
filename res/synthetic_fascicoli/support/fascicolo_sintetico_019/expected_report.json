@@ -1,6 +1,6 @@
 {
   "0": {
-    "A": "KO",
+    "A": "OK",
     "B": "OK",
     "C": "OK",
     "Ci": "NULL",
@@ -16,77 +16,77 @@
     "1": "OK"
   },
   "2": {
-    "A": "NULL",
-    "B": "NULL",
-    "C": "NULL",
-    "D": "NULL",
+    "A": "24.11.2025",
+    "B": "OK",
+    "C": "KO",
+    "D": "NO",
     "Di": "NULL",
-    "E": "NULL",
+    "E": "NO",
     "Ei": "NULL",
-    "F": "NULL",
+    "F": "NO",
     "Fi": "NULL",
     "Fii": "NULL",
     "Fiii": "NULL",
-    "G": "NULL"
+    "G": "0919-2024"
   },
   "3": {
-    "A": "Matteo Gallo, Sara Marini",
+    "A": "Pedro Pereira",
     "B": 1,
-    "C": "Davide Lombardi-Silva",
-    "D": "Davide Lombardi-Silva: Brasiliana",
+    "C": "Camila Maria Santos-Cardoso",
+    "D": "Camila Maria Santos-Cardoso: Brasiliana",
     "E": "NO",
     "Ei": "NULL",
     "Eii": "NULL",
-    "F": "KO; Matteo Maria Gallo -> Davide Lombardi",
+    "F": "OK; Carlos Miguel Pereira -> Beatriz Luz Cardoso Pereira -> Camila Maria Santos-Cardoso",
     "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
     "Gi": "NULL"
   },
   "4": {
     "4/1": {
-      "A": "Davide Lombardi-Silva",
+      "A": "Camila Maria Santos-Cardoso",
       "Ai": "NULL",
-      "B": "OK; firma del ricorrente Davide Lombardi-Silva",
+      "B": "OK; firma del ricorrente Camila Maria Santos-Cardoso",
       "C": "OK",
       "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
       "E": "OK",
       "Ei": "NULL",
-      "F": "08.02.2025",
-      "G": "OK",
+      "F": "05.03.2025",
+      "G": "KO",
       "H": "NO",
       "Hi": "OK",
-      "I": "NO",
-      "Ii": "OK",
-      "Iii": "NO",
-      "Iiii": "OK",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
+      "Iiii": "NULL",
       "Iiv": "NULL"
     }
   },
   "5": {
-    "A": "NO",
-    "Ai": "OK",
-    "C": "Brescia",
+    "A": "OK",
+    "Ai": "NULL",
+    "C": "Bergamo",
     "D": "OK",
-    "E": "Padre: Marco Moretti, Madre: Matteo Gallo",
-    "F": "18.05.1949"
+    "E": "Padre: Joao Barbosa, Madre: Renata Ribeiro",
+    "F": "12.08.1844"
   },
   "6": {
-    "A": "OK",
+    "A": "NO",
     "Ai": "NULL",
     "Aii": "NULL",
     "Aiii": "NULL",
-    "C": "NULL",
-    "D": "NULL",
+    "C": "30.10.1987",
+    "D": "OK",
     "Di": "NULL",
     "Dii": "NULL",
     "Diii": "NULL",
-    "E": "NULL",
-    "F": "NULL",
-    "Fi": "NULL",
+    "E": "OK",
+    "F": "OK",
+    "Fi": "OK",
     "Fii": "NULL"
   },
   "7": {
     "A": "OK",
-    "B": "NULL",
+    "B": "Carlos Pereiro",
     "C": "OK",
     "D": "OK",
     "E": "OK",
@@ -95,36 +95,28 @@
   },
   "8": {
     "8/1": {
-      "A": "Giulia Conti",
-      "B": "OK",
-      "C": "OK",
-      "D": "OK",
-      "Di": "OK",
-      "Dii": "NULL"
-    },
-    "8/2": {
-      "A": "Chiara Joao Costa",
+      "A": "Beatriz Luz Cardoso Pereira",
       "B": "OK",
       "C": "OK",
       "D": "OK",
       "Di": "NULL",
       "Dii": "OK"
     },
-    "8/3": {
-      "A": "Davide Lombardi",
+    "8/2": {
+      "A": "Camila Maria Santos-Cardoso",
       "B": "OK",
       "C": "OK",
       "D": "OK",
-      "Di": "OK",
-      "Dii": "NULL"
+      "Di": "NULL",
+      "Dii": "OK"
     }
   },
   "10": [
-    "0A",
-    "3F"
+    "2C",
+    "4/1G"
   ],
   "11": {
-    "0A": "IndiceProcedimento.html mancante",
-    "3F": "La linea di discendenza indicata nel ricorso non risulta coerente"
+    "2C": "Il ricorso non risulta iscritto prima del 27.03.2025 escluso",
+    "4/1G": "La data della procura di Camila Maria Santos-Cardoso non è anteriore alla data del ricorso"
   }
 }

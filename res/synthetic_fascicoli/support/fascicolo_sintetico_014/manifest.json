@@ -20,14 +20,14 @@
     "selection_weight": 1.35
   },
   "render_profile": {
-    "noise_scale": 0.735,
-    "artifact_scale": 1.346,
-    "jitter_scale": 1.041,
-    "watermark_prob": 0.721,
-    "punch_hole_prob": 0.61,
-    "stamp_prob": 0.949,
-    "seal_prob": 0.768,
-    "style_seed": 1431779064
+    "noise_scale": 1.454,
+    "artifact_scale": 0.754,
+    "jitter_scale": 1.818,
+    "watermark_prob": 0.429,
+    "punch_hole_prob": 0.425,
+    "stamp_prob": 0.853,
+    "seal_prob": 0.748,
+    "style_seed": 1444712976
   },
   "pdf_files": [
     {
@@ -37,6 +37,9 @@
         "Ricorso",
         "Procura",
         "Apostille",
+        "Traduzione",
+        "Asseverazione",
+        "Procura",
         "Atto di nascita",
         "Atto di nascita",
         "Apostille",
@@ -45,32 +48,35 @@
         "Atto di nascita",
         "Apostille",
         "Traduzione",
+        "Apostille",
+        "Atto di nascita",
+        "Apostille",
+        "Traduzione",
+        "Apostille",
+        "Atto di nascita",
+        "Apostille",
+        "Traduzione",
         "Asseverazione",
+        "Atto di nascita",
+        "Apostille",
+        "Traduzione",
+        "Apostille",
         "Certificato Negativo di Naturalizzazione",
         "Apostille",
         "Traduzione",
         "Asseverazione",
         "Apostille",
-        "Avviso Udienza",
-        "Apostille",
-        "Avviso Udienza",
-        "Apostille",
-        "Avviso Udienza",
-        "Apostille",
         "Certificato di matrimonio",
         "Apostille",
         "Traduzione",
+        "Documenti Personali Vari",
         "Apostille",
         "Apostille",
-        "Apostille",
-        "Avviso Udienza",
-        "Certificato di matrimonio",
-        "Traduzione",
-        "Documenti Personali Vari"
+        "Avviso Udienza"
       ],
-      "count": 34
+      "count": 40
     }
   ],
-  "expected_doc_count": 17,
-  "mixed_doc_count": 34
+  "expected_doc_count": 32,
+  "mixed_doc_count": 40
 }

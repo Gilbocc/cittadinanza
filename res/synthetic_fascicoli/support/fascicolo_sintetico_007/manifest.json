@@ -20,34 +20,35 @@
     "selection_weight": 1.15
   },
   "render_profile": {
-    "noise_scale": 1.287,
-    "artifact_scale": 0.739,
-    "jitter_scale": 0.755,
-    "watermark_prob": 0.239,
-    "punch_hole_prob": 0.354,
-    "stamp_prob": 0.962,
-    "seal_prob": 0.615,
-    "style_seed": 2108307952
+    "noise_scale": 1.273,
+    "artifact_scale": 1.315,
+    "jitter_scale": 1.722,
+    "watermark_prob": 0.814,
+    "punch_hole_prob": 0.752,
+    "stamp_prob": 0.775,
+    "seal_prob": 0.406,
+    "style_seed": 2095718469
   },
   "pdf_files": [
     {
       "file": "fascicolo_sintetico_007_bundle_01.pdf",
       "logical_docs": [
         "IndiceProcedimento.html",
-        "Ricorso"
+        "Ricorso",
+        "Procura",
+        "Atto di nascita"
       ],
-      "count": 2
+      "count": 4
     },
     {
       "file": "fascicolo_sintetico_007_bundle_02.pdf",
       "logical_docs": [
-        "Procura",
+        "Atto di nascita",
         "Apostille",
         "Traduzione",
-        "Apostille",
-        "Atto di nascita"
+        "Asseverazione"
       ],
-      "count": 5
+      "count": 4
     },
     {
       "file": "fascicolo_sintetico_007_bundle_03.pdf",
@@ -62,7 +63,7 @@
     {
       "file": "fascicolo_sintetico_007_bundle_04.pdf",
       "logical_docs": [
-        "Atto di nascita",
+        "Atto di morte",
         "Apostille",
         "Traduzione",
         "Apostille"
@@ -72,37 +73,36 @@
     {
       "file": "fascicolo_sintetico_007_bundle_05.pdf",
       "logical_docs": [
-        "Atto di morte",
+        "Certificato Negativo di Naturalizzazione",
         "Apostille",
         "Traduzione",
-        "Apostille"
+        "Asseverazione",
+        "Traduzione"
       ],
-      "count": 4
+      "count": 5
     },
     {
       "file": "fascicolo_sintetico_007_bundle_06.pdf",
       "logical_docs": [
-        "Certificato Negativo di Naturalizzazione",
+        "Comunicazione PEC",
+        "Nota Spese",
         "Apostille",
-        "Traduzione",
         "Apostille",
-        "Traduzione",
-        "Apostille",
-        "Apostille"
+        "Nota Spese"
       ],
-      "count": 7
+      "count": 5
     },
     {
       "file": "fascicolo_sintetico_007_bundle_07.pdf",
       "logical_docs": [
-        "Avviso Udienza",
+        "Certificato di matrimonio",
         "Apostille",
-        "Avviso Udienza",
-        "Certificato di matrimonio"
+        "Comunicazione PEC",
+        "Apostille"
       ],
       "count": 4
     }
   ],
-  "expected_doc_count": 23,
+  "expected_doc_count": 20,
   "mixed_doc_count": 30
 }
