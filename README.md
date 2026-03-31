@@ -294,6 +294,129 @@ Rendering notes:
 1. Every logical document starts on a new PDF page.
 2. Pages are rendered in scan-like style (background noise, scanner streaks, stamps, jitter, and form-like text layouts) to make extraction less trivial than plain JSON text dumps.
 
+### Case Variations and Tested Scenarios
+
+Each generated case is drawn from one of five weighted scenario profiles. The table below summarises the key dimensions varied:
+
+| Dimension | What varies |
+|---|---|
+| **Document layout** | All documents in one PDF vs. split into small bundles (4–7 docs/bundle) |
+| **Avo death** | Present and required, present but not required, or absent entirely |
+| **IndiceProcedimento.html** | Included or intentionally missing (triggers section 0A KO) |
+| **Name drift** | Some ricorrenti carry a married-name surname different from the lineage (tests name-matching resilience) |
+| **Noise documents** | Irrelevant procedural files mixed in (`Nota Spese`, `Avviso Udienza`, `Comunicazione PEC`, `Bozza Sentenza`, `Documenti Personali Vari`) |
+| **Spurious apostilles** | Apostilles for unsupported document types present in the same PDF |
+| **Irrelevant accessory chains** | Full translation + apostille chains attached to noise documents (e.g. a marriage certificate with its own apostille and translation) |
+| **Pseudonyms / aliases** | Avo carries one or more alternative names declared in the Ricorso and CNN, testing pseudonym resolution |
+| **Surname evolution** | Lineage members may carry hyphenated or contracted surname variants to simulate real registry drift |
+
+Challenging variants are probabilistically injected on top of the base scenario:
+
+| Injected fault | Probability | What it tests |
+|---|---|---|
+| **Missing birth document in the chain** | ~55% when enabled | Section 0D/0G KO detection when a descendant birth is absent from the documentary chain (Ricorso stays coherent) |
+| **Marriage claimants** | ~45% when enabled | Section 3G KO detection for ricorrenti claiming citizenship by marriage rather than direct descent |
+| **Procura weakness** | ~65% when enabled | One of: missing signature, wrong lawyer, date after Ricorso, missing apostille on foreign procura, missing translation chain — tests sections 4B/4C/4G/4Hi/4Ii |
+| **Dropped descendant birth** | ~50% when enabled | Section 8B/8C/8D KO for a descendant whose birth certificate is entirely removed |
+
+Render-level difficulty is randomised per case independently of the scenario:
+
+- Background noise intensity: `noise_scale` in `[0.65, 1.55]`
+- Scanning artifacts (streaks, bleed): `artifact_scale` in `[0.60, 1.70]`
+- Text jitter (simulated misalignment): `jitter_scale` in `[0.70, 1.90]`
+- Probability of watermark, punch holes, stamps, and seals: each independently randomised
+
+The scenario pool is weighted so that clean, well-formed cases (no injected faults, single PDF) are most frequent (~29 %), while maximally stressed cases (all faults active, multi-bundle) are least frequent (~17 %).
+
+## Integrated Generation and Evaluation Workflow
+
+Once synthetic cases are generated with PDFs and support files, you can evaluate extraction and validation outputs against the ground truth.
+
+### Step 1: Generate Synthetic Cases
+
+```bash
+python3 generate_synthetic_fascicoli.py --count 50 --seed 42 --output-dir res/synthetic_fascicoli
+```
+
+This produces:
+- `res/synthetic_fascicoli/fascicoli/fascicolo_sintetico_XXX/*.pdf` — Generated PDF bundles
+- `res/synthetic_fascicoli/support/fascicolo_sintetico_XXX/expected_extraction.json` — Ground truth extraction
+- `res/synthetic_fascicoli/support/fascicolo_sintetico_XXX/expected_report.json` — Ground truth validation report
+
+### Step 2: Extract and Validate (External Pipeline)
+
+Run your extraction and validation pipeline on the generated PDFs. For each case, produce:
+
+1. `res/synthetic_fascicoli/fascicoli/fascicolo_sintetico_XXX/info.txt` — Extracted JSON (your pipeline output)
+2. `res/synthetic_fascicoli/fascicoli/fascicolo_sintetico_XXX/controlli.txt` — Validation report (your pipeline output)
+
+### Step 3: Evaluate Against Ground Truth
+
+Evaluate extraction accuracy (info.txt vs expected_extraction.json):
+
+```bash
+python3 evaluate_results.py --base-dir res/synthetic_fascicoli
+```
+
+Evaluate validation reports only (controlli.txt vs expected_report.json):
+
+```bash
+python3 evaluate_results.py --base-dir res/synthetic_fascicoli --report-only
+```
+
+Generate validation report directly from info.txt (compute report in-process rather than reading controlli.txt):
+
+```bash
+python3 evaluate_results.py --base-dir res/synthetic_fascicoli --report-from-info
+```
+
+Evaluate specific cases:
+
+```bash
+python3 evaluate_results.py --base-dir res/synthetic_fascicoli --case fascicolo_sintetico_000 fascicolo_sintetico_001
+```
+
+Get machine-readable JSON output:
+
+```bash
+python3 evaluate_results.py --base-dir res/synthetic_fascicoli --json
+```
+
+Get extraction-focused missing/extra document report:
+
+```bash
+python3 evaluate_results.py --base-dir res/synthetic_fascicoli --missing-files-report
+```
+
+### Evaluation Output
+
+The evaluator compares:
+
+1. **Extraction**: `info.txt` vs `expected_extraction.json`
+   - Document type matching, field value matching, structure alignment
+   - Fuzzy matching with Levenshtein distance tolerance for names
+   - Date normalization and format unification
+
+2. **Validation Report**: `controlli.txt` vs `expected_report.json`
+   - Section-by-section check results (sections 0–11)
+   - KO list and reason comparisons
+   - Pass/fail determination per case
+
+Results show pass/fail status, error counts, and detailed diffs when mismatches occur.
+
+### Flags and Report Generation
+
+The evaluator supports conditional evaluation based on report source:
+
+- **`--report-only`**: Skip extraction comparison; only validate report consistency
+- **`--report-from-info`**: Compute expected_report.json from info.txt on-the-fly using DocumentValidator instead of reading pre-computed controlli.txt
+- **`--missing-files-report`**: Infer document bundle composition from extracted documents and report missing/unexpected files
+
+These are useful for:
+- **Debugging extraction-independent validation logic** (`--report-from-info`)
+- **Rapid regression testing of report structure** (`--report-only`)
+- **Diagnosing document routing issues** (`--missing-files-report`)
+
 ## Automation
 
 The repository includes two safeguards to keep compiled prompts aligned with source files.
