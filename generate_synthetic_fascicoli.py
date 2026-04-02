@@ -5,6 +5,7 @@ import json
 import random
 import sys
 import re
+import textwrap
 from dataclasses import dataclass
 from datetime import date, timedelta
 from pathlib import Path
@@ -16,11 +17,18 @@ from src.analysis import DocumentValidator
 
 try:
     from reportlab.lib.pagesizes import A4
-    from reportlab.lib.utils import simpleSplit
+    from reportlab.lib.utils import ImageReader, simpleSplit
     from reportlab.pdfgen import canvas
 except ImportError as exc:  # pragma: no cover - runtime dependency check
     raise SystemExit(
         "Missing dependency 'reportlab'. Install it with: pip3 install reportlab"
+    ) from exc
+
+try:
+    from PIL import Image, ImageDraw, ImageFilter, ImageFont
+except ImportError as exc:  # pragma: no cover - runtime dependency check
+    raise SystemExit(
+        "Missing dependency 'Pillow'. Install it with: pip3 install pillow"
     ) from exc
 
 
@@ -717,40 +725,135 @@ def _flatten_schema_lines(prefix: str, value: Any) -> list[str]:
     return [f"{prefix}: {_stringify(value)}"]
 
 
-def format_document_content(doc: dict[str, Any], rng: random.Random) -> list[str]:
+def _full_name(person: dict[str, Any]) -> str:
+    return f"{person.get('nome', '')} {person.get('cognome', '')}".strip()
+
+
+def _names_from_people(people: list[dict[str, Any]]) -> str:
+    names = [_full_name(p) for p in people if isinstance(p, dict)]
+    names = [n for n in names if n]
+    return ", ".join(names) if names else "N.D."
+
+
+def _is_ok(value: Any) -> bool:
+    return str(value).strip().upper() in {"OK", "SI", "YES", "TRUE"}
+
+
+def _registry_ref(rng: random.Random) -> str:
+    livro = rng.randint(1, 90)
+    folha = rng.randint(1, 380)
+    termo = rng.randint(100, 9999)
+    return f"Livro {livro}, folha {folha}, termo {termo}"
+
+
+def _cartorio_name(rng: random.Random) -> str:
+    city = rng.choice(BRAZIL_CITIES)
+    office = rng.randint(1, 12)
+    return f"{office}o Oficio de Registro Civil das Pessoas Naturais de {city}"
+
+
+def _brazilian_date_style(date_str: str) -> str:
+    parts = str(date_str).split("-")
+    if len(parts) == 3:
+        return f"{parts[0]}/{parts[1]}/{parts[2]}"
+    return str(date_str)
+
+
+def _italian_city_hint(provincia: str, comune: str) -> str:
+    if str(provincia).lower() == "brescia":
+        return f"nel Comune di {comune}, provincia di Brescia"
+    return f"nel Comune di {comune}"
+
+
+def _translation_excerpt(
+    obj_type: str,
+    people: list[dict[str, Any]],
+    rng: random.Random,
+    source_doc: dict[str, Any] | None = None,
+) -> list[str]:
+    names = _names_from_people(people)
+    source_schema = source_doc.get("schema", {}) if isinstance(source_doc, dict) else {}
+    if obj_type == "Atto di nascita":
+        soggetto = source_schema.get("soggetto", {}) if isinstance(source_schema, dict) else {}
+        padre = source_schema.get("padre", {}) if isinstance(source_schema, dict) else {}
+        madre = source_schema.get("madre", {}) if isinstance(source_schema, dict) else {}
+        child = _full_name(soggetto) or names
+        father = _full_name(padre)
+        mother = _full_name(madre)
+        comune = source_schema.get("comune_nascita", "N.D.")
+        stato = source_schema.get("stato", "N.D.")
+        data = source_schema.get("data_nascita", "N.D.")
+        return [
+            f"Dal certificato risulta che {child} e nato in {comune}, {stato}, in data {data}.",
+            f"Nell'atto sono indicati quali genitori {father} e {mother}.",
+            "La presente traduzione riproduce il contenuto dell'estratto o della certificazione di nascita esibita.",
+        ]
+    if obj_type == "Atto di morte":
+        soggetto = source_schema.get("soggetto", {}) if isinstance(source_schema, dict) else {}
+        deceased = _full_name(soggetto) or names
+        data = source_schema.get("data_decesso", "N.D.")
+        return [
+            f"Dall'atto di morte risulta il decesso di {deceased}, avvenuto in data {data}.",
+            "La certificazione tradotta corrisponde alle risultanze dell'ufficio di stato civile che ha formato il relativo atto.",
+        ]
+    if obj_type == "Procura":
+        avvocati = _names_from_people(source_schema.get("avvocati", [])) if isinstance(source_schema, dict) else "N.D."
+        oggetto = source_schema.get("oggetto", "N.D.") if isinstance(source_schema, dict) else "N.D."
+        tribunal_phrase = (
+            "innanzi al Tribunale Ordinario di Brescia"
+            if _is_ok(source_schema.get("tribunale_brescia_indicato"))
+            else "innanzi all'autorita giudiziaria competente"
+        )
+        return [
+            f"Il conferente {names} nomina quale proprio difensore l'avv. {avvocati} per la rappresentanza {tribunal_phrase}.",
+            f"Il mandato e conferito ai fini di {oggetto}.",
+            "Nel testo tradotto sono attribuiti al difensore i poteri necessari alla rappresentanza e difesa in giudizio.",
+        ]
+    if obj_type == "Certificato Negativo di Naturalizzazione":
+        data = source_schema.get("data_nascita", "N.D.") if isinstance(source_schema, dict) else "N.D."
+        aliases = ", ".join(
+            _full_name(p) for p in source_schema.get("pseudonimi", []) if isinstance(p, dict)
+        ) if isinstance(source_schema, dict) else ""
+        return [
+            f"La certificazione tradotta attesta che, alla data del rilascio, non risulta alcun atto di naturalizzazione intestato a {names}.",
+            f"La ricerca e svolta con riferimento alla data di nascita {data}" + (f" e anche alle varianti onomastiche {aliases}." if aliases else "."),
+            "L'attestazione e resa sulla base delle risultanze dei registri consultati dall'autorita competente.",
+        ]
+    doc_hint = obj_type if obj_type else "documento"
+    return [
+        f"La presente versione italiana riproduce il contenuto rilevante del documento originale ({doc_hint}) riferito a {names}.",
+        "Il traduttore dichiara di aver reso fedelmente in italiano il testo esibito in lingua straniera.",
+    ]
+
+
+def format_document_content(
+    doc: dict[str, Any],
+    rng: random.Random,
+    source_doc: dict[str, Any] | None = None,
+) -> list[str]:
     doc_type = doc["document_type"]
     schema = doc.get("schema", {})
 
     if doc_type == "Ricorso":
         ric_list = schema.get("ricorrenti_maggiorenni", [])
         ric_matrimonio = schema.get("ricorrenti_per_matrimonio", [])
-        ric_names = ", ".join(
-            f"{p.get('nome', '')} {p.get('cognome', '')}" for p in ric_list
-        ) or "N.D."
-        ric_matrimonio_names = ", ".join(
-            f"{p.get('nome', '')} {p.get('cognome', '')}" for p in ric_matrimonio
-        ) or "Nessuno"
-        ric_with_naz = ", ".join(
-            f"{p.get('nome', '')} {p.get('cognome', '')} (nazionalita: {p.get('nazionalita', 'N.D.')})" 
-            for p in ric_list
-        ) or "N.D."
-        lawyer_names = ", ".join(
-            f"{a.get('nome', '')} {a.get('cognome', '')}" for a in schema.get("avvocati", [])
-        ) or "N.D."
+        ric_names = _names_from_people(ric_list)
+        ric_matrimonio_names = _names_from_people(ric_matrimonio) if ric_matrimonio else "Nessuno"
+        lawyer_names = _names_from_people(schema.get("avvocati", []))
         line = schema.get("riassunto_linea_discendenza", "N.D.")
         return [
             "TRIBUNALE ORDINARIO DI BRESCIA",
             "RICORSO AI SENSI DELL'ART. 281-DECIES C.P.C.",
-            f"Ricorrenti: {ric_names}",
-            f"Ricorrenti con Nazionalita: {ric_with_naz}",
-            f"Ricorrenti per matrimonio: {ric_matrimonio_names}",
-            f"Difensore/i: {lawyer_names}",
-            f"Data in calce al ricorso: {schema.get('data_ricorso', 'N.D.')}",
-            f"Provenienza dal Brasile: {schema.get('proveniente_dal_brasile', 'N.D.')}",
+            f"Per i sigg.ri {ric_names}, rappresentati e difesi dall'avv. {lawyer_names}.",
+            f"Atto sottoscritto in data {schema.get('data_ricorso', 'N.D.')}.",
+            "La documentazione prodotta e costituita in prevalenza da atti formati in Brasile.",
             "",
             "FATTO",
             schema.get("racconto_linea_discendenza", "N.D."),
-            f"Linea di discendenza allegata: {line}",
+            "",
+            "Ai fini della domanda, la linea genealogica allegata puo riassumersi come segue:",
+            line,
+            f"Nell'atto si da altresi conto di eventuali posizioni per matrimonio: {ric_matrimonio_names}.",
             "",
             "DIRITTO",
             "I ricorrenti chiedono il riconoscimento della cittadinanza italiana iure sanguinis.",
@@ -759,107 +862,153 @@ def format_document_content(doc: dict[str, Any], rng: random.Random) -> list[str
 
     if doc_type == "Procura":
         soggetti = schema.get("soggetto", [])
-        names = ", ".join(f"{p.get('nome', '')} {p.get('cognome', '')}" for p in soggetti) or "N.D."
-        avvocati = ", ".join(f"{a.get('nome', '')} {a.get('cognome', '')}" for a in schema.get("avvocati", [])) or "N.D."
-        soggetti_details = "; ".join(
-            f"{p.get('nome', '')} {p.get('cognome', '')} (minorenne: {p.get('minorenne', 'N.D.')}, firma: {p.get('firma_presente', 'N.D.')})"
-            for p in soggetti
-        ) or "N.D."
-        return [
-            "PROCURA ALLE LITI",
-            f"Il sottoscritto/i {names} delega a rappresentarlo e difenderlo nel giudizio.",
-            f"Soggetti: {soggetti_details}",
-            f"Difensore/i nominati: {avvocati}",
-            f"Oggetto del giudizio: {schema.get('oggetto', 'N.D.')}",
-            f"Tribunale indicato nel testo: {schema.get('tribunale_indicato', 'N.D.')}",
-            f"Tribunale di Brescia indicato: {schema.get('tribunale_brescia_indicato', 'N.D.')}",
-            f"Data rilascio procura: {schema.get('data_procura', 'N.D.')}",
-            f"Rilasciata in Italia: {schema.get('rilasciata_in_italia', 'N.D.')}",
-            f"Scritta in italiano: {schema.get('scritta_in_italiano', 'N.D.')}",
-            "Conferiti tutti i poteri di legge, compresa rinuncia agli atti e impugnazione.",
-            "Firma/e del/i conferente/i in calce.",
+        names = _names_from_people(soggetti)
+        avvocati = _names_from_people(schema.get("avvocati", []))
+        is_italian = _is_ok(schema.get("scritta_in_italiano"))
+        is_italy = _is_ok(schema.get("rilasciata_in_italia"))
+        tribunal_indicato = str(schema.get("tribunale_indicato", "")).strip()
+        tribunal_phrase = "innanzi al Tribunale Ordinario di Brescia" if _is_ok(schema.get("tribunale_brescia_indicato")) else "innanzi all'autorita giudiziaria competente"
+        if is_italian:
+            lines = [
+                "PROCURA ALLE LITI",
+                f"I sottoscritti {names} nominano e costituiscono proprio difensore l'avv. {avvocati}, conferendogli ogni facolta di legge.",
+                f"Il mandato e rilasciato per la rappresentanza {tribunal_phrase} nel giudizio avente ad oggetto {schema.get('oggetto', 'N.D.')}",
+                f"La procura reca la data del {schema.get('data_procura', 'N.D.')}",
+            ]
+            if tribunal_indicato and tribunal_indicato.lower() != "null" and not _is_ok(schema.get("tribunale_brescia_indicato")):
+                lines.append(f"L'atto richiama il giudizio da promuoversi presso {tribunal_indicato}.")
+            lines.append(
+                "L'atto e formato in Italia." if is_italy else "L'atto risulta formato all'estero e destinato all'uso nel procedimento italiano."
+            )
+            lines.append("Sono conferiti i poteri di rappresentanza e difesa in ogni fase del giudizio.")
+            return lines
+
+        city = rng.choice(BRAZIL_CITIES)
+        cartorio = _cartorio_name(rng)
+        lines = [
+            "PROCURACAO",
+            f"Saibam quantos este publico instrumento virem que, aos { _brazilian_date_style(schema.get('data_procura', 'N.D.')) }, nesta cidade de {city}, perante {cartorio}, compareceu {names}.",
+            f"Pela presente, nomeia e constitui como bastante procurador o advogado {avvocati}, a quem confere poderes para {schema.get('oggetto', 'N.D.')}",
+            f"Concede, ainda, poderes para representa-lo {tribunal_phrase} e perante os demais orgaos que se fizerem necessarios.",
+            "Outorga ainda poderes para representar o mandante perante juizos e tribunais, podendo praticar os atos necessarios ao regular andamento da demanda.",
         ]
+        if tribunal_indicato and tribunal_indicato.lower() != "null" and not _is_ok(schema.get("tribunale_brescia_indicato")):
+            lines.append(f"No texto consta referencia a {tribunal_indicato} como juizo competente ou correlato.")
+        lines.append("E, por estar assim ajustado, lavrou-se o presente instrumento na forma da lei.")
+        return lines
 
     if doc_type == "Atto di nascita":
         soggetto = schema.get("soggetto", {})
         padre = schema.get("padre", {})
         madre = schema.get("madre", {})
         matricola = f"{rng.randint(1000000,9999999)} {rng.randint(10,99)} {rng.randint(1000,9999)}"
+        child = _full_name(soggetto)
+        father = _full_name(padre)
+        mother = _full_name(madre)
+        registry = _registry_ref(rng)
+        certificate_type = str(schema.get("tipo", "anagrafico")).lower()
+        if str(schema.get("stato", "")).lower() == "italia":
+            return [
+                "COMUNE - UFFICIO DELLO STATO CIVILE",
+                "ESTRATTO PER RIASSUNTO DELL'ATTO DI NASCITA",
+                f"Dai registri dello stato civile di questo Comune risulta che {child} e nato { _italian_city_hint(str(schema.get('provincia', '')), str(schema.get('comune_nascita', 'N.D.'))) } in data {schema.get('data_nascita', 'N.D.')}",
+                f"Nell'atto sono indicati quali genitori {father} e {mother}.",
+                "Il presente estratto e rilasciato in conformita alle risultanze dei registri comunali per uso consentito dalla legge.",
+            ]
         return [
-            "CERTIDAO DE NASCIMENTO EM INTEIRO TEOR / ATTO DI NASCITA",
+            "REPUBLICA FEDERATIVA DO BRASIL",
+            "CERTIDAO DE NASCIMENTO - INTEIRO TEOR",
             f"Matricula: {matricola}",
-            f"Nominativo: {soggetto.get('nome', '')} {soggetto.get('cognome', '')}",
-            f"Filho(a) de: {padre.get('nome', '')} {padre.get('cognome', '')} e {madre.get('nome', '')} {madre.get('cognome', '')}",
-            f"Data di nascita: {schema.get('data_nascita', 'N.D.')}",
-            f"Comune/Stato: {schema.get('comune_nascita', 'N.D.')} / {schema.get('stato', 'N.D.')}",
-            f"Provincia: {schema.get('provincia', 'N.D.')}",
-            f"Area di nascita: {schema.get('area_nascita', 'N.D.')}",
-            f"Tipo certificato: {schema.get('tipo', 'N.D.')}",
-            f"Timbro diocesi: {schema.get('timbro_diocesi', 'N.D.')}",
-            "Avvertenza: la data di registrazione puo differire dalla data effettiva di nascita.",
+            f"Certifico que, em data e sob o assentamento {registry}, foi lavrado o registro de nascimento de {child}.",
+            f"Filho(a) de {father} e {mother}.",
+            f"Consta que o nascimento ocorreu em {schema.get('comune_nascita', 'N.D.')}, na data de {_brazilian_date_style(schema.get('data_nascita', 'N.D.'))}.",
+            (
+                "Trata-se de certidao expedida a partir do registro civil ordinario."
+                if certificate_type == "anagrafico"
+                else "Trata-se de certidao extraida de assento paroquial posteriormente apresentado para efeitos civis."
+            ),
+            "A presente certidao e extraida do livro original e assinada pela autoridade competente.",
         ]
 
     if doc_type == "Atto di morte":
         soggetto = schema.get("soggetto", {})
         matricola = f"{rng.randint(1000000,9999999)} {rng.randint(10,99)} {rng.randint(1000,9999)}"
+        deceased = _full_name(soggetto)
+        registry = _registry_ref(rng)
         return [
-            "CERTIDAO DE INTEIRO TEOR DE OBITO / ATTO DI MORTE",
+            "REPUBLICA FEDERATIVA DO BRASIL",
+            "CERTIDAO DE OBITO - INTEIRO TEOR",
             f"Matricula: {matricola}",
-            f"Defunto: {soggetto.get('nome', '')} {soggetto.get('cognome', '')}",
-            f"Data decesso: {schema.get('data_decesso', 'N.D.')}",
-            "Consta no assento de obito a data do falecimento.",
-            "Documento rilasciato in copia conforme.",
+            f"Certifico que, sob o registro {registry}, consta o obito de {deceased}.",
+            f"Do assento resulta que o falecimento ocorreu na data de {_brazilian_date_style(schema.get('data_decesso', 'N.D.'))}.",
+            "O presente traslado corresponde fielmente ao assento lavrado no cartorio competente.",
         ]
 
     if doc_type == "Certificato Negativo di Naturalizzazione":
         soggetto = schema.get("soggetto", {})
         pseudonimi = schema.get("pseudonimi", [])
         aliases = ", ".join(f"{p.get('nome', '')} {p.get('cognome', '')}" for p in pseudonimi) or "Nessuno"
+        subject = _full_name(soggetto)
         return [
-            "CERTIFICADO NEGATIVO DE NATURALIZACAO",
-            f"Soggetto: {soggetto.get('nome', '')} {soggetto.get('cognome', '')}",
-            f"Data di nascita dichiarata: {schema.get('data_nascita', 'N.D.')}",
-            f"Formula negativa presente: {schema.get('formula_negativa_presente', 'N.D.')}",
-            f"Pseudonimi/alias: {aliases}",
+            "MINISTERIO DA JUSTICA",
+            "CERTIDAO NEGATIVA DE NATURALIZACAO",
+            f"Certifica-se, para os devidos fins, que em consulta aos registros oficiais nao foi localizada naturalizacao em nome de {subject}.",
+            f"A pesquisa foi realizada considerando a data de nascimento informada ({schema.get('data_nascita', 'N.D.')}) e as varianti onomastiche pertinenti.",
+            f"Varianti considerate: {aliases}.",
             "Nao consta, ate a presente data, registro de naturalizacao em nome do requerente.",
-            "Certidao emitida pelo Ministerio da Justica.",
+            "Certidao emitida para apresentacao perante autoridade estrangeira.",
         ]
 
     if doc_type == "Traduzione":
         obj = schema.get("oggetto", {})
-        people = ", ".join(f"{p.get('nome', '')} {p.get('cognome', '')}" for p in obj.get("soggetto", [])) or "N.D."
-        return [
-            "TRADUZIONE IN LINGUA ITALIANA",
-            f"Documento tradotto: {obj.get('document_type', 'N.D.')}",
-            f"Soggetti citati: {people}",
-            f"Sede traduttore: {schema.get('sede_traduttore', 'N.D.')}",
-            "Il sottoscritto traduttore certifica che la presente e traduzione fedele del testo originale.",
+        people = obj.get("soggetto", [])
+        obj_type = str(obj.get("document_type", "N.D."))
+        lines = [
+            "TRADUZIONE GIURATA IN LINGUA ITALIANA",
+            "Il sottoscritto traduttore attesta che quanto segue costituisce la resa in lingua italiana del documento esibito in lingua portoghese.",
+            "",
         ]
+        lines.extend(_translation_excerpt(obj_type, people, rng, source_doc=source_doc))
+        lines.extend([
+            "",
+            "Il traduttore dichiara di aver eseguito la traduzione senza omissioni o alterazioni sostanziali.",
+            "Seguono data e sottoscrizione del traduttore.",
+        ])
+        return lines
 
     if doc_type == "Apostille":
         obj = schema.get("oggetto", {})
-        people = ", ".join(f"{p.get('nome', '')} {p.get('cognome', '')}" for p in obj.get("soggetto", [])) or "N.D."
+        people = _names_from_people(obj.get("soggetto", []))
         code = f"BR{rng.randint(100000,999999)}-{rng.randint(1000,9999)}"
+        ref_original = obj.get("documento_originale")
+        ref_chunk = f" relativo a traduzione del documento {ref_original}" if ref_original else ""
+        authority = rng.choice([
+            "Oficial do Registro Civil",
+            "Escrevente autorizado",
+            "Autoridade cartoraria competente",
+        ])
         return [
             "CNJ - Conselho Nacional de Justica",
             "BRASIL Apostille (Convention de La Haye du 5 octobre 1961)",
-            f"Numero identificativo: {code}",
-            "QR-Code: [presente]",
-            f"Tipo de Documento: {obj.get('document_type', 'N.D.')}",
-            f"Documento originale: {obj.get('documento_originale', 'N.D.')}",
-            f"Riferimento soggetti: {people}",
-            "Autoridade competente: Cartorio / Tribunal local.",
+            "1. Pais: Brasil",
+            f"2. Este documento publico foi assinado por {authority}",
+            f"3. Na qualidade de signatario do ato de tipo {obj.get('document_type', 'N.D.')}{ref_chunk}",
+            "4. O documento ostenta selo ou carimbo oficial",
+            f"5. Certificado sob o numero {code}",
+            f"6. Em referencia aos nominativi {people}",
+            "7. Autoridade competente: Conselho Nacional de Justica / autoridade delegata",
+            "8. QR-Code de verificacao presente no margine del certificato",
         ]
 
     if doc_type == "Asseverazione":
         obj = schema.get("oggetto", {})
-        people = ", ".join(f"{p.get('nome', '')} {p.get('cognome', '')}" for p in obj.get("soggetto", [])) or "N.D."
+        people = _names_from_people(obj.get("soggetto", []))
         return [
             "VERBALE DI GIURAMENTO / ASSEVERAZIONE DELLA TRADUZIONE",
-            f"Documento asseverato: {obj.get('document_type', 'N.D.')}",
-            f"Originale di riferimento: {obj.get('documento_originale', 'N.D.')}",
-            f"Soggetti menzionati: {people}",
-            "Il traduttore giura di aver bene e fedelmente tradotto il documento.",
+            "L'anno corrente, innanzi al cancelliere, compare il traduttore il quale, ammonito ai sensi di legge, presta giuramento.",
+            f"Il giuramento concerne la traduzione di un atto di tipo {obj.get('document_type', 'N.D.')} relativo al documento {obj.get('documento_originale', 'N.D.')}",
+            f"Nel testo asseverato sono richiamate le seguenti persone: {people}.",
+            "Il traduttore dichiara di aver bene e fedelmente adempiuto all'incarico affidatogli al solo scopo di far conoscere in lingua italiana il contenuto dell'atto.",
         ]
 
     if doc_type == "IndiceProcedimento.html":
@@ -870,13 +1019,13 @@ def format_document_content(doc: dict[str, Any], rng: random.Random) -> list[str
         ) or "N.D."
         return [
             "indice storico procedimenti",
-            f"numero_anno_ruolo: {schema.get('numero_anno_ruolo', 'N.D.')}",
+            f"Procedimento n. {schema.get('numero_anno_ruolo', 'N.D.')}",
             "",
             "data evento | descrizione | note storico | documenti allegati",
-            f"{schema.get('data_iscrizione','N.D.')} | iscritto a ruolo generale | - | Ricorso",
-            f"{schema.get('data_comparsa_avvocatura','N.D.')} | comparsa avvocatura: {schema.get('comparsa_avvocatura','N.D.')} | - | Comparsa",
-            f"{schema.get('data_visibilita_pm','N.D.')} | visibilita PM: {schema.get('visibilita_pm','N.D.')} | - | Comunicazione",
-            f"interventi: {schema.get('interventi','N.D.')} ({schema.get('numero_interventi','N.D.')}) | {row_interventi}",
+            f"{schema.get('data_iscrizione','N.D.')} | iscrizione a ruolo generale | - | Ricorso",
+            f"{schema.get('data_comparsa_avvocatura','N.D.')} | deposito comparsa avvocatura | {'presente' if _is_ok(schema.get('comparsa_avvocatura')) else 'non rilevata'} | Comparsa",
+            f"{schema.get('data_visibilita_pm','N.D.')} | comunicazione al PM | {'annotata' if _is_ok(schema.get('visibilita_pm')) else 'non annotata'} | Comunicazione",
+            f"interventi successivi | {row_interventi} | numero eventi: {schema.get('numero_interventi','N.D.')} | Interventi",
         ]
 
     lines = [f"{doc_type}"]
@@ -926,6 +1075,47 @@ def draw_scan_background(c: canvas.Canvas, width: float, height: float, rng: ran
     c.rect(width - 9, 0, 9, height, fill=1, stroke=0)
     c.setFillColorRGB(0.88, 0.88, 0.86)
     c.rect(0, height - 8, width, 8, fill=1, stroke=0)
+
+    # Uneven copier lighting (dark top/left, lighter center).
+    for i in range(8):
+        shade = 0.89 + i * 0.01
+        c.setFillColorRGB(shade, shade, shade - 0.01)
+        c.rect(0, height - (i + 1) * 6, width, 6, fill=1, stroke=0)
+    for i in range(7):
+        shade = 0.88 + i * 0.012
+        c.setFillColorRGB(shade, shade, shade - 0.01)
+        c.rect(i * 4, 0, 4, height, fill=1, stroke=0)
+
+    # Faint back-page bleed-through style blocks.
+    if rng.random() < min(0.75, 0.45 + 0.2 * profile.artifact_scale):
+        c.setFillColorRGB(0.86, 0.86, 0.85)
+        for _ in range(max(3, int(8 * profile.artifact_scale))):
+            bx = rng.uniform(40, width - 200)
+            by = rng.uniform(60, height - 120)
+            bw = rng.uniform(60, 180)
+            bh = rng.uniform(3, 8)
+            c.rect(bx, by, bw, bh, fill=1, stroke=0)
+
+
+def draw_scan_smudges(c: canvas.Canvas, width: float, height: float, rng: random.Random, profile: RenderProfile) -> None:
+    # Toner smudges and fingerprint-like dots around borders.
+    c.setFillColorRGB(0.70, 0.70, 0.70)
+    for _ in range(max(6, int(16 * profile.noise_scale))):
+        if rng.random() < 0.7:
+            x = rng.choice([rng.uniform(8, 28), rng.uniform(width - 28, width - 8)])
+            y = rng.uniform(20, height - 20)
+        else:
+            x = rng.uniform(25, width - 25)
+            y = rng.choice([rng.uniform(8, 30), rng.uniform(height - 30, height - 8)])
+        r = rng.uniform(0.8, 2.1)
+        c.circle(x, y, r, fill=1, stroke=0)
+
+    # Light streaks from dirty scanner glass.
+    c.setStrokeColorRGB(0.82, 0.82, 0.80)
+    for _ in range(max(2, int(5 * profile.artifact_scale))):
+        x = rng.uniform(35, width - 35)
+        c.setLineWidth(rng.uniform(0.35, 0.9))
+        c.line(x, 16, x + rng.uniform(-1.5, 1.5), height - 16)
 
 
 def draw_punch_holes(c: canvas.Canvas, width: float, height: float, rng: random.Random, profile: RenderProfile) -> None:
@@ -984,10 +1174,15 @@ def draw_scan_stamp(c: canvas.Canvas, width: float, height: float, doc_type: str
     c.translate(stamp_x, stamp_y)
     c.rotate(rng.uniform(-12, 12))
     c.rect(0, 0, 165, 42, fill=0, stroke=1)
+    if rng.random() < 0.65:
+        c.setLineWidth(0.6)
+        c.rect(3, 3, 159, 36, fill=0, stroke=1)
     c.setFont("Helvetica-Bold", 9)
     c.setFillColorRGB(0.65, 0.2, 0.2)
     c.drawString(8, 26, "COPIA CONFORME")
     c.drawString(8, 12, f"TIPO: {doc_type[:20].upper()}")
+    c.setFont("Helvetica", 7)
+    c.drawRightString(158, 12, random_date(rng, 2023, 2025))
     c.restoreState()
 
 
@@ -1026,6 +1221,7 @@ def render_scan_document(
 
     draw_scan_background(c, width, height, rng, profile)
     draw_punch_holes(c, width, height, rng, profile)
+    draw_scan_smudges(c, width, height, rng, profile)
 
     left = 46
     right = width - 46
@@ -1070,6 +1266,9 @@ def render_scan_document(
     body_font_size = 10.5
     text_width = right - left - 6
     c.setFont(body_font, body_font_size)
+    # Simulate slight printer/scanner horizontal drift down the page.
+    x_drift_per_line = rng.uniform(-0.06, 0.06) * profile.jitter_scale
+    line_index = 0
     for line in lines:
         wrapped = simpleSplit(line, body_font, body_font_size, text_width) or [""]
         for piece in wrapped:
@@ -1079,13 +1278,27 @@ def render_scan_document(
                 c.showPage()
                 draw_scan_background(c, width, height, rng, profile)
                 draw_punch_holes(c, width, height, rng, profile)
+                draw_scan_smudges(c, width, height, rng, profile)
                 y = top
                 c.setFont(body_font, body_font_size)
+                line_index = 0
 
             jitter_x = rng.uniform(-1.8, 1.8) * profile.jitter_scale
             jitter_y = rng.uniform(-0.8, 0.8) * profile.jitter_scale
-            c.drawString(left + jitter_x, y + jitter_y, piece)
+            drift_x = x_drift_per_line * line_index
+            text_x = left + jitter_x + drift_x
+            text_y = y + jitter_y
+
+            # Occasional ghost print to mimic toner double-pass artifacts.
+            if rng.random() < min(0.22, 0.10 + 0.08 * profile.artifact_scale):
+                c.saveState()
+                c.setFillColorRGB(0.42, 0.42, 0.42)
+                c.drawString(text_x + rng.uniform(0.25, 0.9), text_y + rng.uniform(-0.25, 0.25), piece)
+                c.restoreState()
+
+            c.drawString(text_x, text_y, piece)
             y -= line_height
+            line_index += 1
 
     # Signature line on procura originals when signature is expected.
     if doc.get("document_type") == "Procura":
@@ -1108,6 +1321,306 @@ def render_scan_document(
     draw_scan_stamp(c, width, height, doc["document_type"], rng, profile)
 
 
+def _bitmap_font(size: int) -> ImageFont.ImageFont:
+    # Prefer bundled PIL bitmap font for portability across environments.
+    try:
+        return ImageFont.truetype("DejaVuSansMono.ttf", size)
+    except OSError:
+        return ImageFont.load_default()
+
+
+def _add_bitmap_noise(img: Image.Image, rng: random.Random, profile: RenderProfile) -> None:
+    draw = ImageDraw.Draw(img)
+    w, h = img.size
+
+    # Broad uneven grayscale zones from scanner lamp and paper quality.
+    for _ in range(max(3, int(7 * profile.artifact_scale))):
+        cx = rng.randint(0, w)
+        cy = rng.randint(0, h)
+        rx = rng.randint(int(w * 0.16), int(w * 0.38))
+        ry = rng.randint(int(h * 0.10), int(h * 0.28))
+        shade = rng.randint(195, 228)
+        draw.ellipse((cx - rx, cy - ry, cx + rx, cy + ry), fill=shade)
+
+    # Edge darkening bands common on low-quality scans.
+    for i in range(rng.randint(10, 24)):
+        shade = rng.randint(168, 214)
+        draw.rectangle((0, i, w, i + 1), fill=shade)
+    for i in range(rng.randint(8, 18)):
+        shade = rng.randint(170, 218)
+        draw.rectangle((0, h - 1 - i, w, h - i), fill=shade)
+
+    # Speckle and dust.
+    for _ in range(max(1200, int(4200 * profile.noise_scale))):
+        x = rng.randint(0, w - 1)
+        y = rng.randint(0, h - 1)
+        g = rng.randint(150, 235)
+        draw.point((x, y), fill=g)
+
+    # Vertical scanner streaks.
+    for _ in range(max(2, int(8 * profile.artifact_scale))):
+        x = rng.randint(18, w - 18)
+        g = rng.randint(178, 212)
+        draw.line((x, 0, x + rng.randint(-1, 1), h), fill=g, width=rng.randint(1, 2))
+
+    # Faint horizontal copier bands.
+    for _ in range(max(8, int(20 * profile.noise_scale))):
+        y = rng.randint(15, h - 15)
+        g = rng.randint(188, 222)
+        draw.rectangle((0, y, w, y + rng.randint(1, 3)), fill=g)
+
+
+def _affine_resample() -> int:
+    resampling = getattr(Image, "Resampling", Image)
+    return getattr(resampling, "BICUBIC")
+
+
+def _apply_page_distortion(img: Image.Image, rng: random.Random, profile: RenderProfile) -> Image.Image:
+    w, h = img.size
+    bed = Image.new("L", (w, h), color=rng.randint(178, 216))
+    bed_draw = ImageDraw.Draw(bed)
+
+    # Scanner bed illumination gradient.
+    left = rng.randint(176, 208)
+    right = rng.randint(186, 222)
+    for x in range(w):
+        t = x / max(1, w - 1)
+        g = int(left * (1 - t) + right * t)
+        bed_draw.line((x, 0, x, h), fill=g)
+
+    # Add soft cloudy grayscale variation.
+    for _ in range(rng.randint(3, 7)):
+        cx = rng.randint(0, w)
+        cy = rng.randint(0, h)
+        rx = rng.randint(int(w * 0.20), int(w * 0.45))
+        ry = rng.randint(int(h * 0.12), int(h * 0.30))
+        g = rng.randint(182, 224)
+        bed_draw.ellipse((cx - rx, cy - ry, cx + rx, cy + ry), fill=g)
+
+    # Slight page skew and translation so pages are not perfectly straight.
+    angle = rng.uniform(-1.9, 1.9) * profile.jitter_scale
+    page = img.rotate(
+        angle,
+        resample=_affine_resample(),
+        expand=False,
+        fillcolor=rng.randint(202, 228),
+    )
+
+    shear_x = rng.uniform(-0.018, 0.018) * profile.artifact_scale
+    shear_y = rng.uniform(-0.010, 0.010) * profile.artifact_scale
+    shift_x = rng.uniform(-22, 22) * profile.jitter_scale
+    shift_y = rng.uniform(-16, 16) * profile.jitter_scale
+    page = page.transform(
+        (w, h),
+        Image.AFFINE,
+        (1, shear_x, shift_x, shear_y, 1, shift_y),
+        resample=_affine_resample(),
+        fillcolor=rng.randint(200, 226),
+    )
+
+    # Blend with bed to preserve illumination differences across pages.
+    merged = Image.blend(bed, page, alpha=0.90)
+
+    # Occasional stronger blur for low-quality scanner/camera captures.
+    if rng.random() < min(0.72, 0.30 + 0.25 * profile.artifact_scale):
+        merged = merged.filter(ImageFilter.GaussianBlur(radius=rng.uniform(0.45, 1.25)))
+
+    return merged
+
+
+def _draw_bitmap_stamp(img: Image.Image, rng: random.Random, doc_type: str, profile: RenderProfile) -> None:
+    if rng.random() > profile.stamp_prob:
+        return
+    draw = ImageDraw.Draw(img)
+    w, h = img.size
+    x0 = w - 360 + rng.randint(-15, 10)
+    y0 = h - 280 + rng.randint(-12, 12)
+    x1 = x0 + 310
+    y1 = y0 + 82
+    draw.rectangle((x0, y0, x1, y1), outline=110, width=2)
+    draw.rectangle((x0 + 5, y0 + 5, x1 - 5, y1 - 5), outline=130, width=1)
+    f = _bitmap_font(20)
+    draw.text((x0 + 12, y0 + 10), "COPIA CONFORME", font=f, fill=100)
+    draw.text((x0 + 12, y0 + 42), f"TIPO: {doc_type[:18].upper()}", font=_bitmap_font(14), fill=106)
+
+
+def _draw_bitmap_seal(img: Image.Image, rng: random.Random, profile: RenderProfile) -> None:
+    if rng.random() > profile.seal_prob:
+        return
+    draw = ImageDraw.Draw(img)
+    w, h = img.size
+    cx = w - 210 + rng.randint(-18, 18)
+    cy = h - 185 + rng.randint(-14, 14)
+    r0 = 62
+    r1 = 49
+    draw.ellipse((cx - r0, cy - r0, cx + r0, cy + r0), outline=118, width=3)
+    draw.ellipse((cx - r1, cy - r1, cx + r1, cy + r1), outline=126, width=2)
+    draw.text((cx - 40, cy - 8), "UFFICIO", font=_bitmap_font(14), fill=115)
+
+
+def _draw_bitmap_signature(img: Image.Image, x: int, y: int, seed: int) -> None:
+    rng = random.Random(seed)
+    draw = ImageDraw.Draw(img)
+    points: list[tuple[int, int]] = []
+    cursor_x = x
+    cursor_y = y
+    for _ in range(18):
+        cursor_x += rng.randint(10, 22)
+        cursor_y += rng.randint(-8, 8)
+        points.append((cursor_x, cursor_y))
+
+    if len(points) < 2:
+        return
+
+    # Slightly thicker ink-like overlapping strokes.
+    for offset in (0, 1):
+        shifted = [(px, py + offset) for px, py in points]
+        draw.line(shifted, fill=rng.randint(25, 55), width=2, joint="curve")
+
+    # Underline beneath signature.
+    draw.line((x - 12, y + 22, x + 250, y + 22), fill=90, width=1)
+
+
+def _same_people_group(a: list[dict[str, str]], b: list[dict[str, str]]) -> bool:
+    if len(a) != len(b):
+        return False
+    a_keys = sorted(_norm_person_key(person) for person in a)
+    b_keys = sorted(_norm_person_key(person) for person in b)
+    return a_keys == b_keys
+
+
+def _resolve_translation_source_doc(docs: list[dict[str, Any]], doc_index: int) -> dict[str, Any] | None:
+    current = docs[doc_index]
+    if current.get("document_type") != "Traduzione":
+        return None
+
+    obj = current.get("schema", {}).get("oggetto", {})
+    target_type = obj.get("document_type")
+    target_people = obj.get("soggetto", [])
+    if not target_type:
+        return None
+
+    for candidate in reversed(docs[:doc_index]):
+        if candidate.get("document_type") != target_type:
+            continue
+        candidate_people = _extract_subjects(candidate)
+        if target_people and candidate_people and _same_people_group(target_people, candidate_people):
+            return candidate
+        if not target_people:
+            return candidate
+    return None
+
+
+def _render_scan_bitmap_pages(
+    title: str,
+    idx: int,
+    doc: dict[str, Any],
+    style_seed: int,
+    profile: RenderProfile,
+    source_doc: dict[str, Any] | None = None,
+) -> list[Image.Image]:
+    seed_material = json.dumps(doc, ensure_ascii=False, sort_keys=True)
+    base_seed = int.from_bytes(seed_material.encode("utf-8", errors="ignore")[:8] or b"0", "little", signed=False)
+    local_seed = (base_seed ^ style_seed ^ (idx * 7919)) & 0xFFFFFFFF
+    rng = random.Random(local_seed)
+
+    # A4-ish raster page at moderate DPI to force image-like scans.
+    page_w, page_h = 1240, 1754
+    margin_l, margin_r, margin_t, margin_b = 88, 88, 92, 85
+    text_w = page_w - margin_l - margin_r
+
+    header_font = _bitmap_font(25)
+    mono_font = _bitmap_font(16)
+    body_font = _bitmap_font(20)
+    footer_font = _bitmap_font(14)
+
+    lines = format_document_content(doc, rng, source_doc=source_doc)
+    wrapped: list[str] = []
+    for line in lines:
+        wline = textwrap.wrap(line, width=94) or [""]
+        wrapped.extend(wline)
+
+    content_start_y = margin_t + 86
+    line_h = 28
+    usable_h = page_h - margin_b - content_start_y
+    lines_per_page = max(14, usable_h // line_h)
+
+    pages: list[Image.Image] = []
+    cursor = 0
+    page_no = 1
+    while cursor < len(wrapped):
+        img = Image.new("L", (page_w, page_h), color=rng.randint(218, 236))
+        draw = ImageDraw.Draw(img)
+
+        # Paper border and vignette.
+        draw.rectangle((32, 32, page_w - 32, page_h - 32), outline=145, width=2)
+        for i in range(10):
+            g = 215 + i
+            draw.rectangle((i, i, page_w - i, page_h - i), outline=g)
+
+        _add_bitmap_noise(img, rng, profile)
+
+        # Header block.
+        draw.text((margin_l, margin_t), f"FASCICOLO: {title} | DOC {idx:02d} | {doc['document_type'].upper()}", font=header_font, fill=28)
+        draw.text((margin_l, margin_t + 36), f"Protocollo interno n. {rng.randint(10000, 99999)} / {rng.choice([2023, 2024, 2025])}", font=mono_font, fill=44)
+        draw.text((page_w - margin_r - 105, margin_t + 36), f"Pag. {page_no}", font=mono_font, fill=44)
+        draw.line((margin_l, margin_t + 72, page_w - margin_r, margin_t + 72), fill=100, width=2)
+
+        # Simulate slight scanner skew by drifting text horizontally down the page.
+        drift = rng.uniform(-0.16, 0.16) * profile.jitter_scale
+        y = content_start_y
+        for i in range(lines_per_page):
+            if cursor >= len(wrapped):
+                break
+            txt = wrapped[cursor]
+            x = margin_l + int(i * drift)
+
+            # Toner ghost/double print.
+            if rng.random() < min(0.22, 0.10 + 0.08 * profile.artifact_scale):
+                draw.text((x + 1, y), txt, font=body_font, fill=105)
+
+            draw.text((x, y), txt, font=body_font, fill=rng.randint(22, 45))
+            y += line_h
+            cursor += 1
+
+        # Watermark-like text on some pages.
+        if rng.random() < profile.watermark_prob:
+            draw.text((page_w // 2 - 170, page_h // 2), "COPIA SCANSITA", font=_bitmap_font(46), fill=198)
+
+        if page_no == 1 and doc.get("document_type") == "Procura":
+            soggetti = doc.get("schema", {}).get("soggetto", [])
+            if soggetti and soggetti[0].get("firma_presente") == "OK":
+                _draw_bitmap_signature(img, page_w - 420, min(page_h - 170, y + 30), local_seed + 77)
+
+        _draw_bitmap_stamp(img, rng, doc["document_type"], profile)
+        _draw_bitmap_seal(img, rng, profile)
+
+        # Bottom footer + barcode-like stripes.
+        draw.text((margin_l, page_h - 52), f"Pagina scansita - riferimento documento {idx:02d}", font=footer_font, fill=58)
+        draw.text((page_w - margin_r - 170, page_h - 52), f"hash {rng.randint(100000, 999999)}", font=footer_font, fill=58)
+        bx0 = page_w - margin_r - 210
+        by0 = page_h - 38
+        for _ in range(80):
+            bw = rng.choice([1, 2, 3])
+            bh = rng.choice([10, 12, 14])
+            draw.rectangle((bx0, by0, bx0 + bw, by0 + bh), fill=rng.randint(10, 60))
+            bx0 += bw + rng.choice([1, 1, 2])
+            if bx0 > page_w - margin_r - 8:
+                break
+
+        # Mild blur to remove perfect digital edges.
+        if rng.random() < 0.85:
+            img = img.filter(ImageFilter.GaussianBlur(radius=rng.uniform(0.3, 0.9)))
+
+        # Final scanner-pass distortion and uneven grayscale field.
+        img = _apply_page_distortion(img, rng, profile)
+
+        pages.append(img)
+        page_no += 1
+
+    return pages
+
+
 def render_pdf(
     output_path: Path,
     title: str,
@@ -1120,9 +1633,12 @@ def render_pdf(
 
     # Rule: each logical document starts on a new page.
     for i, doc in enumerate(docs, start=1):
-        if i > 1:
-            c.showPage()
-        render_scan_document(c, width, height, title, i, doc, style_seed=style_seed, profile=profile)
+        source_doc = _resolve_translation_source_doc(docs, i - 1)
+        bitmap_pages = _render_scan_bitmap_pages(title, i, doc, style_seed=style_seed, profile=profile, source_doc=source_doc)
+        for j, img in enumerate(bitmap_pages):
+            if i > 1 or j > 0:
+                c.showPage()
+            c.drawImage(ImageReader(img), 0, 0, width=width, height=height, preserveAspectRatio=False, mask="auto")
 
     c.save()
 

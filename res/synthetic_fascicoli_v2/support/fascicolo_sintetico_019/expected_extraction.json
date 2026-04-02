@@ -1,0 +1,373 @@
+[
+  {
+    "document_type": "IndiceProcedimento.html",
+    "schema": {
+      "numero_anno_ruolo": "919/2024",
+      "data_iscrizione": "24-11-2025",
+      "iscrizione_post_28_02_2023": "OK",
+      "iscrizione_pre_27_03_2025": "KO",
+      "comparsa_avvocatura": "NO",
+      "data_comparsa_avvocatura": "06-09-2024",
+      "visibilita_pm": "NO",
+      "data_visibilita_pm": "19-07-2025",
+      "interventi": "NO",
+      "numero_interventi": 0,
+      "intervenuti": []
+    }
+  },
+  {
+    "document_type": "Ricorso",
+    "schema": {
+      "avvocati": [
+        {
+          "nome": "Pedro",
+          "cognome": "Pereira"
+        }
+      ],
+      "numero_ricorrenti": 1,
+      "ricorrenti_maggiorenni": [
+        {
+          "nome": "Camila Maria",
+          "cognome": "Santos-Cardoso",
+          "nazionalita": "Brasiliana"
+        }
+      ],
+      "ricorrenti_minorenni": [],
+      "ricorrenti_per_matrimonio": [],
+      "linea_discendenza": [
+        {
+          "nome": "Carlos Miguel",
+          "cognome": "Pereira"
+        },
+        {
+          "nome": "Beatriz Luz",
+          "cognome": "Cardoso Pereira"
+        },
+        {
+          "nome": "Camila Maria",
+          "cognome": "Santos-Cardoso"
+        }
+      ],
+      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo. Nel ricorso risultano varianti anagrafiche/pseudonimi: Carlos Miguel Pereira (alias: Carlos Pereir). Nel ricorso sono dichiarati i seguenti alias/pseudonimi: Carlos Pereiro.",
+      "riassunto_linea_discendenza": "Carlos Miguel Pereira -> Beatriz Luz Cardoso Pereira -> Camila Maria Santos-Cardoso",
+      "coerenza_linea_discendenza": "SI",
+      "proveniente_dal_brasile": "SI",
+      "data_ricorso": "18-02-2025"
+    }
+  },
+  {
+    "document_type": "Procura",
+    "schema": {
+      "soggetto": [
+        {
+          "nome": "Camila Maria",
+          "cognome": "Santos-Cardoso",
+          "minorenne": "NO",
+          "rappresentanti_legali": [],
+          "firma_presente": "OK"
+        }
+      ],
+      "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "avvocati": [
+        {
+          "nome": "Pedro",
+          "cognome": "Pereira"
+        }
+      ],
+      "tribunale_brescia_indicato": "OK",
+      "tribunale_indicato": "Tribunale civile competente",
+      "data_procura": "05-03-2025",
+      "rilasciata_in_italia": "NO",
+      "scritta_in_italiano": "OK"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Procura",
+        "soggetto": [
+          {
+            "nome": "Camila Maria",
+            "cognome": "Santos-Cardoso"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Carlos Miguel",
+        "cognome": "Pereira"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Bergamo",
+      "provincia": "bergamo",
+      "padre": {
+        "nome": "Joao",
+        "cognome": "Barbosa"
+      },
+      "madre": {
+        "nome": "Renata",
+        "cognome": "Ribeiro"
+      },
+      "data_nascita": "12-08-1844",
+      "area_nascita": "A",
+      "stato": "Italia"
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Beatriz Luz",
+        "cognome": "Cardoso Pereira"
+      },
+      "tipo": "parrocchiale",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Niteroi",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Carlos Miguel",
+        "cognome": "Pereira"
+      },
+      "madre": {
+        "nome": "Patricia",
+        "cognome": "Cardoso"
+      },
+      "data_nascita": "17-02-1939",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Beatriz Luz",
+            "cognome": "Cardoso Pereira"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Beatriz Luz",
+            "cognome": "Cardoso Pereira"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Beatriz Luz",
+            "cognome": "Cardoso Pereira"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Camila Maria",
+        "cognome": "Santos-Cardoso"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Belo Horizonte",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Rafael",
+        "cognome": "Oliveira"
+      },
+      "madre": {
+        "nome": "Beatriz Luz",
+        "cognome": "Cardoso Pereira"
+      },
+      "data_nascita": "15-07-1953",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Camila Maria",
+            "cognome": "Santos-Cardoso"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Camila Maria",
+            "cognome": "Santos-Cardoso"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Camila Maria",
+            "cognome": "Santos-Cardoso"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Atto di morte",
+    "schema": {
+      "soggetto": {
+        "nome": "Carlos Miguel",
+        "cognome": "Pereira"
+      },
+      "data_decesso": "30-10-1987"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di morte",
+        "soggetto": [
+          {
+            "nome": "Carlos Miguel",
+            "cognome": "Pereira"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di morte",
+        "soggetto": [
+          {
+            "nome": "Carlos Miguel",
+            "cognome": "Pereira"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Carlos Miguel",
+            "cognome": "Pereira"
+          }
+        ],
+        "documento_originale": "Atto di morte"
+      }
+    }
+  },
+  {
+    "document_type": "Certificato Negativo di Naturalizzazione",
+    "schema": {
+      "soggetto": {
+        "nome": "Carlos Miguel",
+        "cognome": "Pereira"
+      },
+      "pseudonimi": [
+        {
+          "nome": "Carlos",
+          "cognome": "Pereiro"
+        }
+      ],
+      "formula_negativa_presente": "OK",
+      "data_nascita": "12-08-1844"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato Negativo di Naturalizzazione",
+        "soggetto": [
+          {
+            "nome": "Carlos Miguel",
+            "cognome": "Pereira"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato Negativo di Naturalizzazione",
+        "soggetto": [
+          {
+            "nome": "Carlos Miguel",
+            "cognome": "Pereira"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Certificato Negativo di Naturalizzazione",
+        "soggetto": [
+          {
+            "nome": "Carlos Miguel",
+            "cognome": "Pereira"
+          }
+        ]
+      }
+    }
+  }
+]

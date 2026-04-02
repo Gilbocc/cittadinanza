@@ -1,0 +1,785 @@
+[
+  {
+    "document_type": "IndiceProcedimento.html",
+    "schema": {
+      "numero_anno_ruolo": "651/2024",
+      "data_iscrizione": "05-03-2025",
+      "iscrizione_post_28_02_2023": "OK",
+      "iscrizione_pre_27_03_2025": "OK",
+      "comparsa_avvocatura": "SI",
+      "data_comparsa_avvocatura": "06-10-2024",
+      "visibilita_pm": "SI",
+      "data_visibilita_pm": "30-01-2024",
+      "interventi": "NO",
+      "numero_interventi": 0,
+      "intervenuti": []
+    }
+  },
+  {
+    "document_type": "Ricorso",
+    "schema": {
+      "avvocati": [
+        {
+          "nome": "Fernanda",
+          "cognome": "Pereira"
+        }
+      ],
+      "numero_ricorrenti": 2,
+      "ricorrenti_maggiorenni": [
+        {
+          "nome": "Diego",
+          "cognome": "Rodrigues",
+          "nazionalita": "Brasiliana"
+        },
+        {
+          "nome": "Larissa Luz",
+          "cognome": "Silva-Barbosa",
+          "nazionalita": "Brasiliana"
+        }
+      ],
+      "ricorrenti_minorenni": [],
+      "ricorrenti_per_matrimonio": [],
+      "linea_discendenza": [
+        {
+          "nome": "Ana Luz",
+          "cognome": "Barbosa"
+        },
+        {
+          "nome": "Paulo Luis",
+          "cognome": "Pereira Barbosa"
+        },
+        {
+          "nome": "Fernanda Luz",
+          "cognome": "Barbosa"
+        },
+        {
+          "nome": "Larissa Luz",
+          "cognome": "Silva-Barbosa"
+        },
+        {
+          "nome": "Diego",
+          "cognome": "Rodrigues"
+        }
+      ],
+      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo. Nel ricorso risultano varianti anagrafiche/pseudonimi: Paulo Luis Pereira Barbosa (alias: Paulo Pereir). Nel ricorso sono dichiarati i seguenti alias/pseudonimi: Ana Barboso.",
+      "riassunto_linea_discendenza": "Ana Luz Barbosa -> Paulo Luis Pereira Barbosa -> Fernanda Luz Barbosa -> Larissa Luz Silva-Barbosa -> Diego Rodrigues",
+      "coerenza_linea_discendenza": "SI",
+      "proveniente_dal_brasile": "SI",
+      "data_ricorso": "23-04-2025"
+    }
+  },
+  {
+    "document_type": "Procura",
+    "schema": {
+      "soggetto": [
+        {
+          "nome": "Diego",
+          "cognome": "Rodrigues",
+          "minorenne": "NO",
+          "rappresentanti_legali": [],
+          "firma_presente": "OK"
+        }
+      ],
+      "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "avvocati": [
+        {
+          "nome": "Fernanda",
+          "cognome": "Pereira"
+        }
+      ],
+      "tribunale_brescia_indicato": "OK",
+      "tribunale_indicato": "Tribunale civile competente",
+      "data_procura": "27-04-2025",
+      "rilasciata_in_italia": "NO",
+      "scritta_in_italiano": "NO"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Procura",
+        "soggetto": [
+          {
+            "nome": "Diego",
+            "cognome": "Rodrigues"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Procura",
+        "soggetto": [
+          {
+            "nome": "Diego",
+            "cognome": "Rodrigues"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Procura",
+        "soggetto": [
+          {
+            "nome": "Diego",
+            "cognome": "Rodrigues"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Procura",
+    "schema": {
+      "soggetto": [
+        {
+          "nome": "Larissa Luz",
+          "cognome": "Silva-Barbosa",
+          "minorenne": "NO",
+          "rappresentanti_legali": [],
+          "firma_presente": "OK"
+        }
+      ],
+      "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "avvocati": [
+        {
+          "nome": "Fernanda",
+          "cognome": "Pereira"
+        }
+      ],
+      "tribunale_brescia_indicato": "OK",
+      "tribunale_indicato": "Tribunale civile competente",
+      "data_procura": "14-01-2024",
+      "rilasciata_in_italia": "NO",
+      "scritta_in_italiano": "NO"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Procura",
+        "soggetto": [
+          {
+            "nome": "Larissa Luz",
+            "cognome": "Silva-Barbosa"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Procura",
+        "soggetto": [
+          {
+            "nome": "Larissa Luz",
+            "cognome": "Silva-Barbosa"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Procura",
+        "soggetto": [
+          {
+            "nome": "Larissa Luz",
+            "cognome": "Silva-Barbosa"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Ana Luz",
+        "cognome": "Barbosa"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Brescia",
+      "provincia": "brescia",
+      "padre": {
+        "nome": "Marcos",
+        "cognome": "Oliveira"
+      },
+      "madre": {
+        "nome": "Beatriz",
+        "cognome": "Oliveira"
+      },
+      "data_nascita": "25-08-1928",
+      "area_nascita": "A",
+      "stato": "Italia"
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Paulo Luis",
+        "cognome": "Pereira Barbosa"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "NO",
+      "comune_nascita": "Curitiba",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Pedro",
+        "cognome": "Cardoso"
+      },
+      "madre": {
+        "nome": "Ana Luz",
+        "cognome": "Barbosa"
+      },
+      "data_nascita": "27-10-1967",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Paulo Luis",
+            "cognome": "Pereira Barbosa"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Paulo Luis",
+            "cognome": "Pereira Barbosa"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Paulo Luis",
+            "cognome": "Pereira Barbosa"
+          }
+        ],
+        "documento_originale": "Atto di nascita"
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Fernanda Luz",
+        "cognome": "Barbosa"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "NO",
+      "comune_nascita": "Rio de Janeiro",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Paulo Luis",
+        "cognome": "Pereira Barbosa"
+      },
+      "madre": {
+        "nome": "Patricia",
+        "cognome": "Mendes"
+      },
+      "data_nascita": "03-09-1934",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Fernanda Luz",
+            "cognome": "Barbosa"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Fernanda Luz",
+            "cognome": "Barbosa"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Fernanda Luz",
+            "cognome": "Barbosa"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Larissa Luz",
+        "cognome": "Silva-Barbosa"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "NO",
+      "comune_nascita": "Santos",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Pedro",
+        "cognome": "Souza"
+      },
+      "madre": {
+        "nome": "Fernanda Luz",
+        "cognome": "Barbosa"
+      },
+      "data_nascita": "12-08-1933",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Larissa Luz",
+            "cognome": "Silva-Barbosa"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Larissa Luz",
+            "cognome": "Silva-Barbosa"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Larissa Luz",
+            "cognome": "Silva-Barbosa"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Diego",
+        "cognome": "Rodrigues"
+      },
+      "tipo": "parrocchiale",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Salvador",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Joao",
+        "cognome": "Souza"
+      },
+      "madre": {
+        "nome": "Larissa Luz",
+        "cognome": "Silva-Barbosa"
+      },
+      "data_nascita": "27-05-1951",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Diego",
+            "cognome": "Rodrigues"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Diego",
+            "cognome": "Rodrigues"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Diego",
+            "cognome": "Rodrigues"
+          }
+        ],
+        "documento_originale": "Atto di nascita"
+      }
+    }
+  },
+  {
+    "document_type": "Certificato Negativo di Naturalizzazione",
+    "schema": {
+      "soggetto": {
+        "nome": "Ana Luz",
+        "cognome": "Barbosa"
+      },
+      "pseudonimi": [
+        {
+          "nome": "Ana",
+          "cognome": "Barboso"
+        }
+      ],
+      "formula_negativa_presente": "OK",
+      "data_nascita": "25-08-1928"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato Negativo di Naturalizzazione",
+        "soggetto": [
+          {
+            "nome": "Ana Luz",
+            "cognome": "Barbosa"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato Negativo di Naturalizzazione",
+        "soggetto": [
+          {
+            "nome": "Ana Luz",
+            "cognome": "Barbosa"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Certificato Negativo di Naturalizzazione",
+        "soggetto": [
+          {
+            "nome": "Ana Luz",
+            "cognome": "Barbosa"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Documenti Personali Vari",
+    "schema": {
+      "id": "UD-2983",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "26-03-2023"
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Paulo",
+            "cognome": "Rodrigues"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Camila",
+            "cognome": "Santos"
+          },
+          {
+            "nome": "Juliana",
+            "cognome": "Pereira"
+          }
+        ],
+        "documento_originale": "Certificato di matrimonio"
+      }
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Documento non supportato",
+        "soggetto": [
+          {
+            "nome": "Diego",
+            "cognome": "Mendes"
+          }
+        ],
+        "documento_originale": "Avviso Udienza"
+      }
+    }
+  },
+  {
+    "document_type": "Documenti Personali Vari",
+    "schema": {
+      "id": "UD-7149",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "23-03-2025"
+    }
+  },
+  {
+    "document_type": "Avviso Udienza",
+    "schema": {
+      "id": "UD-2245",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "12-05-2024"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Paulo",
+            "cognome": "Rodrigues"
+          },
+          {
+            "nome": "Pedro",
+            "cognome": "Barbosa"
+          }
+        ],
+        "documento_originale": "Certificato di matrimonio"
+      }
+    }
+  },
+  {
+    "document_type": "Comunicazione PEC",
+    "schema": {
+      "id": "UD-2129",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "02-11-2025"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Documento non supportato",
+        "soggetto": [
+          {
+            "nome": "Juliana",
+            "cognome": "Araujo"
+          }
+        ],
+        "documento_originale": "Documenti Personali Vari"
+      }
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Documento non supportato",
+        "soggetto": [
+          {
+            "nome": "Joao",
+            "cognome": "Mendes"
+          }
+        ],
+        "documento_originale": "Comunicazione PEC"
+      }
+    }
+  },
+  {
+    "document_type": "Certificato di matrimonio",
+    "schema": {
+      "soggetti": [
+        {
+          "nome": "Paulo",
+          "cognome": "Rodrigues"
+        },
+        {
+          "nome": "Pedro",
+          "cognome": "Barbosa"
+        }
+      ],
+      "luogo": "Recife",
+      "data_matrimonio": "18-06-1978",
+      "note": "Documento non richiesto ai fini del riconoscimento richiesto."
+    }
+  },
+  {
+    "document_type": "Certificato di matrimonio",
+    "schema": {
+      "soggetti": [
+        {
+          "nome": "Camila",
+          "cognome": "Santos"
+        },
+        {
+          "nome": "Juliana",
+          "cognome": "Pereira"
+        }
+      ],
+      "luogo": "Santos",
+      "data_matrimonio": "28-06-2012",
+      "note": "Documento non richiesto ai fini del riconoscimento richiesto."
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Camila",
+            "cognome": "Santos"
+          },
+          {
+            "nome": "Juliana",
+            "cognome": "Pereira"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Paulo",
+            "cognome": "Rodrigues"
+          },
+          {
+            "nome": "Pedro",
+            "cognome": "Barbosa"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Camila",
+            "cognome": "Santos"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  }
+]

@@ -1,0 +1,132 @@
+{
+  "0": {
+    "A": "OK",
+    "B": "OK",
+    "C": "OK",
+    "Ci": "NULL",
+    "D": "OK",
+    "E": "OK",
+    "F": "OK",
+    "G": "OK",
+    "Gi": "NULL",
+    "H": "KO",
+    "Hi": "Marcos Joao Silva-Mendes-Souza"
+  },
+  "1": {
+    "1": "OK"
+  },
+  "2": {
+    "A": "15.12.2025",
+    "B": "OK",
+    "C": "KO",
+    "D": "SI",
+    "Di": "06.02.2025",
+    "E": "NO",
+    "Ei": "NULL",
+    "F": "NO",
+    "Fi": "NULL",
+    "Fii": "NULL",
+    "Fiii": "NULL",
+    "G": "0326-2024"
+  },
+  "3": {
+    "A": "Carolina Nunes, Juliana Costa",
+    "B": 1,
+    "C": "Marcos Joao Silva-Mendes-Souza",
+    "D": "Marcos Joao Silva-Mendes-Souza: Brasiliana",
+    "E": "NO",
+    "Ei": "NULL",
+    "Eii": "NULL",
+    "F": "OK; Camila Luz Ribeiro -> Ana Mendes -> Marcos Joao Silva-Mendes",
+    "G": "KO; Ricorrenti per matrimonio presenti",
+    "Gi": "Ana Souza"
+  },
+  "4": {
+    "4/1": {
+      "A": "Marcos Joao Silva-Mendes-Souza",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Marcos Joao Silva-Mendes-Souza",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "21.05.2024",
+      "G": "KO",
+      "H": "OK",
+      "Hi": "NULL",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
+      "Iiii": "NULL",
+      "Iiv": "NULL"
+    }
+  },
+  "5": {
+    "A": "OK",
+    "Ai": "NULL",
+    "C": "Brescia",
+    "D": "OK",
+    "E": "Padre: Joao Nunes, Madre: Larissa Costa",
+    "F": "02.02.1857"
+  },
+  "6": {
+    "A": "NO",
+    "Ai": "NULL",
+    "Aii": "NULL",
+    "Aiii": "NULL",
+    "C": "09.11.1912",
+    "D": "OK",
+    "Di": "NULL",
+    "Dii": "NULL",
+    "Diii": "NULL",
+    "E": "OK",
+    "F": "OK",
+    "Fi": "OK",
+    "Fii": "NULL"
+  },
+  "7": {
+    "A": "OK",
+    "B": "Camila Ribeiro",
+    "C": "OK",
+    "D": "OK",
+    "E": "OK",
+    "Ei": "NULL",
+    "Eii": "OK"
+  },
+  "8": {
+    "8/1": {
+      "A": "Ana Mendes",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
+    },
+    "8/2": {
+      "A": "Marcos Joao Silva-Mendes",
+      "B": "KO",
+      "C": "KO",
+      "D": "KO",
+      "Di": "NULL",
+      "Dii": "NULL"
+    }
+  },
+  "10": [
+    "0H",
+    "2C",
+    "3G",
+    "4/1G",
+    "8/2B",
+    "8/2C",
+    "8/2D"
+  ],
+  "11": {
+    "0H": "Atti di nascita dei ricorrenti mancanti: Marcos Joao Silva-Mendes-Souza",
+    "2C": "Il ricorso non risulta iscritto prima del 27.03.2025 escluso",
+    "3G": "Ricorrenti che chiedono la cittadinanza per matrimonio: Ana Souza",
+    "4/1G": "La data della procura di Marcos Joao Silva-Mendes-Souza non è anteriore alla data del ricorso",
+    "8/2B": "Atto di nascita non trovato per Marcos Joao Silva-Mendes",
+    "8/2C": "Impossibile verificare l'apostille dell'atto di nascita di Marcos Joao Silva-Mendes perché l'atto manca",
+    "8/2D": "Impossibile verificare la traduzione dell'atto di nascita di Marcos Joao Silva-Mendes perché l'atto manca"
+  }
+}

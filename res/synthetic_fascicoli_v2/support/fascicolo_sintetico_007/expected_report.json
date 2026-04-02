@@ -1,0 +1,116 @@
+{
+  "0": {
+    "A": "OK",
+    "B": "OK",
+    "C": "OK",
+    "Ci": "NULL",
+    "D": "OK",
+    "E": "OK",
+    "F": "OK",
+    "G": "OK",
+    "Gi": "NULL",
+    "H": "OK",
+    "Hi": "NULL"
+  },
+  "1": {
+    "1": "OK"
+  },
+  "2": {
+    "A": "17.03.2025",
+    "B": "OK",
+    "C": "OK",
+    "D": "NO",
+    "Di": "NULL",
+    "E": "NO",
+    "Ei": "NULL",
+    "F": "SI",
+    "Fi": "1",
+    "Fii": "Diego Pereira",
+    "Fiii": "18.01.2025",
+    "G": "0249-2024"
+  },
+  "3": {
+    "A": "Pedro Oliveira, Fernanda Lima",
+    "B": 1,
+    "C": "Mateus Oliveira",
+    "D": "Mateus Oliveira: Brasiliana",
+    "E": "NO",
+    "Ei": "NULL",
+    "Eii": "NULL",
+    "F": "OK; Antonio Paulo Araujo -> Juliana Ana Barbosa -> Mateus Oliveira",
+    "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
+    "Gi": "NULL"
+  },
+  "4": {
+    "4/1": {
+      "A": "Mateus Oliveira",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Mateus Oliveira",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "17.04.2025",
+      "G": "OK",
+      "H": "OK",
+      "Hi": "NULL",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
+      "Iiii": "NULL",
+      "Iiv": "NULL"
+    }
+  },
+  "5": {
+    "A": "OK",
+    "Ai": "NULL",
+    "C": "Mantova",
+    "D": "OK",
+    "E": "Padre: Mateus Costa, Madre: Maria Ribeiro",
+    "F": "01.10.1847"
+  },
+  "6": {
+    "A": "NO",
+    "Ai": "NULL",
+    "Aii": "NULL",
+    "Aiii": "NULL",
+    "C": "29.05.1964",
+    "D": "OK",
+    "Di": "NULL",
+    "Dii": "NULL",
+    "Diii": "NULL",
+    "E": "OK",
+    "F": "OK",
+    "Fi": "OK",
+    "Fii": "NULL"
+  },
+  "7": {
+    "A": "OK",
+    "B": "Antonio Araujo",
+    "C": "OK",
+    "D": "OK",
+    "E": "OK",
+    "Ei": "NULL",
+    "Eii": "OK"
+  },
+  "8": {
+    "8/1": {
+      "A": "Juliana Ana Barbosa",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/2": {
+      "A": "Mateus Oliveira",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
+    }
+  },
+  "10": null,
+  "11": null
+}

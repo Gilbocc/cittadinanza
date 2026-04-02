@@ -1,0 +1,166 @@
+{
+  "0": {
+    "A": "OK",
+    "B": "OK",
+    "C": "OK",
+    "Ci": "NULL",
+    "D": "OK",
+    "E": "OK",
+    "F": "OK",
+    "G": "KO",
+    "Gi": "Carlos Silva Almeida",
+    "H": "OK",
+    "Hi": "NULL"
+  },
+  "1": {
+    "1": "OK"
+  },
+  "2": {
+    "A": "29.12.2025",
+    "B": "OK",
+    "C": "KO",
+    "D": "SI",
+    "Di": "25.08.2024",
+    "E": "NO",
+    "Ei": "NULL",
+    "F": "NO",
+    "Fi": "NULL",
+    "Fii": "NULL",
+    "Fiii": "NULL",
+    "G": "0386-2024"
+  },
+  "3": {
+    "A": "Juliana Barbosa",
+    "B": 2,
+    "C": "Ana Souza Silva, Pedro Silva",
+    "D": "Ana Souza Silva: Brasiliana, Pedro Silva: Brasiliana",
+    "E": "NO",
+    "Ei": "NULL",
+    "Eii": "NULL",
+    "F": "OK; Renata Luz Souza -> Renata Almeida -> Carlos Silva Almeida -> Pedro Silva -> Ana Souza Silva",
+    "G": "KO; Ricorrenti per matrimonio presenti",
+    "Gi": "Ana Rodrigues"
+  },
+  "4": {
+    "4/1": {
+      "A": "Ana Souza Silva",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Ana Souza Silva",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "16.05.2024",
+      "G": "OK",
+      "H": "OK",
+      "Hi": "NULL",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
+      "Iiii": "NULL",
+      "Iiv": "NULL"
+    },
+    "4/2": {
+      "A": "Pedro Silva",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Pedro Silva",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "23.08.2025",
+      "G": "KO",
+      "H": "NO",
+      "Hi": "OK",
+      "I": "NO",
+      "Ii": "OK",
+      "Iii": "OK",
+      "Iiii": "NULL",
+      "Iiv": "OK"
+    }
+  },
+  "5": {
+    "A": "OK",
+    "Ai": "NULL",
+    "C": "Cremona",
+    "D": "OK",
+    "E": "Padre: Carlos Souza, Madre: Patricia Costa",
+    "F": "27.01.1927"
+  },
+  "6": {
+    "A": "OK",
+    "Ai": "NULL",
+    "Aii": "NULL",
+    "Aiii": "NULL",
+    "C": "NULL",
+    "D": "NULL",
+    "Di": "NULL",
+    "Dii": "NULL",
+    "Diii": "NULL",
+    "E": "NULL",
+    "F": "NULL",
+    "Fi": "NULL",
+    "Fii": "NULL"
+  },
+  "7": {
+    "A": "OK",
+    "B": "NULL",
+    "C": "OK",
+    "D": "OK",
+    "E": "OK",
+    "Ei": "OK",
+    "Eii": "NULL"
+  },
+  "8": {
+    "8/1": {
+      "A": "Renata Almeida",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/2": {
+      "A": "Carlos Silva Almeida",
+      "B": "KO",
+      "C": "KO",
+      "D": "KO",
+      "Di": "NULL",
+      "Dii": "NULL"
+    },
+    "8/3": {
+      "A": "Pedro Silva",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/4": {
+      "A": "Ana Souza Silva",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
+    }
+  },
+  "10": [
+    "0G",
+    "2C",
+    "3G",
+    "4/2G",
+    "8/2B",
+    "8/2C",
+    "8/2D"
+  ],
+  "11": {
+    "0G": "Atti di nascita dei discendenti mancanti: Carlos Silva Almeida",
+    "2C": "Il ricorso non risulta iscritto prima del 27.03.2025 escluso",
+    "3G": "Ricorrenti che chiedono la cittadinanza per matrimonio: Ana Rodrigues",
+    "4/2G": "La data della procura di Pedro Silva non è anteriore alla data del ricorso",
+    "8/2B": "Atto di nascita non trovato per Carlos Silva Almeida",
+    "8/2C": "Impossibile verificare l'apostille dell'atto di nascita di Carlos Silva Almeida perché l'atto manca",
+    "8/2D": "Impossibile verificare la traduzione dell'atto di nascita di Carlos Silva Almeida perché l'atto manca"
+  }
+}

@@ -1,0 +1,566 @@
+[
+  {
+    "document_type": "IndiceProcedimento.html",
+    "schema": {
+      "numero_anno_ruolo": "513/2025",
+      "data_iscrizione": "06-09-2025",
+      "iscrizione_post_28_02_2023": "OK",
+      "iscrizione_pre_27_03_2025": "KO",
+      "comparsa_avvocatura": "NO",
+      "data_comparsa_avvocatura": "27-01-2024",
+      "visibilita_pm": "NO",
+      "data_visibilita_pm": "29-10-2024",
+      "interventi": "NO",
+      "numero_interventi": 0,
+      "intervenuti": []
+    }
+  },
+  {
+    "document_type": "Ricorso",
+    "schema": {
+      "avvocati": [
+        {
+          "nome": "Rafael",
+          "cognome": "Ribeiro"
+        }
+      ],
+      "numero_ricorrenti": 1,
+      "ricorrenti_maggiorenni": [
+        {
+          "nome": "Juliana",
+          "cognome": "Oliveira Araujo-Souza",
+          "nazionalita": "Brasiliana"
+        }
+      ],
+      "ricorrenti_minorenni": [],
+      "ricorrenti_per_matrimonio": [],
+      "linea_discendenza": [
+        {
+          "nome": "Patricia Luz",
+          "cognome": "Araujo"
+        },
+        {
+          "nome": "Patricia",
+          "cognome": "Araujo"
+        },
+        {
+          "nome": "Juliana",
+          "cognome": "Oliveira Araujo"
+        }
+      ],
+      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo. Nel ricorso risultano varianti anagrafiche/pseudonimi: Juliana Oliveira Araujo (alias: Juliana Oliveir). Nel ricorso sono dichiarati i seguenti alias/pseudonimi: Patricia Araujo.",
+      "riassunto_linea_discendenza": "Patricia Luz Araujo -> Patricia Araujo -> Juliana Oliveira Araujo",
+      "coerenza_linea_discendenza": "SI",
+      "proveniente_dal_brasile": "SI",
+      "data_ricorso": "06-02-2024"
+    }
+  },
+  {
+    "document_type": "Procura",
+    "schema": {
+      "soggetto": [
+        {
+          "nome": "Juliana",
+          "cognome": "Oliveira Araujo-Souza",
+          "minorenne": "NO",
+          "rappresentanti_legali": [],
+          "firma_presente": "OK"
+        }
+      ],
+      "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "avvocati": [
+        {
+          "nome": "Rafael",
+          "cognome": "Ribeiro"
+        }
+      ],
+      "tribunale_brescia_indicato": "OK",
+      "tribunale_indicato": "Tribunale civile competente",
+      "data_procura": "13-01-2024",
+      "rilasciata_in_italia": "NO",
+      "scritta_in_italiano": "NO"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Procura",
+        "soggetto": [
+          {
+            "nome": "Juliana",
+            "cognome": "Oliveira Araujo-Souza"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Procura",
+        "soggetto": [
+          {
+            "nome": "Juliana",
+            "cognome": "Oliveira Araujo-Souza"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Juliana",
+            "cognome": "Oliveira Araujo-Souza"
+          }
+        ],
+        "documento_originale": "Procura"
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Patricia Luz",
+        "cognome": "Araujo"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "NO",
+      "comune_nascita": "Mantova",
+      "provincia": "mantova",
+      "padre": {
+        "nome": "Antonio",
+        "cognome": "Araujo"
+      },
+      "madre": {
+        "nome": "Carolina",
+        "cognome": "Araujo"
+      },
+      "data_nascita": "03-07-1902",
+      "area_nascita": "A",
+      "stato": "Italia"
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Patricia",
+        "cognome": "Araujo"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Porto Alegre",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Paulo",
+        "cognome": "Santos"
+      },
+      "madre": {
+        "nome": "Patricia Luz",
+        "cognome": "Araujo"
+      },
+      "data_nascita": "09-07-2002",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Patricia",
+            "cognome": "Araujo"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Patricia",
+            "cognome": "Araujo"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Patricia",
+            "cognome": "Araujo"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Juliana",
+        "cognome": "Oliveira Araujo"
+      },
+      "tipo": "parrocchiale",
+      "timbro_diocesi": "NO",
+      "comune_nascita": "Brasilia",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Rafael",
+        "cognome": "Cardoso"
+      },
+      "madre": {
+        "nome": "Patricia",
+        "cognome": "Araujo"
+      },
+      "data_nascita": "17-09-1988",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Juliana",
+            "cognome": "Oliveira Araujo"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Juliana",
+            "cognome": "Oliveira Araujo"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Juliana",
+            "cognome": "Oliveira Araujo"
+          }
+        ],
+        "documento_originale": "Atto di nascita"
+      }
+    }
+  },
+  {
+    "document_type": "Certificato Negativo di Naturalizzazione",
+    "schema": {
+      "soggetto": {
+        "nome": "Patricia Luz",
+        "cognome": "Araujo"
+      },
+      "pseudonimi": [
+        {
+          "nome": "Patricia",
+          "cognome": "Araujo"
+        }
+      ],
+      "formula_negativa_presente": "OK",
+      "data_nascita": "03-07-1902"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato Negativo di Naturalizzazione",
+        "soggetto": [
+          {
+            "nome": "Patricia Luz",
+            "cognome": "Araujo"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato Negativo di Naturalizzazione",
+        "soggetto": [
+          {
+            "nome": "Patricia Luz",
+            "cognome": "Araujo"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Certificato Negativo di Naturalizzazione",
+        "soggetto": [
+          {
+            "nome": "Patricia Luz",
+            "cognome": "Araujo"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Avviso Udienza",
+    "schema": {
+      "id": "UD-3250",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "15-02-2024"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Maria",
+            "cognome": "Araujo"
+          },
+          {
+            "nome": "Pedro",
+            "cognome": "Pereira"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Paulo",
+            "cognome": "Pereira"
+          },
+          {
+            "nome": "Pedro",
+            "cognome": "Cardoso"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Certificato di matrimonio",
+    "schema": {
+      "soggetti": [
+        {
+          "nome": "Maria",
+          "cognome": "Araujo"
+        },
+        {
+          "nome": "Pedro",
+          "cognome": "Pereira"
+        }
+      ],
+      "luogo": "Santos",
+      "data_matrimonio": "29-05-1940",
+      "note": "Documento non richiesto ai fini del riconoscimento richiesto."
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Documento non supportato",
+        "soggetto": [
+          {
+            "nome": "Antonio",
+            "cognome": "Almeida"
+          }
+        ],
+        "documento_originale": "Comunicazione PEC"
+      }
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Maria",
+            "cognome": "Araujo"
+          },
+          {
+            "nome": "Pedro",
+            "cognome": "Pereira"
+          }
+        ],
+        "documento_originale": "Certificato di matrimonio"
+      }
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Documento non supportato",
+        "soggetto": [
+          {
+            "nome": "Carolina",
+            "cognome": "Ribeiro"
+          }
+        ],
+        "documento_originale": "Avviso Udienza"
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Maria",
+            "cognome": "Araujo"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Paulo",
+            "cognome": "Pereira"
+          },
+          {
+            "nome": "Pedro",
+            "cognome": "Cardoso"
+          }
+        ],
+        "documento_originale": "Certificato di matrimonio"
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Paulo",
+            "cognome": "Pereira"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Nota Spese",
+    "schema": {
+      "id": "UD-2166",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "25-08-2025"
+    }
+  },
+  {
+    "document_type": "Documenti Personali Vari",
+    "schema": {
+      "id": "UD-2963",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "20-02-2025"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Documento non supportato",
+        "soggetto": [
+          {
+            "nome": "Juliana",
+            "cognome": "Silva"
+          }
+        ],
+        "documento_originale": "Documenti Personali Vari"
+      }
+    }
+  },
+  {
+    "document_type": "Certificato di matrimonio",
+    "schema": {
+      "soggetti": [
+        {
+          "nome": "Paulo",
+          "cognome": "Pereira"
+        },
+        {
+          "nome": "Pedro",
+          "cognome": "Cardoso"
+        }
+      ],
+      "luogo": "Rio de Janeiro",
+      "data_matrimonio": "27-06-2017",
+      "note": "Documento non richiesto ai fini del riconoscimento richiesto."
+    }
+  },
+  {
+    "document_type": "Comunicazione PEC",
+    "schema": {
+      "id": "UD-5269",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "25-08-2024"
+    }
+  }
+]

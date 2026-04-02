@@ -1,0 +1,128 @@
+{
+  "0": {
+    "A": "KO",
+    "B": "OK",
+    "C": "OK",
+    "Ci": "NULL",
+    "D": "OK",
+    "E": "OK",
+    "F": "OK",
+    "G": "OK",
+    "Gi": "NULL",
+    "H": "KO",
+    "Hi": "Carolina Cardoso Nunes-Souza"
+  },
+  "1": {
+    "1": "OK"
+  },
+  "2": {
+    "A": "NULL",
+    "B": "NULL",
+    "C": "NULL",
+    "D": "NULL",
+    "Di": "NULL",
+    "E": "NULL",
+    "Ei": "NULL",
+    "F": "NULL",
+    "Fi": "NULL",
+    "Fii": "NULL",
+    "Fiii": "NULL",
+    "G": "NULL"
+  },
+  "3": {
+    "A": "Fernanda Ribeiro, Diego Almeida",
+    "B": 1,
+    "C": "Carolina Cardoso Nunes-Souza",
+    "D": "Carolina Cardoso Nunes-Souza: Brasiliana",
+    "E": "NO",
+    "Ei": "NULL",
+    "Eii": "NULL",
+    "F": "OK; Beatriz Maria Mendes -> Rafael Nunes -> Carolina Cardoso Nunes",
+    "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
+    "Gi": "NULL"
+  },
+  "4": {
+    "4/1": {
+      "A": "Carolina Cardoso Nunes-Souza",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Carolina Cardoso Nunes-Souza",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "28.01.2024",
+      "G": "OK",
+      "H": "OK",
+      "Hi": "NULL",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
+      "Iiii": "NULL",
+      "Iiv": "NULL"
+    }
+  },
+  "5": {
+    "A": "NO",
+    "Ai": "KO",
+    "C": "Brescia",
+    "D": "OK",
+    "E": "Padre: Carlos Almeida, Madre: Beatriz Santos",
+    "F": "12.04.1894"
+  },
+  "6": {
+    "A": "OK",
+    "Ai": "NULL",
+    "Aii": "NULL",
+    "Aiii": "NULL",
+    "C": "NULL",
+    "D": "NULL",
+    "Di": "NULL",
+    "Dii": "NULL",
+    "Diii": "NULL",
+    "E": "NULL",
+    "F": "NULL",
+    "Fi": "NULL",
+    "Fii": "NULL"
+  },
+  "7": {
+    "A": "OK",
+    "B": "NULL",
+    "C": "OK",
+    "D": "OK",
+    "E": "OK",
+    "Ei": "OK",
+    "Eii": "NULL"
+  },
+  "8": {
+    "8/1": {
+      "A": "Rafael Nunes",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
+    },
+    "8/2": {
+      "A": "Carolina Cardoso Nunes",
+      "B": "KO",
+      "C": "KO",
+      "D": "KO",
+      "Di": "NULL",
+      "Dii": "NULL"
+    }
+  },
+  "10": [
+    "0A",
+    "0H",
+    "8/2B",
+    "8/2C",
+    "8/2D"
+  ],
+  "11": {
+    "0A": "IndiceProcedimento.html mancante",
+    "0H": "Atti di nascita dei ricorrenti mancanti: Carolina Cardoso Nunes-Souza",
+    "8/2B": "Atto di nascita non trovato per Carolina Cardoso Nunes",
+    "8/2C": "Impossibile verificare l'apostille dell'atto di nascita di Carolina Cardoso Nunes perché l'atto manca",
+    "8/2D": "Impossibile verificare la traduzione dell'atto di nascita di Carolina Cardoso Nunes perché l'atto manca"
+  }
+}

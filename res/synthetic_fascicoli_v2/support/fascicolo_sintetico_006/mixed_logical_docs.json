@@ -1,0 +1,653 @@
+[
+  {
+    "document_type": "IndiceProcedimento.html",
+    "schema": {
+      "numero_anno_ruolo": "308/2025",
+      "data_iscrizione": "22-02-2024",
+      "iscrizione_post_28_02_2023": "OK",
+      "iscrizione_pre_27_03_2025": "OK",
+      "comparsa_avvocatura": "NO",
+      "data_comparsa_avvocatura": "21-10-2024",
+      "visibilita_pm": "SI",
+      "data_visibilita_pm": "16-12-2025",
+      "interventi": "NO",
+      "numero_interventi": 0,
+      "intervenuti": []
+    }
+  },
+  {
+    "document_type": "Ricorso",
+    "schema": {
+      "avvocati": [
+        {
+          "nome": "Camila",
+          "cognome": "Santos"
+        },
+        {
+          "nome": "Renata",
+          "cognome": "Cardoso"
+        }
+      ],
+      "numero_ricorrenti": 1,
+      "ricorrenti_maggiorenni": [
+        {
+          "nome": "Rafael",
+          "cognome": "Almeida Costa-Souza",
+          "nazionalita": "Brasiliana"
+        }
+      ],
+      "ricorrenti_minorenni": [],
+      "ricorrenti_per_matrimonio": [],
+      "linea_discendenza": [
+        {
+          "nome": "Patricia Aparecida",
+          "cognome": "Oliveira"
+        },
+        {
+          "nome": "Beatriz",
+          "cognome": "Santos"
+        },
+        {
+          "nome": "Ana Luz",
+          "cognome": "Mendes"
+        },
+        {
+          "nome": "Larissa",
+          "cognome": "Mendes"
+        },
+        {
+          "nome": "Pedro Carlos",
+          "cognome": "Costa"
+        },
+        {
+          "nome": "Rafael",
+          "cognome": "Almeida Costa"
+        }
+      ],
+      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo. Nel ricorso sono dichiarati i seguenti alias/pseudonimi: Patricia Oliveiro.",
+      "riassunto_linea_discendenza": "Patricia Aparecida Oliveira -> Beatriz Santos -> Ana Luz Mendes -> Larissa Mendes -> Pedro Carlos Costa -> Rafael Almeida Costa",
+      "coerenza_linea_discendenza": "SI",
+      "proveniente_dal_brasile": "SI",
+      "data_ricorso": "27-12-2025"
+    }
+  },
+  {
+    "document_type": "Procura",
+    "schema": {
+      "soggetto": [
+        {
+          "nome": "Rafael",
+          "cognome": "Almeida Costa-Souza",
+          "minorenne": "NO",
+          "rappresentanti_legali": [],
+          "firma_presente": "OK"
+        }
+      ],
+      "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "avvocati": [
+        {
+          "nome": "Camila",
+          "cognome": "Santos"
+        },
+        {
+          "nome": "Renata",
+          "cognome": "Cardoso"
+        }
+      ],
+      "tribunale_brescia_indicato": "OK",
+      "tribunale_indicato": "Tribunale civile competente",
+      "data_procura": "18-07-2025",
+      "rilasciata_in_italia": "OK",
+      "scritta_in_italiano": "OK"
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Patricia Aparecida",
+        "cognome": "Oliveira"
+      },
+      "tipo": "parrocchiale",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Brescia",
+      "provincia": "brescia",
+      "padre": {
+        "nome": "Marcos",
+        "cognome": "Santos"
+      },
+      "madre": {
+        "nome": "Juliana",
+        "cognome": "Mendes"
+      },
+      "data_nascita": "17-08-1897",
+      "area_nascita": "A",
+      "stato": "Italia"
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Beatriz",
+        "cognome": "Santos"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "NO",
+      "comune_nascita": "Niteroi",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Mateus",
+        "cognome": "Ribeiro"
+      },
+      "madre": {
+        "nome": "Patricia Aparecida",
+        "cognome": "Oliveira"
+      },
+      "data_nascita": "11-04-1967",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Beatriz",
+            "cognome": "Santos"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Beatriz",
+            "cognome": "Santos"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Beatriz",
+            "cognome": "Santos"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Ana Luz",
+        "cognome": "Mendes"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Salvador",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Mateus",
+        "cognome": "Almeida"
+      },
+      "madre": {
+        "nome": "Beatriz",
+        "cognome": "Santos"
+      },
+      "data_nascita": "06-02-1947",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Ana Luz",
+            "cognome": "Mendes"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Ana Luz",
+            "cognome": "Mendes"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Ana Luz",
+            "cognome": "Mendes"
+          }
+        ],
+        "documento_originale": "Atto di nascita"
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Larissa",
+        "cognome": "Mendes"
+      },
+      "tipo": "parrocchiale",
+      "timbro_diocesi": "NO",
+      "comune_nascita": "Niteroi",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Diego",
+        "cognome": "Nunes"
+      },
+      "madre": {
+        "nome": "Ana Luz",
+        "cognome": "Mendes"
+      },
+      "data_nascita": "14-10-1954",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Larissa",
+            "cognome": "Mendes"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Larissa",
+            "cognome": "Mendes"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Larissa",
+            "cognome": "Mendes"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Pedro Carlos",
+        "cognome": "Costa"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Recife",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Marcos",
+        "cognome": "Pereira"
+      },
+      "madre": {
+        "nome": "Larissa",
+        "cognome": "Mendes"
+      },
+      "data_nascita": "20-02-1995",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Pedro Carlos",
+            "cognome": "Costa"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Pedro Carlos",
+            "cognome": "Costa"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Pedro Carlos",
+            "cognome": "Costa"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Rafael",
+        "cognome": "Almeida Costa"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Fortaleza",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Pedro Carlos",
+        "cognome": "Costa"
+      },
+      "madre": {
+        "nome": "Patricia",
+        "cognome": "Mendes"
+      },
+      "data_nascita": "17-08-2007",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Rafael",
+            "cognome": "Almeida Costa"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Rafael",
+            "cognome": "Almeida Costa"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Rafael",
+            "cognome": "Almeida Costa"
+          }
+        ],
+        "documento_originale": "Atto di nascita"
+      }
+    }
+  },
+  {
+    "document_type": "Certificato Negativo di Naturalizzazione",
+    "schema": {
+      "soggetto": {
+        "nome": "Patricia Aparecida",
+        "cognome": "Oliveira"
+      },
+      "pseudonimi": [
+        {
+          "nome": "Patricia",
+          "cognome": "Oliveiro"
+        }
+      ],
+      "formula_negativa_presente": "OK",
+      "data_nascita": "17-08-1897"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato Negativo di Naturalizzazione",
+        "soggetto": [
+          {
+            "nome": "Patricia Aparecida",
+            "cognome": "Oliveira"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato Negativo di Naturalizzazione",
+        "soggetto": [
+          {
+            "nome": "Patricia Aparecida",
+            "cognome": "Oliveira"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Patricia Aparecida",
+            "cognome": "Oliveira"
+          }
+        ],
+        "documento_originale": "Certificato Negativo di Naturalizzazione"
+      }
+    }
+  },
+  {
+    "document_type": "Avviso Udienza",
+    "schema": {
+      "id": "UD-9115",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "17-03-2023"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Patricia",
+            "cognome": "Santos"
+          },
+          {
+            "nome": "Larissa",
+            "cognome": "Ribeiro"
+          }
+        ],
+        "documento_originale": "Certificato di matrimonio"
+      }
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Documento non supportato",
+        "soggetto": [
+          {
+            "nome": "Carolina",
+            "cognome": "Pereira"
+          }
+        ],
+        "documento_originale": "Avviso Udienza"
+      }
+    }
+  },
+  {
+    "document_type": "Avviso Udienza",
+    "schema": {
+      "id": "UD-7274",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "23-04-2024"
+    }
+  },
+  {
+    "document_type": "Bozza Sentenza",
+    "schema": {
+      "id": "UD-1715",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "13-10-2024"
+    }
+  },
+  {
+    "document_type": "Certificato di matrimonio",
+    "schema": {
+      "soggetti": [
+        {
+          "nome": "Patricia",
+          "cognome": "Santos"
+        },
+        {
+          "nome": "Larissa",
+          "cognome": "Ribeiro"
+        }
+      ],
+      "luogo": "Porto Alegre",
+      "data_matrimonio": "02-10-1932",
+      "note": "Documento non richiesto ai fini del riconoscimento richiesto."
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Patricia",
+            "cognome": "Santos"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Patricia",
+            "cognome": "Santos"
+          },
+          {
+            "nome": "Larissa",
+            "cognome": "Ribeiro"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Documento non supportato",
+        "soggetto": [
+          {
+            "nome": "Fernanda",
+            "cognome": "Rodrigues"
+          }
+        ],
+        "documento_originale": "Bozza Sentenza"
+      }
+    }
+  }
+]

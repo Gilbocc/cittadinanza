@@ -511,14 +511,26 @@ class DocumentValidator:
         iscrizione_dt = self.parse_flexible_date(raw_data_iscrizione)
         data_iscrizione = self.format_date(raw_data_iscrizione)
 
-        if iscrizione_dt is None:
+        # Prefer explicit extracted checks when present in the source schema.
+        # Fall back to deterministic date comparison only when flags are absent.
+        explicit_post_2023 = self.answer_ok_ko(instr.get("iscrizione_post_28_02_2023", "NULL"))
+        explicit_pre_2025 = self.answer_ok_ko(instr.get("iscrizione_pre_27_03_2025", "NULL"))
+
+        if explicit_post_2023 != "NULL":
+            check_post_2023 = explicit_post_2023
+        elif iscrizione_dt is None:
             # If an indice exists but the registration date is missing/unparseable,
             # the temporal checks cannot be satisfied and must fail.
             check_post_2023 = "KO"
-            check_pre_2025 = "KO"
         else:
             # 2B: dopo il 28.02.2023 incluso
             check_post_2023 = "OK" if iscrizione_dt >= datetime(2023, 2, 28) else "KO"
+
+        if explicit_pre_2025 != "NULL":
+            check_pre_2025 = explicit_pre_2025
+        elif iscrizione_dt is None:
+            check_pre_2025 = "KO"
+        else:
             # 2C: prima del 27.03.2025 escluso
             check_pre_2025 = "OK" if iscrizione_dt < datetime(2025, 3, 27) else "KO"
 

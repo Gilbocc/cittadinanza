@@ -1,0 +1,164 @@
+{
+  "0": {
+    "A": "OK",
+    "B": "OK",
+    "C": "OK",
+    "Ci": "NULL",
+    "D": "OK",
+    "E": "OK",
+    "F": "OK",
+    "G": "OK",
+    "Gi": "NULL",
+    "H": "OK",
+    "Hi": "NULL"
+  },
+  "1": {
+    "1": "OK"
+  },
+  "2": {
+    "A": "18.05.2024",
+    "B": "OK",
+    "C": "OK",
+    "D": "SI",
+    "Di": "14.12.2025",
+    "E": "NO",
+    "Ei": "NULL",
+    "F": "NO",
+    "Fi": "NULL",
+    "Fii": "NULL",
+    "Fiii": "NULL",
+    "G": "0497-2025"
+  },
+  "3": {
+    "A": "Carolina Barbosa",
+    "B": 2,
+    "C": "Carlos Silva Ribeiro, Mateus Ribeiro",
+    "D": "Carlos Silva Ribeiro: Brasiliana, Mateus Ribeiro: Brasiliana",
+    "E": "NO",
+    "Ei": "NULL",
+    "Eii": "NULL",
+    "F": "OK; Ana Luz Cardoso -> Paulo Carlos Nunes -> Renata Rodrigues -> Antonio Luis Almeida-Rodrigues -> Mateus Ribeiro -> Carlos Silva Ribeiro",
+    "G": "KO; Ricorrenti per matrimonio presenti",
+    "Gi": "Carlos Almeida"
+  },
+  "4": {
+    "4/1": {
+      "A": "Carlos Silva Ribeiro",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Carlos Silva Ribeiro",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "05.02.2024",
+      "G": "OK",
+      "H": "NO",
+      "Hi": "OK",
+      "I": "NO",
+      "Ii": "OK",
+      "Iii": "NO",
+      "Iiii": "OK",
+      "Iiv": "NULL"
+    },
+    "4/2": {
+      "A": "Mateus Ribeiro",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Mateus Ribeiro",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "NO",
+      "Ei": "Tribunale civile competente",
+      "F": "31.01.2024",
+      "G": "OK",
+      "H": "NO",
+      "Hi": "OK",
+      "I": "NO",
+      "Ii": "KO",
+      "Iii": "NULL",
+      "Iiii": "NULL",
+      "Iiv": "NULL"
+    }
+  },
+  "5": {
+    "A": "OK",
+    "Ai": "NULL",
+    "C": "Cremona",
+    "D": "OK",
+    "E": "Padre: Jose Araujo, Madre: Camila Nunes",
+    "F": "02.12.1891"
+  },
+  "6": {
+    "A": "OK",
+    "Ai": "NULL",
+    "Aii": "NULL",
+    "Aiii": "NULL",
+    "C": "NULL",
+    "D": "NULL",
+    "Di": "NULL",
+    "Dii": "NULL",
+    "Diii": "NULL",
+    "E": "NULL",
+    "F": "NULL",
+    "Fi": "NULL",
+    "Fii": "NULL"
+  },
+  "7": {
+    "A": "OK",
+    "B": "NULL",
+    "C": "OK",
+    "D": "OK",
+    "E": "OK",
+    "Ei": "OK",
+    "Eii": "NULL"
+  },
+  "8": {
+    "8/1": {
+      "A": "Paulo Carlos Nunes",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/2": {
+      "A": "Renata Rodrigues",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/3": {
+      "A": "Antonio Luis Almeida-Rodrigues",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
+    },
+    "8/4": {
+      "A": "Mateus Ribeiro",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
+    },
+    "8/5": {
+      "A": "Carlos Silva Ribeiro",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
+    }
+  },
+  "10": [
+    "3G",
+    "4/2Ii"
+  ],
+  "11": {
+    "3G": "Ricorrenti che chiedono la cittadinanza per matrimonio: Carlos Almeida",
+    "4/2Ii": "Traduzione italiana mancante per la procura di Mateus Ribeiro"
+  }
+}

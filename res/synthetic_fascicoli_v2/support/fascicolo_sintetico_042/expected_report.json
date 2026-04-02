@@ -1,0 +1,120 @@
+{
+  "0": {
+    "A": "OK",
+    "B": "OK",
+    "C": "OK",
+    "Ci": "NULL",
+    "D": "OK",
+    "E": "OK",
+    "F": "OK",
+    "G": "OK",
+    "Gi": "NULL",
+    "H": "OK",
+    "Hi": "NULL"
+  },
+  "1": {
+    "1": "OK"
+  },
+  "2": {
+    "A": "29.07.2025",
+    "B": "OK",
+    "C": "KO",
+    "D": "NO",
+    "Di": "NULL",
+    "E": "NO",
+    "Ei": "NULL",
+    "F": "NO",
+    "Fi": "NULL",
+    "Fii": "NULL",
+    "Fiii": "NULL",
+    "G": "0281-2025"
+  },
+  "3": {
+    "A": "Diego Pereira",
+    "B": 1,
+    "C": "Carlos Luis Araujo-Souza",
+    "D": "Carlos Luis Araujo-Souza: Brasiliana",
+    "E": "NO",
+    "Ei": "NULL",
+    "Eii": "NULL",
+    "F": "OK; Maria Maria Oliveira -> Camila Ana Ribeiro -> Carlos Luis Araujo",
+    "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
+    "Gi": "NULL"
+  },
+  "4": {
+    "4/1": {
+      "A": "Carlos Luis Araujo-Souza",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Carlos Luis Araujo-Souza",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "29.08.2024",
+      "G": "OK",
+      "H": "NO",
+      "Hi": "OK",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
+      "Iiii": "NULL",
+      "Iiv": "NULL"
+    }
+  },
+  "5": {
+    "A": "OK",
+    "Ai": "NULL",
+    "C": "Bergamo",
+    "D": "OK",
+    "E": "Padre: Paulo Pereira, Madre: Carolina Rodrigues",
+    "F": "29.11.1964"
+  },
+  "6": {
+    "A": "OK",
+    "Ai": "NULL",
+    "Aii": "NULL",
+    "Aiii": "NULL",
+    "C": "NULL",
+    "D": "NULL",
+    "Di": "NULL",
+    "Dii": "NULL",
+    "Diii": "NULL",
+    "E": "NULL",
+    "F": "NULL",
+    "Fi": "NULL",
+    "Fii": "NULL"
+  },
+  "7": {
+    "A": "OK",
+    "B": "NULL",
+    "C": "OK",
+    "D": "OK",
+    "E": "OK",
+    "Ei": "NULL",
+    "Eii": "OK"
+  },
+  "8": {
+    "8/1": {
+      "A": "Camila Ana Ribeiro",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
+    },
+    "8/2": {
+      "A": "Carlos Luis Araujo",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
+    }
+  },
+  "10": [
+    "2C"
+  ],
+  "11": {
+    "2C": "Il ricorso non risulta iscritto prima del 27.03.2025 escluso"
+  }
+}

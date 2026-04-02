@@ -1,0 +1,120 @@
+{
+  "0": {
+    "A": "OK",
+    "B": "OK",
+    "C": "OK",
+    "Ci": "NULL",
+    "D": "OK",
+    "E": "OK",
+    "F": "OK",
+    "G": "OK",
+    "Gi": "NULL",
+    "H": "OK",
+    "Hi": "NULL"
+  },
+  "1": {
+    "1": "OK"
+  },
+  "2": {
+    "A": "23.07.2025",
+    "B": "OK",
+    "C": "KO",
+    "D": "NO",
+    "Di": "NULL",
+    "E": "SI",
+    "Ei": "15.03.2025",
+    "F": "NO",
+    "Fi": "NULL",
+    "Fii": "NULL",
+    "Fiii": "NULL",
+    "G": "0476-2024"
+  },
+  "3": {
+    "A": "Beatriz Cardoso",
+    "B": 1,
+    "C": "Carlos Araujo-Souza",
+    "D": "Carlos Araujo-Souza: Brasiliana",
+    "E": "NO",
+    "Ei": "NULL",
+    "Eii": "NULL",
+    "F": "OK; Camila Aparecida Mendes -> Maria Costa-Mendes -> Carlos Araujo",
+    "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
+    "Gi": "NULL"
+  },
+  "4": {
+    "4/1": {
+      "A": "Carlos Araujo-Souza",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Carlos Araujo-Souza",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "30.09.2024",
+      "G": "OK",
+      "H": "NO",
+      "Hi": "OK",
+      "I": "NO",
+      "Ii": "OK",
+      "Iii": "NO",
+      "Iiii": "OK",
+      "Iiv": "NULL"
+    }
+  },
+  "5": {
+    "A": "OK",
+    "Ai": "NULL",
+    "C": "Cremona",
+    "D": "OK",
+    "E": "Padre: Paulo Barbosa, Madre: Patricia Ribeiro",
+    "F": "30.11.1941"
+  },
+  "6": {
+    "A": "OK",
+    "Ai": "NULL",
+    "Aii": "NULL",
+    "Aiii": "NULL",
+    "C": "NULL",
+    "D": "NULL",
+    "Di": "NULL",
+    "Dii": "NULL",
+    "Diii": "NULL",
+    "E": "NULL",
+    "F": "NULL",
+    "Fi": "NULL",
+    "Fii": "NULL"
+  },
+  "7": {
+    "A": "OK",
+    "B": "Camila Mendeo",
+    "C": "OK",
+    "D": "OK",
+    "E": "OK",
+    "Ei": "NULL",
+    "Eii": "OK"
+  },
+  "8": {
+    "8/1": {
+      "A": "Maria Costa-Mendes",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/2": {
+      "A": "Carlos Araujo",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    }
+  },
+  "10": [
+    "2C"
+  ],
+  "11": {
+    "2C": "Il ricorso non risulta iscritto prima del 27.03.2025 escluso"
+  }
+}

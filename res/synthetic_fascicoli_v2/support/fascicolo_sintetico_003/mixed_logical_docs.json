@@ -1,0 +1,706 @@
+[
+  {
+    "document_type": "IndiceProcedimento.html",
+    "schema": {
+      "numero_anno_ruolo": "494/2024",
+      "data_iscrizione": "28-04-2024",
+      "iscrizione_post_28_02_2023": "OK",
+      "iscrizione_pre_27_03_2025": "OK",
+      "comparsa_avvocatura": "SI",
+      "data_comparsa_avvocatura": "26-12-2025",
+      "visibilita_pm": "SI",
+      "data_visibilita_pm": "16-06-2025",
+      "interventi": "SI",
+      "numero_interventi": 2,
+      "intervenuti": [
+        {
+          "nome": "Ana",
+          "cognome": "Barbosa",
+          "data": "17-11-2024"
+        },
+        {
+          "nome": "Juliana",
+          "cognome": "Lima",
+          "data": "07-06-2025"
+        }
+      ]
+    }
+  },
+  {
+    "document_type": "Ricorso",
+    "schema": {
+      "avvocati": [
+        {
+          "nome": "Beatriz",
+          "cognome": "Araujo"
+        }
+      ],
+      "numero_ricorrenti": 1,
+      "ricorrenti_maggiorenni": [
+        {
+          "nome": "Maria",
+          "cognome": "Santos-Araujo",
+          "nazionalita": "Brasiliana"
+        }
+      ],
+      "ricorrenti_minorenni": [],
+      "ricorrenti_per_matrimonio": [],
+      "linea_discendenza": [
+        {
+          "nome": "Joao Carlos",
+          "cognome": "Araujo"
+        },
+        {
+          "nome": "Camila",
+          "cognome": "Costa"
+        },
+        {
+          "nome": "Camila",
+          "cognome": "Araujo"
+        },
+        {
+          "nome": "Maria",
+          "cognome": "Santos-Araujo"
+        }
+      ],
+      "racconto_linea_discendenza": "Linea di discendenza ricostruita da certificati esteri e italiani allegati al fascicolo. Nel ricorso risultano varianti anagrafiche/pseudonimi: Camila Costa (alias: Camila Cost); Maria Santos-Araujo (alias: Maria Santo). Nel ricorso sono dichiarati i seguenti alias/pseudonimi: Joao Araujo.",
+      "riassunto_linea_discendenza": "Joao Carlos Araujo -> Camila Costa -> Camila Araujo -> Maria Santos-Araujo",
+      "coerenza_linea_discendenza": "SI",
+      "proveniente_dal_brasile": "SI",
+      "data_ricorso": "17-03-2025"
+    }
+  },
+  {
+    "document_type": "Procura",
+    "schema": {
+      "soggetto": [
+        {
+          "nome": "Maria",
+          "cognome": "Santos-Araujo",
+          "minorenne": "NO",
+          "rappresentanti_legali": [],
+          "firma_presente": "OK"
+        }
+      ],
+      "oggetto": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "avvocati": [
+        {
+          "nome": "Beatriz",
+          "cognome": "Araujo"
+        }
+      ],
+      "tribunale_brescia_indicato": "KO",
+      "tribunale_indicato": "Tribunale civile competente",
+      "data_procura": "06-12-2024",
+      "rilasciata_in_italia": "OK",
+      "scritta_in_italiano": "OK"
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Joao Carlos",
+        "cognome": "Araujo"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Cremona",
+      "provincia": "cremona",
+      "padre": {
+        "nome": "Diego",
+        "cognome": "Pereira"
+      },
+      "madre": {
+        "nome": "Ana",
+        "cognome": "Barbosa"
+      },
+      "data_nascita": "07-06-1852",
+      "area_nascita": "A",
+      "stato": "Italia"
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Camila",
+        "cognome": "Costa"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Curitiba",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Joao Carlos",
+        "cognome": "Araujo"
+      },
+      "madre": {
+        "nome": "Fernanda",
+        "cognome": "Souza"
+      },
+      "data_nascita": "12-02-1997",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Camila",
+            "cognome": "Costa"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Camila",
+            "cognome": "Costa"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Camila",
+            "cognome": "Costa"
+          }
+        ],
+        "documento_originale": "Atto di nascita"
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Camila",
+        "cognome": "Araujo"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Fortaleza",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Carlos",
+        "cognome": "Lima"
+      },
+      "madre": {
+        "nome": "Camila",
+        "cognome": "Costa"
+      },
+      "data_nascita": "14-01-1930",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Camila",
+            "cognome": "Araujo"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Camila",
+            "cognome": "Araujo"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Camila",
+            "cognome": "Araujo"
+          }
+        ],
+        "documento_originale": "Atto di nascita"
+      }
+    }
+  },
+  {
+    "document_type": "Atto di nascita",
+    "schema": {
+      "soggetto": {
+        "nome": "Maria",
+        "cognome": "Santos-Araujo"
+      },
+      "tipo": "anagrafico",
+      "timbro_diocesi": "OK",
+      "comune_nascita": "Salvador",
+      "provincia": "altro",
+      "padre": {
+        "nome": "Paulo",
+        "cognome": "Costa"
+      },
+      "madre": {
+        "nome": "Camila",
+        "cognome": "Araujo"
+      },
+      "data_nascita": "26-09-1988",
+      "area_nascita": "E",
+      "stato": "Brasile"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Maria",
+            "cognome": "Santos-Araujo"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di nascita",
+        "soggetto": [
+          {
+            "nome": "Maria",
+            "cognome": "Santos-Araujo"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Maria",
+            "cognome": "Santos-Araujo"
+          }
+        ],
+        "documento_originale": "Atto di nascita"
+      }
+    }
+  },
+  {
+    "document_type": "Atto di morte",
+    "schema": {
+      "soggetto": {
+        "nome": "Joao Carlos",
+        "cognome": "Araujo"
+      },
+      "data_decesso": "27-10-1957"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di morte",
+        "soggetto": [
+          {
+            "nome": "Joao Carlos",
+            "cognome": "Araujo"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Atto di morte",
+        "soggetto": [
+          {
+            "nome": "Joao Carlos",
+            "cognome": "Araujo"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Joao Carlos",
+            "cognome": "Araujo"
+          }
+        ],
+        "documento_originale": "Atto di morte"
+      }
+    }
+  },
+  {
+    "document_type": "Certificato Negativo di Naturalizzazione",
+    "schema": {
+      "soggetto": {
+        "nome": "Joao Carlos",
+        "cognome": "Araujo"
+      },
+      "pseudonimi": [
+        {
+          "nome": "Joao",
+          "cognome": "Araujo"
+        }
+      ],
+      "formula_negativa_presente": "OK",
+      "data_nascita": "07-06-1852"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato Negativo di Naturalizzazione",
+        "soggetto": [
+          {
+            "nome": "Joao Carlos",
+            "cognome": "Araujo"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato Negativo di Naturalizzazione",
+        "soggetto": [
+          {
+            "nome": "Joao Carlos",
+            "cognome": "Araujo"
+          }
+        ]
+      },
+      "sede_traduttore": "Italia"
+    }
+  },
+  {
+    "document_type": "Asseverazione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "documento_originale": "Certificato Negativo di Naturalizzazione",
+        "soggetto": [
+          {
+            "nome": "Joao Carlos",
+            "cognome": "Araujo"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Nota Spese",
+    "schema": {
+      "id": "UD-5649",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "21-11-2025"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Fernanda",
+            "cognome": "Almeida"
+          },
+          {
+            "nome": "Fernanda",
+            "cognome": "Souza"
+          }
+        ],
+        "documento_originale": "Certificato di matrimonio"
+      }
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Fernanda",
+            "cognome": "Almeida"
+          },
+          {
+            "nome": "Fernanda",
+            "cognome": "Souza"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Certificato di matrimonio",
+    "schema": {
+      "soggetti": [
+        {
+          "nome": "Fernanda",
+          "cognome": "Almeida"
+        },
+        {
+          "nome": "Fernanda",
+          "cognome": "Souza"
+        }
+      ],
+      "luogo": "Brasilia",
+      "data_matrimonio": "30-12-1930",
+      "note": "Documento non richiesto ai fini del riconoscimento richiesto."
+    }
+  },
+  {
+    "document_type": "Nota Spese",
+    "schema": {
+      "id": "UD-1757",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "16-05-2024"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Documento non supportato",
+        "soggetto": [
+          {
+            "nome": "Marcos",
+            "cognome": "Oliveira"
+          }
+        ],
+        "documento_originale": "Nota Spese"
+      }
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Carlos",
+            "cognome": "Almeida"
+          },
+          {
+            "nome": "Juliana",
+            "cognome": "Ribeiro"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Certificato di matrimonio",
+    "schema": {
+      "soggetti": [
+        {
+          "nome": "Carlos",
+          "cognome": "Almeida"
+        },
+        {
+          "nome": "Juliana",
+          "cognome": "Ribeiro"
+        }
+      ],
+      "luogo": "Santos",
+      "data_matrimonio": "20-11-1964",
+      "note": "Documento non richiesto ai fini del riconoscimento richiesto."
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Carlos",
+            "cognome": "Almeida"
+          },
+          {
+            "nome": "Juliana",
+            "cognome": "Ribeiro"
+          }
+        ],
+        "documento_originale": "Certificato di matrimonio"
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Fernanda",
+            "cognome": "Almeida"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Nota Spese",
+    "schema": {
+      "id": "UD-4848",
+      "descrizione": "Documento non pertinente ai fini della verifica di cittadinanza.",
+      "data": "27-09-2024"
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Antonio",
+            "cognome": "Cardoso"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Traduzione",
+        "soggetto": [
+          {
+            "nome": "Antonio",
+            "cognome": "Cardoso"
+          },
+          {
+            "nome": "Juliana",
+            "cognome": "Souza"
+          }
+        ],
+        "documento_originale": "Certificato di matrimonio"
+      }
+    }
+  },
+  {
+    "document_type": "Certificato di matrimonio",
+    "schema": {
+      "soggetti": [
+        {
+          "nome": "Antonio",
+          "cognome": "Cardoso"
+        },
+        {
+          "nome": "Juliana",
+          "cognome": "Souza"
+        }
+      ],
+      "luogo": "Brasilia",
+      "data_matrimonio": "09-05-2013",
+      "note": "Documento non richiesto ai fini del riconoscimento richiesto."
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Antonio",
+            "cognome": "Cardoso"
+          },
+          {
+            "nome": "Juliana",
+            "cognome": "Souza"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "document_type": "Traduzione",
+    "schema": {
+      "oggetto": {
+        "document_type": "Certificato di matrimonio",
+        "soggetto": [
+          {
+            "nome": "Carlos",
+            "cognome": "Almeida"
+          }
+        ]
+      },
+      "sede_traduttore": "Estero"
+    }
+  },
+  {
+    "document_type": "Apostille",
+    "schema": {
+      "oggetto": {
+        "document_type": "Documento non supportato",
+        "soggetto": [
+          {
+            "nome": "Renata",
+            "cognome": "Pereira"
+          }
+        ],
+        "documento_originale": "Nota Spese"
+      }
+    }
+  }
+]

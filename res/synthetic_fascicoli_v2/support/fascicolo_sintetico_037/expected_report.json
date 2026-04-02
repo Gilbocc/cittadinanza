@@ -1,0 +1,136 @@
+{
+  "0": {
+    "A": "OK",
+    "B": "OK",
+    "C": "OK",
+    "Ci": "NULL",
+    "D": "OK",
+    "E": "OK",
+    "F": "OK",
+    "G": "OK",
+    "Gi": "NULL",
+    "H": "OK",
+    "Hi": "NULL"
+  },
+  "1": {
+    "1": "OK"
+  },
+  "2": {
+    "A": "25.01.2025",
+    "B": "OK",
+    "C": "OK",
+    "D": "SI",
+    "Di": "11.09.2024",
+    "E": "SI",
+    "Ei": "29.03.2025",
+    "F": "SI",
+    "Fi": "2",
+    "Fii": "Carlos Nunes, Pedro Souza",
+    "Fiii": "26.04.2025, 13.09.2024",
+    "G": "0948-2024"
+  },
+  "3": {
+    "A": "Mateus Barbosa",
+    "B": 1,
+    "C": "Beatriz Barbosa-Costa",
+    "D": "Beatriz Barbosa-Costa: Brasiliana",
+    "E": "NO",
+    "Ei": "NULL",
+    "Eii": "NULL",
+    "F": "OK; Juliana Maria Pereira -> Joao Joao Nunes Pereira -> Maria Ana Souza -> Larissa Costa -> Beatriz Barbosa-Costa",
+    "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
+    "Gi": "NULL"
+  },
+  "4": {
+    "4/1": {
+      "A": "Beatriz Barbosa-Costa",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Beatriz Barbosa-Costa",
+      "C": "KO",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "NO",
+      "Ei": "Tribunale civile competente",
+      "F": "06.12.2024",
+      "G": "OK",
+      "H": "NO",
+      "Hi": "OK",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
+      "Iiii": "NULL",
+      "Iiv": "NULL"
+    }
+  },
+  "5": {
+    "A": "OK",
+    "Ai": "NULL",
+    "C": "Cremona",
+    "D": "OK",
+    "E": "Padre: Mateus Rodrigues, Madre: Patricia Ribeiro",
+    "F": "27.09.1842"
+  },
+  "6": {
+    "A": "NO",
+    "Ai": "NULL",
+    "Aii": "NULL",
+    "Aiii": "NULL",
+    "C": "22.01.1916",
+    "D": "OK",
+    "Di": "NULL",
+    "Dii": "NULL",
+    "Diii": "NULL",
+    "E": "OK",
+    "F": "OK",
+    "Fi": "OK",
+    "Fii": "NULL"
+  },
+  "7": {
+    "A": "OK",
+    "B": "Juliana Pereiro",
+    "C": "OK",
+    "D": "OK",
+    "E": "OK",
+    "Ei": "NULL",
+    "Eii": "OK"
+  },
+  "8": {
+    "8/1": {
+      "A": "Joao Joao Nunes Pereira",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
+    },
+    "8/2": {
+      "A": "Maria Ana Souza",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/3": {
+      "A": "Larissa Costa",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
+    },
+    "8/4": {
+      "A": "Beatriz Barbosa-Costa",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    }
+  },
+  "10": [
+    "4/1C"
+  ],
+  "11": {
+    "4/1C": "Gli avvocati indicati nella procura di Beatriz Barbosa-Costa non coincidono con quelli del ricorso"
+  }
+}
