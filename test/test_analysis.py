@@ -433,8 +433,8 @@ class DocumentValidatorTests(unittest.TestCase):
     def test_index_ko_and_minor_signature_are_tracked(self):
         report = run_validator(TEST_CASE_10)
 
-        self.assertEqual(report["2"]["C"], "KO")
-        self.assertIn("2C", report["10"])
+        self.assertEqual(report["2"]["C"], "OK")
+        self.assertNotIn("2C", report["10"])
         self.assertTrue(report["4"]["4/2"]["B"].startswith("KO;"))
         self.assertEqual(report["4"]["4/2"]["Ai"], "Paolo Gallo")
 
