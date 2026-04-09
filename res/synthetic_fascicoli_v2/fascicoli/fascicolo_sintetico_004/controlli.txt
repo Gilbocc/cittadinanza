@@ -1,0 +1,194 @@
+{
+  "0": {
+    "A": "OK",
+    "B": "OK",
+    "C": "KO",
+    "Ci": "Fernanda Pereira",
+    "D": "OK",
+    "E": "OK",
+    "F": "OK",
+    "G": "OK",
+    "Gi": "NULL",
+    "H": "KO",
+    "Hi": "Fernanda Pereira"
+  },
+  "1": {
+    "1": "OK"
+  },
+  "2": {
+    "A": "05.03.2025",
+    "B": "OK",
+    "C": "OK",
+    "D": "SI",
+    "Di": "06.10.2024",
+    "E": "SI",
+    "Ei": "30.01.2024",
+    "F": "NO",
+    "Fi": "NULL",
+    "Fii": "NULL",
+    "Fiii": "NULL",
+    "G": "0651-2024"
+  },
+  "3": {
+    "A": "Fernanda Pereira",
+    "B": 3,
+    "C": "Diego Rodrigues, Larissa Luz Silva-Barbosa, Fernanda Pereira",
+    "D": "Diego Rodrigues: Null, Larissa Luz Silva-Barbosa: Null, Fernanda Pereira: Null",
+    "E": "NO",
+    "Ei": "NULL",
+    "Eii": "NULL",
+    "F": "OK; Ana Luz Barbosa -> Paulo Luis Pereira Barbosa -> Fernanda Luz Barbosa -> Larissa Luz Silva-Barbosa -> Diego Rodrigues",
+    "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
+    "Gi": "NULL"
+  },
+  "4": {
+    "4/1": {
+      "A": "Diego Rodrigues",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Diego Rodrigues",
+      "C": "OK",
+      "D": "rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "27.04.2025",
+      "G": "KO",
+      "H": "NO",
+      "Hi": "OK",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
+      "Iiii": "NULL",
+      "Iiv": "NULL"
+    },
+    "4/2": {
+      "A": "Larissa Luz Silva-Barbosa",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Larissa Luz Silva-Barbosa",
+      "C": "OK",
+      "D": "riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "14.01.2024",
+      "G": "OK",
+      "H": "NO",
+      "Hi": "OK",
+      "I": "NO",
+      "Ii": "OK",
+      "Iii": "OK",
+      "Iiii": "NULL",
+      "Iiv": "OK"
+    },
+    "4/3": {
+      "A": "Fernanda Pereira",
+      "Ai": "NULL",
+      "B": "KO; Procura non trovata",
+      "C": "KO",
+      "D": "NULL",
+      "E": "NULL",
+      "Ei": "NULL",
+      "F": "NULL",
+      "G": "KO",
+      "H": "NULL",
+      "Hi": "NULL",
+      "I": "NULL",
+      "Ii": "NULL",
+      "Iii": "NULL",
+      "Iiii": "NULL",
+      "Iiv": "NULL"
+    }
+  },
+  "5": {
+    "A": "OK",
+    "Ai": "NULL",
+    "C": "Brescia",
+    "D": "OK",
+    "E": "Padre: Marcos Oliveira, Madre: Beatriz Oliveira",
+    "F": "25.08.1928"
+  },
+  "6": {
+    "A": "OK",
+    "Ai": "NULL",
+    "Aii": "NULL",
+    "Aiii": "NULL",
+    "C": "NULL",
+    "D": "NULL",
+    "Di": "NULL",
+    "Dii": "NULL",
+    "Diii": "NULL",
+    "E": "NULL",
+    "F": "NULL",
+    "Fi": "NULL",
+    "Fii": "NULL"
+  },
+  "7": {
+    "A": "OK",
+    "B": "Ana Barbosa",
+    "C": "OK",
+    "D": "OK",
+    "E": "OK",
+    "Ei": "NULL",
+    "Eii": "OK"
+  },
+  "8": {
+    "8/1": {
+      "A": "Paulo Luis Pereira Barbosa",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "KO"
+    },
+    "8/2": {
+      "A": "Fernanda Luz Barbosa",
+      "B": "KO",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/3": {
+      "A": "Diego Rodrigues",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "KO"
+    },
+    "8/4": {
+      "A": "Fernanda Pereira",
+      "B": "KO",
+      "C": "KO",
+      "D": "KO",
+      "Di": "NULL",
+      "Dii": "NULL"
+    }
+  },
+  "10": [
+    "0C",
+    "0H",
+    "4/1G",
+    "4/3B",
+    "4/3C",
+    "4/3G",
+    "8/1Dii",
+    "8/2B",
+    "8/3Dii",
+    "8/4B",
+    "8/4C",
+    "8/4D"
+  ],
+  "11": {
+    "0C": "Procure mancanti: Fernanda Pereira",
+    "0H": "Atti di nascita dei ricorrenti mancanti: Fernanda Pereira",
+    "4/1G": "La data della procura di Diego Rodrigues non è anteriore alla data del ricorso",
+    "4/3B": "Procura non trovata per Fernanda Pereira",
+    "4/3C": "Impossibile verificare gli avvocati per Fernanda Pereira per assenza della procura",
+    "4/3G": "Impossibile verificare l'anteriorità della procura per Fernanda Pereira per assenza della procura",
+    "8/1Dii": "Asseverazione atto di nascita Paulo Luis Pereira Barbosa mancante",
+    "8/2B": "Genitori non in linea discendenza per Fernanda Luz Barbosa",
+    "8/3Dii": "Asseverazione atto di nascita Diego Rodrigues mancante",
+    "8/4B": "Atto di nascita non trovato per Fernanda Pereira",
+    "8/4C": "Impossibile verificare l'apostille dell'atto di nascita di Fernanda Pereira perché l'atto manca",
+    "8/4D": "Impossibile verificare la traduzione dell'atto di nascita di Fernanda Pereira perché l'atto manca"
+  }
+}

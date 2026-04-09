@@ -1,0 +1,148 @@
+{
+  "0": {
+    "A": "OK",
+    "B": "OK",
+    "C": "OK",
+    "Ci": "NULL",
+    "D": "OK",
+    "E": "OK",
+    "F": "OK",
+    "G": "OK",
+    "Gi": "NULL",
+    "H": "OK",
+    "Hi": "NULL"
+  },
+  "1": {
+    "1": "OK"
+  },
+  "2": {
+    "A": "22.02.2024",
+    "B": "OK",
+    "C": "OK",
+    "D": "SI",
+    "Di": "21.10.2024",
+    "E": "SI",
+    "Ei": "16.12.2025",
+    "F": "NO",
+    "Fi": "NULL",
+    "Fii": "NULL",
+    "Fiii": "NULL",
+    "G": "0308-2025"
+  },
+  "3": {
+    "A": "Camila Santos, Renata Cardoso",
+    "B": 1,
+    "C": "Rafael Almeida Costa-Souza",
+    "D": "Rafael Almeida Costa-Souza: Null",
+    "E": "NO",
+    "Ei": "NULL",
+    "Eii": "NULL",
+    "F": "OK; Patricia Aparecida Oliveira -> Beatriz Santos -> Ana Luz Mendes -> Larissa Mendes -> Pedro Carlos Costa -> Rafael Almeida Costa",
+    "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
+    "Gi": "NULL"
+  },
+  "4": {
+    "4/1": {
+      "A": "Rafael Almeida Costa-Souza",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Rafael Almeida Costa-Souza",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "18.07.2025",
+      "G": "OK",
+      "H": "OK",
+      "Hi": "NULL",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
+      "Iiii": "NULL",
+      "Iiv": "NULL"
+    }
+  },
+  "5": {
+    "A": "OK",
+    "Ai": "NULL",
+    "C": "Brescia",
+    "D": "OK",
+    "E": "Padre: Marcos Santos, Madre: Juliana Mendes",
+    "F": "17.08.1897"
+  },
+  "6": {
+    "A": "OK",
+    "Ai": "OK",
+    "Aii": "NULL",
+    "Aiii": "NULL",
+    "C": "NULL",
+    "D": "NULL",
+    "Di": "NULL",
+    "Dii": "NULL",
+    "Diii": "NULL",
+    "E": "NULL",
+    "F": "NULL",
+    "Fi": "NULL",
+    "Fii": "NULL"
+  },
+  "7": {
+    "A": "OK",
+    "B": "Patricia Oliveiro",
+    "C": "OK",
+    "D": "OK",
+    "E": "OK",
+    "Ei": "NULL",
+    "Eii": "KO"
+  },
+  "8": {
+    "8/1": {
+      "A": "Beatriz Santos",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/2": {
+      "A": "Ana Luz Mendes",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "KO"
+    },
+    "8/3": {
+      "A": "Larissa Mendes",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/4": {
+      "A": "Pedro Carlos Costa",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/5": {
+      "A": "Rafael Almeida Costa",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "KO"
+    }
+  },
+  "10": [
+    "7Eii",
+    "8/2Dii",
+    "8/5Dii"
+  ],
+  "11": {
+    "7Eii": "Asseverazione CNN mancante",
+    "8/2Dii": "Asseverazione atto di nascita Ana Luz Mendes mancante",
+    "8/5Dii": "Asseverazione atto di nascita Rafael Almeida Costa mancante"
+  }
+}

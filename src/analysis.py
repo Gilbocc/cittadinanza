@@ -1,14 +1,23 @@
 from datetime import datetime
-import re
-import unicodedata
 
 class DocumentValidator:
 
-    def __init__(self, docs):
-        self.docs = docs
-        self.index = self.index_documents()
+    def __init__(self, linked_data):
+        if not isinstance(linked_data, dict):
+            raise TypeError("DocumentValidator expects linked data (dict). Use src.linking.build_linked_data first.")
+
+        self.docs = linked_data.get("docs", [])
         self.ko_list = []
         self.ko_reasons = {}
+        self.person_nodes_by_id = linked_data.get("person_nodes_by_id", {})
+        self.role_index = linked_data.get("role_index", {})
+        self.virtual_translations = linked_data.get("virtual_translations", [])
+        self.translation_links_by_original = linked_data.get("translation_links_by_original", {})
+        self.apostille_links_by_doc = linked_data.get("apostille_links_by_doc", {})
+        self.asseverazione_links_by_doc = linked_data.get("asseverazione_links_by_doc", {})
+        self.docs_by_id = linked_data.get("docs_by_id", {})
+        self.subject_doc_index = linked_data.get("subject_doc_index", {})
+        self.index = linked_data.get("index", self.index_documents())
 
     # -------------------------------------------------
     # DOCUMENT INDEXING
@@ -20,10 +29,7 @@ class DocumentValidator:
             "procure": [],
             "birth_docs": [],
             "death_docs": [],
-            "naturalization": None,
-            "apostilles": [],
-            "translations": [],
-            "asseverazioni": []
+            "naturalization": None
         }
         for d in self.docs:
             t = d["document_type"]
@@ -39,12 +45,6 @@ class DocumentValidator:
                 index["death_docs"].append(d)
             elif t == "Certificato Negativo di Naturalizzazione":
                 index["naturalization"] = d
-            elif t == "Apostille":
-                index["apostilles"].append(d)
-            elif t == "Traduzione":
-                index["translations"].append(d)
-            elif t == "Asseverazione":
-                index["asseverazioni"].append(d)
         return index
 
     # -------------------------------------------------
@@ -55,222 +55,141 @@ class DocumentValidator:
             self.ko_list.append(question)
         self.ko_reasons[question] = reason
 
-    def null_value(self, value="NULL"):
-        return "NULL" if value in (None, "", "-", []) else value
-
-    def format_date(self, value):
-        if value in (None, "", "-", "NULL"):
-            return "NULL"
-        parsed = self.parse_flexible_date(value)
-        if parsed is not None:
-            return parsed.strftime("%d.%m.%Y")
-        return str(value).replace("-", ".")
-
-    def parse_flexible_date(self, value):
-        if value in (None, "", "-", "NULL"):
-            return None
-        if isinstance(value, datetime):
-            return value
-        raw_s = str(value).strip()
-        for fmt in ("%d-%m-%Y", "%d.%m.%Y", "%Y-%m-%d"):
-            try:
-                return datetime.strptime(raw_s, fmt)
-            except Exception:
-                continue
-        return None
-
-    def answer_ok_ko(self, value):
-        normalized = self.normalize(str(value)) if value is not None else ""
-        if normalized in {"ok", "si", "yes", "true"}:
-            return "OK"
-        if normalized in {"ko", "no", "false"}:
-            return "KO"
-        return "NULL"
-
-    def answer_yes_no(self, value):
-        normalized = self.normalize(str(value)) if value is not None else ""
-        if normalized in {"si", "ok", "yes", "true"}:
-            return "SI"
-        if normalized in {"no", "ko", "false"}:
-            return "NO"
-        return "NULL"
-
-    def answer_ok_no(self, value):
-        normalized = self.normalize(str(value)) if value is not None else ""
-        if normalized in {"ok", "si", "yes", "true"}:
-            return "OK"
-        if normalized in {"no", "ko", "false"}:
-            return "NO"
-        return "NULL"
-
     def full_name(self, person):
         if not person:
             return "NULL"
-        return f"{person.get('nome', '').strip()} {person.get('cognome', '').strip()}".strip() or "NULL"
+        return person.get("full_name") or "NULL"
 
-    def _levenshtein_distance(self, a, b):
-        """Compute edit distance between strings (for typo tolerance)."""
-        if not a or not b:
-            return max(len(a or ""), len(b or ""))
-        if a == b:
-            return 0
-        m, n = len(a), len(b)
-        dp = [[0] * (n + 1) for _ in range(m + 1)]
-        for i in range(m + 1):
-            dp[i][0] = i
-        for j in range(n + 1):
-            dp[0][j] = j
-        for i in range(1, m + 1):
-            for j in range(1, n + 1):
-                if a[i - 1] == b[j - 1]:
-                    dp[i][j] = dp[i - 1][j - 1]
-                else:
-                    dp[i][j] = 1 + min(dp[i - 1][j], dp[i][j - 1], dp[i - 1][j - 1])
-        return dp[m][n]
+    def _display_name(self, person):
+        if not isinstance(person, dict):
+            return "NULL"
+        null_like = {"", "null", "-"}
+        nome = str(person.get("nome") or "").strip()
+        cognome = str(person.get("cognome") or "").strip()
+        if nome.lower() in null_like:
+            nome = ""
+        if cognome.lower() in null_like:
+            cognome = ""
+        full_name = " ".join(part for part in [nome, cognome] if part).strip()
+        return full_name or "NULL"
 
-    def _is_typo_variant(self, a, b, max_distance=1):
-        """Check if strings are similar enough to be typos (edit distance <= max_distance)."""
-        return self._levenshtein_distance(a, b) <= max_distance
+    def _format_person_nationality(self, person):
+        nationality = str(person.get("nazionalita") or "").strip()
+        if nationality.lower() in {"", "null", "-"}:
+            nationality = "NULL"
+        separator = ": " if nationality == "NULL" else " - "
+        return f"{self.full_name(person)}{separator}{nationality}"
 
-    def _split_name_tokens(self, text):
-        """Split a name field into tokens, normalizing each."""
-        if not text:
-            return set()
-        normalized = self.normalize(str(text))
-        return set(token for token in re.split(r"[^a-z0-9]+", normalized) if token and len(token) > 1)
-
-    def _field_match(self, a, b):
-        """Match two name fields with resilience to multi-word names and misspellings."""
-        a_norm = self.normalize(a or "")
-        b_norm = self.normalize(b or "")
-        a_compact = " ".join(re.split(r"[^a-z0-9]+", a_norm)).strip()
-        b_compact = " ".join(re.split(r"[^a-z0-9]+", b_norm)).strip()
-        
-        if not a_norm or not b_norm:
-            return False
-
-        if a_norm == b_norm or a_compact == b_compact:
-            return True
-        
-        # Exact substring match (preferred), but avoid collapsing short single-
-        # token names such as "Ana" into "Ana Ana".
-        compact_pairs = ((a_compact, b_compact), (b_compact, a_compact))
-        for shorter, longer in compact_pairs:
-            if shorter and shorter in longer:
-                if " " in shorter or len(shorter) >= 4:
-                    return True
-        
-        # Token overlap: check if any single-word tokens match (handles multi-word names spread across fields)
-        a_tokens = self._split_name_tokens(a)
-        b_tokens = self._split_name_tokens(b)
-        
-        if a_tokens and b_tokens:
-            # Exact token overlap. Require stronger evidence than a single short
-            # token so we do not collapse identities like "Ana" and "Ana Ana".
-            shared_tokens = a_tokens.intersection(b_tokens)
-            if len(shared_tokens) >= 2:
-                return True
-            if len(shared_tokens) == 1:
-                shared = next(iter(shared_tokens))
-                if min(len(a_tokens), len(b_tokens)) == 1 and len(shared) >= 4:
-                    return True
-            
-            # Typo-tolerant token overlap with the same guardrails.
-            similar_pairs = 0
-            for a_tok in a_tokens:
-                for b_tok in b_tokens:
-                    if self._is_typo_variant(a_tok, b_tok, max_distance=1):
-                        similar_pairs += 1
-            if similar_pairs >= 2:
-                return True
-            if similar_pairs == 1 and min(len(a_tokens), len(b_tokens)) == 1:
-                longest = max(max((len(t) for t in a_tokens), default=0), max((len(t) for t in b_tokens), default=0))
-                if longest >= 4:
-                    return True
-        
-        return False
-
-    def _birth_subject_pool(self):
-        return [doc.get("schema", {}).get("soggetto", {}) for doc in self.index.get("birth_docs", [])]
-
-    def _same_name_mentions_in_birth_pool(self, person):
-        target_name = person.get("nome", "") if person else ""
-        return [candidate for candidate in self._birth_subject_pool() if self._field_match(target_name, candidate.get("nome", ""))]
-
-    def _canonical_identity(self, person):
-        if not person:
+    def _person_by_id(self, person_id):
+        if not person_id:
             return None
-        return {
-            "nome": person.get("nome", ""),
-            "cognome": person.get("cognome", ""),
-        }
+        return self.person_nodes_by_id.get(person_id)
 
-    def _identity_variants(self, person):
-        """Return canonical identity plus any pseudonyms declared on the person."""
-        canonical = self._canonical_identity(person)
-        if not canonical:
-            return []
+    def _people_by_ids(self, person_ids):
+        people = []
+        for person_id in person_ids or []:
+            person = self._person_by_id(person_id)
+            if person:
+                people.append(person)
+        return people
 
-        variants = [canonical]
-        for pseudo in person.get("pseudonimi", []) if isinstance(person, dict) else []:
-            variants.append(self._canonical_identity(pseudo))
+    def _person_lookup_keys(self, person_ref):
+        keys = []
+        if isinstance(person_ref, str) and person_ref:
+            keys.append(("pid", person_ref))
+            return keys
+        if not isinstance(person_ref, dict):
+            return keys
+        person_id = person_ref.get("person_id") or person_ref.get("__person_id")
+        if person_id:
+            keys.append(("pid", person_id))
+        return keys
 
-        cleaned = []
-        for variant in variants:
-            if not variant:
-                continue
-            if variant.get("nome") or variant.get("cognome"):
-                cleaned.append(variant)
-        return cleaned
+    def _person_id(self, person):
+        if not isinstance(person, dict):
+            return None
+        return person.get("person_id") or person.get("__person_id")
 
-    def _name_surname_match(self, person_a, person_b):
-        """Match two identities requiring both name and surname, typo-tolerant."""
-        if not person_a or not person_b:
-            return False
-        return self._field_match(person_a.get("nome", ""), person_b.get("nome", "")) and self._field_match(
-            person_a.get("cognome", ""), person_b.get("cognome", "")
-        )
+    def _people_id_set(self, people):
+        person_ids = set()
+        for person in people or []:
+            pid = self._person_id(person)
+            if pid:
+                person_ids.add(pid)
+        return person_ids
 
-    def _identity_or_pseudonym_match(self, person_a, person_b):
-        for left in self._identity_variants(person_a):
-            for right in self._identity_variants(person_b):
-                if self._name_surname_match(left, right):
-                    return True
-        return False
+    def _candidate_doc_ids_by_person_ref(self, doc_type, person_ref):
+        resolved = set()
+        for kind, value in self._person_lookup_keys(person_ref):
+            resolved.update(self.subject_doc_index.get((doc_type, kind, value), set()))
+        return resolved
 
     def people_match(self, person_a, person_b):
-        return self._identity_or_pseudonym_match(person_a, person_b)
+        pid_a = self._person_id(person_a)
+        pid_b = self._person_id(person_b)
+        return bool(pid_a and pid_b and pid_a == pid_b)
 
     def person_in_list(self, person, people):
-        return any(self.people_match(person, candidate) for candidate in people)
-
-    def unique_people(self, people):
-        unique = []
-        for person in people:
-            if not self.person_in_list(person, unique):
-                unique.append(person)
-        return unique
+        return any(self.people_match(person, candidate) for candidate in people or [])
 
     def get_descendants(self):
-        lineage = self.get_lineage()[1:]
-        ricorrenti = self.get_ricorrenti()
-        return [person for person in lineage if not self.person_in_list(person, ricorrenti)]
+        return self._people_by_ids(self.role_index.get("discendenti_person_ids", []))
 
-    def find_birth_doc_for_person(self, person):
-        for doc in self.index["birth_docs"]:
-            if self.people_match(doc["schema"].get("soggetto", {}), person):
+    def find_doc_for_person(self, docs_key, person):
+        if not person:
+            return None
+        docs = self.index.get(docs_key, [])
+        for doc in docs:
+            if self.people_match(doc.get("schema", {}).get("soggetto", {}), person):
                 return doc
         return None
 
+    def find_birth_doc_for_person(self, person):
+        return self.find_doc_for_person("birth_docs", person)
+
+    def find_death_doc_for_person(self, person):
+        return self.find_doc_for_person("death_docs", person)
+
     def find_procura_for_person(self, person):
+        matched = []
         for procura in self.index["procure"]:
             for subject in procura["schema"].get("soggetto", []):
                 if self.people_match(subject, person):
-                    return procura, subject
-        return None, None
+                    matched.append((procura, subject))
+                    break
+
+        if not matched:
+            return None, None
+
+        matched.sort(
+            key=lambda pair: 0 if pair[0].get("schema", {}).get("scritta_in_italiano", "NULL") == "NO" else 1
+        )
+        return matched[0]
 
     def get_representatives(self, person_data):
         return person_data.get("rappresentanti_legali", person_data.get("rappresentato_da", []))
+
+    def _procura_signature_status(self, procura, ric_data):
+        is_minor = ric_data.get("minorenne", "NO") == "SI"
+        if not is_minor:
+            return ric_data.get("firma_presente", "NULL")
+
+        representatives = self.get_representatives(ric_data)
+        if not representatives:
+            return ric_data.get("firma_presente", "NULL")
+
+        procura_subjects = procura.get("schema", {}).get("soggetto", [])
+        representative_statuses = []
+        for representative in representatives:
+            rep_subject = next(
+                (subject for subject in procura_subjects if self.people_match(subject, representative)),
+                None,
+            )
+            if rep_subject is None:
+                return "KO"
+            representative_statuses.append(rep_subject.get("firma_presente", "NULL"))
+
+        return "OK" if representative_statuses and all(status == "OK" for status in representative_statuses) else "KO"
 
     def lineage_summary(self):
         lineage = self.get_lineage()
@@ -279,122 +198,116 @@ class DocumentValidator:
         return " -> ".join(self.full_name(person) for person in lineage)
 
     def same_lawyer(self, ricorso_lawyers, procura_lawyers):
-        for ricorso_lawyer in ricorso_lawyers:
-            for procura_lawyer in procura_lawyers:
-                if self.people_match(ricorso_lawyer, procura_lawyer):
-                    return True
-        return False
+        return any(self.people_match(r, p) for r in ricorso_lawyers for p in procura_lawyers)
 
     def is_avo_death_required(self, avo_birth=None):
-        avo_birth = avo_birth or self.find_avo_birth()
+        avo_birth = avo_birth or self.find_birth_doc_for_person(self.get_avo_person())
         if not avo_birth:
             return False
-        birth_date = self.parse_date(avo_birth["schema"].get("data_nascita"))
+        birth_ord = avo_birth["schema"].get("data_nascita_ord")
         area = avo_birth["schema"].get("area_nascita")
-        if not birth_date:
+        if birth_ord is None:
             return False
 
-        checks = [birth_date > datetime(1861, 3, 17)]
+        checks = [birth_ord > datetime(1861, 3, 17).toordinal()]
         if area == "B":
-            checks.append(birth_date >= datetime(1866, 10, 19))
+            checks.append(birth_ord >= datetime(1866, 10, 19).toordinal())
         if area == "C":
-            checks.append(birth_date >= datetime(1870, 9, 20))
+            checks.append(birth_ord >= datetime(1870, 9, 20).toordinal())
         if area == "D":
-            checks.append(birth_date > datetime(1920, 7, 16))
+            checks.append(birth_ord > datetime(1920, 7, 16).toordinal())
         return any(check is False for check in checks)
 
-    def format_ruolo(self, value):
-        if value in (None, "", "-", "NULL"):
-            return "NULL"
-        match = re.search(r"(\d+)\D+(\d{4})", str(value))
-        if not match:
-            return str(value)
-        number, year = match.groups()
-        return f"{number.zfill(4)}-{year}"
-
     def get_ricorrenti(self):
-        ricorso = self.index.get("ricorso")
-        if not ricorso:
-            return []
-        instr = ricorso["schema"]
-        return instr.get("ricorrenti_maggiorenni", []) + instr.get("ricorrenti_minorenni", [])
+        return self._people_by_ids(self.role_index.get("ricorrenti_person_ids", []))
 
     def get_lineage(self):
-        ricorso = self.index.get("ricorso")
-        if not ricorso:
-            return []
-        linea = ricorso["schema"].get("linea_discendenza", [])
-        return linea
+        return self._people_by_ids(self.role_index.get("lineage_person_ids", []))
 
     # -------------------------------------------------
     # AVO BIRTH/DEATH IDENTIFICATION
     # -------------------------------------------------
-    def get_avo_names(self):
-        cnn = self.index.get("naturalization")
-        if cnn:
-            return [cnn["schema"]["soggetto"]] + cnn["schema"]["pseudonimi"]
-        lineage = self.get_lineage()
-        if lineage:
-            return [lineage[0]]
-        return []
+    def get_avo_person(self):
+        return self._person_by_id(self.role_index.get("avo_person_id"))
     
-    
-    def find_avo_birth(self):
-        avo_names = self.get_avo_names()
-        for doc in self.index["birth_docs"]:
-            s = doc["schema"]["soggetto"]
-            for n in avo_names:
-                if self.people_match(n, s):
-                    return doc
-        return None
-
-    def find_avo_death(self):
-        avo_names = self.get_avo_names()
-        for doc in self.index["death_docs"]:
-            s = doc["schema"]["soggetto"]
-            for n in avo_names:
-                if self.people_match(n, s):
-                    return doc
-        return None
-    
-    def parse_date(self, d): 
-        try: return datetime.strptime(d,"%d-%m-%Y") 
-        except: return None
-
-    def normalize(self, text):
-        text = unicodedata.normalize("NFKD", text)
-        text = "".join(c for c in text if not unicodedata.combining(c))
-        return text.strip().lower()
-
     # -------------------------------------------------
     # APOSTILLE / TRANSLATION / ASSEVERAZIONE HELPERS
     # -------------------------------------------------
-    def find_translation(self, doc_type, soggetto):
-        for t in self.index["translations"]:
-            obj = t["schema"]["oggetto"]
-            if obj["document_type"] == doc_type:
-                for s in obj.get("soggetto", []):
-                    if self.people_match(s, soggetto):
-                        return t
+    def find_translation(self, doc_type, soggetto, source_document=None):
+        if source_document is not None:
+            linked = self.translation_links_by_original.get(source_document.get("__doc_id"), [])
+            for candidate in linked:
+                obj = candidate.get("schema", {}).get("oggetto", {})
+                if obj.get("document_type") == doc_type:
+                    return candidate
+
+        for translation_doc_id in self._candidate_doc_ids_by_person_ref("Traduzione", soggetto):
+            t = self.docs_by_id.get(translation_doc_id)
+            if not t:
+                continue
+            obj = t.get("schema", {}).get("oggetto", {})
+            if obj.get("document_type") == doc_type:
+                return t
         return None
 
-    def has_apostille(self, doc_type, soggetto, source_doc=None):
-        for a in self.index["apostilles"]:
-            obj = a["schema"]["oggetto"]
-            if obj["document_type"] == doc_type and (source_doc is None or source_doc == obj.get("documento_originale")):
-                for s in obj.get("soggetto", []):
-                    if self.people_match(s, soggetto):
-                        return True
+    def _resolve_related_doc_ids(self, doc_type, soggetto, source_doc=None, source_document=None):
+        resolved = set()
+
+        if source_document is not None and source_document.get("__doc_id"):
+            if doc_type == "Traduzione":
+                for t in self.translation_links_by_original.get(source_document.get("__doc_id"), []):
+                    if source_doc is None or t.get("schema", {}).get("oggetto", {}).get("document_type") == source_doc:
+                        if t.get("__doc_id"):
+                            resolved.add(t.get("__doc_id"))
+            else:
+                source_type = source_document.get("document_type")
+                if source_type == doc_type:
+                    resolved.add(source_document.get("__doc_id"))
+
+        if resolved:
+            return resolved
+
+        if doc_type == "Traduzione":
+            for doc_id in self._candidate_doc_ids_by_person_ref("Traduzione", soggetto):
+                d = self.docs_by_id.get(doc_id)
+                if not d:
+                    continue
+                if source_doc is not None and d.get("schema", {}).get("oggetto", {}).get("document_type") != source_doc:
+                    continue
+                resolved.add(doc_id)
+        else:
+            resolved.update(self._candidate_doc_ids_by_person_ref(doc_type, soggetto))
+
+        return resolved
+
+    def has_apostille(self, doc_type, soggetto, source_doc=None, source_document=None):
+        return self._has_linked_certificate(self.apostille_links_by_doc, doc_type, soggetto, source_doc=source_doc, source_document=source_document)
+
+    def has_asseverazione(self, doc_type, soggetto, source_doc=None, source_document=None):
+        return self._has_linked_certificate(self.asseverazione_links_by_doc, doc_type, soggetto, source_doc=source_doc, source_document=source_document)
+
+    def _has_linked_certificate(self, links_by_doc, doc_type, soggetto, source_doc=None, source_document=None):
+        linked_doc_ids = self._resolve_related_doc_ids(doc_type, soggetto, source_doc=source_doc, source_document=source_document)
+        for doc_id in linked_doc_ids:
+            if links_by_doc.get(doc_id):
+                return True
         return False
 
-    def has_asseverazione(self, doc_type, soggetto, source_doc=None):
-        for a in self.index["asseverazioni"]:
-            obj = a["schema"]["oggetto"]
-            if obj["document_type"] == doc_type and (source_doc is None or source_doc == obj.get("documento_originale")):
-                for s in obj.get("soggetto", []):
-                    if self.people_match(s, soggetto):
-                        return True
-        return False
+    def _eval_translation(self, doc_type, soggetto, source_document):
+        """Finds the translation of doc_type and checks apostille/asseverazione by sede.
+        Returns dict: found, sede_italia, apostille, asseverazione (each "OK"/"KO"/"NO"/"NULL")."""
+        translation = self.find_translation(doc_type, soggetto, source_document=source_document)
+        if not translation:
+            return {"found": "KO", "sede_italia": "NULL", "apostille": "NULL", "asseverazione": "NULL"}
+        sede = translation["schema"].get("sede_traduttore")
+        sede_italia = "OK" if sede == "Italia" else "NO"
+        if sede == "Estero":
+            apost = "OK" if self.has_apostille("Traduzione", soggetto, source_doc=doc_type, source_document=source_document) else "KO"
+            return {"found": "OK", "sede_italia": sede_italia, "apostille": apost, "asseverazione": "NULL"}
+        if sede == "Italia":
+            assev = "OK" if self.has_asseverazione("Traduzione", soggetto, source_doc=doc_type, source_document=source_document) else "KO"
+            return {"found": "OK", "sede_italia": sede_italia, "apostille": "NULL", "asseverazione": assev}
+        return {"found": "OK", "sede_italia": "NULL", "apostille": "NULL", "asseverazione": "NULL"}
 
     # -------------------------------------------------
     # SECTION 0: Basic document presence
@@ -415,10 +328,12 @@ class DocumentValidator:
         results = {}
         discendenti = self.get_descendants()
         ricorrenti = self.get_ricorrenti()
-        avo_birth = self.find_avo_birth()
-        avo_death = self.find_avo_death()
+        avo_person = self.get_avo_person()
+        avo_birth = self.find_birth_doc_for_person(avo_person)
+        avo_death = self.find_death_doc_for_person(avo_person)
         death_required = self.is_avo_death_required(avo_birth)
-        birth_subjects = [b["schema"].get("soggetto", {}) for b in self.index["birth_docs"]]
+        found_procure = [s for p in self.index["procure"] for s in p["schema"].get("soggetto", [])]
+        found_procure_ids = self._people_id_set(found_procure)
 
         results["A"] = "OK" if self.index.get("indice") else "KO"
         if results["A"] == "KO": self.mark_ko("0A", "IndiceProcedimento.html mancante")
@@ -426,9 +341,7 @@ class DocumentValidator:
         results["B"] = "OK" if self.index.get("ricorso") else "KO"
         if results["B"] == "KO": self.mark_ko("0B", "Ricorso mancante")
 
-        # Procure
-        found_procure = [s for p in self.index["procure"] for s in p["schema"].get("soggetto", [])]
-        missing_procure = [self.full_name(r) for r in ricorrenti if not self.person_in_list(r, found_procure)]
+        missing_procure = [self.full_name(r) for r in ricorrenti if self._person_id(r) not in found_procure_ids]
         results["C"] = "OK" if not missing_procure else "KO"
         results["Ci"] = ", ".join(missing_procure) if missing_procure else "NULL"
         if missing_procure: self.mark_ko("0C", f"Procure mancanti: {results['Ci']}")
@@ -442,13 +355,13 @@ class DocumentValidator:
         results["F"] = "OK" if self.index.get("naturalization") else "KO"
         if results["F"] == "KO": self.mark_ko("0F", "Certificato Negativo di Naturalizzazione mancante")
 
-        missing_desc_birth = [self.full_name(person) for person in discendenti if not self.person_in_list(person, birth_subjects)]
+        missing_desc_birth = [self.full_name(person) for person in discendenti if not self.find_birth_doc_for_person(person)]
         results["G"] = "OK" if not missing_desc_birth else "KO"
         results["Gi"] = ", ".join(missing_desc_birth) if missing_desc_birth else "NULL"
         if missing_desc_birth:
             self.mark_ko("0G", f"Atti di nascita dei discendenti mancanti: {results['Gi']}")
 
-        missing_ric_birth = [self.full_name(person) for person in ricorrenti if not self.person_in_list(person, birth_subjects)]
+        missing_ric_birth = [self.full_name(person) for person in ricorrenti if not self.find_birth_doc_for_person(person)]
         results["H"] = "OK" if not missing_ric_birth else "KO"
         results["Hi"] = ", ".join(missing_ric_birth) if missing_ric_birth else "NULL"
         if missing_ric_birth:
@@ -466,7 +379,7 @@ class DocumentValidator:
             return {"1": "KO"}
         
         instr = doc["schema"]
-        result = self.answer_ok_ko(instr.get("proveniente_dal_brasile", "NULL"))
+        result = instr.get("proveniente_dal_brasile", "NULL")
         if result == "KO":
             self.mark_ko("1", "Il ricorso non risulta proveniente dal Brasile")
         return { "1" : result }
@@ -507,30 +420,29 @@ class DocumentValidator:
         
         instr = indice.get("schema", {})
 
-        raw_data_iscrizione = instr.get("data_iscrizione", "NULL")
-        iscrizione_dt = self.parse_flexible_date(raw_data_iscrizione)
-        data_iscrizione = self.format_date(raw_data_iscrizione)
+        iscrizione_ord = instr.get("data_iscrizione_ord")
+        data_iscrizione = instr.get("data_iscrizione_fmt", "NULL")
 
-        if iscrizione_dt is None:
+        if iscrizione_ord is None:
             # If an indice exists but the registration date is missing/unparseable,
             # the temporal checks cannot be satisfied and must fail.
             check_post_2023 = "KO"
             check_pre_2025 = "KO"
         else:
             # 2B: dopo il 28.02.2023 incluso
-            check_post_2023 = "OK" if iscrizione_dt >= datetime(2023, 2, 28) else "KO"
+            check_post_2023 = "OK" if iscrizione_ord >= datetime(2023, 2, 28).toordinal() else "KO"
             # 2C: prima del 27.03.2025 escluso
-            check_pre_2025 = "OK" if iscrizione_dt < datetime(2025, 3, 27) else "KO"
+            check_pre_2025 = "OK" if iscrizione_ord < datetime(2025, 3, 27).toordinal() else "KO"
 
-        comparsa_avv = self.answer_yes_no(instr.get("comparsa_avvocatura", "NULL"))
-        data_comparsa_avv = self.format_date(instr.get("data_comparsa_avvocatura", "NULL")) if comparsa_avv == "SI" else "NULL"
-        visibilita_pm = self.answer_yes_no(instr.get("visibilita_pm", "NULL"))
-        data_visibilita_pm = self.format_date(instr.get("data_visibilita_pm", "NULL")) if visibilita_pm == "SI" else "NULL"
-        interventi_presenti = self.answer_yes_no(instr.get("interventi", "NULL"))
+        comparsa_avv = instr.get("comparsa_avvocatura", "NULL")
+        data_comparsa_avv = instr.get("data_comparsa_avvocatura_fmt", "NULL") if comparsa_avv == "SI" else "NULL"
+        visibilita_pm = instr.get("visibilita_pm", "NULL")
+        data_visibilita_pm = instr.get("data_visibilita_pm_fmt", "NULL") if visibilita_pm == "SI" else "NULL"
+        interventi_presenti = instr.get("interventi", "NULL")
         num_interventi = str(instr.get("numero_interventi", 0)) if interventi_presenti == "SI" else "NULL"
         nomi_intervenuti = ", ".join(self.full_name(person) for person in instr.get("intervenuti", [])) if interventi_presenti == "SI" else "NULL"
-        data_intervenuti = ", ".join(self.format_date(person.get("data")) for person in instr.get("intervenuti", [])) if interventi_presenti == "SI" else "NULL"
-        ruolo = self.format_ruolo(instr.get("numero_anno_ruolo", "NULL"))
+        data_intervenuti = ", ".join(person.get("data_fmt", "NULL") for person in instr.get("intervenuti", [])) if interventi_presenti == "SI" else "NULL"
+        ruolo = instr.get("numero_anno_ruolo_fmt", "NULL")
 
         if check_post_2023 == "KO": self.mark_ko("2B", "Il ricorso non risulta iscritto dopo il 28.02.2023 incluso")
         if check_pre_2025 == "KO": self.mark_ko("2C", "Il ricorso non risulta iscritto prima del 27.03.2025 escluso")
@@ -578,12 +490,12 @@ class DocumentValidator:
         avvocati_list = [f"{a['nome']} {a['cognome']}" for a in instr.get("avvocati", [])]
         a_val = ", ".join(avvocati_list) if avvocati_list else "NULL"
         b_val = len(all_ricorrenti)
-        c_val = ", ".join([self.full_name(r) for r in all_ricorrenti]) if all_ricorrenti else "NULL"
-        d_val = ", ".join([f"{self.full_name(r)}: {r.get('nazionalita', 'NULL')}" for r in all_ricorrenti]) if all_ricorrenti else "NULL"
+        c_val = "; ".join([self.full_name(r) for r in all_ricorrenti]) if all_ricorrenti else "NULL"
+        d_val = "; ".join([self._format_person_nationality(r) for r in all_ricorrenti]) if all_ricorrenti else "NULL"
         e_val = "SI" if minorenni else "NO"
         e_i_val = ", ".join([self.full_name(r) for r in minorenni]) if minorenni else "NULL"
         e_ii_val = "; ".join([f"{self.full_name(r)} rappresentato da {', '.join([self.full_name(p) for p in r.get('rappresentato_da', [])])}" for r in minorenni]) if minorenni else "NULL"
-        linea = self.answer_ok_ko(instr.get("coerenza_linea_discendenza", "NULL"))
+        linea = instr.get("coerenza_linea_discendenza", "NULL")
         racconto_linea = instr.get("riassunto_linea_discendenza") or instr.get("racconto_linea_discendenza") or self.lineage_summary()
         f_val = f"{linea}; {racconto_linea}"
         per_matrimonio = instr.get("ricorrenti_per_matrimonio", [])
@@ -638,7 +550,7 @@ class DocumentValidator:
         
         results = {}
         ricorrenti = self.get_ricorrenti()
-        data_ricorso = self.parse_date(ricorso["schema"].get("data_ricorso", "-"))
+        data_ricorso_ord = ricorso["schema"].get("data_ricorso_ord")
 
         for i, ric in enumerate(ricorrenti, 1):
             sec_key = f"4/{i}"
@@ -669,29 +581,30 @@ class DocumentValidator:
                 self.mark_ko(f"{sec_key}G", f"Impossibile verificare l'anteriorità della procura per {full_name} per assenza della procura")
                 continue
             instr = procura["schema"]
-            data_procura = self.parse_date(instr.get("data_procura", "-"))
-            is_minor = self.answer_yes_no(ric_data.get("minorenne", "NO")) == "SI"
+            data_procura_ord = instr.get("data_procura_ord")
+            is_minor = ric_data.get("minorenne", "NO") == "SI"
             representatives = self.get_representatives(ric_data)
             representative_text = ", ".join(self.full_name(person) for person in representatives) if representatives else (ric_representatives if is_minor else "NULL")
-            signature_status = self.answer_ok_ko(ric_data.get("firma_presente", "NULL"))
+            signature_status = self._procura_signature_status(procura, ric_data)
             if signature_status == "OK":
                 signature_reason = f"firma del rappresentante legale {representative_text}" if is_minor else f"firma del ricorrente {full_name}"
             else:
                 signature_reason = f"firma non individuata per {full_name}"
             lawyer_status = "OK" if self.same_lawyer(ricorso["schema"].get("avvocati", []), instr.get("avvocati", [])) else "KO"
-            tribunal_status = self.answer_ok_no(instr.get("tribunale_brescia_indicato", "NULL"))
-            procura_in_italia = self.answer_ok_no(instr.get("rilasciata_in_italia", "NULL"))
-            procura_in_italiano = self.answer_ok_no(instr.get("scritta_in_italiano", "NULL"))
+            tribunal_status = instr.get("tribunale_brescia_indicato", "NULL")
+            procura_has_apostille = self.has_apostille("Procura", ric_data, source_document=procura)
+            procura_in_italia = "NO" if procura_has_apostille else instr.get("rilasciata_in_italia", "NULL")
+            procura_in_italiano = instr.get("scritta_in_italiano", "NULL")
             results[sec_key] = {
                 "A": full_name,
                 "Ai": representative_text if is_minor else "NULL",
                 "B": f"{signature_status}; {signature_reason}",
                 "C": lawyer_status,
-                "D": self.null_value(instr.get("oggetto", "NULL")),
+                "D": instr.get("oggetto") if instr.get("oggetto") not in (None, "", "-", []) else "NULL",
                 "E": tribunal_status,
-                "Ei": self.null_value(instr.get("tribunale_indicato", "NULL")) if tribunal_status == "NO" else "NULL",
-                "F": self.format_date(instr.get("data_procura", "NULL")),
-                "G": "OK" if data_ricorso and data_procura and data_procura < data_ricorso else "KO",
+                "Ei": (instr.get("tribunale_indicato") if instr.get("tribunale_indicato") not in (None, "", "-", []) else "NULL") if tribunal_status == "NO" else "NULL",
+                "F": instr.get("data_procura_fmt", "NULL"),
+                "G": "OK" if data_ricorso_ord and data_procura_ord and data_procura_ord < data_ricorso_ord else "KO",
                 "H": procura_in_italia,
                 "Hi": "NULL",
                 "I": procura_in_italiano,
@@ -709,26 +622,23 @@ class DocumentValidator:
                 self.mark_ko(f"{sec_key}G", f"La data della procura di {full_name} non è anteriore alla data del ricorso")
             
             if procura_in_italia == "NO":
-                results[sec_key]["Hi"] = "OK" if self.has_apostille("Procura", ric_data) else "KO"
+                results[sec_key]["Hi"] = "OK" if procura_has_apostille else "KO"
                 if results[sec_key]["Hi"] == "KO":
                     self.mark_ko(f"{sec_key}Hi", f"Apostille mancante per la procura estera di {full_name}")
 
             if procura_in_italiano == "NO":
-                translation = self.find_translation("Procura", ric_data)
-                results[sec_key]["Ii"] = "OK" if translation else "KO"
-                if results[sec_key]["Ii"] == "KO":
+                t = self._eval_translation("Procura", ric_data, procura)
+                results[sec_key]["Ii"] = t["found"]
+                if t["found"] == "KO":
                     self.mark_ko(f"{sec_key}Ii", f"Traduzione italiana mancante per la procura di {full_name}")
-                if translation:
-                    sede = translation["schema"].get("sede_traduttore")
-                    results[sec_key]["Iii"] = "OK" if sede == "Italia" else "NO"
-                    if sede == "Estero":
-                        results[sec_key]["Iiii"] = "OK" if self.has_apostille("Traduzione", ric_data, source_doc="Procura") else "KO"
-                        if results[sec_key]["Iiii"] == "KO":
-                            self.mark_ko(f"{sec_key}Iiii", f"Apostille mancante per la traduzione estera della procura di {full_name}")
-                    elif sede == "Italia":
-                        results[sec_key]["Iiv"] = "OK" if self.has_asseverazione("Traduzione", ric_data, source_doc="Procura") else "KO"
-                        if results[sec_key]["Iiv"] == "KO":
-                            self.mark_ko(f"{sec_key}Iiv", f"Asseverazione mancante per la traduzione italiana della procura di {full_name}")
+                if t["found"] == "OK":
+                    results[sec_key]["Iii"] = t["sede_italia"]
+                    results[sec_key]["Iiii"] = t["apostille"]
+                    results[sec_key]["Iiv"] = t["asseverazione"]
+                    if t["apostille"] == "KO":
+                        self.mark_ko(f"{sec_key}Iiii", f"Apostille mancante per la traduzione estera della procura di {full_name}")
+                    if t["asseverazione"] == "KO":
+                        self.mark_ko(f"{sec_key}Iiv", f"Asseverazione mancante per la traduzione italiana della procura di {full_name}")
         
         return results
 
@@ -743,7 +653,7 @@ class DocumentValidator:
     # E) Come si chiamano i genitori dell’avo? [Indica il loro nome e cognome]
     # F) Quando è nato l’avo? [GG.MM.AAAA]
     def section_5(self):
-        avo_birth = self.find_avo_birth()
+        avo_birth = self.find_birth_doc_for_person(self.get_avo_person())
         if not avo_birth:
             return {
                 "A": "NULL",
@@ -754,17 +664,17 @@ class DocumentValidator:
                 "F": "NULL"
             }
         instr = avo_birth["schema"]
-        tipo = instr.get("tipo", "").lower()
+        tipo = instr.get("tipo_norm", "")
         res = {}
         res["A"] = "OK" if "anagrafico" in tipo else "NO" if "parrocchiale" in tipo else "NULL"
-        res["Ai"] = self.answer_ok_ko(instr.get("timbro_diocesi", "NULL")) if res["A"] == "NO" else "NULL"
+        res["Ai"] = instr.get("timbro_diocesi", "NULL") if res["A"] == "NO" else "NULL"
         res["C"] = instr.get("comune_nascita", "-")
         province_competenti = ["brescia", "bergamo", "cremona", "mantova"]
         res["D"] = "OK" if any(instr.get("provincia", "-") in p for p in province_competenti) else "KO"
         padre = instr.get("padre", {})
         madre = instr.get("madre", {})
-        res["E"] = f"Padre: {padre.get('nome','-')} {padre.get('cognome','-')}, Madre: {madre.get('nome','-')} {madre.get('cognome','-')}"
-        res["F"] = self.format_date(instr.get("data_nascita", "NULL"))
+        res["E"] = f"{self._display_name(padre)}; {self._display_name(madre)}"
+        res["F"] = instr.get("data_nascita_fmt", "NULL")
         if res["D"] == "KO":
             self.mark_ko("5D", "Il comune di nascita dell'avo non rientra nelle province di competenza indicate")
         return res
@@ -793,58 +703,62 @@ class DocumentValidator:
             "E":"NULL","F":"NULL","Fi":"NULL","Fii":"NULL"
         }
 
-        avo_birth = self.find_avo_birth()
-        avo_death = self.find_avo_death()
-
+        avo_person = self.get_avo_person()
+        avo_birth = self.find_birth_doc_for_person(avo_person)
+        avo_death = self.find_death_doc_for_person(avo_person)
         if not avo_birth:
             return res
 
-        birth_date = self.parse_date(avo_birth["schema"].get("data_nascita"))
+        birth_ord = avo_birth["schema"].get("data_nascita_ord")
         area = avo_birth["schema"].get("area_nascita")
 
-        if birth_date:
-            res["A"] = "OK" if birth_date > datetime(1861,3,17) else "NO"
-            res["Ai"] = "OK" if area=="B" and birth_date >= datetime(1866,10,19) else ("NULL" if area!="B" else "NO")
-            res["Aii"] = "OK" if area=="C" and birth_date >= datetime(1870,9,20) else ("NULL" if area!="C" else "NO")
-            res["Aiii"] = "OK" if area=="D" and birth_date > datetime(1920,7,16) else ("NULL" if area!="D" else "NO")
+        if birth_ord is not None:
+            res["A"] = "OK" if birth_ord > datetime(1861,3,17).toordinal() else "NO"
+            res["Ai"] = "OK" if area=="B" and birth_ord >= datetime(1866,10,19).toordinal() else ("NULL" if area!="B" else "NO")
+            res["Aii"] = "OK" if area=="C" and birth_ord >= datetime(1870,9,20).toordinal() else ("NULL" if area!="C" else "NO")
+            res["Aiii"] = "OK" if area=="D" and birth_ord > datetime(1920,7,16).toordinal() else ("NULL" if area!="D" else "NO")
         else:
             return res
 
-        if not self.is_avo_death_required(avo_birth) or not avo_death:
+        if not self.is_avo_death_required(avo_birth):
             return res
 
-        death_date = self.parse_date(avo_death["schema"].get("data_decesso"))
-        res["C"] = self.format_date(avo_death["schema"].get("data_decesso", "NULL"))
+        if not avo_death:
+            res["E"] = "KO"
+            res["F"] = "KO"
+            self.mark_ko("6E", "Apostille dell'atto di morte dell'avo mancante")
+            self.mark_ko("6F", "Traduzione italiana dell'atto di morte dell'avo mancante")
+            return res
 
-        if death_date:
-            res["D"] = "OK" if death_date >= datetime(1861,3,17) else "KO"
-            res["Di"] = "OK" if (area=="B" and death_date >= datetime(1866,10,19)) else ("NULL" if area!="B" else "KO")
-            res["Dii"] = "OK" if (area=="C" and death_date >= datetime(1870,9,20)) else ("NULL" if area!="C" else "KO")
-            res["Diii"] = "OK" if (area=="D" and death_date >= datetime(1920,7,16)) else ("NULL" if area!="D" else "KO")
+        death_ord = avo_death["schema"].get("data_decesso_ord")
+        res["C"] = avo_death["schema"].get("data_decesso_fmt", "NULL")
+
+        if death_ord is not None:
+            res["D"] = "OK" if death_ord >= datetime(1861,3,17).toordinal() else "KO"
+            res["Di"] = "OK" if (area=="B" and death_ord >= datetime(1866,10,19).toordinal()) else ("NULL" if area!="B" else "KO")
+            res["Dii"] = "OK" if (area=="C" and death_ord >= datetime(1870,9,20).toordinal()) else ("NULL" if area!="C" else "KO")
+            res["Diii"] = "OK" if (area=="D" and death_ord >= datetime(1920,7,16).toordinal()) else ("NULL" if area!="D" else "KO")
 
             for key in ["D", "Di", "Dii", "Diii"]:
                 if res[key] == "KO":
                     self.mark_ko(f"6{key}", f"La data di morte dell'avo non soddisfa il controllo {key}")
 
-        res["E"] = "OK" if self.has_apostille("Atto di morte", avo_death["schema"].get("soggetto", {})) else "KO"
+        res["E"] = "OK" if self.has_apostille("Atto di morte", avo_death["schema"].get("soggetto", {}), source_document=avo_death) else "KO"
         if res["E"] == "KO":
             self.mark_ko("6E", "Apostille dell'atto di morte dell'avo mancante")
 
-        translation = self.find_translation("Atto di morte", avo_death["schema"].get("soggetto", {}))
-        res["F"] = "OK" if translation else "KO"
-        if res["F"] == "KO":
+        soggetto_morte = avo_death["schema"].get("soggetto", {})
+        t = self._eval_translation("Atto di morte", soggetto_morte, avo_death)
+        res["F"] = t["found"]
+        if t["found"] == "KO":
             self.mark_ko("6F", "Traduzione italiana dell'atto di morte dell'avo mancante")
             return res
-
-        sede = translation["schema"].get("sede_traduttore")
-        if sede == "Estero":
-            res["Fi"] = "OK" if self.has_apostille("Traduzione", avo_death["schema"].get("soggetto", {}), source_doc="Atto di morte") else "KO"
-            if res["Fi"] == "KO":
-                self.mark_ko("6Fi", "Apostille della traduzione estera dell'atto di morte dell'avo mancante")
-        elif sede == "Italia":
-            res["Fii"] = "OK" if self.has_asseverazione("Traduzione", avo_death["schema"].get("soggetto", {}), source_doc="Atto di morte") else "KO"
-            if res["Fii"] == "KO":
-                self.mark_ko("6Fii", "Asseverazione della traduzione italiana dell'atto di morte dell'avo mancante")
+        res["Fi"] = t["apostille"]
+        res["Fii"] = t["asseverazione"]
+        if t["apostille"] == "KO":
+            self.mark_ko("6Fi", "Apostille della traduzione estera dell'atto di morte dell'avo mancante")
+        if t["asseverazione"] == "KO":
+            self.mark_ko("6Fii", "Asseverazione della traduzione italiana dell'atto di morte dell'avo mancante")
 
         return res
 
@@ -874,23 +788,32 @@ class DocumentValidator:
         schema = cnn["schema"]
         
         res={}
-        res["A"] = self.answer_ok_ko(schema.get("formula_negativa_presente", "NULL"))
-        res["B"] = ', '.join([self.full_name(p) for p in schema.get('pseudonimi', [])]) or "NULL"
+        res["A"] = schema.get("formula_negativa_presente", "NULL")
+        pseudonyms = []
+        seen_pseudonyms = set()
+        for person in schema.get('pseudonimi', []):
+            display_name = self._display_name(person)
+            normalized_name = display_name.strip().lower()
+            if display_name == "NULL" or normalized_name in seen_pseudonyms:
+                continue
+            seen_pseudonyms.add(normalized_name)
+            pseudonyms.append(display_name)
+        res["B"] = '; '.join(pseudonyms) if pseudonyms else "NULL"
         
-        avo_birth = self.find_avo_birth()
-        birth_date = None
+        avo_birth = self.find_birth_doc_for_person(self.get_avo_person())
+        birth_ord = None
         if avo_birth:
-            birth_date = self.parse_date(avo_birth["schema"].get("data_nascita"))
-        cnn_birth_date = self.parse_date(schema.get("data_nascita", "-"))
+            birth_ord = avo_birth["schema"].get("data_nascita_ord")
+        cnn_birth_ord = schema.get("data_nascita_ord")
 
-        res["C"] = "OK" if birth_date and cnn_birth_date and birth_date == cnn_birth_date else "KO"
+        res["C"] = "OK" if birth_ord and cnn_birth_ord and birth_ord == cnn_birth_ord else "KO"
 
-        res["D"] = "OK" if self.has_apostille("Certificato Negativo di Naturalizzazione", schema.get("soggetto", {})) else "KO"
+        res["D"] = "OK" if self.has_apostille("Certificato Negativo di Naturalizzazione", schema.get("soggetto", {}), source_document=cnn) else "KO"
         
-        translation = self.find_translation("Certificato Negativo di Naturalizzazione", schema.get("soggetto", {}))
-        res["E"] = "OK" if translation else "KO"
-        res["Ei"] = "NULL"
-        res["Eii"] = "NULL"
+        t = self._eval_translation("Certificato Negativo di Naturalizzazione", schema.get("soggetto", {}), cnn)
+        res["E"] = t["found"]
+        res["Ei"] = t["apostille"]
+        res["Eii"] = t["asseverazione"]
         if res["A"] == "KO":
             self.mark_ko("7A", "La formula negativa del certificato di naturalizzazione non è presente")
         if res["C"] == "KO":
@@ -899,15 +822,11 @@ class DocumentValidator:
             self.mark_ko("7D", "Apostille del certificato negativo di naturalizzazione mancante")
         if res["E"] == "KO":
             self.mark_ko("7E", "Traduzione italiana del certificato negativo di naturalizzazione mancante")
-        if translation:
-            sede = translation["schema"].get("sede_traduttore")
-            if sede=="Estero":
-                res["Ei"]="OK" if self.has_apostille("Traduzione", schema.get("soggetto", {}), source_doc="Certificato Negativo di Naturalizzazione") else "KO"
-                if res["Ei"] =="KO": self.mark_ko("7Ei","Apostille CNN mancante")
-            elif sede=="Italia":
-                res["Eii"] = "OK" if self.has_asseverazione("Traduzione", schema.get("soggetto", {}), source_doc="Certificato Negativo di Naturalizzazione") else "KO"
-                if res["Eii"] == "KO": self.mark_ko("7Eii","Asseverazione CNN mancante")
-        
+        if res["Ei"] == "KO":
+            self.mark_ko("7Ei", "Apostille CNN mancante")
+        if res["Eii"] == "KO":
+            self.mark_ko("7Eii", "Asseverazione CNN mancante")
+
         return res
 
     # -------------------------------------------------
@@ -922,9 +841,16 @@ class DocumentValidator:
     # ii. Se la traduzione è stata fatta in Italia, è presente l’asseverazione della traduzione dell'atto di nascita? [OK/KO/NULL]
     def section_8(self):
         results = {}
-        lineage = self.get_lineage()
-        targets = self.unique_people(lineage[1:] + self.get_ricorrenti())
-        family_people = self.unique_people(lineage + self.get_ricorrenti())
+        lineage_ids = self.role_index.get("lineage_person_ids", [])
+        ricorrenti_ids = self.role_index.get("ricorrenti_person_ids", [])
+        targets_ids = []
+        seen_targets = set()
+        for pid in lineage_ids[1:] + ricorrenti_ids:
+            if pid and pid not in seen_targets:
+                seen_targets.add(pid)
+                targets_ids.append(pid)
+        targets = self._people_by_ids(targets_ids)
+        family_people = self._people_by_ids([pid for pid in lineage_ids + ricorrenti_ids if pid])
         for i, person in enumerate(targets, 1):
             key = f"8/{i}"
             birth = self.find_birth_doc_for_person(person)
@@ -948,25 +874,21 @@ class DocumentValidator:
 
             padre = schema.get("padre", {})
             madre = schema.get("madre", {})
-            res_b = "OK" if self.person_in_list(padre, family_people) or self.person_in_list(madre, family_people) else "KO"
+            family_ids = {self._person_id(family_person) for family_person in family_people if self._person_id(family_person)}
+            parent_matches = self._person_id(padre) in family_ids or self._person_id(madre) in family_ids
+            res_b = "OK" if parent_matches else "KO"
             if res_b == "KO": self.mark_ko(f"{key}B", f"Genitori non in linea discendenza per {nome}")
 
-            res_c = "OK" if self.has_apostille("Atto di nascita", soggetto) else "KO"
+            res_c = "OK" if self.has_apostille("Atto di nascita", soggetto, source_document=birth) else "KO"
             if res_c == "KO": self.mark_ko(f"{key}C", f"Apostille atto di nascita {nome} mancante")
 
-            translation = self.find_translation("Atto di nascita", soggetto)
-            res_d = "OK" if translation else "KO"
+            t = self._eval_translation("Atto di nascita", soggetto, birth)
+            res_d = t["found"]
+            res_i = t["apostille"]
+            res_ii = t["asseverazione"]
             if res_d == "KO": self.mark_ko(f"{key}D", f"Traduzione atto di nascita {nome} mancante")
-
-            res_i, res_ii = "NULL", "NULL"
-            if translation:
-                sede = translation["schema"]["sede_traduttore"]
-                if sede == "Estero":
-                    res_i = "OK" if self.has_apostille("Traduzione", soggetto, source_doc="Atto di nascita") else "KO"
-                    if res_i =="KO": self.mark_ko(f"{key}Di", f"Apostille atto di nascita {nome} mancante")
-                else:
-                    res_ii = "OK" if self.has_asseverazione("Traduzione", soggetto, source_doc="Atto di nascita") else "KO"
-                    if res_ii =="KO": self.mark_ko(f"{key}Dii", f"Asseverazione atto di nascita {nome} mancante")
+            if res_i == "KO": self.mark_ko(f"{key}Di", f"Apostille atto di nascita {nome} mancante")
+            if res_ii == "KO": self.mark_ko(f"{key}Dii", f"Asseverazione atto di nascita {nome} mancante")
 
             results[key] = {
                 "A": nome,

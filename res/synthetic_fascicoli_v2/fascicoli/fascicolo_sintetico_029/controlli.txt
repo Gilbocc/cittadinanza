@@ -1,0 +1,128 @@
+{
+  "0": {
+    "A": "OK",
+    "B": "OK",
+    "C": "OK",
+    "Ci": "NULL",
+    "D": "OK",
+    "E": "OK",
+    "F": "OK",
+    "G": "OK",
+    "Gi": "NULL",
+    "H": "OK",
+    "Hi": "NULL"
+  },
+  "1": {
+    "1": "OK"
+  },
+  "2": {
+    "A": "07.12.2025",
+    "B": "OK",
+    "C": "KO",
+    "D": "SI",
+    "Di": "26.10.2025",
+    "E": "SI",
+    "Ei": "19.06.2024",
+    "F": "NO",
+    "Fi": "NULL",
+    "Fii": "NULL",
+    "Fiii": "NULL",
+    "G": "0971-2025"
+  },
+  "3": {
+    "A": "Antonio Oliveira",
+    "B": 1,
+    "C": "Jose Rodrigues-Souza",
+    "D": "Jose Rodrigues-Souza: Null",
+    "E": "NO",
+    "Ei": "NULL",
+    "Eii": "NULL",
+    "F": "OK; Carlos Miguel Pereira -> Renata Costa-Pereira -> Jose Rodrigues",
+    "G": "KO; Ricorrenti per matrimonio presenti",
+    "Gi": "Mateus Almeida"
+  },
+  "4": {
+    "4/1": {
+      "A": "Jose Rodrigues-Souza",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Jose Rodrigues-Souza",
+      "C": "KO",
+      "D": "Il mandato e rilasciato per la rappresentanza innanzi al Tribunale Ordinario di Brescia nel giudizio avente ad oggetto delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "31.05.2024",
+      "G": "OK",
+      "H": "OK",
+      "Hi": "NULL",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
+      "Iiii": "NULL",
+      "Iiv": "NULL"
+    }
+  },
+  "5": {
+    "A": "OK",
+    "Ai": "NULL",
+    "C": "Mantova",
+    "D": "OK",
+    "E": "Padre: Diego Araujo, Madre: Beatriz Oliveira",
+    "F": "01.11.1850"
+  },
+  "6": {
+    "A": "NO",
+    "Ai": "NO",
+    "Aii": "NULL",
+    "Aiii": "NULL",
+    "C": "11.03.1940",
+    "D": "OK",
+    "Di": "OK",
+    "Dii": "NULL",
+    "Diii": "NULL",
+    "E": "OK",
+    "F": "OK",
+    "Fi": "NULL",
+    "Fii": "KO"
+  },
+  "7": {
+    "A": "OK",
+    "B": "NULL",
+    "C": "OK",
+    "D": "OK",
+    "E": "OK",
+    "Ei": "NULL",
+    "Eii": "OK"
+  },
+  "8": {
+    "8/1": {
+      "A": "Renata Costa-Pereira",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/2": {
+      "A": "Jose Rodrigues",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "KO"
+    }
+  },
+  "10": [
+    "2C",
+    "3G",
+    "4/1C",
+    "6Fii",
+    "8/2Dii"
+  ],
+  "11": {
+    "2C": "Il ricorso non risulta iscritto prima del 27.03.2025 escluso",
+    "3G": "Ricorrenti che chiedono la cittadinanza per matrimonio: Mateus Almeida",
+    "4/1C": "Gli avvocati indicati nella procura di Jose Rodrigues-Souza non coincidono con quelli del ricorso",
+    "6Fii": "Asseverazione della traduzione italiana dell'atto di morte dell'avo mancante",
+    "8/2Dii": "Asseverazione atto di nascita Jose Rodrigues mancante"
+  }
+}

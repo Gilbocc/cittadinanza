@@ -24,9 +24,10 @@ from pathlib import Path
 from typing import Optional
 
 from src.analysis import DocumentValidator
+from src import linking
 
 
-_DOC_MATCH_VALIDATOR = DocumentValidator([])
+_DOC_MATCH_VALIDATOR = DocumentValidator(linking.build_linked_data([]))
 
 
 # ---------------------------------------------------------------------------
@@ -583,7 +584,7 @@ def evaluate_case(
             if report_from_info:
                 if actual_docs is None:
                     actual_docs = json.loads(info_path.read_text(encoding="utf-8"))
-                actual_report = DocumentValidator(actual_docs).run()
+                actual_report = DocumentValidator(linking.build_linked_data(actual_docs)).run()
             else:
                 actual_report = json.loads(controlli_path.read_text(encoding="utf-8"))
             expected_report = json.loads(expected_rep_path.read_text(encoding="utf-8"))

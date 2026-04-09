@@ -3,6 +3,7 @@ import os
 from pathlib import Path
 from typing import Any
 from src import analysis
+from src import linking
 
 def process_json_files(source_folder: str, target_folder: str) -> None:
     """
@@ -26,9 +27,8 @@ def process_json_files(source_folder: str, target_folder: str) -> None:
             with open(txt_file, 'r', encoding='utf-8') as f:
                 data = json.load(f)
             
-            # Execute analysis (replace with your analysis logic)
-            result = analysis.DocumentValidator(data).run()
-            
+            linked_data = linking.build_linked_data(data)
+            result = analysis.DocumentValidator(linked_data).run()
             # Generate output filename
             output_name = txt_file.stem.replace(" ", "_") + "_analysis.json"
             output_path = target_path / output_name
@@ -58,7 +58,7 @@ def analyze_data(data: Any) -> dict:
 
 
 if __name__ == "__main__":
-    SOURCE = "res/fascicoli_test/t"
-    TARGET = "res/fascicoli_test/t/o/fascicoli_test_output"
+    SOURCE = "res/risultati_nuovi"
+    TARGET = "res/fascicoli_nuovi_output"
     
     process_json_files(SOURCE, TARGET)

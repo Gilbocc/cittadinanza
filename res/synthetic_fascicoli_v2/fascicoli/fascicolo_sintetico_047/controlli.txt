@@ -1,0 +1,122 @@
+{
+  "0": {
+    "A": "OK",
+    "B": "OK",
+    "C": "OK",
+    "Ci": "NULL",
+    "D": "OK",
+    "E": "OK",
+    "F": "OK",
+    "G": "OK",
+    "Gi": "NULL",
+    "H": "OK",
+    "Hi": "NULL"
+  },
+  "1": {
+    "1": "OK"
+  },
+  "2": {
+    "A": "02.03.2024",
+    "B": "OK",
+    "C": "OK",
+    "D": "SI",
+    "Di": "12.03.2024",
+    "E": "SI",
+    "Ei": "24.07.2024",
+    "F": "NO",
+    "Fi": "NULL",
+    "Fii": "NULL",
+    "Fiii": "NULL",
+    "G": "0364-2025"
+  },
+  "3": {
+    "A": "Renata Rodrigues, Camila Santos",
+    "B": 1,
+    "C": "Patricia Oliveira Ribeiro",
+    "D": "Patricia Oliveira Ribeiro: Null",
+    "E": "NO",
+    "Ei": "NULL",
+    "Eii": "NULL",
+    "F": "OK; Paulo Miguel Costa -> Mateus Ribeiro -> Patricia Oliveira Ribeiro",
+    "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
+    "Gi": "NULL"
+  },
+  "4": {
+    "4/1": {
+      "A": "Patricia Oliveira Ribeiro",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Patricia Oliveira Ribeiro",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "18.04.2024",
+      "G": "OK",
+      "H": "NO",
+      "Hi": "OK",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
+      "Iiii": "NULL",
+      "Iiv": "NULL"
+    }
+  },
+  "5": {
+    "A": "OK",
+    "Ai": "NULL",
+    "C": "Brescia",
+    "D": "OK",
+    "E": "Padre: Paulo Santos, Madre: Maria Santos",
+    "F": "22.04.1959"
+  },
+  "6": {
+    "A": "OK",
+    "Ai": "OK",
+    "Aii": "NULL",
+    "Aiii": "NULL",
+    "C": "NULL",
+    "D": "NULL",
+    "Di": "NULL",
+    "Dii": "NULL",
+    "Diii": "NULL",
+    "E": "NULL",
+    "F": "NULL",
+    "Fi": "NULL",
+    "Fii": "NULL"
+  },
+  "7": {
+    "A": "OK",
+    "B": "Paulo Costa",
+    "C": "OK",
+    "D": "OK",
+    "E": "OK",
+    "Ei": "NULL",
+    "Eii": "KO"
+  },
+  "8": {
+    "8/1": {
+      "A": "Mateus Ribeiro",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/2": {
+      "A": "Patricia Oliveira Ribeiro",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "KO"
+    }
+  },
+  "10": [
+    "7Eii",
+    "8/2Dii"
+  ],
+  "11": {
+    "7Eii": "Asseverazione CNN mancante",
+    "8/2Dii": "Asseverazione atto di nascita Patricia Oliveira Ribeiro mancante"
+  }
+}

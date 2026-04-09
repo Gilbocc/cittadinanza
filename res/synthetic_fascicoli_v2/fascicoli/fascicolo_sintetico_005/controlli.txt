@@ -1,0 +1,150 @@
+{
+  "0": {
+    "A": "OK",
+    "B": "OK",
+    "C": "OK",
+    "Ci": "NULL",
+    "D": "OK",
+    "E": "OK",
+    "F": "OK",
+    "G": "KO",
+    "Gi": "Mateus Araujo",
+    "H": "OK",
+    "Hi": "NULL"
+  },
+  "1": {
+    "1": "OK"
+  },
+  "2": {
+    "A": "20.12.2025",
+    "B": "OK",
+    "C": "OK",
+    "D": "SI",
+    "Di": "24.08.2024",
+    "E": "SI",
+    "Ei": "16.07.2024",
+    "F": "NO",
+    "Fi": "NULL",
+    "Fii": "NULL",
+    "Fiii": "NULL",
+    "G": "0564-2025"
+  },
+  "3": {
+    "A": "Maria Santos",
+    "B": 1,
+    "C": "Beatriz Nunes-Souza",
+    "D": "Beatriz Nunes-Souza: Null",
+    "E": "NO",
+    "Ei": "NULL",
+    "Eii": "NULL",
+    "F": "OK; Renata Luz Barbosa -> Rafael Luis Souza -> Mateus Araujo -> Jose Luis Costa-Araujo -> Beatriz Nunes",
+    "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
+    "Gi": "NULL"
+  },
+  "4": {
+    "4/1": {
+      "A": "Beatriz Nunes-Souza",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Beatriz Nunes-Souza",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "28.08.2024",
+      "G": "KO",
+      "H": "NO",
+      "Hi": "OK",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
+      "Iiii": "NULL",
+      "Iiv": "NULL"
+    }
+  },
+  "5": {
+    "A": "OK",
+    "Ai": "NULL",
+    "C": "Bergamo",
+    "D": "OK",
+    "E": "Padre: Rafael Lima, Madre: Patricia Santos",
+    "F": "18.11.1855"
+  },
+  "6": {
+    "A": "NO",
+    "Ai": "NULL",
+    "Aii": "NULL",
+    "Aiii": "NULL",
+    "C": "15.08.1909",
+    "D": "OK",
+    "Di": "NULL",
+    "Dii": "NULL",
+    "Diii": "NULL",
+    "E": "OK",
+    "F": "OK",
+    "Fi": "NULL",
+    "Fii": "KO"
+  },
+  "7": {
+    "A": "OK",
+    "B": "Renata Barbosa",
+    "C": "OK",
+    "D": "OK",
+    "E": "OK",
+    "Ei": "NULL",
+    "Eii": "OK"
+  },
+  "8": {
+    "8/1": {
+      "A": "Rafael Luis Souza",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/2": {
+      "A": "Mateus Araujo",
+      "B": "KO",
+      "C": "KO",
+      "D": "KO",
+      "Di": "NULL",
+      "Dii": "NULL"
+    },
+    "8/3": {
+      "A": "Jose Luis Costa-Araujo",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "KO"
+    },
+    "8/4": {
+      "A": "Beatriz Nunes",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "KO"
+    }
+  },
+  "10": [
+    "0G",
+    "4/1G",
+    "6Fii",
+    "8/2B",
+    "8/2C",
+    "8/2D",
+    "8/3Dii",
+    "8/4Dii"
+  ],
+  "11": {
+    "0G": "Atti di nascita dei discendenti mancanti: Mateus Araujo",
+    "4/1G": "La data della procura di Beatriz Nunes-Souza non è anteriore alla data del ricorso",
+    "6Fii": "Asseverazione della traduzione italiana dell'atto di morte dell'avo mancante",
+    "8/2B": "Atto di nascita non trovato per Mateus Araujo",
+    "8/2C": "Impossibile verificare l'apostille dell'atto di nascita di Mateus Araujo perché l'atto manca",
+    "8/2D": "Impossibile verificare la traduzione dell'atto di nascita di Mateus Araujo perché l'atto manca",
+    "8/3Dii": "Asseverazione atto di nascita Jose Luis Costa-Araujo mancante",
+    "8/4Dii": "Asseverazione atto di nascita Beatriz Nunes mancante"
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "0": {
+    "A": "OK",
+    "B": "OK",
+    "C": "OK",
+    "Ci": "NULL",
+    "D": "OK",
+    "E": "OK",
+    "F": "OK",
+    "G": "KO",
+    "Gi": "Carlos Lima",
+    "H": "OK",
+    "Hi": "NULL"
+  },
+  "1": {
+    "1": "OK"
+  },
+  "2": {
+    "A": "19.08.2025",
+    "B": "OK",
+    "C": "KO",
+    "D": "SI",
+    "Di": "03.01.2025",
+    "E": "SI",
+    "Ei": "04.03.2024",
+    "F": "NO",
+    "Fi": "NULL",
+    "Fii": "NULL",
+    "Fiii": "NULL",
+    "G": "0840-2024"
+  },
+  "3": {
+    "A": "Antonio Almeida, Fernanda Araujo",
+    "B": 2,
+    "C": "Camila Luz Ribeiro Pereira-Lima, Carolina Maria Pereira-Lima",
+    "D": "Camila Luz Ribeiro Pereira-Lima: Null, Carolina Maria Pereira-Lima: Null",
+    "E": "NO",
+    "Ei": "NULL",
+    "Eii": "NULL",
+    "F": "OK; Fernanda Aparecida Mendes -> Patricia Souza-Mendes -> Fernanda Silva -> Carlos Lima -> Carolina Maria Pereira-Lima -> Camila Luz Ribeiro Pereira-Lima",
+    "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
+    "Gi": "NULL"
+  },
+  "4": {
+    "4/1": {
+      "A": "Camila Luz Ribeiro Pereira-Lima",
+      "Ai": "NULL",
+      "B": "KO; firma non individuata per Camila Luz Ribeiro Pereira-Lima",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "29.10.2024",
+      "G": "OK",
+      "H": "OK",
+      "Hi": "NULL",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
+      "Iiii": "NULL",
+      "Iiv": "NULL"
+    },
+    "4/2": {
+      "A": "Carolina Maria Pereira-Lima",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Carolina Maria Pereira-Lima",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "16.05.2024",
+      "G": "OK",
+      "H": "OK",
+      "Hi": "NULL",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
+      "Iiii": "NULL",
+      "Iiv": "NULL"
+    }
+  },
+  "5": {
+    "A": "OK",
+    "Ai": "NULL",
+    "C": "Mantova",
+    "D": "OK",
+    "E": "Padre: Mateus Barbosa, Madre: Renata Pereira",
+    "F": "11.03.1909"
+  },
+  "6": {
+    "A": "OK",
+    "Ai": "OK",
+    "Aii": "NULL",
+    "Aiii": "NULL",
+    "C": "NULL",
+    "D": "NULL",
+    "Di": "NULL",
+    "Dii": "NULL",
+    "Diii": "NULL",
+    "E": "NULL",
+    "F": "NULL",
+    "Fi": "NULL",
+    "Fii": "NULL"
+  },
+  "7": {
+    "A": "OK",
+    "B": "Fernanda Mendeo",
+    "C": "OK",
+    "D": "OK",
+    "E": "OK",
+    "Ei": "NULL",
+    "Eii": "OK"
+  },
+  "8": {
+    "8/1": {
+      "A": "Patricia Souza-Mendes",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/2": {
+      "A": "Fernanda Silva",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "KO"
+    },
+    "8/3": {
+      "A": "Carlos Lima",
+      "B": "KO",
+      "C": "KO",
+      "D": "KO",
+      "Di": "NULL",
+      "Dii": "NULL"
+    },
+    "8/4": {
+      "A": "Carolina Maria Pereira-Lima",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "KO"
+    },
+    "8/5": {
+      "A": "Camila Luz Ribeiro Pereira-Lima",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    }
+  },
+  "10": [
+    "0G",
+    "2C",
+    "4/1B",
+    "8/2Dii",
+    "8/3B",
+    "8/3C",
+    "8/3D",
+    "8/4Dii"
+  ],
+  "11": {
+    "0G": "Atti di nascita dei discendenti mancanti: Carlos Lima",
+    "2C": "Il ricorso non risulta iscritto prima del 27.03.2025 escluso",
+    "4/1B": "Firma mancante nella procura di Camila Luz Ribeiro Pereira-Lima",
+    "8/2Dii": "Asseverazione atto di nascita Fernanda Silva mancante",
+    "8/3B": "Atto di nascita non trovato per Carlos Lima",
+    "8/3C": "Impossibile verificare l'apostille dell'atto di nascita di Carlos Lima perché l'atto manca",
+    "8/3D": "Impossibile verificare la traduzione dell'atto di nascita di Carlos Lima perché l'atto manca",
+    "8/4Dii": "Asseverazione atto di nascita Carolina Maria Pereira-Lima mancante"
+  }
+}

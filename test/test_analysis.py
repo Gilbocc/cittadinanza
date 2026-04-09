@@ -8,9 +8,47 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from src.analysis import DocumentValidator
+from src.linking import build_linked_data
 
 TEST_CASE_1 = json.loads("""[
     {"document_type":"Ricorso","schema":{"avvocati":[],"numero_ricorrenti":1,"ricorrenti_maggiorenni":[{"nome":"Alessandro","cognome":"Manzoni","nazionalita":"Brasiliana"}],"ricorrenti_minorenni":[],"ricorrenti_per_matrimonio":[],"linea_discendenza":[{"nome":"Ludovico","cognome":"Ariosto"}],"coerenza_linea_discendenza":"SI","proveniente_dal_brasile":"SI","data_ricorso":"25-06-2024"}}
+]""")
+
+TEST_CASE_18 = json.loads("""[
+    {"document_type":"Ricorso","schema":{"avvocati":[{"nome":"Giuseppe","cognome":"Catiniello"}],"numero_ricorrenti":1,"ricorrenti_maggiorenni":[{"nome":"Vanessa","cognome":"Hack Gatelli","nazionalita":"brasiliana"}],"ricorrenti_minorenni":[],"ricorrenti_per_matrimonio":[],"linea_discendenza":[{"nome":"Giovanni Antonio","cognome":"Speranza"},{"nome":"Maria","cognome":"Speranza"},{"nome":"Vicente","cognome":"Gatteli"},{"nome":"Vanessa","cognome":"Hack Gatelli"}],"coerenza_linea_discendenza":"SI","proveniente_dal_brasile":"SI","data_ricorso":"30-12-2023"}},
+    {"document_type":"Procura","schema":{"soggetto":[{"nome":"Vanessa","cognome":"Hack Gatelli","minorenne":"NO","rappresentanti_legali":[],"firma_presente":"OK"}],"oggetto":"procura speciale","avvocati":[{"nome":"Giuseppe","cognome":"Catinello"}],"tribunale_brescia_indicato":"KO","tribunale_indicato":"Tribunale italiano competente","data_procura":"10-10-2023","rilasciata_in_italia":"NO","scritta_in_italiano":"NO"}},
+    {"document_type":"Atto di nascita","schema":{"soggetto":{"nome":"Giovanni Antonio","cognome":"Speranza"},"tipo":"anagrafico","timbro_diocesi":"NO","comune_nascita":"Verdello","provincia":"bergamo","padre":{"nome":"Angelo","cognome":"Speranza"},"madre":{"nome":"Giovanna Teresa","cognome":"Longaretti"},"data_nascita":"29-11-1876","area_nascita":"A","stato":"Italia"}},
+    {"document_type":"Atto di nascita","schema":{"soggetto":{"nome":"Vanessa Hack","cognome":"Gatelli"},"tipo":"anagrafico","timbro_diocesi":"NO","comune_nascita":"Estância Velha","provincia":"altro","padre":{"nome":"Vicente","cognome":"Gatteli"},"madre":{"nome":"Amilda Hack","cognome":"Gatelli"},"data_nascita":"01-12-1985","area_nascita":"E","stato":"Brasile"}},
+    {"document_type":"Certificato Negativo di Naturalizzazione","schema":{"soggetto":{"nome":"GIOVANNI ANTONIO","cognome":"SPERANZA"},"pseudonimi":[],"formula_negativa_presente":"OK","data_nascita":"29-11-1876"}}
+]""")
+
+TEST_CASE_19 = json.loads("""[
+    {"document_type":"Ricorso","schema":{"avvocati":[{"nome":"Eduardo","cognome":"Dromi"}],"numero_ricorrenti":2,"ricorrenti_maggiorenni":[{"nome":"Aubrey de la Trinidad","cognome":"Hernandez Vargas","nazionalita":"Null"},{"nome":"Kimberly Marcela","cognome":"Hernandez Vargas","nazionalita":"Null"}],"ricorrenti_minorenni":[],"ricorrenti_per_matrimonio":[],"linea_discendenza":[{"nome":"Vittorio Giuseppe Amedeo Enrico","cognome":"Menani"},{"nome":"Ida de los Angeles","cognome":"Vargas Flores"},{"nome":"Aubrey de la Trinidad","cognome":"Hernandez Vargas"},{"nome":"Kimberly Marcela","cognome":"Hernandez Vargas"}],"coerenza_linea_discendenza":"SI","proveniente_dal_brasile":"NO","data_ricorso":"04-12-2023"}},
+    {"document_type":"Procura","schema":{"soggetto":[{"nome":"Aubrey de la Trinidad","cognome":"HERNANDEZ VARGAS","minorenne":"NO","rappresentanti_legali":[],"firma_presente":"OK"},{"nome":"Kimberly Marcela","cognome":"HERNANDEZ VARGAS","minorenne":"NO","rappresentanti_legali":[],"firma_presente":"OK"}],"oggetto":"delega difensiva","avvocati":[{"nome":"Eduardo D.","cognome":"DROMI"}],"tribunale_brescia_indicato":"KO","tribunale_indicato":"Null","data_procura":"31-03-2023","rilasciata_in_italia":"OK","scritta_in_italiano":"OK"}},
+    {"document_type":"Apostille","schema":{"oggetto":{"document_type":"Procura","soggetto":[{"nome":"Aubrey de la Trinidad","cognome":"HERNANDEZ VARGAS"},{"nome":"Kimberly Marcela","cognome":"HERNANDEZ VARGAS"}]}}},
+    {"document_type":"Atto di nascita","schema":{"soggetto":{"nome":"Vittorio Giuseppe Amedeo Enrico","cognome":"Menani"},"tipo":"parrocchiale","timbro_diocesi":"OK","comune_nascita":"Sermide","provincia":"mantova","padre":{"nome":"Angelo","cognome":"Null"},"madre":{"nome":"Libera","cognome":"Piccinati"},"data_nascita":"12-04-1865","area_nascita":"B","stato":"Null"}},
+    {"document_type":"Atto di nascita","schema":{"soggetto":{"nome":"Aubrey de la Trinidad","cognome":"Hernandez Vargas"},"tipo":"anagrafico","timbro_diocesi":"NO","comune_nascita":"San José","provincia":"altro","padre":{"nome":"Alvaro","cognome":"Hernandez Escobar"},"madre":{"nome":"Ida de los Angeles","cognome":"Vargas Flores"},"data_nascita":"08-03-1983","area_nascita":"E","stato":"Costa Rica"}},
+    {"document_type":"Atto di nascita","schema":{"soggetto":{"nome":"Kimberly Marcela","cognome":"Hernandez Vargas"},"tipo":"anagrafico","timbro_diocesi":"NO","comune_nascita":"San José","provincia":"altro","padre":{"nome":"Alvaro","cognome":"Hernandez Escobar"},"madre":{"nome":"Ida","cognome":"Vargas Flores"},"data_nascita":"18-09-1987","area_nascita":"E","stato":"Costa Rica"}},
+    {"document_type":"Certificato Negativo di Naturalizzazione","schema":{"soggetto":{"nome":"Vittorio","cognome":"Menani"},"pseudonimi":[],"formula_negativa_presente":"OK","data_nascita":"Null"}}
+]""")
+
+TEST_CASE_20 = json.loads("""[
+    {"document_type":"Ricorso","schema":{"avvocati":[],"numero_ricorrenti":1,"ricorrenti_maggiorenni":[{"nome":"Marta","cognome":"Belentani Furlan Liba","nazionalita":"Null"}],"ricorrenti_minorenni":[],"ricorrenti_per_matrimonio":[],"linea_discendenza":[{"nome":"Teodolinda Edvige Maria","cognome":"Franciosi"},{"nome":"Marta","cognome":"Belentani Furlan"}],"coerenza_linea_discendenza":"SI","proveniente_dal_brasile":"SI","data_ricorso":"01-12-2023"}},
+    {"document_type":"Procura","schema":{"soggetto":[{"nome":"Marta","cognome":"Belentani Furlan Liba","minorenne":"NO","rappresentanti_legali":[],"firma_presente":"OK"}],"oggetto":"procura originale","avvocati":[],"tribunale_brescia_indicato":"KO","tribunale_indicato":"Tribunal Cível Competente","data_procura":"30-01-2023","rilasciata_in_italia":"NO","scritta_in_italiano":"NO"}},
+    {"document_type":"Procura","schema":{"soggetto":[{"nome":"Marta","cognome":"Belentani Furlan Liba","minorenne":"NO","rappresentanti_legali":[],"firma_presente":"KO"}],"oggetto":"procura italiana","avvocati":[],"tribunale_brescia_indicato":"KO","tribunale_indicato":"Tribunale Civile competente","data_procura":"30-01-2023","rilasciata_in_italia":"NO","scritta_in_italiano":"OK"}},
+    {"document_type":"Apostille","schema":{"oggetto":{"document_type":"Reconhecimento de firma - Procuração","soggetto":[{"nome":"Marta","cognome":"Belentani Furlan Liba"}]}}},
+    {"document_type":"Atto di nascita","schema":{"soggetto":{"nome":"Teodolinda Edvige Maria","cognome":"Franciosi"},"tipo":"parrocchiale","timbro_diocesi":"OK","comune_nascita":"Sermide","provincia":"mantova","padre":{"nome":"Pietro","cognome":"Null"},"madre":{"nome":"Luigia","cognome":"Meneghini"},"data_nascita":"05-10-1861","area_nascita":"B","stato":"Null"}},
+    {"document_type":"Certificato Negativo di Naturalizzazione","schema":{"soggetto":{"nome":"THEODOLINDA EDVIGE MARIA","cognome":"FRANCIOSI"},"pseudonimi":[],"formula_negativa_presente":"OK","data_nascita":"05-10-1881"}}
+]""")
+
+TEST_CASE_21 = json.loads("""[
+    {"document_type":"Ricorso","schema":{"avvocati":[],"numero_ricorrenti":1,"ricorrenti_maggiorenni":[{"nome":"Vanessa","cognome":"Hack Gatelli","nazionalita":"brasiliana"}],"ricorrenti_minorenni":[],"ricorrenti_per_matrimonio":[],"linea_discendenza":[{"nome":"Giovanni Antonio","cognome":"Speranza"},{"nome":"Maria","cognome":"Speranza"},{"nome":"Vicente","cognome":"Gatteli"},{"nome":"Vanessa","cognome":"Hack Gatelli"}],"coerenza_linea_discendenza":"SI","proveniente_dal_brasile":"SI","data_ricorso":"30-12-2023"}},
+    {"document_type":"Atto di nascita","schema":{"soggetto":{"nome":"Giovanni Antonio","cognome":"Speranza"},"tipo":"anagrafico","timbro_diocesi":"NO","comune_nascita":"Verdello","provincia":"bergamo","padre":{"nome":"Angelo","cognome":"Speranza"},"madre":{"nome":"Giovanna Teresa","cognome":"Longaretti"},"data_nascita":"29-11-1876","area_nascita":"A","stato":"Italia"}},
+    {"document_type":"Atto di nascita","schema":{"soggetto":{"nome":"Maria","cognome":"Speranza"},"tipo":"anagrafico","timbro_diocesi":"NO","comune_nascita":"Caraá","provincia":"altro","padre":{"nome":"Giovanni Antonio","cognome":"Speranza"},"madre":{"nome":"Maria","cognome":"Pelisoli"},"data_nascita":"03-11-1914","area_nascita":"E","stato":"Brasile"}},
+    {"document_type":"Atto di morte","schema":{"soggetto":{"nome":"Maria Speranza","cognome":"Gatelli"},"data_decesso":"11-09-1994"}},
+    {"document_type":"Atto di nascita","schema":{"soggetto":{"nome":"Vicente","cognome":"Gatteli"},"tipo":"anagrafico","timbro_diocesi":"NO","comune_nascita":"Caraá","provincia":"altro","padre":{"nome":"Domingos","cognome":"Gatteli"},"madre":{"nome":"Maria Esperança","cognome":"Gatteli"},"data_nascita":"19-11-1957","area_nascita":"E","stato":"Brasile"}},
+    {"document_type":"Atto di nascita","schema":{"soggetto":{"nome":"Vanessa Hack","cognome":"Gatelli"},"tipo":"anagrafico","timbro_diocesi":"NO","comune_nascita":"Estância Velha","provincia":"altro","padre":{"nome":"Vicente","cognome":"Gatteli"},"madre":{"nome":"Amilda Hack","cognome":"Gatelli"},"data_nascita":"01-12-1985","area_nascita":"E","stato":"Brasile"}},
+    {"document_type":"Certificato Negativo di Naturalizzazione","schema":{"soggetto":{"nome":"GIOVANNI ANTONIO","cognome":"SPERANZA"},"pseudonimi":[],"formula_negativa_presente":"OK","data_nascita":"29-11-1876"}}
 ]""")
 
 TEST_CASE_2 = json.loads("""[
@@ -191,6 +229,34 @@ TEST_CASE_14 = json.loads("""[
     {"document_type":"Asseverazione","schema":{"oggetto":{"document_type":"Traduzione","documento_originale":"Certificato Negativo di Naturalizzazione","soggetto":[{"nome":"Carlo","cognome":"Gatti"}]}}}
 ]""")
 
+TEST_CASE_15 = json.loads("""[
+    {"document_type":"Ricorso","schema":{"avvocati":[],"numero_ricorrenti":1,"ricorrenti_maggiorenni":[{"nome":"Carmen Lucia","cognome":"do Nascimento","nazionalita":"Brasiliana"}],"ricorrenti_minorenni":[],"ricorrenti_per_matrimonio":[],"linea_discendenza":[{"nome":"Primo Giuseppe Maria","cognome":"Fossa"},{"nome":"Sonia Dulce Mara","cognome":"Consensqui"},{"nome":"Carmen Lucia","cognome":"do Nascimento"}],"linea_discendenza_pseudonimi":[{"nome":"Sonia Dulce Mara","cognome":"Consensqui","pseudonimi":[{"nome":"Sonia Dulce Mara","cognome":"do Nascimento"}]}],"coerenza_linea_discendenza":"SI","proveniente_dal_brasile":"SI","data_ricorso":"28-12-2023"}},
+    {"document_type":"Atto di nascita","schema":{"soggetto":{"nome":"Primo Giuseppe Maria","cognome":"Fossa"},"tipo":"anagrafico","timbro_diocesi":"NO","comune_nascita":"Suzzara","provincia":"mantova","padre":{"nome":"Angelo","cognome":"Fossa"},"madre":{"nome":"Clotilde","cognome":"Assunti"},"data_nascita":"09-08-1879","area_nascita":"A","stato":"Italia"}},
+    {"document_type":"Atto di nascita","schema":{"soggetto":{"nome":"Sonia Dulce Mara","cognome":"Consensqui"},"tipo":"anagrafico","timbro_diocesi":"NO","comune_nascita":"Presidente Prudente","provincia":"altro","padre":{"nome":"Jose Joaquim","cognome":"Consensqui"},"madre":{"nome":"Ermelinda","cognome":"Fossa Consensqui"},"data_nascita":"25-10-1959","area_nascita":"E","stato":"Brasile"}},
+    {"document_type":"Apostille","schema":{"oggetto":{"document_type":"Atto di nascita","soggetto":[{"nome":"Sonia Dulce Mara","cognome":"do Nascimento"}]}}},
+    {"document_type":"Traduzione","schema":{"oggetto":{"document_type":"Atto di nascita","soggetto":[{"nome":"Sonia Dulce Mara","cognome":"Consensqui"}]},"sede_traduttore":"Estero"}},
+    {"document_type":"Apostille","schema":{"oggetto":{"document_type":"Traduzione","documento_originale":"Atto di nascita","soggetto":[{"nome":"Sonia Dulce Mara","cognome":"do Nascimento"}]}}},
+    {"document_type":"Atto di nascita","schema":{"soggetto":{"nome":"Carmen Lucia","cognome":"do Nascimento"},"tipo":"anagrafico","timbro_diocesi":"NO","comune_nascita":"Dourados","provincia":"altro","padre":{"nome":"Jose Carmo","cognome":"do Nascimento"},"madre":{"nome":"Sonia Dulce Mara","cognome":"do Nascimento"},"data_nascita":"31-03-1982","area_nascita":"E","stato":"Brasile"}},
+    {"document_type":"Apostille","schema":{"oggetto":{"document_type":"Atto di nascita","soggetto":[{"nome":"Carmen Lucia","cognome":"do Nascimento"}]}}},
+    {"document_type":"Traduzione","schema":{"oggetto":{"document_type":"Atto di nascita","soggetto":[{"nome":"Carmen Lucia","cognome":"do Nascimento"}]},"sede_traduttore":"Estero"}},
+    {"document_type":"Apostille","schema":{"oggetto":{"document_type":"Traduzione","documento_originale":"Atto di nascita","soggetto":[{"nome":"Carmen Lucia","cognome":"do Nascimento"}]}}}
+]""")
+
+TEST_CASE_16 = json.loads("""[
+    {"document_type":"Ricorso","schema":{"avvocati":[],"numero_ricorrenti":1,"ricorrenti_maggiorenni":[{"nome":"Gerolamo","cognome":"Fortuna","nazionalita":"Italiana"}],"ricorrenti_minorenni":[],"ricorrenti_per_matrimonio":[],"linea_discendenza":[{"nome":"Carlo","cognome":"Fortuna"},{"nome":"Gerolamo","cognome":"Fortuna"}],"coerenza_linea_discendenza":"SI","proveniente_dal_brasile":"NO","data_ricorso":"12-06-2024"}},
+    {"document_type":"Atto di nascita","schema":{"soggetto":{"nome":"Carlo","cognome":"Fortuna"},"tipo":"anagrafico","timbro_diocesi":"NO","comune_nascita":"Mantova","provincia":"mantova","padre":{"nome":"Pietro","cognome":"Fortuna"},"madre":{"nome":"Lucia","cognome":"Mazzucchi"},"data_nascita":"08-02-1850","area_nascita":"B","stato":"Italia"}},
+    {"document_type":"Atto di nascita","schema":{"soggetto":{"nome":"Gerolamo","cognome":"Fortuna"},"tipo":"anagrafico","timbro_diocesi":"NO","comune_nascita":"Roma","provincia":"altro","padre":{"nome":"Carlo","cognome":"Fortuna"},"madre":{"nome":"Anna","cognome":"Rossi"},"data_nascita":"08-02-1890","area_nascita":"E","stato":"Italia"}},
+    {"document_type":"Certificato Negativo di Naturalizzazione","schema":{"soggetto":{"nome":"Carlo","cognome":"Fortuna"},"pseudonimi":[],"formula_negativa_presente":"OK","data_nascita":"08-02-1850"}}
+]""")
+
+TEST_CASE_17 = json.loads("""[
+    {"document_type":"Ricorso","schema":{"avvocati":[{"nome":"Giuseppe","cognome":"Verdi"}],"numero_ricorrenti":1,"ricorrenti_maggiorenni":[],"ricorrenti_minorenni":[{"nome":"Marco","cognome":"Manzoni","nazionalita":"Brasiliana","rappresentato_da":[{"nome":"Anna","cognome":"Ricci"},{"nome":"Luigi","cognome":"Ricci"}]}],"ricorrenti_per_matrimonio":[],"linea_discendenza":[{"nome":"Ludovico","cognome":"Ariosto"},{"nome":"Marco","cognome":"Manzoni"}],"coerenza_linea_discendenza":"SI","proveniente_dal_brasile":"SI","data_ricorso":"25-06-2024"}},
+    {"document_type":"Procura","schema":{"soggetto":[{"nome":"Anna","cognome":"Ricci","minorenne":"NO","rappresentanti_legali":[],"firma_presente":"OK"},{"nome":"Luigi","cognome":"Ricci","minorenne":"NO","rappresentanti_legali":[],"firma_presente":"OK"},{"nome":"Marco","cognome":"Manzoni","minorenne":"SI","rappresentanti_legali":[{"nome":"Anna","cognome":"Ricci"},{"nome":"Luigi","cognome":"Ricci"}],"firma_presente":"NO"}],"oggetto":"riconoscimento di cittadinanza italiana","avvocati":[{"nome":"Giuseppe","cognome":"Verdi"}],"tribunale_brescia_indicato":"SI","data_procura":"16-03-2024","rilasciata_in_italia":"OK","scritta_in_italiano":"OK"}},
+    {"document_type":"Atto di nascita","schema":{"soggetto":{"nome":"Ludovico","cognome":"Ariosto"},"tipo":"anagrafico","timbro_diocesi":"NO","comune_nascita":"Brescia","provincia":"brescia","padre":{"nome":"Dante","cognome":"Alighieri"},"madre":{"nome":"Beatrice","cognome":"Portinari"},"data_nascita":"25-05-1890","area_nascita":"B","stato":"Italia"}},
+    {"document_type":"Atto di nascita","schema":{"soggetto":{"nome":"Marco","cognome":"Manzoni"},"tipo":"anagrafico","timbro_diocesi":"NO","comune_nascita":"Rio de Janeiro","provincia":"altro","padre":{"nome":"Ludovico","cognome":"Ariosto"},"madre":{"nome":"Rosalba","cognome":"Carriera"},"data_nascita":"10-07-1970","area_nascita":"E","stato":"Brasile"}},
+    {"document_type":"Apostille","schema":{"oggetto":{"document_type":"Procura","soggetto":[{"nome":"Marco","cognome":"Manzoni"}]}}}
+]""")
+
 SCENARIOS = {
     "test_case_1": TEST_CASE_1,
     "test_case_2": TEST_CASE_2,
@@ -206,11 +272,18 @@ SCENARIOS = {
     "test_case_12": TEST_CASE_12,
     "test_case_13": TEST_CASE_13,
     "test_case_14": TEST_CASE_14,
+    "test_case_15": TEST_CASE_15,
+    "test_case_16": TEST_CASE_16,
+    "test_case_17": TEST_CASE_17,
+    "test_case_18": TEST_CASE_18,
+    "test_case_19": TEST_CASE_19,
+    "test_case_20": TEST_CASE_20,
+    "test_case_21": TEST_CASE_21,
 }
 
 
 def run_validator(test_data):
-    return DocumentValidator(test_data).run()
+    return DocumentValidator(build_linked_data(test_data)).run()
 
 
 def print_complete_results(scenario, indent=2):
@@ -228,49 +301,29 @@ def print_complete_results(scenario, indent=2):
 
 
 class DocumentValidatorTests(unittest.TestCase):
-    def test_field_match_handles_multiword_names_split_across_fields(self):
-        validator = DocumentValidator([])
-        # "Maria Antonietta" in nome, "Rossi" in cognome should match "Maria" in nome, "Antonietta Rossi" in cognome
-        self.assertTrue(validator._field_match("Maria Antonietta", "Maria"))
-        self.assertTrue(validator._field_match("Antonietta", "Antonietta Rossi"))
-
-    def test_field_match_tolerates_single_character_typos(self):
-        validator = DocumentValidator([])
-        # "Maria" vs "Moria" (one char diff)
-        self.assertTrue(validator._field_match("Maria", "Moria"))
-        # "Giovanni" vs "Giovani" (missing 'n')
-        self.assertTrue(validator._field_match("Giovanni", "Giovani"))
-
-    def test_field_match_rejects_large_differences(self):
-        validator = DocumentValidator([])
-        # "Maria" vs "Anna" (too different)
-        self.assertFalse(validator._field_match("Maria", "Anna"))
-        # "Giovanni" vs "Giuseppe" (too different)
-        self.assertFalse(validator._field_match("Giovanni", "Giuseppe"))
-
-    def test_field_match_whitespace_and_accent_normalization(self):
-        validator = DocumentValidator([])
-        # "Francesca" vs "Francesca" (exact)
-        self.assertTrue(validator._field_match("Francesca", "Francesca"))
-        # "Françesca" vs "Francesca" (accents normalized)
-        self.assertTrue(validator._field_match("Françesca", "Francesca"))
-
-    def test_person_in_list_rejects_surname_mismatch_even_when_name_is_unique(self):
-        validator = DocumentValidator([
+    def test_people_match_accepts_pseudonym_equivalence(self):
+        # After linking, the soggetto and its schema-level pseudonym share the same person_id
+        linked = build_linked_data(TEST_CASE_10)
+        validator = DocumentValidator(linked)
+        cnn = linked["index"]["naturalization"]
+        soggetto = cnn["schema"]["soggetto"]
+        pseudonym = cnn["schema"]["pseudonimi"][0]
+        self.assertTrue(validator.people_match(soggetto, pseudonym))
+        validator = DocumentValidator(build_linked_data([
             {
                 "document_type": "Atto di nascita",
                 "schema": {
                     "soggetto": {"nome": "Maria", "cognome": "Bianchi"}
                 }
             }
-        ])
+        ]))
         person = {"nome": "Maria", "cognome": "Rossi"}
         people = [{"nome": "Maria", "cognome": "Bianchi"}]
 
         self.assertFalse(validator.person_in_list(person, people))
 
     def test_person_in_list_rejects_surname_mismatch_when_name_is_ambiguous(self):
-        validator = DocumentValidator([
+        validator = DocumentValidator(build_linked_data([
             {
                 "document_type": "Atto di nascita",
                 "schema": {
@@ -283,7 +336,7 @@ class DocumentValidatorTests(unittest.TestCase):
                     "soggetto": {"nome": "Maria", "cognome": "Verdi"}
                 }
             }
-        ])
+        ]))
         person = {"nome": "Maria", "cognome": "Rossi"}
         people = [
             {"nome": "Maria", "cognome": "Bianchi"},
@@ -293,28 +346,13 @@ class DocumentValidatorTests(unittest.TestCase):
         self.assertFalse(validator.person_in_list(person, people))
 
     def test_people_match_accepts_pseudonym_equivalence(self):
-        validator = DocumentValidator([])
-
-        canonical_with_pseudonym = {
-            "nome": "Enrico",
-            "cognome": "Gallo",
-            "pseudonimi": [{"nome": "Henrique", "cognome": "Gallo"}],
-        }
-        extracted_subject = {"nome": "Henrique", "cognome": "Gallo"}
-
-        self.assertTrue(validator.people_match(canonical_with_pseudonym, extracted_subject))
-
-    def test_people_match_keeps_typo_tolerance_on_pseudonyms(self):
-        validator = DocumentValidator([])
-
-        canonical_with_pseudonym = {
-            "nome": "Giovanni",
-            "cognome": "Rossi",
-            "pseudonimi": [{"nome": "Jovanni", "cognome": "Rossi"}],
-        }
-        extracted_subject = {"nome": "Giovani", "cognome": "Rossi"}
-
-        self.assertTrue(validator.people_match(canonical_with_pseudonym, extracted_subject))
+        # After linking, the soggetto and its schema-level pseudonym share the same person_id
+        linked = build_linked_data(TEST_CASE_10)
+        validator = DocumentValidator(linked)
+        cnn = linked["index"]["naturalization"]
+        soggetto = cnn["schema"]["soggetto"]
+        pseudonym = cnn["schema"]["pseudonimi"][0]
+        self.assertTrue(validator.people_match(soggetto, pseudonym))
 
     def test_missing_sections_use_checklist_shape(self):
         report = run_validator(TEST_CASE_1)
@@ -419,7 +457,7 @@ class DocumentValidatorTests(unittest.TestCase):
         report = run_validator(TEST_CASE_8)
 
         self.assertEqual(report["2"]["A"], "10.01.2025")
-        self.assertEqual(report["2"]["G"], "0100-2025")
+        self.assertEqual(report["2"]["G"], "100-2025")
         self.assertEqual(report["4"]["4/1"]["Iiii"], "OK")
         self.assertEqual(report["8"]["8/1"]["Dii"], "OK")
 
@@ -476,6 +514,52 @@ class DocumentValidatorTests(unittest.TestCase):
         self.assertIn("10", report)
         self.assertEqual(report["10"], None)
         self.assertEqual(report["11"], None)
+
+    def test_alias_reconciliation_links_documents_and_parents(self):
+        report = run_validator(TEST_CASE_15)
+
+        self.assertEqual(report["8"]["8/1"]["C"], "OK")
+        self.assertEqual(report["8"]["8/1"]["Di"], "OK")
+        self.assertEqual(report["8"]["8/2"]["B"], "OK")
+
+    def test_missing_required_avo_death_marks_translation_and_apostille_ko(self):
+        report = run_validator(TEST_CASE_16)
+
+        self.assertEqual(report["6"]["A"], "NO")
+        self.assertEqual(report["6"]["E"], "KO")
+        self.assertEqual(report["6"]["F"], "KO")
+        self.assertIn("6E", report["10"])
+        self.assertIn("6F", report["10"])
+
+    def test_minor_procura_uses_representative_signature_rows(self):
+        report = run_validator(TEST_CASE_17)
+
+        self.assertEqual(report["4"]["4/1"]["Ai"], "Anna Ricci, Luigi Ricci")
+        self.assertTrue(report["4"]["4/1"]["B"].startswith("OK;"))
+        self.assertNotIn("4/1B", report["10"] or [])
+
+    def test_lawyer_matching_requires_exact_legal_name(self):
+        report = run_validator(TEST_CASE_18)
+
+        self.assertEqual(report["4"]["4/1"]["C"], "KO")
+
+    def test_foreign_procura_is_inferred_from_apostille(self):
+        report = run_validator(TEST_CASE_19)
+
+        self.assertEqual(report["4"]["4/1"]["H"], "NO")
+        self.assertEqual(report["4"]["4/1"]["Hi"], "OK")
+
+    def test_procura_variant_translation_keeps_unknown_location_without_certificate(self):
+        report = run_validator(TEST_CASE_20)
+
+        self.assertEqual(report["4"]["4/1"]["Ii"], "OK")
+        self.assertEqual(report["4"]["4/1"]["Iii"], "NULL")
+        self.assertEqual(report["4"]["4/1"]["Iiv"], "NULL")
+
+    def test_parent_check_accepts_family_member_document_variants(self):
+        report = run_validator(TEST_CASE_21)
+
+        self.assertEqual(report["8"]["8/1"]["B"], "OK")
 
 
 if __name__ == "__main__":

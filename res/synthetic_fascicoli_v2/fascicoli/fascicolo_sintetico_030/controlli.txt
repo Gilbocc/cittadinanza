@@ -1,0 +1,162 @@
+{
+  "0": {
+    "A": "OK",
+    "B": "OK",
+    "C": "OK",
+    "Ci": "NULL",
+    "D": "OK",
+    "E": "OK",
+    "F": "OK",
+    "G": "OK",
+    "Gi": "NULL",
+    "H": "OK",
+    "Hi": "NULL"
+  },
+  "1": {
+    "1": "OK"
+  },
+  "2": {
+    "A": "11.07.2024",
+    "B": "OK",
+    "C": "OK",
+    "D": "SI",
+    "Di": "14.07.2024",
+    "E": "SI",
+    "Ei": "20.04.2024",
+    "F": "NO",
+    "Fi": "NULL",
+    "Fii": "NULL",
+    "Fiii": "NULL",
+    "G": "0223-2025"
+  },
+  "3": {
+    "A": "Juliana Silva",
+    "B": 2,
+    "C": "Fernanda Mendes-Souza, Carolina Nunes-Pereira",
+    "D": "Fernanda Mendes-Souza: Null, Carolina Nunes-Pereira: Null",
+    "E": "NO",
+    "Ei": "NULL",
+    "Eii": "NULL",
+    "F": "OK; Camila Maria Mendes -> Mateus Pereira -> Camila Barbosa-Pereira -> Pedro Pereira -> Carolina Nunes-Pereira -> Fernanda Mendes",
+    "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
+    "Gi": "NULL"
+  },
+  "4": {
+    "4/1": {
+      "A": "Fernanda Mendes-Souza",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Fernanda Mendes-Souza",
+      "C": "OK",
+      "D": "riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "15.09.2024",
+      "G": "OK",
+      "H": "NO",
+      "Hi": "OK",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
+      "Iiii": "NULL",
+      "Iiv": "NULL"
+    },
+    "4/2": {
+      "A": "Carolina Nunes-Pereira",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Carolina Nunes-Pereira",
+      "C": "OK",
+      "D": "riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "25.01.2024",
+      "G": "OK",
+      "H": "NO",
+      "Hi": "OK",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
+      "Iiii": "NULL",
+      "Iiv": "NULL"
+    }
+  },
+  "5": {
+    "A": "OK",
+    "Ai": "NULL",
+    "C": "Bergamo",
+    "D": "OK",
+    "E": "Padre: Marcos Mendes, Madre: Renata Almeida",
+    "F": "08.07.1939"
+  },
+  "6": {
+    "A": "OK",
+    "Ai": "NULL",
+    "Aii": "NULL",
+    "Aiii": "NULL",
+    "C": "NULL",
+    "D": "NULL",
+    "Di": "NULL",
+    "Dii": "NULL",
+    "Diii": "NULL",
+    "E": "NULL",
+    "F": "NULL",
+    "Fi": "NULL",
+    "Fii": "NULL"
+  },
+  "7": {
+    "A": "OK",
+    "B": "NULL",
+    "C": "OK",
+    "D": "OK",
+    "E": "OK",
+    "Ei": "NULL",
+    "Eii": "OK"
+  },
+  "8": {
+    "8/1": {
+      "A": "Mateus Pereira",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/2": {
+      "A": "Camila Barbosa-Pereira",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/3": {
+      "A": "Pedro Pereira",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "KO"
+    },
+    "8/4": {
+      "A": "Carolina Nunes-Pereira",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/5": {
+      "A": "Fernanda Mendes",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    }
+  },
+  "10": [
+    "8/3Dii"
+  ],
+  "11": {
+    "8/3Dii": "Asseverazione atto di nascita Pedro Pereira mancante"
+  }
+}

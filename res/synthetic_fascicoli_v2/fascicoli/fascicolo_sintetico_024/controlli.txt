@@ -1,0 +1,174 @@
+{
+  "0": {
+    "A": "OK",
+    "B": "OK",
+    "C": "OK",
+    "Ci": "NULL",
+    "D": "OK",
+    "E": "OK",
+    "F": "OK",
+    "G": "KO",
+    "Gi": "Larissa Luz Costa",
+    "H": "OK",
+    "Hi": "NULL"
+  },
+  "1": {
+    "1": "OK"
+  },
+  "2": {
+    "A": "27.02.2024",
+    "B": "OK",
+    "C": "OK",
+    "D": "SI",
+    "Di": "01.02.2025",
+    "E": "SI",
+    "Ei": "26.06.2024",
+    "F": "NO",
+    "Fi": "NULL",
+    "Fii": "NULL",
+    "Fiii": "NULL",
+    "G": "0882-2024"
+  },
+  "3": {
+    "A": "Pedro Souza",
+    "B": 2,
+    "C": "Renata Souza-Silva, Paulo Silva",
+    "D": "Renata Souza-Silva: Null, Paulo Silva: Null",
+    "E": "NO",
+    "Ei": "NULL",
+    "Eii": "NULL",
+    "F": "OK; Marcos Paulo Souza -> Rafael Carlos Cardoso -> Beatriz Nunes-Cardoso -> Larissa Luz Costa -> Paulo Silva -> Renata Souza-Silva",
+    "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
+    "Gi": "NULL"
+  },
+  "4": {
+    "4/1": {
+      "A": "Renata Souza-Silva",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Renata Souza-Silva",
+      "C": "OK",
+      "D": "riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "26.12.2024",
+      "G": "OK",
+      "H": "NO",
+      "Hi": "KO",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
+      "Iiii": "NULL",
+      "Iiv": "NULL"
+    },
+    "4/2": {
+      "A": "Paulo Silva",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Paulo Silva",
+      "C": "OK",
+      "D": "riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "11.07.2024",
+      "G": "OK",
+      "H": "NO",
+      "Hi": "OK",
+      "I": "NO",
+      "Ii": "OK",
+      "Iii": "OK",
+      "Iiii": "NULL",
+      "Iiv": "KO"
+    }
+  },
+  "5": {
+    "A": "OK",
+    "Ai": "NULL",
+    "C": "Mantova",
+    "D": "OK",
+    "E": "Padre: Mateus Nunes, Madre: Patricia Oliveira",
+    "F": "06.04.1909"
+  },
+  "6": {
+    "A": "OK",
+    "Ai": "OK",
+    "Aii": "NULL",
+    "Aiii": "NULL",
+    "C": "NULL",
+    "D": "NULL",
+    "Di": "NULL",
+    "Dii": "NULL",
+    "Diii": "NULL",
+    "E": "NULL",
+    "F": "NULL",
+    "Fi": "NULL",
+    "Fii": "NULL"
+  },
+  "7": {
+    "A": "OK",
+    "B": "NULL",
+    "C": "OK",
+    "D": "OK",
+    "E": "OK",
+    "Ei": "NULL",
+    "Eii": "OK"
+  },
+  "8": {
+    "8/1": {
+      "A": "Rafael Carlos Cardoso",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/2": {
+      "A": "Beatriz Nunes-Cardoso",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "KO"
+    },
+    "8/3": {
+      "A": "Larissa Luz Costa",
+      "B": "KO",
+      "C": "KO",
+      "D": "KO",
+      "Di": "NULL",
+      "Dii": "NULL"
+    },
+    "8/4": {
+      "A": "Paulo Silva",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/5": {
+      "A": "Renata Souza-Silva",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    }
+  },
+  "10": [
+    "0G",
+    "4/1Hi",
+    "4/2Iiv",
+    "8/2Dii",
+    "8/3B",
+    "8/3C",
+    "8/3D"
+  ],
+  "11": {
+    "0G": "Atti di nascita dei discendenti mancanti: Larissa Luz Costa",
+    "4/1Hi": "Apostille mancante per la procura estera di Renata Souza-Silva",
+    "4/2Iiv": "Asseverazione mancante per la traduzione italiana della procura di Paulo Silva",
+    "8/2Dii": "Asseverazione atto di nascita Beatriz Nunes-Cardoso mancante",
+    "8/3B": "Atto di nascita non trovato per Larissa Luz Costa",
+    "8/3C": "Impossibile verificare l'apostille dell'atto di nascita di Larissa Luz Costa perché l'atto manca",
+    "8/3D": "Impossibile verificare la traduzione dell'atto di nascita di Larissa Luz Costa perché l'atto manca"
+  }
+}

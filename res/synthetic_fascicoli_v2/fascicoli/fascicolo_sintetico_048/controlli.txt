@@ -1,0 +1,200 @@
+{
+  "0": {
+    "A": "OK",
+    "B": "OK",
+    "C": "KO",
+    "Ci": "Null Null",
+    "D": "OK",
+    "E": "OK",
+    "F": "OK",
+    "G": "OK",
+    "Gi": "NULL",
+    "H": "KO",
+    "Hi": "Null Null"
+  },
+  "1": {
+    "1": "OK"
+  },
+  "2": {
+    "A": "22.09.2025",
+    "B": "OK",
+    "C": "KO",
+    "D": "SI",
+    "Di": "12.03.2025",
+    "E": "SI",
+    "Ei": "25.11.2025",
+    "F": "NO",
+    "Fi": "NULL",
+    "Fii": "NULL",
+    "Fiii": "NULL",
+    "G": "0325-2024"
+  },
+  "3": {
+    "A": "Fernanda Pereira, Carolina Nunes",
+    "B": 3,
+    "C": "Mateus Luis Lima-Oliveira-Souza, Joao Oliveira, Null Null",
+    "D": "Mateus Luis Lima-Oliveira-Souza: Null, Joao Oliveira: Null, Null Null: Null",
+    "E": "SI",
+    "Ei": "Null Null",
+    "Eii": "Null Null rappresentato da ",
+    "F": "OK; Marcos Carlos Santos -> Carolina Oliveira Santos -> Mateus Luis Araujo-Oliveira -> Joao Oliveira -> Mateus Luis Lima-Oliveira",
+    "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
+    "Gi": "NULL"
+  },
+  "4": {
+    "4/1": {
+      "A": "Mateus Luis Lima-Oliveira-Souza",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Mateus Luis Lima-Oliveira-Souza",
+      "C": "OK",
+      "D": "rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "24.01.2024",
+      "G": "OK",
+      "H": "NO",
+      "Hi": "OK",
+      "I": "NO",
+      "Ii": "OK",
+      "Iii": "OK",
+      "Iiii": "NULL",
+      "Iiv": "KO"
+    },
+    "4/2": {
+      "A": "Joao Oliveira",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Joao Oliveira",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "02.03.2024",
+      "G": "OK",
+      "H": "OK",
+      "Hi": "NULL",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
+      "Iiii": "NULL",
+      "Iiv": "NULL"
+    },
+    "4/3": {
+      "A": "Null Null",
+      "Ai": "NULL",
+      "B": "KO; Procura non trovata",
+      "C": "KO",
+      "D": "NULL",
+      "E": "NULL",
+      "Ei": "NULL",
+      "F": "NULL",
+      "G": "KO",
+      "H": "NULL",
+      "Hi": "NULL",
+      "I": "NULL",
+      "Ii": "NULL",
+      "Iii": "NULL",
+      "Iiii": "NULL",
+      "Iiv": "NULL"
+    }
+  },
+  "5": {
+    "A": "OK",
+    "Ai": "NULL",
+    "C": "Bergamo",
+    "D": "OK",
+    "E": "Padre: Marcos Oliveira, Madre: Camila Nunes",
+    "F": "06.12.1893"
+  },
+  "6": {
+    "A": "OK",
+    "Ai": "OK",
+    "Aii": "NULL",
+    "Aiii": "NULL",
+    "C": "NULL",
+    "D": "NULL",
+    "Di": "NULL",
+    "Dii": "NULL",
+    "Diii": "NULL",
+    "E": "NULL",
+    "F": "NULL",
+    "Fi": "NULL",
+    "Fii": "NULL"
+  },
+  "7": {
+    "A": "OK",
+    "B": "Marcos Santoo",
+    "C": "OK",
+    "D": "OK",
+    "E": "OK",
+    "Ei": "NULL",
+    "Eii": "OK"
+  },
+  "8": {
+    "8/1": {
+      "A": "Carolina Oliveira Santos",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "KO"
+    },
+    "8/2": {
+      "A": "Mateus Luis Araujo-Oliveira",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/3": {
+      "A": "Joao Oliveira",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/4": {
+      "A": "Mateus Luis Lima-Oliveira",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/5": {
+      "A": "Null Null",
+      "B": "KO",
+      "C": "KO",
+      "D": "KO",
+      "Di": "NULL",
+      "Dii": "NULL"
+    }
+  },
+  "10": [
+    "0C",
+    "0H",
+    "2C",
+    "4/1Iiv",
+    "4/3B",
+    "4/3C",
+    "4/3G",
+    "8/1Dii",
+    "8/5B",
+    "8/5C",
+    "8/5D"
+  ],
+  "11": {
+    "0C": "Procure mancanti: Null Null",
+    "0H": "Atti di nascita dei ricorrenti mancanti: Null Null",
+    "2C": "Il ricorso non risulta iscritto prima del 27.03.2025 escluso",
+    "4/1Iiv": "Asseverazione mancante per la traduzione italiana della procura di Mateus Luis Lima-Oliveira-Souza",
+    "4/3B": "Procura non trovata per Null Null",
+    "4/3C": "Impossibile verificare gli avvocati per Null Null per assenza della procura",
+    "4/3G": "Impossibile verificare l'anteriorità della procura per Null Null per assenza della procura",
+    "8/1Dii": "Asseverazione atto di nascita Carolina Oliveira Santos mancante",
+    "8/5B": "Atto di nascita non trovato per Null Null",
+    "8/5C": "Impossibile verificare l'apostille dell'atto di nascita di Null Null perché l'atto manca",
+    "8/5D": "Impossibile verificare la traduzione dell'atto di nascita di Null Null perché l'atto manca"
+  }
+}

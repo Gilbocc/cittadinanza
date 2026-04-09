@@ -1,0 +1,126 @@
+{
+  "0": {
+    "A": "OK",
+    "B": "OK",
+    "C": "OK",
+    "Ci": "NULL",
+    "D": "OK",
+    "E": "OK",
+    "F": "OK",
+    "G": "OK",
+    "Gi": "NULL",
+    "H": "OK",
+    "Hi": "NULL"
+  },
+  "1": {
+    "1": "OK"
+  },
+  "2": {
+    "A": "03.06.2024",
+    "B": "OK",
+    "C": "OK",
+    "D": "SI",
+    "Di": "28.06.2024",
+    "E": "SI",
+    "Ei": "18.12.2025",
+    "F": "SI",
+    "Fi": "2",
+    "Fii": "Joao Barbosa, Renata Oliveira",
+    "Fiii": "24.04.2024, 28.08.2025",
+    "G": "0774-2025"
+  },
+  "3": {
+    "A": "Mateus Almeida, Larissa Mendes",
+    "B": 1,
+    "C": "Rafael Santos Cardoso",
+    "D": "Rafael Santos Cardoso: Null",
+    "E": "NO",
+    "Ei": "NULL",
+    "Eii": "NULL",
+    "F": "OK; Renata Aparecida Oliveira -> Paulo Cardoso Oliveira -> Rafael Santos Cardoso",
+    "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
+    "Gi": "NULL"
+  },
+  "4": {
+    "4/1": {
+      "A": "Rafael Santos Cardoso",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Rafael Santos Cardoso",
+      "C": "OK",
+      "D": "riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "31.10.2024",
+      "G": "OK",
+      "H": "NO",
+      "Hi": "KO",
+      "I": "NO",
+      "Ii": "OK",
+      "Iii": "OK",
+      "Iiii": "NULL",
+      "Iiv": "OK"
+    }
+  },
+  "5": {
+    "A": "OK",
+    "Ai": "NULL",
+    "C": "Mantova",
+    "D": "OK",
+    "E": "Padre: Carlos Mendes, Madre: Beatriz Cardoso",
+    "F": "23.09.1844"
+  },
+  "6": {
+    "A": "NO",
+    "Ai": "NO",
+    "Aii": "NULL",
+    "Aiii": "NULL",
+    "C": "21.07.1995",
+    "D": "OK",
+    "Di": "OK",
+    "Dii": "NULL",
+    "Diii": "NULL",
+    "E": "OK",
+    "F": "OK",
+    "Fi": "NULL",
+    "Fii": "KO"
+  },
+  "7": {
+    "A": "OK",
+    "B": "Renata Oliveiro",
+    "C": "OK",
+    "D": "OK",
+    "E": "OK",
+    "Ei": "NULL",
+    "Eii": "OK"
+  },
+  "8": {
+    "8/1": {
+      "A": "Paulo Cardoso Oliveira",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "KO"
+    },
+    "8/2": {
+      "A": "Rafael Santos Cardoso",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "KO"
+    }
+  },
+  "10": [
+    "4/1Hi",
+    "6Fii",
+    "8/1Dii",
+    "8/2Dii"
+  ],
+  "11": {
+    "4/1Hi": "Apostille mancante per la procura estera di Rafael Santos Cardoso",
+    "6Fii": "Asseverazione della traduzione italiana dell'atto di morte dell'avo mancante",
+    "8/1Dii": "Asseverazione atto di nascita Paulo Cardoso Oliveira mancante",
+    "8/2Dii": "Asseverazione atto di nascita Rafael Santos Cardoso mancante"
+  }
+}

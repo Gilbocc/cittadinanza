@@ -14,6 +14,7 @@ from typing import Any
 # Allow importing DocumentValidator from the src package
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from src.analysis import DocumentValidator
+from src import linking
 
 try:
     from reportlab.lib.pagesizes import A4
@@ -963,9 +964,25 @@ def format_document_content(
         obj = schema.get("oggetto", {})
         people = obj.get("soggetto", [])
         obj_type = str(obj.get("document_type", "N.D."))
+        sede = str(schema.get("sede_traduttore", "N.D."))
+        if sede == "Italia":
+            sede_lines = [
+                "Luogo di redazione della traduzione: Italia (Milano).",
+                "Il traduttore professionale opera in Italia e deposita la presente traduzione per eventuale asseverazione presso autorita italiana.",
+            ]
+        elif sede == "Estero":
+            sede_lines = [
+                "Luogo di redazione della traduzione: Estero (Brasile).",
+                "Il traduttore professionale opera all'estero e la presente traduzione e destinata a legalizzazione/apostille estera.",
+            ]
+        else:
+            sede_lines = [
+                f"Luogo di redazione della traduzione: {sede}.",
+            ]
         lines = [
             "TRADUZIONE GIURATA IN LINGUA ITALIANA",
             "Il sottoscritto traduttore attesta che quanto segue costituisce la resa in lingua italiana del documento esibito in lingua portoghese.",
+            *sede_lines,
             "",
         ]
         lines.extend(_translation_excerpt(obj_type, people, rng, source_doc=source_doc))
@@ -2034,7 +2051,7 @@ def generate_fascicoli(output_dir: Path, count: int, seed: int) -> None:
         # Derive expected analysis checklist by running DocumentValidator against
         # the ground-truth expected_extraction and write it to the support folder
         # so that evaluate_results.py can compare actual pipeline output against it.
-        validator_report = DocumentValidator(expected).run()
+        validator_report = DocumentValidator(linking.build_linked_data(expected)).run()
         (case_support_dir / "expected_report.json").write_text(
             json.dumps(validator_report, indent=2, ensure_ascii=False),
             encoding="utf-8",

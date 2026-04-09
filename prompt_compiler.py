@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import argparse
 from pathlib import Path
 import re
 import io
@@ -12,14 +13,37 @@ PLACEHOLDER_PATTERN = re.compile(r"\{\{\s*([^{}\s]+)\s*\}\}")
 def _strip_python_comments(source: str) -> str:
     """Remove Python comment tokens while preserving executable code."""
     reader = io.StringIO(source).readline
+    all_tokens = list(tokenize.generate_tokens(reader))
+    trivia_tokens = {
+        tokenize.COMMENT,
+        tokenize.NL,
+        tokenize.NEWLINE,
+        tokenize.INDENT,
+        tokenize.DEDENT,
+        tokenize.ENCODING,
+        tokenize.ENDMARKER,
+    }
+    code_lines = {tok.start[0] for tok in all_tokens if tok.type not in trivia_tokens}
+    comment_only_lines = {
+        tok.start[0]
+        for tok in all_tokens
+        if tok.type == tokenize.COMMENT and tok.start[0] not in code_lines
+    }
+
     tokens: list[tokenize.TokenInfo] = []
 
-    for tok in tokenize.generate_tokens(reader):
+    for tok in all_tokens:
         if tok.type == tokenize.COMMENT:
             continue
         tokens.append(tok)
 
-    return tokenize.untokenize(tokens)
+    stripped = tokenize.untokenize(tokens)
+    cleaned_lines = []
+    for line_number, line in enumerate(stripped.splitlines(), start=1):
+        if line_number in comment_only_lines and not line.strip():
+            continue
+        cleaned_lines.append(line)
+    return "\n".join(cleaned_lines)
 
 
 def compile_prompt_text(prompt_text: str, project_root: Path) -> str:
@@ -65,3 +89,15 @@ def compile_all_prompts(
     for prompt_path in sorted(prompts_dir.glob("*.txt")):
         compiled_paths.append(compile_prompt_file(prompt_path, project_root, output_dir))
     return compiled_paths
+
+
+def main() -> int:
+    project_root = Path(__file__).resolve().parent
+    compiled_paths = compile_all_prompts(project_root)
+    for path in compiled_paths:
+        print(path.relative_to(project_root))
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

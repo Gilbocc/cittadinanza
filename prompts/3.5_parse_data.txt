@@ -1,0 +1,16 @@
+Execute the following python code with the following input. Only return the script output. 
+
+
+Text input 
+
+```python
+{{src/linking.py}}
+
+
+# -------------------------------------------------
+# EXECUTION
+# -------------------------------------------------
+if __name__ == "__main__":
+    data = build_linked_data(json.loads(input))
+    print(json.dumps(data, indent=2, ensure_ascii=False))
+```

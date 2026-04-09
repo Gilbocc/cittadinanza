@@ -1,0 +1,124 @@
+{
+  "0": {
+    "A": "OK",
+    "B": "OK",
+    "C": "OK",
+    "Ci": "NULL",
+    "D": "OK",
+    "E": "OK",
+    "F": "OK",
+    "G": "OK",
+    "Gi": "NULL",
+    "H": "OK",
+    "Hi": "NULL"
+  },
+  "1": {
+    "1": "OK"
+  },
+  "2": {
+    "A": "21.11.2024",
+    "B": "OK",
+    "C": "OK",
+    "D": "SI",
+    "Di": "21.03.2025",
+    "E": "SI",
+    "Ei": "09.11.2025",
+    "F": "SI",
+    "Fi": "2",
+    "Fii": "Joao Souza, Carolina Rodrigues",
+    "Fiii": "18.03.2025, 02.10.2025",
+    "G": "0828-2025"
+  },
+  "3": {
+    "A": "Pedro Almeida, Beatriz Rodrigues",
+    "B": 1,
+    "C": "Joao Barbosa-Souza",
+    "D": "Joao Barbosa-Souza: Null",
+    "E": "NO",
+    "Ei": "NULL",
+    "Eii": "NULL",
+    "F": "OK; Diego Miguel Nunes -> Paulo Silva -> Joao Barbosa",
+    "G": "KO; Ricorrenti per matrimonio presenti",
+    "Gi": "Larissa Costa"
+  },
+  "4": {
+    "4/1": {
+      "A": "Joao Barbosa-Souza",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Joao Barbosa-Souza",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "02.02.2024",
+      "G": "OK",
+      "H": "OK",
+      "Hi": "NULL",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
+      "Iiii": "NULL",
+      "Iiv": "NULL"
+    }
+  },
+  "5": {
+    "A": "OK",
+    "Ai": "NULL",
+    "C": "Mantova",
+    "D": "OK",
+    "E": "Padre: Jose Araujo, Madre: Maria Oliveira",
+    "F": "28.05.1854"
+  },
+  "6": {
+    "A": "NO",
+    "Ai": "NO",
+    "Aii": "NULL",
+    "Aiii": "NULL",
+    "C": "11.01.1969",
+    "D": "OK",
+    "Di": "OK",
+    "Dii": "NULL",
+    "Diii": "NULL",
+    "E": "OK",
+    "F": "OK",
+    "Fi": "NULL",
+    "Fii": "KO"
+  },
+  "7": {
+    "A": "OK",
+    "B": "Diego Nuneo",
+    "C": "OK",
+    "D": "OK",
+    "E": "OK",
+    "Ei": "NULL",
+    "Eii": "OK"
+  },
+  "8": {
+    "8/1": {
+      "A": "Paulo Silva",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "KO"
+    },
+    "8/2": {
+      "A": "Joao Barbosa",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    }
+  },
+  "10": [
+    "3G",
+    "6Fii",
+    "8/1Dii"
+  ],
+  "11": {
+    "3G": "Ricorrenti che chiedono la cittadinanza per matrimonio: Larissa Costa",
+    "6Fii": "Asseverazione della traduzione italiana dell'atto di morte dell'avo mancante",
+    "8/1Dii": "Asseverazione atto di nascita Paulo Silva mancante"
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "0": {
+    "A": "OK",
+    "B": "OK",
+    "C": "OK",
+    "Ci": "NULL",
+    "D": "OK",
+    "E": "OK",
+    "F": "OK",
+    "G": "KO",
+    "Gi": "Joao Oliveira",
+    "H": "OK",
+    "Hi": "NULL"
+  },
+  "1": {
+    "1": "OK"
+  },
+  "2": {
+    "A": "04.01.2025",
+    "B": "OK",
+    "C": "OK",
+    "D": "SI",
+    "Di": "25.09.2025",
+    "E": "SI",
+    "Ei": "28.07.2025",
+    "F": "NO",
+    "Fi": "NULL",
+    "Fii": "NULL",
+    "Fiii": "NULL",
+    "G": "0400-2024"
+  },
+  "3": {
+    "A": "Joao Santos",
+    "B": 2,
+    "C": "Marcos Nunes Souza, Carolina Souza",
+    "D": "Marcos Nunes Souza: Null, Carolina Souza: Null",
+    "E": "NO",
+    "Ei": "NULL",
+    "Eii": "NULL",
+    "F": "OK; Pedro Paulo Almeida -> Joao Oliveira -> Beatriz Cardoso-Oliveira -> Carolina Souza -> Marcos Nunes Souza",
+    "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
+    "Gi": "NULL"
+  },
+  "4": {
+    "4/1": {
+      "A": "Marcos Nunes Souza",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Marcos Nunes Souza",
+      "C": "OK",
+      "D": "riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "10.02.2024",
+      "G": "OK",
+      "H": "NO",
+      "Hi": "OK",
+      "I": "NO",
+      "Ii": "OK",
+      "Iii": "OK",
+      "Iiii": "NULL",
+      "Iiv": "KO"
+    },
+    "4/2": {
+      "A": "Carolina Souza",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Carolina Souza",
+      "C": "OK",
+      "D": "riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "26.04.2024",
+      "G": "OK",
+      "H": "NO",
+      "Hi": "KO",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
+      "Iiii": "NULL",
+      "Iiv": "NULL"
+    }
+  },
+  "5": {
+    "A": "OK",
+    "Ai": "NULL",
+    "C": "Cremona",
+    "D": "OK",
+    "E": "Padre: Rafael Barbosa, Madre: Patricia Silva",
+    "F": "18.07.1904"
+  },
+  "6": {
+    "A": "OK",
+    "Ai": "NULL",
+    "Aii": "NULL",
+    "Aiii": "NULL",
+    "C": "NULL",
+    "D": "NULL",
+    "Di": "NULL",
+    "Dii": "NULL",
+    "Diii": "NULL",
+    "E": "NULL",
+    "F": "NULL",
+    "Fi": "NULL",
+    "Fii": "NULL"
+  },
+  "7": {
+    "A": "OK",
+    "B": "NULL",
+    "C": "OK",
+    "D": "OK",
+    "E": "OK",
+    "Ei": "NULL",
+    "Eii": "OK"
+  },
+  "8": {
+    "8/1": {
+      "A": "Joao Oliveira",
+      "B": "KO",
+      "C": "KO",
+      "D": "KO",
+      "Di": "NULL",
+      "Dii": "NULL"
+    },
+    "8/2": {
+      "A": "Beatriz Cardoso-Oliveira",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "KO"
+    },
+    "8/3": {
+      "A": "Carolina Souza",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "KO"
+    },
+    "8/4": {
+      "A": "Marcos Nunes Souza",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "KO"
+    }
+  },
+  "10": [
+    "0G",
+    "4/1Iiv",
+    "4/2Hi",
+    "8/1B",
+    "8/1C",
+    "8/1D",
+    "8/2Dii",
+    "8/3Dii",
+    "8/4Dii"
+  ],
+  "11": {
+    "0G": "Atti di nascita dei discendenti mancanti: Joao Oliveira",
+    "4/1Iiv": "Asseverazione mancante per la traduzione italiana della procura di Marcos Nunes Souza",
+    "4/2Hi": "Apostille mancante per la procura estera di Carolina Souza",
+    "8/1B": "Atto di nascita non trovato per Joao Oliveira",
+    "8/1C": "Impossibile verificare l'apostille dell'atto di nascita di Joao Oliveira perché l'atto manca",
+    "8/1D": "Impossibile verificare la traduzione dell'atto di nascita di Joao Oliveira perché l'atto manca",
+    "8/2Dii": "Asseverazione atto di nascita Beatriz Cardoso-Oliveira mancante",
+    "8/3Dii": "Asseverazione atto di nascita Carolina Souza mancante",
+    "8/4Dii": "Asseverazione atto di nascita Marcos Nunes Souza mancante"
+  }
+}

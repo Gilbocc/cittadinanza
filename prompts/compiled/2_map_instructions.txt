@@ -134,9 +134,6 @@ def generate_classification_template(input_json):
     }
     final_output = []
     
-                           
-                                                                       
-                              
     raw_entries = input_json.get("output", [])
 
     for entry in raw_entries:

@@ -1,0 +1,130 @@
+{
+  "0": {
+    "A": "KO",
+    "B": "OK",
+    "C": "OK",
+    "Ci": "NULL",
+    "D": "OK",
+    "E": "OK",
+    "F": "OK",
+    "G": "KO",
+    "Gi": "Rafael Pereira",
+    "H": "OK",
+    "Hi": "NULL"
+  },
+  "1": {
+    "1": "OK"
+  },
+  "2": {
+    "A": "NULL",
+    "B": "NULL",
+    "C": "NULL",
+    "D": "NULL",
+    "Di": "NULL",
+    "E": "NULL",
+    "Ei": "NULL",
+    "F": "NULL",
+    "Fi": "NULL",
+    "Fii": "NULL",
+    "Fiii": "NULL",
+    "G": "NULL"
+  },
+  "3": {
+    "A": "Mateus Silva, Juliana Santos",
+    "B": 1,
+    "C": "Paulo Barbosa-Souza",
+    "D": "Paulo Barbosa-Souza: Null",
+    "E": "NO",
+    "Ei": "NULL",
+    "Eii": "NULL",
+    "F": "OK; Ana Maria Nunes -> Rafael Pereira -> Paulo Barbosa",
+    "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
+    "Gi": "NULL"
+  },
+  "4": {
+    "4/1": {
+      "A": "Paulo Barbosa-Souza",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Paulo Barbosa-Souza",
+      "C": "OK",
+      "D": "rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "28.06.2024",
+      "G": "OK",
+      "H": "OK",
+      "Hi": "NULL",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
+      "Iiii": "NULL",
+      "Iiv": "NULL"
+    }
+  },
+  "5": {
+    "A": "OK",
+    "Ai": "NULL",
+    "C": "Mantova",
+    "D": "OK",
+    "E": "Padre: Carlos Barbosa, Madre: Maria Oliveira",
+    "F": "09.07.1916"
+  },
+  "6": {
+    "A": "OK",
+    "Ai": "OK",
+    "Aii": "NULL",
+    "Aiii": "NULL",
+    "C": "NULL",
+    "D": "NULL",
+    "Di": "NULL",
+    "Dii": "NULL",
+    "Diii": "NULL",
+    "E": "NULL",
+    "F": "NULL",
+    "Fi": "NULL",
+    "Fii": "NULL"
+  },
+  "7": {
+    "A": "OK",
+    "B": "Ana Nuneo",
+    "C": "OK",
+    "D": "OK",
+    "E": "OK",
+    "Ei": "NULL",
+    "Eii": "KO"
+  },
+  "8": {
+    "8/1": {
+      "A": "Rafael Pereira",
+      "B": "KO",
+      "C": "KO",
+      "D": "KO",
+      "Di": "NULL",
+      "Dii": "NULL"
+    },
+    "8/2": {
+      "A": "Paulo Barbosa",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    }
+  },
+  "10": [
+    "0A",
+    "0G",
+    "7Eii",
+    "8/1B",
+    "8/1C",
+    "8/1D"
+  ],
+  "11": {
+    "0A": "IndiceProcedimento.html mancante",
+    "0G": "Atti di nascita dei discendenti mancanti: Rafael Pereira",
+    "7Eii": "Asseverazione CNN mancante",
+    "8/1B": "Atto di nascita non trovato per Rafael Pereira",
+    "8/1C": "Impossibile verificare l'apostille dell'atto di nascita di Rafael Pereira perché l'atto manca",
+    "8/1D": "Impossibile verificare la traduzione dell'atto di nascita di Rafael Pereira perché l'atto manca"
+  }
+}

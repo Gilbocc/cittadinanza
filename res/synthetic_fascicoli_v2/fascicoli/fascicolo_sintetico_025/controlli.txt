@@ -1,0 +1,160 @@
+{
+  "0": {
+    "A": "OK",
+    "B": "OK",
+    "C": "OK",
+    "Ci": "NULL",
+    "D": "OK",
+    "E": "OK",
+    "F": "OK",
+    "G": "OK",
+    "Gi": "NULL",
+    "H": "OK",
+    "Hi": "NULL"
+  },
+  "1": {
+    "1": "OK"
+  },
+  "2": {
+    "A": "06.09.2025",
+    "B": "OK",
+    "C": "KO",
+    "D": "SI",
+    "Di": "30.07.2024",
+    "E": "SI",
+    "Ei": "25.10.2024",
+    "F": "NO",
+    "Fi": "NULL",
+    "Fii": "NULL",
+    "Fiii": "NULL",
+    "G": "0591-2024"
+  },
+  "3": {
+    "A": "Carlos Almeida",
+    "B": 2,
+    "C": "Fernanda Silva, Patricia Ana Costa Barbosa",
+    "D": "Fernanda Silva: Null, Patricia Ana Costa Barbosa: Null",
+    "E": "NO",
+    "Ei": "NULL",
+    "Eii": "NULL",
+    "F": "OK; Maria Aparecida Rodrigues -> Diego Ribeiro Rodrigues -> Marcos Barbosa -> Patricia Ana Costa Barbosa -> Fernanda Silva",
+    "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
+    "Gi": "NULL"
+  },
+  "4": {
+    "4/1": {
+      "A": "Fernanda Silva",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Fernanda Silva",
+      "C": "OK",
+      "D": "riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "16.02.2024",
+      "G": "OK",
+      "H": "NO",
+      "Hi": "OK",
+      "I": "NO",
+      "Ii": "OK",
+      "Iii": "OK",
+      "Iiii": "NULL",
+      "Iiv": "OK"
+    },
+    "4/2": {
+      "A": "Patricia Ana Costa Barbosa",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Patricia Ana Costa Barbosa",
+      "C": "OK",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "14.07.2024",
+      "G": "OK",
+      "H": "NO",
+      "Hi": "OK",
+      "I": "NO",
+      "Ii": "OK",
+      "Iii": "OK",
+      "Iiii": "NULL",
+      "Iiv": "OK"
+    }
+  },
+  "5": {
+    "A": "OK",
+    "Ai": "NULL",
+    "C": "Mantova",
+    "D": "OK",
+    "E": "Padre: Mateus Silva, Madre: Patricia Almeida",
+    "F": "23.05.1843"
+  },
+  "6": {
+    "A": "NO",
+    "Ai": "NO",
+    "Aii": "NULL",
+    "Aiii": "NULL",
+    "C": "26.03.1906",
+    "D": "OK",
+    "Di": "OK",
+    "Dii": "NULL",
+    "Diii": "NULL",
+    "E": "OK",
+    "F": "OK",
+    "Fi": "NULL",
+    "Fii": "KO"
+  },
+  "7": {
+    "A": "OK",
+    "B": "Maria Rodrigueo",
+    "C": "OK",
+    "D": "OK",
+    "E": "OK",
+    "Ei": "NULL",
+    "Eii": "KO"
+  },
+  "8": {
+    "8/1": {
+      "A": "Diego Ribeiro Rodrigues",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/2": {
+      "A": "Marcos Barbosa",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/3": {
+      "A": "Patricia Ana Costa Barbosa",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "KO"
+    },
+    "8/4": {
+      "A": "Fernanda Silva",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    }
+  },
+  "10": [
+    "2C",
+    "6Fii",
+    "7Eii",
+    "8/3Dii"
+  ],
+  "11": {
+    "2C": "Il ricorso non risulta iscritto prima del 27.03.2025 escluso",
+    "6Fii": "Asseverazione della traduzione italiana dell'atto di morte dell'avo mancante",
+    "7Eii": "Asseverazione CNN mancante",
+    "8/3Dii": "Asseverazione atto di nascita Patricia Ana Costa Barbosa mancante"
+  }
+}

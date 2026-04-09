@@ -1,0 +1,114 @@
+{
+  "0": {
+    "A": "OK",
+    "B": "OK",
+    "C": "OK",
+    "Ci": "NULL",
+    "D": "OK",
+    "E": "OK",
+    "F": "OK",
+    "G": "OK",
+    "Gi": "NULL",
+    "H": "OK",
+    "Hi": "NULL"
+  },
+  "1": {
+    "1": "OK"
+  },
+  "2": {
+    "A": "29.01.2025",
+    "B": "OK",
+    "C": "OK",
+    "D": "SI",
+    "Di": "27.03.2024",
+    "E": "SI",
+    "Ei": "26.07.2025",
+    "F": "NO",
+    "Fi": "NULL",
+    "Fii": "NULL",
+    "Fiii": "NULL",
+    "G": "0112-2025"
+  },
+  "3": {
+    "A": "Mateus Lima",
+    "B": 1,
+    "C": "Ana Maria Silva-Oliveira-Souza",
+    "D": "Ana Maria Silva-Oliveira-Souza: Null",
+    "E": "NO",
+    "Ei": "NULL",
+    "Eii": "NULL",
+    "F": "OK; Paulo Miguel Almeida -> Ana Luz Oliveira -> Ana Maria Silva-Oliveira",
+    "G": "KO; Ricorrenti per matrimonio presenti",
+    "Gi": "Renata Barbosa"
+  },
+  "4": {
+    "4/1": {
+      "A": "Ana Maria Silva-Oliveira-Souza",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Ana Maria Silva-Oliveira-Souza",
+      "C": "KO",
+      "D": "delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "09.03.2024",
+      "G": "OK",
+      "H": "OK",
+      "Hi": "NULL",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
+      "Iiii": "NULL",
+      "Iiv": "NULL"
+    }
+  },
+  "5": {
+    "A": "OK",
+    "Ai": "NULL",
+    "C": "Mantova",
+    "D": "OK",
+    "E": "Padre: Jose Oliveira, Madre: Larissa Costa",
+    "F": "13.07.1845"
+  },
+  "6": {
+    "A": "NO",
+    "Ai": "NO",
+    "Aii": "NULL",
+    "Aiii": "NULL",
+    "C": "17.02.1959",
+    "D": "OK",
+    "Di": "OK",
+    "Dii": "NULL",
+    "Diii": "NULL",
+    "E": "OK",
+    "F": "OK",
+    "Fi": "OK",
+    "Fii": "NULL"
+  },
+  "7": {
+    "A": "OK",
+    "B": "Paulo Almeida",
+    "C": "OK",
+    "D": "OK",
+    "E": "OK",
+    "Ei": "NULL",
+    "Eii": "OK"
+  },
+  "8": {
+    "8/1": {
+      "A": "Ana Luz Oliveira",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    }
+  },
+  "10": [
+    "3G",
+    "4/1C"
+  ],
+  "11": {
+    "3G": "Ricorrenti che chiedono la cittadinanza per matrimonio: Renata Barbosa",
+    "4/1C": "Gli avvocati indicati nella procura di Ana Maria Silva-Oliveira-Souza non coincidono con quelli del ricorso"
+  }
+}

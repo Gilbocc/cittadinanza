@@ -1,0 +1,166 @@
+{
+  "0": {
+    "A": "OK",
+    "B": "OK",
+    "C": "OK",
+    "Ci": "NULL",
+    "D": "OK",
+    "E": "OK",
+    "F": "OK",
+    "G": "OK",
+    "Gi": "NULL",
+    "H": "KO",
+    "Hi": "Marcos Santos-Souza"
+  },
+  "1": {
+    "1": "OK"
+  },
+  "2": {
+    "A": "29.10.2024",
+    "B": "OK",
+    "C": "OK",
+    "D": "SI",
+    "Di": "12.03.2025",
+    "E": "SI",
+    "Ei": "30.03.2025",
+    "F": "SI",
+    "Fi": "1",
+    "Fii": "Carlos Pereira",
+    "Fiii": "07.11.2025",
+    "G": "0413-2025"
+  },
+  "3": {
+    "A": "Ana Almeida, Ana Lima",
+    "B": 2,
+    "C": "Marcos Santos-Souza, Camila Ribeiro",
+    "D": "Marcos Santos-Souza: Null, Camila Ribeiro: Null",
+    "E": "NO",
+    "Ei": "NULL",
+    "Eii": "NULL",
+    "F": "OK; Maria Aparecida Mendes -> Patricia Santos -> Beatriz Ribeiro Santos -> Camila Ribeiro -> Marcos Santos",
+    "G": "KO; Ricorrenti per matrimonio presenti",
+    "Gi": "Carlos Cardoso"
+  },
+  "4": {
+    "4/1": {
+      "A": "Marcos Santos-Souza",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Marcos Santos-Souza",
+      "C": "OK",
+      "D": "riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "17.03.2024",
+      "G": "OK",
+      "H": "NO",
+      "Hi": "OK",
+      "I": "NO",
+      "Ii": "OK",
+      "Iii": "OK",
+      "Iiii": "NULL",
+      "Iiv": "KO"
+    },
+    "4/2": {
+      "A": "Camila Ribeiro",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Camila Ribeiro",
+      "C": "OK",
+      "D": "rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "NO",
+      "Ei": "Tribunale civile competente",
+      "F": "12.06.2024",
+      "G": "OK",
+      "H": "NO",
+      "Hi": "OK",
+      "I": "NO",
+      "Ii": "OK",
+      "Iii": "OK",
+      "Iiii": "NULL",
+      "Iiv": "OK"
+    }
+  },
+  "5": {
+    "A": "OK",
+    "Ai": "NULL",
+    "C": "Mantova",
+    "D": "OK",
+    "E": "Padre: Carlos Mendes, Madre: Renata Araujo",
+    "F": "14.02.1848"
+  },
+  "6": {
+    "A": "NO",
+    "Ai": "NO",
+    "Aii": "NULL",
+    "Aiii": "NULL",
+    "C": "15.09.1946",
+    "D": "OK",
+    "Di": "OK",
+    "Dii": "NULL",
+    "Diii": "NULL",
+    "E": "OK",
+    "F": "OK",
+    "Fi": "NULL",
+    "Fii": "KO"
+  },
+  "7": {
+    "A": "OK",
+    "B": "NULL",
+    "C": "OK",
+    "D": "OK",
+    "E": "OK",
+    "Ei": "OK",
+    "Eii": "NULL"
+  },
+  "8": {
+    "8/1": {
+      "A": "Patricia Santos",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/2": {
+      "A": "Beatriz Ribeiro Santos",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "OK"
+    },
+    "8/3": {
+      "A": "Camila Ribeiro",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "OK",
+      "Dii": "NULL"
+    },
+    "8/4": {
+      "A": "Marcos Santos",
+      "B": "KO",
+      "C": "KO",
+      "D": "KO",
+      "Di": "NULL",
+      "Dii": "NULL"
+    }
+  },
+  "10": [
+    "0H",
+    "3G",
+    "4/1Iiv",
+    "6Fii",
+    "8/4B",
+    "8/4C",
+    "8/4D"
+  ],
+  "11": {
+    "0H": "Atti di nascita dei ricorrenti mancanti: Marcos Santos-Souza",
+    "3G": "Ricorrenti che chiedono la cittadinanza per matrimonio: Carlos Cardoso",
+    "4/1Iiv": "Asseverazione mancante per la traduzione italiana della procura di Marcos Santos-Souza",
+    "6Fii": "Asseverazione della traduzione italiana dell'atto di morte dell'avo mancante",
+    "8/4B": "Atto di nascita non trovato per Marcos Santos",
+    "8/4C": "Impossibile verificare l'apostille dell'atto di nascita di Marcos Santos perché l'atto manca",
+    "8/4D": "Impossibile verificare la traduzione dell'atto di nascita di Marcos Santos perché l'atto manca"
+  }
+}

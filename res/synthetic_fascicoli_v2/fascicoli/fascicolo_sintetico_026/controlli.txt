@@ -1,0 +1,124 @@
+{
+  "0": {
+    "A": "OK",
+    "B": "OK",
+    "C": "OK",
+    "Ci": "NULL",
+    "D": "OK",
+    "E": "OK",
+    "F": "OK",
+    "G": "OK",
+    "Gi": "NULL",
+    "H": "OK",
+    "Hi": "NULL"
+  },
+  "1": {
+    "1": "OK"
+  },
+  "2": {
+    "A": "02.10.2024",
+    "B": "OK",
+    "C": "OK",
+    "D": "SI",
+    "Di": "01.04.2024",
+    "E": "SI",
+    "Ei": "04.08.2024",
+    "F": "NO",
+    "Fi": "NULL",
+    "Fii": "NULL",
+    "Fiii": "NULL",
+    "G": "0846-2025"
+  },
+  "3": {
+    "A": "Juliana Barbosa",
+    "B": 1,
+    "C": "Antonio Luis Oliveira-Souza",
+    "D": "Antonio Luis Oliveira-Souza: Null",
+    "E": "NO",
+    "Ei": "NULL",
+    "Eii": "NULL",
+    "F": "OK; Patricia Luz Ribeiro -> Pedro Mendes-Ribeiro -> Antonio Luis Oliveira",
+    "G": "OK; Tutti i ricorrenti avanzano per discendenza in linea retta",
+    "Gi": "NULL"
+  },
+  "4": {
+    "4/1": {
+      "A": "Antonio Luis Oliveira-Souza",
+      "Ai": "NULL",
+      "B": "OK; firma del ricorrente Antonio Luis Oliveira-Souza",
+      "C": "OK",
+      "D": "Il mandato è rilasciato per la rappresentanza innanzi al Tribunale Ordinario di Brescia nel giudizio avente ad oggetto delego a rappresentarmi nel giudizio per il riconoscimento della cittadinanza italiana",
+      "E": "OK",
+      "Ei": "NULL",
+      "F": "02.06.2025",
+      "G": "OK",
+      "H": "NO",
+      "Hi": "OK",
+      "I": "OK",
+      "Ii": "NULL",
+      "Iii": "NULL",
+      "Iiii": "NULL",
+      "Iiv": "NULL"
+    }
+  },
+  "5": {
+    "A": "OK",
+    "Ai": "NULL",
+    "C": "Bergamo",
+    "D": "OK",
+    "E": "Padre: Rafael Ribeiro, Madre: Renata Silva",
+    "F": "04.05.1880"
+  },
+  "6": {
+    "A": "OK",
+    "Ai": "OK",
+    "Aii": "NULL",
+    "Aiii": "NULL",
+    "C": "NULL",
+    "D": "NULL",
+    "Di": "NULL",
+    "Dii": "NULL",
+    "Diii": "NULL",
+    "E": "NULL",
+    "F": "NULL",
+    "Fi": "NULL",
+    "Fii": "NULL"
+  },
+  "7": {
+    "A": "OK",
+    "B": "NULL",
+    "C": "OK",
+    "D": "OK",
+    "E": "OK",
+    "Ei": "NULL",
+    "Eii": "KO"
+  },
+  "8": {
+    "8/1": {
+      "A": "Pedro Mendes-Ribeiro",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "KO"
+    },
+    "8/2": {
+      "A": "Antonio Luis Oliveira",
+      "B": "OK",
+      "C": "OK",
+      "D": "OK",
+      "Di": "NULL",
+      "Dii": "KO"
+    }
+  },
+  "10": [
+    "7Eii",
+    "8/1Dii",
+    "8/2Dii"
+  ],
+  "11": {
+    "7Eii": "Asseverazione CNN mancante",
+    "8/1Dii": "Asseverazione atto di nascita Pedro Mendes-Ribeiro mancante",
+    "8/2Dii": "Asseverazione atto di nascita Antonio Luis Oliveira mancante"
+  }
+}
