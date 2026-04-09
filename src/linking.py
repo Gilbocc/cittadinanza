@@ -4,6 +4,18 @@ import re
 import unicodedata
 
 
+PRIMARY_DOC_TYPES = {
+    "IndiceProcedimento.html",
+    "Ricorso",
+    "Procura",
+    "Atto di nascita",
+    "Atto di morte",
+    "Certificato Negativo di Naturalizzazione",
+}
+
+ACCESSORY_DOC_TYPES = {"Apostille", "Traduzione", "Asseverazione"}
+
+
 class LinkedDataBuilder:
     def __init__(self, raw_docs):
         self.docs = copy.deepcopy(raw_docs)
@@ -953,6 +965,96 @@ class LinkedDataBuilder:
         for doc in self._all_translations():
             self._register_doc_subjects(doc, "Traduzione")
 
+    def _is_translation_of_primary(self, translation_doc):
+        if not isinstance(translation_doc, dict):
+            return False
+        original_id = translation_doc.get("__linked_original_doc_id")
+        if not original_id:
+            return False
+        original_doc = self.docs_by_id.get(original_id)
+        if not original_doc:
+            return False
+        return original_doc.get("document_type") in PRIMARY_DOC_TYPES
+
+    def _is_accessory_useful(self, doc):
+        if not isinstance(doc, dict):
+            return False
+        doc_type = doc.get("document_type")
+        if doc_type == "Traduzione":
+            return self._is_translation_of_primary(doc)
+        if doc_type in {"Apostille", "Asseverazione"}:
+            linked_doc_id = doc.get("__linked_doc_id")
+            if not linked_doc_id:
+                return False
+            linked_doc = self.docs_by_id.get(linked_doc_id)
+            if not linked_doc:
+                return False
+            linked_type = linked_doc.get("document_type")
+            if linked_type in PRIMARY_DOC_TYPES:
+                return True
+            if linked_type == "Traduzione":
+                return self._is_translation_of_primary(linked_doc)
+            return False
+        return False
+
+    def _prune_to_useful_documents(self):
+        useful_real_doc_ids = set()
+        useful_virtual_doc_ids = set()
+
+        for doc in self.docs:
+            doc_id = doc.get("__doc_id")
+            if not doc_id:
+                continue
+            doc_type = doc.get("document_type")
+            if doc_type in PRIMARY_DOC_TYPES or self._is_accessory_useful(doc):
+                useful_real_doc_ids.add(doc_id)
+
+        for doc in self.virtual_translations:
+            doc_id = doc.get("__doc_id")
+            if doc_id and self._is_accessory_useful(doc):
+                useful_virtual_doc_ids.add(doc_id)
+
+        self.docs = [doc for doc in self.docs if doc.get("__doc_id") in useful_real_doc_ids]
+        self.virtual_translations = [
+            doc for doc in self.virtual_translations if doc.get("__doc_id") in useful_virtual_doc_ids
+        ]
+
+        self.translation_links_by_original = {
+            original_id: [
+                translation
+                for translation in translations
+                if translation.get("__doc_id") in useful_real_doc_ids or translation.get("__doc_id") in useful_virtual_doc_ids
+            ]
+            for original_id, translations in self.translation_links_by_original.items()
+            if original_id in useful_real_doc_ids
+        }
+        self.translation_links_by_original = {
+            original_id: translations
+            for original_id, translations in self.translation_links_by_original.items()
+            if translations
+        }
+
+        self.apostille_links_by_doc = {
+            linked_id: [doc for doc in docs if doc.get("__doc_id") in useful_real_doc_ids]
+            for linked_id, docs in self.apostille_links_by_doc.items()
+            if linked_id in useful_real_doc_ids or linked_id in useful_virtual_doc_ids
+        }
+        self.apostille_links_by_doc = {
+            linked_id: docs for linked_id, docs in self.apostille_links_by_doc.items() if docs
+        }
+
+        self.asseverazione_links_by_doc = {
+            linked_id: [doc for doc in docs if doc.get("__doc_id") in useful_real_doc_ids]
+            for linked_id, docs in self.asseverazione_links_by_doc.items()
+            if linked_id in useful_real_doc_ids or linked_id in useful_virtual_doc_ids
+        }
+        self.asseverazione_links_by_doc = {
+            linked_id: docs for linked_id, docs in self.asseverazione_links_by_doc.items() if docs
+        }
+
+        self.index = self.index_documents()
+        self._build_subject_doc_index()
+
     def _build_document_links(self):
         self.virtual_translations = []
         self.translation_links_by_original = {}
@@ -967,6 +1069,7 @@ class LinkedDataBuilder:
         self._link_certificates("apostilles")
         self._link_certificates("asseverazioni")
         self._build_subject_doc_index()
+        self._prune_to_useful_documents()
 
 
 def build_linked_data(raw_docs):
